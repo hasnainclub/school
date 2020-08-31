@@ -1,0 +1,52 @@
+Script started on Wed Aug 30 15:40:32 2017
+]0;z1697740@hopper: ~z1697740@hopper:~$ whoami
+z1697740
+]0;z1697740@hopper: ~z1697740@hopper:~$ cat assn1.cpp
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main( int argc, char * argv[] )
+{
+  int count = 1;
+  cout << "Welcome " << getenv("USER") << "\n\n";
+  
+  cout << "Sample C++ program\n";
+  
+
+  // show all command line arguments
+  for( int i=0; i < argc; i++ )
+  {
+    cout << "argv[" << i << "] = " << argv[i] << endl;
+  }
+
+  // if no argument was given, prompt the user
+  if( argc == 1)
+  {
+    cout << "Enter number to repeat: ";
+    cin >> count;
+  }
+  else
+  {
+    count = atoi( argv[1]);
+  }
+
+  // show line a few times
+  for( int i=0; i < count; i++ )
+  {
+    cout << "C++ is fun !\n";
+  }
+
+  return 0;
+}
+]0;z1697740@hopper: ~z1697740@hopper:~$ ./assn1 up down
+Welcome z1697740
+
+Sample C++ program
+argv[0] = ./assn1
+argv[1] = up
+argv[2] = down
+]0;z1697740@hopper: ~z1697740@hopper:~$ exit
+
+Script done on Wed Aug 30 15:41:26 2017

@@ -1,0 +1,692 @@
+WEBVTT
+
+1
+00:00:02.600 --> 00:00:04.845
+For much of this course,
+
+2
+00:00:04.845 --> 00:00:06.120
+we've been talking about using
+
+3
+00:00:06.120 --> 00:00:09.930
+the 30 to 70 console
+to access the system,
+
+4
+00:00:09.930 --> 00:00:12.420
+but there are actually
+several ways you can interact
+
+5
+00:00:12.420 --> 00:00:15.240
+with the mainframe and
+they can be as graphical,
+
+6
+00:00:15.240 --> 00:00:17.700
+text, or API based as you'd like.
+
+7
+00:00:17.700 --> 00:00:20.400
+After all, the
+fundamentals of z/OS are
+
+8
+00:00:20.400 --> 00:00:22.260
+well-documented and open to
+
+9
+00:00:22.260 --> 00:00:24.450
+whatever model you want to use.
+
+10
+00:00:24.450 --> 00:00:26.370
+Let's talk about z/OSMF,
+
+11
+00:00:26.370 --> 00:00:30.135
+which stands for
+the z/OS management facility.
+
+12
+00:00:30.135 --> 00:00:32.910
+This provides system
+management functions in
+
+13
+00:00:32.910 --> 00:00:36.645
+a task-oriented browser-based
+user interface.
+
+14
+00:00:36.645 --> 00:00:39.750
+The goal of z/ OSMF
+is putting as much of
+
+15
+00:00:39.750 --> 00:00:41.420
+the operating system directly
+
+16
+00:00:41.420 --> 00:00:43.365
+at your fingertips as possible,
+
+17
+00:00:43.365 --> 00:00:44.660
+so you can really focus
+
+18
+00:00:44.660 --> 00:00:46.310
+on what you're
+trying to get done.
+
+19
+00:00:46.310 --> 00:00:48.410
+This includes
+streamlining the kinds
+
+20
+00:00:48.410 --> 00:00:50.125
+of commands we've been
+talking about here,
+
+21
+00:00:50.125 --> 00:00:52.370
+but z/OSMF also has a lot of
+
+22
+00:00:52.370 --> 00:00:55.670
+new capabilities that are
+unique to z/OSMF itself,
+
+23
+00:00:55.670 --> 00:00:59.375
+z/OSMF is shipped as part
+of the operating system,
+
+24
+00:00:59.375 --> 00:01:02.209
+and it aims to
+simplify, optimize,
+
+25
+00:01:02.209 --> 00:01:05.774
+and modernize z/Os to
+the system programmer,
+
+26
+00:01:05.774 --> 00:01:07.580
+as well as to people
+who specialize
+
+27
+00:01:07.580 --> 00:01:09.575
+in networking, storage, security.
+
+28
+00:01:09.575 --> 00:01:12.155
+So there's really
+something for everyone.
+
+29
+00:01:12.155 --> 00:01:14.810
+Wait, there's a way to
+make all this simple.
+
+30
+00:01:14.810 --> 00:01:16.360
+Why don't you just
+show me that earlier?
+
+31
+00:01:16.360 --> 00:01:18.860
+Why did I have to learn
+all about IODF configs,
+
+32
+00:01:18.860 --> 00:01:21.500
+system libraries,
+JCL and all that?
+
+33
+00:01:21.500 --> 00:01:23.030
+Well, in many cases,
+
+34
+00:01:23.030 --> 00:01:24.230
+you still need to know what's
+
+35
+00:01:24.230 --> 00:01:26.045
+happening behind the scenes.
+
+36
+00:01:26.045 --> 00:01:28.110
+The goal here is simplification,
+
+37
+00:01:28.110 --> 00:01:30.250
+assistance, and ScriptAbility.
+
+38
+00:01:30.250 --> 00:01:32.735
+If there's something
+wrong with your JCL,
+
+39
+00:01:32.735 --> 00:01:36.275
+z/OSMF might not have
+a specialized tool to help you.
+
+40
+00:01:36.275 --> 00:01:38.690
+If your system libraries
+aren't set up right,
+
+41
+00:01:38.690 --> 00:01:40.985
+z/OSMF might not work,
+
+42
+00:01:40.985 --> 00:01:43.520
+and if you're security
+definitions are wrong,
+
+43
+00:01:43.520 --> 00:01:46.490
+you've got to fix that before
+you can jump into z/OSMF.
+
+44
+00:01:46.490 --> 00:01:48.140
+So knowing what's happening on
+
+45
+00:01:48.140 --> 00:01:50.315
+the system is
+incredibly important.
+
+46
+00:01:50.315 --> 00:01:52.975
+But once you've gotten
+z/OSMF up and running,
+
+47
+00:01:52.975 --> 00:01:54.920
+you should see if
+those task can be
+
+48
+00:01:54.920 --> 00:01:57.725
+further automated by
+what's available now.
+
+49
+00:01:57.725 --> 00:01:59.690
+It's especially
+helpful when you have
+
+50
+00:01:59.690 --> 00:02:02.000
+a mixed skill workforce because
+
+51
+00:02:02.000 --> 00:02:03.650
+the experience system programmer
+
+52
+00:02:03.650 --> 00:02:05.240
+can take a task they know like
+
+53
+00:02:05.240 --> 00:02:06.725
+the back of their hand and
+
+54
+00:02:06.725 --> 00:02:09.455
+automate it into what's
+called a workflow,
+
+55
+00:02:09.455 --> 00:02:12.005
+hand that workflow off
+to a new mainframer,
+
+56
+00:02:12.005 --> 00:02:14.075
+and they can guide it
+through to completion
+
+57
+00:02:14.075 --> 00:02:15.470
+without needing to come up with
+
+58
+00:02:15.470 --> 00:02:17.200
+all of the commands themselves.
+
+59
+00:02:17.200 --> 00:02:19.415
+Even better, because
+the workflow has
+
+60
+00:02:19.415 --> 00:02:21.985
+already been written and
+we all know it works,
+
+61
+00:02:21.985 --> 00:02:23.480
+it's going to be a whole heck
+
+62
+00:02:23.480 --> 00:02:24.830
+of a lot more consistent from
+
+63
+00:02:24.830 --> 00:02:28.390
+run to run than someone typing
+out commands for memory.
+
+64
+00:02:28.390 --> 00:02:31.310
+You don't need me to tell
+you that's important.
+
+65
+00:02:31.310 --> 00:02:33.950
+These workflows
+integrate with JCL,
+
+66
+00:02:33.950 --> 00:02:36.200
+Rexx, Unix, Rest APIs,
+
+67
+00:02:36.200 --> 00:02:39.080
+and other often used
+mainframe utilities because
+
+68
+00:02:39.080 --> 00:02:40.640
+the first thing
+assist Prog will tell
+
+69
+00:02:40.640 --> 00:02:42.700
+you when you offer to
+automate something is,
+
+70
+00:02:42.700 --> 00:02:45.020
+"I've already got
+some JCL Rexx or
+
+71
+00:02:45.020 --> 00:02:47.960
+a Unix shell script that
+basically handles that."
+
+72
+00:02:47.960 --> 00:02:50.390
+What makes this really
+handy is that you can build
+
+73
+00:02:50.390 --> 00:02:53.329
+a workflow which has a number
+of steps and conditions,
+
+74
+00:02:53.329 --> 00:02:55.990
+and run it from a Rest API,
+
+75
+00:02:55.990 --> 00:02:58.010
+that really opens up
+a whole new set of
+
+76
+00:02:58.010 --> 00:02:59.990
+possibilities like mobile apps,
+
+77
+00:02:59.990 --> 00:03:02.855
+Cloud services,
+advanced scripting.
+
+78
+00:03:02.855 --> 00:03:06.365
+Like I said, it's a good
+time to be getting into z.
+
+79
+00:03:06.365 --> 00:03:08.390
+Before we get much further,
+
+80
+00:03:08.390 --> 00:03:09.680
+let's do a little pop quiz
+
+81
+00:03:09.680 --> 00:03:11.885
+just to make sure we're
+on the same page.
+
+82
+00:03:11.885 --> 00:03:14.720
+If you knew that
+z/OSMF ships as part
+
+83
+00:03:14.720 --> 00:03:17.225
+of the operating system,
+then you're correct.
+
+84
+00:03:17.225 --> 00:03:19.520
+Since z/OSMF is deeply
+
+85
+00:03:19.520 --> 00:03:22.520
+integrated into the operating
+system, it's just there.
+
+86
+00:03:22.520 --> 00:03:24.990
+You will have to take
+some steps to enable it,
+
+87
+00:03:24.990 --> 00:03:28.790
+but you don't need to
+download or compile z/OSMF.
+
+88
+00:03:28.790 --> 00:03:30.530
+Okay, enough talking about it.
+
+89
+00:03:30.530 --> 00:03:32.900
+Let's take a look at
+what it looks like.
+
+90
+00:03:32.900 --> 00:03:36.805
+You login to z/OSMF
+from this login screen,
+
+91
+00:03:36.805 --> 00:03:41.425
+and then we get this screen
+which is the z/OSMF desktop,
+
+92
+00:03:41.425 --> 00:03:43.970
+pretty different from
+what you've seen so far.
+
+93
+00:03:43.970 --> 00:03:45.980
+Major tasks are grouped into
+
+94
+00:03:45.980 --> 00:03:47.420
+these icons which you can
+
+95
+00:03:47.420 --> 00:03:49.535
+drag around, arrange
+into folders.
+
+96
+00:03:49.535 --> 00:03:52.160
+All the stuff you would
+just expect to be there.
+
+97
+00:03:52.160 --> 00:03:54.900
+So let's go into
+the workflow editor,
+
+98
+00:03:54.900 --> 00:03:57.530
+and you can see this is where
+I build the steps and I
+
+99
+00:03:57.530 --> 00:04:00.800
+can also set variables
+and monitor feedback.
+
+100
+00:04:00.800 --> 00:04:02.565
+If we explore a little more,
+
+101
+00:04:02.565 --> 00:04:04.680
+we find dedicated tools
+and here are
+
+102
+00:04:04.680 --> 00:04:07.815
+the things like
+SDSF, remember that?
+
+103
+00:04:07.815 --> 00:04:10.620
+We can see at a glance
+how busy the system is,
+
+104
+00:04:10.620 --> 00:04:12.900
+and we can look at job
+and system output,
+
+105
+00:04:12.900 --> 00:04:15.640
+as well as memory utilization
+right down here.
+
+106
+00:04:15.640 --> 00:04:17.940
+RMF has its own interface,
+
+107
+00:04:17.940 --> 00:04:19.565
+that's the resource manager.
+
+108
+00:04:19.565 --> 00:04:23.225
+So we can quickly check on
+the common storage activity.
+
+109
+00:04:23.225 --> 00:04:25.000
+I don't need to
+remember commands,
+
+110
+00:04:25.000 --> 00:04:27.035
+but I do need to
+know what I'm doing.
+
+111
+00:04:27.035 --> 00:04:29.380
+You might have the authority
+to enter a command,
+
+112
+00:04:29.380 --> 00:04:31.760
+and z/OSMF might make it easy.
+
+113
+00:04:31.760 --> 00:04:34.805
+But remember, just
+because you can,
+
+114
+00:04:34.805 --> 00:04:36.530
+Doesn't mean you should.
+
+115
+00:04:36.530 --> 00:04:40.850
+Right. I also want to show
+you the CICS Flex Viewer.
+
+116
+00:04:40.850 --> 00:04:43.820
+Here you get a view of the
+coupling facility structures,
+
+117
+00:04:43.820 --> 00:04:46.780
+and you can get info and
+perform actions on them,
+
+118
+00:04:46.780 --> 00:04:48.320
+and this is great.
+
+119
+00:04:48.320 --> 00:04:50.300
+I wish this were
+around when I first
+
+120
+00:04:50.300 --> 00:04:52.805
+started working on
+z/OS systems because
+
+121
+00:04:52.805 --> 00:04:55.520
+even if I knew something
+was acting a little weird
+
+122
+00:04:55.520 --> 00:04:58.160
+with regard to a coupling
+facility structure,
+
+123
+00:04:58.160 --> 00:04:59.740
+I'd still have to look up all of
+
+124
+00:04:59.740 --> 00:05:01.775
+the commands to get that info,
+
+125
+00:05:01.775 --> 00:05:04.970
+and even if I knew exactly
+what I wanted to do,
+
+126
+00:05:04.970 --> 00:05:06.920
+I'd still have to
+look up the commands
+
+127
+00:05:06.920 --> 00:05:09.490
+to do things like
+rebuild the structure,
+
+128
+00:05:09.490 --> 00:05:11.150
+and what's really nice about
+
+129
+00:05:11.150 --> 00:05:13.010
+this is you can very easily go up
+
+130
+00:05:13.010 --> 00:05:15.080
+two commands log and find out
+
+131
+00:05:15.080 --> 00:05:17.560
+what the command equivalent
+of what you did is,
+
+132
+00:05:17.560 --> 00:05:19.400
+so you don't lose out on that.
+
+133
+00:05:19.400 --> 00:05:21.605
+Now to run z/OSMF,
+
+134
+00:05:21.605 --> 00:05:23.905
+you need Java, OMVS,
+
+135
+00:05:23.905 --> 00:05:27.230
+COM Server, and
+an external security managers.
+
+136
+00:05:27.230 --> 00:05:28.685
+Something like backref.
+
+137
+00:05:28.685 --> 00:05:30.845
+You need the right
+compatible versions
+
+138
+00:05:30.845 --> 00:05:32.570
+and they need to be set up right,
+
+139
+00:05:32.570 --> 00:05:36.475
+preferably before you try and
+start configuring z/OSMF.
+
+140
+00:05:36.475 --> 00:05:38.850
+I'll also say that you can use
+
+141
+00:05:38.850 --> 00:05:42.545
+z/OSMF to get to
+a terminal or to use ISPF.
+
+142
+00:05:42.545 --> 00:05:44.900
+But if you're using z/OSMF
+
+143
+00:05:44.900 --> 00:05:47.330
+just to go right back to
+doing things the old way,
+
+144
+00:05:47.330 --> 00:05:49.910
+you're missing out on
+a lot of potential here.
+
+145
+00:05:49.910 --> 00:05:52.545
+That is z/OSMF in a nutshell.
+
+146
+00:05:52.545 --> 00:05:54.600
+There's plenty more
+to explore in it.
+
+147
+00:05:54.600 --> 00:05:57.740
+But definitely check this
+out because as time goes on,
+
+148
+00:05:57.740 --> 00:05:59.630
+you'll see more
+and more tools and
+
+149
+00:05:59.630 --> 00:06:03.100
+capabilities being made
+available through it.

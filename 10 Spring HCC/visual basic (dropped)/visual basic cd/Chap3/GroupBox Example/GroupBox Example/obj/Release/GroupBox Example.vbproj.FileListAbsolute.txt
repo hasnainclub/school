@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\bin\Release\GroupBox Example.exe
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\bin\Release\GroupBox Example.pdb
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\bin\Release\GroupBox Example.xml
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\obj\Release\GroupBox_Example.Form1.resources
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\obj\Release\GroupBox_Example.Resources.resources
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\obj\Release\GroupBox Example.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\obj\Release\GroupBox Example.exe
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\obj\Release\GroupBox Example.xml
+D:\sovb4\examples\Chap3\GroupBox Example\GroupBox Example\obj\Release\GroupBox Example.pdb

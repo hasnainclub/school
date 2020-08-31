@@ -1,0 +1,421 @@
+WEBVTT
+
+1
+00:00:02.450 --> 00:00:07.620
+JCL statements consist of
+one or more 80 byte records.
+
+2
+00:00:07.620 --> 00:00:09.930
+However, be careful
+when you get close to
+
+3
+00:00:09.930 --> 00:00:12.540
+the end of that line
+there because columns
+
+4
+00:00:12.540 --> 00:00:15.030
+73 through 80 are ignored by
+
+5
+00:00:15.030 --> 00:00:18.750
+z/OS and are usually used
+for sequence numbers.
+
+6
+00:00:18.750 --> 00:00:21.000
+If you've got a command
+with a whole lot of
+
+7
+00:00:21.000 --> 00:00:22.080
+parameters that you need to
+
+8
+00:00:22.080 --> 00:00:23.520
+continue on to the second line,
+
+9
+00:00:23.520 --> 00:00:25.395
+here's what you do.
+
+10
+00:00:25.395 --> 00:00:28.785
+Note, this is only how you
+continue for a parameter.
+
+11
+00:00:28.785 --> 00:00:30.930
+If you've got a comment or
+
+12
+00:00:30.930 --> 00:00:33.465
+a parameter field
+enclosed in parentheses,
+
+13
+00:00:33.465 --> 00:00:35.925
+those require something
+slightly different.
+
+14
+00:00:35.925 --> 00:00:38.655
+But if you've got
+a list of parameters,
+
+15
+00:00:38.655 --> 00:00:42.330
+interrupt the field after
+a complete parameter entry,
+
+16
+00:00:42.330 --> 00:00:44.280
+making sure to end
+it with a comma.
+
+17
+00:00:44.280 --> 00:00:48.570
+That comma needs to come
+at or before columns 71.
+
+18
+00:00:48.570 --> 00:00:50.270
+In the next line which you are
+
+19
+00:00:50.270 --> 00:00:52.190
+going to be continuing into,
+
+20
+00:00:52.190 --> 00:00:56.150
+start with two forward slashes
+and then a blank space.
+
+21
+00:00:56.150 --> 00:00:58.550
+If column three starts
+with anything other
+
+22
+00:00:58.550 --> 00:01:01.159
+than a blank space
+or an asterisk,
+
+23
+00:01:01.159 --> 00:01:03.710
+splat, it will assume
+
+24
+00:01:03.710 --> 00:01:06.250
+it's a new line and
+probably won't run right.
+
+25
+00:01:06.250 --> 00:01:08.720
+You can then pick up
+your continued commands
+
+26
+00:01:08.720 --> 00:01:11.900
+starting anywhere from
+columns 4 through 16.
+
+27
+00:01:11.900 --> 00:01:14.240
+You should also know that
+there's different types of
+
+28
+00:01:14.240 --> 00:01:17.435
+statements: JOB, EXEC, and DD.
+
+29
+00:01:17.435 --> 00:01:20.000
+You can see all
+three types here and
+
+30
+00:01:20.000 --> 00:01:21.170
+they all have parameters that
+
+31
+00:01:21.170 --> 00:01:22.820
+are expected to follow them.
+
+32
+00:01:22.820 --> 00:01:25.820
+I also want to talk to you
+about those dispositions you
+
+33
+00:01:25.820 --> 00:01:28.880
+see here because you'll
+definitely be running into those.
+
+34
+00:01:28.880 --> 00:01:30.620
+But before we can get into that,
+
+35
+00:01:30.620 --> 00:01:32.525
+we have to cover cataloging.
+
+36
+00:01:32.525 --> 00:01:34.934
+Now, cataloging a dataset
+
+37
+00:01:34.934 --> 00:01:37.505
+just means that we add
+the exact location
+
+38
+00:01:37.505 --> 00:01:39.590
+of that dataset so we can find it
+
+39
+00:01:39.590 --> 00:01:42.620
+later referencing it
+only by its name.
+
+40
+00:01:42.620 --> 00:01:45.450
+Datasets can exist without
+being in a catalog,
+
+41
+00:01:45.450 --> 00:01:48.085
+you just have to know exactly
+where they are to use them.
+
+42
+00:01:48.085 --> 00:01:50.405
+Having a dataset in your catalog
+
+43
+00:01:50.405 --> 00:01:52.985
+is like having a phone number
+in your address book.
+
+44
+00:01:52.985 --> 00:01:54.530
+So if you want to reference
+
+45
+00:01:54.530 --> 00:01:56.840
+a dataset by its name later on,
+
+46
+00:01:56.840 --> 00:01:59.615
+make sure it's in
+the catalog. That's it.
+
+47
+00:01:59.615 --> 00:02:03.020
+When you specify the disposition
+in a DD statement,
+
+48
+00:02:03.020 --> 00:02:07.145
+you're specifying what to do
+with the datasets in JCL.
+
+49
+00:02:07.145 --> 00:02:10.835
+You do this across three fields
+separated by a comma.
+
+50
+00:02:10.835 --> 00:02:13.535
+Don't worry, there's
+an example after this.
+
+51
+00:02:13.535 --> 00:02:15.810
+You start with DISP equals,
+
+52
+00:02:15.810 --> 00:02:17.220
+that sets it all up.
+
+53
+00:02:17.220 --> 00:02:18.520
+In the first field,
+
+54
+00:02:18.520 --> 00:02:21.080
+we're specifying whether
+it should be NEW,
+
+55
+00:02:21.080 --> 00:02:23.660
+either it doesn't exist
+yet so we should make it.
+
+56
+00:02:23.660 --> 00:02:26.960
+OLD, meaning it
+should already exist.
+
+57
+00:02:26.960 --> 00:02:30.630
+SHR, the data can be
+used by other jobs.
+
+58
+00:02:30.630 --> 00:02:32.510
+MOD, if the dataset
+
+59
+00:02:32.510 --> 00:02:34.480
+doesn't already exist,
+then create it.
+
+60
+00:02:34.480 --> 00:02:37.930
+If it already does
+exist, then use that.
+
+61
+00:02:37.930 --> 00:02:39.445
+In the next statement,
+
+62
+00:02:39.445 --> 00:02:41.930
+we specify what action
+the system needs to
+
+63
+00:02:41.930 --> 00:02:43.745
+perform on the dataset
+
+64
+00:02:43.745 --> 00:02:46.355
+when the JOB step
+terminates normally.
+
+65
+00:02:46.355 --> 00:02:48.500
+We can either DELETE it,
+
+66
+00:02:48.500 --> 00:02:51.220
+get rid of it. KEEP it.
+
+67
+00:02:51.220 --> 00:02:53.010
+If you're referencing a dataset,
+
+68
+00:02:53.010 --> 00:02:54.920
+you expect it to be
+there when it started,
+
+69
+00:02:54.920 --> 00:02:57.065
+you probably want
+to keep it around.
+
+70
+00:02:57.065 --> 00:02:59.900
+PASS, meaning that if
+there's a step after
+
+71
+00:02:59.900 --> 00:03:03.245
+this step that needs
+the dataset, let them use it.
+
+72
+00:03:03.245 --> 00:03:05.820
+CATLG, add it to the catalog,
+
+73
+00:03:05.820 --> 00:03:08.320
+make it permanent or UNCATLG,
+
+74
+00:03:08.320 --> 00:03:10.025
+remove it from the catalog.
+
+75
+00:03:10.025 --> 00:03:12.410
+Then lastly in the third column.
+
+76
+00:03:12.410 --> 00:03:14.240
+What to do if a JOB step
+
+77
+00:03:14.240 --> 00:03:17.170
+terminates abnormally if
+something bad happens.
+
+78
+00:03:17.170 --> 00:03:18.800
+Same as the previous column,
+
+79
+00:03:18.800 --> 00:03:21.365
+but there's no option
+for PASS because,
+
+80
+00:03:21.365 --> 00:03:22.820
+if the job is stopping,
+
+81
+00:03:22.820 --> 00:03:25.400
+there are no future steps
+to pass it onto.
+
+82
+00:03:25.400 --> 00:03:28.310
+So here's an example
+of a DD statement with
+
+83
+00:03:28.310 --> 00:03:31.525
+a disposition of
+NEW, CATLOG, DELETE.
+
+84
+00:03:31.525 --> 00:03:33.875
+We're going to
+create a new dataset
+
+85
+00:03:33.875 --> 00:03:35.870
+and if the JOB runs successfully,
+
+86
+00:03:35.870 --> 00:03:37.115
+add it to the catalog.
+
+87
+00:03:37.115 --> 00:03:38.870
+Otherwise, delete it.
+
+88
+00:03:38.870 --> 00:03:42.230
+I know this was a lot of
+information and believe me,
+
+89
+00:03:42.230 --> 00:03:43.930
+I wish that were everything.
+
+90
+00:03:43.930 --> 00:03:47.400
+For the full details
+on JES and JCL,
+
+91
+00:03:47.400 --> 00:03:48.840
+refer to the user guide and
+
+92
+00:03:48.840 --> 00:03:51.640
+reference linked in this lesson.

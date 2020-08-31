@@ -1,0 +1,16 @@
+obj\Debug\Validation Demo.exe
+obj\Debug\Validation Demo.pdb
+bin\Validation Demo.exe
+bin\Validation Demo.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Validation_Demo.Form1.resources
+obj\Release\Validation_Demo.Resources.resources
+obj\Release\Validation Demo.vbproj.GenerateResource.Cache
+obj\Release\Validation Demo.exe
+obj\Release\Validation Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Validation_Demo.Form1.resources
+obj\Debug\Validation_Demo.Resources.resources
+obj\Debug\Validation Demo.vbproj.GenerateResource.Cache
+obj\Debug\Validation Demo.xml
+bin\Validation Demo.pdb

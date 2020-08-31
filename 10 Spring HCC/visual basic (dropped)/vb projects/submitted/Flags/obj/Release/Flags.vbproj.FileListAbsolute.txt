@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap2\Flags\bin\Flags.exe
+D:\sovb4\examples\Chap2\Flags\bin\Flags.xml
+D:\sovb4\examples\Chap2\Flags\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap2\Flags\obj\Release\Flags.Form1.resources
+D:\sovb4\examples\Chap2\Flags\obj\Release\Flags.Resources.resources
+D:\sovb4\examples\Chap2\Flags\obj\Release\Flags.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap2\Flags\obj\Release\Flags.exe
+D:\sovb4\examples\Chap2\Flags\obj\Release\Flags.xml
+C:\Users\hasnainpc\Desktop\TAX 09\Chap2\Flags\obj\Release\Flags.exe
+C:\Users\hasnainpc\Desktop\TAX 09\Chap2\Flags\obj\Release\Flags.xml

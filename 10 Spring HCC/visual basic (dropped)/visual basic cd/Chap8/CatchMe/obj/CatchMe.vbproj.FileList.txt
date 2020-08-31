@@ -1,0 +1,10 @@
+obj\Debug\CatchMe.exe
+obj\Debug\CatchMe.xml
+obj\Debug\CatchMe.pdb
+bin\Debug\CatchMe.exe
+bin\Debug\CatchMe.pdb
+bin\Debug\CatchMe.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CatchMe.Form1.resources
+obj\Debug\CatchMe.Resources.resources
+obj\Debug\CatchMe.vbproj.GenerateResource.Cache

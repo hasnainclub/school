@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>IBM z/OS MVS JCL User's Guide (SA23-1386-40)</title>
+      <meta charset="UTF-8">
+
+      <link rel="icon" href="//www.ibm.com/favicon.ico">
+      <link rel="canonical" href="https://www.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R4sa231386?OpenDocument">
+
+      <meta name="dcterms.date" content="2018-06-13">
+      <meta name="dcterms.rights" content="© Copyright IBM Corporation 2018">
+      <meta name="description" content="This book describes the job control tasks needed to enter jobs into the operating system, control the system&#8217;s processing of jobs, and request the resources needed to run jobs. To perform the tasks, programmers code job control statements.">
+      <meta name="geo.country" content="US">
+      <meta name="keywords" content="zos, mvs, jcl, users, guide">
+      <meta name="robots" content="index,follow">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+          digitalData = {
+              page: {
+                  category: {
+                      primaryCategory: "NONE"
+                  },
+                  pageInfo: {
+                      effectiveDate: "2018-06-13",
+                      expiryDate: "2028-06-13",
+                      language: "en-US",
+                      publishDate: "2018-06-13",
+                      publisher: "IBM Corporation",
+                      version: "v18",
+                      ibm: {
+                          contentDelivery: 'v18 Template Generator',	
+                          contentProducer: 'Template 18.01',
+                          country: "US",
+                          owner: "ResourceLink/Endicott/IBM",
+                          siteID: "RESOURCELINK",
+                          subject: "SU000",
+                          type: "CT739"
+                      }
+                  }
+              }
+          };
+      </script>
+
+
+      <script src="//1.www.s81c.com/common/stats/ida_stats.js"></script>
+      <link href="//1.www.s81c.com/common/v18/css/www.css" rel="stylesheet">
+      <script src="//1.www.s81c.com/common/v18/js/www.js"></script>
+      <link href="//1.www.s81c.com/common/v18/css/tables.css" rel="stylesheet">
+      <script src="//1.www.s81c.com/common/v18/js/tables.js"></script>
+      <script src="//1.www.s81c.com/common/v18/js/dyntabs.js"></script>
+      <link href="//1.www.s81c.com/common/v18/css/forms.css" rel="stylesheet">
+      <script src="//1.www.s81c.com/common/v18/js/forms.js"></script>
+
+      <link href="/servers/resourcelink/obj30100.nsf/lookup/css/$file/reslink.css" rel="stylesheet">
+      <script src="/servers/resourcelink/obj30100.nsf/lookup/javascript/$file/reslink.js">//</script>
+
+      <script>
+         IBMCore.common.util.config.set({
+            masthead: {
+               type: "alternate"
+            },
+            footer: {
+               type: "alternate"
+            }
+         });	
+      </script>
+
+</head>
+<body text="#000000" bgcolor="#FFFFFF" id="ibm-com" class="ibm-type">
+<!-- -->
+<div id="ibm-top">
+
+   <!-- MASTHEAD_BEGIN -->
+   <div id="ibm-masthead" role="banner" aria-label="IBM">
+      <div id="ibm-mast-options">
+         <ul role="toolbar" aria-labelledby="ibm-masthead">
+            <li id="ibm-geo" role="presentation"><a href="http://www.ibm.com/planetwide/select/selector.html" role="button" aria-label="United States selected - Choose a country">United States</a></li>
+         </ul>
+      </div>
+      <div id="ibm-universal-nav">     
+         <nav role="navigation" aria-label="IBM">
+            <div id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM®</a></div>
+            <ul id="ibm-menu-links" role="toolbar" aria-label="Site map">
+               <li><a href="http://www.ibm.com/sitemap/us/en/">Site map</a></li>
+            </ul>
+         </nav>
+         
+         <div id="ibm-search-module" role="search" aria-labelledby="ibm-masthead">
+            <form id="ibm-search-form" action="//www.ibm.com/Search/" method="get">
+               <p>
+                  <label for="q">IBM</label>
+                  <input type="text" maxlength="100" value="" placeholder="Search" name="q" id="q" aria-label="Search"/>
+                  <input type="hidden" value="18" name="v"/>
+                  <input type="hidden" value="utf" name="en"/>
+                  <input type="hidden" value="en" name="lang"/>
+                  <input type="hidden" value="us" name="cc"/>
+                  <input type="submit" id="ibm-search" class="ibm-btn-search" value="Submit"/>
+               </p>
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- MASTHEAD_END -->
+
+
+   <div id="ibm-content-wrapper">
+
+
+
+            <header role="banner" aria-labelledby="ibm-pagetitle-h1">
+
+
+                  <div id="ibm-leadspace-head" class="ibm-alternate ibm-alternate-background ibm-background-cool-gray-80">
+                     <div id="ibm-leadspace-body">
+
+
+<nav role="navigation" aria-label="Breadcrumb">
+<ul id="ibm-navigation-trail">
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/servers/resourcelink/svc00100.nsf/pages/zosInternetLibrary?OpenDocument" itemprop="url"><span itemprop="title">z/OS Internet Library</span></a></li>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/servers/resourcelink/svc00100.nsf/pages/zOSV2R4Library?OpenDocument" itemprop="url"><span itemprop="title">z/OS V2R4 Library</span></a></li>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/servers/resourcelink/svc00100.nsf/pages/zOSV2R4MvsPublications?OpenDocument" itemprop="url"><span itemprop="title">z/OS MVS publications</span></a></li>
+</ul>
+</nav>
+
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<h1 class="ibm-h1" id="ibm-pagetitle-h1">z/OS MVS JCL User's Guide</h1>
+</div>
+</div>
+
+                     </div>
+                  </div>
+
+
+
+
+            </header>
+
+            <main role="main" aria-labelledby="ibm-pagetitle-h1">
+               <div id="ibm-pcon">
+                  <div id="ibm-content">
+
+                     <div id="ibm-content-body"> 
+                        <div id="ibm-content-main">
+
+                          <div class="ibm-columns"> <!-- content columns and right column -->
+                            <div class="ibm-col-5-3"> <!-- content columns -->  
+
+
+
+<div class="ibm-domino-rtf" id="reslink-domino-rtf">
+
+<!-- -->This book describes the job control tasks needed to enter jobs into the operating system, control the system&#8217;s processing of jobs, and request the resources needed to run jobs. To perform the tasks, programmers code job control statements. This book describes how to use these statements, which consist of: 
+<ul type="disc">
+<li>Job control language (JCL) statements
+<li>Job entry subsystem 2 (JES2) control statements
+<li>Job entry subsystem 3 (JES3) control statements</ul>
+This book is designed as a user&#8217;s guide, to be used when deciding how to perform job control tasks. It does not describe how to code the statements. For an introduction to the statements and for coding information, see the companion book, z/OS MVS JCL Reference.<!-- -->
+
+</div> <!-- reslink-domino-rtf -->
+
+
+                            </div> <!-- content columns -->  
+                            <div class="ibm-col-5-1"> <!-- right column -->
+
+
+
+
+<div class="ibm-rule ibm-alternate-1"><hr></div>
+<h2 class="ibm-h4">Download</h2>
+<ul class="ibm-link-list">
+<li><a class="ibm-pdf-link" href="/servers/resourcelink/svc00100.nsf/pages/zOSV2R4sa231386/$file/ieab500_v2r4.pdf"><strong>ieab500_v2r4.pdf</strong> <span class="ibm-item-note">(1.43MB)</span><br /><span class="reslink-lastmodified-note">Last modified 10 Jul 2019</span></a></li>
+</ul>
+
+
+<div class="ibm-rule ibm-alternate-1"><hr></div>
+<h2 class="ibm-h4">About</h2>
+<p><strong>Order number:</strong><br>SA23-1386-40</p>
+<p><strong>Last modified:</strong><br>10 Jul 2019</p>
+
+
+
+<div id="ibm-contact-module">
+<h2 class="ibm-h4">z/OS publications feedback</h2>
+<h3 class="ibm-h5">Questions or comments about z/OS publications?</h3>
+<ul class="ibm-live-assistance-list">
+<li><a class="ibm-email-link" href="mailto: reslink@us.ibm.com?subject=z%2FOS%20V2R4%20publications%20feedback%20for%20SA23-1386-40&body=Page%3A%20z%2FOS%20MVS%20JCL%20User's%20Guide%20(URL%3A%20%2Fservers%2Fresourcelink%2Fsvc00100.nsf%2Fpages%2FzOSV2R4sa231386%3FOpenDocument)"><h4>Email reslink@us.ibm.com</h4></a><p>Please include in your email the publication title, order number, topic, and page number your question or comment is about</p></li>
+</ul>
+</div>
+
+
+
+                            </div> <!-- right column -->
+
+
+
+                          </div> <!-- content columns and right column -->
+
+                        </div> <!-- ibm-content-main -->
+                     </div> <!-- ibm-content-body --> 
+                  </div> <!-- ibm-content -->
+               </div> <!-- ibm-pcon -->
+            </main>
+
+
+
+<!-- -->
+
+      <div id="ibm-related-content"></div>
+
+   </div><!-- ibm-content-wrapper -->
+
+
+      <!-- FOOTER_BEGIN -->
+      <div id="ibm-footer-module"></div>
+      <footer role="contentinfo" aria-label="IBM">
+         <div id="ibm-footer">
+            <ul>
+               <li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
+               <li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
+               <li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
+               <li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+            </ul>
+         </div>
+      </footer>
+      <!-- FOOTER_END -->
+
+   </div><!-- ibm-top -->
+
+   <script src="/servers/resourcelink/obj30100.nsf/lookup/rltov18/$file/rltov18.js">//</script>
+
+
+<!--  --></body>
+</html>

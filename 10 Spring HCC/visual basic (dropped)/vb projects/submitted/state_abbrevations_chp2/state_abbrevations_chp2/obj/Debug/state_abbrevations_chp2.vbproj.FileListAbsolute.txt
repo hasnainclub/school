@@ -1,0 +1,10 @@
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\bin\Debug\state_abbrevations_chp2.exe
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\bin\Debug\state_abbrevations_chp2.pdb
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\bin\Debug\state_abbrevations_chp2.xml
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\obj\Debug\state_abbrevations_chp2.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\obj\Debug\state_abbrevations_chp2.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\obj\Debug\state_abbrevations_chp2.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\obj\Debug\state_abbrevations_chp2.exe
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\obj\Debug\state_abbrevations_chp2.xml
+C:\Users\hasnainpc\Desktop\vb projects\state_abbrevations_chp2\state_abbrevations_chp2\obj\Debug\state_abbrevations_chp2.pdb

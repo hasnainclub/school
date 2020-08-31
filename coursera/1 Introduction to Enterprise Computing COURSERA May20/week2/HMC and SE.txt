@@ -1,0 +1,84 @@
+So I said we'd come back to that SE thing with the keyboard, screen, and the servers, the computer within a computer. What's that there fore=? That's the support
+element or the SE. In order to get the mainframe all configured and
+ready to boot up the way we want it to and connected everything
+we needed to talk to, that takes a little
+bit of a setup, and you do that setup
+through the support element. There's two SE's in there, and that's just in case
+one of them fails. No one wants to be locked
+out of their system. Now that's all cool, but imagine if every time
+we needed to do something, you had to walk over to
+the data center, badge in, hang out on the raised floor
+where it's all loud, and cold, and dark, and stuff, open the door, slide out the SE, and all that, just to type
+out a single command. Luckily, in addition to the SE's, mainframes have this concept of the HMC or the hardware
+management console, and these do four things. One, they let you access
+the SE's Functions remotely, so you don't have to
+walk out there anymore. Two, you can add multiple
+mainframes to a single HMC, a 100 of them in fact. So you can manage a whole bunch
+of mainframes from one HMC and that is pretty handy. You can also add a single
+mainframe to multiple HMC's, 32 of them in fact. So if you have one system that's shared by
+multiple departments, they can all get HMC access. Four, you can connect
+to the HMC remotely. So while the SE is attached to the system and the HMC is
+running somewhere else, you can also connect remotely as long as you have
+the correct network access. Now for the remainder
+of this session, I'm just going to be
+saying HMC because that's typically how someone
+accesses those functions. But know that pretty much
+anything I can do from the HMC, I can do from the SE as well. It's just a whole lot
+easier just to say HMC. So why would we need
+that kind of access? Well, the most common
+thing people use an HMC for is to stop, start, create, and
+modify our pars. Need to add another couple
+processors to an L part, you do that from the HMC. When it changed the way
+a network card is configured, you do that for the HMC. Let's say I'm having problems with the system and I want to get some data that might help me with troubleshooting, guess what? HMC. What do I see when
+I login to an HMC? Well, I can take a look at a particular physical machine that's this view right here. See you got the status
+is operating, It's going to machine
+type, model number, It's also got a serial number, It's also got
+this name over here, so I can make sure it's the system that I want
+to be talking to. If I go deeper, I can
+see all the L parts, those are the partitions
+right there for that system. Looks like some of them are up, some of them are down.
+That's all right. In this last tab over
+here that's the topology, that shows me how
+everything is connected. You can see there's lots of
+stuff going on over here. Another good use
+of the HMC is just telling at a glance how
+my systems are doing. So I can see right here there's
+a couple of exceptions. An exception is an unacceptable
+status and it could be a problem with lpar or any other objects like
+a network or a crypto card. These need to be
+checked out right away. There's also a number
+of hardware messages. Now, a hardware message
+is just when some components saw something and at once you
+don't know about it, but it's not currently stopping
+anything from working, it's just letting you now. For example, if a fiber cable got disconnected and
+then reconnected, that would result in
+a hardware message. Same thing if an lpar
+didn't shut down correctly or HMC somewhere
+lost connectivity, that would result in
+a hardware message. So what gets stored on the SC? Well, it's got code that's going to get loaded onto the mainframe, that's called Licensed
+Internal Code or LIC. Yeah. Really. We've got logging and problem
+determination Functions which help in debugging issues, hardware systems definitions
+which basically tell the mainframe how to get started up when it
+first fluids up. Then there's the IOCDS which will definitely be talking
+about later on. That tells the mainframe
+how to configure all of its IO and it's L pars. There's also a battery
+operated clock that it uses a synchronized
+time across all of the components and
+Ethernet adapters because of course everything in the mainframe
+environment generally is connected to other components,
+so we need that. Lastly, you might be thinking, so if anyone could
+log into the HMC, they could probably mess up a whole bunch of
+stuff accidentally. Well, which is why there are several accounts set
+up by default on the typical HMC and
+most people set up even more to partition access off
+to those who really need it. Just because you have
+access to some features, doesn't mean you have
+access to everything. There's specific roles on
+the HMC, roles like operator, and Advanced operator,
+Systems programmer, access Administrator, and
+service representative. Each one of these roles
+has a specific reason for needing specific access
+to the system, so it's not an all or
+nothing kind of thing. That's the SE and the HMC, the computers within
+your computer, and within those computers, there's actually no there's not. That's it. It's
+just the SE and the HMC.

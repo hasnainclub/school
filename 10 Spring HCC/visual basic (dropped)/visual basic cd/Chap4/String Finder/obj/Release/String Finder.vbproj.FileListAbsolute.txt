@@ -1,0 +1,3 @@
+D:\sovb4\examples\Chap4\String Finder\obj\Release\String Finder.exe
+D:\sovb4\examples\Chap4\String Finder\obj\Release\String Finder.xml
+D:\sovb4\examples\Chap4\String Finder\obj\Release\String Finder.pdb

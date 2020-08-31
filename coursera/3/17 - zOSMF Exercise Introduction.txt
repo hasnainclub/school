@@ -1,0 +1,11 @@
+It's time to get
+hands-on with ZOSMF. Now, the screens I
+showed you were from the desktop version of ZOSMF, and this lab uses the traditional
+menu-driven approach. Under the covers,
+it's all the same. But this way, you get to
+see both versions because not all mainframe shops are
+going to use the same one. You'll log into ZOSMF using the Firefox browser located on your virtual
+machine's desktop. Then you'll explore
+around a little bit, see how to connect
+to the console, enter some commands, and check out the system
+configuration. There's a lot to do in here, so let's get started.

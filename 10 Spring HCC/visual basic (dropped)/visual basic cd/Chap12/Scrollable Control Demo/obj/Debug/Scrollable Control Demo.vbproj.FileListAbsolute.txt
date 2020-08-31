@@ -1,0 +1,3 @@
+D:\sovb4\examples\Chap12\Scrollable Control Demo\obj\Debug\Scrollable Control Demo.exe
+D:\sovb4\examples\Chap12\Scrollable Control Demo\obj\Debug\Scrollable Control Demo.xml
+D:\sovb4\examples\Chap12\Scrollable Control Demo\obj\Debug\Scrollable Control Demo.pdb

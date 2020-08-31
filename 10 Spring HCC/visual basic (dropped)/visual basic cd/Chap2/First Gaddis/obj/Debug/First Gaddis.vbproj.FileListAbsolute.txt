@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap2\First Federal1\bin\First Gaddis.exe
+D:\sovb4\examples\Chap2\First Federal1\bin\First Gaddis.pdb
+D:\sovb4\examples\Chap2\First Federal1\bin\First Gaddis.xml
+D:\sovb4\examples\Chap2\First Federal1\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap2\First Federal1\obj\Debug\First_Gaddis.Form1.resources
+D:\sovb4\examples\Chap2\First Federal1\obj\Debug\First_Gaddis.Resources.resources
+D:\sovb4\examples\Chap2\First Federal1\obj\Debug\First Gaddis.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap2\First Federal1\obj\Debug\First Gaddis.exe
+D:\sovb4\examples\Chap2\First Federal1\obj\Debug\First Gaddis.xml
+D:\sovb4\examples\Chap2\First Federal1\obj\Debug\First Gaddis.pdb

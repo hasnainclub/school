@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Wage Calculator.vbproj.GenerateResource.Cache
+bin\Wage Calculator.exe
+bin\Wage Calculator.pdb
+bin\Wage Calculator.xml
+obj\Debug\WageCalculator.CalculateForm.resources
+obj\Debug\WageCalculator.Resources.resources
+obj\Debug\Wage Calculator.exe
+obj\Debug\Wage Calculator.xml
+obj\Debug\Wage Calculator.pdb

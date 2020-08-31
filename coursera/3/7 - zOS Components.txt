@@ -1,0 +1,83 @@
+It's time to talk
+about z/OS components. Now, covering z/OS
+is a tricky task. There's really
+no single entry point, and there is no point you can hit that marks the end
+of your education. So just as we're trying to avoid leaving anything
+important out, we're very much trying to avoid covering the same topics twice. But sometimes when
+you hear something stated after you've learned more about the parts around it, or even just phrased
+slightly differently, it can really help
+to connect the dots. So we're going to
+cover some stuff here we've already talked
+about before, but we're going to
+be covering them in a slightly different context which I think will
+help you better understand in the long run. First off, there's RACF. Now, we talked about RACF that's responsible for
+granting access to system resources only to those who are supposed
+to have access. In addition to determining
+who gets in and who doesn't, it also logs information
+about access attempts, and holds information
+about users, groups, resources, and profiles. What's really important
+about it is that it has direct connections
+to a lot of other major subsystems
+like OMVS, CICS, and TSO. Without that tight integration, RACF wouldn't be so powerful,
+fast, and flexible. DFSMS is the suite of products related to data storage
+and management. It helps automate and
+centralize the management of storage based on the policies defined
+for your installation. Those policies can be
+based around performance, security, space, and
+resource availability. The heart of DFSMS is the
+storage management subsystem, that's the SMS in DFSMS, the DF standing
+for data facility. SMS defines the policies
+that automate the management of storage
+and hardware devices. So you can say this type
+of data should always go on the fastest
+storage devices we have, or this type of data needs to get backed up to tape at
+the end of each day. Then when you
+allocate new storage, you define it into one of
+those storage classes. You still need someone acting as a storage administrator
+to make all this happen. It doesn't just magically
+make it happen all by itself, but it provides
+the tools that makes automating this incredibly
+complex environment possible. Next up, communications server, or just comm server. This supports peer-to-peer
+connectivity functions for local and wide area networks, including the widest network
+of them all, the Internet. Whenever z/OS needs to talk
+to something over a network, comm server gets involved. SMP/E, short for system
+modification program extended is the z/OS tool for
+managing the installation of software products
+on a z/OS system, as well as tracking
+modifications to these products. That second part is incredibly
+important because if we've installed something
+and didn't keep track of it, or we think we have something installed that's
+not really there, or it's at the wrong version, that could spell out disaster. All the installed
+software modifications are kept track of in the consolidated software
+inventory, or CSI. You can interface with SMP/E
+through jobs you submit, or through the dialogues in ISPF. But no matter what
+method you use, it's important that
+what's on the system matches what SMP/E
+thinks is on the system. Another facility, SMF. This is the system
+management facility, and it records system and
+job related information in the CICS1.MANXX datasets. This information is
+useful in determining billing information,
+analyzing the configuration, determining when to
+schedule batch jobs, evaluating dataset activity, and auditing a system security. SMF data collection
+is executed by several specific
+routines spread all over z/OS and other products. The data can go into the system or specific job-related records. So you've heard about SMF, now get ready for RMF. RMF, the resource
+management facility, and that's there to ensure the system is running smoothly. It gathers performance data using three types of monitors. There's monitor 1 which
+gathers long-term data, monitor 2 which handles
+snapshot moment in time data, and monitor 3 that
+collects short-term data. This data is used by all sorts of mainframe professionals
+including SysProgs, service administrators,
+and performance analysts. If something is being pushed too hard or it's going underutilized, that'll show up in an RMF report. We might use
+the information we got from RMF to make adjustments in another component called
+the workload manager or WLM. The way WLM works is basically
+by setting up a series of understandings
+between the user and the operating system. You start with classes and a class could be high priority, medium priority,
+normal, best effort. It describes how imperative that work is to our business goals. All the work we want
+to be managed with WLM goes into one
+of those classes. Next, we defined goals
+where we set requirements. Maybe we've got an application
+that needs to complete 95 percent of its transactions in 20 milliseconds or less. We set those goals and we
+let WLM determine where incoming work should go and how it should be handled. Even better, because WLM operates at
+the sysplex level, it can automatically and quickly route work to
+the most appropriate LPAR. By defining our goals and letting WLM manage the incoming work, we get much greater control and consistency of business results
+in our environment. All in a day's work for
+your favorite enterprise server.

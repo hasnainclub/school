@@ -1,0 +1,305 @@
+Assignment 9 Exact Output:
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   1
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+02345242         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03456322         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04032233         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06465120         AMY BEACH                          $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06560023         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                   $707.64
+
+13870322         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14966277         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+33345245         OLIVIER MESSIAEN                   $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03456422         SERGEI RACHMANINOV                 $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04232233         SAMUEL BARBER                      $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06466120         JOHN TAVENER                       $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06550023         HERBERT VON KARAJAN                $23.75           28.25          $34.15          $70.85                   $707.64
+
+13899322         MSTISLAV ROSTROPOVICH              $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+94966277         HENRYK SZERYNG                     $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02348245         TON KOOPMAN                        $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+13456322         NIKOLAUS HARNONCOURT               $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   2
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+34032233         JOSEPH HAYDN                       $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+46465120         MICHAEL HAYDN                      $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+36560023         MICHEL SCHWALBE                    $23.75           28.25          $34.15          $70.85                   $707.64
+
+13870432         FERENC FRICSAY                     $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14963277         BERNARD HAITINK                    $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02344245         GEORG SOLTI                        $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03446327         FRITZ REINER                       $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04033233         JASCHA HEIFETZ                     $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+01465120         DAVID OISTRAKH                     $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+01560023         ANNE SOPHIE MUTTER                 $23.75           28.25          $34.15          $70.85                   $707.64
+
+13370322         LEONARD BERNSTEIN                  $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+24966277         GEORGE FREDRIC HANDEL              $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02233245         FRANZ SCHUBERT                     $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03452322         FREDERICK FENNELL                  $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+02235533         MARTHA ARGERICH                    $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06455660         CLAUDIO ABBADO                     $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   3
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+06564453         BELA BARTOK                        $23.75           28.25          $34.15          $70.85                   $707.64
+
+13873322         EUGEN JOCHUM                       $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14964377         HECTOR BERLIOZ                     $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02222245         WILLIAM SCHUMAN                    $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03454367         ROBERT SCHUMANN                    $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04882233         TILL EULENSPIEGEL                  $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06865120         DON JUAN                           $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+08560023         HANS BRINKER                       $23.75           28.25          $34.15          $70.85                   $707.64
+
+83870322         VICTOR HUGO                        $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+17966277         LORIN MAAZEL                       $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02345242         RICCARDO MUTI                      $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03456322         CARL MARIA VON WEBER               $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04032233         GUSTAV MAHLER                      $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06465120         KARL BOHM                          $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06560023         PIERRE BOULEZ                      $23.75           28.25          $34.15          $70.85                   $707.64
+
+13870322         WILLI BOSKOVSKY                    $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   4
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+14966277         LUDWIG VAN BEETHOVEN               $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+33345245         GAETANO DONIZETTI                  $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03456422         GIACOMO PUCCINI                    $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04232233         GIUSEPPE VERDI                     $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06466120         JON VICKERS                        $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06550023         JOAN SUTHERLAND                    $23.75           28.25          $34.15          $70.85                   $707.64
+
+13899322         LUCIANO PAVAROTTI                  $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+94966277         ARTURO TOSCANINI                   $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02348245         KLAUS TENNSTEDT                    $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+13456322         DON GIOVANNI                       $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+34032233         JOHN PHILIP SOUSA                  $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+46465120         DMITRI SHOSTAKOVICH                $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+36560023         GIULIO CESARE                      $23.75           28.25          $34.15          $70.85                   $707.64
+
+13870432         PIERRE FOURNIER                    $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14963277         MARIA CALLAS                       $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02344245         ARAM KHATCHATURIAN                 $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   5
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+03446327         LEOS JANACEK                       $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04033233         ANTONIN DVORAK                     $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+01465120         JOHN ADAMS                         $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+01560023         JOHN CAGE                          $23.75           28.25          $34.15          $70.85                   $707.64
+
+13370322         JOSEPH JONGEN                      $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+24966277         BOHUSLAV MARTINU                   $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02233245         IGOR STRAVINSKY                    $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03452322         PIERRE MONTEAU                     $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+02235533         DIMITRI MITROPOULOS                $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06455660         SERGE KOUSSEVITZKY                 $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06564453         KAROL SZYMANOWSKI                  $23.75           28.25          $34.15          $70.85                   $707.64
+
+13873322         CARL NIELSEN                       $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14964377         JEAN SIBELIUS                      $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02222245         GEORGE ENESCU                      $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03454367         FRANK MARTIN                       $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04882233         MARCEL DUPRE                       $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   6
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+06865120         MAURICE RAVEL                      $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+08560023         CLAUDE DEBUSSY                     $23.75           28.25          $34.15          $70.85                   $707.64
+
+83870322         MODEST MUSSORGSKY                  $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+17966277         ALEXANDER ZEMLINSKY                $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02345242         GEORGE GERSHWIN                    $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03456322         FERRUCCIO BUSONI                   $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04032233         EUGENE YSAYE                       $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06465120         FRANZ LISZT                        $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06560023         FREDRIC CHOPIN                     $23.75           28.25          $34.15          $70.85                   $707.64
+
+13870322         DANIEL BARENBOIM                   $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14966277         RICHARD WAGNER                     $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+33345245         FRANCIS POULENC                    $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03456422         JOHANN WOLFGANG GOETHE             $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04232233         ARNOLD SCHOENBERG                  $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06466120         ALBAN BERG                         $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06550023         ANTON WEBERN                       $23.75           28.25          $34.15          $70.85                   $707.64
+
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   7
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+13899322         GUSTAV KLIMT                       $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+94966277         DARIUS MILHAUD                     $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02348245         ARTHUR HONEGGER                    $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+13456322         JOSEPH CANTELOUBE                  $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+34032233         AARON COPLAND                      $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+46465120         JOSEPH SZIGETI                     $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+36560023         ELLA FITZGERALD                    $23.75           28.25          $34.15          $70.85                   $707.64
+
+13870432         JOSEPHINE BAKER                    $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14963277         JACQUES IBERT                      $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02344245         EDWARD ELGAR                       $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03446327         BENJAMIN BRITTEN                   $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04033233         WILLIAM WALTON                     $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+01465120         RALPH VAUGHAN WILLIAMS             $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+01560023         PETER WARLOCK                      $23.75           28.25          $34.15          $70.85                   $707.64
+
+13370322         EDGAR VARESE                       $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+24966277         SERGEI PROKOFIEV                   $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+                                                      EMPLOYEE PAYROLL REPORT                                              PAGE:   8
+
+EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS              EMPLOYEE PAY
+ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                    AMOUNT
+--------         -------------------------         -------         -------       ---------         -------           ---------------
+
+02233245         CHARLES IVES                       $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03452322         ERICH WOLFGANG KORNGOLD            $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+02235533         MANUEL DE FALLA                    $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06455660         HANS RICHTER                       $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+06564453         JOSEF STRAUSS                      $23.75           28.25          $34.15          $70.85                   $707.64
+
+13873322         JOHANN STRAUSS I                   $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+14964377         ZUBIN MEHTA                        $20.20           78.67           $0.79         $210.23                 $1,798.57
+
+02222245         EDITH PIAF                         $15.25           80.50          $25.10         $500.22                 $1,702.75
+
+03454367         LILI BOULANGER                     $19.00           80.75           $0.00          $13.44                 $1,547.69
+
+04882233         GUSTAV HOLST                       $10.29           80.00          $31.23         $254.00                 $1,045.97
+
+06865120         JOHANN STRAUSS II                  $22.00           80.00          $15.09         $900.25                 $2,645.16
+
+08560023         PERCY GRAINGER                     $23.75           28.25          $34.15          $70.85                   $707.64
+
+83870322         EDUARD STRAUSS                     $22.95           80.50          $21.25           $0.00                 $1,826.23
+
+17966277         ERNEST CHAUSSON                    $20.20           78.67           $0.79         $210.23                 $1,798.57
+--------         -------------------------                                       ---------         -------           ---------------
+
+  TOTALS:         126 EMPLOYEE(S)                                                $2,296.98      $35,081.82               $202,932.18
+
+AVERAGES:                                                                           $18.23         $278.43                 $1,610.57

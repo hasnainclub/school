@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap8\Sales Data\bin\Sales Data.exe
+D:\sovb4\examples\Chap8\Sales Data\bin\Sales Data.pdb
+D:\sovb4\examples\Chap8\Sales Data\bin\Sales Data.xml
+D:\sovb4\examples\Chap8\Sales Data\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Sales Data\obj\Debug\Sales_Data.Form1.resources
+D:\sovb4\examples\Chap8\Sales Data\obj\Debug\Sales_Data.Resources.resources
+D:\sovb4\examples\Chap8\Sales Data\obj\Debug\Sales Data.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap8\Sales Data\obj\Debug\Sales Data.exe
+D:\sovb4\examples\Chap8\Sales Data\obj\Debug\Sales Data.xml
+D:\sovb4\examples\Chap8\Sales Data\obj\Debug\Sales Data.pdb
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\bin\Sales Data.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\bin\Sales Data.pdb
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\bin\Sales Data.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Debug\Sales_Data.Form1.resources
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Debug\Sales_Data.Resources.resources
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Debug\Sales Data.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Debug\Sales Data.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Debug\Sales Data.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Debug\Sales Data.pdb

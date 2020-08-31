@@ -1,0 +1,91 @@
+Ask a bunch of Mainframers what
+makes their platform so powerful and there's a good chance a good number
+of them will tell you it's sysplex. Simply put, sysplex is a way of making
+multiple systems work together as a team and this can be LPARs on one physical box,
+or it can be spread out across many. Before we get into
+exactly how it does this. We first have to define
+a couple of basic concepts. First, there's STP,
+the Server Time Protocol. Systems need to be in exact agreement
+about time, like exact agreement and that kind of makes sense. If you've got multiple systems writing
+to the same file milliseconds apart and you're trying to figure out which
+one got to that piece of data first. Having your watches synchronized
+is kind of important. Then there's GRS,
+the Global Resource Serialization. This allows for multiple systems to
+access the same resources concurrently, serializing where necessary
+to ensure exclusive access. Without GRS, you have quite a mess. That's a handy rhyme. You should remember that in
+case you're tested on it later. XCF, the Cross Coupling Facility, this manages communication between
+applications in a sysplex. This also lets you be
+logged into one system and issue commands on behalf of
+another system in that sysplex. This right here is what let's
+the sysplex communicate as a whole. Next up, the Coupling Links. These connect LPARs to processors. Without these, accessing memory
+on different physical systems would have to run through one of those
+LPARs and these allow direct memory access communications between sysplex memory and
+the memory of an attached system. Finally, there's the CDS,
+the Coupled Data Set. So imagine you've got a bunch of
+people working on the same job and let's just say they're tallying up
+the numbers of different colored candies they're getting from
+various bags of candies. Bags of candies. Anyway, they're all working
+together to get one final result, which means they're all working
+on the same set of data. Now, in order to coordinate
+this operation so someone doesn't accidentally overwrite
+someone else's work, there needs to be an additional file that keeps track of
+who is currently working on a resource. So everyone knows how to wait their turn. That's the CDS. These parts are super important
+when you're talking about sysplex, because without them you've just got
+another distributed environment. Those memory links, the tightly
+coupled resources, and of course, being an absolute lockstep on time
+is the only way this will all work. We talked a little bit earlier about WLM,
+the Workload Manager. It's the component that makes sure that
+high priority work gets run quickly and that all of our targets are met. WLM makes quite a bit of use of
+sysplex to help balance things out. So if that discussion earlier about
+performance tuning on the Mainframe was interesting to you, sysplex is something
+you want to pay close attention to. Sysplex is at its core, a bunch of z/OS
+operating systems working together. They're able to cooperatively
+use hardware, software and components to achieve a high availability
+workload processing environment. This gets us back to the whole
+physical logical discussion. And when you have systems in a sysplex,
+when you're talking about how they're going to handle the work, you essentially
+have one entity that is running the work. It's the sysplex. Even though you know that you've got
+multiple physical mainframes and within those multiple logical LPARs,
+you'll often hear people just refer to it all collectively as the sysplex or
+just the plex. Let's talk about those
+sysplex configurations. There are three main ways
+you can configure a sysplex. Now, bit of a riddle, if you've got
+a sysplex with only one LPAR in it, is it really a sysplex? The answer is yes, and
+it's called a monoplex. Now, you'll often see a monoplex
+in testing and staging situations. But beyond that, it doesn't really
+buy you any additional performance or functionality. Then there's this concept
+of a base sysplex. In this configuration, every system has
+a connection to every other system, and they all know about each other, and
+they all agreed to do work together. It's almost like they
+started a little band. The most common form of the sysplex
+though is the parallel sysplex. In this configuration, instead of needing every system
+connected to every other system. We have this concept of
+a Coupling Facility. This is a special type of
+LPAR that you bring up, and typically you have backups of
+it on other Mainframes too. In a parallel sysplex, the Coupling
+Facility handles all the complexities and overhead of those systems
+working together. So you can have up to 32 z/OS images and
+up to 32 physical Mainframes. That would mean one LPAR on each
+Mainframe hooked into a 32 way sysplex. Now, most systems aren't
+scaled out that way. But if you need to, you could do it. Now, a word about availability. You might hear people say that a Mainframe
+environment hasn't gone down in decades. But how is that possible unless they're
+running on 20 year old hardware and software. Well, one of the neat things about being
+in a sysplex is you can do what's called a rolling IPL. An IPL is just booting up
+an operating system, and a parallel sysplex doesn't require all
+the systems in it to be up in order to function,
+just enough to keep it running. So if I've got 16 LPARS in my sysplex,
+we're just saying, I can bring down four of them,
+update the operating systems on them, and then bring them back up and
+put them into the plex. LPAR has got upgraded and
+the Plex stayed up. I can even do this with physical
+systems as long as the, some of the members are running
+elsewhere in other Mainframe. So let's go back to those 16 LPARs,
+say, they're spread out across for Mainframes, just as an example. And we want to upgrade one of those
+mainframes to a shiny brand new one. We bring down the four LPARs on that
+system that we want to replace, physically swap it out with a new one. Cable it up, configure it the way
+we want to, power it back on. IPL will boot up those four
+systems on the new hardware, vary them back into the plex and
+we're good to go. The plex never went down. That is some pretty amazing stuff and
+you can see why so many people would tell you
+it's their favorite feature. Although it's hard to pick just one,
+isn't it?

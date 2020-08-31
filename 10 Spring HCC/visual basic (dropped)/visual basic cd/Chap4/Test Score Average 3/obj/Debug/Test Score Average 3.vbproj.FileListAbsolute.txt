@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap4\Test Score Average 3\obj\Debug\Test Score Average 3.exe
+D:\sovb4\examples\Chap4\Test Score Average 3\obj\Debug\Test Score Average 3.xml
+D:\sovb4\examples\Chap4\Test Score Average 3\obj\Debug\Test Score Average 3.pdb
+D:\sovb4\examples\Chap4\Test Score Average 3\bin\Test Score Average 3.exe
+D:\sovb4\examples\Chap4\Test Score Average 3\bin\Test Score Average 3.pdb
+D:\sovb4\examples\Chap4\Test Score Average 3\bin\Test Score Average 3.xml
+D:\sovb4\examples\Chap4\Test Score Average 3\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap4\Test Score Average 3\obj\Debug\Test_Score_Average_3.Form1.resources
+D:\sovb4\examples\Chap4\Test Score Average 3\obj\Debug\Test_Score_Average_3.Resources.resources
+D:\sovb4\examples\Chap4\Test Score Average 3\obj\Debug\Test Score Average 3.vbproj.GenerateResource.Cache

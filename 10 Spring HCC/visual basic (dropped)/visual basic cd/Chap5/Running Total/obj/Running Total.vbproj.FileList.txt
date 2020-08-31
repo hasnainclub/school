@@ -1,0 +1,10 @@
+obj\Debug\Running Total.exe
+obj\Debug\Running Total.pdb
+bin\Running Total.exe
+bin\Running Total.pdb
+bin\Running Total.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Running_Total.Form1.resources
+obj\Debug\Running_Total.Resources.resources
+obj\Debug\Running Total.vbproj.GenerateResource.Cache
+obj\Debug\Running Total.xml

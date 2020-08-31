@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Scrollable Control Demo", "Scrollable Control Demo.vbproj", "{ACDDADB9-72B2-4BD0-B2A3-A0DFAB31C856}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACDDADB9-72B2-4BD0-B2A3-A0DFAB31C856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDDADB9-72B2-4BD0-B2A3-A0DFAB31C856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDDADB9-72B2-4BD0-B2A3-A0DFAB31C856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDDADB9-72B2-4BD0-B2A3-A0DFAB31C856}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

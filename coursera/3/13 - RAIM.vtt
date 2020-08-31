@@ -1,0 +1,250 @@
+WEBVTT
+
+1
+00:00:02.690 --> 00:00:05.460
+Hi everyone, my name
+is Tina Tarquinio ,
+
+2
+00:00:05.460 --> 00:00:07.950
+and I am a director
+on the IBM Z Team.
+
+3
+00:00:07.950 --> 00:00:09.510
+Today, I want to talk
+to you about one of
+
+4
+00:00:09.510 --> 00:00:12.185
+my favorite parts of
+the IBM Z system,
+
+5
+00:00:12.185 --> 00:00:13.650
+and that's it's redundancy and
+
+6
+00:00:13.650 --> 00:00:15.645
+availability characteristics.
+
+7
+00:00:15.645 --> 00:00:17.850
+In today's world, workloads
+
+8
+00:00:17.850 --> 00:00:19.380
+are getting stronger
+and stronger,
+
+9
+00:00:19.380 --> 00:00:21.000
+and we require more
+and more of them,
+
+10
+00:00:21.000 --> 00:00:26.925
+and we're seeing bigger and
+more dense memory available.
+
+11
+00:00:26.925 --> 00:00:28.680
+So we introduced over
+
+12
+00:00:28.680 --> 00:00:31.155
+10 years ago something
+called RAIM memory,
+
+13
+00:00:31.155 --> 00:00:33.810
+Redundant Array of
+Independent Memory.
+
+14
+00:00:33.810 --> 00:00:36.240
+This is one of the key
+characteristics of what makes
+
+15
+00:00:36.240 --> 00:00:39.225
+a system so available
+and so reliable.
+
+16
+00:00:39.225 --> 00:00:42.135
+So as you know, I
+talked about workloads,
+
+17
+00:00:42.135 --> 00:00:43.830
+things like in transaction
+
+18
+00:00:43.830 --> 00:00:46.000
+analytics are becoming
+more and more prevalent,
+
+19
+00:00:46.000 --> 00:00:47.930
+and we're increasing
+the size of memory.
+
+20
+00:00:47.930 --> 00:00:49.430
+So when IBM z14,
+
+21
+00:00:49.430 --> 00:00:52.025
+you can have up to 32
+terabytes of memory.
+
+22
+00:00:52.025 --> 00:00:53.985
+So what is RAIM memory?
+
+23
+00:00:53.985 --> 00:00:57.345
+As I said, we introduced
+it with IBM z196,
+
+24
+00:00:57.345 --> 00:01:01.115
+and it is the key characteristics
+of our availability.
+
+25
+00:01:01.115 --> 00:01:03.455
+So if you can imagine
+a processor unit,
+
+26
+00:01:03.455 --> 00:01:06.200
+every processor unit
+has one memory unit,
+
+27
+00:01:06.200 --> 00:01:08.545
+and within the memory
+unit is five DIMMs,
+
+28
+00:01:08.545 --> 00:01:12.800
+and up to one DIMM is set
+aside for redundant memory.
+
+29
+00:01:12.800 --> 00:01:14.330
+That means you can
+lose a channel,
+
+30
+00:01:14.330 --> 00:01:15.950
+and you can lose an entire DIMM,
+
+31
+00:01:15.950 --> 00:01:18.170
+and still have
+complete availability
+
+32
+00:01:18.170 --> 00:01:19.550
+of your memory subsystem.
+
+33
+00:01:19.550 --> 00:01:23.720
+Like I said, this was introduced
+with IBM z196 in 2010,
+
+34
+00:01:23.720 --> 00:01:25.325
+and every server that's come out
+
+35
+00:01:25.325 --> 00:01:27.875
+after will include
+this RAIM memory.
+
+36
+00:01:27.875 --> 00:01:29.635
+Now what happens if
+you don't have this?
+
+37
+00:01:29.635 --> 00:01:30.750
+That means in the middle of
+
+38
+00:01:30.750 --> 00:01:32.955
+a transaction if you
+have a memory error,
+
+39
+00:01:32.955 --> 00:01:35.545
+data is lost, that's not good.
+
+40
+00:01:35.545 --> 00:01:38.330
+Especially when we have qualities
+
+41
+00:01:38.330 --> 00:01:40.820
+of service and service
+agreements with our clients,
+
+42
+00:01:40.820 --> 00:01:44.000
+that they expect
+100 percent availability.
+
+43
+00:01:44.000 --> 00:01:46.805
+In fact, that is what the Z
+and IBM Z stands for,
+
+44
+00:01:46.805 --> 00:01:49.100
+zero downtime, that
+includes the server,
+
+45
+00:01:49.100 --> 00:01:51.120
+and all of the
+subsystems within it.
+
+46
+00:01:51.120 --> 00:01:52.550
+This is just one aspect of
+
+47
+00:01:52.550 --> 00:01:54.170
+how we've built availability and
+
+48
+00:01:54.170 --> 00:01:57.320
+reliability into every subsystem
+of the IBM mainframe,
+
+49
+00:01:57.320 --> 00:01:59.480
+that includes the memory
+like I talked about,
+
+50
+00:01:59.480 --> 00:02:02.450
+but also the I/O and
+the processing units.
+
+51
+00:02:02.450 --> 00:02:04.040
+So when I brag about
+
+52
+00:02:04.040 --> 00:02:06.280
+the mainframe and
+what a great server it is,
+
+53
+00:02:06.280 --> 00:02:09.720
+this is the main reason I like
+to start with our clients.

@@ -1,0 +1,15 @@
+obj\Debug\Division Sales.exe
+obj\Debug\Division Sales.pdb
+bin\Division Sales.exe
+bin\Division Sales.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Division_Sales.Form1.resources
+obj\Release\Division_Sales.Resources.resources
+obj\Release\Division Sales.vbproj.GenerateResource.Cache
+obj\Release\Division Sales.exe
+obj\Release\Division Sales.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Division_Sales.Form1.resources
+obj\Debug\Division_Sales.Resources.resources
+obj\Debug\Division Sales.vbproj.GenerateResource.Cache
+obj\Debug\Division Sales.xml

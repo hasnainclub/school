@@ -1,0 +1,346 @@
+WEBVTT
+
+1
+00:00:02.630 --> 00:00:05.790
+All of the hardware,
+infrastructure,
+
+2
+00:00:05.790 --> 00:00:08.550
+and everything beyond and
+in-between is there to
+
+3
+00:00:08.550 --> 00:00:12.205
+support the programs that
+people run on their mainframes.
+
+4
+00:00:12.205 --> 00:00:14.460
+Most companies have
+applications they have
+
+5
+00:00:14.460 --> 00:00:17.325
+developed to meet their
+own unique business needs.
+
+6
+00:00:17.325 --> 00:00:19.470
+The mainframes supports a number
+
+7
+00:00:19.470 --> 00:00:21.360
+of languages including
+those you may
+
+8
+00:00:21.360 --> 00:00:23.400
+think of as mainframe
+specific like
+
+9
+00:00:23.400 --> 00:00:25.650
+Cobol, Fortran, and PL/1,
+
+10
+00:00:25.650 --> 00:00:28.440
+to more industry-standard
+languages like Assembler,
+
+11
+00:00:28.440 --> 00:00:30.360
+C, C++, and Java,
+
+12
+00:00:30.360 --> 00:00:31.680
+and right on up to some of
+
+13
+00:00:31.680 --> 00:00:33.270
+the newer hotter languages like
+
+14
+00:00:33.270 --> 00:00:35.640
+Python, Swift, and NodeJS.
+
+15
+00:00:35.640 --> 00:00:37.280
+Each programming language has
+
+16
+00:00:37.280 --> 00:00:39.455
+its own set of
+strengths, and ideally,
+
+17
+00:00:39.455 --> 00:00:41.120
+you don't just choose
+a programming language
+
+18
+00:00:41.120 --> 00:00:42.290
+because it's the one
+
+19
+00:00:42.290 --> 00:00:45.410
+you know or it's the one
+that platform supports.
+
+20
+00:00:45.410 --> 00:00:48.230
+For that reason, it's
+important that z/OS be able to
+
+21
+00:00:48.230 --> 00:00:51.665
+support whatever someone
+wants to use for their work.
+
+22
+00:00:51.665 --> 00:00:54.650
+Let's do a quick quiz
+before moving on.
+
+23
+00:00:54.650 --> 00:00:56.915
+Select all of
+the programming languages
+
+24
+00:00:56.915 --> 00:00:59.675
+that you think run
+on the mainframe.
+
+25
+00:00:59.675 --> 00:01:02.000
+The correct answer is all of
+
+26
+00:01:02.000 --> 00:01:04.820
+the languages listed
+except Chrome ML,
+
+27
+00:01:04.820 --> 00:01:08.195
+z/OS does not yet provide
+support for Chrome ML
+
+28
+00:01:08.195 --> 00:01:10.700
+probably because it's
+something we just made
+
+29
+00:01:10.700 --> 00:01:13.260
+up like five minutes before
+recording this video.
+
+30
+00:01:13.260 --> 00:01:15.500
+But pretty much anything
+else that you'd
+
+31
+00:01:15.500 --> 00:01:18.305
+expect to have support
+for, it's in there.
+
+32
+00:01:18.305 --> 00:01:20.390
+No matter what language you use,
+
+33
+00:01:20.390 --> 00:01:21.770
+it needs to get turned into
+
+34
+00:01:21.770 --> 00:01:24.530
+machine language so
+the computer can understand it.
+
+35
+00:01:24.530 --> 00:01:27.850
+This is done either through
+compiling or interpreting.
+
+36
+00:01:27.850 --> 00:01:29.260
+In a compiled language,
+
+37
+00:01:29.260 --> 00:01:31.250
+which we've talked about
+a little bit before,
+
+38
+00:01:31.250 --> 00:01:34.820
+a compiler is run on the source
+code and the output is
+
+39
+00:01:34.820 --> 00:01:36.980
+executable code that can run
+
+40
+00:01:36.980 --> 00:01:39.935
+pretty much by itself
+on the target platform.
+
+41
+00:01:39.935 --> 00:01:42.920
+An interpreted language
+uses an interpreter to
+
+42
+00:01:42.920 --> 00:01:44.420
+figure out what needs to be done
+
+43
+00:01:44.420 --> 00:01:46.354
+for the program at runtime,
+
+44
+00:01:46.354 --> 00:01:50.035
+and interfaces with the
+operating system on its behalf.
+
+45
+00:01:50.035 --> 00:01:54.110
+On z/OS, there is this concept
+of a language environment,
+
+46
+00:01:54.110 --> 00:01:55.580
+and the reason we have it
+
+47
+00:01:55.580 --> 00:01:57.620
+is to provide
+a common environment
+
+48
+00:01:57.620 --> 00:02:01.495
+for all participating
+high-level languages or HLLs.
+
+49
+00:02:01.495 --> 00:02:03.615
+So before language environment,
+
+50
+00:02:03.615 --> 00:02:05.860
+which everyone just calls LE,
+
+51
+00:02:05.860 --> 00:02:08.330
+every language has its own area
+
+52
+00:02:08.330 --> 00:02:11.300
+and its own slightly unique way
+of doing things.
+
+53
+00:02:11.300 --> 00:02:13.910
+Not only was this
+tricky to keep track of
+
+54
+00:02:13.910 --> 00:02:16.684
+it also meant that if you were
+supporting four languages,
+
+55
+00:02:16.684 --> 00:02:19.040
+you are supporting
+four different environments,
+
+56
+00:02:19.040 --> 00:02:20.780
+and that's just not fun.
+
+57
+00:02:20.780 --> 00:02:24.860
+So LE lets us combine all
+of that into one area,
+
+58
+00:02:24.860 --> 00:02:27.710
+which has a uniform way
+of managing storage,
+
+59
+00:02:27.710 --> 00:02:29.015
+reading and writing data,
+
+60
+00:02:29.015 --> 00:02:31.640
+and performing
+mathematical calculations.
+
+61
+00:02:31.640 --> 00:02:33.980
+As a result, it
+reduces the need for
+
+62
+00:02:33.980 --> 00:02:36.295
+compilers to generate
+unique code,
+
+63
+00:02:36.295 --> 00:02:38.750
+it shields the languages
+from having to have
+
+64
+00:02:38.750 --> 00:02:41.170
+deep knowledge of the
+operating system and hardware,
+
+65
+00:02:41.170 --> 00:02:42.830
+and it cuts down on the need to
+
+66
+00:02:42.830 --> 00:02:46.190
+recompile and relink
+code for fixes.
+
+67
+00:02:46.190 --> 00:02:48.290
+Now, not all languages
+
+68
+00:02:48.290 --> 00:02:50.725
+on z/OS use the
+language environment,
+
+69
+00:02:50.725 --> 00:02:52.440
+and not all languages that use
+
+70
+00:02:52.440 --> 00:02:55.760
+the language environment are
+said to be LE compliant.
+
+71
+00:02:55.760 --> 00:02:58.850
+It's just the way things
+have evolved over time.
+
+72
+00:02:58.850 --> 00:03:01.895
+But when you do run something
+that deals with LE,
+
+73
+00:03:01.895 --> 00:03:04.355
+now you know a little
+more about the why,
+
+74
+00:03:04.355 --> 00:03:06.940
+the what, and the how.

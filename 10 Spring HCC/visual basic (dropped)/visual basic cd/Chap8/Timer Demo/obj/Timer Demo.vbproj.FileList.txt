@@ -1,0 +1,10 @@
+obj\Debug\Timer Demo.exe
+obj\Debug\Timer Demo.pdb
+bin\Timer Demo.exe
+bin\Timer Demo.pdb
+bin\Timer Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Timer_Demo.Form1.resources
+obj\Debug\Timer_Demo.Resources.resources
+obj\Debug\Timer Demo.vbproj.GenerateResource.Cache
+obj\Debug\Timer Demo.xml

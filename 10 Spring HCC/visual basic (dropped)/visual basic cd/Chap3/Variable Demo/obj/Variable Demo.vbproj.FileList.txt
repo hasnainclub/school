@@ -1,0 +1,15 @@
+obj\Debug\Variable Demo.exe
+obj\Debug\Variable Demo.pdb
+bin\Variable Demo.exe
+bin\Variable Demo.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Variable_Demo.Form1.resources
+obj\Release\Variable_Demo.Resources.resources
+obj\Release\Variable Demo.vbproj.GenerateResource.Cache
+obj\Release\Variable Demo.exe
+obj\Release\Variable Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Variable_Demo.Form1.resources
+obj\Debug\Variable_Demo.Resources.resources
+obj\Debug\Variable Demo.vbproj.GenerateResource.Cache
+obj\Debug\Variable Demo.xml

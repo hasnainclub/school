@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Wage Calculator", "Wage Calculator.vbproj", "{EB8132F8-AF80-4AA0-A604-865372F5AE40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB8132F8-AF80-4AA0-A604-865372F5AE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8132F8-AF80-4AA0-A604-865372F5AE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8132F8-AF80-4AA0-A604-865372F5AE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8132F8-AF80-4AA0-A604-865372F5AE40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

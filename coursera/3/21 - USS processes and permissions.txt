@@ -1,0 +1,117 @@
+Unix has its own unique
+way of handling processes, and understanding it will help in creating scripts and
+debugging problems. Starting from the top and
+working our way down, a process is an instance
+of a running program. A process can kick off
+other processes which can in turn kick off other
+additional processes. If you were to chart
+all of this out, it would look like
+a family tree and those processes are called parent processes and
+child processes. So a parent process
+creates child processes. That organization of
+parent processes and child processes is
+called a process tree. When a parent process
+spawns a child process, that parent process
+can share some, none, or all of its resources
+with the child process. The parent process
+can run alongside the child process or it can wait until the child process is done. In Unix, the command to see the processes that
+are running is PS, short for Process Status. The BPXBATCH utility gives
+you a way of running Unix scripts and applications
+as z/OS batch jobs. There's two ways
+of invoking this, as JCL and as a TSO command. You can see here, that looks
+like Unix stuff to me. We've got a shell script here and DD statements for the output
+and error streams over here. You can also run BPXBATCH as a TSO command.
+Here's one example. The SH tells BPXBATCH to start a shell and run shell
+commands or scripts. So if you want to run
+a script and then redirect the output to do something you'd normally
+type into the shell, that's where you do that. You can also use BPXBATCH
+PGM which is for a program. It will kick off a
+program in what's called a spawn or a fork and exec. It takes the parameters you
+specify which are separated by spaces and sends
+them into the program. So not only can you use
+BPXBATCH to do units from z/OS, there's a few
+different ways you can do it depending on your needs. You've seen in the JCL
+example that there are three types of files that
+are running program uses. There's standard input, standard output,
+and standard error. Input is any source of
+input which could be from the keyboard or it could be the output from
+another program. Standard output is where
+a program typically writes out its progress and
+informational messages, and standard error is
+where you'd look for details on why a program
+isn't running quite right. Hopefully, you don't have to spend too much time
+looking in there. One thing you have to
+keep track of in Unix is users, groups,
+and permissions. Each user has a user ID or UID on a z/OS system with RACF. Part of your RACF
+profile contains the information about
+your USS user ID, what directory all
+of your stuff is in, what type of shell you like
+to use, all that stuff. The user who is logged in can also issue the
+Switch User command, su pronounced sue to
+become another user. They, of course, need
+permission to do that and they might have to
+enter the password to switch. But that really helps when
+you set something up for another user and
+you want to try it out as them before you tell them, ''It's all good, ready to go.'' In addition to user IDs, there are also group IDs. The idea there being
+that you can have a bunch of users in a group that have access to some
+of the same files but not necessarily
+all of the same files. So about that whole access thing, when you look at a thing, and I'm being
+purposely vague here, but when you look
+at a thing in Unix, you get back something
+that looks like this. The first character says
+what that thing is. It could be a file, in which case you'd see a dash. It could be a directory in
+which case you'll see a D, or a symbolic link, a type of shortcut or
+pointer which shows up as an L. Then you get this series
+of letters and dashes. The letters are r, w, and x which stand for
+read, write, and execute. It determines whether
+the file can be read, write, or executed
+run as a program. There's three sets
+of these letters. The first set of saying what the owner of the
+file can do with it. It only makes sense
+that a user would have read and write access
+to their own file though they probably
+wouldn't have execute access unless it's a program or a
+script they want to run. The next section
+is for the group. A file is also
+associated with a group. I might have a file that my coworkers need to read but I don't want
+them to write to it. So I can set that up with
+just read access for them. The last group is for
+other, for everybody else. If I want other people who
+aren't me or people who aren't specifically in that
+group to have some access, I set those permissions
+here. Good job guys. Take five. These are the
+permissions for files. They look the same for directories but with a
+slightly different meaning. Read means that you
+can see the contents, write means you can
+add or delete things, and execute means you can
+go into the directory. Sometimes it makes sense to represent permissions
+numerically. You'll see this a lot
+of times when you're setting permissions
+from the command line. Each permission has a value. Read is four, write is
+two, execute is one. You figure out what
+permissions you want. If any, add them
+together and that's it. Here's what all of the
+combinations look like. So if I have a file where I need full access including read, write, and execute
+and no one else gets anything, it'll be 700. Another example, if I have a
+file that I can read, write, and execute the specified
+group members can read and execute but not write and
+everybody else can only read. That would be, you know what, why don't you tell me? Pop quiz time. The answer is 754. Seven because that's everything plus it's 4 plus 2 plus 1. Five for group
+because that's read 4 plus execute 1 equals five. For others, they get four because they can read
+it but nothing else. Here's a listing of some
+other common user group, or their permissions.
+These will come in handy. So maybe take a
+screenshot or something. If you have a file and you want to change the
+permissions on it, use the chmod command, chmod. You say chmod, the numerical permission followed
+by the file name. You can also do it in
+one section at a time by typing chmod g plus w, for example to give right
+access to the group. But be careful what
+permissions you give out. When you give
+permissions to others, so someone else not in the group can have
+access to a file, you're giving those
+permissions to literally everybody
+else on the system. If you're working with people you need to share access with, consider using a group. That's literally what
+they're there for. Like I said, Unix
+is its own beast. Like z/OS, there's no single spot that marks when you've learned
+all there is to learn. But we have hit a
+pretty good spot right here where at least you're prepared to get started with Unix system services on z/OS. So that brings this
+lesson to a close.

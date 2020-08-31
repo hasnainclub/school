@@ -1,0 +1,20 @@
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\bin\Debug\Exception Handling.exe
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\bin\Debug\Exception Handling.pdb
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\bin\Debug\Exception Handling.xml
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\obj\Debug\Exception_Handling.Form1.resources
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\obj\Debug\Exception_Handling.Resources.resources
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\obj\Debug\Exception Handling.vbproj.GenerateResource.Cache
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\obj\Debug\Exception Handling.exe
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\obj\Debug\Exception Handling.xml
+C:\Users\Kip\AppData\Local\Temporary Projects\Exception Handling\obj\Debug\Exception Handling.pdb
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Debug\Exception Handling.exe
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Debug\Exception Handling.xml
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Debug\Exception Handling.pdb
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\bin\Debug\Exception Handling.exe
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\bin\Debug\Exception Handling.pdb
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\bin\Debug\Exception Handling.xml
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Debug\Exception_Handling.Form1.resources
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Debug\Exception_Handling.Resources.resources
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Debug\Exception Handling.vbproj.GenerateResource.Cache

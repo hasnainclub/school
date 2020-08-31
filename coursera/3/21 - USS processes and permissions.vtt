@@ -1,0 +1,821 @@
+WEBVTT
+
+1
+00:00:02.660 --> 00:00:06.495
+Unix has its own unique
+way of handling processes,
+
+2
+00:00:06.495 --> 00:00:08.250
+and understanding it will help in
+
+3
+00:00:08.250 --> 00:00:10.860
+creating scripts and
+debugging problems.
+
+4
+00:00:10.860 --> 00:00:13.170
+Starting from the top and
+working our way down,
+
+5
+00:00:13.170 --> 00:00:16.200
+a process is an instance
+of a running program.
+
+6
+00:00:16.200 --> 00:00:18.960
+A process can kick off
+other processes which
+
+7
+00:00:18.960 --> 00:00:21.780
+can in turn kick off other
+additional processes.
+
+8
+00:00:21.780 --> 00:00:23.520
+If you were to chart
+all of this out,
+
+9
+00:00:23.520 --> 00:00:25.770
+it would look like
+a family tree and
+
+10
+00:00:25.770 --> 00:00:27.360
+those processes are called
+
+11
+00:00:27.360 --> 00:00:29.910
+parent processes and
+child processes.
+
+12
+00:00:29.910 --> 00:00:33.570
+So a parent process
+creates child processes.
+
+13
+00:00:33.570 --> 00:00:35.910
+That organization of
+parent processes and
+
+14
+00:00:35.910 --> 00:00:38.740
+child processes is
+called a process tree.
+
+15
+00:00:38.740 --> 00:00:41.954
+When a parent process
+spawns a child process,
+
+16
+00:00:41.954 --> 00:00:44.610
+that parent process
+can share some, none,
+
+17
+00:00:44.610 --> 00:00:47.480
+or all of its resources
+with the child process.
+
+18
+00:00:47.480 --> 00:00:49.759
+The parent process
+can run alongside
+
+19
+00:00:49.759 --> 00:00:51.650
+the child process or it can wait
+
+20
+00:00:51.650 --> 00:00:53.795
+until the child process is done.
+
+21
+00:00:53.795 --> 00:00:55.910
+In Unix, the command to see
+
+22
+00:00:55.910 --> 00:00:58.700
+the processes that
+are running is PS,
+
+23
+00:00:58.700 --> 00:01:01.085
+short for Process Status.
+
+24
+00:01:01.085 --> 00:01:04.430
+The BPXBATCH utility gives
+you a way of running
+
+25
+00:01:04.430 --> 00:01:08.660
+Unix scripts and applications
+as z/OS batch jobs.
+
+26
+00:01:08.660 --> 00:01:10.575
+There's two ways
+of invoking this,
+
+27
+00:01:10.575 --> 00:01:14.070
+as JCL and as a TSO command.
+
+28
+00:01:14.070 --> 00:01:16.925
+You can see here, that looks
+like Unix stuff to me.
+
+29
+00:01:16.925 --> 00:01:18.740
+We've got a shell script here and
+
+30
+00:01:18.740 --> 00:01:21.770
+DD statements for the output
+and error streams over here.
+
+31
+00:01:21.770 --> 00:01:23.720
+You can also run BPXBATCH as
+
+32
+00:01:23.720 --> 00:01:26.270
+a TSO command.
+Here's one example.
+
+33
+00:01:26.270 --> 00:01:28.760
+The SH tells BPXBATCH to start
+
+34
+00:01:28.760 --> 00:01:31.430
+a shell and run shell
+commands or scripts.
+
+35
+00:01:31.430 --> 00:01:33.770
+So if you want to run
+a script and then
+
+36
+00:01:33.770 --> 00:01:35.090
+redirect the output to do
+
+37
+00:01:35.090 --> 00:01:36.920
+something you'd normally
+type into the shell,
+
+38
+00:01:36.920 --> 00:01:38.540
+that's where you do that.
+
+39
+00:01:38.540 --> 00:01:43.445
+You can also use BPXBATCH
+PGM which is for a program.
+
+40
+00:01:43.445 --> 00:01:45.710
+It will kick off a
+program in what's called
+
+41
+00:01:45.710 --> 00:01:48.065
+a spawn or a fork and exec.
+
+42
+00:01:48.065 --> 00:01:50.900
+It takes the parameters you
+specify which are separated
+
+43
+00:01:50.900 --> 00:01:54.080
+by spaces and sends
+them into the program.
+
+44
+00:01:54.080 --> 00:01:58.370
+So not only can you use
+BPXBATCH to do units from z/OS,
+
+45
+00:01:58.370 --> 00:01:59.840
+there's a few
+different ways you can
+
+46
+00:01:59.840 --> 00:02:01.670
+do it depending on your needs.
+
+47
+00:02:01.670 --> 00:02:04.190
+You've seen in the JCL
+example that there are
+
+48
+00:02:04.190 --> 00:02:07.100
+three types of files that
+are running program uses.
+
+49
+00:02:07.100 --> 00:02:09.050
+There's standard input,
+
+50
+00:02:09.050 --> 00:02:11.975
+standard output,
+and standard error.
+
+51
+00:02:11.975 --> 00:02:14.720
+Input is any source of
+input which could be
+
+52
+00:02:14.720 --> 00:02:16.010
+from the keyboard or it could
+
+53
+00:02:16.010 --> 00:02:17.665
+be the output from
+another program.
+
+54
+00:02:17.665 --> 00:02:20.300
+Standard output is where
+a program typically
+
+55
+00:02:20.300 --> 00:02:23.080
+writes out its progress and
+informational messages,
+
+56
+00:02:23.080 --> 00:02:25.340
+and standard error is
+where you'd look for
+
+57
+00:02:25.340 --> 00:02:28.130
+details on why a program
+isn't running quite right.
+
+58
+00:02:28.130 --> 00:02:29.330
+Hopefully, you don't have to
+
+59
+00:02:29.330 --> 00:02:31.520
+spend too much time
+looking in there.
+
+60
+00:02:31.520 --> 00:02:33.860
+One thing you have to
+keep track of in Unix
+
+61
+00:02:33.860 --> 00:02:36.280
+is users, groups,
+and permissions.
+
+62
+00:02:36.280 --> 00:02:38.690
+Each user has a user ID or
+
+63
+00:02:38.690 --> 00:02:42.185
+UID on a z/OS system with RACF.
+
+64
+00:02:42.185 --> 00:02:44.330
+Part of your RACF
+profile contains
+
+65
+00:02:44.330 --> 00:02:47.240
+the information about
+your USS user ID,
+
+66
+00:02:47.240 --> 00:02:49.450
+what directory all
+of your stuff is in,
+
+67
+00:02:49.450 --> 00:02:52.365
+what type of shell you like
+to use, all that stuff.
+
+68
+00:02:52.365 --> 00:02:54.170
+The user who is logged in can
+
+69
+00:02:54.170 --> 00:02:56.765
+also issue the
+Switch User command,
+
+70
+00:02:56.765 --> 00:03:00.505
+su pronounced sue to
+become another user.
+
+71
+00:03:00.505 --> 00:03:02.280
+They, of course, need
+permission to do
+
+72
+00:03:02.280 --> 00:03:04.550
+that and they might have to
+enter the password to switch.
+
+73
+00:03:04.550 --> 00:03:06.560
+But that really helps when
+you set something up for
+
+74
+00:03:06.560 --> 00:03:08.060
+another user and
+you want to try it
+
+75
+00:03:08.060 --> 00:03:09.840
+out as them before you tell them,
+
+76
+00:03:09.840 --> 00:03:11.525
+''It's all good, ready to go.''
+
+77
+00:03:11.525 --> 00:03:13.305
+In addition to user IDs,
+
+78
+00:03:13.305 --> 00:03:15.435
+there are also group IDs.
+
+79
+00:03:15.435 --> 00:03:17.270
+The idea there being
+that you can have
+
+80
+00:03:17.270 --> 00:03:19.040
+a bunch of users in a group that
+
+81
+00:03:19.040 --> 00:03:21.350
+have access to some
+of the same files
+
+82
+00:03:21.350 --> 00:03:24.380
+but not necessarily
+all of the same files.
+
+83
+00:03:24.380 --> 00:03:27.105
+So about that whole access thing,
+
+84
+00:03:27.105 --> 00:03:28.785
+when you look at a thing,
+
+85
+00:03:28.785 --> 00:03:30.795
+and I'm being
+purposely vague here,
+
+86
+00:03:30.795 --> 00:03:32.940
+but when you look
+at a thing in Unix,
+
+87
+00:03:32.940 --> 00:03:35.495
+you get back something
+that looks like this.
+
+88
+00:03:35.495 --> 00:03:38.450
+The first character says
+what that thing is.
+
+89
+00:03:38.450 --> 00:03:39.635
+It could be a file,
+
+90
+00:03:39.635 --> 00:03:41.285
+in which case you'd see a dash.
+
+91
+00:03:41.285 --> 00:03:44.375
+It could be a directory in
+which case you'll see a D,
+
+92
+00:03:44.375 --> 00:03:46.115
+or a symbolic link,
+
+93
+00:03:46.115 --> 00:03:48.755
+a type of shortcut or
+pointer which shows up as an
+
+94
+00:03:48.755 --> 00:03:52.400
+L. Then you get this series
+of letters and dashes.
+
+95
+00:03:52.400 --> 00:03:54.170
+The letters are r, w,
+
+96
+00:03:54.170 --> 00:03:57.575
+and x which stand for
+read, write, and execute.
+
+97
+00:03:57.575 --> 00:03:59.870
+It determines whether
+the file can be read,
+
+98
+00:03:59.870 --> 00:04:02.455
+write, or executed
+run as a program.
+
+99
+00:04:02.455 --> 00:04:04.595
+There's three sets
+of these letters.
+
+100
+00:04:04.595 --> 00:04:06.110
+The first set of saying what
+
+101
+00:04:06.110 --> 00:04:08.160
+the owner of the
+file can do with it.
+
+102
+00:04:08.160 --> 00:04:10.130
+It only makes sense
+that a user would have
+
+103
+00:04:10.130 --> 00:04:12.410
+read and write access
+to their own file
+
+104
+00:04:12.410 --> 00:04:14.585
+though they probably
+wouldn't have execute access
+
+105
+00:04:14.585 --> 00:04:17.405
+unless it's a program or a
+script they want to run.
+
+106
+00:04:17.405 --> 00:04:19.790
+The next section
+is for the group.
+
+107
+00:04:19.790 --> 00:04:21.920
+A file is also
+associated with a group.
+
+108
+00:04:21.920 --> 00:04:23.600
+I might have a file that
+
+109
+00:04:23.600 --> 00:04:24.620
+my coworkers need to
+
+110
+00:04:24.620 --> 00:04:26.810
+read but I don't want
+them to write to it.
+
+111
+00:04:26.810 --> 00:04:29.825
+So I can set that up with
+just read access for them.
+
+112
+00:04:29.825 --> 00:04:33.035
+The last group is for
+other, for everybody else.
+
+113
+00:04:33.035 --> 00:04:35.720
+If I want other people who
+aren't me or people who
+
+114
+00:04:35.720 --> 00:04:38.725
+aren't specifically in that
+group to have some access,
+
+115
+00:04:38.725 --> 00:04:42.825
+I set those permissions
+here. Good job guys.
+
+116
+00:04:42.825 --> 00:04:48.755
+Take five. These are the
+permissions for files.
+
+117
+00:04:48.755 --> 00:04:49.910
+They look the same for
+
+118
+00:04:49.910 --> 00:04:52.415
+directories but with a
+slightly different meaning.
+
+119
+00:04:52.415 --> 00:04:54.850
+Read means that you
+can see the contents,
+
+120
+00:04:54.850 --> 00:04:57.155
+write means you can
+add or delete things,
+
+121
+00:04:57.155 --> 00:05:00.185
+and execute means you can
+go into the directory.
+
+122
+00:05:00.185 --> 00:05:01.640
+Sometimes it makes sense
+
+123
+00:05:01.640 --> 00:05:03.605
+to represent permissions
+numerically.
+
+124
+00:05:03.605 --> 00:05:05.180
+You'll see this a lot
+of times when you're
+
+125
+00:05:05.180 --> 00:05:07.180
+setting permissions
+from the command line.
+
+126
+00:05:07.180 --> 00:05:09.230
+Each permission has a value.
+
+127
+00:05:09.230 --> 00:05:14.220
+Read is four, write is
+two, execute is one.
+
+128
+00:05:14.220 --> 00:05:16.440
+You figure out what
+permissions you want.
+
+129
+00:05:16.440 --> 00:05:20.025
+If any, add them
+together and that's it.
+
+130
+00:05:20.025 --> 00:05:22.820
+Here's what all of the
+combinations look like.
+
+131
+00:05:22.820 --> 00:05:25.130
+So if I have a file where I
+
+132
+00:05:25.130 --> 00:05:27.510
+need full access including read,
+
+133
+00:05:27.510 --> 00:05:29.630
+write, and execute
+and no one else
+
+134
+00:05:29.630 --> 00:05:32.675
+gets anything, it'll be 700.
+
+135
+00:05:32.675 --> 00:05:36.410
+Another example, if I have a
+file that I can read, write,
+
+136
+00:05:36.410 --> 00:05:40.115
+and execute the specified
+group members can read and
+
+137
+00:05:40.115 --> 00:05:44.435
+execute but not write and
+everybody else can only read.
+
+138
+00:05:44.435 --> 00:05:47.195
+That would be, you know what,
+
+139
+00:05:47.195 --> 00:05:48.635
+why don't you tell me?
+
+140
+00:05:48.635 --> 00:05:50.365
+Pop quiz time.
+
+141
+00:05:50.365 --> 00:05:53.130
+The answer is 754.
+
+142
+00:05:53.130 --> 00:05:55.725
+Seven because that's everything
+
+143
+00:05:55.725 --> 00:05:57.900
+plus it's 4 plus 2 plus 1.
+
+144
+00:05:57.900 --> 00:06:00.610
+Five for group
+because that's read
+
+145
+00:06:00.610 --> 00:06:04.065
+4 plus execute 1 equals five.
+
+146
+00:06:04.065 --> 00:06:06.010
+For others, they get four
+
+147
+00:06:06.010 --> 00:06:08.690
+because they can read
+it but nothing else.
+
+148
+00:06:08.690 --> 00:06:11.675
+Here's a listing of some
+other common user group,
+
+149
+00:06:11.675 --> 00:06:14.000
+or their permissions.
+These will come in handy.
+
+150
+00:06:14.000 --> 00:06:17.525
+So maybe take a
+screenshot or something.
+
+151
+00:06:17.525 --> 00:06:19.280
+If you have a file and you
+
+152
+00:06:19.280 --> 00:06:20.760
+want to change the
+permissions on it,
+
+153
+00:06:20.760 --> 00:06:23.705
+use the chmod command, chmod.
+
+154
+00:06:23.705 --> 00:06:25.910
+You say chmod, the numerical
+
+155
+00:06:25.910 --> 00:06:28.340
+permission followed
+by the file name.
+
+156
+00:06:28.340 --> 00:06:30.815
+You can also do it in
+one section at a time
+
+157
+00:06:30.815 --> 00:06:33.470
+by typing chmod g plus w,
+
+158
+00:06:33.470 --> 00:06:36.020
+for example to give right
+access to the group.
+
+159
+00:06:36.020 --> 00:06:38.375
+But be careful what
+permissions you give out.
+
+160
+00:06:38.375 --> 00:06:40.190
+When you give
+permissions to others,
+
+161
+00:06:40.190 --> 00:06:41.330
+so someone else not in
+
+162
+00:06:41.330 --> 00:06:43.235
+the group can have
+access to a file,
+
+163
+00:06:43.235 --> 00:06:44.750
+you're giving those
+permissions to
+
+164
+00:06:44.750 --> 00:06:47.585
+literally everybody
+else on the system.
+
+165
+00:06:47.585 --> 00:06:48.920
+If you're working with people
+
+166
+00:06:48.920 --> 00:06:50.230
+you need to share access with,
+
+167
+00:06:50.230 --> 00:06:51.695
+consider using a group.
+
+168
+00:06:51.695 --> 00:06:54.610
+That's literally what
+they're there for.
+
+169
+00:06:54.610 --> 00:06:57.645
+Like I said, Unix
+is its own beast.
+
+170
+00:06:57.645 --> 00:07:00.050
+Like z/OS, there's no single spot
+
+171
+00:07:00.050 --> 00:07:02.690
+that marks when you've learned
+all there is to learn.
+
+172
+00:07:02.690 --> 00:07:04.520
+But we have hit a
+pretty good spot
+
+173
+00:07:04.520 --> 00:07:05.930
+right here where at least you're
+
+174
+00:07:05.930 --> 00:07:07.220
+prepared to get started with
+
+175
+00:07:07.220 --> 00:07:09.385
+Unix system services on z/OS.
+
+176
+00:07:09.385 --> 00:07:13.060
+So that brings this
+lesson to a close.

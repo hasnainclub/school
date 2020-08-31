@@ -1,0 +1,772 @@
+                   J E S 2  J O B  L O G  --  S Y S T E M  2 9 6 4  --  N O D E  S V S C J E S 2        
+
+ 
+19.06.01 JOB06132 ---- SUNDAY,    06 OCT 2019 ----
+19.06.01 JOB06132  IRR010I  USERID KC03E85  IS ASSIGNED TO THIS JOB.
+19.06.03 JOB06132  ICH70001I KC03E85  LAST ACCESS AT 19:05:27 ON SUNDAY, OCTOBER 6, 2019
+19.06.03 JOB06132  $HASP373 KC03E85A STARTED - INIT 3    - CLASS A        - SYS 2964
+19.06.06 JOB06132  -                                      -----TIMINGS (MINS.)------                          -----PAGING COUNTS----
+19.06.06 JOB06132  -STEPNAME PROCSTEP    RC   EXCP   CONN       TCB       SRB  CLOCK          SERV  WORKLOAD  PAGE  SWAP   VIO SWAPS
+19.06.06 JOB06132  -JSTEP01              00   4379    385       .00       .00     .0            66  BATCH        0     0     0     0
+19.06.07 JOB06132  -JSTEP02              00    248     36       .00       .00     .0            57  BATCH        0     0     0     0
+19.06.07 JOB06132  -JSTEP03              00     37      2       .00       .00     .0             3  BATCH        0     0     0     0
+19.06.07 JOB06132  -KC03E85A ENDED.  NAME-ATTARWALA            TOTAL TCB CPU TIME=      .00 TOTAL ELAPSED TIME=    .0
+19.06.07 JOB06132  $HASP395 KC03E85A ENDED - RC=0000
+
+------ JES2 JOB STATISTICS ------
+
+
+  06 OCT 2019 JOB EXECUTION DATE
+
+
+          205 CARDS READ
+
+
+          687 SYSOUT PRINT RECORDS
+
+
+            0 SYSOUT PUNCH RECORDS
+
+
+           42 SYSOUT SPOOL KBYTES
+
+
+         0.09 MINUTES EXECUTION TIME
+!! END OF JES SPOOL FILE !!
+       1 //KC03E85A JOB ,'ATTARWALA',MSGCLASS=H                                  JOB06132
+         //*                                                                             
+         //******************************************************************            
+         //* CSCI 465 - FALL 2019                                           *            
+         //*                                                                *            
+         //* ASSIGNMENT 4 - INTRODUCTION TO COBOL                           *            
+         //* DUE DATE: 10/07/2019                                           *            
+         //* DUE TIME: 11:59 P.M.                                           *            
+         //*                                                                *            
+         //*THIS PROGRAM WILL GIVE YOU A CHANCE TO WRITE A COMPLETE COBOL   *            
+         //*PROGRAM ON INFORMATION CONTAINED IN A FILE WITH AN              *            
+         //*UNKNOWN NUMBER OF RECORDS                                                    
+         //* JSTEP01 WILL COMPILE THE COBOL SOURCE CODE IN THE COMPILER!    *            
+         //*                                                                *            
+         //* SYSIN INPUT: IN-STREAM DATA/COBOL SOURCE CODE                  *            
+         //******************************************************************            
+       2 //JSTEP01  EXEC PGM=IGYCRCTL,PARM=APOST,REGION=0M                               
+       3 //SYSIN    DD *                                                                 
+         //******************************************************************            
+         //* SYSLIN OUTPUT: THE OBJECT MODULE BEING WRITTEN TO TEMP DATA SET*            
+         //*                                                                *            
+         //* SYSPRINT OUTPUT: OUTPUTTING MESSAGES FROM COMPILER             *            
+         //*                                                                *            
+         //* SYSUT1-15 & SYSMDECK OUTPUT: DATA SETS REQUIRED BY COMPILER    *            
+         //*                                                                *            
+         //* SYSUDUMP OUTPUT: ENABLES STORAGE DUMPS IN CASE OF ABENDS       *            
+         //******************************************************************            
+       4 //SYSLIN   DD DSN=&&TEMPDS,SPACE=(TRK,(3,3)),                                   
+         //            DISP=(MOD,PASS)                                                   
+         //*                                                                             
+       5 //SYSPRINT DD SYSOUT=*                                                          
+         //*                                                                             
+       6 //SYSUT1   DD SPACE=(CYL,(1,1))                                                 
+       7 //SYSUT2   DD SPACE=(CYL,(1,1))                                                 
+       8 //SYSUT3   DD SPACE=(CYL,(1,1))                                                 
+       9 //SYSUT4   DD SPACE=(CYL,(1,1))                                                 
+      10 //SYSUT5   DD SPACE=(CYL,(1,1))                                                 
+      11 //SYSUT6   DD SPACE=(CYL,(1,1))                                                 
+      12 //SYSUT7   DD SPACE=(CYL,(1,1))                                                 
+      13 //SYSUT8   DD SPACE=(CYL,(1,1))                                                 
+      14 //SYSUT9   DD SPACE=(CYL,(1,1))                                                 
+      15 //SYSUT10  DD SPACE=(CYL,(1,1))                                                 
+      16 //SYSUT11  DD SPACE=(CYL,(1,1))                                                 
+      17 //SYSUT12  DD SPACE=(CYL,(1,1))                                                 
+      18 //SYSUT13  DD SPACE=(CYL,(1,1))                                                 
+      19 //SYSUT14  DD SPACE=(CYL,(1,1))                                                 
+      20 //SYSUT15  DD SPACE=(CYL,(1,1))                                                 
+      21 //SYSMDECK DD SPACE=(CYL,(1,1))                                                 
+         //*                                                                             
+      22 //SYSUDUMP DD SYSOUT=*                                                          
+         //********************************************************************          
+         //* JSTEP02 WILL CREATE A LOAD MODULE, STORE IT AS A PROGRAM OBJECT  *          
+         //********************************************************************          
+      23 //JSTEP02  EXEC PGM=HEWL,COND=(0,LT)                                            
+         //********************************************************************          
+         //* SYSLIB INPUT: LOCATION OF NECESSARY IBM LIBRARIES                *          
+         //*                                                                  *          
+         //* SYSLIN INPUT: RECEIVING TEMP DATA SET FROM JSTEP01               *          
+         //*                                                                  *          
+         //* SYSLMOD OUTPUT: LOCATION OF PDSE MEMBER STORING LOAD MODULE      *          
+         //*                                                                  *          
+         //* SYSPRINT OUTPUT: DISPLAY RECORDS TO STANDARD OUTPUT              *          
+         //*                                                                  *          
+         //* SYSUDUMP OUTPUT: DUMP STORAGE IN CASE OF ABEND                   *          
+         //********************************************************************          
+         //*                                                                             
+      24 //SYSLIB   DD DSN=CEE.SCEELKED,DISP=SHR                                         
+         //*                                                                             
+      25 //SYSLIN   DD DSN=&&TEMPDS,DISP=(OLD,DELETE,DELETE)                             
+         //*                                                                             
+      26 //SYSLMOD  DD DSN=KC03E85.CSCI465.LOADLIB(ASSIGN4),                             
+         //            SPACE=(1024,(50,20,1)),DSNTYPE=LIBRARY,                           
+         //            DISP=(MOD,KEEP,KEEP)                                              
+         //*                                                                             
+      27 //SYSPRINT DD SYSOUT=*                                                          
+         //*                                                                             
+      28 //SYSUDUMP DD SYSOUT=*                                                          
+         //*******************************************************************           
+         //* JSTEP03 FETCHES AND EXECUTES THE PROGRAM OBJECT                 *           
+         //*                                                                 *           
+         //* STEPLIB INPUT: LOCATION OF OUR PDSE TO STORE PROGRAM OBJECT     *           
+         //*                                                                 *           
+         //* COBIN INPUT: LOCATION OF FILE NEEDED FOR INPUT                  *           
+         //*                                                                 *           
+         //* COBOUT OUTPUT: DETERMINES WHERE OUTPUT IS SENT                  *           
+         //*                                                                 *           
+         //* SYSUDUMP OUTPUT: DUMPS INFO ABOUT ABENDS TO STANDARD OUTPUT     *           
+         //*******************************************************************           
+      29 //JSTEP03  EXEC PGM=ASSIGN4,COND=(0,LT)                                         
+      30 //STEPLIB  DD DSN=KC03E85.CSCI465.LOADLIB,DISP=SHR                              
+         //*                                                                             
+      31 //INFILE   DD DSN=KC02322.CSCI465.DATAFA19(DATA4),DISP=SHR                      
+         //*                                                                             
+      32 //OUTFILE  DD SYSOUT=*                                                          
+         //*                                                                             
+      33 //SYSUDUMP DD SYSOUT=*                                                          
+         //*                                                                             
+!! END OF JES SPOOL FILE !!
+ICH70001I KC03E85  LAST ACCESS AT 19:05:27 ON SUNDAY, OCTOBER 6, 2019
+IEFA111I KC03E85A IS USING THE FOLLOWING JOB RELATED SETTINGS:
+         SWA=ABOVE,TIOT SIZE=32K,DSENQSHR=DISALLOW,GDGBIAS=JOB
+IEF236I ALLOC. FOR KC03E85A JSTEP01
+IEF237I JES2 ALLOCATED TO SYSIN
+IGD101I SMS ALLOCATED TO DDNAME (SYSLIN  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.TEMPDS.H01  )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT1  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190480    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT2  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190481    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT3  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190482    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT4  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190483    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT5  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190484    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT6  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190485    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT7  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190486    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT8  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190487    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT9  )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190488    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT10 )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190489    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT11 )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190490    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT12 )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190491    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT13 )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190492    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT14 )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190493    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT15 )
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190494    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSMDECK)
+        DSN (SYS19279.T190601.RA000.KC03E85A.R0190495    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP01 - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   KC03E85.KC03E85A.JOB06132.D0000101.?         SYSIN         
+IGD106I SYS19279.T190601.RA000.KC03E85A.TEMPDS.H01   PASSED,    DDNAME=SYSLIN  
+IEF285I   KC03E85.KC03E85A.JOB06132.D0000102.?         SYSOUT        
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190480     DELETED,   DDNAME=SYSUT1  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190481     DELETED,   DDNAME=SYSUT2  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190482     DELETED,   DDNAME=SYSUT3  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190483     DELETED,   DDNAME=SYSUT4  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190484     DELETED,   DDNAME=SYSUT5  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190485     DELETED,   DDNAME=SYSUT6  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190486     DELETED,   DDNAME=SYSUT7  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190487     DELETED,   DDNAME=SYSUT8  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190488     DELETED,   DDNAME=SYSUT9  
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190489     DELETED,   DDNAME=SYSUT10 
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190490     DELETED,   DDNAME=SYSUT11 
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190491     DELETED,   DDNAME=SYSUT12 
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190492     DELETED,   DDNAME=SYSUT13 
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190493     DELETED,   DDNAME=SYSUT14 
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190494     DELETED,   DDNAME=SYSUT15 
+IGD105I SYS19279.T190601.RA000.KC03E85A.R0190495     DELETED,   DDNAME=SYSMDECK
+IEF285I   KC03E85.KC03E85A.JOB06132.D0000103.?         SYSOUT        
+IEF373I STEP/JSTEP01 /START 2019279.1906
+IEF032I STEP/JSTEP01 /STOP  2019279.1906 
+        CPU:     0 HR  00 MIN  00.05 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:   500K  SYS:  4256K  EXT:   135884K  SYS:    13668K
+        ATB- REAL:                  5964K  SLOTS:                     0K
+             VIRT- ALLOC:     529M SHRD:       0M
+IEF236I ALLOC. FOR KC03E85A JSTEP02
+IEF237I 1001 ALLOCATED TO SYSLIB
+IGD103I SMS ALLOCATED TO DDNAME SYSLIN
+IGD103I SMS ALLOCATED TO DDNAME SYSLMOD
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP02 - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   CEE.SCEELKED                                 KEPT          
+IEF285I   VOL SER NOS= VTMVSC.                            
+IGD105I SYS19279.T190601.RA000.KC03E85A.TEMPDS.H01   DELETED,   DDNAME=SYSLIN  
+IGD104I KC03E85.CSCI465.LOADLIB                      RETAINED,  DDNAME=SYSLMOD 
+IEF285I   KC03E85.KC03E85A.JOB06132.D0000104.?         SYSOUT        
+IEF285I   KC03E85.KC03E85A.JOB06132.D0000105.?         SYSOUT        
+IEF373I STEP/JSTEP02 /START 2019279.1906
+IEF032I STEP/JSTEP02 /STOP  2019279.1906 
+        CPU:     0 HR  00 MIN  00.01 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:    88K  SYS:   252K  EXT:     1768K  SYS:    11680K
+        ATB- REAL:                  1068K  SLOTS:                     0K
+             VIRT- ALLOC:      15M SHRD:       0M
+IEF236I ALLOC. FOR KC03E85A JSTEP03
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IGD103I SMS ALLOCATED TO DDNAME INFILE
+IEF237I JES2 ALLOCATED TO OUTFILE
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP03 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC03E85.CSCI465.LOADLIB                      RETAINED,  DDNAME=STEPLIB 
+IGD104I KC02322.CSCI465.DATAFA19                     RETAINED,  DDNAME=INFILE  
+IEF285I   KC03E85.KC03E85A.JOB06132.D0000106.?         SYSOUT        
+IEF285I   KC03E85.KC03E85A.JOB06132.D0000107.?         SYSOUT        
+IEF373I STEP/JSTEP03 /START 2019279.1906
+IEF032I STEP/JSTEP03 /STOP  2019279.1906 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:    92K  SYS:   264K  EXT:     2588K  SYS:    11688K
+        ATB- REAL:                  1068K  SLOTS:                     0K
+             VIRT- ALLOC:      15M SHRD:       0M
+IEF375I  JOB/KC03E85A/START 2019279.1906
+IEF033I  JOB/KC03E85A/STOP  2019279.1906 
+        CPU:     0 HR  00 MIN  00.06 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+!! END OF JES SPOOL FILE !!
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107                 Date 10/06/2019  Time 19:06:04   Page     1                
+
+Invocation parameters:                                                                                                              
+ APOST                                                                                                                              
+
+Options in effect:                                                                                                                  
+ NOADATA                                                                                                                            
+   ADV                                                                                                                              
+   AFP(NOVOLATILE)                                                                                                                  
+   APOST                                                                                                                            
+   ARCH(7)                                                                                                                          
+   ARITH(COMPAT)                                                                                                                    
+ NOAWO                                                                                                                              
+ NOBLOCK0                                                                                                                           
+   BUFSIZE(4096)                                                                                                                    
+ NOCICS                                                                                                                             
+   CODEPAGE(1140)                                                                                                                   
+ NOCOMPILE(S)                                                                                                                       
+ NOCOPYLOC                                                                                                                          
+ NOCOPYRIGHT                                                                                                                        
+ NOCURRENCY                                                                                                                         
+   DATA(31)                                                                                                                         
+   DBCS                                                                                                                             
+ NODECK                                                                                                                             
+ NODEFINE                                                                                                                           
+ NODIAGTRUNC                                                                                                                        
+   DISPSIGN(COMPAT)                                                                                                                 
+ NODLL                                                                                                                              
+ NODUMP                                                                                                                             
+ NODYNAM                                                                                                                            
+ NOEXIT                                                                                                                             
+ NOEXPORTALL                                                                                                                        
+ NOFASTSRT                                                                                                                          
+   FLAG(I,I)                                                                                                                        
+ NOFLAGSTD                                                                                                                          
+   HGPR(PRESERVE)                                                                                                                   
+ NOINITCHECK                                                                                                                        
+   INLINE                                                                                                                           
+   INTDATE(ANSI)                                                                                                                    
+   LANGUAGE(EN)                                                                                                                     
+   LINECOUNT(60)                                                                                                                    
+ NOLIST                                                                                                                             
+ NOMAP                                                                                                                              
+   MAXPCF(100000)                                                                                                                   
+ NOMDECK                                                                                                                            
+ NONAME                                                                                                                             
+   NSYMBOL(NATIONAL)                                                                                                                
+ NONUMBER                                                                                                                           
+ NONUMCHECK                                                                                                                         
+   NUMPROC(NOPFD)                                                                                                                   
+   OBJECT                                                                                                                           
+ NOOFFSET                                                                                                                           
+   OPTIMIZE(0)                                                                                                                      
+   OUTDD(SYSOUT)                                                                                                                    
+ NOPARMCHECK                                                                                                                        
+   PGMNAME(COMPAT)                                                                                                                  
+   QUALIFY(COMPAT)                                                                                                                  
+   RENT                                                                                                                             
+   RMODE(AUTO)                                                                                                                      
+ NORULES                                                                                                                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107                 Date 10/06/2019  Time 19:06:04   Page     2                
+
+ NOSERVICE                                                                                                                          
+   SEQUENCE                                                                                                                         
+   SOURCE                                                                                                                           
+   SPACE(1)                                                                                                                         
+ NOSQL                                                                                                                              
+   SQLCCSID                                                                                                                         
+ NOSQLIMS                                                                                                                           
+ NOSSRANGE                                                                                                                          
+ NOSTGOPT                                                                                                                           
+   SUPPRESS                                                                                                                         
+ NOTERM                                                                                                                             
+ NOTEST(NODWARF,NOSOURCE,NOSEPARATE)                                                                                                
+ NOTHREAD                                                                                                                           
+   TRUNC(STD)                                                                                                                       
+ NOVBREF                                                                                                                            
+   VLR(STANDARD)                                                                                                                    
+   VSAMOPENFS(COMPAT)                                                                                                               
+ NOWORD                                                                                                                             
+   XMLPARSE(XMLSS)                                                                                                                  
+   XREF(FULL)                                                                                                                       
+   ZONEDATA(PFD)                                                                                                                    
+   ZWB                                                                                                                              
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ASSIGN4   Date 10/06/2019  Time 19:06:04   Page     3                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000001               ****************************************************************                                             
+  000002               * PROGRAM NAME:  ASSIGN4                                       *                                             
+  000003               *                                                              *                                             
+  000004               * FUNCTION:  THIS PROGRAM READS INPUT DATA RECORDS AND THEN    *                                             
+  000005               *            WRITES THEM TO STANDARD OUTPUT.                   *                                             
+  000006               *                                                              *                                             
+  000007               * INPUT:     INFILE - THE INPUT DATA RECORDS READ IN.          *                                             
+  000008               *                                                              *                                             
+  000009               * OUTPUT:    OUTFILE - THE INPUT DATA RECORDS WRITTEN OUT.     *                                             
+  000010               ****************************************************************                                             
+  000011                                                                                                                            
+  000012                IDENTIFICATION DIVISION.                                                                                    
+  000013                                                                                                                            
+  000014                PROGRAM-ID.    ASSIGN4.                                                                                     
+  000015                AUTHOR.        HASNAIN ATTARWALA.                                                                           
+  000016                DATE-WRITTEN.  02/06/2019.                                                                                  
+  000017                DATE-COMPILED. 10/06/19.                                                                                    
+  000018               ****************************************************************                                             
+  000019               * IT TELLS ABOUT INPUT AND OUTPUT FILES WORKIGN WITH           *                                             
+  000020               ****************************************************************                                             
+  000021                ENVIRONMENT DIVISION.                                                                                       
+  000022               ****************************************************************                                             
+  000023                INPUT-OUTPUT SECTION.                                                                                       
+  000024               ****************************************************************                                             
+  000025                FILE-CONTROL.                                                                                               
+  000026                                                                                                                            
+  000027                    SELECT INPUT-FILE ASSIGN TO INFILE.                                   34                                
+  000028                    SELECT PRINT-FILE ASSIGN TO OUTFILE.                                  45                                
+  000029               ****************************************************************                                             
+  000030                DATA DIVISION.                                                                                              
+  000031               ****************************************************************                                             
+  000032                FILE SECTION.                                                                                               
+  000033                                                                                                                            
+  000034                FD  INPUT-FILE                                                                                              
+  000035                    RECORDING MODE IS F.                                                                                    
+  000036                                                                                                                            
+  000037                01  INPUT-RECORD.                                                                                           
+  000038                    05  IN-ORCH-NME             PIC X(45).                                                                  
+  000039                    05  FILLER                  PIC X(5).                                                                   
+  000040                    05  IN-ENDOWMT-AMT          PIC S9(9)V99.                                                               
+  000041                    05  FILLER                  PIC X(3).                                                                   
+  000042                    05  IN-ENDOWMT-FLG          PIC S9(1).                                                                  
+  000043                    05  FILLER                  PIC X(15).                                                                  
+  000044                                                                                                                            
+  000045                FD  PRINT-FILE                                                                                              
+  000046                    RECORDING MODE IS F.                                                                                    
+  000047                                                                                                                            
+  000048                01  PRINT-RECORD                PIC X(132).                                                                 
+  000049               ****************************************************************                                             
+  000050                WORKING-STORAGE SECTION.                                                                                    
+  000051                                                                                                                            
+  000052                01  EOF-FLAG                    PIC X VALUE 'N'.                                                            
+  000053                                                                                                                            
+  000054                01  TOTAL-LINE.                                                                                             
+  000055                    05 ENOWMT-TOTAL             PIC S9(11)V99 VALUE 0.                                                      
+  000056                                                                                                                            
+  000057                01  PRINT-LINE.                                                                                             
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ASSIGN4   Date 10/06/2019  Time 19:06:04   Page     4                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000058                    05  OUT-ORCH-NME            PIC X(45).                                                                  
+  000059                    05  FILLER                  PIC X(10)   VALUE SPACES.                 IMP                               
+  000060                    05  OUT-ENDOWMT-AMT         PIC $$$$,$$$,$$9.99.                                                        
+  000061                    05  FILLER                  PIC X(11)   VALUE SPACES.                 IMP                               
+  000062                    05  OUT-ENDOWMT-FLG         PIC 9.                                                                      
+  000063                    05  FILLER                  PIC X(50)  VALUE SPACES.                  IMP                               
+  000064                                                                                                                            
+  000065                01  ACCUMALATOR-LINE.                                                                                       
+  000066                    05 FILLER                   PIC X(52)  VALUE SPACES.                  IMP                               
+  000067                    05 OUT-ENOWMT-TOTAL         PIC $$$,$$$,$$$,$$9.99.                                                     
+  000068                    05 FILLER                   PIC X(62)  VALUE SPACES.                  IMP                               
+  000069               ****************************************************************                                             
+  000070                PROCEDURE DIVISION.                                                                                         
+  000071               ****************************************************************                                             
+  000072                0000-MAIN.                                                                                                  
+  000073                                                                                                                            
+  000074                    OPEN INPUT  INPUT-FILE                                                34                                
+  000075                         OUTPUT PRINT-FILE.                                               45                                
+  000076                                                                                                                            
+  000077                    READ INPUT-FILE                                                       34                                
+  000078      1               AT END MOVE 'Y' TO EOF-FLAG                                         52                                
+  000079                    END-READ.                                                                                               
+  000080                                                                                                                            
+  000081                    PERFORM 0100-WRITE-RECS                                               94                                
+  000082                      UNTIL EOF-FLAG = 'Y'.                                               52                                
+  000083                                                                                                                            
+  000084                    MOVE ENOWMT-TOTAL TO OUT-ENOWMT-TOTAL.                                55 67                             
+  000085                    WRITE PRINT-RECORD FROM ACCUMALATOR-LINE AFTER 2.                     48 65                             
+  000086                                                                                                                            
+  000087                    CLOSE INPUT-FILE                                                      34                                
+  000088                          PRINT-FILE.                                                     45                                
+  000089                                                                                                                            
+  000090                    GOBACK.                                                                                                 
+  000091                                                                                                                            
+  000092                0000-EXIT. EXIT.                                                                                            
+  000093                                                                                                                            
+  000094                0100-WRITE-RECS.                                                                                            
+  000095                    MOVE IN-ORCH-NME TO OUT-ORCH-NME.                                     38 58                             
+  000096                    MOVE IN-ENDOWMT-AMT TO OUT-ENDOWMT-AMT.                               40 60                             
+  000097                    MOVE IN-ENDOWMT-FLG TO OUT-ENDOWMT-FLG.                               42 62                             
+  000098                                                                                                                            
+  000099                    COMPUTE ENOWMT-TOTAL ROUNDED = IN-ENDOWMT-AMT + ENOWMT-TOTAL.         55 40 55                          
+  000100                                                                                                                            
+  000101                    WRITE PRINT-RECORD FROM PRINT-LINE AFTER 2.                           48 57                             
+  000102                                                                                                                            
+  000103                    READ INPUT-FILE                                                       34                                
+  000104      1               AT END MOVE 'Y' TO EOF-FLAG                                         52                                
+  000105                    END-READ.                                                                                               
+  000106                                                                                                                            
+  000107                0100-EXIT. EXIT.                                                                                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ASSIGN4   Date 10/06/2019  Time 19:06:04   Page     5                
+
+An "M" preceding a data-name reference indicates that the data-name is modified by this reference.                                  
+                                                                                                                                    
+ Defined   Cross-reference of data names   References                                                                               
+                                                                                                                                    
+      65   ACCUMALATOR-LINE . . . . . . .  85                                                                                       
+      55   ENOWMT-TOTAL . . . . . . . . .  84 M99 99                                                                                
+      52   EOF-FLAG . . . . . . . . . . .  M78 82 M104                                                                              
+      40   IN-ENDOWMT-AMT . . . . . . . .  96 99                                                                                    
+      42   IN-ENDOWMT-FLG . . . . . . . .  97                                                                                       
+      38   IN-ORCH-NME. . . . . . . . . .  95                                                                                       
+      34   INPUT-FILE . . . . . . . . . .  27 74 77 87 103                                                                          
+      37   INPUT-RECORD                                                                                                             
+      60   OUT-ENDOWMT-AMT. . . . . . . .  M96                                                                                      
+      62   OUT-ENDOWMT-FLG. . . . . . . .  M97                                                                                      
+      67   OUT-ENOWMT-TOTAL . . . . . . .  M84                                                                                      
+      58   OUT-ORCH-NME . . . . . . . . .  M95                                                                                      
+      45   PRINT-FILE . . . . . . . . . .  28 75 88                                                                                 
+      57   PRINT-LINE . . . . . . . . . .  101                                                                                      
+      48   PRINT-RECORD . . . . . . . . .  M85 M101                                                                                 
+      54   TOTAL-LINE                                                                                                               
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ASSIGN4   Date 10/06/2019  Time 19:06:04   Page     6                
+
+Context usage is indicated by the letter preceding a procedure-name reference.                                                      
+These letters and their meanings are:                                                                                               
+    A = ALTER (procedure-name)                                                                                                      
+    D = GO TO (procedure-name) DEPENDING ON                                                                                         
+    E = End of range of (PERFORM) through (procedure-name)                                                                          
+    G = GO TO (procedure-name)                                                                                                      
+    P = PERFORM (procedure-name)                                                                                                    
+    T = (ALTER) TO PROCEED TO (procedure-name)                                                                                      
+    U = USE FOR DEBUGGING (procedure-name)                                                                                          
+                                                                                                                                    
+ Defined   Cross-reference of procedures   References                                                                               
+                                                                                                                                    
+      92   0000-EXIT                                                                                                                
+      72   0000-MAIN                                                                                                                
+     107   0100-EXIT                                                                                                                
+      94   0100-WRITE-RECS. . . . . . . .  P81                                                                                      
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ASSIGN4   Date 10/06/2019  Time 19:06:04   Page     7                
+
+ Defined   Cross-reference of programs     References                                                                               
+                                                                                                                                    
+      14   ASSIGN4                                                                                                                  
+
+
+* Statistics for COBOL program ASSIGN4:                                                                                             
+*    Source records = 107                                                                                                           
+*    Data Division statements = 14                                                                                                  
+*    Procedure Division statements = 17                                                                                             
+*    Generated COBOL statements = 0                                                                                                 
+*    Program complexity factor = 17                                                                                                 
+
+End of compilation 1,  program ASSIGN4,  no statements flagged.                                                                     
+
+Return code 0                                                                                                                       
+!! END OF JES SPOOL FILE !!
+
+z/OS V2 R3 BINDER     19:06:06 SUNDAY OCTOBER  6, 2019                                                                  
+BATCH EMULATOR  JOB(KC03E85A) STEP(JSTEP02 ) PGM= HEWL                                                                  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                *** O P E R A T I O N   S U M M A R Y   R E P O R T ***                                 
+                                                                                                                        
+
+PROCESSING OPTIONS:                                                                                                     
+                                                                                                                        
+   ALIASES             NO                                                                                               
+   ALIGN2              NO                                                                                               
+   AMODE               UNSPECIFIED                                                                                      
+   CALL                YES                                                                                              
+   CASE                UPPER                                                                                            
+   COMPAT              UNSPECIFIED                                                                                      
+   COMPRESS            AUTO                                                                                             
+   DCBS                NO                                                                                               
+   DYNAM               NO                                                                                               
+   EXTATTR             UNSPECIFIED                                                                                      
+   EXITS:              NONE                                                                                             
+   FILL                NONE                                                                                             
+   GID                 UNSPECIFIED                                                                                      
+   HOBSET              NO                                                                                               
+   INFO                NO                                                                                               
+   LET                 04                                                                                               
+   LINECT              060                                                                                              
+   LIST                SUMMARY                                                                                          
+   LISTPRIV            NO                                                                                               
+   LONGPARM            NO                                                                                               
+   MAP                 NO                                                                                               
+   MAXBLK              032760                                                                                           
+   MODMAP              NO                                                                                               
+   MSGLEVEL            00                                                                                               
+   OVLY                NO                                                                                               
+   PRINT               YES                                                                                              
+   RES                 NO                                                                                               
+   REUSABILITY         UNSPECIFIED                                                                                      
+   RMODE               UNSPECIFIED                                                                                      
+   RMODEX              NO                                                                                               
+   SIGN                NO                                                                                               
+   STORENX             NOREPLACE                                                                                        
+   STRIPCL             NO                                                                                               
+   STRIPSEC            NO                                                                                               
+   SYMTRACE                                                                                                             
+   TERM                NO                                                                                               
+   TRAP                ON                                                                                               
+   UID                 UNSPECIFIED                                                                                      
+   UPCASE              NO                                                                                               
+   WKSPACE             000000K,000000K                                                                                  
+   XCAL                NO                                                                                               
+   XREF                NO                                                                                               
+   ***END OF OPTIONS***                                                                                                 
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+
+SAVE OPERATION SUMMARY:                                                                                                 
+                                                                                                                        
+   MEMBER NAME         ASSIGN4                                                                                          
+   LOAD LIBRARY        KC03E85.CSCI465.LOADLIB                                                                          
+   PROGRAM TYPE        PROGRAM OBJECT(FORMAT 3)                                                                         
+   VOLUME SERIAL       KCTR32                                                                                           
+   DISPOSITION         REPLACED                                                                                         
+   TIME OF SAVE        19.06.06  OCT  6, 2019                                                                           
+                                                                                                                        
+                                                                                                                        
+
+SAVE MODULE ATTRIBUTES:                                                                                                 
+                                                                                                                        
+   AC                  000                                                                                              
+   AMODE                31                                                                                              
+   COMPRESSION         NONE                                                                                             
+   DC                  NO                                                                                               
+   EDITABLE            YES                                                                                              
+   EXCEEDS 16MB        NO                                                                                               
+   EXECUTABLE          YES                                                                                              
+   LONGPARM            NO                                                                                               
+   MIGRATABLE          NO                                                                                               
+   OL                  NO                                                                                               
+   OVLY                NO                                                                                               
+   PACK,PRIME          NO,NO                                                                                            
+   PAGE ALIGN          NO                                                                                               
+   REFR                NO                                                                                               
+   RENT                NO                                                                                               
+   REUS                NO                                                                                               
+   RMODE               ANY                                                                                              
+   SCTR                NO                                                                                               
+   SIGN                NO                                                                                               
+   SSI                                                                                                                  
+   SYM GENERATED       NO                                                                                               
+   TEST                NO                                                                                               
+   XPLINK              NO                                                                                               
+   MODULE SIZE (HEX)   000022A0                                                                                         
+   DASD SIZE (HEX)     0000B000                                                                                         
+                                                                                                                        
+                                                                                                                        
+
+ ENTRY POINT AND ALIAS SUMMARY:                                                                                         
+                                                                                                                        
+ NAME:            ENTRY TYPE AMODE C_OFFSET CLASS NAME        STATUS                                                    
+                                                                                                                        
+ ASSIGN4           MAIN_EP      31 00000000 C_CODE                                                                      
+                                                                                                                        
+                         *** E N D   O F   O P E R A T I O N   S U M M A R Y   R E P O R T ***                          
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+
+z/OS V2 R3 BINDER     19:06:06 SUNDAY OCTOBER  6, 2019                                                                  
+BATCH EMULATOR  JOB(KC03E85A) STEP(JSTEP02 ) PGM= HEWL                                                                  
+IEW2008I 0F03 PROCESSING COMPLETED.  RETURN CODE =  0.                                                                  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+
+----------------------                                                                                                  
+MESSAGE SUMMARY REPORT                                                                                                  
+----------------------                                                                                                  
+ TERMINAL MESSAGES      (SEVERITY = 16)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ SEVERE MESSAGES        (SEVERITY = 12)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ ERROR MESSAGES         (SEVERITY = 08)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ WARNING MESSAGES       (SEVERITY = 04)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ INFORMATIONAL MESSAGES (SEVERITY = 00)                                                                                 
+ 2008                                                                                                                   
+                                                                                                                        
+                                                                                                                        
+ **** END OF MESSAGE SUMMARY REPORT ****                                                                                
+                                                                                                                        
+!! END OF JES SPOOL FILE !!
+
+Berlin Philharmonic                                        $936,184.80           2                                                  
+
+Vienna Philharmonic                                      $7,166,149.40           2                                                  
+
+Chicago Symphony Orchestra                                 $808,213.50           1                                                  
+
+Boston Symphony Orchestra                                $4,008,702.00           2                                                  
+
+Kansas City Symphony                                        $42,199.90           3                                                  
+
+New York Philharmonic                                       $40,612.10           1                                                  
+
+Grand Rapids Symphony Orchestra                          $2,074,303.90           1                                                  
+
+Seattle Symphony Orchestra                                   $8,415.20           1                                                  
+
+Symphony Orchestra of the Bavarian Radio                 $3,108,140.21           1                                                  
+
+Orchestra of the German Opera Berlin                       $110,810.27           3                                                  
+
+Orchestra of Paris                                       $4,310,810.06           2                                                  
+
+National Orchestra of France                             $2,410,012.15           1                                                  
+
+London Philharmonic Orchestra                              $140,812.24           2                                                  
+
+London Symphony Orchestra                                $3,104,812.33           2                                                  
+
+Philharmonia Orchestra                                     $102,312.42           1                                                  
+
+San Francisco Symphony                                     $101,142.56           2                                                  
+
+Scottish National Orchestra                              $3,104,124.67           2                                                  
+
+National Orchestra of Ireland                            $3,108,214.26           1                                                  
+
+Czech Philharmonic                                       $3,310,831.45           1                                                  
+
+Munich Philharmonic                                        $512,234.10           1                                                  
+
+Orchestra of the Vienna State Opera                      $3,300,005.24           1                                                  
+
+Detroit Symphony                                            $31,116.05           1                                                  
+
+Cleveland Orchestra                                      $3,103,817.26           1                                                  
+
+St. Louis Symphony Orchestra                             $3,108,311.27           1                                                  
+
+Kishwaukee Symphony Orchestra                            $3,108,131.24           1                                                  
+
+Hong Kong Symphony Orchestra                             $3,108,113.23           1                                                  
+
+NHK Symphony Orchestra Tokyo                             $4,606,410.52           1                                                  
+
+Beijing Philharmonic                                     $1,807,640.81           1                                                  
+
+Philharmonic Hamburg                                     $6,068,254.17           2                                                  
+
+Symphony Orchestra of the North German Radio             $6,086,271.26           2                                                  
+
+Sao Paulo Symphony Orchestra                             $6,082,661.25           2                                                  
+
+Florida Philharmonic                                     $6,982,761.24           1                                                  
+
+Lucerne Festival Orchestra                              $26,182,816.24           2                                                  
+
+Beethoven Orchestra Bonn                                   $608,291.23           1                                                  
+
+Royal Philharmonic Orchestra                             $4,608,212.33           2                                                  
+
+Orchestra of Opera Lyon                                  $6,408,212.32           1                                                  
+
+Metropolitan Opera Orchestra                             $6,048,214.21           2                                                  
+
+MET Orchestra                                          $127,144,923.58           1                                                  
+
+Orpheus Chamber Orchestra                                $2,179,162.07           3                                                  
+
+Los Angeles Philharmonic                                 $6,611,022.46           2                                                  
+
+Berlin Radio Symphony Orchestra                         $10,663,622.50           2                                                  
+
+Prague Philharmonic                                      $1,166,416.19           1                                                  
+
+Bayreuth Festival Orchestra                              $2,216,617.29           1                                                  
+
+Camerata Academica Salzburg                              $1,119,667.89           3                                                  
+
+La Scala Orchestra Milan                                   $821,144.25           1                                                  
+
+NBC Symphony Orchestra                                      $32,677.84           1                                                  
+
+                                                       $281,713,531.46                                                              
+!! END OF JES SPOOL FILE !!

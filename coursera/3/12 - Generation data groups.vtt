@@ -1,0 +1,520 @@
+WEBVTT
+
+1
+00:00:02.720 --> 00:00:05.400
+Okay. I'm really glad to see
+
+2
+00:00:05.400 --> 00:00:06.900
+Generation Data Groups or
+
+3
+00:00:06.900 --> 00:00:09.690
+GDGs included in
+the list of topics
+
+4
+00:00:09.690 --> 00:00:11.580
+for this course because I think
+
+5
+00:00:11.580 --> 00:00:13.620
+they're just something
+that's a great example
+
+6
+00:00:13.620 --> 00:00:15.435
+of a feature in z/OS
+
+7
+00:00:15.435 --> 00:00:17.790
+that just makes
+perfect sense to have,
+
+8
+00:00:17.790 --> 00:00:20.560
+and it's executed in
+such a brilliant way,
+
+9
+00:00:20.560 --> 00:00:22.815
+you'll just wish it were
+available everywhere.
+
+10
+00:00:22.815 --> 00:00:26.625
+So picture a program that
+gathers data during the day.
+
+11
+00:00:26.625 --> 00:00:29.100
+Maybe it tracks problem tickets
+that were opened,
+
+12
+00:00:29.100 --> 00:00:31.185
+or guest checking into a hotel.
+
+13
+00:00:31.185 --> 00:00:33.440
+No matter what you've got
+a whole bunch of data
+
+14
+00:00:33.440 --> 00:00:35.870
+being generated and
+every once in a while,
+
+15
+00:00:35.870 --> 00:00:38.330
+it's nice to start
+with a fresh dataset.
+
+16
+00:00:38.330 --> 00:00:41.270
+So you're not opening up
+as huge thing each time.
+
+17
+00:00:41.270 --> 00:00:43.729
+So you create a new dataset,
+
+18
+00:00:43.729 --> 00:00:46.655
+and update the program to
+start looking in that.
+
+19
+00:00:46.655 --> 00:00:48.620
+When you want to look
+for an old dataset,
+
+20
+00:00:48.620 --> 00:00:50.120
+you go through all the old ones
+
+21
+00:00:50.120 --> 00:00:51.650
+and you find the one you want.
+
+22
+00:00:51.650 --> 00:00:53.270
+It seems pretty simple.
+
+23
+00:00:53.270 --> 00:00:56.780
+In fact, it's a pattern that
+you see so often on z/OS
+
+24
+00:00:56.780 --> 00:00:58.550
+that we have a special way
+of dealing with
+
+25
+00:00:58.550 --> 00:01:00.665
+that exact type of situation.
+
+26
+00:01:00.665 --> 00:01:03.440
+A Generation Data Group
+is a collection of
+
+27
+00:01:03.440 --> 00:01:05.960
+historically related
+datasets that
+
+28
+00:01:05.960 --> 00:01:08.060
+are arranged in
+chronological order.
+
+29
+00:01:08.060 --> 00:01:10.915
+So you have that program
+writing out data.
+
+30
+00:01:10.915 --> 00:01:12.680
+Maybe your procedure is to cut
+
+31
+00:01:12.680 --> 00:01:14.855
+over a new dataset every month.
+
+32
+00:01:14.855 --> 00:01:16.555
+Let's say we're in September,
+
+33
+00:01:16.555 --> 00:01:19.130
+so we've got August and July
+sitting in there is the
+
+34
+00:01:19.130 --> 00:01:22.670
+minus one and minus two
+months relative to September.
+
+35
+00:01:22.670 --> 00:01:24.530
+October comes along, and
+
+36
+00:01:24.530 --> 00:01:26.855
+here's where GDGs
+leap into action.
+
+37
+00:01:26.855 --> 00:01:28.400
+You specify that you want
+
+38
+00:01:28.400 --> 00:01:31.145
+a plus one generation
+of the dataset,
+
+39
+00:01:31.145 --> 00:01:34.130
+that moves September
+into the minus one slot,
+
+40
+00:01:34.130 --> 00:01:36.790
+and August down to
+the minus two slot.
+
+41
+00:01:36.790 --> 00:01:38.450
+Now, my program can
+
+42
+00:01:38.450 --> 00:01:40.745
+continue referencing
+the same dataset,
+
+43
+00:01:40.745 --> 00:01:43.460
+generation zero of
+the current version.
+
+44
+00:01:43.460 --> 00:01:45.590
+If we're going to do
+something like compare
+
+45
+00:01:45.590 --> 00:01:47.970
+this one's numbers to
+last month's numbers,
+
+46
+00:01:47.970 --> 00:01:49.730
+we just specify that
+we want to read
+
+47
+00:01:49.730 --> 00:01:51.950
+from the minus one generation.
+
+48
+00:01:51.950 --> 00:01:55.145
+All of the logic is
+handled by the GDG.
+
+49
+00:01:55.145 --> 00:01:56.510
+We also get to specify
+
+50
+00:01:56.510 --> 00:01:59.350
+just how many generations
+we want to keep around,
+
+51
+00:01:59.350 --> 00:02:00.410
+so it doesn't just keep
+
+52
+00:02:00.410 --> 00:02:02.635
+growing until it
+runs out of space.
+
+53
+00:02:02.635 --> 00:02:06.545
+Here, you can see an example
+of specifying a GDG,
+
+54
+00:02:06.545 --> 00:02:08.660
+where we can add
+a new generation,
+
+55
+00:02:08.660 --> 00:02:10.264
+use the current generation,
+
+56
+00:02:10.264 --> 00:02:12.365
+or use an older generation.
+
+57
+00:02:12.365 --> 00:02:15.850
+The example down here is
+creating a new generation.
+
+58
+00:02:15.850 --> 00:02:18.800
+That's called using
+a relative dataset name.
+
+59
+00:02:18.800 --> 00:02:20.210
+Let me ask you something.
+
+60
+00:02:20.210 --> 00:02:22.480
+Let's say we have a GDG,
+
+61
+00:02:22.480 --> 00:02:24.170
+and then we submit a job which
+
+62
+00:02:24.170 --> 00:02:26.770
+creates a plus one generation,
+
+63
+00:02:26.770 --> 00:02:28.730
+and then we run another job which
+
+64
+00:02:28.730 --> 00:02:31.025
+creates another plus
+one generation,
+
+65
+00:02:31.025 --> 00:02:33.560
+if we want to reference
+the data that we were
+
+66
+00:02:33.560 --> 00:02:36.635
+originally referencing
+before those two jobs ran,
+
+67
+00:02:36.635 --> 00:02:39.340
+what generation
+would we refer to?
+
+68
+00:02:39.340 --> 00:02:41.120
+Because that data started
+
+69
+00:02:41.120 --> 00:02:43.070
+out as the current version zero,
+
+70
+00:02:43.070 --> 00:02:45.065
+it got moved to
+the minus one version
+
+71
+00:02:45.065 --> 00:02:46.610
+when we created the new one.
+
+72
+00:02:46.610 --> 00:02:48.200
+We ran that second job,
+
+73
+00:02:48.200 --> 00:02:50.180
+it got moved to
+the minus two slot.
+
+74
+00:02:50.180 --> 00:02:52.760
+So the correct answer
+is minus two.
+
+75
+00:02:52.760 --> 00:02:54.200
+There's an easier more
+
+76
+00:02:54.200 --> 00:02:56.045
+future proof way of
+doing this though.
+
+77
+00:02:56.045 --> 00:02:59.030
+We can also give
+the absolute dataset name which
+
+78
+00:02:59.030 --> 00:03:02.365
+specifies the generation number
+and version number.
+
+79
+00:03:02.365 --> 00:03:04.670
+Now, when we first start a GDG,
+
+80
+00:03:04.670 --> 00:03:07.505
+both the generation and
+version numbers are zero.
+
+81
+00:03:07.505 --> 00:03:11.820
+So you get the dataset
+name.G00000V00,
+
+82
+00:03:13.150 --> 00:03:15.935
+which is why people
+sometimes referred to this
+
+83
+00:03:15.935 --> 00:03:17.840
+as the GooVuu number.
+
+84
+00:03:17.840 --> 00:03:18.935
+As in yeah,
+
+85
+00:03:18.935 --> 00:03:21.110
+the relative number will
+change at the end of the week.
+
+86
+00:03:21.110 --> 00:03:23.405
+So when you document where
+you saw that problem,
+
+87
+00:03:23.405 --> 00:03:25.430
+make sure you write
+down the GooVuu number.
+
+88
+00:03:25.430 --> 00:03:27.455
+So we can find it later on.
+
+89
+00:03:27.455 --> 00:03:29.330
+I said you can specify
+
+90
+00:03:29.330 --> 00:03:31.280
+how many generations you
+want to keep around,
+
+91
+00:03:31.280 --> 00:03:34.685
+and here's where that option
+is along with a few others.
+
+92
+00:03:34.685 --> 00:03:37.865
+You specify the name
+of the GDG dataset.
+
+93
+00:03:37.865 --> 00:03:39.635
+Then we specify the limit.
+
+94
+00:03:39.635 --> 00:03:42.290
+That's how many generations
+we want to keep around.
+
+95
+00:03:42.290 --> 00:03:44.300
+We can also specify just how we
+
+96
+00:03:44.300 --> 00:03:46.265
+want the generations
+to be handled.
+
+97
+00:03:46.265 --> 00:03:48.560
+This noempty parameter means
+
+98
+00:03:48.560 --> 00:03:50.975
+that when the limit
+of GDGs is hit,
+
+99
+00:03:50.975 --> 00:03:52.895
+the oldest one falls off the end,
+
+100
+00:03:52.895 --> 00:03:54.715
+and everything else
+moves down to slot.
+
+101
+00:03:54.715 --> 00:03:58.205
+This repeats every time
+a new generation gets added.
+
+102
+00:03:58.205 --> 00:04:00.739
+If you specify
+the empty parameter,
+
+103
+00:04:00.739 --> 00:04:02.060
+once you're limit gets hit,
+
+104
+00:04:02.060 --> 00:04:04.070
+all the generations get deleted.
+
+105
+00:04:04.070 --> 00:04:05.780
+So you probably want to go with
+
+106
+00:04:05.780 --> 00:04:07.940
+the no empty parameter in there.
+
+107
+00:04:07.940 --> 00:04:10.040
+You can also specify if you want
+
+108
+00:04:10.040 --> 00:04:12.920
+the generations to be
+first in first out,
+
+109
+00:04:12.920 --> 00:04:17.485
+or a last in first out with
+the FIFO, or LIFO parameter.
+
+110
+00:04:17.485 --> 00:04:20.720
+LIFO is the default that
+you can specify this using
+
+111
+00:04:20.720 --> 00:04:24.050
+the GDG ordered
+JCL keyword for a job.
+
+112
+00:04:24.050 --> 00:04:27.275
+That's a little
+introduction to GDGs.
+
+113
+00:04:27.275 --> 00:04:29.700
+I told you, it would be exciting.

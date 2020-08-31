@@ -1,0 +1,207 @@
+html
+{
+	font-size: 140%;
+	font-family: Consolas;
+}
+
+h1
+{
+	color: white;
+	padding: 5px;
+	text-align: center;
+	background-color: steelblue;
+	
+	max-width: 900;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2
+{
+	font-size: 120%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+div.centered
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+table
+{
+	border-collapse: collapse
+}
+
+table.form-table.centered
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input
+{
+	padding: 7px;
+	margin: 7px;
+}
+
+td.input
+{
+	padding-left: 5px;
+}
+
+.input-title
+{
+	font-size: 110%;
+	text-align: right;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.input-title::after
+{
+	content: ":";
+}
+
+.input-title.text-upper
+{
+	padding-top: 12px;
+	vertical-align: top
+}
+
+div.block-container
+{
+	column-count: 2;
+	
+	max-height: 570;
+	max-width: 680;
+	min-width: 600;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.block
+{
+	display: inline-block;
+}
+
+button.cancel, input[type=submit]
+{
+	width: 150;
+	height: 45;
+	
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	font-size: 100%;
+	font-family: inherit;
+}
+
+textarea
+{
+	margin-top:  8px;
+	margin-left: 7px;
+	
+    resize: none;
+	height: 100;
+	width: 187;
+}
+
+div.block.bordered
+{
+	border: 1px solid black;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+div.block h2
+{
+	position: relative;
+	margin-bottom: -60px;
+	top: -70px;
+}
+
+h4
+{
+	margin-top: 0px;
+	margin-bottom: 7px;
+}
+
+#sortable 
+{
+	list-style-type: none;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 15px;
+	margin-bottom: 0px;
+	
+	padding: 0;
+	width: 150px;
+}
+
+#sortable li 
+{ 
+	padding: 5px;
+	padding-bottom: 6px;
+	
+	font-size: 50%;
+	text-align: left;
+	font-weight: bold;
+	
+	margin: 5px;
+	height: 12px;
+}
+
+select
+{
+	margin-top: 8px;
+	margin-left: 7px;
+	resize: none;
+	height: 32;
+	width: 155;
+}
+
+div.result-box
+{
+	border: 1px solid black;
+	width: 800px;
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	
+	text-align: right;
+	
+	
+	padding: 5px;
+}
+
+div.result-box h2
+{
+	text-align: left;
+}
+
+div.result-box small
+{
+	font-size: small;
+	margin-right: 10px;
+}
+
+table.result-table
+{
+	width: 100%;
+	margin-top: -30px;
+	margin-bottom: -10px;
+}
+
+table.result-table th
+{
+	text-align: left;
+}

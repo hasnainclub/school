@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ticket Sales", "Ticket Sales.vbproj", "{A2CFEEC8-188C-4CDF-9A96-E5666BE4053F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2CFEEC8-188C-4CDF-9A96-E5666BE4053F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CFEEC8-188C-4CDF-9A96-E5666BE4053F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CFEEC8-188C-4CDF-9A96-E5666BE4053F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CFEEC8-188C-4CDF-9A96-E5666BE4053F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

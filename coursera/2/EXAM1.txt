@@ -1,0 +1,91 @@
+
+1.Question 1
+
+What are the two ways to end the ISPF session?
+Enter the letter X on the command line of the ISPF Primary Option Menu or press the F12 (Cancel) key
+
+
+
+2.Question 2
+
+What is the correct procedure to logoff TSO?
+
+WRONG Enter the word disconnect on Primary Option Menu
+
+What is the correct procedure to logoff TSO?
+
+WRONG After ending the ISPF session, enter disconnect
+
+WRONG Enter the word logoff on the Primary Option Menu
+
+
+
+
+3.Question 3
+
+Given a data set name of “IBM.Z.MAINFRAME”, what is the low level qualifier (LLQ)?
+MAINFRAME
+
+
+
+4.Question 4
+
+Which type of data sets contain members?
+PDS and PDSE
+
+
+
+5.Question 5
+
+What is it called when you establish a link to a data set?
+Allocate
+
+
+
+6.Question 6
+
+When in a data set on the edit panel, what is entered in the prefix area to add three more lines to enter data?
+I3
+
+
+7.Question 7
+
+When in a data set on the edit panel, what is entered in the prefix area to move a block of lines?
+MM on the first line, MM on the last line, and A (after) or B (before) on the line where you want to move the lines to
+
+
+8.Question 8
+
+During the exercise, you were instructed to logon TSO. Which panel was displayed after successfully logging on?
+
+ISPF Primary Option Menu
+
+
+
+9.Question 9
+
+After successfully logging on to TSO, what is the correct action to perform when three asterisks (***) appear on the screen?
+
+Press the enter key
+
+
+
+10.Question 10
+
+After ending ISPF, what is the current state of the TSO session?
+TSO is still running
+
+
+
+11.Question 11
+
+If your TSO user ID is TSOID01, what is the correct syntax entered on the logon screen:
+
+TSOID01
+
+tsoid01
+
+TSoid01
+
+All of them
+

@@ -1,0 +1,16 @@
+obj\Debug\Pizza Payroll.exe
+obj\Debug\Pizza Payroll.pdb
+bin\Pizza Payroll.exe
+bin\Pizza Payroll.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Pizza_Payroll.Form1.resources
+obj\Release\Pizza_Payroll.Resources.resources
+obj\Release\Pizza Payroll.vbproj.GenerateResource.Cache
+obj\Release\Pizza Payroll.exe
+obj\Release\Pizza Payroll.xml
+bin\Pizza Payroll.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Pizza_Payroll.Form1.resources
+obj\Debug\Pizza_Payroll.Resources.resources
+obj\Debug\Pizza Payroll.vbproj.GenerateResource.Cache
+obj\Debug\Pizza Payroll.xml

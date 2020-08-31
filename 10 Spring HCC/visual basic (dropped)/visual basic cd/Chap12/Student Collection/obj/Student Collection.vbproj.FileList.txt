@@ -1,0 +1,2 @@
+obj\Debug\Student Collection.exe
+obj\Debug\Student Collection.pdb

@@ -1,0 +1,20 @@
+bin\Debug\String Finder.exe
+bin\Debug\String Finder.pdb
+bin\Debug\String Finder.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\String_Master.Form1.resources
+obj\Debug\String_Master.Resources.resources
+obj\Debug\String Finder.vbproj.GenerateResource.Cache
+obj\Debug\String Finder.exe
+obj\Debug\String Finder.xml
+obj\Debug\String Finder.pdb
+bin\Release\String Finder.exe
+bin\Release\String Finder.pdb
+bin\Release\String Finder.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\String_Master.Form1.resources
+obj\Release\String_Master.Resources.resources
+obj\Release\String Finder.vbproj.GenerateResource.Cache
+obj\Release\String Finder.exe
+obj\Release\String Finder.xml
+obj\Release\String Finder.pdb

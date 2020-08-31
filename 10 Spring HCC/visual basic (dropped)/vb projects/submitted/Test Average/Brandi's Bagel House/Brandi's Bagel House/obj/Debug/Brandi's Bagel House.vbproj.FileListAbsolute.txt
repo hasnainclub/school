@@ -1,0 +1,13 @@
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi_s_Bagel_House.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi_s_Bagel_House.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi's Bagel House.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\bin\Debug\Brandi's Bagel House.exe
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\bin\Debug\Brandi's Bagel House.pdb
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\bin\Debug\Brandi's Bagel House.xml
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi's Bagel House.exe
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi's Bagel House.xml
+C:\Users\hasnainpc\Desktop\vb projects\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi's Bagel House.pdb
+C:\Users\hasnainpc\Desktop\vb projects\Test Average\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi's Bagel House.exe
+C:\Users\hasnainpc\Desktop\vb projects\Test Average\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi's Bagel House.xml
+C:\Users\hasnainpc\Desktop\vb projects\Test Average\Brandi's Bagel House\Brandi's Bagel House\obj\Debug\Brandi's Bagel House.pdb

@@ -1,0 +1,10 @@
+obj\Debug\Simple Payroll.exe
+obj\Debug\Simple Payroll.pdb
+bin\Simple Payroll.exe
+bin\Simple Payroll.pdb
+bin\Simple Payroll.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Simple_Payroll.Form1.resources
+obj\Debug\Simple_Payroll.Resources.resources
+obj\Debug\Simple Payroll.vbproj.GenerateResource.Cache
+obj\Debug\Simple Payroll.xml

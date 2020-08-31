@@ -1,0 +1,18 @@
+\T Assgn9out.txt
+use z1697740;
+start transaction;
+delete from fall where pk = 3;
+select * from fall;
+
+Update fall set data = 'changed' where pk = 2;
+
+Update fall set data = 'changed 2' where pk = 4;
+
+insert into fall values(6, 'dataF');
+select * from fall;
+
+rollback;
+select * from fall;
+
+\t
+exit;

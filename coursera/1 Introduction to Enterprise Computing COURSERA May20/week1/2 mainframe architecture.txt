@@ -1,0 +1,54 @@
+It's important to
+realize that there is no one version of the mainframe, but rather a series
+of computers that all adhere to the
+mainframe architecture. By taking this course, you're learning all about the core fundamentals of
+the mainframe architecture. Like all other computers, the mainframe has memory, and you've probably seen
+memory models before. There are in laptops, phones, and the mainframe. Applications and operating
+systems need memory. But there's only so much real physical memory to go around. Even on a fully loaded system, applications are always
+hungry for more. Sometimes it makes sense
+to move some of that data from real memory out
+to auxiliary storage. Sometimes called virtual memory. Of course, if that data is needed for faster
+access later on, it can be moved back
+into real memory. On the mainframe, auxiliary or just OWC storage is kept on direct-access storage devices, also known as DASD. These are full of hard
+drives which can be either a disk or a solid state. No matter how fast
+the drives are, they're still nowhere near
+as fast as real memory. So the mainframe has to make a decision about where
+that data should be kept. However, part of the mainframe
+architectures is based on this tight relationship between real memory and OWC storage. It's for that reason that
+memory on the mainframe is usually just
+referred to as storage. So when you hear storage, just know that
+we're talking about something that includes both on chip memory and OWC storage. Because the way the architecture works to the application running, it's all just storage. So when an application
+comes along and says it needs a whole
+bunch of memory, all these components
+work together so the application can carry on. It has this nearly
+unlimited amount of memory when in fact, all the complexities are being
+handled behind the scenes. In z/OS, the mainframe
+operating system we're going to be
+spending most of our time talking about here, users and applications
+have access to their own individual
+address space. An address space is simply
+a map of storage that is made available to users
+and applications. The range of the
+address space goes all the way up to 16 exabytes. An exabyte is the unit that
+comes after petabytes. So that's a lot of space. By giving an application
+and address space, it's basically saying, yes store your data anywhere
+you'd like in here, I'll manage it all for you. Once it's up and running, z/OS will periodically check on that memory to see if some of it can actually be migrated. In z/OS, memory is placed into four kilobyte chunks
+called pages. When that memory is in central
+storage on real memory, it occupies what's
+called a frame. When it's moved out
+to OWC storage, it takes up a slot. When the OS decides to
+move a slot to a frame or a frame to a slot,
+that's called paging. We like for paging to happen as little as possible
+on the mainframe. Hopefully, the OS identifies with the right frames to
+page out the slots, and they don't have to
+be paged back in because that paging back and forth is
+a fairly complex procedure. All of these changes are
+kept track of in a series of tables maintained by
+the operating system. In a well-tuned system with
+adequate real storage, memory gets paged out once
+and most of it stays there. The concept of virtual memory is certainly not unique
+to the mainframe, but the way in which it handles its virtual memory you can see is something pretty special. The most current generation of the mainframe
+architecture is known as the z/Architecture and it includes not only the hardware
+found in the mainframe, but the mainframe operating
+systems which are built to take advantage of
+the hardware as features.

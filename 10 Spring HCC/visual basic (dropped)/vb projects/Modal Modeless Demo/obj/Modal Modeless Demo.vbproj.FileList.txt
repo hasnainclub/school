@@ -1,0 +1,11 @@
+obj\Debug\Modal Modeless Demo.exe
+obj\Debug\Modal Modeless Demo.pdb
+bin\Modal Modeless Demo.exe
+bin\Modal Modeless Demo.pdb
+bin\Modal Modeless Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Modal_Modeless_Demo.frmAnother.resources
+obj\Debug\Modal_Modeless_Demo.frmMain.resources
+obj\Debug\Modal_Modeless_Demo.Resources.resources
+obj\Debug\Modal Modeless Demo.vbproj.GenerateResource.Cache
+obj\Debug\Modal Modeless Demo.xml

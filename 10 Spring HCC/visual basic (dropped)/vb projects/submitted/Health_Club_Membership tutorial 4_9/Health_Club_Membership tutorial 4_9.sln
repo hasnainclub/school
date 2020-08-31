@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Basic Express 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Health_Club_Membership tutorial 4_9", "Health_Club_Membership tutorial 4_9\Health_Club_Membership tutorial 4_9.vbproj", "{8D7A847A-9204-475E-9106-0E2C5531CB7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D7A847A-9204-475E-9106-0E2C5531CB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7A847A-9204-475E-9106-0E2C5531CB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7A847A-9204-475E-9106-0E2C5531CB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7A847A-9204-475E-9106-0E2C5531CB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

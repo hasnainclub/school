@@ -1,0 +1,10 @@
+bin\Debug\Employee Collection.exe
+bin\Debug\Employee Collection.pdb
+bin\Debug\Employee Collection.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Employee_Collection.Form1.resources
+obj\Debug\Employee_Collection.Resources.resources
+obj\Debug\Employee Collection.vbproj.GenerateResource.Cache
+obj\Debug\Employee Collection.exe
+obj\Debug\Employee Collection.xml
+obj\Debug\Employee Collection.pdb

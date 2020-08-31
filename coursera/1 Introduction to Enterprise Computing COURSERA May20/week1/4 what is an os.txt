@@ -1,0 +1,68 @@
+What is an operating system? It's good question, we've been
+talking a lot about operating systems, and we never really actually
+defined what one is. And you might not have actually given much
+thought to what an operating system is, even though you kind of know what one is. You have one on your phone,
+your computer, your game console. An operating system, or an OS, is a collection of programs that manages
+the internal workings of the computer. So when a program wants to write data then
+retrieve it later, the OS ensures that the application is able to do so as
+quickly, easily, and safely as possible. An operating system has a number
+of management functions. Process management,
+security management, file management, communications management, resource
+management, and memory management. The way all these work together is really
+what makes up the heart of the OS. Typically applications running on
+an operating system interface with the operating system through a simplified
+series of interfaces called APIs, or application programming interfaces. Let's get into one of those functions,
+process management. Typically a process can be in
+one of five states, new, ready, running, waiting, and terminated. In the new state, a process is in the
+stage of being created, it's being built. In the ready state,
+the process is ready, it's waiting for pickup, but
+the CPU is busy doing something else. In the running state, the CPU has grabbed
+that process, it's picked it up and it's actively working with it. Okay, now the waiting state, this is
+where it gets a little bit interesting. A process typically doesn't just start and
+end all by itself. It might need to read some,
+data prompt the user for some input, or it might have to kick off
+a couple sub-processes. And while it's doing that,
+while it's waiting for them to finish,
+the process can be put into a wait state. And when it's in a wait state,
+it's waiting. And finally, when the process
+has accomplished its task and there's nothing else for it to do,
+it goes into the terminated state. So you can see the general
+flow of things here. It starts out new, and then it goes into
+ready, and then it goes into running. From there, it either goes into the
+terminated state, which says it's done for one reason or another. It either did everything it needed
+to do or something else happened, or it goes back to ready. There are two ways it
+can go back to ready. The first is in the case of a wait,
+where it's waiting for more data, user input, or for
+another process to finish. Or if the CPU is like hey,
+I know you're really busy and you're trying to do your stuff. I've got a bunch of other programs
+trying to do something too, so I'll be right back, and
+that's called an interrupt. An interrupt is just that, it kind of
+interrupts the process and says, sit right here, be patient,
+go into a ready state. And I'll come back and get you and
+finish you when I have time to do that. That's the only way that a computer
+can work on multiple programs at the same time. Now, a process can go back and
+forth between running and ready a whole bunch of
+times before it completes. And that's a good thing, because if programs could only run in
+a straight line from ready to finished, we wouldn't be able to run more than
+one program at a time on a computer. Then there's security management. Obviously, security very, very important
+on a mainframe, because we're dealing with the world's most important financial data,
+health records, personal records. So security, very important,
+we're going to talk more about that later. Up next, file management. On the Z, we try to offload as much of the
+work away from the application to the OS as possible. So rather than making the application keep
+track of where everything was stored and where to get it later,
+we let the file management handle that. Communications management takes care of
+all the network communications, very, very important. And then there's the resource management. This makes sure that all of
+the programs running on the system played nicely with one another. It looks at everything competing for
+the same resources, like CPU and memory, network, disk. And it makes sure everyone kind of
+gets a fair swat at those resources. Resource management is
+the cornerstone of modern computing. And lastly, there's memory management. We're going to get into this in
+much greater detail later on. But suffice to say on the mainframe, we want our applications to run as
+quickly and efficiently as possible. And one way of doing that is by
+abstracting all the complexities of memory management away
+from the developer and their applications and handling them
+in the memory management function. And there you have it, that's your six management
+functions of an operating system. Now, some of them might
+have seemed obvious, while others might not
+seem all that vital. But I tell you what, you take away any one
+of them, and you'd have a really hard time getting anything done on
+a modern operating system.

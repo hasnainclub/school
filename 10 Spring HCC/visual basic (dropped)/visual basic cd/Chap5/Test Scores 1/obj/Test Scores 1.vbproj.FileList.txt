@@ -1,0 +1,15 @@
+obj\Debug\Test Scores 1.exe
+obj\Debug\Test Scores 1.pdb
+bin\Test Scores 1.exe
+bin\Test Scores 1.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Test_Scores_1.Form1.resources
+obj\Debug\Test_Scores_1.Resources.resources
+obj\Debug\Test Scores 1.vbproj.GenerateResource.Cache
+obj\Debug\Test Scores 1.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Test_Scores_1.Form1.resources
+obj\Release\Test_Scores_1.Resources.resources
+obj\Release\Test Scores 1.vbproj.GenerateResource.Cache
+obj\Release\Test Scores 1.exe
+obj\Release\Test Scores 1.xml

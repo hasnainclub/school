@@ -1,0 +1,164 @@
+                   J E S 2  J O B  L O G  --  S Y S T E M  2 9 6 4  --  N O D E  S V S C J E S 2        
+
+ 
+23.17.06 JOB09525 ---- WEDNESDAY, 11 SEP 2019 ----
+23.17.06 JOB09525  IRR010I  USERID KC03E85  IS ASSIGNED TO THIS JOB.
+23.17.06 JOB09525  ICH70001I KC03E85  LAST ACCESS AT 22:58:17 ON WEDNESDAY, SEPTEMBER 11, 2019
+23.17.06 JOB09525  $HASP373 KC03E85A STARTED - INIT 2    - CLASS A        - SYS 2964
+23.17.07 JOB09525  -                                      -----TIMINGS (MINS.)------                          -----PAGING COUNTS----
+23.17.07 JOB09525  -STEPNAME PROCSTEP    RC   EXCP   CONN       TCB       SRB  CLOCK          SERV  WORKLOAD  PAGE  SWAP   VIO SWAPS
+23.17.07 JOB09525  -JSTEP01              00     47     11       .00       .00     .0             3  BATCH        0     0     0     0
+23.17.07 JOB09525  -JSTEP02              00     53     11       .00       .00     .0             2  BATCH        0     0     0     0
+23.17.07 JOB09525  -KC03E85A ENDED.  NAME-ATTARWALA            TOTAL TCB CPU TIME=      .00 TOTAL ELAPSED TIME=    .0
+23.17.07 JOB09525  $HASP395 KC03E85A ENDED - RC=0000
+
+------ JES2 JOB STATISTICS ------
+
+
+  11 SEP 2019 JOB EXECUTION DATE
+
+
+           64 CARDS READ
+
+
+          141 SYSOUT PRINT RECORDS
+
+
+            0 SYSOUT PUNCH RECORDS
+
+
+           16 SYSOUT SPOOL KBYTES
+
+
+         0.01 MINUTES EXECUTION TIME
+!! END OF JES SPOOL FILE !!
+       1 //KC03E85A JOB ,'ATTARWALA',MSGCLASS=H                                  JOB09525
+         //*                                                                     00020000
+         //************************************************************          00030000
+         //* THE LINE ABOVE JUST SAYS WHO U ARE                                  00040014
+         //* CSCI 465/565   FALL 2019                                            00050000
+         //*                                                                     00060000
+         //* ASSIGNMENT 2   COPY AND EXECUTE JCL                                 00070002
+         //*                                                                     00080000
+         //* PROGRAMMER: HASNAIN ATTARWALA                                       00090000
+         //*                                                                     00100000
+         //* DUE DATE: 09/11/2019                                                00110002
+         //* DUE TIME: 11:59 PM                                                  00120000
+         //*                                                                     00130000
+         //* first step will fetch and execute a program object named READDATA   00140002
+         //* stored in DECKERS load library PDSE KC02322.CSCI465.LOADLIB         00150003
+         //*                                                                     00160003
+         //* The second step will fetch and execute a program object named       00180002
+         //* RPTDATA from the same load library                                  00190002
+         //* The first step's program, READDATA, will read 80-byte records       00200002
+         //* from a member named DATA2 in deckers                                00210002
+         //* PDS named KC02322.CSCI465.DATAFA19 and will write                   00220002
+         //* them out to a second data set defined with 80-byte                  00230002
+         //* records. Your JCL must indicate this second output data set as      00240002
+         //* a temporary data set that will be passed to the                     00250002
+         //* second step of your JCL                                             00260002
+         //************************************************************          00320000
+         //*                                                                     00330000
+         //* JSTEP01 WILL FETCH AND EXECUTE A PROGRAM OBJECT NAMED READDATA      00331015
+         //* STORED IN THE DECKERS LOAD LIBRARY PDSE                             00332015
+       2 //JSTEP01  EXEC PGM=READDATA                                            00340008
+         //* INDICATES THE LOADLIB WHERE THE READDATA MODULE WILL BE FETCHED FROM00350015
+       3 //STEPLIB  DD DSN=KC02322.CSCI465.LOADLIB,DISP=SHR                      00400012
+         //*                                                                     00401015
+         //* READS INPUT FROM DECKERS DATA SET, AKA DATA2 FROM THE FALL19 SETS.  00410015
+         //* SHARE FOR THE DISPLACEMENT. THE DATA SET IS ALLOCATED WITH TRACKS.  00420015
+       4 //RECSIN1  DD DSN=KC02322.CSCI465.DATAFA19(DATA2),                      00430012
+         //            DISP=SHR,                                                 00431012
+         //            SPACE=(TRK,(1,1))                                         00432012
+         //*                                                                     00433003
+         //* OUTPUTS DATA TO AN 80 BYTE LRECL TEMP DATA SET. THIS PASSES A       00433115
+         //* TEMPORARY DATA SET TO BE USED IN A LATER STEP, TEMP1. ALLOCATED     00433215
+         //* WITH 5 PRIMARY BLOCKS AND 1 SET OF SECONDARY BLOCKS IN TRACKS       00433315
+       5 //RECSOUT1 DD DSN=&&TEMP1,                                              00434012
+         //            SPACE=(TRK,(5,1)),                                        00435012
+         //            DISP=(NEW,PASS,DELETE)                                    00440006
+         //*                                                                     00450000
+         //* JUST A DUMP STD OUTPUT IF ABBEND                                    00451015
+       6 //SYSUDUMP DD SYSOUT=*                                                  00460006
+         //*                                                                     00540008
+         //* JSTEP02 WILL FETCH AND EXECUTE A PROGRAM OBJECT NAMED RRPDATA FROM  00541015
+         //* THE SAME LOAD LIBRARY, AS THE PREVIOUS CONDITION CODE RETURNS 0     00542015
+       7 //JSTEP02  EXEC PGM=RPTDATA,COND=(0,LT)                                 00550013
+         //*                                                                     00560011
+         //* LOADLIB WHERE RPTDATA MODULE WILL BE FETCHED FROM                   00561015
+       8 //STEPLIB  DD DSN=KC02322.CSCI465.LOADLIB,DISP=SHR                      00570011
+         //*                                                                     00580011
+         //* READS INPUT FROM THE TEMPORARY DATA SET WE PASSED BEFORE, TEMP1     00581015
+       9 //RECSIN2  DD DSN=&&TEMP1,DISP=(OLD,DELETE,DELETE)                      00590011
+         //*                                                                     00600011
+         //* OUTPUTS ALL THE DATA FROM THE DATA SET                              00601015
+      10 //RECSOUT2 DD SYSOUT=*                                                  00610011
+         //*                                                                     00620011
+         //* JUST A DUMP STD OUTPUT IF ABBEND                                    00621015
+      11 //SYSUDUMP DD SYSOUT=*                                                  00630011
+!! END OF JES SPOOL FILE !!
+ICH70001I KC03E85  LAST ACCESS AT 22:58:17 ON WEDNESDAY, SEPTEMBER 11, 2019
+IEFA111I KC03E85A IS USING THE FOLLOWING JOB RELATED SETTINGS:
+         SWA=ABOVE,TIOT SIZE=32K,DSENQSHR=DISALLOW,GDGBIAS=JOB
+IEF236I ALLOC. FOR KC03E85A JSTEP01
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IGD103I SMS ALLOCATED TO DDNAME RECSIN1
+IGD101I SMS ALLOCATED TO DDNAME (RECSOUT1)
+        DSN (SYS19254.T231706.RA000.KC03E85A.TEMP1.H01   )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP01 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC02322.CSCI465.LOADLIB                      RETAINED,  DDNAME=STEPLIB 
+IGD104I KC02322.CSCI465.DATAFA19                     RETAINED,  DDNAME=RECSIN1 
+IGD106I SYS19254.T231706.RA000.KC03E85A.TEMP1.H01    PASSED,    DDNAME=RECSOUT1
+IEF285I   KC03E85.KC03E85A.JOB09525.D0000101.?         SYSOUT        
+IEF373I STEP/JSTEP01 /START 2019254.2317
+IEF032I STEP/JSTEP01 /STOP  2019254.2317 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:    88K  SYS:   264K  EXT:     2588K  SYS:    11764K
+        ATB- REAL:                  4116K  SLOTS:                     0K
+             VIRT- ALLOC:      11M SHRD:       0M
+IEF236I ALLOC. FOR KC03E85A JSTEP02
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IGD103I SMS ALLOCATED TO DDNAME RECSIN2
+IEF237I JES2 ALLOCATED TO RECSOUT2
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP02 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC02322.CSCI465.LOADLIB                      RETAINED,  DDNAME=STEPLIB 
+IGD105I SYS19254.T231706.RA000.KC03E85A.TEMP1.H01    DELETED,   DDNAME=RECSIN2 
+IEF285I   KC03E85.KC03E85A.JOB09525.D0000102.?         SYSOUT        
+IEF285I   KC03E85.KC03E85A.JOB09525.D0000103.?         SYSOUT        
+IEF373I STEP/JSTEP02 /START 2019254.2317
+IEF032I STEP/JSTEP02 /STOP  2019254.2317 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:    92K  SYS:   264K  EXT:     2584K  SYS:    11764K
+        ATB- REAL:                  4116K  SLOTS:                     0K
+             VIRT- ALLOC:      11M SHRD:       0M
+IEF375I  JOB/KC03E85A/START 2019254.2317
+IEF033I  JOB/KC03E85A/STOP  2019254.2317 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+!! END OF JES SPOOL FILE !!
+
+QUOTATIONS FROM TWO IMPORTANT AMERICAN HISTORICAL DOCUMENTS      FALL 2019                                                          
+
+"We hold these truths to be self-evident, that all men are created                                                                  
+
+equal, that they are endowed by their Creator with certain unalienable                                                              
+
+Rights, that among these are Life, Liberty and the pursuit of                                                                       
+
+Happiness." -- Declaration of Independence, 1776                                                                                    
+
+"We the People of the United States, in Order to form a more perfect                                                                
+
+Union, establish Justice, insure domestic Tranquility, provide for the                                                              
+
+common defence, promote the general Welfare, and secure the Blessings                                                               
+
+of Liberty to ourselves and our Posterity, do ordain and establish this                                                             
+
+Constitution of the United States of America." -- Preamble to the U.S.                                                              
+
+Constitution, 1789                                                                                                                  
+!! END OF JES SPOOL FILE !!

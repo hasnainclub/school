@@ -1,0 +1,21 @@
+//KC03E85A JOB ,'ATTARWALA',MSGCLASS=H
+//JSTEP01 EXEC PGM=IEFBR14
+       //*
+       //* The following DD card deletes an existing PDSE if it
+       //* already exists. If it does not exist, the data set is
+       //* first allocated and then immediately deleted.
+       //*
+//DD1 DD DSN=KC03E85.CSCI465.LOADLIB,
+// SPACE=(TRK,(1,1,1)),
+// DISP=(MOD,DELETE,DELETE)
+//*
+//JSTEP02 EXEC PGM=IEFBR14
+//*
+//* The following DD card allocates a PDSE to hold your
+//* program load module files.
+//*
+//DD1 DD DSN=KC03E85.CSCI465.LOADLIB,
+// DCB=(RECFM=U,LRECL=0,BLKSIZE=4096),
+// DSNTYPE=LIBRARY,
+// SPACE=(CYL,(9,5,5)),
+// DISP=(NEW,KEEP,DELETE)

@@ -1,0 +1,68 @@
+Okay. I'm really glad to see Generation Data Groups or GDGs included in
+the list of topics for this course because I think they're just something
+that's a great example of a feature in z/OS that just makes
+perfect sense to have, and it's executed in
+such a brilliant way, you'll just wish it were
+available everywhere. So picture a program that
+gathers data during the day. Maybe it tracks problem tickets
+that were opened, or guest checking into a hotel. No matter what you've got
+a whole bunch of data being generated and
+every once in a while, it's nice to start
+with a fresh dataset. So you're not opening up
+as huge thing each time. So you create a new dataset, and update the program to
+start looking in that. When you want to look
+for an old dataset, you go through all the old ones and you find the one you want. It seems pretty simple. In fact, it's a pattern that
+you see so often on z/OS that we have a special way
+of dealing with that exact type of situation. A Generation Data Group
+is a collection of historically related
+datasets that are arranged in
+chronological order. So you have that program
+writing out data. Maybe your procedure is to cut over a new dataset every month. Let's say we're in September, so we've got August and July
+sitting in there is the minus one and minus two
+months relative to September. October comes along, and here's where GDGs
+leap into action. You specify that you want a plus one generation
+of the dataset, that moves September
+into the minus one slot, and August down to
+the minus two slot. Now, my program can continue referencing
+the same dataset, generation zero of
+the current version. If we're going to do
+something like compare this one's numbers to
+last month's numbers, we just specify that
+we want to read from the minus one generation. All of the logic is
+handled by the GDG. We also get to specify just how many generations
+we want to keep around, so it doesn't just keep growing until it
+runs out of space. Here, you can see an example
+of specifying a GDG, where we can add
+a new generation, use the current generation, or use an older generation. The example down here is
+creating a new generation. That's called using
+a relative dataset name. Let me ask you something. Let's say we have a GDG, and then we submit a job which creates a plus one generation, and then we run another job which creates another plus
+one generation, if we want to reference
+the data that we were originally referencing
+before those two jobs ran, what generation
+would we refer to? Because that data started out as the current version zero, it got moved to
+the minus one version when we created the new one. We ran that second job, it got moved to
+the minus two slot. So the correct answer
+is minus two. There's an easier more future proof way of
+doing this though. We can also give
+the absolute dataset name which specifies the generation number
+and version number. Now, when we first start a GDG, both the generation and
+version numbers are zero. So you get the dataset
+name.G00000V00, which is why people
+sometimes referred to this as the GooVuu number. As in yeah, the relative number will
+change at the end of the week. So when you document where
+you saw that problem, make sure you write
+down the GooVuu number. So we can find it later on. I said you can specify how many generations you
+want to keep around, and here's where that option
+is along with a few others. You specify the name
+of the GDG dataset. Then we specify the limit. That's how many generations
+we want to keep around. We can also specify just how we want the generations
+to be handled. This noempty parameter means that when the limit
+of GDGs is hit, the oldest one falls off the end, and everything else
+moves down to slot. This repeats every time
+a new generation gets added. If you specify
+the empty parameter, once you're limit gets hit, all the generations get deleted. So you probably want to go with the no empty parameter in there. You can also specify if you want the generations to be
+first in first out, or a last in first out with
+the FIFO, or LIFO parameter. LIFO is the default that
+you can specify this using the GDG ordered
+JCL keyword for a job. That's a little
+introduction to GDGs. I told you, it would be exciting.

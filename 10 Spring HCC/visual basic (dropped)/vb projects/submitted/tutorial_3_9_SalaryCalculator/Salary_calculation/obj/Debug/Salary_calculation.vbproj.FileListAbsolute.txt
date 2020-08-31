@@ -1,0 +1,10 @@
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\bin\Debug\Salary_calculation.exe
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\bin\Debug\Salary_calculation.pdb
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\bin\Debug\Salary_calculation.xml
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\obj\Debug\Salary_calculation.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\obj\Debug\Salary_calculation.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\obj\Debug\Salary_calculation.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\obj\Debug\Salary_calculation.exe
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\obj\Debug\Salary_calculation.xml
+C:\Users\hasnainpc\Desktop\vb projects\Salary_calculation\Salary_calculation\obj\Debug\Salary_calculation.pdb

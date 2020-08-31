@@ -1,0 +1,2 @@
+obj\Debug\First Federal.exe
+obj\Debug\First Federal.pdb

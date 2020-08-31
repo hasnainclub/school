@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap5\Test Scores 1\obj\Release\Test Scores 1.exe
+D:\sovb4\examples\Chap5\Test Scores 1\obj\Release\Test Scores 1.xml
+D:\sovb4\examples\Chap5\Test Scores 1\bin\Test Scores 1.exe
+D:\sovb4\examples\Chap5\Test Scores 1\bin\Test Scores 1.xml
+D:\sovb4\examples\Chap5\Test Scores 1\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap5\Test Scores 1\obj\Release\Test_Scores_1.Form1.resources
+D:\sovb4\examples\Chap5\Test Scores 1\obj\Release\Test_Scores_1.Resources.resources
+D:\sovb4\examples\Chap5\Test Scores 1\obj\Release\Test Scores 1.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Test Scores 1\obj\Release\Test Scores 1.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Test Scores 1\obj\Release\Test Scores 1.xml

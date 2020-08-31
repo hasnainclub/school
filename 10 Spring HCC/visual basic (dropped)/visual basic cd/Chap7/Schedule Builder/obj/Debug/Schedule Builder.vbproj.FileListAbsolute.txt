@@ -1,0 +1,22 @@
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\Schedule Builder.exe
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\Schedule Builder.xml
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\Schedule Builder.pdb
+D:\sovb4\examples\Chap7\Schedule Builder\bin\Schedule Builder.exe
+D:\sovb4\examples\Chap7\Schedule Builder\bin\Schedule Builder.pdb
+D:\sovb4\examples\Chap7\Schedule Builder\bin\Schedule Builder.xml
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\Schedule_Builder.frmMain.resources
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\Schedule_Builder.frmSchedule.resources
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\Schedule_Builder.Resources.resources
+D:\sovb4\examples\Chap7\Schedule Builder\obj\Debug\Schedule Builder.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\Schedule Builder.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\Schedule Builder.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\Schedule Builder.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\bin\Schedule Builder.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\bin\Schedule Builder.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\bin\Schedule Builder.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\Schedule_Builder.frmMain.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\Schedule_Builder.frmSchedule.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\Schedule_Builder.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Schedule Builder\obj\Debug\Schedule Builder.vbproj.GenerateResource.Cache

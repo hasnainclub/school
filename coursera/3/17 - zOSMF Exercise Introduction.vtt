@@ -1,0 +1,75 @@
+WEBVTT
+
+1
+00:00:02.720 --> 00:00:06.615
+It's time to get
+hands-on with ZOSMF.
+
+2
+00:00:06.615 --> 00:00:08.700
+Now, the screens I
+showed you were from
+
+3
+00:00:08.700 --> 00:00:11.025
+the desktop version of ZOSMF,
+
+4
+00:00:11.025 --> 00:00:14.310
+and this lab uses the traditional
+menu-driven approach.
+
+5
+00:00:14.310 --> 00:00:16.515
+Under the covers,
+it's all the same.
+
+6
+00:00:16.515 --> 00:00:18.840
+But this way, you get to
+see both versions because
+
+7
+00:00:18.840 --> 00:00:21.780
+not all mainframe shops are
+going to use the same one.
+
+8
+00:00:21.780 --> 00:00:23.850
+You'll log into ZOSMF using
+
+9
+00:00:23.850 --> 00:00:25.500
+the Firefox browser located
+
+10
+00:00:25.500 --> 00:00:27.450
+on your virtual
+machine's desktop.
+
+11
+00:00:27.450 --> 00:00:29.340
+Then you'll explore
+around a little bit,
+
+12
+00:00:29.340 --> 00:00:31.080
+see how to connect
+to the console,
+
+13
+00:00:31.080 --> 00:00:32.490
+enter some commands, and
+
+14
+00:00:32.490 --> 00:00:34.455
+check out the system
+configuration.
+
+15
+00:00:34.455 --> 00:00:36.195
+There's a lot to do in here,
+
+16
+00:00:36.195 --> 00:00:38.260
+so let's get started.

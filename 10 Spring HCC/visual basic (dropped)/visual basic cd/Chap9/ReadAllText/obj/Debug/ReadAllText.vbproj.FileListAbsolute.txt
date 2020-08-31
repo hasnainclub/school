@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap9\ReadAllText\obj\Debug\ReadAllText.exe
+D:\sovb4\examples\Chap9\ReadAllText\obj\Debug\ReadAllText.xml
+D:\sovb4\examples\Chap9\ReadAllText\obj\Debug\ReadAllText.pdb
+D:\sovb4\examples\Chap9\ReadAllText\bin\Debug\ReadAllText.exe
+D:\sovb4\examples\Chap9\ReadAllText\bin\Debug\ReadAllText.pdb
+D:\sovb4\examples\Chap9\ReadAllText\bin\Debug\ReadAllText.xml
+D:\sovb4\examples\Chap9\ReadAllText\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap9\ReadAllText\obj\Debug\ReadAllText.Form1.resources
+D:\sovb4\examples\Chap9\ReadAllText\obj\Debug\ReadAllText.Resources.resources
+D:\sovb4\examples\Chap9\ReadAllText\obj\Debug\ReadAllText.vbproj.GenerateResource.Cache

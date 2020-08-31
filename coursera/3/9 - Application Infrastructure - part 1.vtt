@@ -1,0 +1,609 @@
+WEBVTT
+
+1
+00:00:02.580 --> 00:00:05.350
+Let's move up the
+stack a little bit and
+
+2
+00:00:05.350 --> 00:00:08.025
+talk about application
+infrastructure.
+
+3
+00:00:08.025 --> 00:00:10.290
+On your phone or
+personal computer.,
+
+4
+00:00:10.290 --> 00:00:13.390
+you typically launch an
+application to interact with it,
+
+5
+00:00:13.390 --> 00:00:15.580
+especially if it's
+something like a game or
+
+6
+00:00:15.580 --> 00:00:18.265
+a browser or a word
+processing program.
+
+7
+00:00:18.265 --> 00:00:20.855
+No matter what type
+of application it is,
+
+8
+00:00:20.855 --> 00:00:22.360
+it typically sits on top of
+
+9
+00:00:22.360 --> 00:00:24.310
+the operating system
+and relies on
+
+10
+00:00:24.310 --> 00:00:26.200
+the services of the
+operating system to
+
+11
+00:00:26.200 --> 00:00:29.205
+execute it and it does something.
+
+12
+00:00:29.205 --> 00:00:33.190
+On the mainframe, the
+magic word is transaction.
+
+13
+00:00:33.190 --> 00:00:36.295
+The simplest way to think
+about transaction is
+
+14
+00:00:36.295 --> 00:00:39.610
+an interaction typically
+where something is exchanged.
+
+15
+00:00:39.610 --> 00:00:40.780
+If you were in a store,
+
+16
+00:00:40.780 --> 00:00:42.820
+that transaction would begin when
+
+17
+00:00:42.820 --> 00:00:45.020
+you say I want to buy
+this and it would
+
+18
+00:00:45.020 --> 00:00:47.180
+finish when you walk out
+of the store holding
+
+19
+00:00:47.180 --> 00:00:50.015
+the thing you wanted without
+getting chased down.
+
+20
+00:00:50.015 --> 00:00:52.595
+Or if it's an
+informational transaction,
+
+21
+00:00:52.595 --> 00:00:54.410
+like you're buying
+an airline ticket,
+
+22
+00:00:54.410 --> 00:00:56.300
+the transaction starts
+when you click to
+
+23
+00:00:56.300 --> 00:00:58.610
+book the flight and
+isn't concluded
+
+24
+00:00:58.610 --> 00:01:00.770
+until you've got some
+sort of confirmation
+
+25
+00:01:00.770 --> 00:01:03.395
+with a booking ID or
+something you can reference.
+
+26
+00:01:03.395 --> 00:01:06.230
+Additionally, if someone
+were to come along
+
+27
+00:01:06.230 --> 00:01:08.840
+and try to book the same
+seat on the same flight,
+
+28
+00:01:08.840 --> 00:01:11.735
+they wouldn't be able to
+because you already got it.
+
+29
+00:01:11.735 --> 00:01:14.180
+What I'm getting at is that
+at the business level,
+
+30
+00:01:14.180 --> 00:01:15.320
+it's important that there be
+
+31
+00:01:15.320 --> 00:01:18.500
+a clear beginning and end
+point of a transaction.
+
+32
+00:01:18.500 --> 00:01:19.700
+The same goes for
+
+33
+00:01:19.700 --> 00:01:21.920
+all the smaller technical
+transactions that
+
+34
+00:01:21.920 --> 00:01:24.880
+make up the overall
+business transaction.
+
+35
+00:01:24.880 --> 00:01:27.590
+The characteristics of a
+transaction can best be
+
+36
+00:01:27.590 --> 00:01:30.800
+described by how they adhere
+to the ACID properties.
+
+37
+00:01:30.800 --> 00:01:33.905
+ACID stands for
+Atomicity, Consistency,
+
+38
+00:01:33.905 --> 00:01:37.165
+Isolation, and Durability.
+One at a time.
+
+39
+00:01:37.165 --> 00:01:39.515
+Atomicity, that's a
+way of saying that
+
+40
+00:01:39.515 --> 00:01:42.145
+either a transaction
+happened or it didn't.
+
+41
+00:01:42.145 --> 00:01:43.760
+Since its transaction can have
+
+42
+00:01:43.760 --> 00:01:46.565
+multiple smaller steps of
+transactions within it,
+
+43
+00:01:46.565 --> 00:01:48.410
+it's important that
+all of those complete
+
+44
+00:01:48.410 --> 00:01:50.675
+before we consider
+the transaction done.
+
+45
+00:01:50.675 --> 00:01:52.130
+So there's no way to go back
+
+46
+00:01:52.130 --> 00:01:53.720
+later and say, well, actually,
+
+47
+00:01:53.720 --> 00:01:54.740
+we took your money,
+
+48
+00:01:54.740 --> 00:01:57.200
+but we never actually
+gave you what you wanted.
+
+49
+00:01:57.200 --> 00:01:59.809
+Consistency means
+that the database
+
+50
+00:01:59.809 --> 00:02:02.225
+or the data related
+to a transaction
+
+51
+00:02:02.225 --> 00:02:05.120
+only moves between
+one valid state and
+
+52
+00:02:05.120 --> 00:02:07.925
+another valid state
+and at any time,
+
+53
+00:02:07.925 --> 00:02:09.860
+all of the data can be frozen,
+
+54
+00:02:09.860 --> 00:02:12.380
+gone over with a fine-tooth
+comb and it would all
+
+55
+00:02:12.380 --> 00:02:15.425
+checkout and make sense
+according to its rules.
+
+56
+00:02:15.425 --> 00:02:17.990
+An inconsistent
+database is one where
+
+57
+00:02:17.990 --> 00:02:20.585
+bad programming could
+potentially leave data
+
+58
+00:02:20.585 --> 00:02:22.475
+in unacceptable places or
+
+59
+00:02:22.475 --> 00:02:26.225
+update values in undocumented
+or unsupported ways.
+
+60
+00:02:26.225 --> 00:02:28.535
+Number three is isolation.
+
+61
+00:02:28.535 --> 00:02:31.160
+It's generally understood
+that a system will have
+
+62
+00:02:31.160 --> 00:02:34.310
+lots and lots of transactions
+happening at the same time.
+
+63
+00:02:34.310 --> 00:02:36.860
+There's a fair amount
+of scheduling and
+
+64
+00:02:36.860 --> 00:02:40.010
+threading and magic that
+makes this all possible.
+
+65
+00:02:40.010 --> 00:02:42.080
+Isolation is a measure of how
+
+66
+00:02:42.080 --> 00:02:44.180
+smoothly a single transaction can
+
+67
+00:02:44.180 --> 00:02:46.040
+happen without being affected
+
+68
+00:02:46.040 --> 00:02:48.710
+by all the other
+transactions around it.
+
+69
+00:02:48.710 --> 00:02:51.740
+This isn't necessarily a
+performance statement,
+
+70
+00:02:51.740 --> 00:02:53.690
+but how often am I going to
+
+71
+00:02:53.690 --> 00:02:55.685
+run into tables that
+are locked because
+
+72
+00:02:55.685 --> 00:02:57.290
+other people are using them or
+
+73
+00:02:57.290 --> 00:03:00.095
+seeing data that is
+meant to be temporary?
+
+74
+00:03:00.095 --> 00:03:02.060
+Put another way, how well can
+
+75
+00:03:02.060 --> 00:03:05.470
+the system scale while
+keeping complexity down?
+
+76
+00:03:05.470 --> 00:03:07.500
+Then D, durability.
+
+77
+00:03:07.500 --> 00:03:10.870
+How permanent are
+successful transactions?
+
+78
+00:03:10.870 --> 00:03:12.710
+Sometimes software crashes.
+
+79
+00:03:12.710 --> 00:03:14.240
+Maybe someone thought
+they were logged
+
+80
+00:03:14.240 --> 00:03:15.980
+into the test system
+when they were actually
+
+81
+00:03:15.980 --> 00:03:17.585
+logged into the production system
+
+82
+00:03:17.585 --> 00:03:19.430
+and they brought down database,
+
+83
+00:03:19.430 --> 00:03:21.800
+or maybe a cable got pulled
+that wasn't supposed to get
+
+84
+00:03:21.800 --> 00:03:24.680
+pulled or someone backed a
+forklift into a [inaudible].
+
+85
+00:03:24.680 --> 00:03:25.775
+Stuff happens.
+
+86
+00:03:25.775 --> 00:03:28.355
+Anyway, the transactions
+that went through,
+
+87
+00:03:28.355 --> 00:03:30.380
+will they still be there
+when the system comes
+
+88
+00:03:30.380 --> 00:03:33.020
+back up or will you have to say,
+
+89
+00:03:33.020 --> 00:03:35.390
+hey, anybody who made updates in
+
+90
+00:03:35.390 --> 00:03:37.055
+less 30 minutes should
+
+91
+00:03:37.055 --> 00:03:39.260
+check and make sure
+they're still there.
+
+92
+00:03:39.260 --> 00:03:40.715
+You don't want to do that.
+
+93
+00:03:40.715 --> 00:03:43.280
+That is the measure
+of durability.
+
+94
+00:03:43.280 --> 00:03:46.245
+You've got all four
+things; atomicity,
+
+95
+00:03:46.245 --> 00:03:49.310
+consistency, isolation,
+and durability.
+
+96
+00:03:49.310 --> 00:03:51.545
+You've got yourself
+an excellent platform
+
+97
+00:03:51.545 --> 00:03:54.085
+for important business
+transactions.
+
+98
+00:03:54.085 --> 00:03:56.300
+This is an industry-wide concept.
+
+99
+00:03:56.300 --> 00:03:58.100
+It's not just the
+mainframe thing.
+
+100
+00:03:58.100 --> 00:04:01.865
+You can look at any solution
+and consider its acidity.
+
+101
+00:04:01.865 --> 00:04:04.969
+So if I were looking
+for an ACID property
+
+102
+00:04:04.969 --> 00:04:08.110
+that ensures that all the
+data in a database is valid,
+
+103
+00:04:08.110 --> 00:04:10.400
+explainable, and done according
+
+104
+00:04:10.400 --> 00:04:13.025
+to the documented rules
+for that database,
+
+105
+00:04:13.025 --> 00:04:16.555
+which ACID property would
+you be looking for?
+
+106
+00:04:16.555 --> 00:04:19.685
+That's the consistency property.
+
+107
+00:04:19.685 --> 00:04:22.475
+Without it, you get
+transactions halfway done,
+
+108
+00:04:22.475 --> 00:04:24.950
+money being withdrawn
+from one account without
+
+109
+00:04:24.950 --> 00:04:27.590
+going anywhere else and all
+sorts of other bad stuff.
+
+110
+00:04:27.590 --> 00:04:29.425
+So consistency,
+
+111
+00:04:29.425 --> 00:04:33.110
+pretty important because once
+your database is corrupted,
+
+112
+00:04:33.110 --> 00:04:36.610
+any further work could
+be deemed invalid.
+
+113
+00:04:36.610 --> 00:04:39.865
+On the mainframe, a
+transaction processing Manager
+
+114
+00:04:39.865 --> 00:04:41.575
+or transaction manager
+
+115
+00:04:41.575 --> 00:04:44.290
+exists to tie together
+many transactions
+
+116
+00:04:44.290 --> 00:04:47.155
+that are required to fulfill
+a larger transaction.
+
+117
+00:04:47.155 --> 00:04:48.530
+So in this example,
+
+118
+00:04:48.530 --> 00:04:50.290
+the travel agencies sits here in
+
+119
+00:04:50.290 --> 00:04:52.630
+the middle and exists to
+make sure that you get
+
+120
+00:04:52.630 --> 00:04:54.370
+booked on the flight
+you want with
+
+121
+00:04:54.370 --> 00:04:55.975
+the hotel reservation you wanted
+
+122
+00:04:55.975 --> 00:04:58.285
+and you get car rentals
+where you need them.
+
+123
+00:04:58.285 --> 00:05:00.580
+For the consumer, the
+transaction isn't
+
+124
+00:05:00.580 --> 00:05:02.680
+complete until
+everything is complete
+
+125
+00:05:02.680 --> 00:05:04.300
+and you feel confident that
+
+126
+00:05:04.300 --> 00:05:07.045
+your vacation or
+business trip is booked.
+
+127
+00:05:07.045 --> 00:05:09.780
+So what magic makes
+this possible?
+
+128
+00:05:09.780 --> 00:05:11.980
+In the next lesson,
+we'll dig into some of
+
+129
+00:05:11.980 --> 00:05:15.920
+the middleware that powers
+transactions on the mainframe.

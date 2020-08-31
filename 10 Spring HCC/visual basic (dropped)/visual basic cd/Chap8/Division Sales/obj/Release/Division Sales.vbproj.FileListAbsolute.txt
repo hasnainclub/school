@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap8\Division Sales\obj\Release\Division Sales.exe
+D:\sovb4\examples\Chap8\Division Sales\obj\Release\Division Sales.xml
+D:\sovb4\examples\Chap8\Division Sales\bin\Division Sales.exe
+D:\sovb4\examples\Chap8\Division Sales\bin\Division Sales.xml
+D:\sovb4\examples\Chap8\Division Sales\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Division Sales\obj\Release\Division_Sales.Form1.resources
+D:\sovb4\examples\Chap8\Division Sales\obj\Release\Division_Sales.Resources.resources
+D:\sovb4\examples\Chap8\Division Sales\obj\Release\Division Sales.vbproj.GenerateResource.Cache

@@ -1,0 +1,15 @@
+\T Assgn9out.txt
+USE z1697740;
+start transaction;
+
+--
+
+update fall
+set data= 'data2B'
+where pk = 2;
+
+--
+
+update fall
+set data = 'data12B'
+where pk = 1;

@@ -1,0 +1,10 @@
+obj\Debug\Flags.exe
+obj\Debug\Flags.pdb
+bin\Flags.exe
+bin\Flags.pdb
+bin\Flags.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Flags.Form1.resources
+obj\Debug\Flags.Resources.resources
+obj\Debug\Flags.vbproj.GenerateResource.Cache
+obj\Debug\Flags.xml

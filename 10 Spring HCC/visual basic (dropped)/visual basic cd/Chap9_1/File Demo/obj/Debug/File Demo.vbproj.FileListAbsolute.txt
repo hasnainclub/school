@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap9\File Demo\obj\Debug\File Demo.exe
+D:\sovb4\examples\Chap9\File Demo\obj\Debug\File Demo.xml
+D:\sovb4\examples\Chap9\File Demo\obj\Debug\File Demo.pdb
+D:\sovb4\examples\Chap9\File Demo\bin\File Demo.exe
+D:\sovb4\examples\Chap9\File Demo\bin\File Demo.pdb
+D:\sovb4\examples\Chap9\File Demo\bin\File Demo.xml
+D:\sovb4\examples\Chap9\File Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap9\File Demo\obj\Debug\File_Demo.Form1.resources
+D:\sovb4\examples\Chap9\File Demo\obj\Debug\File_Demo.Resources.resources
+D:\sovb4\examples\Chap9\File Demo\obj\Debug\File Demo.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File Demo\obj\Debug\File Demo.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File Demo\obj\Debug\File Demo.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File Demo\obj\Debug\File Demo.pdb

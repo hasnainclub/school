@@ -1,0 +1,93 @@
+The z/OS system libraries
+are where there is a lot of the customization data for
+the operating system lives. You'll find a lot of important
+information in here, including where to find
+other important information. So kind of important. We've mentioned a
+few of these before during the module on IPLing a system. I know you wanted to know more information about
+those data sets. So here we are,
+let's get started. First up, SYS1.LINKLIB,
+this contains much of the executable code also known as modules for z/OS
+components and utilities. In here, you'll find
+the module MSTJCL00, which contains
+the initial JCL statements that start the master
+scheduler subsystem. So that's how JES gets started. SYS1.LPALIB. LPALIB stands for
+link pack area library. These modules are shared by all address spaces in the system, and because they are read-only
+and not self-modifying, they can be used by a number of address spaces at the same time. There are four types of
+modules you'll find in the LPA, dynamic, fixed, modified, pagable, and it all comes down to how they
+should be handled in memory. SYS1.NUCLEUS contains the basic supervisor modules
+for the system, the core of the system
+that is required for it to begin loading the full version
+of the operating system. We just recently talked
+about SYS1.PROCLIB, which is where the IBM supplied JCL procedures for performing
+system functions live, and my favorite
+SYS1.PARMLIB contains the control parameters for z/OS and some program products. If you've used Linux, or Unix based operating system before, it's similar to what
+you'd find in /etc. So if you're looking to
+increase a value from 25-30, or change the name of what something on
+the system gets called, chances are it's in SYS1.PARMLIB. What makes up
+a particular system is how these system libraries
+are configured. In addition, there's
+also information that comes from other non IBM vendors, as well as how
+a particular company chooses to set up their system. You can organize a lot of this customization information
+into these six areas, there's the z/OS software, the non z/OS software, middle ware like CICS, Db2, non IBM software that comes from other vendors,
+customization data, user-defined exits,
+which boils down to ways that users have customized
+and extended software, as well as user data. When a program calls a module, the system needs to know where
+it is in order to run it, and it has a certain order it goes through when
+searching for modules. The first place it looks isn't
+the job pack area, or JPA. If it's not in there,
+it'll look in the TASKLIB. Next stop is
+the STEPLIB, or JOBLIB. These are specific DD names
+that can be used to allocate data sets to be searched ahead of the default system search
+order for programs. We then hit LPA, that linked pack area, where it will hit the dynamic, then the fixed, and
+then the modified, and then the pageable modules, and then Linklist as specified in PROGxx, and LNKLSTxx. By default, the LINKLIST
+begins with SYS1.LINKLIB, and there's more to follow. But you can view and change
+the order in your PROGxx, and add other libraries
+to that list. By the way, the list
+of places that the system searches for modules is called a concatenation. In order for modules to work, they need to be ready to go. It's not practical
+to keep all modules loaded in main memory
+all the time. But each time the system has
+to go and look for a module, that takes time, and it pulls the CPU away from doing
+other important stuff. So there's this concept of a library lookaside
+facility, or LLA. This reduces the amount
+of I/O needed to locate and fetch modules
+from the DASD Storage. LLA takes a look
+at the modules and determines which ones could really benefit from being staged. Similarly, there's a VLF, or virtual lookaside facility, which is used to store named objects in virtual storage and retrieve those on behalf of users in multiple address spaces. So let's look at how these
+get set up in a few examples. Let's start with
+the LOADxx member, which is one of
+the first modules that gets loaded in IPL time. In here you'll see
+the PARMLIB concatenation. You can specify up to
+16 partitioned data sets in here. You can see in
+this configuration, there is a SYS0.IPLPARM, and it will automatically
+add SYS1.PARMLIB to the end of the concatenation even if you don't specify it. There's also the IEASYSxx member. Now this is where
+the installation defaults go. These are the parameters
+that will not change unless you're
+altering the physical, or logically defined environment that your system is operating in. If you want to see
+the concatenation without digging
+through the data sets, you can type D PARMLIB, and it will list
+them out for you. You can also look at the IPL
+information with D IPLINFO, that will show you when
+the system was last IPLed, and what the version of
+the operating system is, and what the contents of IEASYS, and IEASYM are. That determines
+which members get loaded. You'll also see
+the IODF device number, and the IPL device
+and volume serial number, this command is
+critically important. I can remember from
+my SYSPROG days, sometimes we'd bring up a system, and it would just not
+be behaving correctly. Something we thought we installed wasn't there, modules
+weren't loading. Step one is to issue a D IPLINFO, and make sure that what you're running is what you
+think you're running. Maybe we forgot to change the IPL volume or change
+one of those IEA members. This is your sanity
+check right here. Each IEA member has
+its own purpose and story, and importantly, sections of documentation describing
+exactly how to use it. We're not going to go
+through them all here. The important thing to take away is where to
+look to find them, generally in the z/OS
+system libraries, and where to find more about them by using the manuals
+or a search engine. I do want to show you
+those IEASYMxx members though since we've covered the topic of symbols
+a little while ago, and I want to tie back to that. If you look in IEASYSxx, you'll see some of
+those static system symbols getting set like SYSNAME, which is equal to SC04, you can see a few other symbols getting set in there as well. So later on when you
+want to reference a specific data set built
+specifically for that system, we can just say LPARNAME, &SYSNAME, and we've used a symbol. If you ever wanted to display the list of symbols available, just type D SYSBOLS. Now that symbols doesn't
+sound a real word anymore, I think it's time to move
+on to the next topic.

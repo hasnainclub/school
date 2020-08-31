@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File WriteLine Demo.exe
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File WriteLine Demo.pdb
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\bin\File WriteLine Demo.exe
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\bin\File WriteLine Demo.pdb
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\bin\File WriteLine Demo.xml
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File_WriteLine_Demo.Form1.resources
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File_WriteLine_Demo.Resources.resources
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File WriteLine Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File WriteLine Demo.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File WriteLine Demo.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File WriteLine Demo.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\Structure File WriteLine Demo\obj\Debug\File WriteLine Demo.pdb

@@ -1,0 +1,76 @@
+Chances are you want your mainframe on a
+network of some sort. Maybe not the Internet, but back in course one, we talked about all of the PCIe adapters that a system can have, and chances are,
+some of those are OSA or Open Systems Adaptors. These are the network cards for the mainframe and they
+come in a wide variety of flavors suited for copper and fiber links from
+gigabit to 10 gigabit, and even up to 25 gigabit speeds. On z/OS, TCPIP is handled
+by the TCPIP started task. So it starts up and
+stays up generally until the cyst Prague or
+another operator takes it down. Generally, we refer to
+this started TCPIP task as a stack, the TCPIP stack. Before we get into
+the TCPIP stack, I want to take just a
+minute to dive into the concepts of IP
+addresses and sockets. If you're already familiar with this from another platform, the next minute and a half probably won't be
+all that new to you. So you can go and
+check your email or scroll around a little
+bit if you don't want to hear it, I
+won't be offended. Typically, a system on a network has an IP address or two. You'll even see some z/OS
+systems that have five, six, even more IP addresses. An IP address is a 32 bit address represented
+in dotted decimal like this. So it looks like four
+numbers each between zero and 255 with
+dots in between them. That address is a lot like
+an address for a house. With that address, we
+can find the server on the network or even the Internet
+that we want to talk to. I'll also mention that
+the 32 bit address is what's called an IPv4 address. There's a constant
+concern that will run out of IPv4 addresses. So there's also IPv6. This is much longer, it's a 128 bits and
+it looks like this. It's longer, it uses
+Colin's data dots, and it's represented
+in hexadecimal. So there's a couple
+letters in there to. Many more possible combinations. You won't see an IPv6
+address everywhere just yet, people are still
+trying to ride out IPv4 for as long as possible, but in case you see an
+IP address that looks different than what you are
+expecting, that might be it. Anyway, the IP address, be it IPv4 or v6 gets
+us to the server, but a server can run
+on multiple programs. How do we get to the
+exact program we want? Those programs operate on
+what's called a socket. So you've got the IP address, colon, and then
+the socket number. All that goes over the network. Once a socket connection
+is established, the program can start
+issuing reads and writes on that socket to
+get or put data. Then when it's done we close that socket and life goes on. So we have this TCPIP profile, and within it we find a number of statements that build our
+configuration step-by-step. For example, you'll probably find devise link and home statements. The device statement states which network devices
+we want to use, the subsequent links statements say how we want to use them, and then below that in
+the home statements, that's where we set
+the IP addresses and net masking and
+all that stuff. Now, this is a fairly
+simple setup right here. There's three devices,
+three links statements, and three IP addresses. It can get quite a
+bit more complicated where it's not always a
+one-to-one-to-one mapping. I just don't really
+think that we're making this complex for no reason. Now, let's talk about
+that VIPALNK1 entry. That sounds interesting,
+and yeah, actually it is. So typically an IP address
+should only be defined in one place because
+there needs to be no confusion about where
+that IP address is. Typically, if we tell
+someone that a server is at a specific IP address, and that server goes down or
+there's a network problem, people can no longer
+reach that server. That's when they start
+calling you and getting angry and nobody wants that. What a VIPA does, is it defines an IP address
+to the system virtually. Take a look at this diagram. We've got two LPARs
+each defined with the same VIPA in addition to their own unique IP addresses
+for each network link. This is a fairly standard
+high availability setup because if one LPAR
+is the primary, and also device one goes
+down for whatever reason, that VIPA is still reachable through the second pathway at the same IP address or even if the whole
+LPAR will go down, the backup takes over. It's got two links as well. So you can actually lose
+three links and an LPAR and the service is still available at that VIPA address. Pretty cool. For that reason,
+you'll often find critical services associated with a VIPA instead of an
+IP address that's hard coded to a single
+link or device. The virtualization
+and architecture of z allows for some pretty
+crafty ways of implementing highly available and highly
+performance solutions that you just won't
+find anywhere else, especially in distributed
+environments.

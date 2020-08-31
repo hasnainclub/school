@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap3\Conversion Demo\obj\Debug\Conversion Demo.exe
+D:\sovb4\examples\Chap3\Conversion Demo\obj\Debug\Conversion Demo.xml
+D:\sovb4\examples\Chap3\Conversion Demo\obj\Debug\Conversion Demo.pdb
+D:\sovb4\examples\Chap3\Conversion Demo\bin\Debug\Conversion Demo.exe
+D:\sovb4\examples\Chap3\Conversion Demo\bin\Debug\Conversion Demo.pdb
+D:\sovb4\examples\Chap3\Conversion Demo\bin\Debug\Conversion Demo.xml
+D:\sovb4\examples\Chap3\Conversion Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Conversion Demo\obj\Debug\Conversion_Demo.Form1.resources
+D:\sovb4\examples\Chap3\Conversion Demo\obj\Debug\Conversion_Demo.Resources.resources
+D:\sovb4\examples\Chap3\Conversion Demo\obj\Debug\Conversion Demo.vbproj.GenerateResource.Cache

@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap3\Variable Demo\obj\Release\Variable Demo.exe
+D:\sovb4\examples\Chap3\Variable Demo\obj\Release\Variable Demo.xml
+D:\sovb4\examples\Chap3\Variable Demo\bin\Variable Demo.exe
+D:\sovb4\examples\Chap3\Variable Demo\bin\Variable Demo.xml
+D:\sovb4\examples\Chap3\Variable Demo\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Variable Demo\obj\Release\Variable_Demo.Form1.resources
+D:\sovb4\examples\Chap3\Variable Demo\obj\Release\Variable_Demo.Resources.resources
+D:\sovb4\examples\Chap3\Variable Demo\obj\Release\Variable Demo.vbproj.GenerateResource.Cache

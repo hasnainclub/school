@@ -1,0 +1,2 @@
+D:\sovb4\examples\Chap4\Serial Number\obj\Debug\Serial Number.exe
+D:\sovb4\examples\Chap4\Serial Number\obj\Debug\Serial Number.pdb

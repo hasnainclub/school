@@ -1,0 +1,53 @@
+One of the systems
+you're likely to run into is the IBM z14. Now, you may not be
+working on a z14, you may have something older, you may have something newer. But chances are, it will
+look something like this. The parts might look
+a little different, they might be rotated, they might be in
+a slightly different place, but for as long as
+I can remember, the core components
+of the mainframe have always looked more
+or less like this. Starting from the right, and I'll explain why in a minute, you've got the CPC drawers. They call them
+drawers because they pull open like a drawer
+in a nightstand. In here, you've got all the processors and all the memory. They've also got
+the PCIe fanouts, which is a fancy way of
+saying all the cables that hook up to all the
+PCIe I/O cards. It's also got the flexible
+support processor which gives you redundant interfaces to all the internal
+management network, so you're never locked out, you can always log into
+one of these things. There's also two DCA invertors. These provide the specific power that everything in here needs, and there's two of them,
+just in case one goes down. Down here we've got
+the radiator pumps. These circulate
+refrigerant throughout the system keeping it down. It takes the cold air being
+blown up from the floor, and blows the hot air
+out the back. So cold air in the bottom, hot air on the back, chilled refrigerant all
+throughout the system. There are also
+water-cooled systems which tap into a site's
+chilled water lines. Looks slightly different but everything else is
+pretty much the same. This right here is
+the PCIe I/O drawer. This is where all the
+input-output devices live. That's your crypto cards, network cards, compression
+cards, and Phi card. Up top over here,
+there's batteries, there's two of them, and they're bigger than any batteries I own. They're there to provide
+a safe shutdown. So if the power does go out, none of the transactions
+in flight get lost. You've got four power supplies. Now, depending on how
+your mainframe is configured, you may have less than four, but part of the reason
+for so many is, you guessed it, redundancy. So ideally, if you've
+got four power supplies, you've got two of
+them hooked up to a power panel over here, and two others hooked
+up to a power panel over there for redundancy sake. Lastly, there's
+this display keyboard and these two servers up here. Those are called the
+support elements. We're going to come back to that so much more on that in a minute. I do want to mention that your mainframe might
+look like this. It might also be
+a single frame design. Now, a single frame design, usually called a
+business-class machine, is still a mainframe. It's for environments
+that don't require quite as much hardware so they can fit it all
+into a single frame. You might also find
+your mainframe the newer ones especially in an industry
+standard 19 interact. That's the size cabinet that
+most IT equipment lives in, stuff like servers, storage devices, and
+networking equipment. That means the mainframe
+doesn't have to live off in its own special area, it can be right in
+the middle of it all. So while the older mainframes
+get their own unique area, the rough metal ones
+get to hang out with all their other IT
+equipment buddies.

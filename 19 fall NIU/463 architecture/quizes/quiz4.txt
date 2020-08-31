@@ -1,0 +1,246 @@
+Question 1
+1 out of 1 points
+
+Correct	
+What is a half adder?
+
+Selected Answer:	
+A half adder is a type of adder, an electronic circuit that performs the addition of numbers. The half adder is able to add two single binary digits and provide the output plus a carry value. It has two inputs, called A and B, and two outputs S (sum) and C (carry). The common representation uses a XOR logic gate and an AND logic gate.
+
+Correct Answer:	
+Correct 
+A circuit that can add two one-bit binary input values and output a one-bit sum and a one-bit carry.
+
+Response Feedback:	[None Given]
+Question 2
+1 out of 1 points
+
+Correct	
+How many bits can a half adder add?
+
+Selected Answer:	
+The half adder is able to add two single binary digits and provide the output plus a carry value
+
+Correct Answer:	
+Correct 
+two bits.
+
+Response Feedback:	[None Given]
+Question 3
+1 out of 1 points
+
+Correct	
+What is a full adder?
+
+Selected Answer:	
+Full Adder is the adder which adds three inputs and produces two outputs. The first two inputs are A and B and the third input is an input carry as C-IN. The output carry is designated as C-OUT and the normal output is designated as S which is SUM.
+
+Correct Answer:	
+Correct 
+A circuit that can add three one-bit binary input values and output a one-bit sum and a one-bit carry.
+
+Response Feedback:	[None Given]
+Question 4
+1 out of 1 points
+
+Correct	
+How is a full adder different from a half adder?
+
+Selected Answer:	
+The difference between a half-adder and a full-adder is that the full-adder has three inputs and two outputs, whereas half adder has only two inputs and two outputs.
+
+Correct Answer:	
+Correct 
+A full adder can add three input bits and a half adder can only add two.
+
+A full adder requires more gates than a half adder.
+Full adders may be combined to add multi-bit input values while half adders can not.
+
+Response Feedback:	[None Given]
+Question 5
+1 out of 1 points
+
+Correct	
+How many full adders would it take to add two 16-bit binary numbers?
+
+Selected Answer:	
+We will have to call the full adder 16 times, hence 16 full adders
+
+Correct Answer:	
+Correct 
+16
+
+Response Feedback:	[None Given]
+Question 6
+1 out of 1 points
+
+Correct	
+What does a decoder do?
+
+Selected Answer:	
+A combinational logic circuit that converts binary information from the n coded inputs to a maximum of 2^n unique outputs. 
+
+Correct Answer:	
+Correct 
+A decoder has n input bits and 2^n outputs.  The input bits represent an address that determines which one of the outputs will be set to true.
+
+Response Feedback:	[None Given]
+Question 7
+1 out of 1 points
+
+Correct	
+What is a decoder useful for?
+
+Selected Answer:	
+Converts binary information from the n coded inputs to a maximum of 2^n unique outputs.  They are used in a wide variety of applications, including data demultiplexing, seven segment displays, and memory address decoding.
+
+Correct Answer:	
+Correct 
+Decoders are useful for building other circuits like multiplexers and demultiplexers.  For example, a demultiplexer is a decoder with an 'enable'  input bit.
+
+Response Feedback:	[None Given]
+Question 8
+1 out of 1 points
+
+Correct	
+What does a multiplexer do?
+
+Selected Answer:	
+In electronics, a multiplexer (or mux) is a device that selects between several analog or digital input signals and forwards it to a single output line. A multiplexer is also called a data selector. Multiplexers can also be used to implement Boolean functions of multiple variables.
+
+Correct Answer:	
+Correct 
+A multiplexer has n address inputs, 2^n data inpouts and one data input.  It will send the input bit that is selected by the address value to the output.
+
+Response Feedback:	[None Given]
+Question 9
+1 out of 1 points
+
+Correct	
+If a multiplexer has 8 selection lines (control lines), how many input lines and how many
+output lines can it have?
+
+Selected Answer:	
+256 inputs (0-255).  1 output
+
+//2^8 == 256
+
+//2^n, n is the 8 selection lines
+
+Correct Answer:	
+Correct 
+256 inputs and one output.
+
+Response Feedback:	[None Given]
+Question 10
+1 out of 1 points
+
+Correct	
+What is an ALU?
+
+Selected Answer:	
+An arithmetic-logic unit (ALU) is the part of a computer processor (CPU) that carries out arithmetic and logic operations on the operands in computer instruction words.
+
+Correct Answer:	
+Correct 
+Part of a CPU called the Arithmetic Logic Unit
+
+Response Feedback:	[None Given]
+Question 11
+1 out of 1 points
+
+Correct	
+What kinds of operations does an ALU typically handle?
+
+Selected Answer:	
+An ALU performs basic arithmetic and logic operations. Examples of arithmetic operations are addition, subtraction, multiplication,, shifting and division. While logic instructions include boolean comparisons, such as AND, OR, XOR, and NOT operations.
+
+Correct Answer:	
+Correct 
+add, subtract, and, or, not, xor,...
+
+Response Feedback:	[None Given]
+Question 12
+3 out of 3 points
+
+Correct	
+If an ALU can handle 16 operations on 32-bit numbers, how many control lines does it need?
+How many data lines does it need for each input? How many data lines does it need for the
+output?
+
+Selected Answer:	
+4 control lines.     64 data lines for input.    32 data lines for output 
+
+//for control lines
+
+//2 ^ n = 16
+
+//calculate n
+
+//then
+
+// (32 each A & B).  
+
+// (Q is 32)
+
+//oct 3 made diagram, see there for more explanation
+
+Correct Answer:	
+Correct 
+4 control lines, 32 input bits per input bus (64 total) and 32 data output bits.
+
+Response Feedback:	[None Given]
+Question 13
+1 out of 1 points
+
+Correct	
+What is the difference between a sequential and a combinatorial circuit?
+
+Why does a sequential circuit need a clock line?
+
+Selected Answer:	
+Combinational circuits are defined as the time independent circuits which do not depends upon previous inputs to generate any output are termed as combinational circuits.    Sequential circuits are those which are dependent on clock cycles and depends on present as well as past inputs to generate any output.
+ Sequential circuit uses clock signal and level inputs (or pulsed) . The output pulse is the same duration as the clock pulse for the clocked sequential circuits.  Level output changes state at the start of an input pulse and remains in that until the next input or clock pulse.
+
+Correct Answer:	
+Correct 
+sequential circuits maintain and react to a stored state in addition to any input signals it may have while combinational circuits only react to their input signals.
+
+Sequential circuits have at least one internal signal that feeds back into its own input.
+
+A clock line is needed to tell a sequential circuit when to update its state.
+
+Response Feedback:	[None Given]
+Question 14
+5 out of 5 points
+
+Correct	
+What is the rising edge? falling edge? edge-triggered circuit? level-triggered circuit?
+
+What type of circuits are used in memory and registers?
+
+Selected Answer:	
+
+A rising edge (or positive edge) is the low-to-high transition.
+
+A falling edge (or negative edge) is the high-to-low transition.
+
+An edge-triggered flip-flop changes states either at the positive edge (rising edge) or at the negative edge (falling edge) of the clock pulse on the control input.  Any edge from above
+
+A Level-triggered circuit is a circuit which cares for the state (actual value) is rather than the change in state.
+
+Edge triggered circuits are used in memory and registeres.  
+
+Correct Answer:	
+Correct 
+rising edge = a transition from 0 to 1
+
+falling edge = a transition from 1 to 0
+
+edge triggered = a circuit that updates its internal state in response to an edge on a clock input signal such as a master-slave memory latch.
+
+level triggered = a circuit that updates its internal state in response to a level on an enable input signal such as a transparent D latch.
+
+Memory and registers use edge-triggered latches.
+
+Response Feedback:	[None Given]

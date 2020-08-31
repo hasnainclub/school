@@ -1,0 +1,33 @@
+D:\sovb4\examples\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.exe
+D:\sovb4\examples\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.xml
+D:\sovb4\examples\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.pdb
+D:\sovb4\examples\Chap4\Test Score Average 2\bin\Test Score Average 2.exe
+D:\sovb4\examples\Chap4\Test Score Average 2\bin\Test Score Average 2.pdb
+D:\sovb4\examples\Chap4\Test Score Average 2\bin\Test Score Average 2.xml
+D:\sovb4\examples\Chap4\Test Score Average 2\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap4\Test Score Average 2\obj\Debug\Test_Score_Average_2.Form1.resources
+D:\sovb4\examples\Chap4\Test Score Average 2\obj\Debug\Test_Score_Average_2.Resources.resources
+D:\sovb4\examples\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\bin\Test Score Average 2.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\bin\Test Score Average 2.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\bin\Test Score Average 2.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\obj\Debug\Test_Score_Average_2.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\obj\Debug\Test_Score_Average_2.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 2\obj\Debug\Test Score Average 2.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Test Score Average 2\obj\Debug\Test Score Average 2.exe
+C:\Users\hasnainpc\Desktop\vb projects\Test Score Average 2\obj\Debug\Test Score Average 2.xml
+C:\Users\hasnainpc\Desktop\vb projects\Test Score Average 2\obj\Debug\Test Score Average 2.pdb
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\obj\Debug\Test Score Average 2.exe
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\obj\Debug\Test Score Average 2.xml
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\obj\Debug\Test Score Average 2.pdb
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\bin\Test Score Average 2.exe
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\bin\Test Score Average 2.pdb
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\bin\Test Score Average 2.xml
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\obj\Debug\Test_Score_Average_2.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\obj\Debug\Test_Score_Average_2.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\submitted\Test Score Average 2\obj\Debug\Test Score Average 2.vbproj.GenerateResource.Cache

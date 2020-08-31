@@ -1,0 +1,535 @@
+WEBVTT
+
+1
+00:00:04.008 --> 00:00:07.615
+Ask a bunch of Mainframers what
+makes their platform so powerful and
+
+2
+00:00:07.615 --> 00:00:11.487
+there's a good chance a good number
+of them will tell you it's sysplex.
+
+3
+00:00:11.487 --> 00:00:16.675
+Simply put, sysplex is a way of making
+multiple systems work together as a team
+
+4
+00:00:16.675 --> 00:00:22.600
+and this can be LPARs on one physical box,
+or it can be spread out across many.
+
+5
+00:00:22.600 --> 00:00:24.679
+Before we get into
+exactly how it does this.
+
+6
+00:00:24.679 --> 00:00:28.300
+We first have to define
+a couple of basic concepts.
+
+7
+00:00:28.300 --> 00:00:31.800
+First, there's STP,
+the Server Time Protocol.
+
+8
+00:00:31.800 --> 00:00:36.700
+Systems need to be in exact agreement
+about time, like exact agreement and
+
+9
+00:00:36.700 --> 00:00:38.423
+that kind of makes sense.
+
+10
+00:00:38.423 --> 00:00:42.339
+If you've got multiple systems writing
+to the same file milliseconds apart and
+
+11
+00:00:42.339 --> 00:00:46.200
+you're trying to figure out which
+one got to that piece of data first.
+
+12
+00:00:46.200 --> 00:00:50.000
+Having your watches synchronized
+is kind of important.
+
+13
+00:00:50.000 --> 00:00:53.600
+Then there's GRS,
+the Global Resource Serialization.
+
+14
+00:00:53.600 --> 00:00:58.035
+This allows for multiple systems to
+access the same resources concurrently,
+
+15
+00:00:58.035 --> 00:01:01.409
+serializing where necessary
+to ensure exclusive access.
+
+16
+00:01:01.409 --> 00:01:05.000
+Without GRS, you have quite a mess.
+
+17
+00:01:05.000 --> 00:01:06.000
+That's a handy rhyme.
+
+18
+00:01:06.000 --> 00:01:09.308
+You should remember that in
+case you're tested on it later.
+
+19
+00:01:09.308 --> 00:01:12.041
+XCF, the Cross Coupling Facility,
+
+20
+00:01:12.041 --> 00:01:17.300
+this manages communication between
+applications in a sysplex.
+
+21
+00:01:17.300 --> 00:01:19.800
+This also lets you be
+logged into one system and
+
+22
+00:01:19.800 --> 00:01:23.700
+issue commands on behalf of
+another system in that sysplex.
+
+23
+00:01:23.700 --> 00:01:27.908
+This right here is what let's
+the sysplex communicate as a whole.
+
+24
+00:01:27.908 --> 00:01:30.500
+Next up, the Coupling Links.
+
+25
+00:01:30.500 --> 00:01:32.800
+These connect LPARs to processors.
+
+26
+00:01:32.800 --> 00:01:36.300
+Without these, accessing memory
+on different physical systems
+
+27
+00:01:36.300 --> 00:01:41.300
+would have to run through one of those
+LPARs and these allow direct memory access
+
+28
+00:01:41.300 --> 00:01:46.100
+communications between sysplex memory and
+the memory of an attached system.
+
+29
+00:01:46.100 --> 00:01:49.353
+Finally, there's the CDS,
+the Coupled Data Set.
+
+30
+00:01:49.353 --> 00:01:52.552
+So imagine you've got a bunch of
+people working on the same job and
+
+31
+00:01:52.552 --> 00:01:55.986
+let's just say they're tallying up
+the numbers of different colored
+
+32
+00:01:55.986 --> 00:01:58.800
+candies they're getting from
+various bags of candies.
+
+33
+00:02:00.200 --> 00:02:01.800
+Bags of candies.
+
+34
+00:02:01.800 --> 00:02:05.300
+Anyway, they're all working
+together to get one final result,
+
+35
+00:02:05.300 --> 00:02:08.300
+which means they're all working
+on the same set of data.
+
+36
+00:02:08.300 --> 00:02:11.000
+Now, in order to coordinate
+this operation so
+
+37
+00:02:11.000 --> 00:02:14.900
+someone doesn't accidentally overwrite
+someone else's work, there needs to be
+
+38
+00:02:14.900 --> 00:02:18.900
+an additional file that keeps track of
+who is currently working on a resource.
+
+39
+00:02:18.900 --> 00:02:21.008
+So everyone knows how to wait their turn.
+
+40
+00:02:21.008 --> 00:02:23.100
+That's the CDS.
+
+41
+00:02:23.100 --> 00:02:26.380
+These parts are super important
+when you're talking about sysplex,
+
+42
+00:02:26.380 --> 00:02:29.896
+because without them you've just got
+another distributed environment.
+
+43
+00:02:29.896 --> 00:02:33.908
+Those memory links, the tightly
+coupled resources, and of course,
+
+44
+00:02:33.908 --> 00:02:37.861
+being an absolute lockstep on time
+is the only way this will all work.
+
+45
+00:02:37.861 --> 00:02:42.300
+We talked a little bit earlier about WLM,
+the Workload Manager.
+
+46
+00:02:42.300 --> 00:02:46.534
+It's the component that makes sure that
+high priority work gets run quickly and
+
+47
+00:02:46.534 --> 00:02:48.248
+that all of our targets are met.
+
+48
+00:02:48.248 --> 00:02:53.500
+WLM makes quite a bit of use of
+sysplex to help balance things out.
+
+49
+00:02:53.500 --> 00:02:57.000
+So if that discussion earlier about
+performance tuning on the Mainframe was
+
+50
+00:02:57.000 --> 00:03:01.800
+interesting to you, sysplex is something
+you want to pay close attention to.
+
+51
+00:03:01.800 --> 00:03:06.800
+Sysplex is at its core, a bunch of z/OS
+operating systems working together.
+
+52
+00:03:06.800 --> 00:03:10.425
+They're able to cooperatively
+use hardware, software and
+
+53
+00:03:10.425 --> 00:03:14.800
+components to achieve a high availability
+workload processing environment.
+
+54
+00:03:14.800 --> 00:03:18.500
+This gets us back to the whole
+physical logical discussion.
+
+55
+00:03:18.500 --> 00:03:21.625
+And when you have systems in a sysplex,
+when you're talking about how they're
+
+56
+00:03:21.625 --> 00:03:25.900
+going to handle the work, you essentially
+have one entity that is running the work.
+
+57
+00:03:25.900 --> 00:03:27.400
+It's the sysplex.
+
+58
+00:03:27.400 --> 00:03:30.900
+Even though you know that you've got
+multiple physical mainframes and
+
+59
+00:03:30.900 --> 00:03:35.500
+within those multiple logical LPARs,
+you'll often hear people just refer
+
+60
+00:03:35.500 --> 00:03:40.500
+to it all collectively as the sysplex or
+just the plex.
+
+61
+00:03:40.500 --> 00:03:42.806
+Let's talk about those
+sysplex configurations.
+
+62
+00:03:42.806 --> 00:03:46.046
+There are three main ways
+you can configure a sysplex.
+
+63
+00:03:46.046 --> 00:03:50.647
+Now, bit of a riddle, if you've got
+a sysplex with only one LPAR in it,
+
+64
+00:03:50.647 --> 00:03:52.200
+is it really a sysplex?
+
+65
+00:03:53.400 --> 00:03:55.935
+The answer is yes, and
+it's called a monoplex.
+
+66
+00:03:55.935 --> 00:04:00.200
+Now, you'll often see a monoplex
+in testing and staging situations.
+
+67
+00:04:00.200 --> 00:04:04.000
+But beyond that, it doesn't really
+buy you any additional performance or
+
+68
+00:04:04.000 --> 00:04:05.600
+functionality.
+
+69
+00:04:05.600 --> 00:04:08.300
+Then there's this concept
+of a base sysplex.
+
+70
+00:04:08.300 --> 00:04:12.830
+In this configuration, every system has
+a connection to every other system, and
+
+71
+00:04:12.830 --> 00:04:16.851
+they all know about each other, and
+they all agreed to do work together.
+
+72
+00:04:16.851 --> 00:04:19.147
+It's almost like they
+started a little band.
+
+73
+00:04:19.147 --> 00:04:23.200
+The most common form of the sysplex
+though is the parallel sysplex.
+
+74
+00:04:23.200 --> 00:04:24.572
+In this configuration,
+
+75
+00:04:24.572 --> 00:04:28.242
+instead of needing every system
+connected to every other system.
+
+76
+00:04:28.242 --> 00:04:30.639
+We have this concept of
+a Coupling Facility.
+
+77
+00:04:30.639 --> 00:04:33.658
+This is a special type of
+LPAR that you bring up, and
+
+78
+00:04:33.658 --> 00:04:37.110
+typically you have backups of
+it on other Mainframes too.
+
+79
+00:04:37.110 --> 00:04:41.757
+In a parallel sysplex, the Coupling
+Facility handles all the complexities and
+
+80
+00:04:41.757 --> 00:04:44.476
+overhead of those systems
+working together.
+
+81
+00:04:44.476 --> 00:04:50.543
+So you can have up to 32 z/OS images and
+up to 32 physical Mainframes.
+
+82
+00:04:50.543 --> 00:04:56.800
+That would mean one LPAR on each
+Mainframe hooked into a 32 way sysplex.
+
+83
+00:04:56.800 --> 00:04:59.000
+Now, most systems aren't
+scaled out that way.
+
+84
+00:04:59.000 --> 00:05:02.000
+But if you need to, you could do it.
+
+85
+00:05:02.000 --> 00:05:04.898
+Now, a word about availability.
+
+86
+00:05:04.898 --> 00:05:08.600
+You might hear people say that a Mainframe
+environment hasn't gone down in decades.
+
+87
+00:05:08.600 --> 00:05:12.716
+But how is that possible unless they're
+running on 20 year old hardware and
+
+88
+00:05:12.716 --> 00:05:13.360
+software.
+
+89
+00:05:13.360 --> 00:05:17.409
+Well, one of the neat things about being
+in a sysplex is you can do what's called
+
+90
+00:05:17.409 --> 00:05:18.600
+a rolling IPL.
+
+91
+00:05:18.600 --> 00:05:21.200
+An IPL is just booting up
+an operating system, and
+
+92
+00:05:21.200 --> 00:05:25.800
+a parallel sysplex doesn't require all
+the systems in it to be up in order
+
+93
+00:05:25.800 --> 00:05:28.600
+to function,
+just enough to keep it running.
+
+94
+00:05:28.600 --> 00:05:32.525
+So if I've got 16 LPARS in my sysplex,
+we're just saying,
+
+95
+00:05:32.525 --> 00:05:37.129
+I can bring down four of them,
+update the operating systems on them, and
+
+96
+00:05:37.129 --> 00:05:40.315
+then bring them back up and
+put them into the plex.
+
+97
+00:05:40.315 --> 00:05:43.611
+LPAR has got upgraded and
+the Plex stayed up.
+
+98
+00:05:43.611 --> 00:05:46.245
+I can even do this with physical
+systems as long as the,
+
+99
+00:05:46.245 --> 00:05:49.400
+some of the members are running
+elsewhere in other Mainframe.
+
+100
+00:05:49.400 --> 00:05:54.377
+So let's go back to those 16 LPARs,
+say, they're spread out across for
+
+101
+00:05:54.377 --> 00:05:56.679
+Mainframes, just as an example.
+
+102
+00:05:56.679 --> 00:06:00.000
+And we want to upgrade one of those
+mainframes to a shiny brand new one.
+
+103
+00:06:00.000 --> 00:06:03.400
+We bring down the four LPARs on that
+system that we want to replace,
+
+104
+00:06:03.400 --> 00:06:06.100
+physically swap it out with a new one.
+
+105
+00:06:06.100 --> 00:06:10.101
+Cable it up, configure it the way
+we want to, power it back on.
+
+106
+00:06:10.101 --> 00:06:13.368
+IPL will boot up those four
+systems on the new hardware,
+
+107
+00:06:13.368 --> 00:06:16.700
+vary them back into the plex and
+we're good to go.
+
+108
+00:06:16.700 --> 00:06:18.300
+The plex never went down.
+
+109
+00:06:19.400 --> 00:06:22.300
+That is some pretty amazing stuff and
+you can see why so
+
+110
+00:06:22.300 --> 00:06:25.100
+many people would tell you
+it's their favorite feature.
+
+111
+00:06:25.100 --> 00:06:27.976
+Although it's hard to pick just one,
+isn't it?

@@ -1,0 +1,264 @@
+WEBVTT
+
+1
+00:00:02.750 --> 00:00:07.200
+Hello, my name's Ed Pryor and
+I am a z/OS function tester,
+
+2
+00:00:07.200 --> 00:00:09.160
+and I've come here to
+talk a little bit more in
+
+3
+00:00:09.160 --> 00:00:11.485
+depth about a few things
+that Jeff mentioned.
+
+4
+00:00:11.485 --> 00:00:15.640
+Specifically, we support
+conditional logic inside JCL,
+
+5
+00:00:15.640 --> 00:00:17.080
+you can use if, then,
+
+6
+00:00:17.080 --> 00:00:19.570
+and else to control
+the flow of your job.
+
+7
+00:00:19.570 --> 00:00:20.845
+So if you have
+
+8
+00:00:20.845 --> 00:00:24.120
+a program that has a
+return code associated with it,
+
+9
+00:00:24.120 --> 00:00:27.850
+you can actually code into
+your JCL, slash, slash, if,
+
+10
+00:00:27.850 --> 00:00:31.420
+return code less than four
+or if return code greater
+
+11
+00:00:31.420 --> 00:00:33.190
+than eight or if return code
+
+12
+00:00:33.190 --> 00:00:35.400
+is greater than four
+but less than eight,
+
+13
+00:00:35.400 --> 00:00:36.915
+then do this step,
+
+14
+00:00:36.915 --> 00:00:38.800
+else do this other step.
+
+15
+00:00:38.800 --> 00:00:40.630
+It gives you a great deal
+of control over
+
+16
+00:00:40.630 --> 00:00:43.050
+what your program
+is actually doing.
+
+17
+00:00:43.050 --> 00:00:46.855
+We also mentioned
+nested procedures.
+
+18
+00:00:46.855 --> 00:00:48.910
+So if you follow
+the general rule,
+
+19
+00:00:48.910 --> 00:00:51.250
+don't put the sequence PROC PROC 
+
+20
+00:00:51.250 --> 00:00:53.770
+PEND PEND in your code,
+
+21
+00:00:53.770 --> 00:00:55.585
+you won't bump into this issue.
+
+22
+00:00:55.585 --> 00:00:58.150
+The idea being that
+you're not allowed to
+
+23
+00:00:58.150 --> 00:01:01.950
+code a procedure inside
+of another procedure,
+
+24
+00:01:01.950 --> 00:01:03.090
+they have to be separate.
+
+25
+00:01:03.090 --> 00:01:05.160
+So PROC PEND then PROC
+
+26
+00:01:05.160 --> 00:01:07.905
+PEND not PROC
+PROC PEND PEND.
+
+27
+00:01:07.905 --> 00:01:09.240
+Pretty cool.
+
+28
+00:01:09.240 --> 00:01:10.875
+While you're working
+with procedures,
+
+29
+00:01:10.875 --> 00:01:13.005
+you can nest them
+as we mentioned,
+
+30
+00:01:13.005 --> 00:01:15.340
+but you also are allowed to
+
+31
+00:01:15.340 --> 00:01:18.010
+scope symbols as you
+drop down that chain.
+
+32
+00:01:18.010 --> 00:01:20.980
+So as you dive deeper
+into your nested procs,
+
+33
+00:01:20.980 --> 00:01:23.425
+you end up allowing
+yourself to overwrite
+
+34
+00:01:23.425 --> 00:01:26.645
+different symbols at
+different levels. Pretty cool.
+
+35
+00:01:26.645 --> 00:01:28.820
+One thing I learned recently was
+
+36
+00:01:28.820 --> 00:01:30.260
+the actual connecting fiber
+
+37
+00:01:30.260 --> 00:01:32.990
+between those DD
+statements in your JCL,
+
+38
+00:01:32.990 --> 00:01:35.330
+and the actual programs
+you're running.
+
+39
+00:01:35.330 --> 00:01:37.190
+So the names on those DD,
+
+40
+00:01:37.190 --> 00:01:41.445
+so your SYSIN or your SORTIN or your out whatever,
+
+41
+00:01:41.445 --> 00:01:43.250
+that's actually controlled by
+
+42
+00:01:43.250 --> 00:01:45.260
+the programmer who
+wrote the program.
+
+43
+00:01:45.260 --> 00:01:49.130
+So you give it the DD name that's
+
+44
+00:01:49.130 --> 00:01:51.380
+controlled by whatever they
+
+45
+00:01:51.380 --> 00:01:54.140
+opened as a DCB inside
+their program.
+
+46
+00:01:54.140 --> 00:01:57.425
+Talking more about
+dispositions in JCL.
+
+47
+00:01:57.425 --> 00:02:00.530
+If you want to have
+a temporary data set that you
+
+48
+00:02:00.530 --> 00:02:03.820
+can stuff output into and
+then forget about later,
+
+49
+00:02:03.820 --> 00:02:07.730
+you can use the disposition
+combination new delete
+
+50
+00:02:07.730 --> 00:02:11.720
+on your dd statement
+to specify a data set
+
+51
+00:02:11.720 --> 00:02:13.250
+that the system will clean up at
+
+52
+00:02:13.250 --> 00:02:17.120
+job termination time allowing
+you to fill the needs
+
+53
+00:02:17.120 --> 00:02:19.640
+that your program has
+without having to worry
+
+54
+00:02:19.640 --> 00:02:23.260
+about allocating space
+on a disk beforehand.
+
+55
+00:02:23.260 --> 00:02:25.220
+I'm Ed Pryor and this has been
+
+56
+00:02:25.220 --> 00:02:26.390
+just a deeper dive into
+
+57
+00:02:26.390 --> 00:02:29.270
+a few topics. I hope
+you've enjoyed.

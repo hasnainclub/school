@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap9\File ReadLine Demo\obj\Debug\File ReadLine Demo.exe
+D:\sovb4\examples\Chap9\File ReadLine Demo\obj\Debug\File ReadLine Demo.xml
+D:\sovb4\examples\Chap9\File ReadLine Demo\obj\Debug\File ReadLine Demo.pdb
+D:\sovb4\examples\Chap9\File ReadLine Demo\bin\File ReadLine Demo.exe
+D:\sovb4\examples\Chap9\File ReadLine Demo\bin\File ReadLine Demo.pdb
+D:\sovb4\examples\Chap9\File ReadLine Demo\bin\File ReadLine Demo.xml
+D:\sovb4\examples\Chap9\File ReadLine Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap9\File ReadLine Demo\obj\Debug\File_ReadLine_Demo.Form1.resources
+D:\sovb4\examples\Chap9\File ReadLine Demo\obj\Debug\File_ReadLine_Demo.Resources.resources
+D:\sovb4\examples\Chap9\File ReadLine Demo\obj\Debug\File ReadLine Demo.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File ReadLine Demo\obj\Debug\File ReadLine Demo.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File ReadLine Demo\obj\Debug\File ReadLine Demo.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File ReadLine Demo\obj\Debug\File ReadLine Demo.pdb

@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap3\Average Race Times\bin\Average Race Times.exe
+D:\sovb4\examples\Chap3\Average Race Times\bin\Average Race Times.pdb
+D:\sovb4\examples\Chap3\Average Race Times\bin\Average Race Times.xml
+D:\sovb4\examples\Chap3\Average Race Times\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Average Race Times\obj\Debug\Average_Race_Times.Form1.resources
+D:\sovb4\examples\Chap3\Average Race Times\obj\Debug\Average_Race_Times.Resources.resources
+D:\sovb4\examples\Chap3\Average Race Times\obj\Debug\Average Race Times.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\Average Race Times\obj\Debug\Average Race Times.exe
+D:\sovb4\examples\Chap3\Average Race Times\obj\Debug\Average Race Times.xml
+D:\sovb4\examples\Chap3\Average Race Times\obj\Debug\Average Race Times.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\obj\Debug\Average Race Times.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\obj\Debug\Average Race Times.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\obj\Debug\Average Race Times.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\bin\Average Race Times.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\bin\Average Race Times.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\bin\Average Race Times.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\obj\Debug\Average_Race_Times.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\obj\Debug\Average_Race_Times.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Average Race Times\obj\Debug\Average Race Times.vbproj.GenerateResource.Cache

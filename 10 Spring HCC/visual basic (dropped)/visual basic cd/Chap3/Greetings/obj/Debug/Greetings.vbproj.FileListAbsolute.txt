@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap3\Greetings\obj\Debug\Greetings.exe
+D:\sovb4\examples\Chap3\Greetings\obj\Debug\Greetings.xml
+D:\sovb4\examples\Chap3\Greetings\obj\Debug\Greetings.pdb
+D:\sovb4\examples\Chap3\Greetings\bin\Greetings.exe
+D:\sovb4\examples\Chap3\Greetings\bin\Greetings.pdb
+D:\sovb4\examples\Chap3\Greetings\bin\Greetings.xml
+D:\sovb4\examples\Chap3\Greetings\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Greetings\obj\Debug\Greetings.Form1.resources
+D:\sovb4\examples\Chap3\Greetings\obj\Debug\Greetings.Resources.resources
+D:\sovb4\examples\Chap3\Greetings\obj\Debug\Greetings.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\obj\Debug\Greetings.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\obj\Debug\Greetings.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\obj\Debug\Greetings.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\bin\Greetings.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\bin\Greetings.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\bin\Greetings.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\obj\Debug\Greetings.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\obj\Debug\Greetings.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Greetings\obj\Debug\Greetings.vbproj.GenerateResource.Cache

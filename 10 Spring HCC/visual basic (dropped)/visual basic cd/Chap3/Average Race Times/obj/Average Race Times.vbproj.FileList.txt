@@ -1,0 +1,15 @@
+obj\Debug\Average Race Times.exe
+obj\Debug\Average Race Times.pdb
+bin\Average Race Times.exe
+bin\Average Race Times.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Average_Race_Times.Form1.resources
+obj\Debug\Average_Race_Times.Resources.resources
+obj\Debug\Average Race Times.vbproj.GenerateResource.Cache
+obj\Debug\Average Race Times.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Average_Race_Times.Form1.resources
+obj\Release\Average_Race_Times.Resources.resources
+obj\Release\Average Race Times.vbproj.GenerateResource.Cache
+obj\Release\Average Race Times.exe
+obj\Release\Average Race Times.xml

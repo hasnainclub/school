@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Radio Button Check Box Demo">
+</Property><Property Name="Solution File" Value="C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Radio Button Check Box Demo.sln">
+</Property><Property Name="User Options File" Value="C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Radio Button Check Box Demo.suo">
+</Property><Property Name="Date" Value="Friday, August 19, 2005">
+</Property><Property Name="Time" Value="13:19 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Radio Button Check Box Demo.sln" Description="File successfully backed up as C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Backup\Radio Button Check Box Demo.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Radio Button Check Box Demo.suo" Description="File successfully backed up as C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Backup\Radio Button Check Box Demo.suo">
+</Event><Event ErrorLevel="0" Project="Radio Button Check Box Demo" Source="Radio Button Check Box Demo.vbproj" Description="Project file successfully backed up as C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Backup\Radio Button Check Box Demo.vbproj">
+</Event><Event ErrorLevel="0" Project="Radio Button Check Box Demo" Source="Radio Button Check Box Demo.vbproj.user" Description="Project user file successfully backed up as C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Backup\Radio Button Check Box Demo.vbproj.user">
+</Event><Event ErrorLevel="0" Project="Radio Button Check Box Demo" Source="AssemblyInfo.vb" Description="File successfully backed up as C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Backup\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="Radio Button Check Box Demo" Source="Form1.vb" Description="File successfully backed up as C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Backup\Form1.vb">
+</Event><Event ErrorLevel="0" Project="Radio Button Check Box Demo" Source="Form1.resx" Description="File successfully backed up as C:\data\sovb3\student_disk\Chap4\Radio Button Check Box Demo\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Radio Button Check Box Demo" Source="Radio Button Check Box Demo.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Radio Button Check Box Demo" Source="Radio Button Check Box Demo.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Radio Button Check Box Demo.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Radio Button Check Box Demo.sln" Description="Converted">
+</Event></UpgradeLog>

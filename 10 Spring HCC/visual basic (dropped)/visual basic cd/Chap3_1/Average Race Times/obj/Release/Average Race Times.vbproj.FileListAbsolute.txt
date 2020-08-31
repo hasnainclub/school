@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap3\Average Race Times\obj\Release\Average Race Times.exe
+D:\sovb4\examples\Chap3\Average Race Times\obj\Release\Average Race Times.xml
+D:\sovb4\examples\Chap3\Average Race Times\bin\Average Race Times.exe
+D:\sovb4\examples\Chap3\Average Race Times\bin\Average Race Times.xml
+D:\sovb4\examples\Chap3\Average Race Times\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Average Race Times\obj\Release\Average_Race_Times.Form1.resources
+D:\sovb4\examples\Chap3\Average Race Times\obj\Release\Average_Race_Times.Resources.resources
+D:\sovb4\examples\Chap3\Average Race Times\obj\Release\Average Race Times.vbproj.GenerateResource.Cache

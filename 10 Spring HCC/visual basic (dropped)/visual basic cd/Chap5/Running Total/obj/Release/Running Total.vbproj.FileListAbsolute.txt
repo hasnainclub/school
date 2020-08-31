@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap5\Running Total\bin\Running Total.exe
+D:\sovb4\examples\Chap5\Running Total\bin\Running Total.xml
+D:\sovb4\examples\Chap5\Running Total\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap5\Running Total\obj\Release\Running_Total.Form1.resources
+D:\sovb4\examples\Chap5\Running Total\obj\Release\Running_Total.Resources.resources
+D:\sovb4\examples\Chap5\Running Total\obj\Release\Running Total.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap5\Running Total\obj\Release\Running Total.exe
+D:\sovb4\examples\Chap5\Running Total\obj\Release\Running Total.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Release\Running Total.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Release\Running Total.xml

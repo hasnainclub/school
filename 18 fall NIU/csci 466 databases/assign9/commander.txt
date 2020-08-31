@@ -1,0 +1,19 @@
+\T Assgn9out.txt
+USE z1697740;
+	CREATE TABLE fall (pk int primary key, data char (15));
+
+start transaction;
+insert into fall
+	values(1, 'dataA');
+insert into fall
+	values(2, 'dataB');
+insert into fall
+	values(3, 'dataC');
+--switch to 2
+commit;
+select * from fall;
+\t
+exit;
+
+
+

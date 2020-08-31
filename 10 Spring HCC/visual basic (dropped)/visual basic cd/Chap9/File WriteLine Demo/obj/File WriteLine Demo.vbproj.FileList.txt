@@ -1,0 +1,15 @@
+obj\Debug\File WriteLine Demo.exe
+obj\Debug\File WriteLine Demo.pdb
+bin\File WriteLine Demo.exe
+bin\File WriteLine Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\File_WriteLine_Demo.Form1.resources
+obj\Debug\File_WriteLine_Demo.Resources.resources
+obj\Debug\File WriteLine Demo.vbproj.GenerateResource.Cache
+obj\Debug\File WriteLine Demo.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\File_WriteLine_Demo.Form1.resources
+obj\Release\File_WriteLine_Demo.Resources.resources
+obj\Release\File WriteLine Demo.vbproj.GenerateResource.Cache
+obj\Release\File WriteLine Demo.exe
+obj\Release\File WriteLine Demo.xml

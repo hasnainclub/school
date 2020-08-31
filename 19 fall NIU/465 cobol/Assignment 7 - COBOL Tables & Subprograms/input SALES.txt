@@ -1,0 +1,81 @@
+Athens, Greece           George Makedonas         003 0000467942 004 000301
+Athens, Greece           Aristotle Onassis        0010000073711010000058
+Athens, Greece           Jackie Onassis           0650000010371064000030
+Athens, Greece           Maria Callas             0210000045264020000150
+Athens, Greece           Enid Holt                0200000058682000000000
+Athens, Greece           Kostas Siegrid           0210000165594020000031
+Berlin, Germany          Erich Kleiber            0210042276551020000058
+Berlin, Germany          Wilhelm Furtwaengler     0340000043761006013539
+Berlin, Germany          Adolph Dege              0330000437748021000043
+Berlin, Germany          Johannes Klopp           0550000601717006013539
+Berlin, Germany          Eugen Jochum             0460000464963033000151
+Bonn, Germany            Ludwig van Beethoven     0550000451328000000000
+Bonn, Germany            Uwe Schmidt              0580000601176101000058
+Bonn, Germany            Helga Dernesch           0580000723036062000018
+Bonn, Germany            Richard Strauss          0640003173776065001353
+Chicago, U.S.            Maurizio Damilano        0650000768733000000000
+Chicago, U.S.            Chi Yen Weh              0660000180488051000314
+Chicago, U.S.            Steve Peplowski          0610003145342046000045
+Chicago, U.S.            Michael Smith            0610001504294000000000
+Chicago, U.S.            Charles Melodia          0340004376128013000030
+Chicago, U.S.            Lisa Loganski            0330000167151058000043
+Chicago, U.S.            Theodore Thomas          0300001504564061000135
+Chicago, U.S.            Frederick Stock          0300003161576046000314
+Belfast, N. Ireland      Billy O'Leary            0300001280477020000043
+Belfast, N. Ireland      Anna Owen                0550013372781000000000
+Edinburgh, U.K.          Billy Connolly           0510000223951021000044
+Edinburgh, U.K.          Omar Sharif              0130001624800034000270
+Edinburgh, U.K.          Julie Christie           1010015210497000000000
+Edinburgh, U.K.          James Oxfordshire        0030000463068030000031
+Frankfurt, Germany       Johannes Dundor          0030000167083000000000
+Frankfurt, Germany       Gretel Decker            0210000464828021000031
+Frankfurt, Germany       Adam Dieffenbach         0210001675575004000165
+Hong Kong, China         Mao Zedong               0200000314412004000015
+Hong Kong, China         Zhou Enlai               0200000165458003000016
+Hong Kong, China         Zhau Ziyang              0130002872118051000028
+Hong Kong, China         Chiang Kai-shek          0130000437612051000014
+Hong Kong, China         Shau-Zin Loki            0100001669888021000105
+Hong Kong, China         Stephanie Buckingham     0130000436299000000000
+Hong Kong, China         Don Draper               0140001505634000000000
+Kansas City, U.S.        Geoffrey Decker          0460000270800000000000
+London, U.K.             Elizabeth Windsor        0460016535048021000437
+London, U.K.             Stevie Nicks             0610030088723062000045
+London, U.K.             Andrew Windsor           0610001370234062000013
+London, U.K.             Michael Windsor          0580000040620000000000
+London, U.K.             Phillip Windsor          0650001337738064000315
+London, U.K.             William Windsor          0710002707986065000060
+Los Angeles, U.S.        William Mills            0620003157934000000000
+Los Angeles, U.S.        Catherine Monteiro       0620001670984000000000
+Los Angeles, U.S.        Lindsay Lohan            0650000135386020000314
+Los Angeles, U.S.        Paris Hilton             0460000270786010000043
+Moscow, Russia           Ivan Grozny              0400003249586094000045
+.
+.
+.
+Rio de Janeiro, Br.      Joao Castagneto          0130001504429034000044
+Rio de Janeiro, Br.      Lasar Segall             0130003009928035000150
+Rio de Janeiro, Br.      Tarsila do Amaral        0130005880963000000000
+Rio de Janeiro, Br.      Eliseu Visconti          0100000586282000000000
+Rome, Italy              Julius Caesar            0580000752147034000314
+Rome, Italy              Franco Sinatra           0640009026576035000451
+Rome, Italy              Giacomo Puccini          0650000780581046000045
+Rome, Italy              Enrico Caruso            0650004364348000000000
+Rome, Italy              Sofia Loren              0640000601582046000314
+Sydney, Australia        Milton Sheppard          0640062353866035000044
+Sydney, Australia        Shelley Boughton         0650109743866000000000
+Sydney, Australia        Joan Sutherland          0620055583866035000105
+Sydney, Australia        Barry Tuckwell           0620123284678065000120
+Sydney, Australia        Cayla Smithe             0340028503988000000000
+Sydney, Australia        Benjamin Britten         0360055586222000000000
+Sydney, Australia        Peter Pears              0350058291934000000000
+Sydney, Australia        Paul Gray                0350055570421064000167
+Vienna, Austria          Herbert von Karajan      0020078642202000000000
+
+
+
+
+
+034802300043761280650004362588
+897603100005862820550000601771
+099403200001953820540000315454
+000000000000000000000000000000

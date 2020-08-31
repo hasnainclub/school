@@ -1,0 +1,11 @@
+obj\Debug\Computer Science Student.exe
+obj\Debug\Computer Science Student.pdb
+bin\Computer Science Student.exe
+bin\Computer Science Student.pdb
+bin\Computer Science Student.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Computer_Science_Student.frmDisplayStudents.resources
+obj\Debug\Computer_Science_Student.frmMain.resources
+obj\Debug\Computer_Science_Student.Resources.resources
+obj\Debug\Computer Science Student.vbproj.GenerateResource.Cache
+obj\Debug\Computer Science Student.xml

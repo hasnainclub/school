@@ -1,0 +1,6 @@
+obj\Debug\Error3.exe
+obj\Debug\Error3.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Error3.Form1.resources
+obj\Release\Error3.Resources.resources
+obj\Release\Error3.vbproj.GenerateResource.Cache

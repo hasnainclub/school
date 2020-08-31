@@ -1,0 +1,99 @@
+/* HASNAIN ATTARWALA SECTION 3
+SHOW THE DATABASE
+*/
+SHOW DATABASES;
+
+-- USE the table
+USE z1697740;
+--Show which tables are in there
+SHOW TABLES;
+
+/*
+1. drop/delete all of the tables/views you will be creating
+below*/
+
+DROP VIEW dogsvisited;
+DROP TABLE Visits;
+DROP TABLE Dogs;
+
+/*2. Create a table dogs with a dog id, a breed and a name. Dog
+id should be an auto-increment primary key.*/
+CREATE TABLE Dogs (
+dogid int NOT NULL AUTO_INCREMENT,
+breed varchar(255),
+name varchar(255),
+PRIMARY KEY (dogid));
+
+
+/*3. Put at least 5 records in this table*/
+INSERT INTO Dogs (breed, name) VALUES ('rotwhiler', 'tomy');
+INSERT INTO Dogs (breed, name) VALUES ('desikutta', 'sheru');
+INSERT INTO Dogs (breed, name) VALUES ('stray', 'hero');
+INSERT INTO Dogs (breed, name) VALUES ('germanshepherd', 'tiger');
+INSERT INTO Dogs (breed, name) VALUES ('bakwaas', 'herolal');
+
+
+/*4. Do a select * on this table to show all the records*/
+SELECT * FROM Dogs;
+
+
+/*5. Create a table called visits with a visit id (autoincrement
+primary key), dog id (foreign key into dogs) and
+date. Use the CURDATE() function.*/
+
+CREATE TABLE Visits ( 
+vid int AUTO_INCREMENT, 
+dogyid int, 
+PRIMARY KEY(vid), 
+FOREIGN KEY (dogyid) REFERENCES Dogs(dogid));
+SELECT CURDATE();
+
+/*6. Put at least 8 records in this table, which will mean some
+of the dogs will have multiple visits.*/
+INSERT INTO Visits(dogyid)
+VALUES (1);
+
+INSERT INTO Visits(dogyid)
+VALUES (2);
+
+INSERT INTO Visits(dogyid)
+VALUES (3);
+
+INSERT INTO Visits(dogyid)
+VALUES (4);
+
+INSERT INTO Visits(dogyid)
+VALUES (5);
+
+INSERT INTO Visits(dogyid)
+VALUES (1);
+
+INSERT INTO Visits(dogyid)
+VALUES (2);
+
+INSERT INTO Visits(dogyid)
+VALUES (3);
+
+/*7. Do a select * on this table to show all the records*/
+SELECT * FROM Visits;
+
+/*8. Add a column to the visit table for the time or day of week
+– there are many date/time functions, pick one to use.*/
+ALTER TABLE Visits ADD date DATETIME DEFAULT CURRENT_TIMESTAMP;
+
+/*9. Update several rows to add values to the column you just
+created.*/
+UPDATE Visits
+SET date=CURRENT_TIMESTAMP
+WHERE dogyid=1;
+
+/*10. Do a select * on this table to show all the records*/
+SELECT * FROM Visits;
+
+/*11. Define a view that will list each dog and the number of
+visits they have made.*/
+CREATE VIEW dogsvisited AS (
+SELECT name, COUNT(dogyid) FROM Dogs INNER JOIN Visits ON Dogs.dogid=Visits.dogyid GROUP BY name);
+
+/*12. Do a select * on this view to show all the records */
+SELECT * FROM dogsvisited;

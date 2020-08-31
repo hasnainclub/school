@@ -1,0 +1,50 @@
+All of the hardware,
+infrastructure, and everything beyond and
+in-between is there to support the programs that
+people run on their mainframes. Most companies have
+applications they have developed to meet their
+own unique business needs. The mainframes supports a number of languages including
+those you may think of as mainframe
+specific like Cobol, Fortran, and PL/1, to more industry-standard
+languages like Assembler, C, C++, and Java, and right on up to some of the newer hotter languages like Python, Swift, and NodeJS. Each programming language has its own set of
+strengths, and ideally, you don't just choose
+a programming language because it's the one you know or it's the one
+that platform supports. For that reason, it's
+important that z/OS be able to support whatever someone
+wants to use for their work. Let's do a quick quiz
+before moving on. Select all of
+the programming languages that you think run
+on the mainframe. The correct answer is all of the languages listed
+except Chrome ML, z/OS does not yet provide
+support for Chrome ML probably because it's
+something we just made up like five minutes before
+recording this video. But pretty much anything
+else that you'd expect to have support
+for, it's in there. No matter what language you use, it needs to get turned into machine language so
+the computer can understand it. This is done either through
+compiling or interpreting. In a compiled language, which we've talked about
+a little bit before, a compiler is run on the source
+code and the output is executable code that can run pretty much by itself
+on the target platform. An interpreted language
+uses an interpreter to figure out what needs to be done for the program at runtime, and interfaces with the
+operating system on its behalf. On z/OS, there is this concept
+of a language environment, and the reason we have it is to provide
+a common environment for all participating
+high-level languages or HLLs. So before language environment, which everyone just calls LE, every language has its own area and its own slightly unique way
+of doing things. Not only was this
+tricky to keep track of it also meant that if you were
+supporting four languages, you are supporting
+four different environments, and that's just not fun. So LE lets us combine all
+of that into one area, which has a uniform way
+of managing storage, reading and writing data, and performing
+mathematical calculations. As a result, it
+reduces the need for compilers to generate
+unique code, it shields the languages
+from having to have deep knowledge of the
+operating system and hardware, and it cuts down on the need to recompile and relink
+code for fixes. Now, not all languages on z/OS use the
+language environment, and not all languages that use the language environment are
+said to be LE compliant. It's just the way things
+have evolved over time. But when you do run something
+that deals with LE, now you know a little
+more about the why, the what, and the how.

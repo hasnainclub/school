@@ -1,0 +1,110 @@
+Some of the programs
+you'll use on the mainframe are also
+known as Utilities. Utilities perform a specific task and can be called through JCL to do things like copy
+data sets and members, sort records, generate data. In this section, we'll take
+a look at just a few of the more commonly
+used z/OS Utilities. We'll start with
+System Utilities. Here, you'll find ICKDSF
+which is used to Install, Initialize and Manage dustbin. There's also IEHINITT
+with two T's at the end. That's used to initialize
+tapes for long-term storage, and there's IEHLIST which is a utility used to list
+entries in a PDS to look at it does this volume
+Table of Contents or v-tech or to view an operating
+system volumes Catalog. You'll notice that
+with these there's a sort of a format going on. There's a prefix, followed
+by an abbreviated, representation of what it does. Well the prefixes correspond with the z/OS component
+that they work in. For example, ICK is Device
+Support Facilities, IEH is Data Facility Product, DFP and IEF is Allocation, IPL Jazz Scheduler, and well it's actually a
+number of core components. Then there's data
+set utilities which typically start with IEB. You may be wondering why we're
+spending so much time on data sets and why there are
+so many data set utilities. Well the simple fact is that
+the mainframe deals in data, it's constantly creating records based on what
+applications are doing, and those applications
+are updating records. There's always
+going to be need to take information
+created in one place and re-purpose it to be used as input for a programmer
+made into a report. More importantly, it means
+you can handle those types of situations quickly, instead of editing
+records individually, line by line by hand because you needed to remove the fifth
+column of each record. Another word about
+utility is a lot of times the utility is multipurpose
+like a Swiss Army knife. So if you uses one
+set of parameters, it'll create a data-set but
+use it with another set of parameters and it
+generates Debug Data, and the only way to really
+know what a utility is capable of is to look
+at the documentation. Also point out that
+you can often use different utilities
+to do the same thing. They might do them
+slightly differently but there's more than one
+way to copy a data set. So let's look at that. IEBCOPY as you might
+guess it's there for copying but it can also do
+merges of PDS's and PDSE's. It can do a compression
+of PDS's and PDSE's, and it can even convert PDS's
+into PDSE's and vice versa. Here's what invoking
+It looks like. We're using it here to copy
+one PDS into another PDS. There's no input needed just specifying the two data-set
+straight down here. Quick quiz on IEBCOPY and
+it's a true or false. I can use IEBCOPY to
+merge v-Sam data sets. The answer to that is, "false," it's for PDS's and PDSE's only when we want to work in v-Sam data sets we need to use another utility which we'll
+take a look at later. Here's IEBGENER
+which does not mean that it's utility for people
+brand new to the mainframe. The name is I-E-B the
+prefix for data set utility and then G-E-N-E-R
+for Generate Records, and it can be used to
+backup a data set, produce a partition data set from members of
+sequential data set, print out the contents
+of data sets, and even convert data formats and change settings
+for a data set. Very nice to know about
+all those capabilities. Here it is getting
+called through JCL. We're copying one
+data set to another, and you can see we're
+also specifying a few parameters about how we want that new
+data set to be created. DFSORT is a high-performance Sort Merge Copy
+Analysis and Reporting Product for z/OS
+and it can handle data at the record
+field and bit-level. This is one of the
+biggest Swiss army knives out there because it can sort, merge, and copy but
+while it's doing that it can also reformat
+data along the way. So you can use it to
+change date formats, edit, delete, and add
+fields, repeat records. You can even use it to
+perform arithmetic on data summing up values in records while you're sorting
+or merging them. It's important to know about all the capabilities
+of these utilities because you will be in a
+situation where you're presented with a set of
+data that looks one way, and it needs to be formatted in a different way for a
+program that take it. When you're able to say
+I finally got to use that function of
+DFSORT or IEBCOPY, and it works it's
+a great feeling. So before writing
+your own code to do something and starting
+from scratch check the utilities because chances
+are someone else had to do it before and maybe there's a
+utility for it you can use. Lastly, I want to show you
+a special program IEFBR14. This is an IEF. So it has to do with allocation, and I can tell you
+that BR14 means Branch to Register 14 which is
+an assembler instruction. All you really need
+to know is that IEFBR14 is a program
+designed to do nothing. So you remember how in
+JCL you can specify new Catalog delete for a data set and it will
+allocate a new member, and it will catalog that member
+if the job ran correctly? Well, what if all we want to
+do is create a new data set. That method in JCO is a pretty handy way of
+doing it and it's a shame. We have to do it while calling a program because I'm really not interested in what running that program is
+actually going to do. That's where IEFBR14 comes in. It let's use those JCL features while executing a program, and that program is
+actually just there because you have to specify
+a program it does nothing. So in this example we're
+creating a new data set with new Catalog and
+we're not specifying the third parameter because we just know it's going to work, and then we're also
+using this DD statement to delete an existing data set. It's kind of a hack but
+it's an official hack, and people use it
+all over the place. Actually, know a guy who has IEFBR14 as their
+custom license plate. Last one, IDCAMS this one
+is for generating and modifying v-Sam as well
+as non v-Sam data sets, and I feel like I
+keep saying this but you become an
+expert in IDCAMS, and he get that across to an employer that's time
+well spent right there. Speaking of time well spent that brings us to the
+end of this lesson.

@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap5\Running Total\obj\Debug\Running Total.exe
+D:\sovb4\examples\Chap5\Running Total\obj\Debug\Running Total.xml
+D:\sovb4\examples\Chap5\Running Total\obj\Debug\Running Total.pdb
+D:\sovb4\examples\Chap5\Running Total\bin\Running Total.exe
+D:\sovb4\examples\Chap5\Running Total\bin\Running Total.pdb
+D:\sovb4\examples\Chap5\Running Total\bin\Running Total.xml
+D:\sovb4\examples\Chap5\Running Total\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap5\Running Total\obj\Debug\Running_Total.Form1.resources
+D:\sovb4\examples\Chap5\Running Total\obj\Debug\Running_Total.Resources.resources
+D:\sovb4\examples\Chap5\Running Total\obj\Debug\Running Total.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\bin\Running Total.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\bin\Running Total.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\bin\Running Total.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Debug\Running_Total.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Debug\Running_Total.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Debug\Running Total.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Debug\Running Total.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Debug\Running Total.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Running Total\obj\Debug\Running Total.pdb

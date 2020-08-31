@@ -1,0 +1,15 @@
+obj\Debug\Sales Data.exe
+obj\Debug\Sales Data.pdb
+bin\Sales Data.exe
+bin\Sales Data.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Sales_Data.Form1.resources
+obj\Debug\Sales_Data.Resources.resources
+obj\Debug\Sales Data.vbproj.GenerateResource.Cache
+obj\Debug\Sales Data.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Sales_Data.Form1.resources
+obj\Release\Sales_Data.Resources.resources
+obj\Release\Sales Data.vbproj.GenerateResource.Cache
+obj\Release\Sales Data.exe
+obj\Release\Sales Data.xml

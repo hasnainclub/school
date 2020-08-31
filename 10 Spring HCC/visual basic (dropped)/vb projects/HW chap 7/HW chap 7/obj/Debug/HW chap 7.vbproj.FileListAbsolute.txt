@@ -1,0 +1,12 @@
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\bin\Debug\HW chap 7.exe
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\bin\Debug\HW chap 7.pdb
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\bin\Debug\HW chap 7.xml
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW_chap_7.frmMain.resources
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW_chap_7.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW chap 7.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW chap 7.exe
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW chap 7.xml
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW chap 7.pdb
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW_chap_7.frmFamily.resources
+C:\Users\hasnainpc\Desktop\vb projects\HW chap 7\HW chap 7\obj\Debug\HW_chap_7.frmIndividual.resources

@@ -1,0 +1,111 @@
+All right. Let's get talking
+about virtualization. Virtualization is when things get really interesting
+on the mainframe. So you've got this machine
+that is physically very big, the goal is always to make
+them smaller and smaller. But the mainframe
+actually does have a ton of processors, memory, and I/O in it, and it's got all the cooling and the power and the network required
+to make it run. So it's big, but that's
+a physical description. Again, we're trying to
+draw this distinction between physical and logical. So you've got the mainframe, you got this big
+empty logical area. We've defined
+all the physical stuff. You've got all these
+processors, the storage, the I/O adapter but not
+formed into anything yet. So you start grabbing a
+couple of these processors a little bit of memory,
+some connectivity, couple of I/O adapters, and you start squishing them
+all together and you say, "Okay, this is
+a new system right here. I've built a new system out
+of these physical components, I build a logical system here." For all intents and purposes it is a computer, you
+can start it up, you can shut it down, it runs an operating system, it has a display, or it's a virtual
+display you have to use some software to
+look at it but it's a computer and we call that a logical partition or an LPAR. So building an LPAR
+it's a lot like having this big plastic tub
+of building blocks. It's nothing built specifically we got all these resources here. So you can grab
+some pieces and you start sticking them together
+and look, I made a boat. I take some more over
+here start putting them together and I've made a house, I can make a car, I can keep on going until I've run
+out of resources. So I do the same thing with physical resources on a
+mainframe to build these LPAR's. Say I've got 16 LPAR's, all built on
+my mainframe and some of them are really big
+with a bunch of processors and memory
+and I/O and some of them are really small enough
+just to run a basic program. Some have a ton of processors
+but not a lot of memory, some have very few processors
+but a ton of I/O adapters. You can build them like that, that's flexibility
+behind virtualization. Physically, the
+mainframe looks the same before and after
+you've done all that. it's just sits there and does
+its job, it's a mainframe. But logically, you've
+created 16 new systems. If you told somebody, "Hey, check out my system, log
+into the system I created". They wouldn't have any way
+of knowing that it's an LPAR sitting next
+to a whole bunch of other systems within
+one big physical system because it's it's own computer,
+it's its own system. You've got one big
+physical mainframe and 16 logical servers. I do want to talk a little bit
+more about resources on the mainframe,
+particularly, the processors. There are a whole bunch of
+processor units, processors, and a processor can behave in a couple different ways
+depending on how its configured. It can be a processor just like the one in
+a desktop computer or a laptop where it runs the operating system and
+helps with applications, and that's called a CP
+or Central Processor. You can also have a System
+Assist Processor SAP or SAP. An SAP helps link between
+the CP and the I/O. So instead of
+the main processor having to worry about shuffling data
+back and forth and saying, oh, take this byte over
+here and move it over here. The SAP processor
+handles all that stuff, it speeds things up tremendously. It lets the CP focus on the business application
+that's running not on the stuff
+in the background. Then there's the IFL, the Integrated
+Facility for Linux, which is a processor specifically for running Linux
+on the mainframe. Now, you can run Linux on a CP processor or
+general purpose on, but the IFL has special
+licensing associated with it. So it's more cost effective
+for running Linux. Then lastly there's
+ZIIP processors, that's Z-I-I-P. For
+certain workloads, you can use the ZIIP processors
+to offload work to them, stuff like Java runs on ZIIP's. Again, the purpose is to, one, let the main processor
+off-load their work and two, enable them more cost
+effective option for workloads where it might be hard to predict or contain them. I mentioned earlier
+the I/O adapters. Now the mainframe has
+a lot of I/O adapters, each one of those wires
+you're seeing in this picture right
+here goes up to an I/O adapter and
+there's even more on the back and even
+more on the other frame. On the other end,
+those are connected to disk storage devices, network adapters, network
+attached storage, other mainframes, you name it. We identify these I/O adapters as Channel Path
+Identifiers or CHPIDS. The CHPID is associated with a physical port location
+also called a PCHID for the Physical Channel ID and a logical subsystem that
+it's associated with. A subsystem is the connection
+between the LPAR and the I/O devices or other LPAR's that it needs to
+communicate directly with. You can put everything into one big subsystem or you can create a few logical
+subsystems within it. So the CHPID which
+is the association between the physical port
+location and the subsystem, you can think about it just
+like being a line between the two can be dedicated
+fully to one LPAR, meaning it has
+full control of it or it can be shared between
+multiple LPAR's, it can also be unshared
+and reconfigurable, meaning that it can be switched
+from LPAR to another but only one at a time since
+it's a logical connection. Lastly, a CHPID can also
+be configured as spanned, which means that it's
+actually associated with partitions from
+multiple logical subsystems. Lastly, a CHPID can also
+be configured as span, which means that it's actually
+accessed from partitions, from multiple logical
+channels subsystems. One last word about virtualization
+that we're going to take a very logical
+and physical break. In addition to hosting
+operating systems within LPAR's, there's an operating system
+that specializes in virtualization called
+z/VM or Virtual Machine. Z/VM is a type one hypervisor, meaning that it doesn't
+need to sit on top of another operating system
+in order to do its thing and within z/VM, you can create hundreds, thousands of virtual machines. They all share the resources that the host z/VM system has. Into the mainframe, it thinks is just hosting one big
+operating system, but within it, you can run any number of operating systems. Anything that runs on
+the mainframe runs under z/VM including
+another z/VM. So that's virtually
+everything I have to tell you about virtualization
+on the mainframe.

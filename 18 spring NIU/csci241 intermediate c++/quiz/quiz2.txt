@@ -1,0 +1,58 @@
+What must header file must you #include to use the setw() manipulator?
+#include <iomanip>
+
+
+What does the showpos manipulator do?
+Sets the showpos format flag for the str stream.
+
+When the showpos format flag is set, a plus sign (+) precedes every non-negative numerical value inserted into the stream (including zeros)
+
+
+What is the default value of the setw() manipulator?
+The default field width is 0
+
+
+What is the g++ option for compiling a source code file into an object file, but not linking it into an executable file?
+-c
+
+
+Which manipulator does not have a persistent effect and must be coded for each value printed?
+setw()
+
+
+In fixed floating point format, what does precision represent?
+Sets the decimal precision to be used to format floating-point values on output operations.
+
+
+Write a variable declaration for a pointer to a char.
+char * ptr
+
+
+An array of char named studentName contains a C string. Write code to copy this C string into another array of char named searchName.
+strcpy (searchName,studentName);
+
+
+Write a definition for a function that takes one argument, an array of char that contains a C string. The function should return an integer representing the number of numeric digits contained in the C string.
+int countDigits(char s[])
+{
+int i, total = 0;
+for (i = 0; s[i] != '\0'; i++)
+{
+if (isdigit(s[i])
+total++;
+}
+return total;
+}
+
+Write a definition for a function that takes two arguments, an array of char that contains a C string, and a char variable. The function should return an integer representing the number of times the value of the second parameter occurs in the C string passed in as the first parameter.
+
+int countChar(char s[], char ch)
+{
+int i, total = 0;
+for (i = 0; s[i] != '\0'; i++)
+{
+if (s[i] == ch)
+total++;
+}
+return total;
+}

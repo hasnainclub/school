@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap4\String Finder\bin\Debug\String Finder.exe
+D:\sovb4\examples\Chap4\String Finder\bin\Debug\String Finder.pdb
+D:\sovb4\examples\Chap4\String Finder\bin\Debug\String Finder.xml
+D:\sovb4\examples\Chap4\String Finder\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap4\String Finder\obj\Debug\String_Master.Form1.resources
+D:\sovb4\examples\Chap4\String Finder\obj\Debug\String_Master.Resources.resources
+D:\sovb4\examples\Chap4\String Finder\obj\Debug\String Finder.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap4\String Finder\obj\Debug\String Finder.exe
+D:\sovb4\examples\Chap4\String Finder\obj\Debug\String Finder.xml
+D:\sovb4\examples\Chap4\String Finder\obj\Debug\String Finder.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\obj\Debug\String Finder.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\obj\Debug\String Finder.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\obj\Debug\String Finder.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\bin\Debug\String Finder.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\bin\Debug\String Finder.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\bin\Debug\String Finder.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\obj\Debug\String_Master.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\obj\Debug\String_Master.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\String Finder\obj\Debug\String Finder.vbproj.GenerateResource.Cache

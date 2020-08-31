@@ -1,0 +1,3 @@
+Module ExampleProjectModule
+
+End Module

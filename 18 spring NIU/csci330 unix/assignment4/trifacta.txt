@@ -1,0 +1,5 @@
+	They are using an enterprise software's free version called trifacta. It is a webinar on how to use this product. 
+They can create dashboards and other stuff. with one of the files they create a recipe using a customers data base file.  
+creating some steps to create another  file.  using 6 files from the customer or data. 
+	if there are missing values, u can click on set and i am thinking it calls a constructor to set everymissing value to 0, or a easy loop if statement. you can even switch data type. we can change column names and rows also. 
+this really seems like a very modern version of what excel was.  it's data visualization to a next level.  

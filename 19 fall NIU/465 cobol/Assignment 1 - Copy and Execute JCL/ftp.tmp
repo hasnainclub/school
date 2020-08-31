@@ -1,0 +1,6 @@
+USER KC03E85
+A01UGUST
+quote site filetype=jes
+get JOB02048
+dir
+quit

@@ -1,0 +1,643 @@
+WEBVTT
+
+1
+00:00:02.630 --> 00:00:06.195
+It's time to talk
+about z/OS components.
+
+2
+00:00:06.195 --> 00:00:09.200
+Now, covering z/OS
+is a tricky task.
+
+3
+00:00:09.200 --> 00:00:11.440
+There's really
+no single entry point,
+
+4
+00:00:11.440 --> 00:00:13.075
+and there is no point you can hit
+
+5
+00:00:13.075 --> 00:00:15.145
+that marks the end
+of your education.
+
+6
+00:00:15.145 --> 00:00:16.690
+So just as we're trying to
+
+7
+00:00:16.690 --> 00:00:19.000
+avoid leaving anything
+important out,
+
+8
+00:00:19.000 --> 00:00:20.680
+we're very much trying to avoid
+
+9
+00:00:20.680 --> 00:00:22.570
+covering the same topics twice.
+
+10
+00:00:22.570 --> 00:00:24.730
+But sometimes when
+you hear something
+
+11
+00:00:24.730 --> 00:00:26.110
+stated after you've learned
+
+12
+00:00:26.110 --> 00:00:27.745
+more about the parts around it,
+
+13
+00:00:27.745 --> 00:00:30.115
+or even just phrased
+slightly differently,
+
+14
+00:00:30.115 --> 00:00:32.260
+it can really help
+to connect the dots.
+
+15
+00:00:32.260 --> 00:00:34.000
+So we're going to
+cover some stuff here
+
+16
+00:00:34.000 --> 00:00:36.040
+we've already talked
+about before,
+
+17
+00:00:36.040 --> 00:00:37.420
+but we're going to
+be covering them in
+
+18
+00:00:37.420 --> 00:00:39.070
+a slightly different context
+
+19
+00:00:39.070 --> 00:00:40.540
+which I think will
+help you better
+
+20
+00:00:40.540 --> 00:00:42.775
+understand in the long run.
+
+21
+00:00:42.775 --> 00:00:44.980
+First off, there's RACF.
+
+22
+00:00:44.980 --> 00:00:46.940
+Now, we talked about RACF that's
+
+23
+00:00:46.940 --> 00:00:48.830
+responsible for
+granting access to
+
+24
+00:00:48.830 --> 00:00:50.840
+system resources only to
+
+25
+00:00:50.840 --> 00:00:53.180
+those who are supposed
+to have access.
+
+26
+00:00:53.180 --> 00:00:56.070
+In addition to determining
+who gets in and who doesn't,
+
+27
+00:00:56.070 --> 00:00:59.420
+it also logs information
+about access attempts,
+
+28
+00:00:59.420 --> 00:01:01.490
+and holds information
+about users,
+
+29
+00:01:01.490 --> 00:01:04.070
+groups, resources, and profiles.
+
+30
+00:01:04.070 --> 00:01:06.260
+What's really important
+about it is that it
+
+31
+00:01:06.260 --> 00:01:08.240
+has direct connections
+to a lot of
+
+32
+00:01:08.240 --> 00:01:12.955
+other major subsystems
+like OMVS, CICS, and TSO.
+
+33
+00:01:12.955 --> 00:01:15.140
+Without that tight integration,
+
+34
+00:01:15.140 --> 00:01:19.215
+RACF wouldn't be so powerful,
+fast, and flexible.
+
+35
+00:01:19.215 --> 00:01:21.890
+DFSMS is the suite of products
+
+36
+00:01:21.890 --> 00:01:24.330
+related to data storage
+and management.
+
+37
+00:01:24.330 --> 00:01:26.660
+It helps automate and
+centralize the management
+
+38
+00:01:26.660 --> 00:01:28.100
+of storage based on
+
+39
+00:01:28.100 --> 00:01:30.485
+the policies defined
+for your installation.
+
+40
+00:01:30.485 --> 00:01:33.110
+Those policies can be
+based around performance,
+
+41
+00:01:33.110 --> 00:01:36.275
+security, space, and
+resource availability.
+
+42
+00:01:36.275 --> 00:01:40.615
+The heart of DFSMS is the
+storage management subsystem,
+
+43
+00:01:40.615 --> 00:01:43.680
+that's the SMS in DFSMS,
+
+44
+00:01:43.680 --> 00:01:46.560
+the DF standing
+for data facility.
+
+45
+00:01:46.560 --> 00:01:49.250
+SMS defines the policies
+that automate
+
+46
+00:01:49.250 --> 00:01:52.175
+the management of storage
+and hardware devices.
+
+47
+00:01:52.175 --> 00:01:54.500
+So you can say this type
+of data should
+
+48
+00:01:54.500 --> 00:01:57.320
+always go on the fastest
+storage devices we have,
+
+49
+00:01:57.320 --> 00:01:59.180
+or this type of data needs to get
+
+50
+00:01:59.180 --> 00:02:01.475
+backed up to tape at
+the end of each day.
+
+51
+00:02:01.475 --> 00:02:03.650
+Then when you
+allocate new storage,
+
+52
+00:02:03.650 --> 00:02:06.550
+you define it into one of
+those storage classes.
+
+53
+00:02:06.550 --> 00:02:08.480
+You still need someone acting as
+
+54
+00:02:08.480 --> 00:02:10.730
+a storage administrator
+to make all this happen.
+
+55
+00:02:10.730 --> 00:02:13.445
+It doesn't just magically
+make it happen all by itself,
+
+56
+00:02:13.445 --> 00:02:15.890
+but it provides
+the tools that makes
+
+57
+00:02:15.890 --> 00:02:19.535
+automating this incredibly
+complex environment possible.
+
+58
+00:02:19.535 --> 00:02:22.100
+Next up, communications server,
+
+59
+00:02:22.100 --> 00:02:23.720
+or just comm server.
+
+60
+00:02:23.720 --> 00:02:26.870
+This supports peer-to-peer
+connectivity functions
+
+61
+00:02:26.870 --> 00:02:29.075
+for local and wide area networks,
+
+62
+00:02:29.075 --> 00:02:33.880
+including the widest network
+of them all, the Internet.
+
+63
+00:02:33.880 --> 00:02:37.255
+Whenever z/OS needs to talk
+to something over a network,
+
+64
+00:02:37.255 --> 00:02:39.800
+comm server gets involved.
+
+65
+00:02:40.020 --> 00:02:44.540
+SMP/E, short for system
+modification program extended is
+
+66
+00:02:44.540 --> 00:02:47.090
+the z/OS tool for
+managing the installation
+
+67
+00:02:47.090 --> 00:02:49.795
+of software products
+on a z/OS system,
+
+68
+00:02:49.795 --> 00:02:52.925
+as well as tracking
+modifications to these products.
+
+69
+00:02:52.925 --> 00:02:55.820
+That second part is incredibly
+important because if
+
+70
+00:02:55.820 --> 00:02:58.850
+we've installed something
+and didn't keep track of it,
+
+71
+00:02:58.850 --> 00:03:00.020
+or we think we have something
+
+72
+00:03:00.020 --> 00:03:01.595
+installed that's
+not really there,
+
+73
+00:03:01.595 --> 00:03:03.065
+or it's at the wrong version,
+
+74
+00:03:03.065 --> 00:03:05.105
+that could spell out disaster.
+
+75
+00:03:05.105 --> 00:03:07.505
+All the installed
+software modifications
+
+76
+00:03:07.505 --> 00:03:08.840
+are kept track of in
+
+77
+00:03:08.840 --> 00:03:13.220
+the consolidated software
+inventory, or CSI.
+
+78
+00:03:13.220 --> 00:03:16.750
+You can interface with SMP/E
+through jobs you submit,
+
+79
+00:03:16.750 --> 00:03:19.095
+or through the dialogues in ISPF.
+
+80
+00:03:19.095 --> 00:03:21.295
+But no matter what
+method you use,
+
+81
+00:03:21.295 --> 00:03:23.390
+it's important that
+what's on the system
+
+82
+00:03:23.390 --> 00:03:27.055
+matches what SMP/E
+thinks is on the system.
+
+83
+00:03:27.055 --> 00:03:29.595
+Another facility, SMF.
+
+84
+00:03:29.595 --> 00:03:32.150
+This is the system
+management facility,
+
+85
+00:03:32.150 --> 00:03:35.425
+and it records system and
+job related information
+
+86
+00:03:35.425 --> 00:03:39.250
+in the CICS1.MANXX datasets.
+
+87
+00:03:39.250 --> 00:03:41.650
+This information is
+useful in determining
+
+88
+00:03:41.650 --> 00:03:44.485
+billing information,
+analyzing the configuration,
+
+89
+00:03:44.485 --> 00:03:46.720
+determining when to
+schedule batch jobs,
+
+90
+00:03:46.720 --> 00:03:48.565
+evaluating dataset activity,
+
+91
+00:03:48.565 --> 00:03:50.780
+and auditing a system security.
+
+92
+00:03:50.780 --> 00:03:53.350
+SMF data collection
+is executed by
+
+93
+00:03:53.350 --> 00:03:55.420
+several specific
+routines spread all
+
+94
+00:03:55.420 --> 00:03:57.985
+over z/OS and other products.
+
+95
+00:03:57.985 --> 00:03:59.815
+The data can go into the system
+
+96
+00:03:59.815 --> 00:04:02.350
+or specific job-related records.
+
+97
+00:04:02.350 --> 00:04:04.680
+So you've heard about SMF,
+
+98
+00:04:04.680 --> 00:04:06.645
+now get ready for RMF.
+
+99
+00:04:06.645 --> 00:04:09.345
+RMF, the resource
+management facility,
+
+100
+00:04:09.345 --> 00:04:10.550
+and that's there to ensure the
+
+101
+00:04:10.550 --> 00:04:12.035
+system is running smoothly.
+
+102
+00:04:12.035 --> 00:04:13.790
+It gathers performance data
+
+103
+00:04:13.790 --> 00:04:15.785
+using three types of monitors.
+
+104
+00:04:15.785 --> 00:04:19.355
+There's monitor 1 which
+gathers long-term data,
+
+105
+00:04:19.355 --> 00:04:23.150
+monitor 2 which handles
+snapshot moment in time data,
+
+106
+00:04:23.150 --> 00:04:26.345
+and monitor 3 that
+collects short-term data.
+
+107
+00:04:26.345 --> 00:04:28.550
+This data is used by all sorts of
+
+108
+00:04:28.550 --> 00:04:31.505
+mainframe professionals
+including SysProgs,
+
+109
+00:04:31.505 --> 00:04:34.655
+service administrators,
+and performance analysts.
+
+110
+00:04:34.655 --> 00:04:36.380
+If something is being pushed too
+
+111
+00:04:36.380 --> 00:04:38.425
+hard or it's going underutilized,
+
+112
+00:04:38.425 --> 00:04:40.820
+that'll show up in an RMF report.
+
+113
+00:04:40.820 --> 00:04:42.920
+We might use
+the information we got
+
+114
+00:04:42.920 --> 00:04:44.764
+from RMF to make adjustments
+
+115
+00:04:44.764 --> 00:04:49.030
+in another component called
+the workload manager or WLM.
+
+116
+00:04:49.030 --> 00:04:52.640
+The way WLM works is basically
+by setting up a series
+
+117
+00:04:52.640 --> 00:04:54.755
+of understandings
+between the user
+
+118
+00:04:54.755 --> 00:04:56.525
+and the operating system.
+
+119
+00:04:56.525 --> 00:04:58.400
+You start with classes and
+
+120
+00:04:58.400 --> 00:05:00.575
+a class could be high priority,
+
+121
+00:05:00.575 --> 00:05:03.380
+medium priority,
+normal, best effort.
+
+122
+00:05:03.380 --> 00:05:05.630
+It describes how imperative that
+
+123
+00:05:05.630 --> 00:05:08.270
+work is to our business goals.
+
+124
+00:05:08.270 --> 00:05:10.280
+All the work we want
+to be managed with
+
+125
+00:05:10.280 --> 00:05:12.710
+WLM goes into one
+of those classes.
+
+126
+00:05:12.710 --> 00:05:16.300
+Next, we defined goals
+where we set requirements.
+
+127
+00:05:16.300 --> 00:05:18.740
+Maybe we've got an application
+that needs to complete
+
+128
+00:05:18.740 --> 00:05:20.720
+95 percent of its transactions
+
+129
+00:05:20.720 --> 00:05:22.670
+in 20 milliseconds or less.
+
+130
+00:05:22.670 --> 00:05:26.420
+We set those goals and we
+let WLM determine where
+
+131
+00:05:26.420 --> 00:05:28.370
+incoming work should go and how
+
+132
+00:05:28.370 --> 00:05:30.465
+it should be handled. Even better,
+
+133
+00:05:30.465 --> 00:05:33.685
+because WLM operates at
+the sysplex level,
+
+134
+00:05:33.685 --> 00:05:35.630
+it can automatically and quickly
+
+135
+00:05:35.630 --> 00:05:38.255
+route work to
+the most appropriate LPAR.
+
+136
+00:05:38.255 --> 00:05:40.310
+By defining our goals and letting
+
+137
+00:05:40.310 --> 00:05:42.470
+WLM manage the incoming work,
+
+138
+00:05:42.470 --> 00:05:44.480
+we get much greater control and
+
+139
+00:05:44.480 --> 00:05:48.095
+consistency of business results
+in our environment.
+
+140
+00:05:48.095 --> 00:05:52.200
+All in a day's work for
+your favorite enterprise server.

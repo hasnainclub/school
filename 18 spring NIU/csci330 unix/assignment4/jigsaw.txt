@@ -1,0 +1,2 @@
+	There's a app called clusterview, listview, authors who have more connections have darker orange colors. it also shows most used words in the documents. and also creates one sentence to properly define what that is. 
+	Different types of views are available. With also sorting available. You can even find connections through clicking on it, and has a matching view.  pretty cool stuff!  Also has collobarations, and can find patterns of collobarations. Also find positive or negative papers for each Author(s).

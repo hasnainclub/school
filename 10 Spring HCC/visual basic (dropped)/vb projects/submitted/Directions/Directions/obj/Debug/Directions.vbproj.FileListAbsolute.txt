@@ -1,0 +1,10 @@
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\bin\Debug\Directions.exe
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\bin\Debug\Directions.pdb
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\bin\Debug\Directions.xml
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\obj\Debug\Directions.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\obj\Debug\Directions.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\obj\Debug\Directions.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\obj\Debug\Directions.exe
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\obj\Debug\Directions.xml
+C:\Users\hasnainpc\Desktop\vb projects\Directions\Directions\obj\Debug\Directions.pdb

@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Timer Demo", "Timer Demo.vbproj", "{8AF7AF2A-BCB4-477E-8AC3-0B56B22E0C3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AF7AF2A-BCB4-477E-8AC3-0B56B22E0C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF7AF2A-BCB4-477E-8AC3-0B56B22E0C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF7AF2A-BCB4-477E-8AC3-0B56B22E0C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF7AF2A-BCB4-477E-8AC3-0B56B22E0C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

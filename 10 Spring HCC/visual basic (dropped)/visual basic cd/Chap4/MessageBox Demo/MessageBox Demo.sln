@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MessageBox Demo", "MessageBox Demo\MessageBox Demo.vbproj", "{03796861-CD94-4A17-9C08-125D9241DDEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03796861-CD94-4A17-9C08-125D9241DDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03796861-CD94-4A17-9C08-125D9241DDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03796861-CD94-4A17-9C08-125D9241DDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03796861-CD94-4A17-9C08-125D9241DDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

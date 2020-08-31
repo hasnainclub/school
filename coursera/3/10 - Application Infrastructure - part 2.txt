@@ -1,0 +1,83 @@
+On the mainframe, the big
+three that immediately come to mind are CICS, IMS, and Db2. When I first started working on z Systems I heard
+these said together so often but I thought it was two things CICS, IMS, and Db2. But we're talking
+about three components here there's kicks, or CICS, spelled CICS, IMS, and Db2. Three different things. Let's start with CICS. CICS has been around for
+a long time and it powers many of the world's
+transactions such as ATM's, managing insurance
+policies, utility bills, retail shopping, and others. It does it all securely and
+reliably day in and day out. A CICS transaction consist of many facets including
+delivering the user interface, retrieving and
+updating information, and communicating with
+other applications and network attached devices. In CICS, a transaction
+typically lasts a very short time and is associated with one unit of work. CICS takes the work to be
+processed and lines it up with the program or programs
+required to complete it. This was the job of the
+transaction manager, to ensure the work complete
+successfully according to the process and that
+there's nothing left hanging out there when we tell the user that it's complete. Here's what's under the hood
+that lets this all happen. A CICS system manages an area of storage called a region which
+lives in an address space. You'll hear that term
+a lot, a CICS region. A CICS region uses
+domains which contain management nodes for
+transaction processing. Now, a single region
+can be defined to perform all the functions necessary to process
+a transaction. Typically, a CICS installation will have several
+different regions, each one devoted to a
+different type of transaction. Think of it like an
+auto repair center. This area's for body work, over here is for
+transmission issues, tires and wheels over there. That way, all the tools
+that are needed are close by and the area isn't crowded with stuff
+that they don't need. There are three types
+of domains that supervise and control
+transaction processing. Remember, these are the
+domains within the region. We've covered a lot there. So let's make sure we've
+got the basic order right. A CICS system manages
+an area of storage called a blank and within
+that it uses blanks. Let's see if you remember
+what those are called. So a CICS system manages areas
+of storage called regions. Then within the regions,
+it manages domains. There's a transaction
+manager, the XM, which is responsible for
+receiving transaction requests and creating the organizing
+tasks to process them. Then there's the program
+manager or PG which handles locating and invoking
+applications required for processing
+transactions. Then there's these
+Storage Manager, SM. This domain is responsible
+for allocating memory resources required
+for all of this to happen. You can see in this diagram, we have three types of regions. There's the TOR,
+terminal owning region, which handles connections to terminals and other
+remote devices. Then there's the AOR
+for application owning region and the DOR for
+Data owning region. The glue that connects
+these regions is VTAM. Now we haven't really spent much time talking about VTAM yet, and we're not going
+to get deep into it. Just know that it has to do with networking and it's
+part of comm server. The AORs and DORs talk with other applications
+like databases, and user written applications. One of those databases
+could be IMS. Now what's IMS? IMS, Information
+Management System has a long and interesting
+history as well which includes some
+development done for NASA. What makes IMS unique
+is that it has or is, depending on how you look at it, a hierarchical database
+management system. It is widely used for
+manufacturing type of applications but you'll see it in just about any industry. IMS consists of three components. One is the database manager. That's the IMS DB. Then there's the
+transaction manager. That's the IMS TM. Then there's these system
+services that provide common services to both
+the DB and the TM. These work together
+to deliver data and transactional capabilities in
+an extremely efficient way. For more complex data
+handling needs, there's Db2. Big D little b2. Db2 is a database and it offers
+exceptional availability, massive scalability,
+flexibility, and installation across
+platforms and location, and a low total
+cost of ownership. Db2 is considered to be
+a relational database. So data exists in one or more
+constructs known as tables. Within those tables, there are columns and rows and you interact with data by using the structured
+query language or SQL. Though you can also use Db2 for unstructured data
+and so much more. Remember those acid properties
+we've talked about before? Db2 people take each one
+of those very seriously. They won't chase something that gives them increased availability if it means giving up
+consistency and vice versa. When it comes to truly
+enterprise applications, the middleware like CICS, IMS, and Db2 need to step up and deliver time after time
+after time after time. Can't stop, won't
+stop. Transaction.

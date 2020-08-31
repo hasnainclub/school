@@ -1,0 +1,141 @@
+All right. Let's talk about
+computer architecture. Now what is computer
+architecture? You've probably heard about
+architecture before when people are talking about
+the skyscrapers in hospitals, and museums, and stuff like that. Well, computer architecture
+is actually pretty simple. There's lots of
+different kinds of buildings, lots of different kinds
+of computers, and you wouldn't
+architect a home, the same way you would
+architect a car wash, and you wouldn't
+architect the Museum the same way you do a restaurant. Well, there's different
+types of computers, you wouldn't architect them exactly the same
+either because each one has its own specific set
+of needs and purposes, just like the buildings. So there's certain things
+you need to take into consideration when thinking
+about computer architecture. It's the set of rules and methods that describe
+the functionality, organization, and implementation
+of the computer system. Now this includes hardware, software, and everything in
+between, and all around it. Let's talk about hardware. When we talk about hardware, we're talking about the stuff
+you can physically see and touch, stuff like CPUs, memory, hard drives, network
+cards, I/O adapters, the graphical processing unit,
+all that stuff. The stuff that you can pick up, take a look at, and shove
+back into the computer. Don't shove it back into
+the computer, place it gently. We're talking about software, that's the stuff
+that we can't see, that stuff like programs
+that are written in code: operating systems, built-in programs like
+Notepad, applications. You're right, libraries,
+ones you download, tools, utilities,
+programs, all stuff. You can think about
+the operating system as the primary program, and everything else
+just goes through it. So there instances when
+you're going to write software that sits directly
+on top of the hardware, that doesn't use the
+operating system. Those do exist, but
+most of the time, the operating system is
+there in the middle, making sure not only
+this stuff is easier to write, but it's going to run
+safer as well. All right. Let's get into these computer
+architecture components. Earlier, I talked about how architecture computer is a lot like the architecture
+of a building, lots of different buildings, lots of different computers. Now a building typically has a couple of things in common, it got walls, it's got a roof, it got floor, hallway, it probably has
+an electrical system, probably plumbing,
+windows, doors. You can see there's a lot of
+stuff to think about there. In computer architecture, you've got a series of components, and the architecture
+is all about how they are designed to work
+well with one another, and fit together, so that
+it performs as a bank, or as a museum again. We can see this in computer
+architecture as well. There's this split between the hardware and
+the software side. So let's start with
+software design. Software design
+includes the compiler, firmware, operating
+system, applications. The hardware design includes physical circuit, digital design, data path control, instruction set procedures,
+and I/O systems. Let's start by talking
+about the software. Now, you can generally split software into
+two distinct flavors, there's application software
+and the system software. Application software
+is what you generally call an app, short
+for application. You start it, it runs,
+it does its thing, and when it's done you
+don't need it anymore, you just stop it,
+and it goes away. It generally interacts with you, or maybe another user, or a file. But it typically sits on top
+of the operating system, and it's going to use
+the operating system to get the data it needs, to access memory, to talk to
+the network, all that stuff. Now system software
+is the code that runs as part of the
+operating system generally. Without the system software, you wouldn't be able to run
+any application software, because generally, it's
+the application software telling the system software
+what it wants. Then there's firmware. Firmware generally gets
+written to read only memory, and it comes from the factory associated with
+that piece of hardware, and you're not
+going to change it, unless there's a problem
+that needs to get fixed, or there's a new
+feature coming out. You can upgrade
+the firmware to get that. The firmware provides
+a common set of methods for doing things that the operating
+system is going to use. Let's take a step back and see what we have so far, right? We've talked about
+a lot of stuff. We have the application software, that's the app, all right? That sits on top of the operating system,
+the system software. But there's actually
+a step before that because you have to
+build the application. So you write the application
+in software language like Java, C++,
+something like that. Now I can write some code, and you can probably
+take a look at it, and see what I'm trying to do. The computer itself doesn't
+understand this yet, until we run it through
+something called a compiler. A compiler takes source code which is the stuff that I write, and then compiles it into
+something machine can run. That's called object code, and it's a one-way direction. You can't take
+object code and then break it apart into
+its source code. It's like baking a cake, you can't take a cake, and turn it back into
+its ingredients, it's the finished product there. So that's how you make
+an application or a cake. Okay. So we've got our compiler, we've got an application, we've got the operating system. Then before that, before it
+actually hits the hardware, we've got something called
+the instruction set, which is part of the instruction
+set architecture, another aspect of
+computer architecture. This is ultimately what bridges the gap between the software
+and the hardware. The instruction set is
+basically everything that the computer's processor
+is capable of doing. It lists out every single
+function it can do. I can compare these
+two numbers together, tell you which ones greater. If they're equal, add
+these two numbers together, store this data over here, move this data over there. It's nothing too fancy. But these are the small building blocks
+that you can use to make these higher-level
+fancy applications from. Now ultimately, everything
+we're doing right now is that we can get
+something onto the processor, so the processor can run
+this application, right? That's why we're
+doing all this stuff. You've probably seen
+a processor too. You're thinking about this,
+it's a square chip thing with a whole bunch of
+metal pins on the bottom of it. Well, those metal pins
+aren't just for traction, they're there because they
+hook into the motherboard, or the back plane
+of the computer, and we've just send
+electrical impulses through it. That's how we tell the chip, the processor what
+we want it to do. Then we want to get
+the answer of what those two numbers
+added together are, we have to do a read, so we have to know which pins
+to read from, right? There's a whole lot of
+stuff to understand there, and that's all documented
+in the instruction set. Now you can picture a calculator
+is a type of computer, a phone is a type of computer, a supercomputer is
+a type of computer. Three different types
+of computers, three different architectures, three different
+instruction sets, right? So we ultimately need a compiler for each
+one of those, right? The blueprints for all that are contained within
+the instruction set, and part of the instruction
+set architecture. Even in very simple
+couple of lines of code program like add
+these things together, it has to take quite a journey to get from something that I can describe to something that can be represented
+electronically on a CPU. Then there's a whole other area
+of physical design, that describes building
+the logic gates and physical chips, that falls under digital design, circuit implementation, and
+physical implementation. Believe me, that goes off pretty far in its own direction. We've covered a lot here:
+from stuff you can see, to stuff your run,
+to stuff you write, to stuff that you
+just have to trust that it's there because there's no way a computer
+would work without it. There's definitely
+a near infinite number of ways you could
+architect a computer. Hopefully, the computer you're using right now was built for a specific purpose and it
+does it really, really well. In the next lesson, we're going to talk about
+a computer that's been architected specifically to
+run business transactions, and that's the IBM Z.

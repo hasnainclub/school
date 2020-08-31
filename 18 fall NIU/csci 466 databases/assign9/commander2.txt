@@ -1,0 +1,22 @@
+\T Assgn9out.txt
+use z1697740;
+select * from fall;
+
+insert into fall
+	values(4, 'dataD');
+insert into fall
+	values(5, 'dataE');
+
+--switch to 1
+
+select * from fall;
+\t
+exit;
+
+--switch to 1
+
+select * from fall;
+\t
+exit;
+
+--switch to 1

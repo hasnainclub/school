@@ -1,0 +1,1677 @@
+                   J E S 2  J O B  L O G  --  S Y S T E M  2 9 6 4  --  N O D E  S V S C J E S 2        
+
+ 
+19.37.58 JOB05935 ---- MONDAY,    21 OCT 2019 ----
+19.37.58 JOB05935  IRR010I  USERID KC03E85  IS ASSIGNED TO THIS JOB.
+19.38.01 JOB05935  ICH70001I KC03E85  LAST ACCESS AT 19:36:51 ON MONDAY, OCTOBER 21, 2019
+19.38.01 JOB05935  $HASP373 KC03E85A STARTED - INIT 2    - CLASS A        - SYS 2964
+19.38.04 JOB05935  -                                      -----TIMINGS (MINS.)------                          -----PAGING COUNTS----
+19.38.04 JOB05935  -STEPNAME PROCSTEP    RC   EXCP   CONN       TCB       SRB  CLOCK          SERV  WORKLOAD  PAGE  SWAP   VIO SWAPS
+19.38.04 JOB05935  -JSTEP01              00   6735    411       .00       .00     .0            92  BATCH        0     0     0     0
+19.38.05 JOB05935  -JSTEP02              00    273     38       .00       .00     .0            62  BATCH        0     0     0     0
+19.38.05 JOB05935  -JSTEP03              00    146     26       .00       .00     .0            13  BATCH        0     0     0     0
+19.38.05 JOB05935  -KC03E85A ENDED.  NAME-ATTARWALA            TOTAL TCB CPU TIME=      .00 TOTAL ELAPSED TIME=    .0
+19.38.05 JOB05935  $HASP395 KC03E85A ENDED - RC=0000
+
+------ JES2 JOB STATISTICS ------
+
+
+  21 OCT 2019 JOB EXECUTION DATE
+
+
+          777 CARDS READ
+
+
+        1,506 SYSOUT PRINT RECORDS
+
+
+            0 SYSOUT PUNCH RECORDS
+
+
+          109 SYSOUT SPOOL KBYTES
+
+
+         0.09 MINUTES EXECUTION TIME
+!! END OF JES SPOOL FILE !!
+       1 //KC03E85A JOB ,'ATTARWALA',MSGCLASS=H                                  JOB05935
+         //*                                                                             
+         //******************************************************************            
+         //* CSCI 465 - FALL 2019                                           *            
+         //*                                                                *            
+         //* ASSIGNMENT 5 - INTRODUCTION TO COBOL                           *            
+         //* DUE DATE: 10/21/2019                                           *            
+         //* DUE TIME: 11:59 P.M.                                           *            
+         //*                                                                *            
+         //*THIS ASSIGNMENT'S OBJECTIVE IS TO GIVE YOU EXPERIENCE USING THE *            
+         //*THE BASICS OF THE COBOL PROGRAMMING                             *            
+         //*LANGUAGE. FOR THIS ASSIGNMENT, CREATING TWO RPEORT FILES        *            
+         //* READ FROM DECKERS DATA SET, PROCESS IT, THEN OPEN IN AND PROCES*            
+         //*IT AGAIN.  LOT OF COBOL.                                        *            
+         //*                                                                *            
+         //* SYSIN INPUT: IN-STREAM DATA/COBOL SOURCE CODE                  *            
+         //******************************************************************            
+       2 //JSTEP01  EXEC PGM=IGYCRCTL,PARM='APOST',REGION=0M                             
+       3 //SYSIN    DD *                                                                 
+         //******************************************************************            
+         //* SYSLIN OUTPUT: THE OBJECT MODULE BEING WRITTEN TO TEMP DATA SET*            
+         //*                                                                *            
+         //* SYSPRINT OUTPUT: OUTPUTTING MESSAGES FROM COMPILER             *            
+         //*                                                                *            
+         //* SYSUT1-15 & SYSMDECK OUTPUT: DATA SETS REQUIRED BY COMPILER    *            
+         //*                                                                *            
+         //* SYSUDUMP OUTPUT: ENABLES STORAGE DUMPS IN CASE OF ABENDS       *            
+         //******************************************************************            
+       4 //SYSLIN   DD DSN=&&OBJMOD,SPACE=(CYL,(1,1)),                                   
+         //            DISP=(MOD,PASS)                                                   
+         //*                                                                             
+       5 //SYSPRINT DD SYSOUT=*                                                          
+         //*                                                                             
+       6 //SYSUT1   DD SPACE=(CYL,(1,1))                                                 
+       7 //SYSUT2   DD SPACE=(CYL,(1,1))                                                 
+       8 //SYSUT3   DD SPACE=(CYL,(1,1))                                                 
+       9 //SYSUT4   DD SPACE=(CYL,(1,1))                                                 
+      10 //SYSUT5   DD SPACE=(CYL,(1,1))                                                 
+      11 //SYSUT6   DD SPACE=(CYL,(1,1))                                                 
+      12 //SYSUT7   DD SPACE=(CYL,(1,1))                                                 
+      13 //SYSUT8   DD SPACE=(CYL,(1,1))                                                 
+      14 //SYSUT9   DD SPACE=(CYL,(1,1))                                                 
+      15 //SYSUT10  DD SPACE=(CYL,(1,1))                                                 
+      16 //SYSUT11  DD SPACE=(CYL,(1,1))                                                 
+      17 //SYSUT12  DD SPACE=(CYL,(1,1))                                                 
+      18 //SYSUT13  DD SPACE=(CYL,(1,1))                                                 
+      19 //SYSUT14  DD SPACE=(CYL,(1,1))                                                 
+      20 //SYSUT15  DD SPACE=(CYL,(1,1))                                                 
+      21 //SYSMDECK DD SPACE=(CYL,(1,1))                                                 
+         //*                                                                             
+      22 //SYSUDUMP DD SYSOUT=*                                                          
+         //********************************************************************          
+         //* JSTEP02 WILL CREATE A LOAD MODULE, STORE IT AS A PROGRAM OBJECT  *          
+         //********************************************************************          
+      23 //JSTEP02  EXEC PGM=HEWL,COND=(0,LT)                                            
+         //********************************************************************          
+         //* SYSLIB INPUT: LOCATION OF NECESSARY IBM LIBRARIES                *          
+         //*                                                                  *          
+         //* SYSLIN INPUT: RECEIVING TEMP DATA SET FROM JSTEP01               *          
+         //*                                                                  *          
+         //* SYSLMOD OUTPUT: LOCATION OF PDSE MEMBER STORING LOAD MODULE      *          
+         //*                                                                  *          
+         //* SYSPRINT OUTPUT: DISPLAY RECORDS TO STANDARD OUTPUT              *          
+         //*                                                                  *          
+         //* SYSUDUMP OUTPUT: DUMP STORAGE IN CASE OF ABEND                   *          
+         //********************************************************************          
+         //*                                                                             
+      24 //SYSLIB   DD DSN=CEE.SCEELKED,DISP=SHR                                         
+         //*                                                                             
+      25 //SYSLIN   DD DSN=&&OBJMOD,DISP=(OLD,DELETE,DELETE)                             
+         //*                                                                             
+      26 //SYSLMOD  DD DSN=KC03E85.CSCI465.LOADLIB(ENDOWMT1),                            
+         //            SPACE=(1024,(50,20,1)),DSNTYPE=LIBRARY,                           
+         //            DISP=(MOD,KEEP,KEEP)                                              
+         //*                                                                             
+      27 //SYSPRINT DD SYSOUT=*                                                          
+         //*                                                                             
+      28 //SYSUDUMP DD SYSOUT=*                                                          
+         //*******************************************************************           
+         //* JSTEP03 FETCHES AND EXECUTES THE PROGRAM OBJECT                 *           
+         //*                                                                 *           
+         //* STEPLIB INPUT: LOCATION OF OUR PDSE TO STORE PROGRAM OBJECT     *           
+         //*                                                                 *           
+         //* COBIN INPUT: LOCATION OF FILE NEEDED FOR INPUT                  *           
+         //*                                                                 *           
+         //* COBOUT OUTPUT: DETERMINES WHERE OUTPUT IS SENT                  *           
+         //*                                                                 *           
+         //* SYSUDUMP OUTPUT: DUMPS INFO ABOUT ABENDS TO STANDARD OUTPUT     *           
+         //*******************************************************************           
+      29 //JSTEP03  EXEC PGM=ENDOWMT1,COND=(0,LT)                                        
+      30 //STEPLIB  DD DSN=KC03E85.CSCI465.LOADLIB,DISP=SHR                              
+         //*                                                                             
+      31 //TRANFLE  DD DSN=KC02322.CSCI465.DATAFA19(DATA5),DISP=SHR                      
+         //*                                                                             
+      32 //LEFLE    DD SPACE=(TRK,(1,1))                                                 
+         //*                                                                             
+      33 //RPTFLE   DD SYSOUT=*                                                          
+         //*                                                                             
+      34 //SYSUDUMP DD SYSOUT=*                                                          
+         //*                                                                             
+!! END OF JES SPOOL FILE !!
+ICH70001I KC03E85  LAST ACCESS AT 19:36:51 ON MONDAY, OCTOBER 21, 2019
+IEFA111I KC03E85A IS USING THE FOLLOWING JOB RELATED SETTINGS:
+         SWA=ABOVE,TIOT SIZE=32K,DSENQSHR=DISALLOW,GDGBIAS=JOB
+IEF236I ALLOC. FOR KC03E85A JSTEP01
+IEF237I JES2 ALLOCATED TO SYSIN
+IGD101I SMS ALLOCATED TO DDNAME (SYSLIN  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.OBJMOD.H01  )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT1  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160725    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT2  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160726    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT3  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160727    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT4  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160728    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT5  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160729    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT6  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160730    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT7  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160731    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT8  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160732    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT9  )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160733    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT10 )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160734    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT11 )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160735    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT12 )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160736    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT13 )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160737    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT14 )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160738    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSUT15 )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160739    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IGD101I SMS ALLOCATED TO DDNAME (SYSMDECK)
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160740    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP01 - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   KC03E85.KC03E85A.JOB05935.D0000101.?         SYSIN         
+IGD106I SYS19294.T193759.RA000.KC03E85A.OBJMOD.H01   PASSED,    DDNAME=SYSLIN  
+IEF285I   KC03E85.KC03E85A.JOB05935.D0000102.?         SYSOUT        
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160725     DELETED,   DDNAME=SYSUT1  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160726     DELETED,   DDNAME=SYSUT2  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160727     DELETED,   DDNAME=SYSUT3  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160728     DELETED,   DDNAME=SYSUT4  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160729     DELETED,   DDNAME=SYSUT5  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160730     DELETED,   DDNAME=SYSUT6  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160731     DELETED,   DDNAME=SYSUT7  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160732     DELETED,   DDNAME=SYSUT8  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160733     DELETED,   DDNAME=SYSUT9  
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160734     DELETED,   DDNAME=SYSUT10 
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160735     DELETED,   DDNAME=SYSUT11 
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160736     DELETED,   DDNAME=SYSUT12 
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160737     DELETED,   DDNAME=SYSUT13 
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160738     DELETED,   DDNAME=SYSUT14 
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160739     DELETED,   DDNAME=SYSUT15 
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160740     DELETED,   DDNAME=SYSMDECK
+IEF285I   KC03E85.KC03E85A.JOB05935.D0000103.?         SYSOUT        
+IEF373I STEP/JSTEP01 /START 2019294.1938
+IEF032I STEP/JSTEP01 /STOP  2019294.1938 
+        CPU:     0 HR  00 MIN  00.06 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:   500K  SYS:  4252K  EXT:   135884K  SYS:    14228K
+        ATB- REAL:                 11604K  SLOTS:                     0K
+             VIRT- ALLOC:     529M SHRD:       0M
+IEF236I ALLOC. FOR KC03E85A JSTEP02
+IEF237I 1001 ALLOCATED TO SYSLIB
+IGD103I SMS ALLOCATED TO DDNAME SYSLIN
+IGD103I SMS ALLOCATED TO DDNAME SYSLMOD
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP02 - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   CEE.SCEELKED                                 KEPT          
+IEF285I   VOL SER NOS= VTMVSC.                            
+IGD105I SYS19294.T193759.RA000.KC03E85A.OBJMOD.H01   DELETED,   DDNAME=SYSLIN  
+IGD104I KC03E85.CSCI465.LOADLIB                      RETAINED,  DDNAME=SYSLMOD 
+IEF285I   KC03E85.KC03E85A.JOB05935.D0000104.?         SYSOUT        
+IEF285I   KC03E85.KC03E85A.JOB05935.D0000105.?         SYSOUT        
+IEF373I STEP/JSTEP02 /START 2019294.1938
+IEF032I STEP/JSTEP02 /STOP  2019294.1938 
+        CPU:     0 HR  00 MIN  00.01 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:    88K  SYS:   252K  EXT:     1768K  SYS:    12248K
+        ATB- REAL:                  4140K  SLOTS:                     0K
+             VIRT- ALLOC:      15M SHRD:       0M
+IEF236I ALLOC. FOR KC03E85A JSTEP03
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IGD103I SMS ALLOCATED TO DDNAME TRANFLE
+IGD101I SMS ALLOCATED TO DDNAME (LEFLE   )
+        DSN (SYS19294.T193759.RA000.KC03E85A.R0160741    )
+        STORCLAS (TEMPSC) MGMTCLAS (        ) DATACLAS (        )
+        VOL SER NOS= TEMP00                                                                
+IEF237I JES2 ALLOCATED TO RPTFLE
+IEF237I JES2 ALLOCATED TO SYSUDUMP
+IEF142I KC03E85A JSTEP03 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC03E85.CSCI465.LOADLIB                      RETAINED,  DDNAME=STEPLIB 
+IGD104I KC02322.CSCI465.DATAFA19                     RETAINED,  DDNAME=TRANFLE 
+IGD105I SYS19294.T193759.RA000.KC03E85A.R0160741     DELETED,   DDNAME=LEFLE   
+IEF285I   KC03E85.KC03E85A.JOB05935.D0000106.?         SYSOUT        
+IEF285I   KC03E85.KC03E85A.JOB05935.D0000107.?         SYSOUT        
+IEF373I STEP/JSTEP03 /START 2019294.1938
+IEF032I STEP/JSTEP03 /STOP  2019294.1938 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:    92K  SYS:   272K  EXT:     2596K  SYS:    12240K
+        ATB- REAL:                  4140K  SLOTS:                     0K
+             VIRT- ALLOC:      15M SHRD:       0M
+IEF375I  JOB/KC03E85A/START 2019294.1938
+IEF033I  JOB/KC03E85A/STOP  2019294.1938 
+        CPU:     0 HR  00 MIN  00.07 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+!! END OF JES SPOOL FILE !!
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107                 Date 10/21/2019  Time 19:38:02   Page     1                
+
+Invocation parameters:                                                                                                              
+ APOST                                                                                                                              
+
+Options in effect:                                                                                                                  
+ NOADATA                                                                                                                            
+   ADV                                                                                                                              
+   AFP(NOVOLATILE)                                                                                                                  
+   APOST                                                                                                                            
+   ARCH(7)                                                                                                                          
+   ARITH(COMPAT)                                                                                                                    
+ NOAWO                                                                                                                              
+ NOBLOCK0                                                                                                                           
+   BUFSIZE(4096)                                                                                                                    
+ NOCICS                                                                                                                             
+   CODEPAGE(1140)                                                                                                                   
+ NOCOMPILE(S)                                                                                                                       
+ NOCOPYLOC                                                                                                                          
+ NOCOPYRIGHT                                                                                                                        
+ NOCURRENCY                                                                                                                         
+   DATA(31)                                                                                                                         
+   DBCS                                                                                                                             
+ NODECK                                                                                                                             
+ NODEFINE                                                                                                                           
+ NODIAGTRUNC                                                                                                                        
+   DISPSIGN(COMPAT)                                                                                                                 
+ NODLL                                                                                                                              
+ NODUMP                                                                                                                             
+ NODYNAM                                                                                                                            
+ NOEXIT                                                                                                                             
+ NOEXPORTALL                                                                                                                        
+ NOFASTSRT                                                                                                                          
+   FLAG(I,I)                                                                                                                        
+ NOFLAGSTD                                                                                                                          
+   HGPR(PRESERVE)                                                                                                                   
+ NOINITCHECK                                                                                                                        
+   INLINE                                                                                                                           
+   INTDATE(ANSI)                                                                                                                    
+   LANGUAGE(EN)                                                                                                                     
+   LINECOUNT(60)                                                                                                                    
+ NOLIST                                                                                                                             
+ NOMAP                                                                                                                              
+   MAXPCF(100000)                                                                                                                   
+ NOMDECK                                                                                                                            
+ NONAME                                                                                                                             
+   NSYMBOL(NATIONAL)                                                                                                                
+ NONUMBER                                                                                                                           
+ NONUMCHECK                                                                                                                         
+   NUMPROC(NOPFD)                                                                                                                   
+   OBJECT                                                                                                                           
+ NOOFFSET                                                                                                                           
+   OPTIMIZE(0)                                                                                                                      
+   OUTDD(SYSOUT)                                                                                                                    
+ NOPARMCHECK                                                                                                                        
+   PGMNAME(COMPAT)                                                                                                                  
+   QUALIFY(COMPAT)                                                                                                                  
+   RENT                                                                                                                             
+   RMODE(AUTO)                                                                                                                      
+ NORULES                                                                                                                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107                 Date 10/21/2019  Time 19:38:02   Page     2                
+
+ NOSERVICE                                                                                                                          
+   SEQUENCE                                                                                                                         
+   SOURCE                                                                                                                           
+   SPACE(1)                                                                                                                         
+ NOSQL                                                                                                                              
+   SQLCCSID                                                                                                                         
+ NOSQLIMS                                                                                                                           
+ NOSSRANGE                                                                                                                          
+ NOSTGOPT                                                                                                                           
+   SUPPRESS                                                                                                                         
+ NOTERM                                                                                                                             
+ NOTEST(NODWARF,NOSOURCE,NOSEPARATE)                                                                                                
+ NOTHREAD                                                                                                                           
+   TRUNC(STD)                                                                                                                       
+ NOVBREF                                                                                                                            
+   VLR(STANDARD)                                                                                                                    
+   VSAMOPENFS(COMPAT)                                                                                                               
+ NOWORD                                                                                                                             
+   XMLPARSE(XMLSS)                                                                                                                  
+   XREF(FULL)                                                                                                                       
+   ZONEDATA(PFD)                                                                                                                    
+   ZWB                                                                                                                              
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page     3                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000001               ****************************************************************                                             
+  000002               * PROGRAM NAME:  ASSIGN5                                       *                                             
+  000003               *                                                              *                                             
+  000004               * FUNCTION:  THIS PROGRAM READS INPUT DATA RECORDS AND THEN    *                                             
+  000005               *            WRITES THEM TO STANDARD OUTPUT AND FILE, THEN READ*                                             
+  000006               *            THAT FILE                                         *                                             
+  000007               * INPUT:     TRANFILE THE INPUT DATA RECORDS READ IN.          *                                             
+  000008               *          LOWENDOWMT FIL, ASSIGN TO FILE                      *                                             
+  000009               * OUTPUT:    REPORTFILE IS THE OUTPUT RECORDS WRITTEN OUT.     *                                             
+  000010               ****************************************************************                                             
+  000011                                                                                                                            
+  000012                IDENTIFICATION DIVISION.                                                                                    
+  000013                                                                                                                            
+  000014                PROGRAM-ID.    ENDOWMT1.                                                                                    
+  000015                AUTHOR.        HASNAIN ATTARWALA.                                                                           
+  000016                DATE-WRITTEN.  10/11/2019.                                                                                  
+  000017                DATE-COMPILED. 10/21/19.                                                                                    
+  000018               ****************************************************************                                             
+  000019               * IT TELLS ABOUT INPUT AND OUTPUT FILES WORKIGN WITH           *                                             
+  000020               * ASSIGNS INPUT/OUTPUT FILE TO IN/OUT FILES                    *                                             
+  000021               ****************************************************************                                             
+  000022                ENVIRONMENT DIVISION.                                                                                       
+  000023               ****************************************************************                                             
+  000024                INPUT-OUTPUT SECTION.                                                                                       
+  000025                                                                                                                            
+  000026                FILE-CONTROL.                                                                                               
+  000027                                                                                                                            
+  000028                    SELECT TRAN-FILE ASSIGN TO TRANFLE.                                   41                                
+  000029                    SELECT LOW-ENDOWMT-FILE ASSIGN TO LEFLE.                              62                                
+  000030                    SELECT REPORT-FILE ASSIGN TO RPTFLE.                                  69                                
+  000031               ****************************************************************                                             
+  000032                DATA DIVISION.                                                                                              
+  000033               ****************************************************************                                             
+  000034               * DEFINE VARIABLES NAMES FOR COBOL PROG, THEY WILL BE ASSIGNED *                                             
+  000035               * TO IT WHEN FILE WILL BE READ                                 *                                             
+  000036               * FD = FILE DESCRIPTOR, F = FIXED                              *                                             
+  000037               * SET BUFFER OF 132 BYTES FOR WRITING A LINE                   *                                             
+  000038               ****************************************************************                                             
+  000039                FILE SECTION.                                                                                               
+  000040                                                                                                                            
+  000041                FD  TRAN-FILE                                                                                               
+  000042                    RECORDING MODE IS F.                                                                                    
+  000043                                                                                                                            
+  000044                01  INPUT-INST-RECORD.                                                                                      
+  000045                    05  IN-INST-NME             PIC X(30).                                                                  
+  000046                    05  IN-CAP-GAINS-PCT-1      PIC S9V9(5).                                                                
+  000047                    05  IN-CAP-GAINS-PCT-2      PIC S9V9(5).                                                                
+  000048                    05  IN-CAP-GAINS-PCT-3      PIC S9V9(5).                                                                
+  000049                    05  IN-CAP-GAINS-PCT-4      PIC S9V9(5).                                                                
+  000050                    05  FILLER                  PIC X(26).                                                                  
+  000051                                                                                                                            
+  000052                01  INPUT-ENDOWMT-RECORD.                                                                                   
+  000053                    05  IN-ORCH-NME             PIC X(45).                                                                  
+  000054                    05  IN-ENDOWMT-AMT          PIC S9(9)V99.                                                               
+  000055                    05  FILLER                  PIC X(1).                                                                   
+  000056                    05  IN-CAP-GAINS-PCT-FLG    PIC S9(1).                                                                  
+  000057                    05  FILLER                  PIC X(1).                                                                   
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page     4                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000058                    05  IN-TRAN-TYPE            PIC X(1).                                                                   
+  000059                    05  IN-ENDOWMT-CHG-AMT      PIC S9(9)V99.                                                               
+  000060                    05  FILLER                  PIC X(9).                                                                   
+  000061                                                                                                                            
+  000062                FD  LOW-ENDOWMT-FILE                                                                                        
+  000063                    RECORDING MODE IS F.                                                                                    
+  000064                                                                                                                            
+  000065                01  LOW-ENDOWMT-RECORD.                                                                                     
+  000066                    05  LE-ORCH-NME             PIC X(45).                                                                  
+  000067                    05  LE-ENDOWMT-AMT          PIC S9(9)V99 PACKED-DECIMAL.                                                
+  000068                                                                                                                            
+  000069                FD  REPORT-FILE                                                                                             
+  000070                    RECORDING MODE IS F.                                                                                    
+  000071                                                                                                                            
+  000072                01  REPORT-RECORD               PIC X(132).                                                                 
+  000073                                                                                                                            
+  000074               ****************************************************************                                             
+  000075               * SCRATCH PAD FOR CREATING VARIABLES AND OUTPUT EDIT PATTERNS  *                                             
+  000076               * EOF VARIABLE SET TO VALUE N IN PROG                          *                                             
+  000077               ****************************************************************                                             
+  000078                WORKING-STORAGE SECTION.                                                                                    
+  000079                01  EOF-FLAG-LE                 PIC X VALUE 'N'.                                                            
+  000080                01  EOF-FLAG                    PIC X VALUE 'N'.                                                            
+  000081                                                                                                                            
+  000082                01  MILLION-PACKED             PIC S9(9)V99 PACKED-DECIMAL                                                  
+  000083                                                            VALUE 1000000.                                                  
+  000084               ********************************TWO BYTER, 1,5,10~2,4,8 REMEMBER                                             
+  000085                01  COUNTERS.                                                                                               
+  000086                    05  LINE-CTR                PIC S9(2) BINARY SYNC VALUE 99.                                             
+  000087                    05  PAGE-CTR                PIC S9(3) PACKED-DECIMAL                                                    
+  000088                                                          VALUE 0.                                                          
+  000089                    05  TRAN-CTR                PIC S9(3) PACKED-DECIMAL                                                    
+  000090                                                          VALUE 0.                                                          
+  000091                                                                                                                            
+  000092                01  VARIABLES.                                                                                              
+  000093                    05  CAP-GAINS-PCT-1         PIC S9V9(5)  BINARY SYNC.                                                   
+  000094                    05  CAP-GAINS-PCT-2         PIC S9V9(5)  BINARY SYNC.                                                   
+  000095                    05  CAP-GAINS-PCT-3         PIC S9V9(5)  BINARY SYNC.                                                   
+  000096                    05  CAP-GAINS-PCT-4         PIC S9V9(5)  BINARY SYNC.                                                   
+  000097                                                                                                                            
+  000098                01  TOTAL-LINE.                                                                                             
+  000099                    05  TOT-ENDOWMT-AMT         PIC S9(11)V99 PACKED-DECIMAL                                                
+  000100                                                              VALUE 0.                                                      
+  000101                    05  TOT-ENDOWMT-CHG-AMT     PIC S9(11)V99 PACKED-DECIMAL                                                
+  000102                                                              VALUE 0.                                                      
+  000103                    05  TOT-NEW-ENDOWMT-AMT     PIC S9(11)V99 PACKED-DECIMAL                                                
+  000104                                                              VALUE 0.                                                      
+  000105                01  ENDOWMT-AMTS.                                                                                           
+  000106                    05  ENDOWMT-AMT             PIC S9(9)V99  PACKED-DECIMAL                                                
+  000107                                                              VALUE 0.                                                      
+  000108                    05  ENDOWMT-CHG-AMT         PIC S9(9)V99  PACKED-DECIMAL                                                
+  000109                                                              VALUE 0.                                                      
+  000110                    05  NEW-ENDOWMT-AMT         PIC S9(9)V99  PACKED-DECIMAL                                                
+  000111                                                               VALUE 0.                                                     
+  000112                01 AVG-ENDOWMT-AMTS.                                                                                        
+  000113                    05  AVG-ENDOWMT-AMT         PIC S9(9)V99  PACKED-DECIMAL                                                
+  000114                                                              VALUE 0.                                                      
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page     5                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000115                    05  AVG-ENDOWMT-CHG-AMT     PIC S9(9)V99  PACKED-DECIMAL                                                
+  000116                                                              VALUE 0.                                                      
+  000117                    05  AVG-NEW-ENDOWMT-AMT     PIC S9(9)V99  PACKED-DECIMAL                                                
+  000118                                                              VALUE 0.                                                      
+  000119                                                                                                                            
+  000120                01  DETAIL-LINE.                                                                                            
+  000121                    05  OUT-ORCH-NME            PIC X(45).                                                                  
+  000122                    05  FILLER                  PIC X(5)  VALUE SPACES.                   IMP                               
+  000123                    05  OUT-ENDOWMT-AMT         PIC $$$$,$$$,$$9.99.                                                        
+  000124                    05  FILLER                  PIC X(5)  VALUE SPACES.                   IMP                               
+  000125                    05  OUT-TRAN-TYPE           PIC X(12).                                                                  
+  000126                    05  FILLER                  PIC X(8) VALUE SPACES.                    IMP                               
+  000127                    05  OUT-ENDOWMT-CHG-AMT     PIC $$$$,$$$,$$9.99DB.                                                      
+  000128                    05  FILLER                  PIC X(8) VALUE SPACES.                    IMP                               
+  000129                    05  OUT-NEW-ENDOWMT-AMT     PIC $$$$,$$$,$$9.99DB.                                                      
+  000130                                                                                                                            
+  000131                01  ACCUMULATOR-LINE-1.                                                                                     
+  000132                    05  FILLER                  PIC X(9)  VALUE SPACES.                   IMP                               
+  000133                    05  OUT-TRAN-CTR            PIC ZZ9.                                                                    
+  000134                    05  FILLER                  PIC X(34) VALUE SPACES.                   IMP                               
+  000135                    05  OUT-TOT-ENDOWMT-AMT     PIC $$$,$$$,$$$,$$9.99.                                                     
+  000136                    05  FILLER                  PIC X(21) VALUE SPACES.                   IMP                               
+  000137                    05  OUT-TOT-ENDOWMT-CHG-AMT PIC $$$,$$$,$$$,$$9.99DB.                                                   
+  000138                    05  FILLER                  PIC X(7) VALUE SPACES.                    IMP                               
+  000139                    05  OUT-TOT-NEW-ENDOWMT-AMT PIC $$$,$$$,$$$,$$9.99DB.                                                   
+  000140                                                                                                                            
+  000141                01  ACCUMULATOR-LINE-2.                                                                                     
+  000142                    05  FILLER                  PIC X(35) VALUE SPACES.                   IMP                               
+  000143                    05  VAR-1                   PIC X(14)                                                                   
+  000144                    VALUE 'AVERAGES:     '.                                                                                 
+  000145                    05  OUT-AVG-ENDOWMT-AMT     PIC $$$$,$$$,$$9.99.                                                        
+  000146                    05  FILLER                  PIC X(24) VALUE SPACES.                   IMP                               
+  000147                    05  OUT-AVG-ENDOWMT-CHG-AMT PIC $$$$,$$$,$$9.99DB.                                                      
+  000148                    05  FILLER                  PIC X(10) VALUE SPACES.                   IMP                               
+  000149                    05  OUT-AVG-NEW-ENDOWMT-AMT PIC $$$$,$$$,$$9.99DB.                                                      
+  000150                                                                                                                            
+  000151                01  CURRENT-DATE-FIELDS.                                                                                    
+  000152                    05  CURRENT-DATE.                                                                                       
+  000153                        10  CURRENT-YEAR        PIC 9(4).                                                                   
+  000154                        10  CURRENT-MONTH       PIC 9(2).                                                                   
+  000155                        10  CURRENT-DAY         PIC 9(2).                                                                   
+  000156                    05  CURRENT-TIME.                                                                                       
+  000157                        10  CURRENT-HOUR        PIC 9(2).                                                                   
+  000158                        10  CURRENT-MINUTE      PIC 9(2).                                                                   
+  000159                        10  CURRENT-SECOND      PIC 9(2).                                                                   
+  000160                        10  CURRENT-MS          PIC 9(2).                                                                   
+  000161                    05  DIFF-FROM-GMT           PIC S9(4).                                                                  
+  000162                                                                                                                            
+  000163                01  HEADER-1.                                                                                               
+  000164                    05  OUT-CURRENT-DATE.                                                                                   
+  000165                        10  CURRENT-MONTH       PIC 9(2).                                                                   
+  000166                        10  FILLER              PIC X(1)  VALUE '/'.                                                        
+  000167                        10  CURRENT-DAY         PIC 9(2).                                                                   
+  000168                        10  FILLER              PIC X(1)  VALUE '/'.                                                        
+  000169                        10  CURRENT-YEAR        PIC 9(4).                                                                   
+  000170                    05  FILLER                  PIC X(41) VALUE SPACES.                   IMP                               
+  000171                    05  OUT-INST-NME            PIC X(30).                                                                  
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page     6                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000172                    05  FILLER                  PIC X(40) VALUE SPACES.                   IMP                               
+  000173                    05  FILLER                  PIC X(7)  VALUE 'PAGE: '.                                                   
+  000174                    05  OUT-PAGE-CTR            PIC ZZ9.                                                                    
+  000175                    05  FILLER                  PIC X(1)  VALUE SPACES.                   IMP                               
+  000176                                                                                                                            
+  000177                01  HEADER-2.                                                                                               
+  000178                    05  OUT-CURRENT-TIME.                                                                                   
+  000179                        10  CURRENT-HOUR        PIC 9(2).                                                                   
+  000180                        10  FILLER              PIC X(1)  VALUE ':'.                                                        
+  000181                        10  CURRENT-MINUTE      PIC 9(2).                                                                   
+  000182                    05  FILLER                  PIC X(46) VALUE SPACES.                   IMP                               
+  000183                    05  FILLER                  PIC X(30)                                                                   
+  000184                        VALUE 'MONTHLY ENDOWMENT FUND CHANGES'.                                                             
+  000185                    05  FILLER                  PIC X(51) VALUE SPACES.                   IMP                               
+  000186                                                                                                                            
+  000187                01  HEADER-3.                                                                                               
+  000188                    05  FILLER                  PIC X(49) VALUE                                                             
+  000189                    'ORCHESTRA NAME                                   '.                                                    
+  000190                    05  FILLER                  PIC X(20) VALUE                                                             
+  000191                    'ENDOWMENT AMOUNT    '.                                                                                 
+  000192                    05  FILLER                  PIC X(22) VALUE                                                             
+  000193                    'TRANSACTION TYPE      '.                                                                               
+  000194                    05  FILLER                  PIC X(21) VALUE                                                             
+  000195                    'ENDOWMENT CHANGE     '.                                                                                
+  000196                    05  FILLER                  PIC X(20) VALUE                                                             
+  000197                    'NEW ENDOWMENT AMOUNT'.                                                                                 
+  000198                                                                                                                            
+  000199                01  HEADER-4.                                                                                               
+  000200                    05  HYPHENS                 PIC X(45) VALUE ALL '-'.                                                    
+  000201                    05  FILLER                  PIC X(4)   VALUE SPACES.                  IMP                               
+  000202                    05  HYPHENS                 PIC X(16) VALUE ALL '-'.                                                    
+  000203                    05  FILLER                  PIC X(4)   VALUE SPACES.                  IMP                               
+  000204                    05  HYPHENS                 PIC X(16) VALUE ALL '-'.                                                    
+  000205                    05  FILLER                  PIC X(6)   VALUE SPACES.                  IMP                               
+  000206                    05  HYPHENS                 PIC X(16) VALUE ALL '-'.                                                    
+  000207                    05  FILLER                  PIC X(5)   VALUE SPACES.                  IMP                               
+  000208                    05  HYPHENS                 PIC X(20) VALUE ALL '-'.                                                    
+  000209                                                                                                                            
+  000210                01  TOT-HEADER-1.                                                                                           
+  000211                    05  TOT-OUT-CURRENT-TIME.                                                                               
+  000212                        10  CURRENT-HOUR        PIC 9(2).                                                                   
+  000213                        10  FILLER              PIC X(1)  VALUE ':'.                                                        
+  000214                        10  CURRENT-MINUTE      PIC 9(2).                                                                   
+  000215                    05  FILLER                  PIC X(43) VALUE SPACES.                   IMP                               
+  000216                    05  FILLER                  PIC X(37)                                                                   
+  000217                        VALUE 'MONTHLY ENDOWMENT FUND CHANGES TOTALS'.                                                      
+  000218                    05  FILLER                  PIC X(47) VALUE SPACES.                   IMP                               
+  000219                                                                                                                            
+  000220                01  TOT-HEADER-2.                                                                                           
+  000221                    05  FILLER                  PIC X(48) VALUE SPACES.                   IMP                               
+  000222                    05  FILLER                  PIC X(5)  VALUE 'TOTAL'.                                                    
+  000223                    05  FILLER                  PIC X(29) VALUE SPACES.                   IMP                               
+  000224                    05  FILLER                  PIC X(5)  VALUE 'TOTAL'.                                                    
+  000225                    05  FILLER                  PIC X(25) VALUE SPACES.                   IMP                               
+  000226                    05  FILLER                  PIC X(5)  VALUE 'TOTAL'.                                                    
+  000227                    05  FILLER                  PIC X(15) VALUE SPACES.                   IMP                               
+  000228                                                                                                                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page     7                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000229                01  TOT-HEADER-3.                                                                                           
+  000230                    05  FILLER                  PIC X(48) VALUE                                                             
+  000231                    'TRANSACTIONS                                    '.                                                     
+  000232                    05  FILLER                  PIC X(34) VALUE                                                             
+  000233                    'ENDOWMENT AMOUNT                  '.                                                                   
+  000234                    05  FILLER                  PIC X(30) VALUE                                                             
+  000235                    'ENDOWMENT CHANGE AMOUNT       '.                                                                       
+  000236                    05  FILLER                  PIC X(20) VALUE                                                             
+  000237                    'NEW ENDOWMENT AMOUNT'.                                                                                 
+  000238                                                                                                                            
+  000239                01  TOT-HEADER-4.                                                                                           
+  000240                    05  HYPHENS                 PIC X(12) VALUE ALL '-'.                                                    
+  000241                    05  FILLER                  PIC X(36)  VALUE SPACES.                  IMP                               
+  000242                    05  HYPHENS                 PIC X(16) VALUE ALL '-'.                                                    
+  000243                    05  FILLER                  PIC X(18)  VALUE SPACES.                  IMP                               
+  000244                    05  HYPHENS                 PIC X(23) VALUE ALL '-'.                                                    
+  000245                    05  FILLER                  PIC X(7)   VALUE SPACES.                  IMP                               
+  000246                    05  HYPHENS                 PIC X(20) VALUE ALL '-'.                                                    
+  000247                                                                                                                            
+  000248                01  DETAIL-LINE-LE.                                                                                         
+  000249                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+  000250                    05  OUT-LE-ORCH-NME         PIC X(45).                                                                  
+  000251                    05  FILLER                  PIC X(10) VALUE SPACES.                   IMP                               
+  000252                    05  OUT-LE-ENDOWMT-AMT      PIC $$$$,$$$,$$9.99.                                                        
+  000253                    05  FILLER                  PIC X(32) VALUE SPACES.                   IMP                               
+  000254                                                                                                                            
+  000255               *01  EXTRA.                                                                                                  
+  000256               *    05  FILLER                  PIC X(10) VALUE SPACES.                                                     
+  000257               *    05  OUT-LE-TRAN-CTR         PIC ZZ9.                                                                    
+  000258               *    05  FILLER                  PIC X(10) VALUE SPACES.                                                     
+  000259               *    05  OUT-TOT-LE-ENDOWMT-AMT  PIC $$$,$$$,$$$,$$9.99.                                                     
+  000260                                                                                                                            
+  000261                01  LE-HEADER-1.                                                                                            
+  000262                    05  LE-OUT-CURRENT-TIME.                                                                                
+  000263                        10  CURRENT-HOUR        PIC 9(2).                                                                   
+  000264                        10  FILLER              PIC X(1)  VALUE ':'.                                                        
+  000265                        10  CURRENT-MINUTE      PIC 9(2).                                                                   
+  000266                    05  FILLER                  PIC X(42) VALUE SPACES.                   IMP                               
+  000267                    05  FILLER                  PIC X(38)                                                                   
+  000268                        VALUE 'ORCHESTRA LOW BALANCE ENDOWMENT REPORT'.                                                     
+  000269                    05  FILLER                  PIC X(47) VALUE SPACES.                   IMP                               
+  000270                                                                                                                            
+  000271                01  LE-HEADER-2.                                                                                            
+  000272                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+  000273                    05  FILLER                  PIC X(14)                                                                   
+  000274                    VALUE 'ORCHESTRA NAME'.                                                                                 
+  000275                    05  FILLER                  PIC X(38) VALUE SPACES.                   IMP                               
+  000276                    05  FILLER                  PIC X(20)                                                                   
+  000277                    VALUE 'LOW ENDOWMENT AMOUNT'.                                                                           
+  000278                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+  000279                                                                                                                            
+  000280                01  LE-HEADER-3.                                                                                            
+  000281                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+  000282                    05  HYPHENS                 PIC X(45) VALUE ALL '-'.                                                    
+  000283                    05  FILLER                  PIC X(7)  VALUE SPACES.                   IMP                               
+  000284                    05  HYPHENS                 PIC X(20) VALUE ALL '-'.                                                    
+  000285                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page     8                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000286                                                                                                                            
+  000287                01  LE-ACCUMULATOR-LINE-1.                                                                                  
+  000288                    05  FILLER                  PIC X(39) VALUE SPACES.                   IMP                               
+  000289                    05  OUT-LE-TRAN-CTR         PIC ZZ9.                                                                    
+  000290                    05  FILLER                  PIC X(40) VALUE SPACES.                   IMP                               
+  000291                    05  OUT-TOT-LE-ENDOWMT-AMT  PIC $$$,$$$,$$$,$$9.99DB.                                                   
+  000292                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+  000293                                                                                                                            
+  000294                01  LE-ACCUMULATOR-LINE-2.                                                                                  
+  000295                    05  FILLER                  PIC X(73) VALUE SPACES.                   IMP                               
+  000296                    05  VAR-1                   PIC X(9)                                                                    
+  000297                    VALUE 'AVERAGE: '.                                                                                      
+  000298                    05  LE-AVG-ENDOWMT-AMT      PIC $$$,$$$,$$$,$$9.99DB.                                                   
+  000299                    05  FILLER                  PIC X(37) VALUE SPACES.                   IMP                               
+  000300                                                                                                                            
+  000301                01  TOT-LE-HEADER-1.                                                                                        
+  000302                    05  TOT-LE-OUT-CURRENT-TIME.                                                                            
+  000303                        10  CURRENT-HOUR        PIC 9(2).                                                                   
+  000304                        10  FILLER              PIC X(1)  VALUE ':'.                                                        
+  000305                        10  CURRENT-MINUTE      PIC 9(2).                                                                   
+  000306                    05  FILLER                  PIC X(39) VALUE SPACES.                   IMP                               
+  000307                    05  FILLER                  PIC X(45)                                                                   
+  000308                      VALUE 'ORCHESTRA LOW BALANCE ENDOWMENT REPORT TOTALS'.                                                
+  000309                    05  FILLER                  PIC X(43) VALUE SPACES.                   IMP                               
+  000310                                                                                                                            
+  000311                01  TOT-LE-HEADER-2.                                                                                        
+  000312                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+  000313                    05  FILLER                  PIC X(12)                                                                   
+  000314                    VALUE 'TRANSACTIONS'.                                                                                   
+  000315                    05  FILLER                  PIC X(34) VALUE SPACES.                   IMP                               
+  000316                    05  FILLER                  PIC X(26)                                                                   
+  000317                    VALUE 'TOTAL LOW ENDOWMENT AMOUNT'.                                                                     
+  000318                    05  FILLER                  PIC X(30) VALUE SPACES.                   IMP                               
+  000319                                                                                                                            
+  000320                 01  TOT-LE-HEADER-3.                                                                                       
+  000321                     05  FILLER                  PIC X(30) VALUE SPACES.                  IMP                               
+  000322                     05  HYPHENS                 PIC X(12) VALUE ALL '-'.                                                   
+  000323                     05  FILLER                  PIC X(34) VALUE SPACES.                  IMP                               
+  000324                     05  HYPHENS                 PIC X(26) VALUE ALL '-'.                                                   
+  000325                     05  FILLER                  PIC X(30) VALUE SPACES.                  IMP                               
+  000326               ****************************************************************                                             
+  000327                PROCEDURE DIVISION.                                                                                         
+  000328               ****************************************************************                                             
+  000329               * PARAGRAPH'S AND MATH. VERB INPUTFILE, VERB PRINT FILE        *                                             
+  000330               * READ INPUT FILE CREATE LOOP, WITHIN LOOP CALL ANOTHR PARAGRAH*                                             
+  000331               * DO ALL UR  MOVES, COMPUTES AND WRITE PRINT.  FINISH LOOP     *                                             
+  000332               * THEN OUTPUT TO FILE 2, FILE2 WILL READ IN FROM LOW ENDOWMT F *                                             
+  000333               * FILE.  TH EREPORT FILE IS THE OUTPUT BUFFER RECORD FOR EVERY *                                             
+  000334               * THING PRETTY MUCH                                            *                                             
+  000335               * EXIT BY GO BACK, THEN EXIT EXIT FOR CONVENTION               *                                             
+  000336               ****************************************************************                                             
+  000337                0000-MAIN.                                                                                                  
+  000338                                                                                                                            
+  000339                    OPEN INPUT  TRAN-FILE                                                 41                                
+  000340                         OUTPUT LOW-ENDOWMT-FILE                                          62                                
+  000341                         OUTPUT REPORT-FILE.                                              69                                
+  000342                                                                                                                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page     9                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000343                    READ TRAN-FILE                                                        41                                
+  000344      1               AT END MOVE 'Y' TO EOF-FLAG                                         80                                
+  000345                    END-READ.                                                                                               
+  000346                                                                                                                            
+  000347                    IF EOF-FLAG = 'N'                                                     80                                
+  000348      1               PERFORM 0200-PROCESS-INST-RECORD                                    421                               
+  000349      1               MOVE FUNCTION CURRENT-DATE TO CURRENT-DATE-FIELDS                   IFN 151                           
+  000350      1               PERFORM 0100-PROCESS-INTRINSIC-DATE                                 408                               
+  000351      1               ADD 1 TO PAGE-CTR                                                   87                                
+  000352      1               PERFORM 0400-PROCESS-HEADERS                                        544                               
+  000353               ********THE OTHER INPUT RECORDS ***********************                                                      
+  000354      1               READ TRAN-FILE                                                      41                                
+  000355      2                 AT END MOVE 'Y' TO EOF-FLAG                                       80                                
+  000356      1               END-READ                                                                                              
+  000357               *START LOOP********************************************                                                      
+  000358      1               PERFORM 0300-PROCESS-TRANS                                          438                               
+  000359      1                 UNTIL EOF-FLAG = 'Y'                                              80                                
+  000360               *END OF LOOP*******************************************                                                      
+  000361      1               PERFORM 0500-PROCESS-TOTALS                                         560                               
+  000362                                                                                                                            
+  000363      1               CLOSE TRAN-FILE                                                     41                                
+  000364      1                     LOW-ENDOWMT-FILE                                              62                                
+  000365               **************************************************************                                               
+  000366               **************************************************************                                               
+  000367               **************************************************************                                               
+  000368      1               OPEN INPUT LOW-ENDOWMT-FILE                                         62                                
+  000369                                                                                                                            
+  000370      1                READ LOW-ENDOWMT-FILE                                              62                                
+  000371      2                  AT END MOVE 'Y' TO EOF-FLAG-LE                                   79                                
+  000372      1                END-READ                                                                                             
+  000373      1                IF EOF-FLAG-LE = 'N'                                               79                                
+  000374      2                MOVE CORR CURRENT-TIME TO LE-OUT-CURRENT-TIME                      156 262                           
+  000375      2                MOVE CORR CURRENT-TIME TO TOT-LE-OUT-CURRENT-TIME                  156 302                           
+  000376      2                COMPUTE TRAN-CTR ROUNDED = TRAN-CTR - TRAN-CTR                     89 89 89                          
+  000377      2                COMPUTE LINE-CTR ROUNDED = LINE-CTR - LINE-CTR                     86 86 86                          
+  000378      2                COMPUTE PAGE-CTR ROUNDED = PAGE-CTR - PAGE-CTR                     87 87 87                          
+  000379      2                COMPUTE TOT-ENDOWMT-AMT ROUNDED =                                  99                                
+  000380      2                  TOT-ENDOWMT-AMT - TOT-ENDOWMT-AMT                                99 99                             
+  000381      2                PERFORM 0710-PROCESS-HEADERS-LE                                    637                               
+  000382               ***START LOOP********************************************                                                    
+  000383                                                                                                                            
+  000384      2                 PERFORM 0700-PROCESS-LE-TRANS                                     616                               
+  000385      2                   UNTIL EOF-FLAG-LE = 'Y'                                         79                                
+  000386               ***END OF LOOP*******************************************                                                    
+  000387                                                                                                                            
+  000388      2                  PERFORM 0800-PROCESS-LE-TOTALS                                   652                               
+  000389      1                ELSE                                                                                                 
+  000390      2                 CLOSE LOW-ENDOWMT-FILE                                            62                                
+  000391      2                       REPORT-FILE                                                 69                                
+  000392      1                END-IF                                                                                               
+  000393                                                                                                                            
+  000394                    ELSE                                                                                                    
+  000395      1               CLOSE TRAN-FILE                                                     41                                
+  000396      1                     LOW-ENDOWMT-FILE                                              62                                
+  000397      1                     REPORT-FILE                                                   69                                
+  000398                    END-IF.                                                                                                 
+  000399                    GOBACK.                                                                                                 
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    10                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000400                0000-EXIT. EXIT.                                                                                            
+  000401                                                                                                                            
+  000402               ****************************************************************                                             
+  000403               * MOVES CORRESPONDING MEANING EQUAL NAME STUFF FROM THE CURR   *                                             
+  000404               * DATE FUNCTION WHICH IS AN INBUIILT FUNCTION TO THE FIELDS DEF*                                             
+  000405               * ABOVE.  THE BENIFIT OF THIS IS THAT WE DON'T HAVE TO WRITE   *                                             
+  000406               * OUR OWN FUNCTIONS                                            *                                             
+  000407               ****************************************************************                                             
+  000408                0100-PROCESS-INTRINSIC-DATE.                                                                                
+  000409                    MOVE CORR CURRENT-DATE TO OUT-CURRENT-DATE.                           152 164                           
+  000410                    MOVE CORR CURRENT-TIME TO OUT-CURRENT-TIME.                           156 178                           
+  000411                    MOVE CORR CURRENT-TIME TO TOT-OUT-CURRENT-TIME.                       156 211                           
+  000412                0100-EXIT. EXIT.                                                                                            
+  000413                                                                                                                            
+  000414               ****************************************************************                                             
+  000415               * JUST MOVE THE INPUT INSTIUTIONS NAME TO EDMK FIELD           *                                             
+  000416               * MOVE ALL THE INPUT INCAP PERCENTAGES FROM THE FIRST LINE TO  *                                             
+  000417               * TO PERCENT FILEDS.   THIS PROCESS IS BEING CALLED ONCE       *                                             
+  000418               * AFTER IT'S CALLED THE EOF FLAG WILL GO TO THE END OF LINE IN *                                             
+  000419               * RECORD 1.                                                    *                                             
+  000420               ****************************************************************                                             
+  000421                0200-PROCESS-INST-RECORD.                                                                                   
+  000422                    MOVE IN-INST-NME TO OUT-INST-NME.                                     45 171                            
+  000423                                                                                                                            
+  000424                    MOVE IN-CAP-GAINS-PCT-1 TO CAP-GAINS-PCT-1.                           46 93                             
+  000425                    MOVE IN-CAP-GAINS-PCT-2 TO CAP-GAINS-PCT-2.                           47 94                             
+  000426                    MOVE IN-CAP-GAINS-PCT-3 TO CAP-GAINS-PCT-3.                           48 95                             
+  000427                    MOVE IN-CAP-GAINS-PCT-4 TO CAP-GAINS-PCT-4.                           49 96                             
+  000428                0200-EXIT. EXIT.                                                                                            
+  000429               ****************************************************************                                             
+  000430               * DECIDES IF HEADERS ARE REQUIRED MOVES THE ORCHESTRA NAME,    *                                             
+  000431               * INSTITUTION NAME ANDTHE ENDOWMEENT AMOUNT TO THE EDIT AND MARK                                             
+  000432               * FIELDS THEN WHILE PROCESSING THE CALLS APPROPRIATE FUNCTIONS *                                             
+  000433               * DEPENDING ON D W OR C WHICH IS DEPOSIT WITHRAW OR CAP GAINS  *                                             
+  000434               * WRITES DETAIL LINE FOR REPORT 1 COMPUTES TOTAL NEW ENDOWMT & *                                             
+  000435               * DECIDES TO WRITE TO THE NEXT FILE IF NEED BE, THEN SET Y TO  *                                             
+  000436               * END OF LINE                                                  *                                             
+  000437               ****************************************************************                                             
+  000438                0300-PROCESS-TRANS.                                                                                         
+  000439                    IF LINE-CTR = 15                                                      86                                
+  000440      1               PERFORM 0400-PROCESS-HEADERS                                        544                               
+  000441                    END-IF.                                                                                                 
+  000442                                                                                                                            
+  000443                    MOVE IN-ORCH-NME TO OUT-ORCH-NME.                                     53 121                            
+  000444                    MOVE IN-INST-NME TO OUT-ORCH-NME.                                     45 121                            
+  000445                    MOVE IN-ENDOWMT-AMT TO OUT-ENDOWMT-AMT.                               54 123                            
+  000446                                                                                                                            
+  000447                    IF IN-TRAN-TYPE = 'D'                                                 58                                
+  000448      1               PERFORM 0310-PROCESS-DEPOSIT                                        484                               
+  000449      1             ELSE IF IN-TRAN-TYPE = 'W'                                            58                                
+  000450      2               PERFORM 0320-PROCESS-WITHDRAWAL                                     501                               
+  000451      2             ELSE IF IN-TRAN-TYPE = 'C'                                            58                                
+  000452      3               PERFORM 0330-PROCESS-REINVESTMENT                                   522                               
+  000453      2             ELSE                                                                                                    
+  000454      3               MOVE '*TYPE-ERROR*' TO OUT-TRAN-TYPE                                125                               
+  000455      2             END-IF.                                                                                                 
+  000456                                                                                                                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    11                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000457                    WRITE REPORT-RECORD FROM DETAIL-LINE AFTER 2.                         72 120                            
+  000458                                                                                                                            
+  000459                    ADD 1 TO LINE-CTR.                                                    86                                
+  000460                    ADD 1 TO TRAN-CTR                                                     89                                
+  000461                                                                                                                            
+  000462                    COMPUTE TOT-ENDOWMT-AMT ROUNDED =                                     99                                
+  000463                      TOT-ENDOWMT-AMT + ENDOWMT-AMT.                                      99 106                            
+  000464                                                                                                                            
+  000465                    COMPUTE TOT-ENDOWMT-CHG-AMT ROUNDED =                                 101                               
+  000466                      TOT-ENDOWMT-CHG-AMT + ENDOWMT-CHG-AMT.                              101 108                           
+  000467                                                                                                                            
+  000468                    COMPUTE TOT-NEW-ENDOWMT-AMT ROUNDED =                                 103                               
+  000469                      TOT-NEW-ENDOWMT-AMT + NEW-ENDOWMT-AMT.                              103 110                           
+  000470                                                                                                                            
+  000471                    IF NEW-ENDOWMT-AMT  < MILLION-PACKED                                  110 82                            
+  000472      1               PERFORM 0600-WRITE-LOW-ENDOWMT-FILE                                 605                               
+  000473                    END-IF.                                                                                                 
+  000474                                                                                                                            
+  000475                    READ TRAN-FILE                                                        41                                
+  000476      1               AT END MOVE 'Y' TO EOF-FLAG                                         80                                
+  000477                    END-READ.                                                                                               
+  000478                0300-EXIT. EXIT.                                                                                            
+  000479               ****************************************************************                                             
+  000480               * SETS ENDOWMMT CHANGE AMOUNT AND ENDOWMENT AMOUNT FROM INPUT  *                                             
+  000481               * MOVES ENDOTMT CHG AMT TO EDIT & MARK FIELD DOING THIS WILL   *                                             
+  000482               * AVOID SOC 7.  NOT AVOID.  THIS IS THE ONLY WAY TO BE SAFE    *                                             
+  000483               ****************************************************************                                             
+  000484                0310-PROCESS-DEPOSIT.                                                                                       
+  000485                    MOVE 'DEPOSIT     ' TO OUT-TRAN-TYPE.                                 125                               
+  000486                    MOVE IN-ENDOWMT-CHG-AMT TO ENDOWMT-CHG-AMT.                           59 108                            
+  000487                    MOVE IN-ENDOWMT-AMT TO ENDOWMT-AMT.                                   54 106                            
+  000488                    MOVE ENDOWMT-CHG-AMT TO OUT-ENDOWMT-CHG-AMT.                          108 127                           
+  000489                                                                                                                            
+  000490                    COMPUTE NEW-ENDOWMT-AMT ROUNDED =                                     110                               
+  000491                      ENDOWMT-AMT + ENDOWMT-CHG-AMT.                                      106 108                           
+  000492                    MOVE NEW-ENDOWMT-AMT TO OUT-NEW-ENDOWMT-AMT.                          110 129                           
+  000493                0310-EXIT. EXIT.                                                                                            
+  000494                                                                                                                            
+  000495               ****************************************************************                                             
+  000496               * SETS ENDOWMMT CHANGE AMOUNT AND ENDOWMENT AMOUNT FROM INPUT  *                                             
+  000497               * MOVES ENDOTMT CHG AMT TO EDIT & MARK FIELD DOING THIS WILL   *                                             
+  000498               * AVOID SOC 7.  NOT AVOID.  THIS IS THE ONLY WAY TO BE SAFE    *                                             
+  000499               * INPUT DEPRECIATE FIELD IS +VE SO * BY -1                     *                                             
+  000500               ****************************************************************                                             
+  000501                0320-PROCESS-WITHDRAWAL.                                                                                    
+  000502                    MOVE 'WITHDRAWAL  ' TO OUT-TRAN-TYPE.                                 125                               
+  000503                    MOVE IN-ENDOWMT-AMT TO ENDOWMT-AMT.                                   54 106                            
+  000504                    MOVE IN-ENDOWMT-CHG-AMT TO ENDOWMT-CHG-AMT.                           59 108                            
+  000505                    COMPUTE ENDOWMT-CHG-AMT ROUNDED =                                     108                               
+  000506                      ENDOWMT-CHG-AMT * -1.                                               108                               
+  000507                    MOVE ENDOWMT-CHG-AMT TO OUT-ENDOWMT-CHG-AMT.                          108 127                           
+  000508                                                                                                                            
+  000509                    COMPUTE NEW-ENDOWMT-AMT ROUNDED =                                     110                               
+  000510                      ENDOWMT-AMT + ENDOWMT-CHG-AMT.                                      106 108                           
+  000511                    MOVE NEW-ENDOWMT-AMT TO OUT-NEW-ENDOWMT-AMT.                          110 129                           
+  000512                                                                                                                            
+  000513               *    COMPUTE ENDOWMT-CHG-AMT ROUNDED =                                                                       
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    12                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000514               *      ENDOWMT-CHG-AMT * -1.                                                                                 
+  000515                                                                                                                            
+  000516                0320-EXIT. EXIT.                                                                                            
+  000517               ****************************************************************                                             
+  000518               * DEPENDING ON THE FLAG TYPE IT COND STATEMENT WILL SELECT WHICH                                             
+  000519               * PERCENTAGE VALUE TO APPLY TO THE IT, SET IT TO THE NEW AMT   *                                             
+  000520               * AS INCOMING FIELD IS 0                                       *                                             
+  000521               ****************************************************************                                             
+  000522                0330-PROCESS-REINVESTMENT.                                                                                  
+  000523                    MOVE 'REINVESTMENT' TO OUT-TRAN-TYPE.                                 125                               
+  000524                    MOVE IN-ENDOWMT-AMT TO ENDOWMT-AMT.                                   54 106                            
+  000525                    IF IN-CAP-GAINS-PCT-FLG = 1                                           56                                
+  000526      1               COMPUTE ENDOWMT-CHG-AMT ROUNDED =                                   108                               
+  000527      1                 ENDOWMT-AMT * CAP-GAINS-PCT-1                                     106 93                            
+  000528      1             ELSE IF IN-CAP-GAINS-PCT-FLG = 2                                      56                                
+  000529      2               COMPUTE ENDOWMT-CHG-AMT ROUNDED =                                   108                               
+  000530      2                 ENDOWMT-AMT * CAP-GAINS-PCT-2                                     106 94                            
+  000531      2             ELSE IF IN-CAP-GAINS-PCT-FLG = 3                                      56                                
+  000532      3               COMPUTE ENDOWMT-CHG-AMT ROUNDED =                                   108                               
+  000533      3                 ENDOWMT-AMT * CAP-GAINS-PCT-3                                     106 95                            
+  000534      2             ELSE                                                                                                    
+  000535      3               COMPUTE ENDOWMT-CHG-AMT ROUNDED =                                   108                               
+  000536      3                 ENDOWMT-AMT * CAP-GAINS-PCT-4                                     106 96                            
+  000537      2             END-IF.                                                                                                 
+  000538                    MOVE ENDOWMT-CHG-AMT TO OUT-ENDOWMT-CHG-AMT.                          108 127                           
+  000539                    COMPUTE NEW-ENDOWMT-AMT ROUNDED =                                     110                               
+  000540                      ENDOWMT-AMT + ENDOWMT-CHG-AMT.                                      106 108                           
+  000541                    MOVE NEW-ENDOWMT-AMT TO OUT-NEW-ENDOWMT-AMT.                          110 129                           
+  000542                0330-EXIT. EXIT.                                                                                            
+  000543                                                                                                                            
+  000544                0400-PROCESS-HEADERS.                                                                                       
+  000545                    COMPUTE LINE-CTR = LINE-CTR - LINE-CTR.                               86 86 86                          
+  000546                    MOVE PAGE-CTR TO OUT-PAGE-CTR.                                        87 174                            
+  000547                    WRITE REPORT-RECORD FROM HEADER-1 AFTER PAGE.                         72 163                            
+  000548                    ADD 1 TO PAGE-CTR.                                                    87                                
+  000549                                                                                                                            
+  000550                    WRITE REPORT-RECORD FROM HEADER-2 AFTER 1.                            72 177                            
+  000551                    WRITE REPORT-RECORD FROM HEADER-3 AFTER 2.                            72 187                            
+  000552                    WRITE REPORT-RECORD FROM HEADER-4 AFTER 1.                            72 199                            
+  000553                0400-EXIT. EXIT.                                                                                            
+  000554                                                                                                                            
+  000555               ****************************************************************                                             
+  000556               * MOVES TO EDIT AND MARK AND CALL HEADER AS WELL AS CALL PROCES*                                             
+  000557               * THE AVERAGE PARAGAGRAPH                                      *                                             
+  000558               * AVOID SOC 7.  NOT AVOID.  THIS IS THE ONLY WAY TO BE SAFE    *                                             
+  000559               ****************************************************************                                             
+  000560                0500-PROCESS-TOTALS.                                                                                        
+  000561                    MOVE TRAN-CTR TO OUT-TRAN-CTR.                                        89 133                            
+  000562                    MOVE TOT-ENDOWMT-AMT TO OUT-TOT-ENDOWMT-AMT.                          99 135                            
+  000563                    MOVE TOT-ENDOWMT-CHG-AMT TO OUT-TOT-ENDOWMT-CHG-AMT.                  101 137                           
+  000564                    MOVE TOT-NEW-ENDOWMT-AMT TO OUT-TOT-NEW-ENDOWMT-AMT.                  103 139                           
+  000565                    PERFORM 0510-PROCESS-TOT-HEADERS.                                     570                               
+  000566                    WRITE REPORT-RECORD FROM ACCUMULATOR-LINE-1 AFTER 2.                  72 131                            
+  000567                    PERFORM 0520-PROCESS-AVG.                                             582                               
+  000568                0500-EXIT. EXIT.                                                                                            
+  000569                                                                                                                            
+  000570                0510-PROCESS-TOT-HEADERS.                                                                                   
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    13                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000571                    MOVE PAGE-CTR TO OUT-PAGE-CTR.                                        87 174                            
+  000572                    WRITE REPORT-RECORD FROM HEADER-1 AFTER PAGE.                         72 163                            
+  000573                    WRITE REPORT-RECORD FROM TOT-HEADER-1 AFTER 1.                        72 210                            
+  000574                    WRITE REPORT-RECORD FROM TOT-HEADER-2 AFTER 2.                        72 220                            
+  000575                    WRITE REPORT-RECORD FROM TOT-HEADER-3 AFTER 1.                        72 229                            
+  000576                    WRITE REPORT-RECORD FROM TOT-HEADER-4 AFTER 1.                        72 239                            
+  000577                0510-EXIT. EXIT.                                                                                            
+  000578               ****************************************************************                                             
+  000579               * SAME AS TOTAL METHOSD BUT ALSO WRITE TO RECORD THE AVERAGE   *                                             
+  000580               * LINE                                                         *                                             
+  000581               ****************************************************************                                             
+  000582                0520-PROCESS-AVG.                                                                                           
+  000583               ***************************************************************                                              
+  000584               *     CAN USE TOTAL-ENDOWMMT AMT'S AS WE ARE NOT USING IT     *                                              
+  000585               *    IT ANYMORE, BUT I DON'T WANT TO DO THAT.  THIS IS MUCH   *                                              
+  000586               * CLEANER.  PLUS I CAN RE-USE THE FIELDS IF I HAVE TO IN FUTUR*                                              
+  000587               *-DONE FOR OPTIMIZATION PURPOSES AS WELL, THIS USES LESS BYTES*                                              
+  000588               ***************************************************************                                              
+  000589                    COMPUTE AVG-ENDOWMT-AMT ROUNDED = TOT-ENDOWMT-AMT /                   113 99                            
+  000590                      TRAN-CTR.                                                           89                                
+  000591                    COMPUTE AVG-ENDOWMT-CHG-AMT ROUNDED =                                 115                               
+  000592                      TOT-ENDOWMT-CHG-AMT / TRAN-CTR.                                     101 89                            
+  000593                    COMPUTE AVG-NEW-ENDOWMT-AMT ROUNDED =                                 117                               
+  000594                      TOT-NEW-ENDOWMT-AMT / TRAN-CTR.                                     103 89                            
+  000595                                                                                                                            
+  000596                    MOVE AVG-ENDOWMT-AMT TO OUT-AVG-ENDOWMT-AMT.                          113 145                           
+  000597                    MOVE AVG-ENDOWMT-CHG-AMT TO OUT-AVG-ENDOWMT-CHG-AMT.                  115 147                           
+  000598                    MOVE AVG-NEW-ENDOWMT-AMT TO OUT-AVG-NEW-ENDOWMT-AMT.                  117 149                           
+  000599                    WRITE REPORT-RECORD FROM ACCUMULATOR-LINE-2 AFTER 2.                  72 141                            
+  000600                0520-EXIT. EXIT.                                                                                            
+  000601               ****************************************************************                                             
+  000602               * ALL THIS DOES IS THAT MOVES THE TWO FIELDS TO LE RECORD THAT *                                             
+  000603               * CAN LATER BE USED TO WRITE TO LE FILE, OUR 2ND OUTPUT FILE   *                                             
+  000604               ****************************************************************                                             
+  000605                0600-WRITE-LOW-ENDOWMT-FILE.                                                                                
+  000606                    MOVE IN-ORCH-NME TO LE-ORCH-NME.                                      53 66                             
+  000607                    MOVE NEW-ENDOWMT-AMT TO LE-ENDOWMT-AMT.                               110 67                            
+  000608                                                                                                                            
+  000609                    WRITE LOW-ENDOWMT-RECORD.                                             65                                
+  000610                0600-EXIT. EXIT.                                                                                            
+  000611               ****************************************************************                                             
+  000612               * MOVES EQUIVALENT NAME AND AMOUNTS, WRITE TO DETAIL LINE COMPU*                                             
+  000613               * TE KEEP COMPUTING THE TOTAL READS THE FILE AND THEN AT THE END                                             
+  000614               * SETS THE PROPER EOF FLAG PER RECORD THAT IT'S BEING READ     *                                             
+  000615               ****************************************************************                                             
+  000616                0700-PROCESS-LE-TRANS.                                                                                      
+  000617                    MOVE LE-ORCH-NME TO OUT-LE-ORCH-NME.                                  66 250                            
+  000618                    MOVE LE-ENDOWMT-AMT TO OUT-LE-ENDOWMT-AMT.                            67 252                            
+  000619                                                                                                                            
+  000620                    IF LINE-CTR = 15                                                      86                                
+  000621      1               PERFORM 0710-PROCESS-HEADERS-LE                                     637                               
+  000622                    END-IF.                                                                                                 
+  000623                                                                                                                            
+  000624                    ADD 1 TO TRAN-CTR.                                                    89                                
+  000625                    ADD 1 TO LINE-CTR.                                                    86                                
+  000626                                                                                                                            
+  000627                    WRITE REPORT-RECORD FROM DETAIL-LINE-LE AFTER 2.                      72 248                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    14                
+  LineID  PL SL  ----+-*A-1-B--+----2----+----3----+----4----+----5----+----6----+----7-|--+----8 Map and Cross Reference           
+
+  000628                                                                                                                            
+  000629                    COMPUTE TOT-ENDOWMT-AMT ROUNDED =                                     99                                
+  000630                      TOT-ENDOWMT-AMT + LE-ENDOWMT-AMT.                                   99 67                             
+  000631                                                                                                                            
+  000632                    READ LOW-ENDOWMT-FILE                                                 62                                
+  000633      1               AT END MOVE 'Y' TO EOF-FLAG-LE                                      79                                
+  000634                    END-READ.                                                                                               
+  000635                0700-EXIT. EXIT.                                                                                            
+  000636                                                                                                                            
+  000637                0710-PROCESS-HEADERS-LE.                                                                                    
+  000638                    COMPUTE LINE-CTR = LINE-CTR - LINE-CTR.                               86 86 86                          
+  000639                    ADD 1 TO PAGE-CTR.                                                    87                                
+  000640                    MOVE PAGE-CTR TO OUT-PAGE-CTR.                                        87 174                            
+  000641                    WRITE REPORT-RECORD FROM HEADER-1 AFTER PAGE.                         72 163                            
+  000642                                                                                                                            
+  000643                    WRITE REPORT-RECORD FROM LE-HEADER-1 AFTER 1.                         72 261                            
+  000644                    WRITE REPORT-RECORD FROM LE-HEADER-2 AFTER 2.                         72 271                            
+  000645                    WRITE REPORT-RECORD FROM LE-HEADER-3 AFTER 1.                         72 280                            
+  000646                0710-EXIT. EXIT.                                                                                            
+  000647               ****************************************************************                                             
+  000648               * JUST MOVE THE FILEDS TO EDIT AND MARK COZ IT'S ALREADY SET   *                                             
+  000649               * DO A COMPUTE TOTAL ENDDWOMENT, NOW IN THIS WE AREN'T CREATING*                                             
+  000650               * A SEPRATE AVG FIELD JUST USING THE PREVIOUS ONE              *                                             
+  000651               ****************************************************************                                             
+  000652                0800-PROCESS-LE-TOTALS.                                                                                     
+  000653                    MOVE TRAN-CTR TO OUT-LE-TRAN-CTR.                                     89 289                            
+  000654                    MOVE TOT-ENDOWMT-AMT TO OUT-TOT-LE-ENDOWMT-AMT.                       99 291                            
+  000655                                                                                                                            
+  000656                    PERFORM 0810-PROCESS-TOT-LE-HEADERS.                                  666                               
+  000657                    WRITE REPORT-RECORD FROM LE-ACCUMULATOR-LINE-1 AFTER 2.               72 287                            
+  000658               *****DONT AVERAGES NOW*****TOT BECOMES AVG******************                                                 
+  000659                    COMPUTE TOT-ENDOWMT-AMT ROUNDED =                                     99                                
+  000660                      TOT-ENDOWMT-AMT / TRAN-CTR.                                         99 89                             
+  000661                                                                                                                            
+  000662                    MOVE TOT-ENDOWMT-AMT TO LE-AVG-ENDOWMT-AMT.                           99 298                            
+  000663                    WRITE REPORT-RECORD FROM LE-ACCUMULATOR-LINE-2 AFTER 2.               72 294                            
+  000664                0800-EXIT. EXIT.                                                                                            
+  000665                                                                                                                            
+  000666                0810-PROCESS-TOT-LE-HEADERS.                                                                                
+  000667                    COMPUTE LINE-CTR = LINE-CTR - LINE-CTR.                               86 86 86                          
+  000668                    ADD 1 TO PAGE-CTR.                                                    87                                
+  000669                    MOVE PAGE-CTR TO OUT-PAGE-CTR.                                        87 174                            
+  000670                    WRITE REPORT-RECORD FROM HEADER-1 AFTER PAGE.                         72 163                            
+  000671                                                                                                                            
+  000672                    WRITE REPORT-RECORD FROM TOT-LE-HEADER-1 AFTER 1.                     72 301                            
+  000673                    WRITE REPORT-RECORD FROM TOT-LE-HEADER-2 AFTER 2.                     72 311                            
+  000674                    WRITE REPORT-RECORD FROM TOT-LE-HEADER-3 AFTER 1.                     72 320                            
+  000675                0810-EXIT. EXIT.                                                                                            
+  000676                                                                                                                            
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    15                
+
+An "M" preceding a data-name reference indicates that the data-name is modified by this reference.                                  
+                                                                                                                                    
+ Defined   Cross-reference of data names   References                                                                               
+                                                                                                                                    
+     131   ACCUMULATOR-LINE-1 . . . . . .  566                                                                                      
+     141   ACCUMULATOR-LINE-2 . . . . . .  599                                                                                      
+     113   AVG-ENDOWMT-AMT. . . . . . . .  M589 596                                                                                 
+     112   AVG-ENDOWMT-AMTS                                                                                                         
+     115   AVG-ENDOWMT-CHG-AMT. . . . . .  M591 597                                                                                 
+     117   AVG-NEW-ENDOWMT-AMT. . . . . .  M593 598                                                                                 
+      93   CAP-GAINS-PCT-1. . . . . . . .  M424 527                                                                                 
+      94   CAP-GAINS-PCT-2. . . . . . . .  M425 530                                                                                 
+      95   CAP-GAINS-PCT-3. . . . . . . .  M426 533                                                                                 
+      96   CAP-GAINS-PCT-4. . . . . . . .  M427 536                                                                                 
+      85   COUNTERS                                                                                                                 
+     152   CURRENT-DATE . . . . . . . . .  409                                                                                      
+     151   CURRENT-DATE-FIELDS. . . . . .  M349                                                                                     
+     155   CURRENT-DAY. . . . . . . . . .  409                                                                                      
+     167   CURRENT-DAY. . . . . . . . . .  M409                                                                                     
+     157   CURRENT-HOUR . . . . . . . . .  374 375 410 411                                                                          
+     179   CURRENT-HOUR . . . . . . . . .  M410                                                                                     
+     212   CURRENT-HOUR . . . . . . . . .  M411                                                                                     
+     263   CURRENT-HOUR . . . . . . . . .  M374                                                                                     
+     303   CURRENT-HOUR . . . . . . . . .  M375                                                                                     
+     158   CURRENT-MINUTE . . . . . . . .  374 375 410 411                                                                          
+     181   CURRENT-MINUTE . . . . . . . .  M410                                                                                     
+     214   CURRENT-MINUTE . . . . . . . .  M411                                                                                     
+     265   CURRENT-MINUTE . . . . . . . .  M374                                                                                     
+     305   CURRENT-MINUTE . . . . . . . .  M375                                                                                     
+     154   CURRENT-MONTH. . . . . . . . .  409                                                                                      
+     165   CURRENT-MONTH. . . . . . . . .  M409                                                                                     
+     160   CURRENT-MS                                                                                                               
+     159   CURRENT-SECOND                                                                                                           
+     156   CURRENT-TIME . . . . . . . . .  374 375 410 411                                                                          
+     153   CURRENT-YEAR . . . . . . . . .  409                                                                                      
+     169   CURRENT-YEAR . . . . . . . . .  M409                                                                                     
+     120   DETAIL-LINE. . . . . . . . . .  457                                                                                      
+     248   DETAIL-LINE-LE . . . . . . . .  627                                                                                      
+     161   DIFF-FROM-GMT                                                                                                            
+     106   ENDOWMT-AMT. . . . . . . . . .  463 M487 491 M503 510 M524 527 530 533 536 540                                           
+     105   ENDOWMT-AMTS                                                                                                             
+     108   ENDOWMT-CHG-AMT. . . . . . . .  466 M486 488 491 M504 M505 506 507 510 M526 M529 M532 M535 538 540                       
+      80   EOF-FLAG . . . . . . . . . . .  M344 347 M355 359 M476                                                                   
+      79   EOF-FLAG-LE. . . . . . . . . .  M371 373 385 M633                                                                        
+     163   HEADER-1 . . . . . . . . . . .  547 572 641 670                                                                          
+     177   HEADER-2 . . . . . . . . . . .  550                                                                                      
+     187   HEADER-3 . . . . . . . . . . .  551                                                                                      
+     199   HEADER-4 . . . . . . . . . . .  552                                                                                      
+     200   HYPHENS                                                                                                                  
+     202   HYPHENS                                                                                                                  
+     204   HYPHENS                                                                                                                  
+     206   HYPHENS                                                                                                                  
+     208   HYPHENS                                                                                                                  
+     240   HYPHENS                                                                                                                  
+     242   HYPHENS                                                                                                                  
+     244   HYPHENS                                                                                                                  
+     246   HYPHENS                                                                                                                  
+     282   HYPHENS                                                                                                                  
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    16                
+
+ Defined   Cross-reference of data names   References                                                                               
+                                                                                                                                    
+
+     284   HYPHENS                                                                                                                  
+     322   HYPHENS                                                                                                                  
+     324   HYPHENS                                                                                                                  
+      56   IN-CAP-GAINS-PCT-FLG . . . . .  525 528 531                                                                              
+      46   IN-CAP-GAINS-PCT-1 . . . . . .  424                                                                                      
+      47   IN-CAP-GAINS-PCT-2 . . . . . .  425                                                                                      
+      48   IN-CAP-GAINS-PCT-3 . . . . . .  426                                                                                      
+      49   IN-CAP-GAINS-PCT-4 . . . . . .  427                                                                                      
+      54   IN-ENDOWMT-AMT . . . . . . . .  445 487 503 524                                                                          
+      59   IN-ENDOWMT-CHG-AMT . . . . . .  486 504                                                                                  
+      45   IN-INST-NME. . . . . . . . . .  422 444                                                                                  
+      53   IN-ORCH-NME. . . . . . . . . .  443 606                                                                                  
+      58   IN-TRAN-TYPE . . . . . . . . .  447 449 451                                                                              
+      52   INPUT-ENDOWMT-RECORD                                                                                                     
+      44   INPUT-INST-RECORD                                                                                                        
+     287   LE-ACCUMULATOR-LINE-1. . . . .  657                                                                                      
+     294   LE-ACCUMULATOR-LINE-2. . . . .  663                                                                                      
+     298   LE-AVG-ENDOWMT-AMT . . . . . .  M662                                                                                     
+      67   LE-ENDOWMT-AMT . . . . . . . .  M607 618 630                                                                             
+     261   LE-HEADER-1. . . . . . . . . .  643                                                                                      
+     271   LE-HEADER-2. . . . . . . . . .  644                                                                                      
+     280   LE-HEADER-3. . . . . . . . . .  645                                                                                      
+      66   LE-ORCH-NME. . . . . . . . . .  M606 617                                                                                 
+     262   LE-OUT-CURRENT-TIME. . . . . .  M374                                                                                     
+      86   LINE-CTR . . . . . . . . . . .  M377 377 377 439 M459 M545 545 545 620 M625 M638 638 638 M667 667 667                    
+      62   LOW-ENDOWMT-FILE . . . . . . .  29 340 364 368 370 390 396 632                                                           
+      65   LOW-ENDOWMT-RECORD . . . . . .  609                                                                                      
+      82   MILLION-PACKED . . . . . . . .  471                                                                                      
+     110   NEW-ENDOWMT-AMT. . . . . . . .  469 471 M490 492 M509 511 M539 541 607                                                   
+     145   OUT-AVG-ENDOWMT-AMT. . . . . .  M596                                                                                     
+     147   OUT-AVG-ENDOWMT-CHG-AMT. . . .  M597                                                                                     
+     149   OUT-AVG-NEW-ENDOWMT-AMT. . . .  M598                                                                                     
+     164   OUT-CURRENT-DATE . . . . . . .  M409                                                                                     
+     178   OUT-CURRENT-TIME . . . . . . .  M410                                                                                     
+     123   OUT-ENDOWMT-AMT. . . . . . . .  M445                                                                                     
+     127   OUT-ENDOWMT-CHG-AMT. . . . . .  M488 M507 M538                                                                           
+     171   OUT-INST-NME . . . . . . . . .  M422                                                                                     
+     252   OUT-LE-ENDOWMT-AMT . . . . . .  M618                                                                                     
+     250   OUT-LE-ORCH-NME. . . . . . . .  M617                                                                                     
+     289   OUT-LE-TRAN-CTR. . . . . . . .  M653                                                                                     
+     129   OUT-NEW-ENDOWMT-AMT. . . . . .  M492 M511 M541                                                                           
+     121   OUT-ORCH-NME . . . . . . . . .  M443 M444                                                                                
+     174   OUT-PAGE-CTR . . . . . . . . .  M546 M571 M640 M669                                                                      
+     135   OUT-TOT-ENDOWMT-AMT. . . . . .  M562                                                                                     
+     137   OUT-TOT-ENDOWMT-CHG-AMT. . . .  M563                                                                                     
+     291   OUT-TOT-LE-ENDOWMT-AMT . . . .  M654                                                                                     
+     139   OUT-TOT-NEW-ENDOWMT-AMT. . . .  M564                                                                                     
+     133   OUT-TRAN-CTR . . . . . . . . .  M561                                                                                     
+     125   OUT-TRAN-TYPE. . . . . . . . .  M454 M485 M502 M523                                                                      
+      87   PAGE-CTR . . . . . . . . . . .  M351 M378 378 378 546 M548 571 M639 640 M668 669                                         
+      69   REPORT-FILE. . . . . . . . . .  30 341 391 397                                                                           
+      72   REPORT-RECORD. . . . . . . . .  M457 M547 M550 M551 M552 M566 M572 M573 M574 M575 M576 M599 M627 M641 M643 M644          
+                                           M645 M657 M663 M670 M672 M673 M674                                                       
+      99   TOT-ENDOWMT-AMT. . . . . . . .  M379 380 380 M462 463 562 589 M629 630 654 M659 660 662                                  
+     101   TOT-ENDOWMT-CHG-AMT. . . . . .  M465 466 563 592                                                                         
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    17                
+
+ Defined   Cross-reference of data names   References                                                                               
+                                                                                                                                    
+
+     210   TOT-HEADER-1 . . . . . . . . .  573                                                                                      
+     220   TOT-HEADER-2 . . . . . . . . .  574                                                                                      
+     229   TOT-HEADER-3 . . . . . . . . .  575                                                                                      
+     239   TOT-HEADER-4 . . . . . . . . .  576                                                                                      
+     301   TOT-LE-HEADER-1. . . . . . . .  672                                                                                      
+     311   TOT-LE-HEADER-2. . . . . . . .  673                                                                                      
+     320   TOT-LE-HEADER-3. . . . . . . .  674                                                                                      
+     302   TOT-LE-OUT-CURRENT-TIME. . . .  M375                                                                                     
+     103   TOT-NEW-ENDOWMT-AMT. . . . . .  M468 469 564 594                                                                         
+     211   TOT-OUT-CURRENT-TIME . . . . .  M411                                                                                     
+      98   TOTAL-LINE                                                                                                               
+      89   TRAN-CTR . . . . . . . . . . .  M376 376 376 M460 561 590 592 594 M624 653 660                                           
+      41   TRAN-FILE. . . . . . . . . . .  28 339 343 354 363 395 475                                                               
+     143   VAR-1                                                                                                                    
+     296   VAR-1                                                                                                                    
+      92   VARIABLES                                                                                                                
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    18                
+
+Context usage is indicated by the letter preceding a procedure-name reference.                                                      
+These letters and their meanings are:                                                                                               
+    A = ALTER (procedure-name)                                                                                                      
+    D = GO TO (procedure-name) DEPENDING ON                                                                                         
+    E = End of range of (PERFORM) through (procedure-name)                                                                          
+    G = GO TO (procedure-name)                                                                                                      
+    P = PERFORM (procedure-name)                                                                                                    
+    T = (ALTER) TO PROCEED TO (procedure-name)                                                                                      
+    U = USE FOR DEBUGGING (procedure-name)                                                                                          
+                                                                                                                                    
+ Defined   Cross-reference of procedures   References                                                                               
+                                                                                                                                    
+     400   0000-EXIT                                                                                                                
+     337   0000-MAIN                                                                                                                
+     412   0100-EXIT                                                                                                                
+     408   0100-PROCESS-INTRINSIC-DATE. .  P350                                                                                     
+     428   0200-EXIT                                                                                                                
+     421   0200-PROCESS-INST-RECORD . . .  P348                                                                                     
+     478   0300-EXIT                                                                                                                
+     438   0300-PROCESS-TRANS . . . . . .  P358                                                                                     
+     493   0310-EXIT                                                                                                                
+     484   0310-PROCESS-DEPOSIT . . . . .  P448                                                                                     
+     516   0320-EXIT                                                                                                                
+     501   0320-PROCESS-WITHDRAWAL. . . .  P450                                                                                     
+     542   0330-EXIT                                                                                                                
+     522   0330-PROCESS-REINVESTMENT. . .  P452                                                                                     
+     553   0400-EXIT                                                                                                                
+     544   0400-PROCESS-HEADERS . . . . .  P352 P440                                                                                
+     568   0500-EXIT                                                                                                                
+     560   0500-PROCESS-TOTALS. . . . . .  P361                                                                                     
+     577   0510-EXIT                                                                                                                
+     570   0510-PROCESS-TOT-HEADERS . . .  P565                                                                                     
+     600   0520-EXIT                                                                                                                
+     582   0520-PROCESS-AVG . . . . . . .  P567                                                                                     
+     610   0600-EXIT                                                                                                                
+     605   0600-WRITE-LOW-ENDOWMT-FILE. .  P472                                                                                     
+     635   0700-EXIT                                                                                                                
+     616   0700-PROCESS-LE-TRANS. . . . .  P384                                                                                     
+     646   0710-EXIT                                                                                                                
+     637   0710-PROCESS-HEADERS-LE. . . .  P381 P621                                                                                
+     664   0800-EXIT                                                                                                                
+     652   0800-PROCESS-LE-TOTALS . . . .  P388                                                                                     
+     675   0810-EXIT                                                                                                                
+     666   0810-PROCESS-TOT-LE-HEADERS. .  P656                                                                                     
+
+PP 5655-EC6 IBM Enterprise COBOL for z/OS  6.2.0 P190107       ENDOWMT1  Date 10/21/2019  Time 19:38:02   Page    19                
+
+ Defined   Cross-reference of programs     References                                                                               
+                                                                                                                                    
+      14   ENDOWMT1                                                                                                                 
+
+
+* Statistics for COBOL program ENDOWMT1:                                                                                            
+*    Source records = 676                                                                                                           
+*    Data Division statements = 121                                                                                                 
+*    Procedure Division statements = 162                                                                                            
+*    Generated COBOL statements = 0                                                                                                 
+*    Program complexity factor = 167                                                                                                
+
+End of compilation 1,  program ENDOWMT1,  no statements flagged.                                                                    
+
+Return code 0                                                                                                                       
+!! END OF JES SPOOL FILE !!
+
+z/OS V2 R3 BINDER     19:38:04 MONDAY OCTOBER 21, 2019                                                                  
+BATCH EMULATOR  JOB(KC03E85A) STEP(JSTEP02 ) PGM= HEWL                                                                  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                *** O P E R A T I O N   S U M M A R Y   R E P O R T ***                                 
+                                                                                                                        
+
+PROCESSING OPTIONS:                                                                                                     
+                                                                                                                        
+   ALIASES             NO                                                                                               
+   ALIGN2              NO                                                                                               
+   AMODE               UNSPECIFIED                                                                                      
+   CALL                YES                                                                                              
+   CASE                UPPER                                                                                            
+   COMPAT              UNSPECIFIED                                                                                      
+   COMPRESS            AUTO                                                                                             
+   DCBS                NO                                                                                               
+   DYNAM               NO                                                                                               
+   EXTATTR             UNSPECIFIED                                                                                      
+   EXITS:              NONE                                                                                             
+   FILL                NONE                                                                                             
+   GID                 UNSPECIFIED                                                                                      
+   HOBSET              NO                                                                                               
+   INFO                NO                                                                                               
+   LET                 04                                                                                               
+   LINECT              060                                                                                              
+   LIST                SUMMARY                                                                                          
+   LISTPRIV            NO                                                                                               
+   LONGPARM            NO                                                                                               
+   MAP                 NO                                                                                               
+   MAXBLK              032760                                                                                           
+   MODMAP              NO                                                                                               
+   MSGLEVEL            00                                                                                               
+   OVLY                NO                                                                                               
+   PRINT               YES                                                                                              
+   RES                 NO                                                                                               
+   REUSABILITY         UNSPECIFIED                                                                                      
+   RMODE               UNSPECIFIED                                                                                      
+   RMODEX              NO                                                                                               
+   SIGN                NO                                                                                               
+   STORENX             NOREPLACE                                                                                        
+   STRIPCL             NO                                                                                               
+   STRIPSEC            NO                                                                                               
+   SYMTRACE                                                                                                             
+   TERM                NO                                                                                               
+   TRAP                ON                                                                                               
+   UID                 UNSPECIFIED                                                                                      
+   UPCASE              NO                                                                                               
+   WKSPACE             000000K,000000K                                                                                  
+   XCAL                NO                                                                                               
+   XREF                NO                                                                                               
+   ***END OF OPTIONS***                                                                                                 
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+
+SAVE OPERATION SUMMARY:                                                                                                 
+                                                                                                                        
+   MEMBER NAME         ENDOWMT1                                                                                         
+   LOAD LIBRARY        KC03E85.CSCI465.LOADLIB                                                                          
+   PROGRAM TYPE        PROGRAM OBJECT(FORMAT 3)                                                                         
+   VOLUME SERIAL       KCTR32                                                                                           
+   DISPOSITION         REPLACED                                                                                         
+   TIME OF SAVE        19.38.04  OCT 21, 2019                                                                           
+                                                                                                                        
+                                                                                                                        
+
+SAVE MODULE ATTRIBUTES:                                                                                                 
+                                                                                                                        
+   AC                  000                                                                                              
+   AMODE                31                                                                                              
+   COMPRESSION         NONE                                                                                             
+   DC                  NO                                                                                               
+   EDITABLE            YES                                                                                              
+   EXCEEDS 16MB        NO                                                                                               
+   EXECUTABLE          YES                                                                                              
+   LONGPARM            NO                                                                                               
+   MIGRATABLE          NO                                                                                               
+   OL                  NO                                                                                               
+   OVLY                NO                                                                                               
+   PACK,PRIME          NO,NO                                                                                            
+   PAGE ALIGN          NO                                                                                               
+   REFR                NO                                                                                               
+   RENT                NO                                                                                               
+   REUS                NO                                                                                               
+   RMODE               ANY                                                                                              
+   SCTR                NO                                                                                               
+   SIGN                NO                                                                                               
+   SSI                                                                                                                  
+   SYM GENERATED       NO                                                                                               
+   TEST                NO                                                                                               
+   XPLINK              NO                                                                                               
+   MODULE SIZE (HEX)   00004160                                                                                         
+   DASD SIZE (HEX)     0000D000                                                                                         
+                                                                                                                        
+                                                                                                                        
+
+ ENTRY POINT AND ALIAS SUMMARY:                                                                                         
+                                                                                                                        
+ NAME:            ENTRY TYPE AMODE C_OFFSET CLASS NAME        STATUS                                                    
+                                                                                                                        
+ ENDOWMT1          MAIN_EP      31 00000000 C_CODE                                                                      
+                                                                                                                        
+                         *** E N D   O F   O P E R A T I O N   S U M M A R Y   R E P O R T ***                          
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+
+z/OS V2 R3 BINDER     19:38:04 MONDAY OCTOBER 21, 2019                                                                  
+BATCH EMULATOR  JOB(KC03E85A) STEP(JSTEP02 ) PGM= HEWL                                                                  
+IEW2008I 0F03 PROCESSING COMPLETED.  RETURN CODE =  0.                                                                  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+
+----------------------                                                                                                  
+MESSAGE SUMMARY REPORT                                                                                                  
+----------------------                                                                                                  
+ TERMINAL MESSAGES      (SEVERITY = 16)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ SEVERE MESSAGES        (SEVERITY = 12)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ ERROR MESSAGES         (SEVERITY = 08)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ WARNING MESSAGES       (SEVERITY = 04)                                                                                 
+ NONE                                                                                                                   
+                                                                                                                        
+ INFORMATIONAL MESSAGES (SEVERITY = 00)                                                                                 
+ 2008                                                                                                                   
+                                                                                                                        
+                                                                                                                        
+ **** END OF MESSAGE SUMMARY REPORT ****                                                                                
+                                                                                                                        
+!! END OF JES SPOOL FILE !!
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    1 
+19:38                                              MONTHLY ENDOWMENT FUND CHANGES                                                   
+
+ORCHESTRA NAME                                   ENDOWMENT AMOUNT    TRANSACTION TYPE      ENDOWMENT CHANGE     NEW ENDOWMENT AMOUNT
+---------------------------------------------    ----------------    ----------------      ----------------     --------------------
+
+Berlin Philharmonic                                   $936,184.80     DEPOSIT                   $3,618.48              $939,803.28  
+
+Vienna Philharmonic                                 $7,166,149.40     DEPOSIT                   $6,615.95            $7,172,765.35  
+
+Chicago Symphony Orchestra                            $808,213.50     WITHDRAWAL                  $721.35DB            $807,492.15  
+
+Boston Symphony Orchestra                           $4,008,702.00     REINVESTMENT                $841.83            $4,009,543.83  
+
+Kansas City Symphony                                   $42,199.90     WITHDRAWAL                  $219.97DB             $41,979.93  
+
+New York Philharmonic                                  $40,612.10     DEPOSIT                      $61.81               $40,673.91  
+
+Berlin State Orchestra                                $133,502.81     REINVESTMENT                 $22.70              $133,525.51  
+
+Grand Rapids Symphony Orchestr                      $2,074,303.90     DEPOSIT                     $430.39            $2,074,734.29  
+
+Seattle Symphony Orchestra                              $8,415.20     DEPOSIT                     $871.38                $9,286.58  
+
+Symphony Orchestra of the Bava                      $3,108,140.21     WITHDRAWAL                  $810.12DB          $3,107,330.09  
+
+Orchestra of the German Opera                         $110,810.27     REINVESTMENT                 $18.84              $110,829.11  
+
+Orchestra of Paris                                  $4,310,810.06     REINVESTMENT                $905.27            $4,311,715.33  
+
+National Orchestra of France                        $2,410,012.15     REINVESTMENT                $602.50            $2,410,614.65  
+
+London Philharmonic Orchestra                         $140,812.24     WITHDRAWAL                $1,083.57DB            $139,728.67  
+
+London Symphony Orchestra                           $3,104,812.33     DEPOSIT                  $10,482.32            $3,115,294.65  
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    2 
+19:38                                              MONTHLY ENDOWMENT FUND CHANGES                                                   
+
+ORCHESTRA NAME                                   ENDOWMENT AMOUNT    TRANSACTION TYPE      ENDOWMENT CHANGE     NEW ENDOWMENT AMOUNT
+---------------------------------------------    ----------------    ----------------      ----------------     --------------------
+
+Philharmonia Orchestra                                $102,312.42     DEPOSIT                     $331.24              $102,643.66  
+
+San Francisco Symphony                                $101,142.56     WITHDRAWAL                $2,757.88DB             $98,384.68  
+
+Scottish National Orchestra                         $3,104,124.67     WITHDRAWAL              $310,412.46DB          $2,793,712.21  
+
+National Orchestra of Ireland                       $3,108,214.26     WITHDRAWAL                $9,841.40DB          $3,098,372.86  
+
+Czech Philharmonic                                  $3,310,831.45     WITHDRAWAL              $331,083.14DB          $2,979,748.31  
+
+Munich Philharmonic                                   $512,234.10     DEPOSIT                  $51,223.41              $563,457.51  
+
+Orchestra of the Vienna State                       $3,300,005.24     REINVESTMENT                $825.00            $3,300,830.24  
+
+Detroit Symphony                                       $31,116.05     REINVESTMENT                  $7.78               $31,123.83  
+
+Cleveland Orchestra                                 $3,103,817.26     REINVESTMENT                $527.65            $3,104,344.91  
+
+St. Louis Symphony Orchestra                        $3,108,311.27     REINVESTMENT                $777.08            $3,109,088.35  
+
+Scottish National Orchestra                         $3,108,131.24     WITHDRAWAL              $310,813.12DB          $2,797,318.12  
+
+Hong Kong Symphony Orchestra                        $3,108,113.23     DEPOSIT                 $310,811.30            $3,418,924.53  
+
+NHK Symphony Orchestra Tokyo                        $4,606,410.52     REINVESTMENT                $598.83            $4,607,009.35  
+
+Beijing Philharmonic                                $1,807,640.81     REINVESTMENT                $451.91            $1,808,092.72  
+
+Philharmonic Hamburg                                $6,068,254.17     DEPOSIT                 $606,115.46            $6,674,369.63  
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    3 
+19:38                                              MONTHLY ENDOWMENT FUND CHANGES                                                   
+
+ORCHESTRA NAME                                   ENDOWMENT AMOUNT    TRANSACTION TYPE      ENDOWMENT CHANGE     NEW ENDOWMENT AMOUNT
+---------------------------------------------    ----------------    ----------------      ----------------     --------------------
+
+North German Radio Symphony Or                      $6,086,271.26     WITHDRAWAL              $608,627.10DB          $5,477,644.16  
+
+Sao Paulo Symphony Orchestra                        $6,082,661.25     REINVESTMENT              $1,277.36            $6,083,938.61  
+
+Florida Philharmonic                                $6,982,761.24     DEPOSIT                  $98,263.30            $7,081,024.54  
+
+Lucerne Festival Orchestra                         $26,182,816.24     WITHDRAWAL                  $281.62DB         $26,182,534.62  
+
+Beethoven Orchestra Bonn                              $608,291.23     REINVESTMENT                $152.07              $608,443.30  
+
+Royal Philharmonic Orchestra                        $4,608,212.33     WITHDRAWAL                  $231.24DB          $4,607,981.09  
+
+Orchestra of Opera Lyon                             $6,408,212.32     DEPOSIT                     $114.25            $6,408,326.57  
+
+Metropolitan Opera Orchestra                        $6,048,214.21     REINVESTMENT              $1,270.12            $6,049,484.33  
+
+MET Orchestra                                      $27,144,923.58     REINVESTMENT              $6,786.23           $27,151,709.81  
+
+Orpheus Chamber Orchestra                           $2,179,162.07     WITHDRAWAL                $1,083.14DB          $2,178,078.93  
+
+Los Angeles Philharmonic                            $6,611,022.46     DEPOSIT                     $223.41            $6,611,245.87  
+
+Berlin Radio Symphony Orchestr                     $10,663,622.50     DEPOSIT                     $434.46           $10,664,056.96  
+
+Prague Philharmonic                                 $1,166,416.19     WITHDRAWAL                  $821.42DB          $1,165,594.77  
+
+Bayreuth Festival Orchestra                         $2,216,617.29     WITHDRAWAL                $1,243.45DB          $2,215,373.84  
+
+Camerata Academica Salzburg                         $1,119,667.89     REINVESTMENT                $190.34            $1,119,858.23  
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    4 
+19:38                                              MONTHLY ENDOWMENT FUND CHANGES                                                   
+
+ORCHESTRA NAME                                   ENDOWMENT AMOUNT    TRANSACTION TYPE      ENDOWMENT CHANGE     NEW ENDOWMENT AMOUNT
+---------------------------------------------    ----------------    ----------------      ----------------     --------------------
+
+La Scala Orchestra Milan                              $821,144.25     WITHDRAWAL                $2,321.24DB            $818,823.01  
+
+NBC Symphony Orchestra                                $132,677.84     DEPOSIT                     $243.50              $132,921.34  
+
+Des Moines Symphony                                   $133,502.81     REINVESTMENT                 $22.70              $133,525.51  
+
+Bamberg Symphony Orchestra                          $2,074,303.90     DEPOSIT                     $430.39            $2,074,734.29  
+
+Vienna Symphony Orchestra                               $8,415.20     DEPOSIT                     $871.38                $9,286.58  
+
+Salzburg Festival Orchestra                         $3,108,140.21     WITHDRAWAL                  $810.12DB          $3,107,330.09  
+
+Houston Symphony Orchestra                            $110,810.27     REINVESTMENT                 $18.84              $110,829.11  
+
+Dallas Symphony Orchestra                           $4,310,810.06     REINVESTMENT                $905.27            $4,311,715.33  
+
+Minnesota Orchestra                                 $2,410,012.15     REINVESTMENT                $602.50            $2,410,614.65  
+
+City of Bournemouth Symphony O                        $140,812.24     WITHDRAWAL                $1,083.57DB            $139,728.67  
+
+Royal Liverpool Philharmonic O                        $232,325.54     WITHDRAWAL                  $136.63DB            $232,188.91  
+
+BBC Philharmonic                                    $3,104,812.33     DEPOSIT                  $10,482.32            $3,115,294.65  
+
+BBC Symphony Orchestra of Wale                        $233,920.33     DEPOSIT                   $1,483.97              $235,404.30  
+
+Juilliard School of Music Symp                        $102,312.42     DEPOSIT                     $331.24              $102,643.66  
+
+Orchestra of St. Lukes                                $101,142.56     WITHDRAWAL                $2,757.88DB             $98,384.68  
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    5 
+19:38                                              MONTHLY ENDOWMENT FUND CHANGES                                                   
+
+ORCHESTRA NAME                                   ENDOWMENT AMOUNT    TRANSACTION TYPE      ENDOWMENT CHANGE     NEW ENDOWMENT AMOUNT
+---------------------------------------------    ----------------    ----------------      ----------------     --------------------
+
+Singapore Symphony Orchestra                          $101,142.56     WITHDRAWAL                $2,757.88DB             $98,384.68  
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    6 
+19:38                                           MONTHLY ENDOWMENT FUND CHANGES TOTALS                                               
+
+                                                TOTAL                             TOTAL                         TOTAL               
+TRANSACTIONS                                    ENDOWMENT AMOUNT                  ENDOWMENT CHANGE AMOUNT       NEW ENDOWMENT AMOUNT
+------------                                    ----------------                  -----------------------       --------------------
+
+          61                                     $198,119,496.85                            $469,653.52DB          $197,649,843.33  
+
+                                   AVERAGES:       $3,247,860.60                              $7,699.24DB            $3,240,161.37  
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    1 
+19:38                                          ORCHESTRA LOW BALANCE ENDOWMENT REPORT                                               
+
+                              ORCHESTRA NAME                                      LOW ENDOWMENT AMOUNT                              
+                              ---------------------------------------------       --------------------                              
+
+                              Berlin Philharmonic                                        $939,803.28                                
+
+                              Chicago Symphony Orchestra                                 $807,492.15                                
+
+                              Kansas City Symphony                                        $41,979.93                                
+
+                              New York Philharmonic                                       $40,673.91                                
+
+                              Berlin State Orchestra                                     $133,525.51                                
+
+                              Seattle Symphony Orchestra                                   $9,286.58                                
+
+                              Orchestra of the German Opera Berlin                       $110,829.11                                
+
+                              London Philharmonic Orchestra                              $139,728.67                                
+
+                              Philharmonia Orchestra                                     $102,643.66                                
+
+                              San Francisco Symphony                                      $98,384.68                                
+
+                              Munich Philharmonic                                        $563,457.51                                
+
+                              Detroit Symphony                                            $31,123.83                                
+
+                              Beethoven Orchestra Bonn                                   $608,443.30                                
+
+                              La Scala Orchestra Milan                                   $818,823.01                                
+
+                              NBC Symphony Orchestra                                     $132,921.34                                
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    2 
+19:38                                          ORCHESTRA LOW BALANCE ENDOWMENT REPORT                                               
+
+                              ORCHESTRA NAME                                      LOW ENDOWMENT AMOUNT                              
+                              ---------------------------------------------       --------------------                              
+
+                              Des Moines Symphony                                        $133,525.51                                
+
+                              Vienna Symphony Orchestra                                    $9,286.58                                
+
+                              Houston Symphony Orchestra                                 $110,829.11                                
+
+                              City of Bournemouth Symphony Orchestra                     $139,728.67                                
+
+                              Royal Liverpool Philharmonic Orchestra                     $232,188.91                                
+
+                              BBC Symphony Orchestra of Wales                            $235,404.30                                
+
+                              Juilliard School of Music Symphony Orchestra               $102,643.66                                
+
+                              Orchestra of St. Lukes                                      $98,384.68                                
+
+                              Singapore Symphony Orchestra                                $98,384.68                                
+
+10/21/2019                                         KARAJAN & KLEIBER INVESTMENTS                                         PAGE:    3 
+19:38                                       ORCHESTRA LOW BALANCE ENDOWMENT REPORT TOTALS                                           
+
+                              TRANSACTIONS                                  TOTAL LOW ENDOWMENT AMOUNT                              
+                              ------------                                  --------------------------                              
+
+                                        24                                             $5,739,492.57                                
+
+                                                                         AVERAGE:        $239,145.52                                
+!! END OF JES SPOOL FILE !!

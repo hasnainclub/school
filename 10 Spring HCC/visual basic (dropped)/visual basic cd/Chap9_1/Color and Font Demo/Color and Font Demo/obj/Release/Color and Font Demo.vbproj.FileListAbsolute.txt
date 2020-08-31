@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\bin\Release\Color and Font Demo.exe
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\bin\Release\Color and Font Demo.pdb
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\bin\Release\Color and Font Demo.xml
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Release\Color_and_Font_Demo.Form1.resources
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Release\Color_and_Font_Demo.Resources.resources
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Release\Color and Font Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Release\Color and Font Demo.exe
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Release\Color and Font Demo.xml
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Release\Color and Font Demo.pdb

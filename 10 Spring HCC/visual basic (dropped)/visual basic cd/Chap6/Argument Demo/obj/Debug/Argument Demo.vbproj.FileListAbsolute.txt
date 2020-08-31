@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap6\Argument Demo\obj\Debug\Argument Demo.exe
+D:\sovb4\examples\Chap6\Argument Demo\obj\Debug\Argument Demo.xml
+D:\sovb4\examples\Chap6\Argument Demo\obj\Debug\Argument Demo.pdb
+D:\sovb4\examples\Chap6\Argument Demo\bin\Argument Demo.exe
+D:\sovb4\examples\Chap6\Argument Demo\bin\Argument Demo.pdb
+D:\sovb4\examples\Chap6\Argument Demo\bin\Argument Demo.xml
+D:\sovb4\examples\Chap6\Argument Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap6\Argument Demo\obj\Debug\Argument_Demo.Form1.resources
+D:\sovb4\examples\Chap6\Argument Demo\obj\Debug\Argument_Demo.Resources.resources
+D:\sovb4\examples\Chap6\Argument Demo\obj\Debug\Argument Demo.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\obj\Debug\Argument Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\obj\Debug\Argument Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\obj\Debug\Argument Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\bin\Argument Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\bin\Argument Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\bin\Argument Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\obj\Debug\Argument_Demo.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\obj\Debug\Argument_Demo.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Argument Demo\obj\Debug\Argument Demo.vbproj.GenerateResource.Cache

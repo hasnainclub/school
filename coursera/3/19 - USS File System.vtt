@@ -1,0 +1,183 @@
+WEBVTT
+
+1
+00:00:02.690 --> 00:00:05.490
+Hi, my name is Louisa Martinez,
+
+2
+00:00:05.490 --> 00:00:07.065
+I work for USS.
+
+3
+00:00:07.065 --> 00:00:09.945
+So last time, Jeff
+talked a little bit
+
+4
+00:00:09.945 --> 00:00:12.660
+about z/OS Unix and Sysplex.
+
+5
+00:00:12.660 --> 00:00:14.400
+So now I'm going to
+be talking about
+
+6
+00:00:14.400 --> 00:00:16.680
+how they both work together.
+
+7
+00:00:16.680 --> 00:00:18.885
+So in z/OS Unix,
+
+8
+00:00:18.885 --> 00:00:23.215
+you have access to the entire
+file system hierarchy.
+
+9
+00:00:23.215 --> 00:00:25.380
+The way this is done is that
+
+10
+00:00:25.380 --> 00:00:27.990
+once your file system is mounted,
+
+11
+00:00:27.990 --> 00:00:31.020
+an owning only LPAR is assigned.
+
+12
+00:00:31.020 --> 00:00:32.670
+So once this is mounted,
+
+13
+00:00:32.670 --> 00:00:36.725
+now all the LPARs and users
+have access to this file.
+
+14
+00:00:36.725 --> 00:00:38.960
+This is kind of done in two ways,
+
+15
+00:00:38.960 --> 00:00:41.675
+one way is that through COS Unix,
+
+16
+00:00:41.675 --> 00:00:44.750
+we forward all the
+transactions and
+
+17
+00:00:44.750 --> 00:00:49.070
+requests associated with
+one file to the owning LPAR.
+
+18
+00:00:49.070 --> 00:00:52.655
+Another way is called
+Six Flex aware.
+
+19
+00:00:52.655 --> 00:00:55.345
+This is also called
+as read write share.
+
+20
+00:00:55.345 --> 00:00:58.040
+In this case,
+the files are mounted
+
+21
+00:00:58.040 --> 00:01:01.839
+locally to your LPAR and
+instead of forwarding,
+
+22
+00:01:01.839 --> 00:01:03.720
+they're handled within that.
+
+23
+00:01:03.720 --> 00:01:07.055
+The reasons why someone might
+choose one over the other,
+
+24
+00:01:07.055 --> 00:01:08.435
+could be for performance,
+
+25
+00:01:08.435 --> 00:01:11.420
+or convenience, or it
+could be just by choice.
+
+26
+00:01:11.420 --> 00:01:15.150
+Overall, just the share
+file system environment
+
+27
+00:01:15.150 --> 00:01:16.860
+has a lot of advantages,
+
+28
+00:01:16.860 --> 00:01:18.870
+such as your z/OS Unix data
+
+29
+00:01:18.870 --> 00:01:21.140
+it's always available,
+regardless.
+
+30
+00:01:21.140 --> 00:01:23.300
+So even if you're owning LPAR,
+
+31
+00:01:23.300 --> 00:01:25.970
+were to come down for
+one or the other reason,
+
+32
+00:01:25.970 --> 00:01:28.550
+your z/OS Unix data is still
+
+33
+00:01:28.550 --> 00:01:31.655
+available for you to
+use from other systems.
+
+34
+00:01:31.655 --> 00:01:34.370
+This is just a brief
+explanation how this works,
+
+35
+00:01:34.370 --> 00:01:36.050
+but if you're curious
+and want to find
+
+36
+00:01:36.050 --> 00:01:38.345
+out more about all the details,
+
+37
+00:01:38.345 --> 00:01:39.920
+there's tons of documentations
+
+38
+00:01:39.920 --> 00:01:41.675
+online you can go and read,
+
+39
+00:01:41.675 --> 00:01:43.520
+and that's all I had to share,
+
+40
+00:01:43.520 --> 00:01:45.010
+hopefully this was useful,
+
+41
+00:01:45.010 --> 00:01:47.800
+again my name is Teresa Martinez.

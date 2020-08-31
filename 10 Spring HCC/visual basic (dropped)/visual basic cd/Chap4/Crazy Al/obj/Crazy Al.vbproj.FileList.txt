@@ -1,0 +1,16 @@
+obj\Debug\Crazy Al.exe
+obj\Debug\Crazy Al.pdb
+bin\Crazy Al.exe
+bin\Crazy Al.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Crazy_Al.Form1.resources
+obj\Release\Crazy_Al.Resources.resources
+obj\Release\Crazy Al.vbproj.GenerateResource.Cache
+obj\Release\Crazy Al.exe
+obj\Release\Crazy Al.xml
+bin\Crazy Al.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Crazy_Al.Form1.resources
+obj\Debug\Crazy_Al.Resources.resources
+obj\Debug\Crazy Al.vbproj.GenerateResource.Cache
+obj\Debug\Crazy Al.xml

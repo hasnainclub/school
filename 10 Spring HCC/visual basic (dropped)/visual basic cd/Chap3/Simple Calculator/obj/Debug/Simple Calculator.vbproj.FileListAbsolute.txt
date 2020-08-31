@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap3\Simple Calculator\bin\Simple Calculator.exe
+D:\sovb4\examples\Chap3\Simple Calculator\bin\Simple Calculator.pdb
+D:\sovb4\examples\Chap3\Simple Calculator\bin\Simple Calculator.xml
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Debug\Simple_Calculator.CalculateForm.resources
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Debug\Simple_Calculator.Resources.resources
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Debug\Simple Calculator.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Debug\Simple Calculator.exe
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Debug\Simple Calculator.xml
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Debug\Simple Calculator.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\obj\Debug\Simple Calculator.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\obj\Debug\Simple Calculator.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\obj\Debug\Simple Calculator.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\bin\Simple Calculator.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\bin\Simple Calculator.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\bin\Simple Calculator.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\obj\Debug\Simple_Calculator.CalculateForm.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\obj\Debug\Simple_Calculator.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Simple Calculator\obj\Debug\Simple Calculator.vbproj.GenerateResource.Cache

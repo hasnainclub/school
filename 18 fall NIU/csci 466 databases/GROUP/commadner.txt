@@ -1,0 +1,61 @@
+USE z1697740;
+
+CREATE TABLE contributor(
+contributorId int NOT NULL AUTO_INCREMENT,
+fname varchar(255),
+lname varchar(255),
+PRIMARY KEY (contributorId));
+SHOW TABLES;
+
+CREATE TABLE song(
+songId int NOT NULL AUTO_INCREMENT,
+contributorId int,
+PRIMARY KEY (songid),
+FOREIGN KEY (contributorId) REFERENCES contributor(contributorId));
+SHOW TABLE;
+
+CREATE TABLE contribution(
+contributionId int NOT NULL AUTO_INCREMENT,
+contributorId int,
+songId int,
+PRIMARY KEY (contributionId),
+FOREIGN KEY (contributorId) REFERENCES contributor(contributorId),
+FOREIGN KEY (songId) REFERENCES song(songId));
+
+CREATE TABLE user(
+userId int NOT NULL AUTO_INCREMENT,
+firstname varchar(255),
+lastname varchar(255),
+PRIMARY KEY (userId));
+
+CREATE TABLE paidQueue(
+paidId int NOT NULL AUTO_INCREMENT,
+payamount int,
+PRIMARY KEY (paidId)
+);
+
+CREATE TABLE karaoketrack(
+trackId int NOT NULL AUTO_INCREMENT,
+songId int,
+version int,
+PRIMARY KEY (trackId),
+FOREIGN KEY (songId) REFERENCES song(songId));
+
+CREATE TABLE freeQueue(
+queueId int NOT NULL AUTO_INCREMENT,
+trackId int,
+userId int,
+PRIMARY KEY (queueId),
+FOREIGN KEY (trackId) REFERENCES karaoketrack(trackId),
+FOREIGN KEY (userId) REFERENCES user(userId));
+
+SHOW TABLES;
+
+ALTER TABLE freeQueue ADD time TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+
+DESCRIBE contributor;
+DESCRIBE song;
+DESCRIBE contribution;
+DESCRIBE user;
+DESCRIBE paidQueue;
+DESCRIBE freeQueue;

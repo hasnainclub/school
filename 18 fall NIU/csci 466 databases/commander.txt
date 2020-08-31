@@ -1,0 +1,70 @@
+/*
+SHOW THE DATABASE
+*/
+SHOW DATABASES;
+
+/*
+Show the tables and the structure of the tables in the BabyName
+database
+*/
+--1
+USE BabyName;
+DESCRIBE BabyName;
+
+/*
+list all the years where your name is on the list
+*/
+--2
+SELECT DISTINCT name,year FROM BabyName
+	WHERE name = 'HASNAIN'
+	ORDER BY year;
+
+/*
+list all the names for your birth year
+*/
+--3
+SELECT DISTINCT name, year FROM BabyName
+	where year = 1989
+	ORDER BY name;
+
+/*
+4. list all the information about name similar to your name in
+alphabetic order of the name and within that of the count and
+then year
+*/
+4
+SELECT * FROM BabyName
+	WHERE name LIKE 'Hasn%'
+	ORDER BY name;
+
+/*
+tell how many rows are in the table
+*/
+--5
+SELECT COUNT(*) FROM BabyName;
+
+/*
+tell how many names are from your birth year
+*/
+--6
+SELECT COUNT(*) FROM BabyName
+	WHERE year = 1989;
+
+/*
+list all the names from your birth year that start with the same
+letter as your name
+*/
+--7
+SELECT DISTINCT name FROM BabyName
+	WHERE year = 1989
+	AND name LIKE 'H%';
+
+/*
+list the number of names for each sex from your mother's birth
+year
+*/
+--8
+ SELECT SUM(gender='M'), SUM(gender='f') FROM BabyName where year = 1965;
+
+	
+

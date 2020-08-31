@@ -1,0 +1,158 @@
+
+<!-- saved from url=(0046)http://www.cs.niu.edu/compresource/tn3270.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<b><center>Connecting to Marist via a TN3270 Emulator</center></b><p>
+
+In order to connect to the Marist mainframe, you need a program called
+a 3270 terminal emulator. From the list below, select the emulator that 
+is appropriate for the OS you are using.</p><p>
+
+The host name for Marist's mainframe is  <b>zos.kctr.marist.edu</b></p><p>
+
+And you must connect via <b>port 1023</b></p><p>
+
+No matter which emulator you choose, you must use the host and port
+specified above to connect to Marist.</p><p>
+
+</p><hr>
+For Windows Vista, XP, 7 or 8, go to :
+<a href="https://www.tombrennansoftware.com/">Tom Brennan Software</a>
+<p>
+
+Downloaded and install Vista TN3270. The defaults should be acceptable.</p><p>
+
+Your instructor should provide you with a name and registration code to keep 
+your copy from expiring.</p><p>
+
+Once installed, run "Vista TN3270"</p><p>
+
+If first time, a "Vista TN3270 - Start a New Terminal Session" dialog box
+and an Introduction box will pop up.</p><p>
+
+Close the Introduction box and [Cancel] "New Terminal Session" dialog.</p><p>
+
+Click "Help" on main menu and scroll down to and select :</p><p>
+
+</p><ul>"Enter Registration Code"<p>
+
+Enter the "User Name" and "Reg code" provided by your professor.</p><p>
+
+Click [OK]</p><p>
+</p></ul>
+
+You can either, quit and restart Vista TN3270 or select "New Session"
+under the main "File" menu choice.<p>
+
+When the "Start a New Terminal Session" dialog appears, Enter the 
+following :</p><p>
+
+</p><ul>
+<table border="1">
+<tbody><tr><td>"Session file"</td><td>Marist</td></tr>
+<tr><td>"Host IP Name or Alias"</td><td>zos.kctr.marist.edu</td></tr>
+<tr><td>"IP Port"</td><td>1023</td></tr>
+</tbody></table>
+<p>
+
+You can now click [Connect] to connect to Marist.</p><p>
+
+You will be prompted to add an icon for the session. select [yes]
+to preserve the information you entered for later sessions.</p><p>
+
+It will offer a selection of icons, pick one and select [OK].</p><p>
+</p></ul>
+
+Follow your class notes for the correct procedure to log in.<p>
+
+</p><hr>
+
+For Mac OS/X systems, go to : 
+<a href="http://www.brown.edu/cis/tn3270/index.html#osx">Brown University</a><a>
+Select appropriate version and install.<p>
+
+The dmg from "Brown University" does not have an install script. Click
+on it to open. Drag and drop the 3270 terminal program and docs folder to
+location of your choice.</p><p>
+ 
+Once you install TN3270 :</p><p>
+ 
+Double click the "Terminal" application to run it.</p><p>
+
+Once it opens the "Session" dialog, you must provide additional information.</p><p>
+
+<table border="1">
+<tbody><tr>
+<td> HOST NAME:</td><td>zos.kctr.marist.edu</td>
+</tr><tr>
+<td>Window Title:</td><td>Marist</td>
+</tr>
+</tbody></table>
+</p><p>
+
+Next Click on [Special] icon</p><p>
+
+</p><ul>
+A small window will pop-up<p>
+
+First box should says Port Number: 23, change that to 1023</p><p>
+
+Click [OK]
+</p></ul>
+
+You should now be back at the "Session" dialog.<p>
+
+Click [Open Connection]</p><p>
+</p><ul>
+This should open a connection to Marist's mainframe where you can
+proceed according to your class notes.<p>
+
+Before continuing, you should save the Session configuration. To
+do this :</p><p>
+
+Click on "File" at the top of the OSX Desktop.</p><p>
+</p><ul>
+
+Click on "Save settings as" under the "File" menu.<p>
+
+Specify a name, "Marist" would be good, and save in a easily 
+locatable folder. The default is "Documents".</p><p>
+
+Click on [Save]. The "Save as" dialog should close and you can click
+on the main session window and continue to log in.</p><p>
+</p></ul>
+
+* Note : you must have opened the connection to Marist for the "Save&nbsp;as"
+selection to be active.<p>
+</p></ul>
+
+The next time you start "TN3270 X", when the new session dialog box comes
+up, click on the "Settings" icon and you can navigate to your saved settings.
+<p>
+
+</p><hr>
+For Linux platforms :<p>
+
+Linux distributions come with 2 tn3270 emulators :</p><p>
+</p><ul>
+x3270 - an X-Windows based terminal program.<br>
+c3270 - curses (text) based terminal program.<p>
+</p></ul>
+You may have to install them from a distribution. Additionally, you need
+to work out how to map the PF keys to the keyboard you are using before
+you start the program or you may find it very difficult to terminate the
+program.<p>
+
+The simpest way to access Marist with c3270 is :</p><p>
+</p><ul>
+c3270 zos.kctro.marist.edu:1023<p>
+</p></ul>
+The default keymap for c3270 that assigns the PF keys to the PC function 
+keys works only if you are directly logged into your Linux system. Logins 
+done via remote ssh, especially from Windows systems, use a keymap that is 
+not recognized by c3270.<p>
+
+The keymap for x3270 does work from remote login.</p><p>
+
+
+
+</p></a></body></html>

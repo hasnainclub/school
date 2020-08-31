@@ -1,0 +1,767 @@
+WEBVTT
+
+1
+00:00:02.870 --> 00:00:04.950
+Now we're going to talk about
+
+2
+00:00:04.950 --> 00:00:07.605
+my good friends JES and JCL.
+
+3
+00:00:07.605 --> 00:00:09.810
+If you're keeping track
+of acronyms at home,
+
+4
+00:00:09.810 --> 00:00:13.815
+that's job entry subsystem
+and job control language.
+
+5
+00:00:13.815 --> 00:00:16.350
+JES is a component
+of Z iOS that's
+
+6
+00:00:16.350 --> 00:00:18.885
+responsible for managing
+batch workloads.
+
+7
+00:00:18.885 --> 00:00:20.280
+In other words, you've got
+
+8
+00:00:20.280 --> 00:00:22.755
+this big pile of work
+that needs to get done
+
+9
+00:00:22.755 --> 00:00:24.810
+and JES manages that pile of
+
+10
+00:00:24.810 --> 00:00:27.195
+work including
+receiving the jobs,
+
+11
+00:00:27.195 --> 00:00:28.920
+making sure they make sense,
+
+12
+00:00:28.920 --> 00:00:30.480
+putting all the pieces together,
+
+13
+00:00:30.480 --> 00:00:31.935
+scheduling them to run,
+
+14
+00:00:31.935 --> 00:00:33.595
+getting them into the pipeline,
+
+15
+00:00:33.595 --> 00:00:35.330
+and making sure
+that when they run,
+
+16
+00:00:35.330 --> 00:00:38.140
+the output goes to
+the right place.
+
+17
+00:00:38.140 --> 00:00:40.685
+JCL is a scripting language
+
+18
+00:00:40.685 --> 00:00:42.320
+that we use to
+instruct the system
+
+19
+00:00:42.320 --> 00:00:43.490
+how we want it to run
+
+20
+00:00:43.490 --> 00:00:46.775
+those jobs once JCL
+is ready to run them.
+
+21
+00:00:46.775 --> 00:00:49.535
+Now there are two flavors of JES,
+
+22
+00:00:49.535 --> 00:00:51.785
+JES 2 and JES 3.
+
+23
+00:00:51.785 --> 00:00:53.960
+They handle things a
+little bit differently
+
+24
+00:00:53.960 --> 00:00:56.795
+enough for them to be
+a JES 2 and a JES 3,
+
+25
+00:00:56.795 --> 00:00:58.820
+and most people use JES 2,
+
+26
+00:00:58.820 --> 00:01:00.800
+but the fundamentals
+are the same.
+
+27
+00:01:00.800 --> 00:01:04.670
+They both accept and queue
+jobs submitted for execution.
+
+28
+00:01:04.670 --> 00:01:06.350
+They both have the concept of
+
+29
+00:01:06.350 --> 00:01:08.420
+an input and an output queue.
+
+30
+00:01:08.420 --> 00:01:11.120
+They both queue jobs
+for an initiator.
+
+31
+00:01:11.120 --> 00:01:13.510
+That's a JES program that
+goes around and says,
+
+32
+00:01:13.510 --> 00:01:14.710
+"Hey, give me the next job,
+
+33
+00:01:14.710 --> 00:01:16.160
+we're ready to do some work."
+
+34
+00:01:16.160 --> 00:01:19.310
+There's also this concept
+of accepting output from
+
+35
+00:01:19.310 --> 00:01:22.535
+a job when it runs and
+managing where it goes.
+
+36
+00:01:22.535 --> 00:01:24.080
+It might go to a printer,
+
+37
+00:01:24.080 --> 00:01:26.540
+it might get deleted
+or maybe it saved
+
+38
+00:01:26.540 --> 00:01:29.555
+on a spool for an output
+manager to retrieve.
+
+39
+00:01:29.555 --> 00:01:32.170
+The term spool is
+probably a new one,
+
+40
+00:01:32.170 --> 00:01:33.410
+you can just think of it as
+
+41
+00:01:33.410 --> 00:01:35.420
+a method of handling data where
+
+42
+00:01:35.420 --> 00:01:39.925
+new data can be fed in while
+existing data is pulled off.
+
+43
+00:01:39.925 --> 00:01:42.410
+So a spool functions both as
+
+44
+00:01:42.410 --> 00:01:45.050
+an input and an output for JES.
+
+45
+00:01:45.050 --> 00:01:46.520
+Some of the jobs that get run on
+
+46
+00:01:46.520 --> 00:01:49.385
+the Z iOS are what
+you call batch jobs.
+
+47
+00:01:49.385 --> 00:01:51.440
+That term comes from the way
+that they're started.
+
+48
+00:01:51.440 --> 00:01:53.810
+Typically, with a single job
+that ends up doing
+
+49
+00:01:53.810 --> 00:01:56.990
+a whole lot of work with
+minimal human interaction,
+
+50
+00:01:56.990 --> 00:01:58.400
+and they're either scheduled for
+
+51
+00:01:58.400 --> 00:02:01.790
+a specific time or
+on as needed basis.
+
+52
+00:02:01.790 --> 00:02:05.420
+So an example of a batch job
+might be a job that looks at
+
+53
+00:02:05.420 --> 00:02:07.250
+the inventory of a warehouse
+
+54
+00:02:07.250 --> 00:02:09.590
+and the orders that
+come in during the day,
+
+55
+00:02:09.590 --> 00:02:11.645
+and determines how the truck
+should be loaded up
+
+56
+00:02:11.645 --> 00:02:14.315
+overnight for when the driver
+show up the next morning.
+
+57
+00:02:14.315 --> 00:02:16.010
+You would just make
+sure that the job
+
+58
+00:02:16.010 --> 00:02:17.690
+is pointing at the right data,
+
+59
+00:02:17.690 --> 00:02:19.940
+run it, and know
+that the output will
+
+60
+00:02:19.940 --> 00:02:22.430
+be where you expect it
+to be the next day.
+
+61
+00:02:22.430 --> 00:02:26.090
+To speed up processing and
+make things run faster,
+
+62
+00:02:26.090 --> 00:02:27.890
+jobs with similar needs get
+
+63
+00:02:27.890 --> 00:02:30.260
+batched together
+and run as a group.
+
+64
+00:02:30.260 --> 00:02:33.110
+No need for everyone to
+drive, you can carpool.
+
+65
+00:02:33.110 --> 00:02:35.360
+Batch jobs can also be stored
+
+66
+00:02:35.360 --> 00:02:37.220
+up during working hours and then
+
+67
+00:02:37.220 --> 00:02:39.290
+executed in the evening
+when there aren't
+
+68
+00:02:39.290 --> 00:02:41.960
+a lot of people logged in
+doing interactive work.
+
+69
+00:02:41.960 --> 00:02:44.155
+Once a batch job begins,
+
+70
+00:02:44.155 --> 00:02:47.915
+it continues until it's done
+or severe error occurs.
+
+71
+00:02:47.915 --> 00:02:50.570
+After a batch job is
+submitted for execution,
+
+72
+00:02:50.570 --> 00:02:52.580
+there's normally
+no further interaction
+
+73
+00:02:52.580 --> 00:02:54.965
+required from you
+until it's done.
+
+74
+00:02:54.965 --> 00:02:57.200
+But you typically watch
+it for a little while
+
+75
+00:02:57.200 --> 00:03:00.080
+just to make sure nothing
+obviously wrong is happening.
+
+76
+00:03:00.080 --> 00:03:02.555
+We've spent all this
+time talking about JES,
+
+77
+00:03:02.555 --> 00:03:04.460
+let's get over to JCL.
+
+78
+00:03:04.460 --> 00:03:06.410
+JCL is where you specify
+
+79
+00:03:06.410 --> 00:03:09.455
+any resources that are
+required by the program.
+
+80
+00:03:09.455 --> 00:03:11.750
+Let's say you're running
+a program that's doing
+
+81
+00:03:11.750 --> 00:03:14.645
+something with a dataset
+like most jobs are.
+
+82
+00:03:14.645 --> 00:03:16.850
+You obviously need
+to at least specify
+
+83
+00:03:16.850 --> 00:03:20.030
+an input dataset and
+probably an output dataset.
+
+84
+00:03:20.030 --> 00:03:22.370
+It also acts as
+a communicator between
+
+85
+00:03:22.370 --> 00:03:24.710
+the operating system
+and the program.
+
+86
+00:03:24.710 --> 00:03:26.840
+It makes jobs out of work that
+
+87
+00:03:26.840 --> 00:03:29.280
+can run without
+any manual intervention,
+
+88
+00:03:29.280 --> 00:03:31.760
+and it works according to
+the priority levels of
+
+89
+00:03:31.760 --> 00:03:35.345
+each job because that's
+the thing you can set it to.
+
+90
+00:03:35.345 --> 00:03:38.915
+In the JCL, you
+specify who you are,
+
+91
+00:03:38.915 --> 00:03:41.155
+which is important
+for security reasons,
+
+92
+00:03:41.155 --> 00:03:42.770
+and which resources and
+
+93
+00:03:42.770 --> 00:03:45.530
+services are needed for
+the program to run.
+
+94
+00:03:45.530 --> 00:03:48.185
+Safe to say, without JCL,
+
+95
+00:03:48.185 --> 00:03:50.120
+programs would have
+a really hard time
+
+96
+00:03:50.120 --> 00:03:51.725
+running on a mainframe.
+
+97
+00:03:51.725 --> 00:03:55.220
+A job is a collection of
+instructions that performs
+
+98
+00:03:55.220 --> 00:03:58.775
+a specific task when
+executed by the system.
+
+99
+00:03:58.775 --> 00:04:01.010
+Think of a job as a unit of
+
+100
+00:04:01.010 --> 00:04:04.700
+work which can be made
+up of many jobs steps.
+
+101
+00:04:04.700 --> 00:04:07.400
+Each job step is specified in
+
+102
+00:04:07.400 --> 00:04:11.975
+JCL through a set of
+job control statements.
+
+103
+00:04:11.975 --> 00:04:13.700
+The operating system uses
+
+104
+00:04:13.700 --> 00:04:16.220
+the job entry
+subsystem to receive
+
+105
+00:04:16.220 --> 00:04:18.335
+jobs into the operating system
+
+106
+00:04:18.335 --> 00:04:20.360
+and to schedule them
+for processing,
+
+107
+00:04:20.360 --> 00:04:22.325
+as well as handling the output.
+
+108
+00:04:22.325 --> 00:04:25.220
+Here's how it goes
+from beginning to end.
+
+109
+00:04:25.220 --> 00:04:28.925
+First, the user creates
+the JCL for the job.
+
+110
+00:04:28.925 --> 00:04:31.150
+Just a little bit of
+insider information,
+
+111
+00:04:31.150 --> 00:04:33.420
+very few people sit down and say,
+
+112
+00:04:33.420 --> 00:04:35.810
+"I'm going to write some JCL
+from scratch today."
+
+113
+00:04:35.810 --> 00:04:38.900
+No. They have a few basic
+templates that they keep
+
+114
+00:04:38.900 --> 00:04:40.100
+around and edit them to fit
+
+115
+00:04:40.100 --> 00:04:42.710
+whatever purpose they have
+at that particular moment.
+
+116
+00:04:42.710 --> 00:04:44.840
+Anyway, whether it's written from
+
+117
+00:04:44.840 --> 00:04:47.300
+scratch or modified from
+something they had before,
+
+118
+00:04:47.300 --> 00:04:50.105
+the user has the JCL
+they want to run.
+
+119
+00:04:50.105 --> 00:04:53.540
+Next, the user submits
+the JCL to JES,
+
+120
+00:04:53.540 --> 00:04:55.220
+the job entry subsystem,
+
+121
+00:04:55.220 --> 00:04:57.460
+now begins the job conversion.
+
+122
+00:04:57.460 --> 00:05:02.010
+The JCL gets read by JES and
+stores that in the spool.
+
+123
+00:05:02.010 --> 00:05:04.190
+All throughout this,
+the system communicates
+
+124
+00:05:04.190 --> 00:05:07.010
+with the user on
+the status of their job.
+
+125
+00:05:07.010 --> 00:05:08.645
+When the job is complete,
+
+126
+00:05:08.645 --> 00:05:11.030
+the allocated resource
+and the space that
+
+127
+00:05:11.030 --> 00:05:13.460
+it took up on the JES
+spool are released.
+
+128
+00:05:13.460 --> 00:05:16.775
+Now, the user can view
+and interpret the output.
+
+129
+00:05:16.775 --> 00:05:19.355
+Let's take a look at
+what JCL looks like.
+
+130
+00:05:19.355 --> 00:05:21.550
+This is a sample job card.
+
+131
+00:05:21.550 --> 00:05:23.210
+First, you see the information
+
+132
+00:05:23.210 --> 00:05:25.060
+required for
+the spooling of a job,
+
+133
+00:05:25.060 --> 00:05:27.185
+where you want the job
+to go and run.
+
+134
+00:05:27.185 --> 00:05:30.050
+Then there's
+the //star statement.
+
+135
+00:05:30.050 --> 00:05:32.540
+When you want to insert
+a space or a comment,
+
+136
+00:05:32.540 --> 00:05:34.040
+prepend it with this.
+
+137
+00:05:34.040 --> 00:05:36.020
+Next, is the step and
+
+138
+00:05:36.020 --> 00:05:38.135
+the name of the program
+we want to execute.
+
+139
+00:05:38.135 --> 00:05:42.785
+In this case, the step is
+STEP10 and the program is SORT.
+
+140
+00:05:42.785 --> 00:05:45.095
+For SORTIN and SORTOUT,
+
+141
+00:05:45.095 --> 00:05:48.535
+those DD statements are
+the data definitions.
+
+142
+00:05:48.535 --> 00:05:50.540
+They spell out
+the input and output
+
+143
+00:05:50.540 --> 00:05:53.510
+datasets that the SORT job
+needs to run.
+
+144
+00:05:53.510 --> 00:05:56.300
+Since the SORTOUT dataset is new,
+
+145
+00:05:56.300 --> 00:05:58.895
+we need to specify
+the details for it.
+
+146
+00:05:58.895 --> 00:06:02.060
+We also have a few DD
+statements down here which
+
+147
+00:06:02.060 --> 00:06:05.330
+tells JES what to do with the
+output of the job itself.
+
+148
+00:06:05.330 --> 00:06:10.554
+SYSIN DD asterisk which
+some people call a splat,
+
+149
+00:06:10.554 --> 00:06:12.380
+this is the area where we send
+
+150
+00:06:12.380 --> 00:06:14.525
+additional commands
+to the program.
+
+151
+00:06:14.525 --> 00:06:17.780
+For example, maybe this SORT
+program has a way of sorting
+
+152
+00:06:17.780 --> 00:06:19.190
+things backwards or putting
+
+153
+00:06:19.190 --> 00:06:21.440
+numbers before or after letters.
+
+154
+00:06:21.440 --> 00:06:24.010
+Those might be parameters
+we'd set in here.
+
+155
+00:06:24.010 --> 00:06:26.850
+To mark the end of
+the SYSIN stream data,
+
+156
+00:06:26.850 --> 00:06:30.495
+we use /asterisk, splat.
+
+157
+00:06:30.495 --> 00:06:33.525
+Now, that's the basics of JCL.
+
+158
+00:06:33.525 --> 00:06:34.680
+If that made sense,
+
+159
+00:06:34.680 --> 00:06:37.445
+you've got a good foundation
+to go much further.
+
+160
+00:06:37.445 --> 00:06:40.100
+We aren't going to get into
+all of the features of JCL,
+
+161
+00:06:40.100 --> 00:06:43.130
+otherwise this will be
+a Coursera course on JCL,
+
+162
+00:06:43.130 --> 00:06:46.340
+but there are a few other things
+I want you to know.
+
+163
+00:06:46.340 --> 00:06:50.030
+You know what? We're actually
+running out of time for
+
+164
+00:06:50.030 --> 00:06:53.390
+this video and we need to
+continue it onto the next one.
+
+165
+00:06:53.390 --> 00:06:56.610
+That's a bit of
+a spoiler for part 2.

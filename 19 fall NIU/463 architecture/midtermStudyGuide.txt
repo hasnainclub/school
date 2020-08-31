@@ -1,0 +1,75 @@
+What does a decoder do?
+A decoder has n input bits and 2^n outputs.  The input bits represent an address that determines which one of the outputs will be set to true.
+
+
+What is a decoder useful for?
+Decoders are useful for building other circuits like multiplexers and demultiplexers.  For example, a demultiplexer is a decoder with an 'enable'  input bit.
+
+
+What does a multiplexer do?
+A multiplexer has n address inputs, 2^n data inpouts and one data input.  It will send the input bit that is selected by the address value to the output.
+
+
+If a multiplexer has 8 selection lines (control lines), how many input lines and how many
+output lines can it have?
+256 inputs (0-255).  1 output
+
+//2^8 == 256
+
+//2^n, n is the 8 selection lines
+
+
+What is an ALU?
+Part of a CPU called the Arithmetic Logic Unit
+
+
+What kinds of operations does an ALU typically handle?
+add, subtract, and, or, not, xor,...
+
+
+If an ALU can handle 16 operations on 32-bit numbers, how many control lines does it need?
+How many data lines does it need for each input? How many data lines does it need for the
+output?
+4 control lines.     64 data lines for input.    32 data lines for output 
+
+//for control lines
+
+//2 ^ n = 16
+
+//calculate n
+
+//then
+
+// (32 each A & B).  
+
+// (Q is 32)
+
+//oct 3 made diagram, see there for more explanation
+
+
+What is the difference between a sequential and a combinatorial circuit?
+Why does a sequential circuit need a clock line?
+rising edge = a transition from 0 to 1
+falling edge = a transition from 1 to 0
+edge triggered = a circuit that updates its internal state in response to an edge on a clock input signal such as a master-slave memory latch.
+level triggered = a circuit that updates its internal state in response to a level on an enable input signal such as a transparent D latch.
+Memory and registers use edge-triggered latches.
+
+
+What is LSB of the decimal value 12342352363467345346 ?
+even, so 0
+What is LSB of the decimal value 12342352363467345343 ?
+odd so 1
+
+
+
+
+What is the difference between a sequential and a combinatorial circuit?
+ Answer:	
+Combinational circuits are defined as the time independent circuits which do not depends upon previous inputs to generate any output are termed as combinational circuits.    Sequential circuits are those which are dependent on clock cycles and depends on present as well as past inputs to generate any output.
+ Sequential circuit uses clock signal and level inputs (or pulsed) . The output pulse is the same duration as the clock pulse for the clocked sequential circuits.  Level output changes state at the start of an input pulse and remains in that until the next input or clock pulse.
+-- correct answer is below
+sequential circuits maintain and react to a stored state in addition to any input signals it may have while combinational circuits only react to their input signals.
+Sequential circuits have at least one internal signal that feeds back into its own input.
+A clock line is needed to tell a sequential circuit when to update its state.
+

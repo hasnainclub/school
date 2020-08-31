@@ -1,0 +1,10 @@
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\bin\Procedure Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\bin\Procedure Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\bin\Procedure Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Debug\Procedure_Demo.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Debug\Procedure_Demo.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Debug\Procedure Demo.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Debug\Procedure Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Debug\Procedure Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Debug\Procedure Demo.pdb

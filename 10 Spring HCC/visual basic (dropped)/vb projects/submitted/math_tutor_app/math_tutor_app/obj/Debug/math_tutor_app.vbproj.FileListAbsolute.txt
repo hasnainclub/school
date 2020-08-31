@@ -1,0 +1,13 @@
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\bin\Debug\math_tutor_app.exe
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\bin\Debug\math_tutor_app.pdb
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\bin\Debug\math_tutor_app.xml
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.exe
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.xml
+C:\Users\hasnainpc\Desktop\vb projects\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.pdb
+C:\Users\hasnainpc\Desktop\vb projects\submitted\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.exe
+C:\Users\hasnainpc\Desktop\vb projects\submitted\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.xml
+C:\Users\hasnainpc\Desktop\vb projects\submitted\math_tutor_app\math_tutor_app\obj\Debug\math_tutor_app.pdb

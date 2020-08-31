@@ -1,0 +1,2 @@
+D:\sovb4\examples\Chap3\Error1\obj\Release\Error1.exe
+D:\sovb4\examples\Chap3\Error1\obj\Release\Error1.xml

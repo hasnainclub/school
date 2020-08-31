@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap8\Timer Demo\bin\Timer Demo.exe
+D:\sovb4\examples\Chap8\Timer Demo\bin\Timer Demo.xml
+D:\sovb4\examples\Chap8\Timer Demo\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Timer Demo\obj\Release\Timer_Demo.Form1.resources
+D:\sovb4\examples\Chap8\Timer Demo\obj\Release\Timer_Demo.Resources.resources
+D:\sovb4\examples\Chap8\Timer Demo\obj\Release\Timer Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap8\Timer Demo\obj\Release\Timer Demo.exe
+D:\sovb4\examples\Chap8\Timer Demo\obj\Release\Timer Demo.xml

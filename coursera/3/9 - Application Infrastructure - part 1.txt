@@ -1,0 +1,93 @@
+Let's move up the
+stack a little bit and talk about application
+infrastructure. On your phone or
+personal computer., you typically launch an
+application to interact with it, especially if it's
+something like a game or a browser or a word
+processing program. No matter what type
+of application it is, it typically sits on top of the operating system
+and relies on the services of the
+operating system to execute it and it does something. On the mainframe, the
+magic word is transaction. The simplest way to think
+about transaction is an interaction typically
+where something is exchanged. If you were in a store, that transaction would begin when you say I want to buy
+this and it would finish when you walk out
+of the store holding the thing you wanted without
+getting chased down. Or if it's an
+informational transaction, like you're buying
+an airline ticket, the transaction starts
+when you click to book the flight and
+isn't concluded until you've got some
+sort of confirmation with a booking ID or
+something you can reference. Additionally, if someone
+were to come along and try to book the same
+seat on the same flight, they wouldn't be able to
+because you already got it. What I'm getting at is that
+at the business level, it's important that there be a clear beginning and end
+point of a transaction. The same goes for all the smaller technical
+transactions that make up the overall
+business transaction. The characteristics of a
+transaction can best be described by how they adhere
+to the ACID properties. ACID stands for
+Atomicity, Consistency, Isolation, and Durability.
+One at a time. Atomicity, that's a
+way of saying that either a transaction
+happened or it didn't. Since its transaction can have multiple smaller steps of
+transactions within it, it's important that
+all of those complete before we consider
+the transaction done. So there's no way to go back later and say, well, actually, we took your money, but we never actually
+gave you what you wanted. Consistency means
+that the database or the data related
+to a transaction only moves between
+one valid state and another valid state
+and at any time, all of the data can be frozen, gone over with a fine-tooth
+comb and it would all checkout and make sense
+according to its rules. An inconsistent
+database is one where bad programming could
+potentially leave data in unacceptable places or update values in undocumented
+or unsupported ways. Number three is isolation. It's generally understood
+that a system will have lots and lots of transactions
+happening at the same time. There's a fair amount
+of scheduling and threading and magic that
+makes this all possible. Isolation is a measure of how smoothly a single transaction can happen without being affected by all the other
+transactions around it. This isn't necessarily a
+performance statement, but how often am I going to run into tables that
+are locked because other people are using them or seeing data that is
+meant to be temporary? Put another way, how well can the system scale while
+keeping complexity down? Then D, durability. How permanent are
+successful transactions? Sometimes software crashes. Maybe someone thought
+they were logged into the test system
+when they were actually logged into the production system and they brought down database, or maybe a cable got pulled
+that wasn't supposed to get pulled or someone backed a
+forklift into a [inaudible]. Stuff happens. Anyway, the transactions
+that went through, will they still be there
+when the system comes back up or will you have to say, hey, anybody who made updates in less 30 minutes should check and make sure
+they're still there. You don't want to do that. That is the measure
+of durability. You've got all four
+things; atomicity, consistency, isolation,
+and durability. You've got yourself
+an excellent platform for important business
+transactions. This is an industry-wide concept. It's not just the
+mainframe thing. You can look at any solution
+and consider its acidity. So if I were looking
+for an ACID property that ensures that all the
+data in a database is valid, explainable, and done according to the documented rules
+for that database, which ACID property would
+you be looking for? That's the consistency property. Without it, you get
+transactions halfway done, money being withdrawn
+from one account without going anywhere else and all
+sorts of other bad stuff. So consistency, pretty important because once
+your database is corrupted, any further work could
+be deemed invalid. On the mainframe, a
+transaction processing Manager or transaction manager exists to tie together
+many transactions that are required to fulfill
+a larger transaction. So in this example, the travel agencies sits here in the middle and exists to
+make sure that you get booked on the flight
+you want with the hotel reservation you wanted and you get car rentals
+where you need them. For the consumer, the
+transaction isn't complete until
+everything is complete and you feel confident that your vacation or
+business trip is booked. So what magic makes
+this possible? In the next lesson,
+we'll dig into some of the middleware that powers
+transactions on the mainframe.

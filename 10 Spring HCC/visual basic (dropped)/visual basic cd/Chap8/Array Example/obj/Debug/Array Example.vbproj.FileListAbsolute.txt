@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap8\Array Example\bin\Debug\Array Example.exe
+D:\sovb4\examples\Chap8\Array Example\bin\Debug\Array Example.pdb
+D:\sovb4\examples\Chap8\Array Example\bin\Debug\Array Example.xml
+D:\sovb4\examples\Chap8\Array Example\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Array Example\obj\Debug\Array_Example.Form1.resources
+D:\sovb4\examples\Chap8\Array Example\obj\Debug\Array_Example.Resources.resources
+D:\sovb4\examples\Chap8\Array Example\obj\Debug\Array Example.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap8\Array Example\obj\Debug\Array Example.exe
+D:\sovb4\examples\Chap8\Array Example\obj\Debug\Array Example.xml
+D:\sovb4\examples\Chap8\Array Example\obj\Debug\Array Example.pdb

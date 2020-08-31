@@ -1,0 +1,93 @@
+
+1.Question 1
+
+Which data set utility is used for copying a sequential data set which produces a PDS member?
+
+IEBGENER
+
+
+
+2.Question 2
+
+What does DISP=(NEW,PASS,) indicate?
+
+The system passes the new data set to the next steps if the step terminates normally, and deletes the data set if the step terminates abnormally
+
+
+3.Question 3
+
+Select the correct statement regarding In-Stream Data
+
+An in-stream data set is a data set contained within a set of JCL statements
+
+
+
+4.Question 4
+
+What is the main purpose of the IBM utility IEBUPDTE?
+
+Create or modify sequential or partitioned data sets or PDSEs
+
+
+5.Question 5
+
+Which TSO command will invoke the z/OS UNIX shell?
+
+OMVS
+
+
+
+6.Question 6
+
+What is typically an empty directory in the currently accessible filesystem on which an additional filesystem is mounted?
+
+Mount point
+
+
+
+7.Question 7
+
+Which z/OS component can print the output, or save it on spool for an output manager to retrieve?
+
+JES
+
+
+
+8.Question 8
+
+On the mainframe, what is a unit of work, made up of several steps, and performs a specific task or tasks when executed by the operating system?
+
+Job
+
+
+9.Question 9
+
+In JCL, what are the unique identifiers in columns one and two which indicate that this is JCL to the operating system?
+
+//    (two forward slashes)
+
+
+
+10.Question 10
+
+Which JCL statement is used to identify the name(s) of a PDS or PDSE that contains a set of JCL statements?
+
+Include
+
+
+
+11.Question 11
+
+What type of JCL system symbols are set at IPL time and will not change until the next IPL?
+
+Static
+
+
+12.Question 12
+
+Which JCL statement identifies the order in which the libraries are searched?
+
+JCLLIB
+
+
+I, Hasnain Attarwala, understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 

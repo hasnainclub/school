@@ -1,0 +1,108 @@
+
+location                 broker                   first 3 bytes - fund nmbr. Next 10 bytes - deposit amount... etc 
+--------------           --------------------     ----------------------------------------------------
+Athens, Greece           George Makedonas         003 0000467942  004 0003010348  023 0004376128----065 0004362588
+Athens, Greece           Aristotle Onassis        0010000073711010000058897603100005862820550000601771
+Athens, Greece           Jackie Onassis           0650000010371064000030099403200001953820540000315454
+Athens, Greece           Maria Callas             0210000045264000000000000000000000000000000000000000
+Athens, Greece           Enid Holt                0200000058682
+Athens, Greece           Kostas Siegrid           0210000165594
+Berlin, Germany          Erich Kleiber            0210042276551
+Berlin, Germany          Wilhelm Furtwaengler     0340000043761
+Berlin, Germany          Adolph Dege              0330000437748
+Berlin, Germany          Johannes Klopp           0550000601717
+Berlin, Germany          Eugen Jochum             0460000464963
+Bonn, Germany            Ludwig van Beethoven     0550000451328
+Bonn, Germany            Uwe Schmidt              0580000601176
+Bonn, Germany            Helga Dernesch           0580000723036
+Bonn, Germany            Richard Strauss          0640003173776
+Chicago, U.S.            Maurizio Damilano        0650000768733
+Chicago, U.S.            Chi Yen Weh              0660000180488
+Chicago, U.S.            Steve Peplowski          0610003145342
+Chicago, U.S.            Michael Smith            0610001504294
+Chicago, U.S.            Charles Melodia          0340004376128
+Chicago, U.S.            Lisa Loganski            0330000167151
+Chicago, U.S.            Theodore Thomas          0300001504564
+Chicago, U.S.            Frederick Stock          0300003161576
+Belfast, N. Ireland      Billy O'Leary            0300001280477
+Belfast, N. Ireland      Anna Owen                0550013372781
+Edinburgh, U.K.          Billy Connolly           0510000223951
+Edinburgh, U.K.          Omar Sharif              0130001624800
+Edinburgh, U.K.          Julie Christie           1010015210497
+Edinburgh, U.K.          James Oxfordshire        0030000463068
+Frankfurt, Germany       Johannes Dundor          0030000167083
+Frankfurt, Germany       Gretel Decker            0210000464828
+Frankfurt, Germany       Adam Dieffenbach         0210001675575
+Hong Kong, China         Mao Zedong               0200000314412
+Hong Kong, China         Zhou Enlai               0200000165458
+Hong Kong, China         Zhau Ziyang              0130002872118
+Hong Kong, China         Chiang Kai-shek          0130000437612
+Hong Kong, China         Shau-Zin Loki            0100001669888
+Hong Kong, China         Stephanie Buckingham     0130000436299
+Hong Kong, China         Don Draper               0140001505634
+Kansas City, U.S.        Geoffrey Decker          0460000270800
+London, U.K.             Elizabeth Windsor        0460016535048
+London, U.K.             Stevie Nicks             0610030088723
+London, U.K.             Andrew Windsor           0610001370234
+London, U.K.             Michael Windsor          0580000040620
+London, U.K.             Phillip Windsor          0650001337738
+London, U.K.             William Windsor          0710002707986
+Los Angeles, U.S.        William Mills            0620003157934
+Los Angeles, U.S.        Catherine Monteiro       0620001670984
+Los Angeles, U.S.        Lindsay Lohan            0650000135386
+Los Angeles, U.S.        Paris Hilton             0460000270786
+Moscow, Russia           Ivan Grozny              0400003249586
+Moscow, Russia           Vladimir Ashkenazy       0350000000000
+Moscow, Russia           Serge Rachmaninov        0200001678946
+Moscow, Russia           Vladimir Putin           0210000468023
+Moscow, Russia           Leonid Breshnev          0210002270238
+Moscow, Russia           Dmitri Shostakovich      0200000315793
+New York, U.S.           Gary Graffman            0210000466385
+New York, U.S.           Andre Previn             0030001655928
+New York, U.S.           Samuel Jefferson         0100004671300
+New York, U.S.           John Adams               0300001670836
+New York, U.S.           Cheryl Studer            0350000601176
+New York, U.S.           Renee Fleming            0460000752810
+New York, U.S.           Birgit Nilsson           0440001035810
+New York, U.S.           Christa Ludwig           0510001670836
+New York, U.S.           James Levine             0550000166542
+New York, U.S.           Leonard Bernstein        0550013540000
+Paris, France            Napoleon Bonaparte       0550031142000
+Paris, France            Claude Monet             0580060028222
+Paris, France            Olivier Messiaen         0340003160208
+Paris, France            Claude Debussy           0340004649622
+Paris, France            Maurice Ravel            0510000165188
+Paris, France            Edith Piaf               0610000451789
+Paris, France            Coco Chanel              0100000451423
+Rio de Janeiro, Br.      Joao Castagneto          0130001504429
+Rio de Janeiro, Br.      Lasar Segall             0130003009928
+Rio de Janeiro, Br.      Tarsila do Amaral        0130005880963
+Rio de Janeiro, Br.      Eliseu Visconti          0100000586282
+Rome, Italy              Julius Caesar            0580000752147
+Rome, Italy              Franco Sinatra           0640009026576
+Rome, Italy              Giacomo Puccini          0650000780581
+Rome, Italy              Enrico Caruso            0650004364348
+Rome, Italy              Sofia Loren              0640000601582
+Sydney, Australia        Milton Sheppard          0640062353866
+Sydney, Australia        Shelley Boughton         0650109743866
+Sydney, Australia        Joan Sutherland          0620055583866
+Sydney, Australia        Barry Tuckwell           0620123284678
+Sydney, Australia        Cayla Smithe             0340028503988
+Sydney, Australia        Benjamin Britten         0360055586222
+Sydney, Australia        Peter Pears              0350058291934
+Sydney, Australia        Paul Gray                0350055570421
+Vienna, Austria          Herbert von Karajan      0020078642202
+Vienna, Austria          Josef Haydn              0510078642093
+Vienna, Austria          Johann Strauss, Jr.      0300092189134
+Vienna, Austria          Karl Boehm               0330078642093
+Vienna, Austria          Elisa Schwarzkopf        0300065103339
+Vienna, Austria          Maurizio Pollini         0330042084107
+Zurich, Switzerland      Earl Grey                0330078653738
+Zurich, Switzerland      Diana Kensington         0330023805080
+Zurich, Switzerland      Axel Vond                0330079996486
+Zurich, Switzerland      Ute Schweitzer           0460078642093
+Zurich, Switzerland      Rene Jacobs              0510078642161
+Zurich, Switzerland      Anton Bruckner           0550038027590
+Zurich, Switzerland      Charles Pasadena         0510078653738
+
+

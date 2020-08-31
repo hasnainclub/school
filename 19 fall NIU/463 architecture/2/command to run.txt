@@ -1,0 +1,5 @@
+/home/turing/z1835773/murray/463_assign2/a2/ucsim prog2.uc -v1
+
+/home/turing/z1835773/murray/463_assign2/a2/ucsim prog2.uc prog2.dump -v1 | less
+
+cp /home/turing/z1835773/murray/463_assign2/a2/ . -r

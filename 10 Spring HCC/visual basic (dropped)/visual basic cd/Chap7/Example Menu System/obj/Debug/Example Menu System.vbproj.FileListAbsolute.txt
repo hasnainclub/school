@@ -1,0 +1,30 @@
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\bin\Debug\Example Menu System.exe
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\bin\Debug\Example Menu System.pdb
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\bin\Debug\Example Menu System.xml
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\obj\Debug\Example_Menu_System.Form1.resources
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\obj\Debug\Example_Menu_System.Resources.resources
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\obj\Debug\Example Menu System.vbproj.GenerateResource.Cache
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\obj\Debug\Example Menu System.exe
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\obj\Debug\Example Menu System.xml
+C:\Users\Kip\AppData\Local\Temporary Projects\Example Menu System\obj\Debug\Example Menu System.pdb
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\obj\Debug\Example Menu System.exe
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\obj\Debug\Example Menu System.xml
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\obj\Debug\Example Menu System.pdb
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\bin\Debug\Example Menu System.exe
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\bin\Debug\Example Menu System.pdb
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\bin\Debug\Example Menu System.xml
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\obj\Debug\Example_Menu_System.Form1.resources
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\obj\Debug\Example_Menu_System.Resources.resources
+D:\sovb4\examples\Chap7\Example Menu System\Example Menu System\obj\Debug\Example Menu System.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap7\Example Menu System\obj\Debug\Example Menu System.exe
+D:\sovb4\examples\Chap7\Example Menu System\obj\Debug\Example Menu System.xml
+D:\sovb4\examples\Chap7\Example Menu System\obj\Debug\Example Menu System.pdb
+D:\sovb4\examples\Chap7\Example Menu System\bin\Debug\Example Menu System.exe
+D:\sovb4\examples\Chap7\Example Menu System\bin\Debug\Example Menu System.pdb
+D:\sovb4\examples\Chap7\Example Menu System\bin\Debug\Example Menu System.xml
+D:\sovb4\examples\Chap7\Example Menu System\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap7\Example Menu System\obj\Debug\Example_Menu_System.Form1.resources
+D:\sovb4\examples\Chap7\Example Menu System\obj\Debug\Example_Menu_System.Resources.resources
+D:\sovb4\examples\Chap7\Example Menu System\obj\Debug\Example Menu System.vbproj.GenerateResource.Cache

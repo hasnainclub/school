@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap6\Sub Procedure Demo\obj\Debug\Sub Procedure Demo.exe
+D:\sovb4\examples\Chap6\Sub Procedure Demo\obj\Debug\Sub Procedure Demo.xml
+D:\sovb4\examples\Chap6\Sub Procedure Demo\obj\Debug\Sub Procedure Demo.pdb
+D:\sovb4\examples\Chap6\Sub Procedure Demo\bin\Sub Procedure Demo.exe
+D:\sovb4\examples\Chap6\Sub Procedure Demo\bin\Sub Procedure Demo.pdb
+D:\sovb4\examples\Chap6\Sub Procedure Demo\bin\Sub Procedure Demo.xml
+D:\sovb4\examples\Chap6\Sub Procedure Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap6\Sub Procedure Demo\obj\Debug\Sub_Procedure_Demo.Form1.resources
+D:\sovb4\examples\Chap6\Sub Procedure Demo\obj\Debug\Sub_Procedure_Demo.Resources.resources
+D:\sovb4\examples\Chap6\Sub Procedure Demo\obj\Debug\Sub Procedure Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Debug\Sub Procedure Demo.exe
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Debug\Sub Procedure Demo.xml
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Debug\Sub Procedure Demo.pdb

@@ -1,0 +1,96 @@
+For much of this course, we've been talking about using the 30 to 70 console
+to access the system, but there are actually
+several ways you can interact with the mainframe and
+they can be as graphical, text, or API based as you'd like. After all, the
+fundamentals of z/OS are well-documented and open to whatever model you want to use. Let's talk about z/OSMF, which stands for
+the z/OS management facility. This provides system
+management functions in a task-oriented browser-based
+user interface. The goal of z/ OSMF
+is putting as much of the operating system directly at your fingertips as possible, so you can really focus on what you're
+trying to get done. This includes
+streamlining the kinds of commands we've been
+talking about here, but z/OSMF also has a lot of new capabilities that are
+unique to z/OSMF itself, z/OSMF is shipped as part
+of the operating system, and it aims to
+simplify, optimize, and modernize z/Os to
+the system programmer, as well as to people
+who specialize in networking, storage, security. So there's really
+something for everyone. Wait, there's a way to
+make all this simple. Why don't you just
+show me that earlier? Why did I have to learn
+all about IODF configs, system libraries,
+JCL and all that? Well, in many cases, you still need to know what's happening behind the scenes. The goal here is simplification, assistance, and ScriptAbility. If there's something
+wrong with your JCL, z/OSMF might not have
+a specialized tool to help you. If your system libraries
+aren't set up right, z/OSMF might not work, and if you're security
+definitions are wrong, you've got to fix that before
+you can jump into z/OSMF. So knowing what's happening on the system is
+incredibly important. But once you've gotten
+z/OSMF up and running, you should see if
+those task can be further automated by
+what's available now. It's especially
+helpful when you have a mixed skill workforce because the experience system programmer can take a task they know like the back of their hand and automate it into what's
+called a workflow, hand that workflow off
+to a new mainframer, and they can guide it
+through to completion without needing to come up with all of the commands themselves. Even better, because
+the workflow has already been written and
+we all know it works, it's going to be a whole heck of a lot more consistent from run to run than someone typing
+out commands for memory. You don't need me to tell
+you that's important. These workflows
+integrate with JCL, Rexx, Unix, Rest APIs, and other often used
+mainframe utilities because the first thing
+assist Prog will tell you when you offer to
+automate something is, "I've already got
+some JCL Rexx or a Unix shell script that
+basically handles that." What makes this really
+handy is that you can build a workflow which has a number
+of steps and conditions, and run it from a Rest API, that really opens up
+a whole new set of possibilities like mobile apps, Cloud services,
+advanced scripting. Like I said, it's a good
+time to be getting into z. Before we get much further, let's do a little pop quiz just to make sure we're
+on the same page. If you knew that
+z/OSMF ships as part of the operating system,
+then you're correct. Since z/OSMF is deeply integrated into the operating
+system, it's just there. You will have to take
+some steps to enable it, but you don't need to
+download or compile z/OSMF. Okay, enough talking about it. Let's take a look at
+what it looks like. You login to z/OSMF
+from this login screen, and then we get this screen
+which is the z/OSMF desktop, pretty different from
+what you've seen so far. Major tasks are grouped into these icons which you can drag around, arrange
+into folders. All the stuff you would
+just expect to be there. So let's go into
+the workflow editor, and you can see this is where
+I build the steps and I can also set variables
+and monitor feedback. If we explore a little more, we find dedicated tools
+and here are the things like
+SDSF, remember that? We can see at a glance
+how busy the system is, and we can look at job
+and system output, as well as memory utilization
+right down here. RMF has its own interface, that's the resource manager. So we can quickly check on
+the common storage activity. I don't need to
+remember commands, but I do need to
+know what I'm doing. You might have the authority
+to enter a command, and z/OSMF might make it easy. But remember, just
+because you can, Doesn't mean you should. Right. I also want to show
+you the CICS Flex Viewer. Here you get a view of the
+coupling facility structures, and you can get info and
+perform actions on them, and this is great. I wish this were
+around when I first started working on
+z/OS systems because even if I knew something
+was acting a little weird with regard to a coupling
+facility structure, I'd still have to look up all of the commands to get that info, and even if I knew exactly
+what I wanted to do, I'd still have to
+look up the commands to do things like
+rebuild the structure, and what's really nice about this is you can very easily go up two commands log and find out what the command equivalent
+of what you did is, so you don't lose out on that. Now to run z/OSMF, you need Java, OMVS, COM Server, and
+an external security managers. Something like backref. You need the right
+compatible versions and they need to be set up right, preferably before you try and
+start configuring z/OSMF. I'll also say that you can use z/OSMF to get to
+a terminal or to use ISPF. But if you're using z/OSMF just to go right back to
+doing things the old way, you're missing out on
+a lot of potential here. That is z/OSMF in a nutshell. There's plenty more
+to explore in it. But definitely check this
+out because as time goes on, you'll see more
+and more tools and capabilities being made
+available through it.

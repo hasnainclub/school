@@ -1,0 +1,9 @@
+D:\sovb4\examples\Chap12\Computer Science Student\bin\Computer Science Student.exe
+D:\sovb4\examples\Chap12\Computer Science Student\bin\Computer Science Student.xml
+D:\sovb4\examples\Chap12\Computer Science Student\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap12\Computer Science Student\obj\Release\Computer_Science_Student.frmDisplayStudents.resources
+D:\sovb4\examples\Chap12\Computer Science Student\obj\Release\Computer_Science_Student.frmMain.resources
+D:\sovb4\examples\Chap12\Computer Science Student\obj\Release\Computer_Science_Student.Resources.resources
+D:\sovb4\examples\Chap12\Computer Science Student\obj\Release\Computer Science Student.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap12\Computer Science Student\obj\Release\Computer Science Student.exe
+D:\sovb4\examples\Chap12\Computer Science Student\obj\Release\Computer Science Student.xml

@@ -1,0 +1,439 @@
+WEBVTT
+
+1
+00:00:03.522 --> 00:00:07.701
+Z/OS isn't the only operating system
+you'll find in an enterprise environment.
+
+2
+00:00:07.701 --> 00:00:12.937
+Over the years, Unix has also become
+widely used in a variety of industries.
+
+3
+00:00:12.937 --> 00:00:17.113
+It was so popular that a bunch of people
+who wanted their own version of Unix went
+
+4
+00:00:17.113 --> 00:00:18.700
+out and made Linux.
+
+5
+00:00:18.700 --> 00:00:23.056
+Now, the evolution of Unix and the history
+of Linux is pretty interesting, and
+
+6
+00:00:23.056 --> 00:00:25.471
+it's a fun research
+rabbit hole to go down.
+
+7
+00:00:25.471 --> 00:00:28.689
+But the guys behind the camera
+are giving me a look right now, so
+
+8
+00:00:28.689 --> 00:00:30.700
+I better get back on topic.
+
+9
+00:00:30.700 --> 00:00:34.200
+Today, Linux is everywhere, but
+before Linux really took off,
+
+10
+00:00:34.200 --> 00:00:37.900
+people in mainframe shops really
+wanted a way to use Unix.
+
+11
+00:00:37.900 --> 00:00:44.500
+So the operating system was enhanced
+with Unix Systems Services, or USS.
+
+12
+00:00:44.500 --> 00:00:50.300
+Now, point of clarification, USS is not
+a virtual or an emulated operating system.
+
+13
+00:00:50.300 --> 00:00:53.400
+It's an implementation
+of a Unix environment.
+
+14
+00:00:53.400 --> 00:00:58.100
+So you can use commands like LS,
+GREP, CAT, and MKDIR, and
+
+15
+00:00:58.100 --> 00:01:02.100
+you can even write and
+run shell scripts without leaving z/OS.
+
+16
+00:01:02.100 --> 00:01:03.700
+Pretty neat trick.
+
+17
+00:01:03.700 --> 00:01:06.200
+And again, because it's an implementation,
+
+18
+00:01:06.200 --> 00:01:10.100
+it's using the same APIs behind
+the scenes as z/OS does.
+
+19
+00:01:10.100 --> 00:01:14.700
+So it's not like going into USS gobbles
+up another operating system's worth of
+
+20
+00:01:14.700 --> 00:01:19.600
+resources, and it's not just there in
+case you feel like typing Unix commands.
+
+21
+00:01:19.600 --> 00:01:24.357
+For some z/OS middleware, you'll find
+installation, configuration, and
+
+22
+00:01:24.357 --> 00:01:27.600
+automation utilities
+implemented using USS.
+
+23
+00:01:27.600 --> 00:01:31.178
+And for someone with a Unix,
+Linux background, like myself,
+
+24
+00:01:31.178 --> 00:01:34.499
+I like being able to script and
+hack away at shell scripts.
+
+25
+00:01:34.499 --> 00:01:36.425
+Before we move on, here's an easy one,
+
+26
+00:01:36.425 --> 00:01:39.100
+just to make sure we're
+all good on the basics.
+
+27
+00:01:39.100 --> 00:01:40.900
+Fill in the blank.
+
+28
+00:01:40.900 --> 00:01:45.400
+Unix Systems Services on z/OS is a what?
+
+29
+00:01:45.400 --> 00:01:51.400
+Implementation, virtual operating system,
+hypervisor, or a Linux kernel module?
+
+30
+00:01:51.400 --> 00:01:55.892
+I hope you picked implementation, and
+I'm going to keep driving that point home
+
+31
+00:01:55.892 --> 00:02:00.538
+because it's important to remember that
+USS is just that, an implementation.
+
+32
+00:02:00.538 --> 00:02:04.380
+It's not a separate operating system,
+or a virtualized operating system, or
+
+33
+00:02:04.380 --> 00:02:06.800
+a remote system, or anything like that.
+
+34
+00:02:06.800 --> 00:02:10.578
+Okay, now,
+there's two main ways of driving USS.
+
+35
+00:02:10.578 --> 00:02:16.834
+The first is the interactive mode, which
+you can get to with the TSO command OMVS.
+
+36
+00:02:16.834 --> 00:02:20.800
+That gives you a shell, which is how
+you can enter commands and see output.
+
+37
+00:02:20.800 --> 00:02:26.583
+You can also use the I shell, which gives
+you a panel driven interface into USS.
+
+38
+00:02:26.583 --> 00:02:29.018
+Behind the scenes,
+it's all the same API, so
+
+39
+00:02:29.018 --> 00:02:31.210
+it really comes down to a matter of taste.
+
+40
+00:02:31.210 --> 00:02:37.104
+Even between z/OS and USS, it's not
+an all one or the other type thing.
+
+41
+00:02:37.104 --> 00:02:39.331
+You can have one
+interacting with the other.
+
+42
+00:02:39.331 --> 00:02:42.738
+For example, you can move files
+from one environment to the other.
+
+43
+00:02:42.738 --> 00:02:45.929
+You can issue TSO commands
+from the shell command line.
+
+44
+00:02:45.929 --> 00:02:49.717
+You can interact with Unix
+files through the TSO commands.
+
+45
+00:02:49.717 --> 00:02:53.098
+You can even write JCL scripts
+that include shell commands.
+
+46
+00:02:53.098 --> 00:02:55.500
+It's all intertwined.
+
+47
+00:02:55.500 --> 00:02:58.229
+Here's what the OMVS shell looks like.
+
+48
+00:02:58.229 --> 00:03:01.939
+There's a command line, there's the
+function keys, and over here on the right,
+
+49
+00:03:01.939 --> 00:03:03.300
+the status indicator.
+
+50
+00:03:03.300 --> 00:03:06.800
+The status indicator will go back and
+forth between input and
+
+51
+00:03:06.800 --> 00:03:11.500
+running, depending on if it's waiting for
+you or you're waiting for it.
+
+52
+00:03:11.500 --> 00:03:15.400
+Working with directories and files is one
+of the first things you'll need to do in
+
+53
+00:03:15.400 --> 00:03:19.600
+Unix, and there's a whole lot of commands
+that you use to make that happen.
+
+54
+00:03:19.600 --> 00:03:24.343
+When you want to make a directory,
+which is just another word for folder,
+
+55
+00:03:24.343 --> 00:03:28.100
+use MKDIR, M-K-D-I-R,
+short for make directory.
+
+56
+00:03:28.100 --> 00:03:31.179
+Then CD is used to change the directory.
+
+57
+00:03:31.179 --> 00:03:35.300
+So after you've made a directory,
+you can use CD to go into it.
+
+58
+00:03:35.300 --> 00:03:39.900
+And then you can use LS, the list command,
+to look around that directory.
+
+59
+00:03:39.900 --> 00:03:44.976
+And if you want to move files back and
+forth between a Unix file system and
+
+60
+00:03:44.976 --> 00:03:48.690
+z/OS, then check out the OPUT and
+OGET commands.
+
+61
+00:03:48.690 --> 00:03:51.341
+That's basically the file system
+structure of a Unix system.
+
+62
+00:03:51.341 --> 00:03:55.880
+You've got the file system, and you can
+fill it with files and directories.
+
+63
+00:03:55.880 --> 00:03:58.557
+And within those directories,
+you can put even more files and
+
+64
+00:03:58.557 --> 00:04:00.200
+directories, and so on.
+
+65
+00:04:00.200 --> 00:04:02.747
+And a file can be something
+that you can read.
+
+66
+00:04:02.747 --> 00:04:05.809
+It can also be an executable program.
+
+67
+00:04:05.809 --> 00:04:09.232
+And there's other types of things that
+you can put in a directory as well, but
+
+68
+00:04:09.232 --> 00:04:11.900
+files and
+folders is the main name of the game.
+
+69
+00:04:11.900 --> 00:04:15.748
+Now, I could stand here and
+list Unix commands for hours, but
+
+70
+00:04:15.748 --> 00:04:19.524
+I don't think that would be a good
+use of either of our times.
+
+71
+00:04:19.524 --> 00:04:21.859
+Suffice to say, lots of commands.
+
+72
+00:04:21.859 --> 00:04:26.378
+And you won't find every command that you
+would expect to find on a Linux system,
+
+73
+00:04:26.378 --> 00:04:28.119
+but it's still a good amount.
+
+74
+00:04:28.119 --> 00:04:33.448
+And if you really want to run Linux, there
+are plenty of ways of running Linux on.
+
+75
+00:04:33.448 --> 00:04:38.079
+Unix Systems Services can use a type
+of file system called the ZFS.
+
+76
+00:04:38.079 --> 00:04:41.690
+And one interesting thing about ZFS
+is that it's sysplex-aware, and
+
+77
+00:04:41.690 --> 00:04:45.796
+you'll learn a little bit more about that
+from my friend Louisa in a few minutes.
+
+78
+00:04:45.796 --> 00:04:48.700
+You can also mount a file
+system over a network.
+
+79
+00:04:48.700 --> 00:04:52.500
+This is called NFS, or
+network file system.
+
+80
+00:04:52.500 --> 00:04:56.610
+These network file systems can
+be mainframe to mainframe, or
+
+81
+00:04:56.610 --> 00:05:00.255
+even mainframe to desktop,
+or desktop to mainframe.
+
+82
+00:05:00.255 --> 00:05:03.700
+NFS is the commonality that
+makes all of that possible.
+
+83
+00:05:03.700 --> 00:05:05.856
+And lastly, there's the TFS.
+
+84
+00:05:05.856 --> 00:05:08.122
+This is the temporary file system.
+
+85
+00:05:08.122 --> 00:05:10.940
+It's an in-memory physical file system.
+
+86
+00:05:10.940 --> 00:05:13.583
+And as the name suggests,
+it's a good place for
+
+87
+00:05:13.583 --> 00:05:17.033
+writing up files that you only need for
+a short amount of time.
+
+88
+00:05:17.033 --> 00:05:19.612
+If you need those files to be
+there tomorrow or next week,
+
+89
+00:05:19.612 --> 00:05:23.270
+it's probably a good idea to make sure
+those get copied somewhere more permanent
+
+90
+00:05:23.270 --> 00:05:25.500
+when you're done for the day.
+
+91
+00:05:25.500 --> 00:05:28.734
+And since we're done for
+the day, let's close this up and
+
+92
+00:05:28.734 --> 00:05:30.130
+get on to the next topic.

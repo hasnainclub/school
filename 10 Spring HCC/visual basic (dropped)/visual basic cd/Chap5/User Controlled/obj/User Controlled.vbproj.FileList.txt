@@ -1,0 +1,10 @@
+obj\Debug\User Controlled.exe
+obj\Debug\User Controlled.pdb
+bin\User Controlled.exe
+bin\User Controlled.pdb
+bin\User Controlled.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\User_Controlled.Form1.resources
+obj\Debug\User_Controlled.Resources.resources
+obj\Debug\User Controlled.vbproj.GenerateResource.Cache
+obj\Debug\User Controlled.xml

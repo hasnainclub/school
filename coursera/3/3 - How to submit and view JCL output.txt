@@ -1,0 +1,33 @@
+Once you've got your JCL written chances
+are you actually want to submit it and make it run. As you've probably picked up on by now
+when there's something you want to do there is usually eight ways to do it. So I'm going to show you two ways
+of submitting your JCL to Jazz. To begin we're going to open up
+option to of ispf, for edit. That will bring us to this screen. And you just specify the data set either
+using the ispf library fields up there or the one below it labeled other partitions, sequential or VSAM Data Set or
+z/OS UNIX file. That will bring up this
+listing of data set members. Place an s next to the one you
+want to select and hit enter. TSO will come back and
+pop up a little message saying, got it. I have submitted your job. Here's the job number I gave it. Now I said,
+there's more than one way to do things. So I'm going to show you another
+way of submitting JCL to Jazz. If you're at TSO prompt you can
+submit a job from here too. Just type TSO submit followed by
+the data set member spelled out as the data set name and
+then the specified member in parentheses. The data set and data set member
+should be within single quotes. It sounds a lot more
+complicated when I say it. Just look at how it's spelled out here. But when you put the TSO at
+the beginning of a statement, you're issuing a TSO command. So if you have some JCL and
+you don't even have to look at it, you just know you want to run it,
+that's how you do that. To look at the output of that job head
+into SDSF from the primary ispf menu. Then go into option H because
+we want to look at held jobs. As you can see there's
+a lot you can do in here. All in due time all in due
+time when we hit enter for the held jobs we get a listing of output. And we can do a number of things with it. Right now we want to display that output. So we'll place an s next to it and
+hit enter. That will bring up all of
+the output from that job. As I said, there's a lot you can
+do in here with other commands. But the most common commands
+are probably S for display, C for cancel, P for purge and X for print. When you do view the output first thing
+you'll notice is that it is tremendously verbose. And we're not going to get into that here. Pretty much every piece of information
+regarding the execution of that job is in here. And it would take a whole lot of
+time to fully explore that output. So we'll just stop right here and be happy that we know how to build
+JCL submit it and manage the output. Stay tuned though, later on I'm going to show you
+another way to look at system output.

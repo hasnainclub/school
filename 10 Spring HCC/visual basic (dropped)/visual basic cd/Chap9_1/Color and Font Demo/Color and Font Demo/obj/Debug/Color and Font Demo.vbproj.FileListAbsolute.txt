@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\bin\Debug\Color and Font Demo.exe
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\bin\Debug\Color and Font Demo.pdb
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\bin\Debug\Color and Font Demo.xml
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color_and_Font_Demo.Form1.resources
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color_and_Font_Demo.Resources.resources
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color and Font Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color and Font Demo.exe
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color and Font Demo.xml
+D:\sovb4\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color and Font Demo.pdb
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color and Font Demo.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color and Font Demo.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\Color and Font Demo\Color and Font Demo\obj\Debug\Color and Font Demo.pdb

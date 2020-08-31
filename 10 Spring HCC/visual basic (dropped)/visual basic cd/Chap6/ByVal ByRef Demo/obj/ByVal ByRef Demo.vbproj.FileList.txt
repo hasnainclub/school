@@ -1,0 +1,10 @@
+obj\Debug\ByVal ByRef Demo.exe
+obj\Debug\ByVal ByRef Demo.pdb
+bin\ByVal ByRef Demo.exe
+bin\ByVal ByRef Demo.pdb
+bin\ByVal ByRef Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ByVal_ByRef_Demo.Form1.resources
+obj\Debug\ByVal_ByRef_Demo.Resources.resources
+obj\Debug\ByVal ByRef Demo.vbproj.GenerateResource.Cache
+obj\Debug\ByVal ByRef Demo.xml

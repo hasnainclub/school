@@ -1,0 +1,4 @@
+D:\sovb4\examples\Chap10\DataGridView_Simple\bin\Release\DataGridView_Simple.exe.config
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Release\DataGridView_Simple.exe
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Release\DataGridView_Simple.xml
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Release\DataGridView_Simple.pdb

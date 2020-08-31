@@ -1,0 +1,10 @@
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\bin\Debug\Stadium_seating_6_62.exe
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\bin\Debug\Stadium_seating_6_62.pdb
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\bin\Debug\Stadium_seating_6_62.xml
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\obj\Debug\Stadium_seating_6_62.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\obj\Debug\Stadium_seating_6_62.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\obj\Debug\Stadium_seating_6_62.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\obj\Debug\Stadium_seating_6_62.exe
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\obj\Debug\Stadium_seating_6_62.xml
+C:\Users\hasnainpc\Desktop\vb projects\Stadium_seating_6_62\Stadium_seating_6_62\obj\Debug\Stadium_seating_6_62.pdb

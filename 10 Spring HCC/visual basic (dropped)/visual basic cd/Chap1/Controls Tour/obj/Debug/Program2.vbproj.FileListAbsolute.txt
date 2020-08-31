@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap1\Controls Tour\obj\Debug\Program2.exe
+D:\sovb4\examples\Chap1\Controls Tour\obj\Debug\Program2.xml
+D:\sovb4\examples\Chap1\Controls Tour\obj\Debug\Program2.pdb
+D:\sovb4\examples\Chap1\Controls Tour\bin\Program2.exe
+D:\sovb4\examples\Chap1\Controls Tour\bin\Program2.pdb
+D:\sovb4\examples\Chap1\Controls Tour\bin\Program2.xml
+D:\sovb4\examples\Chap1\Controls Tour\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap1\Controls Tour\obj\Debug\Program2.Form1.resources
+D:\sovb4\examples\Chap1\Controls Tour\obj\Debug\Program2.Resources.resources
+D:\sovb4\examples\Chap1\Controls Tour\obj\Debug\Program2.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\obj\Debug\Program2.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\obj\Debug\Program2.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\obj\Debug\Program2.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\bin\Program2.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\bin\Program2.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\bin\Program2.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\obj\Debug\Program2.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\obj\Debug\Program2.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Controls Tour\obj\Debug\Program2.vbproj.GenerateResource.Cache

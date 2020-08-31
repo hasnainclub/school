@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap2\KiloConverter\bin\KiloConverter.exe
+D:\sovb4\examples\Chap2\KiloConverter\bin\KiloConverter.pdb
+D:\sovb4\examples\Chap2\KiloConverter\bin\KiloConverter.xml
+D:\sovb4\examples\Chap2\KiloConverter\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap2\KiloConverter\obj\Debug\KiloConverter.Form1.resources
+D:\sovb4\examples\Chap2\KiloConverter\obj\Debug\KiloConverter.Resources.resources
+D:\sovb4\examples\Chap2\KiloConverter\obj\Debug\KiloConverter.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap2\KiloConverter\obj\Debug\KiloConverter.exe
+D:\sovb4\examples\Chap2\KiloConverter\obj\Debug\KiloConverter.xml
+D:\sovb4\examples\Chap2\KiloConverter\obj\Debug\KiloConverter.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\bin\KiloConverter.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\bin\KiloConverter.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\bin\KiloConverter.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Debug\KiloConverter.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Debug\KiloConverter.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Debug\KiloConverter.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Debug\KiloConverter.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Debug\KiloConverter.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Debug\KiloConverter.pdb

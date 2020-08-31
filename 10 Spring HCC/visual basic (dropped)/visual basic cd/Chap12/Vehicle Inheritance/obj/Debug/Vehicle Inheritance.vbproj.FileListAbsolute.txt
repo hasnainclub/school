@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Debug\Vehicle Inheritance.exe
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Debug\Vehicle Inheritance.xml
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Debug\Vehicle Inheritance.pdb
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Debug\Vehicle Inheritance.xml
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Debug\Vehicle Inheritance.pdb
+D:\sovb4\examples\Chap12\Vehicle Inheritance\bin\Debug\Vehicle Inheritance.exe
+D:\sovb4\examples\Chap12\Vehicle Inheritance\bin\Debug\Vehicle Inheritance.pdb
+D:\sovb4\examples\Chap12\Vehicle Inheritance\bin\Debug\Vehicle Inheritance.xml
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Debug\Vehicle_Inheritance.Form1.resources
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Debug\Vehicle_Inheritance.Resources.resources
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Debug\Vehicle Inheritance.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Debug\Vehicle Inheritance.exe

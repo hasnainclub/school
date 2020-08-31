@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Variable Demo">
+</Property><Property Name="Solution File" Value="D:\sovb4\examples\Chap3\Variable Demo\Variable Demo.sln">
+</Property><Property Name="Date" Value="Monday, June 04, 2007">
+</Property><Property Name="Time" Value="15:54 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Variable Demo" Source="Variable Demo.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Variable Demo" Source="Variable Demo.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Variable Demo.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Variable Demo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Variable Demo" Source="Variable Demo.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

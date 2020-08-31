@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap8\Sales Data\obj\Release\Sales Data.exe
+D:\sovb4\examples\Chap8\Sales Data\obj\Release\Sales Data.xml
+D:\sovb4\examples\Chap8\Sales Data\bin\Sales Data.exe
+D:\sovb4\examples\Chap8\Sales Data\bin\Sales Data.xml
+D:\sovb4\examples\Chap8\Sales Data\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Sales Data\obj\Release\Sales_Data.Form1.resources
+D:\sovb4\examples\Chap8\Sales Data\obj\Release\Sales_Data.Resources.resources
+D:\sovb4\examples\Chap8\Sales Data\obj\Release\Sales Data.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Release\Sales Data.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap8\Sales Data\obj\Release\Sales Data.xml

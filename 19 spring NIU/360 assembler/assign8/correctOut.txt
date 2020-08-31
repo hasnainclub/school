@@ -1,0 +1,23 @@
+CSCI 360-1 Assignment 8 - Exact Output:
+
+                                                      EMPLOYEE PAYROLL REPORT                                                       
+
+ EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS        EMPLOYEE PAYCHECK
+ ID               NAME                             PAY RATE          WORKED          AMOUNT          AMOUNT                   AMOUNT
+ --------         -------------------------        --------         -------      ----------      ----------       ------------------
+
+ 02345245         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+ 03456322         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+ 04032233         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+ 06465120         AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+ 06560023         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+ 13870322         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+ 14966277         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+ --------         -------------------------                                      ----------      ----------       ------------------
+  TOTALS:         7 EMPLOYEE(S)                                                     $127.61       $1,948.99               $11,274.01

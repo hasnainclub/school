@@ -1,0 +1,22 @@
+Question 1
+2 out of 2 points
+Which of the following is an RS latch? (Click to open the images to see the drawings).
+
+Question 2
+0 out of 2 points
+Which of the given pictures shows a timing diagram for a master-slave D latch with a falling-edge clock?
+
+Question 3
+2 out of 2 points
+What is LSB of the decimal value 12342352363467345346 ?
+even, so 0
+
+Question 4
+2 out of 2 points
+Which of the following truth tables for a half adder is both correct and presented properly?
+
+
+Question 5
+2 out of 2 points
+What is LSB of the decimal value 12342352363467345343 ?
+odd so 1

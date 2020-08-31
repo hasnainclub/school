@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap8\Simple Payroll\bin\Simple Payroll.exe
+D:\sovb4\examples\Chap8\Simple Payroll\bin\Simple Payroll.xml
+D:\sovb4\examples\Chap8\Simple Payroll\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Simple Payroll\obj\Release\Simple_Payroll.Form1.resources
+D:\sovb4\examples\Chap8\Simple Payroll\obj\Release\Simple_Payroll.Resources.resources
+D:\sovb4\examples\Chap8\Simple Payroll\obj\Release\Simple Payroll.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap8\Simple Payroll\obj\Release\Simple Payroll.exe
+D:\sovb4\examples\Chap8\Simple Payroll\obj\Release\Simple Payroll.xml

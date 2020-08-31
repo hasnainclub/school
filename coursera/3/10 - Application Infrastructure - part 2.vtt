@@ -1,0 +1,595 @@
+WEBVTT
+
+1
+00:00:02.600 --> 00:00:06.270
+On the mainframe, the big
+three that immediately come to
+
+2
+00:00:06.270 --> 00:00:09.315
+mind are CICS, IMS, and Db2.
+
+3
+00:00:09.315 --> 00:00:10.890
+When I first started working on
+
+4
+00:00:10.890 --> 00:00:12.810
+z Systems I heard
+these said together
+
+5
+00:00:12.810 --> 00:00:14.280
+so often but I thought it was
+
+6
+00:00:14.280 --> 00:00:16.425
+two things CICS, IMS, and Db2.
+
+7
+00:00:16.425 --> 00:00:18.260
+But we're talking
+about three components
+
+8
+00:00:18.260 --> 00:00:20.945
+here there's kicks, or CICS,
+
+9
+00:00:20.945 --> 00:00:24.770
+spelled CICS, IMS, and Db2.
+
+10
+00:00:24.770 --> 00:00:26.210
+Three different things.
+
+11
+00:00:26.210 --> 00:00:28.135
+Let's start with CICS.
+
+12
+00:00:28.135 --> 00:00:31.310
+CICS has been around for
+a long time and it powers
+
+13
+00:00:31.310 --> 00:00:34.790
+many of the world's
+transactions such as ATM's,
+
+14
+00:00:34.790 --> 00:00:37.715
+managing insurance
+policies, utility bills,
+
+15
+00:00:37.715 --> 00:00:39.920
+retail shopping, and others.
+
+16
+00:00:39.920 --> 00:00:44.120
+It does it all securely and
+reliably day in and day out.
+
+17
+00:00:44.120 --> 00:00:46.220
+A CICS transaction consist of
+
+18
+00:00:46.220 --> 00:00:49.345
+many facets including
+delivering the user interface,
+
+19
+00:00:49.345 --> 00:00:51.445
+retrieving and
+updating information,
+
+20
+00:00:51.445 --> 00:00:53.720
+and communicating with
+other applications
+
+21
+00:00:53.720 --> 00:00:55.670
+and network attached devices.
+
+22
+00:00:55.670 --> 00:00:58.145
+In CICS, a transaction
+typically lasts
+
+23
+00:00:58.145 --> 00:00:59.930
+a very short time and is
+
+24
+00:00:59.930 --> 00:01:02.605
+associated with one unit of work.
+
+25
+00:01:02.605 --> 00:01:05.690
+CICS takes the work to be
+processed and lines it
+
+26
+00:01:05.690 --> 00:01:08.555
+up with the program or programs
+required to complete it.
+
+27
+00:01:08.555 --> 00:01:11.000
+This was the job of the
+transaction manager,
+
+28
+00:01:11.000 --> 00:01:13.880
+to ensure the work complete
+successfully according to
+
+29
+00:01:13.880 --> 00:01:15.860
+the process and that
+there's nothing left
+
+30
+00:01:15.860 --> 00:01:16.910
+hanging out there when we tell
+
+31
+00:01:16.910 --> 00:01:18.530
+the user that it's complete.
+
+32
+00:01:18.530 --> 00:01:21.230
+Here's what's under the hood
+that lets this all happen.
+
+33
+00:01:21.230 --> 00:01:23.870
+A CICS system manages an area of
+
+34
+00:01:23.870 --> 00:01:27.440
+storage called a region which
+lives in an address space.
+
+35
+00:01:27.440 --> 00:01:30.075
+You'll hear that term
+a lot, a CICS region.
+
+36
+00:01:30.075 --> 00:01:33.140
+A CICS region uses
+domains which contain
+
+37
+00:01:33.140 --> 00:01:35.960
+management nodes for
+transaction processing.
+
+38
+00:01:35.960 --> 00:01:39.050
+Now, a single region
+can be defined to
+
+39
+00:01:39.050 --> 00:01:40.520
+perform all the functions
+
+40
+00:01:40.520 --> 00:01:42.820
+necessary to process
+a transaction.
+
+41
+00:01:42.820 --> 00:01:44.660
+Typically, a CICS installation
+
+42
+00:01:44.660 --> 00:01:46.490
+will have several
+different regions,
+
+43
+00:01:46.490 --> 00:01:49.910
+each one devoted to a
+different type of transaction.
+
+44
+00:01:49.910 --> 00:01:52.130
+Think of it like an
+auto repair center.
+
+45
+00:01:52.130 --> 00:01:53.585
+This area's for body work,
+
+46
+00:01:53.585 --> 00:01:55.880
+over here is for
+transmission issues,
+
+47
+00:01:55.880 --> 00:01:57.485
+tires and wheels over there.
+
+48
+00:01:57.485 --> 00:02:00.350
+That way, all the tools
+that are needed are close
+
+49
+00:02:00.350 --> 00:02:01.640
+by and the area isn't
+
+50
+00:02:01.640 --> 00:02:03.680
+crowded with stuff
+that they don't need.
+
+51
+00:02:03.680 --> 00:02:06.230
+There are three types
+of domains that
+
+52
+00:02:06.230 --> 00:02:09.200
+supervise and control
+transaction processing.
+
+53
+00:02:09.200 --> 00:02:13.310
+Remember, these are the
+domains within the region.
+
+54
+00:02:13.310 --> 00:02:15.020
+We've covered a lot there.
+
+55
+00:02:15.020 --> 00:02:17.410
+So let's make sure we've
+got the basic order right.
+
+56
+00:02:17.410 --> 00:02:21.110
+A CICS system manages
+an area of storage
+
+57
+00:02:21.110 --> 00:02:25.820
+called a blank and within
+that it uses blanks.
+
+58
+00:02:25.820 --> 00:02:28.325
+Let's see if you remember
+what those are called.
+
+59
+00:02:28.325 --> 00:02:33.860
+So a CICS system manages areas
+of storage called regions.
+
+60
+00:02:33.860 --> 00:02:37.615
+Then within the regions,
+it manages domains.
+
+61
+00:02:37.615 --> 00:02:41.055
+There's a transaction
+manager, the XM,
+
+62
+00:02:41.055 --> 00:02:43.985
+which is responsible for
+receiving transaction requests
+
+63
+00:02:43.985 --> 00:02:47.180
+and creating the organizing
+tasks to process them.
+
+64
+00:02:47.180 --> 00:02:50.900
+Then there's the program
+manager or PG which handles
+
+65
+00:02:50.900 --> 00:02:52.880
+locating and invoking
+applications
+
+66
+00:02:52.880 --> 00:02:55.445
+required for processing
+transactions.
+
+67
+00:02:55.445 --> 00:02:58.295
+Then there's these
+Storage Manager, SM.
+
+68
+00:02:58.295 --> 00:03:00.560
+This domain is responsible
+for allocating
+
+69
+00:03:00.560 --> 00:03:03.815
+memory resources required
+for all of this to happen.
+
+70
+00:03:03.815 --> 00:03:05.660
+You can see in this diagram,
+
+71
+00:03:05.660 --> 00:03:07.310
+we have three types of regions.
+
+72
+00:03:07.310 --> 00:03:10.025
+There's the TOR,
+terminal owning region,
+
+73
+00:03:10.025 --> 00:03:11.330
+which handles connections to
+
+74
+00:03:11.330 --> 00:03:13.370
+terminals and other
+remote devices.
+
+75
+00:03:13.370 --> 00:03:16.140
+Then there's the AOR
+for application owning
+
+76
+00:03:16.140 --> 00:03:19.550
+region and the DOR for
+Data owning region.
+
+77
+00:03:19.550 --> 00:03:22.700
+The glue that connects
+these regions is VTAM.
+
+78
+00:03:22.700 --> 00:03:24.080
+Now we haven't really spent
+
+79
+00:03:24.080 --> 00:03:25.925
+much time talking about VTAM yet,
+
+80
+00:03:25.925 --> 00:03:27.770
+and we're not going
+to get deep into it.
+
+81
+00:03:27.770 --> 00:03:29.210
+Just know that it has to do with
+
+82
+00:03:29.210 --> 00:03:31.870
+networking and it's
+part of comm server.
+
+83
+00:03:31.870 --> 00:03:34.160
+The AORs and DORs talk
+
+84
+00:03:34.160 --> 00:03:36.440
+with other applications
+like databases,
+
+85
+00:03:36.440 --> 00:03:38.555
+and user written applications.
+
+86
+00:03:38.555 --> 00:03:41.345
+One of those databases
+could be IMS.
+
+87
+00:03:41.345 --> 00:03:42.970
+Now what's IMS?
+
+88
+00:03:42.970 --> 00:03:46.040
+IMS, Information
+Management System has
+
+89
+00:03:46.040 --> 00:03:48.110
+a long and interesting
+history as well
+
+90
+00:03:48.110 --> 00:03:50.735
+which includes some
+development done for NASA.
+
+91
+00:03:50.735 --> 00:03:54.240
+What makes IMS unique
+is that it has or is,
+
+92
+00:03:54.240 --> 00:03:55.600
+depending on how you look at it,
+
+93
+00:03:55.600 --> 00:03:58.895
+a hierarchical database
+management system.
+
+94
+00:03:58.895 --> 00:04:01.400
+It is widely used for
+manufacturing type of
+
+95
+00:04:01.400 --> 00:04:03.020
+applications but you'll see it
+
+96
+00:04:03.020 --> 00:04:05.230
+in just about any industry.
+
+97
+00:04:05.230 --> 00:04:08.435
+IMS consists of three components.
+
+98
+00:04:08.435 --> 00:04:10.295
+One is the database manager.
+
+99
+00:04:10.295 --> 00:04:12.350
+That's the IMS DB.
+
+100
+00:04:12.350 --> 00:04:14.470
+Then there's the
+transaction manager.
+
+101
+00:04:14.470 --> 00:04:16.435
+That's the IMS TM.
+
+102
+00:04:16.435 --> 00:04:18.920
+Then there's these system
+services that provide
+
+103
+00:04:18.920 --> 00:04:22.460
+common services to both
+the DB and the TM.
+
+104
+00:04:22.460 --> 00:04:24.950
+These work together
+to deliver data and
+
+105
+00:04:24.950 --> 00:04:28.715
+transactional capabilities in
+an extremely efficient way.
+
+106
+00:04:28.715 --> 00:04:32.955
+For more complex data
+handling needs, there's Db2.
+
+107
+00:04:32.955 --> 00:04:36.050
+Big D little b2.
+
+108
+00:04:36.050 --> 00:04:39.980
+Db2 is a database and it offers
+exceptional availability,
+
+109
+00:04:39.980 --> 00:04:42.410
+massive scalability,
+flexibility, and
+
+110
+00:04:42.410 --> 00:04:44.780
+installation across
+platforms and location,
+
+111
+00:04:44.780 --> 00:04:47.345
+and a low total
+cost of ownership.
+
+112
+00:04:47.345 --> 00:04:50.240
+Db2 is considered to be
+a relational database.
+
+113
+00:04:50.240 --> 00:04:54.385
+So data exists in one or more
+constructs known as tables.
+
+114
+00:04:54.385 --> 00:04:56.090
+Within those tables, there are
+
+115
+00:04:56.090 --> 00:04:58.580
+columns and rows and you interact
+
+116
+00:04:58.580 --> 00:05:02.990
+with data by using the structured
+query language or SQL.
+
+117
+00:05:02.990 --> 00:05:04.925
+Though you can also use Db2 for
+
+118
+00:05:04.925 --> 00:05:07.325
+unstructured data
+and so much more.
+
+119
+00:05:07.325 --> 00:05:10.580
+Remember those acid properties
+we've talked about before?
+
+120
+00:05:10.580 --> 00:05:14.000
+Db2 people take each one
+of those very seriously.
+
+121
+00:05:14.000 --> 00:05:15.200
+They won't chase something that
+
+122
+00:05:15.200 --> 00:05:16.850
+gives them increased availability
+
+123
+00:05:16.850 --> 00:05:20.390
+if it means giving up
+consistency and vice versa.
+
+124
+00:05:20.390 --> 00:05:23.705
+When it comes to truly
+enterprise applications,
+
+125
+00:05:23.705 --> 00:05:25.130
+the middleware like CICS,
+
+126
+00:05:25.130 --> 00:05:27.710
+IMS, and Db2 need to step up and
+
+127
+00:05:27.710 --> 00:05:30.830
+deliver time after time
+after time after time.
+
+128
+00:05:30.830 --> 00:05:36.270
+Can't stop, won't
+stop. Transaction.

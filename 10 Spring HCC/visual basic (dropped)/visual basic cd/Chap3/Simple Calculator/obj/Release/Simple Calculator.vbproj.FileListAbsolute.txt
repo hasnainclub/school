@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Release\Simple Calculator.exe
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Release\Simple Calculator.xml
+D:\sovb4\examples\Chap3\Simple Calculator\bin\Simple Calculator.exe
+D:\sovb4\examples\Chap3\Simple Calculator\bin\Simple Calculator.xml
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Release\Simple_Calculator.CalculateForm.resources
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Release\Simple_Calculator.Resources.resources
+D:\sovb4\examples\Chap3\Simple Calculator\obj\Release\Simple Calculator.vbproj.GenerateResource.Cache

@@ -1,0 +1,2 @@
+D:\sovb4\examples\Chap12\Student Collection\obj\Debug\Student Collection.exe
+D:\sovb4\examples\Chap12\Student Collection\obj\Debug\Student Collection.pdb

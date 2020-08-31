@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap4\Crazy Al\obj\Debug\Crazy Al.exe
+D:\sovb4\examples\Chap4\Crazy Al\obj\Debug\Crazy Al.xml
+D:\sovb4\examples\Chap4\Crazy Al\obj\Debug\Crazy Al.pdb
+D:\sovb4\examples\Chap4\Crazy Al\bin\Crazy Al.exe
+D:\sovb4\examples\Chap4\Crazy Al\bin\Crazy Al.pdb
+D:\sovb4\examples\Chap4\Crazy Al\bin\Crazy Al.xml
+D:\sovb4\examples\Chap4\Crazy Al\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap4\Crazy Al\obj\Debug\Crazy_Al.Form1.resources
+D:\sovb4\examples\Chap4\Crazy Al\obj\Debug\Crazy_Al.Resources.resources
+D:\sovb4\examples\Chap4\Crazy Al\obj\Debug\Crazy Al.vbproj.GenerateResource.Cache

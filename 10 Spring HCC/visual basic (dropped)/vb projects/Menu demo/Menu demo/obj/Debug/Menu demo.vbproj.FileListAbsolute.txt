@@ -1,0 +1,10 @@
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\bin\Debug\Menu demo.exe
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\bin\Debug\Menu demo.pdb
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\bin\Debug\Menu demo.xml
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\obj\Debug\Menu_demo.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\obj\Debug\Menu_demo.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\obj\Debug\Menu demo.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\obj\Debug\Menu demo.exe
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\obj\Debug\Menu demo.xml
+C:\Users\hasnainpc\Desktop\vb projects\Menu demo\Menu demo\obj\Debug\Menu demo.pdb

@@ -1,0 +1,284 @@
+MariaDB [z1697740]> /* HASNAIN ATTARWALA SECTION 3
+   /*> SHOW THE DATABASE
+   /*> 
+   /*> */
+MariaDB [z1697740]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| BabyName           |
+| JavaCust07         |
+| JavaCust08         |
+| JavaCust09         |
+| JavaCust10         |
+| JavaCust11         |
+| JavaCust12         |
+| JavaCust13         |
+| JavaCust14         |
+| JavaCust15         |
+| JavaCust16         |
+| JavaCust17         |
+| JavaCust18         |
+| JavaCust19         |
+| JavaCust20         |
+| JavaCust21         |
+| JavaCust22         |
+| JavaCust23         |
+| JavaCust24         |
+| JavaCust25         |
+| JavaCust26         |
+| JavaCust27         |
+| JavaCust28         |
+| JavaCust29         |
+| JavaCust30         |
+| JavaCust31         |
+| JavaCust32         |
+| JavaCust33         |
+| JavaCust34         |
+| JavaCust35         |
+| JavaCust36         |
+| JavaCust37         |
+| JavaCust38         |
+| JavaCust39         |
+| JavaCust40         |
+| JavaCust41         |
+| JavaCust42         |
+| JavaCust43         |
+| JavaCust44         |
+| JavaCust45         |
+| JavaCust46         |
+| JavaCust47         |
+| JavaCust48         |
+| JavaCust49         |
+| JavaCust50         |
+| JavaCust51         |
+| JavaCust52         |
+| JavaCust53         |
+| JavaCust54         |
+| JavaCust55         |
+| JavaCust56         |
+| JavaCust57         |
+| JavaCust58         |
+| JavaCust59         |
+| JavaCust60         |
+| JavaCust61         |
+| JavaCust62         |
+| JavaCust63         |
+| JavaCust64         |
+| JavaCust65         |
+| Premiere           |
+| classicmodels      |
+| henrybooks         |
+| information_schema |
+| test               |
+| z1697740           |
++--------------------+
+66 rows in set (0.09 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> -- USE the table
+MariaDB [z1697740]> USE z1697740;
+Database changed
+MariaDB [z1697740]> --Show which tables are in there
+MariaDB [z1697740]> SHOW TABLES;
++--------------------+
+| Tables_in_z1697740 |
++--------------------+
+| Dogs               |
+| Visits             |
+| dogsvisited        |
++--------------------+
+3 rows in set (0.00 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*
+   /*> 1. drop/delete all of the tables/views you will be creating
+   /*> below*/
+MariaDB [z1697740]> 
+MariaDB [z1697740]> DROP VIEW dogsvisited;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [z1697740]> DROP TABLE Visits;
+Query OK, 0 rows affected (0.14 sec)
+
+MariaDB [z1697740]> DROP TABLE Dogs;
+Query OK, 0 rows affected (0.05 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*2. Create a table dogs with a dog id, a breed and a name. Dog
+   /*> id should be an auto-increment primary key.*/
+MariaDB [z1697740]> CREATE TABLE Dogs (
+    -> dogid int NOT NULL AUTO_INCREMENT,
+    -> breed varchar(255),
+    -> name varchar(255),
+    -> PRIMARY KEY (dogid));
+Query OK, 0 rows affected (0.34 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*3. Put at least 5 records in this table*/
+MariaDB [z1697740]> INSERT INTO Dogs (breed, name) VALUES ('rotwhiler', 'tomy');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [z1697740]> INSERT INTO Dogs (breed, name) VALUES ('desikutta', 'sheru');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [z1697740]> INSERT INTO Dogs (breed, name) VALUES ('stray', 'hero');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [z1697740]> INSERT INTO Dogs (breed, name) VALUES ('germanshepherd', 'tiger');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [z1697740]> INSERT INTO Dogs (breed, name) VALUES ('bakwaas', 'herolal');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*4. Do a select * on this table to show all the records*/
+MariaDB [z1697740]> SELECT * FROM Dogs;
++-------+----------------+---------+
+| dogid | breed          | name    |
++-------+----------------+---------+
+|     1 | rotwhiler      | tomy    |
+|     2 | desikutta      | sheru   |
+|     3 | stray          | hero    |
+|     4 | germanshepherd | tiger   |
+|     5 | bakwaas        | herolal |
++-------+----------------+---------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*5. Create a table called visits with a visit id (autoincrement
+   /*> primary key), dog id (foreign key into dogs) and
+   /*> date. Use the CURDATE() function.*/
+MariaDB [z1697740]> 
+MariaDB [z1697740]> CREATE TABLE Visits ( 
+    -> vid int AUTO_INCREMENT, 
+    -> dogyid int, 
+    -> PRIMARY KEY(vid), 
+    -> FOREIGN KEY (dogyid) REFERENCES Dogs(dogid));
+Query OK, 0 rows affected (0.45 sec)
+
+MariaDB [z1697740]> SELECT CURDATE();
++------------+
+| CURDATE()  |
++------------+
+| 2018-11-02 |
++------------+
+1 row in set (0.00 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*6. Put at least 8 records in this table, which will mean some
+   /*> of the dogs will have multiple visits.*/
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (1);
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (2);
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (3);
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (4);
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (5);
+Query OK, 1 row affected (0.08 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (1);
+Query OK, 1 row affected (0.05 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (2);
+Query OK, 1 row affected (0.09 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> INSERT INTO Visits(dogyid)
+    -> VALUES (3);
+Query OK, 1 row affected (0.10 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*7. Do a select * on this table to show all the records*/
+MariaDB [z1697740]> SELECT * FROM Visits;
++-----+--------+
+| vid | dogyid |
++-----+--------+
+|   1 |      1 |
+|   6 |      1 |
+|   2 |      2 |
+|   7 |      2 |
+|   3 |      3 |
+|   8 |      3 |
+|   4 |      4 |
+|   5 |      5 |
++-----+--------+
+8 rows in set (0.00 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*8. Add a column to the visit table for the time or day of week
+   /*> – there are many date/time functions, pick one to use.*/
+MariaDB [z1697740]> ALTER TABLE Visits ADD date DATETIME DEFAULT CURRENT_TIMESTAMP;
+Query OK, 0 rows affected (0.65 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*9. Update several rows to add values to the column you just
+   /*> created.*/
+MariaDB [z1697740]> UPDATE Visits
+    -> SET date=CURRENT_TIMESTAMP
+    -> WHERE dogyid=1;
+Query OK, 2 rows affected (0.06 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*10. Do a select * on this table to show all the records*/
+MariaDB [z1697740]> SELECT * FROM Visits;
++-----+--------+---------------------+
+| vid | dogyid | date                |
++-----+--------+---------------------+
+|   1 |      1 | 2018-11-02 00:17:47 |
+|   2 |      2 | 2018-11-02 00:17:46 |
+|   3 |      3 | 2018-11-02 00:17:46 |
+|   4 |      4 | 2018-11-02 00:17:46 |
+|   5 |      5 | 2018-11-02 00:17:46 |
+|   6 |      1 | 2018-11-02 00:17:47 |
+|   7 |      2 | 2018-11-02 00:17:46 |
+|   8 |      3 | 2018-11-02 00:17:46 |
++-----+--------+---------------------+
+8 rows in set (0.00 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*11. Define a view that will list each dog and the number of
+   /*> visits they have made.*/
+MariaDB [z1697740]> CREATE VIEW dogsvisited AS (
+    -> SELECT name, COUNT(dogyid) FROM Dogs INNER JOIN Visits ON Dogs.dogid=Visits.dogyid GROUP BY name);
+Query OK, 0 rows affected (0.03 sec)
+
+MariaDB [z1697740]> 
+MariaDB [z1697740]> /*12. Do a select * on this view to show all the records */
+MariaDB [z1697740]> SELECT * FROM dogsvisited;
++---------+---------------+
+| name    | COUNT(dogyid) |
++---------+---------------+
+| hero    |             2 |
+| herolal |             1 |
+| sheru   |             2 |
+| tiger   |             1 |
+| tomy    |             2 |
++---------+---------------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1697740]> \t

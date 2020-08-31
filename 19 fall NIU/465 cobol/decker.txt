@@ -1,0 +1,409 @@
+//KC03E85A JOB ,'ATTARWALA',MSGCLASS=H
+//*
+//JSTEP01  EXEC PGM=SORT,PARM='CMP=CLC'
+//*
+//SORTIN   DD DSN=KC02322.CSCI465.DATAFA19(DATA7),DISP=SHR
+//SORTOUT  DD DSN=&&SORTED,SPACE=(TRK,(1,5)),DISP=(NEW,PASS)
+//*
+//SYSOUT   DD SYSOUT=*
+//*
+//SYSIN    DD *
+  SORT FIELDS=(1,3,ZD,A)
+/*
+//*
+//JSTEP02  EXEC PGM=IGYCRCTL,PARM=APOST,REGION=0M,COND=(0,LT)
+//*
+//SYSLIB   DD   DSN=KC02322.CSCI465.COPYLIB,DISP=SHR
+//*
+//SYSIN    DD *
+      ****************************************************************
+      *                                                              *
+      * PROGRAM NAME:  SALESRPT                                      *
+      *                                                              *
+      * FUNCTION:  THIS PROJECT WILL INVOLVE ONE MAIN COBOL PROGRAM  *
+      *            THAT CALLS TWO EXTERNAL SUBPROGRAMS, ONE OF THE   *
+      *            TWO SUBPROGRAMS WILL BE WRITTEN IN COBOL AND THE  *
+      *            OTHER WRITTEN IN ASSEMBLER. THE MAIN COBOL DRIVER *
+      *            PROGRAM SALESRPT, WILL PROCESS THE MAIN SALES     *
+      *            MEMBER NAMED KC03.CSCI.DATA(SALES) THE COBOL      *
+      *            SUBPROGRAM WILL READ THE FILE NAMED DATA7 IN THIS *
+      *          SEMESTER'S DATA PDSE TO BUILD THE MUTUAL FUND TABLE.*
+      *            THE ASSEMBLER SUBPROGRAM WILL CALCULATE BOTH      *
+      *            COMMISSION AND SHARE AMOUNT FOR EACH OF A BROKERS *
+      *            S UP TO THREE SALES IN A SINGLE DAY               *
+      ****************************************************************
+
+       IDENTIFICATION DIVISION.
+
+       PROGRAM-ID.    SALESRPT.
+       AUTHOR.        HASNAIN ATTARWALA.
+       DATE-WRITTEN.  11/22/2019.
+       DATE-COMPILED.
+
+       ENVIRONMENT DIVISION.
+
+       INPUT-OUTPUT SECTION.
+
+       FILE-CONTROL.
+           SELECT SALES-FILE  ASSIGN TO SALESFLE.
+           SELECT REPORT-FILE ASSIGN TO RPTFLE.
+
+       DATA DIVISION.
+
+       FILE SECTION.
+
+       FD SALES-FILE
+           RECORDING MODE IS F.
+       COPY SALESREC.
+
+       FD  REPORT-FILE
+           RECORDING MODE IS F.
+
+       01  REPORT-RECORD                       PIC X(132).
+
+       WORKING-STORAGE SECTION.
+
+       01  COBOL-SUB1               PIC X(8)  VALUE 'BUILDTBL'.
+
+       01  EOF-FLAG                 PIC X VALUE 'N'.
+
+       01  ACCUMULATORS.
+           05  LINE-CTR             PIC S9(2) BINARY SYNC VALUE 99.
+           05  BROKER-CTR           PIC S9(3) PACKED-DECIMAL VALUE 0.
+
+       01  FUND-TBL.
+           05 FUND-TBL-CTR          PIC S9(3) BINARY SYNC VALUE 0.
+           05 FUND-TBL-ENTRY        OCCURS 1 TO 199
+                                    DEPENDING ON FUND-TBL-CTR
+                                    ASCENDING KEY TBL-FUND-NBR
+                                    INDEXED BY FUND-NDX.
+       COPY FUNDTBL.
+
+       01  DETAIL-LINE-1.
+           05  OUT-SALES-BRANCH-NME     PIC X(25).
+           05  OUT-SALES-BROKER-NME     PIC X(25).
+           05  FILLER                   PIC X(82)  VALUE SPACES.
+
+       PROCEDURE DIVISION.
+
+       0000-MAIN.
+
+           CALL COBOL-SUB1 USING FUND-TBL.
+
+           CALL 'CALCVALS'.
+
+           OPEN INPUT  SALES-FILE
+                OUTPUT REPORT-FILE.
+
+           READ SALES-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+           PERFORM 0200-PROCESS-BROKER
+             UNTIL EOF-FLAG = 'Y'.
+
+           CLOSE SALES-FILE
+                 REPORT-FILE.
+
+           GOBACK.
+
+       0000-EXIT. EXIT.
+
+       0200-PROCESS-BROKER.
+
+           ADD 1 TO BROKER-CTR.
+
+           MOVE SALES-BRANCH-NME TO OUT-SALES-BRANCH-NME.
+           MOVE SALES-BROKER-NME TO OUT-SALES-BROKER-NME.
+
+           PERFORM 0210-PROCESS-SALE VARYING SALE-NDX FROM 1 BY 1
+             UNTIL SALE-NDX > 3
+                OR SALE-FUND-NBR(SALE-NDX) = 0.
+
+           READ SALES-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+       0200-EXIT. EXIT.
+
+       0210-PROCESS-SALE.
+
+           SEARCH ALL FUND-TBL-ENTRY
+             AT END
+               DISPLAY 'GO PERFORM THE NOT FOUND IDIOT'
+             WHEN TBL-FUND-NBR(FUND-NDX)= SALE-FUND-NBR(SALE-NDX)
+               DISPLAY 'FOUND IT: ' TBL-FUND-NBR (FUND-NDX)
+           END-SEARCH.
+
+       0210-EXIT. EXIT.
+/*
+//*
+//SYSLIN   DD DSN=&&OBJMOD1,SPACE=(CYL,(1,1)),DISP=(MOD,PASS)
+//*
+//SYSPRINT DD SYSOUT=*
+//*
+//SYSUT1   DD SPACE=(CYL,(1,1))
+//SYSUT2   DD SPACE=(CYL,(1,1))
+//SYSUT3   DD SPACE=(CYL,(1,1))
+//SYSUT4   DD SPACE=(CYL,(1,1))
+//SYSUT5   DD SPACE=(CYL,(1,1))
+//SYSUT6   DD SPACE=(CYL,(1,1))
+//SYSUT7   DD SPACE=(CYL,(1,1))
+//SYSUT8   DD SPACE=(CYL,(1,1))
+//SYSUT9   DD SPACE=(CYL,(1,1))
+//SYSUT10  DD SPACE=(CYL,(1,1))
+//SYSUT11  DD SPACE=(CYL,(1,1))
+//SYSUT12  DD SPACE=(CYL,(1,1))
+//SYSUT13  DD SPACE=(CYL,(1,1))
+//SYSUT14  DD SPACE=(CYL,(1,1))
+//SYSUT15  DD SPACE=(CYL,(1,1))
+//SYSMDECK DD SPACE=(CYL,(1,1))
+//*
+//SYSUDUMP DD SYSOUT=*
+//*
+//JSTEP03  EXEC PGM=ASMA90,PARM=ASA,COND=(0,LT)
+//*
+//***********************************************************
+//*                                                         *
+//*  'STEP2' ASSEMBLES THE ASSEMBLER SUBPROGRAM             *
+//*                                                         *
+//*  STEPLIB   LOCATION OF THE ASSEMBLER       (INPUT)      *
+//*  SYSLIB    LOCATION OF ASSEMBLER MACROS    (INPUT)      *
+//*  SYSIN     ASSEMBLER SOURCE PROGRAM        (INPUT)      *
+//*  SYSLIN    OBJECT MODULE CREATED           (OUTPUT)     *
+//*  SYSPRINT  MESSAGES FROM THE ASSEMBLER     (OUTPUT)     *
+//*                                                         *
+//***********************************************************
+//*
+//SYSLIB   DD DSN=SYS1.MACLIB,DISP=SHR
+//*
+//SYSIN    DD *
+         PRINT NOGEN
+***********************************************************
+*  FUNCTION:  THIS SUBPROGRAM CONVERTS THE TEMPS FROM     *
+*             FAHRENHEIT TO CELSIUS OR VICE VERSA         *
+*                                                         *
+*  ON ENTRY:  R1 HAS ADDRESS OF PARAMETER LIST            *
+*             0(R1) = ADDR OF RECORD DATA:                *
+*                                                         *
+*  ON EXIT:   THE CONVERTED TEMPERATURES AND THE          *
+*             CORRESPONDING RECORD DATA IS STORED AT      *
+*             THE TABLE EXTRY ADDRESS IN 8(R1)            *
+*                                                         *
+*  NOTES:     NONE.                                       *
+**********************************************************
+*
+CALCVALS CSECT                   SUBPROGRAM TO CONVERT TEMPS
+         STM   14,12,12(13)      STANDARD LINKAGE
+         LR    12,15
+         USING CALCVALS,12
+         LA    14,SAVEAREA
+         ST    13,4(14)
+         ST    14,8(13)
+         LR    13,14
+**********************************************************
+         SR    15,15                        EXIT LINKAGE
+         L     13,4(,13)
+         L     14,12(,13)
+         LM    0,12,20(13)
+         BR    14
+*
+         LTORG
+
+         ORG   CALCVALS+((*-CALCVALS+31)/32)*32
+         DC    C'*** STORAGE AREA FOR CALCVALS **'
+
+*
+SAVEAREA DC    18F'-1'
+*
+         END   CALCVALS
+/*
+//*
+//SYSLIN   DD DSN=&&OBJMOD2,SPACE=(3040,(40,40),,,ROUND),
+//            DISP=(MOD,PASS)
+//*
+//SYSUT1   DD SPACE=(16384,(120,120),,,ROUND)
+//*
+//SYSPRINT DD SYSOUT=*
+//*
+//***********************************************************
+//*                                                         *
+//*  'SYSUT1' IS A WORK SET REQUIRED BY THE ASSEMBLER       *
+//*                                                         *
+//***********************************************************
+//*
+//JSTEP04  EXEC PGM=HEWL,COND=(0,LT)
+//*
+//***********************************************************
+//*                                                         *
+//*  'STEP4' BINDS THE THREE OBJECT MODULES INTO ONE        *
+//*          PROGRAM OBJECT.                                *
+//*                                                         *
+//*  SYSLIN    OBJECT MODULE TO BE BINDED      (INPUT)      *
+//*  SYSLIB    PROGRAM OBJECT/OBJECT MODULE LIBRARY (INPUT) *
+//*  SYSLMOD   THE CREATED PROGRAM OBJECT      (OUTPUT)     *
+//*  SYSPRINT  MESSAGES FROM THE BINDER        (OUTPUT)     *
+//*                                                         *
+//***********************************************************
+//*
+//SYSLIB   DD DSN=CEE.SCEELKED,DISP=SHR
+//*
+//SYSLIN   DD DSN=&&OBJMOD1,DISP=(OLD,DELETE)
+//         DD DSN=&&OBJMOD2,DISP=(OLD,DELETE)
+//*
+//SYSLMOD  DD DSN=KC03E85.CSCI465.LOADLIB(SALESRPT),DISP=MOD
+//*
+//SYSPRINT DD SYSOUT=*
+//*
+//SYSUT1   DD SPACE=(1024,(120,120),,,ROUND)
+//*
+//JSTEP05  EXEC PGM=IGYCRCTL,PARM=APOST,REGION=0M,COND=(0,LT)
+//*
+//SYSLIB   DD   DSN=KC02322.CSCI465.COPYLIB,DISP=SHR
+//*
+//SYSIN DD *
+
+       IDENTIFICATION DIVISION.
+
+       PROGRAM-ID.    BUILDTBL.
+       AUTHOR.        HASNAIN ATTARWALA.
+       DATE-WRITTEN.  11/12/2019.
+       DATE-COMPILED.
+
+      **********************************************************
+      *  FUNCTION:                                             *
+      *                                                        *
+      *  INPUT:      NONE.                                     *
+      *  OUTPUT:     NONE.                                     *
+      *                                                        *
+      *  ON ENTRY:   THE ADDRESS OF THE TEMPERATURE TABLE      *
+      *              AND THE ADDRESS OF THE NUMBER OF ENTRIES  *
+      *              IS PASSED INTO THE SUBPROGRAM.            *
+      *              SEE THE LINKAGE SECTION.                  *
+      *  ON EXIT:    THE TABLE CONTENTS WILL BE SORTED.        *
+      **********************************************************
+       ENVIRONMENT DIVISION.
+
+       INPUT-OUTPUT SECTION.
+
+       FILE-CONTROL.
+
+           SELECT FUND-FILE  ASSIGN TO FUNDFLE.
+
+       DATA DIVISION.
+
+       FILE SECTION.
+
+       FD  FUND-FILE
+           RECORDING MODE IS F.
+
+       COPY FUNDREC.
+           05  FILLER               PIC X(41) VALUE SPACES.
+
+       WORKING-STORAGE SECTION.
+
+       01  EOF-FLAG                     PIC X VALUE 'N'.
+
+       LINKAGE SECTION.
+
+       01  FUND-TBL.
+           05 FUND-TBL-CTR              PIC S9(3) BINARY SYNC.
+           05 FUND-TBL-ENTRY            OCCURS 1 TO 199
+                                        DEPENDING ON FUND-TBL-CTR
+                                        ASCENDING KEY TBL-FUND-NBR
+                                        INDEXED BY FUND-NDX.
+           COPY FUNDTBL.
+
+       PROCEDURE DIVISION USING FUND-TBL.
+
+       000-MAIN.
+
+           OPEN INPUT  FUND-FILE.
+
+           READ FUND-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+           PERFORM 0100-PROCESS-FUND
+             VARYING FUND-NDX FROM 1 BY 1
+               UNTIL FUND-NDX > 199
+                  OR EOF-FLAG = 'Y'.
+
+           CLOSE FUND-FILE.
+
+           GOBACK.
+
+       000-EXIT. EXIT.
+
+       0100-PROCESS-FUND.
+
+           ADD 1 TO FUND-TBL-CTR.
+
+           MOVE IN-FUND-NBR TO TBL-FUND-NBR(FUND-NDX).
+           MOVE IN-FUND-NME TO TBL-FUND-NME(FUND-NDX).
+           MOVE IN-FUND-SHR-PRC TO TBL-FUND-SHR-PRC(FUND-NDX).
+           MOVE IN-FUND-COMM-PCT TO TBL-FUND-COMM-PCT(FUND-NDX).
+
+           READ FUND-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+       0100-EXIT. EXIT.
+/*
+//*
+//SYSLIN   DD DSN=&&OBJMOD3,SPACE=(CYL,(1,1)),DISP=(MOD,PASS)
+//*
+//SYSPRINT DD SYSOUT=*
+//*
+//***********************************************************
+//*                                                         *
+//*  'SYSUT1' THRU 'SYSUT15' AND 'SYSMDECK' ARE WORK DATA   *
+//*  SETS REQUIRED BY THE COBOL COMPILER V 5.1.0            *
+//*                                                         *
+//***********************************************************
+//*
+//SYSUT1   DD SPACE=(CYL,(1,1))
+//SYSUT2   DD SPACE=(CYL,(1,1))
+//SYSUT3   DD SPACE=(CYL,(1,1))
+//SYSUT4   DD SPACE=(CYL,(1,1))
+//SYSUT5   DD SPACE=(CYL,(1,1))
+//SYSUT6   DD SPACE=(CYL,(1,1))
+//SYSUT7   DD SPACE=(CYL,(1,1))
+//SYSUT8   DD SPACE=(CYL,(1,1))
+//SYSUT9   DD SPACE=(CYL,(1,1))
+//SYSUT10  DD SPACE=(CYL,(1,1))
+//SYSUT11  DD SPACE=(CYL,(1,1))
+//SYSUT12  DD SPACE=(CYL,(1,1))
+//SYSUT13  DD SPACE=(CYL,(1,1))
+//SYSUT14  DD SPACE=(CYL,(1,1))
+//SYSUT15  DD SPACE=(CYL,(1,1))
+//SYSMDECK DD SPACE=(CYL,(1,1))
+//*
+//JSTEP06  EXEC PGM=HEWL,COND=(0,LT)
+//*
+//SYSLIB   DD DSN=CEE.SCEELKED,DISP=SHR
+//*
+//SYSLIN   DD DSN=&&OBJMOD3,DISP=(OLD,DELETE,DELETE)
+//*
+//SYSLMOD  DD DSN=KC03E85.CSCI465.LOADLIB(BUILDTBL),
+//            SPACE=(1024,(50,20,1)),DSNTYPE=LIBRARY,
+//            DISP=(MOD,KEEP,KEEP)
+//*
+//SYSPRINT DD SYSOUT=*
+//*
+//SYSUDUMP DD SYSOUT=*
+//*
+//JSTEP07  EXEC PGM=SALESRPT,COND=(0,LT)
+//*
+//STEPLIB  DD DSN=KC03E85.CSCI465.LOADLIB,DISP=SHR
+//*
+//FUNDFLE DD DSN=&&SORTED,SPACE=(TRK,(1,5)),DISP=(OLD,DELETE)
+//*
+//SALESFLE DD DSN=KC02322.CSCI465.DATA7(SALES),DISP=SHR
+//*
+//RPTFLE   DD SYSOUT=*
+//*
+//SYSPRINT DD SYSOUT=*
+//*
+//SYSUDUMP DD SYSOUT=*
+//

@@ -1,0 +1,63 @@
+                                                                        
+KARAJAN & KLEIBER INVESTMENTS 000025000021000017000013                  
+Berlin Philharmonic                          00093618480 2 D 00003618480
+Vienna Philharmonic                          00716614940 4 D 00006615955
+Chicago Symphony Orchestra                   00080821350 1 W 00000721350
+Boston Symphony Orchestra                    00400870200 2 C            
+Kansas City Symphony                         00004219990 3 W 00000219970
+New York Philharmonic                        00004061210 1 D 00000061810
+Berlin State Orchestra                       00013350281 3 C            
+Grand Rapids Symphony Orchestra              00207430390 1 D 00000430399
+Seattle Symphony Orchestra                   00000841520 1 D 00000871389
+Symphony Orchestra of the Bavarian Radio     00310814021 1 W 00000810121
+Orchestra of the German Opera Berlin         00011081027 3 C            
+Orchestra of Paris                           00431081006 2 C            
+National Orchestra of France                 00241001215 1 C            
+London Philharmonic Orchestra                00014081224 2 W 00001083574
+London Symphony Orchestra                    00310481233 4 D 00010482323
+Philharmonia Orchestra                       00010231242 1 D 00000331242
+San Francisco Symphony                       00010114256 2 W 00002757889
+Scottish National Orchestra                  00310412467 2 W 00310412467
+National Orchestra of Ireland                00310821426 1 W 00009841400
+Czech Philharmonic                           00331083145 1 W 00331083145
+Munich Philharmonic                          00051223410 1 D 00051223410
+Orchestra of the Vienna State Opera          00330000524 1 C            
+Detroit Symphony                             00003111605 1 C            
+Cleveland Orchestra                          00310381726 3 C            
+St. Louis Symphony Orchestra                 00310831127 1 C            
+Scottish National Orchestra                  00310813124 1 W 00310813124
+Hong Kong Symphony Orchestra                 00310811323 2 D 00310811300
+NHK Symphony Orchestra Tokyo                 00460641052 4 C            
+Beijing Philharmonic                         00180764081 1 C            
+Philharmonic Hamburg                         00606825417 3 D 00606115467
+North German Radio Symphony Orchestra        00608627126 2 W 00608627100
+Sao Paulo Symphony Orchestra                 00608266125 2 C            
+Florida Philharmonic                         00698276124 1 D 00098263300
+Lucerne Festival Orchestra                   02618281624 4 W 00000281624
+Beethoven Orchestra Bonn                     00060829123 1 C            
+Royal Philharmonic Orchestra                 00460821233 2 W 00000231242
+Orchestra of Opera Lyon                      00640821232 1 D 00000114256
+Metropolitan Opera Orchestra                 00604821421 2 C            
+MET Orchestra                                02714492358 1 C            
+Orpheus Chamber Orchestra                    00217916207 3 W 00001083145
+Los Angeles Philharmonic                     00661102246 2 D 00000223410
+Berlin Radio Symphony Orchestra              01066362250 2 D 00000434467
+Prague Philharmonic                          00116641619 1 W 00000821426
+Bayreuth Festival Orchestra                  00221661729 4 W 00001243452
+Camerata Academica Salzburg                  00111966789 3 C            
+La Scala Orchestra Milan                     00082114425 1 W 00002321242
+NBC Symphony Orchestra                       00013267784 2 D 00000243500
+Des Moines Symphony                          00013350281 3 C            
+Bamberg Symphony Orchestra                   00207430390 1 D 00000430399
+Vienna Symphony Orchestra                    00000841520 1 D 00000871389
+Salzburg Festival Orchestra                  00310814021 1 W 00000810121
+Houston Symphony Orchestra                   00011081027 3 C            
+Dallas Symphony Orchestra                    00431081006 2 C            
+Minnesota Orchestra                          00241001215 1 C            
+City of Bournemouth Symphony Orchestra       00014081224 2 W 00001083574
+Royal Liverpool Philharmonic Orchestra       00023232554 3 W 00000136634
+BBC Philharmonic                             00310481233 4 D 00010482323
+BBC Symphony Orchestra of Wales              00023392033 3 D 00001483975
+Juilliard School of Music Symphony Orchestra 00010231242 1 D 00000331242
+Orchestra of St. Lukes                       00010114256 2 W 00002757889
+Singapore Symphony Orchestra                 00010114256 2 W 00002757889

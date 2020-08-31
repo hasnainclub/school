@@ -1,0 +1,756 @@
+                    J E S 2  J O B  L O G  --  S Y S T E M  S 0 W 1  --  N O D E  Z O S K C T R         
+
+ 
+19.04.22 JOB08269 ---- WEDNESDAY, 01 MAY 2019 ----
+19.04.22 JOB08269  IRR010I  USERID KC03FB5  IS ASSIGNED TO THIS JOB.
+19.04.22 JOB08269  ICH70001I KC03FB5  LAST ACCESS AT 19:03:27 ON WEDNESDAY, MAY 1, 2019
+19.04.22 JOB08269  $HASP373 KC03FB5A STARTED - INIT 2    - CLASS A        - SYS S0W1
+19.04.22 JOB08269  -                                         --TIMINGS (MINS.)--            ----PAGING COUNTS---
+19.04.22 JOB08269  -JOBNAME  STEPNAME PROCSTEP    RC   EXCP    TCB    SRB  CLOCK   SERV  PG   PAGE   SWAP    VIO SWAPS
+19.04.22 JOB08269  -KC03FB5A                      00     75 ******    .00     .0    470   0      0      0      0     0
+19.04.22 JOB08269  -KC03FB5A ENDED.  NAME-H ATTARWALA          TOTAL TCB CPU TIME=   .00  TOTAL ELAPSED TIME=    .0
+19.04.22 JOB08269  $HASP395 KC03FB5A ENDED
+
+------ JES2 JOB STATISTICS ------
+
+
+  01 MAY 2019 JOB EXECUTION DATE
+
+
+          383 CARDS READ
+
+
+          586 SYSOUT PRINT RECORDS
+
+
+            0 SYSOUT PUNCH RECORDS
+
+
+           70 SYSOUT SPOOL KBYTES
+
+
+         0.00 MINUTES EXECUTION TIME
+!! END OF JES SPOOL FILE !!
+       1 //KC03FB5A JOB ,'H ATTARWALA',MSGCLASS=H                                JOB08269
+       2 //JSTEP01 EXEC PGM=ASSIST                                               00020000
+       3 //STEPLIB DD DSN=KC00NIU.ASSIST.LOADLIB,DISP=SHR                        00030000
+       4 //SYSPRINT DD SYSOUT=*                                                  00040000
+       5 //SYSIN DD *                                                            00050000
+         //*                                                                     00232099
+       6 //FT05F001 DD DSN=KC02322.CSCI360.DATASP19(DATA9),DISP=SHR              00233099
+         //*                                                                     00234099
+       7 //FT06F001 DD SYSOUT=*                                                  00235099
+         //*                                                                     00236099
+       8 //SYSPRINT DD SYSOUT=*                                                  00237099
+!! END OF JES SPOOL FILE !!
+ICH70001I KC03FB5  LAST ACCESS AT 19:03:27 ON WEDNESDAY, MAY 1, 2019
+IEF236I ALLOC. FOR KC03FB5A JSTEP01
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSIN
+IGD103I SMS ALLOCATED TO DDNAME FT05F001
+IEF237I JES2 ALLOCATED TO FT06F001
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF142I KC03FB5A JSTEP01 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC00NIU.ASSIST.LOADLIB                       RETAINED,  DDNAME=STEPLIB 
+IEF285I   KC03FB5.KC03FB5A.JOB08269.D0000102.?         SYSOUT        
+IEF285I   KC03FB5.KC03FB5A.JOB08269.D0000101.?         SYSIN         
+IGD104I KC02322.CSCI360.DATASP19                     RETAINED,  DDNAME=FT05F001
+IEF285I   KC03FB5.KC03FB5A.JOB08269.D0000103.?         SYSOUT        
+IEF285I   KC03FB5.KC03FB5A.JOB08269.D0000104.?         SYSOUT        
+IEF373I STEP/JSTEP01 /START 2019121.1904
+IEF032I STEP/JSTEP01 /STOP  2019121.1904 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:   584K  SYS:   264K  EXT:        0K  SYS:    11460K
+        ATB- REAL:                    12K  SLOTS:                     0K
+             VIRT- ALLOC:       2M SHRD:       0M
+IEF375I  JOB/KC03FB5A/START 2019121.1904
+IEF033I  JOB/KC03FB5A/STOP  2019121.1904 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+!! END OF JES SPOOL FILE !!
+
+*** ASSIST 4.0/A2-05/15/82  470/V7A/0:OS/VS2  INS=SDFP7/X=BGHO, CHECK/TRC/=1180, OPTS=CDKMPR FROM PENN ST*NIU COMPSCI*LT            
+
+                                                                                                                                    
+
+                                                                                                               PAGE    1            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+                                      2 *****************************************************************       00060099            
+                                      3 *                                                               *       00070099            
+                                      4 *  ASSIGNMENT 9- YOUR NINTH   MAINFRAME PROGRAM                 *       00080099            
+                                      5 *  HASNAIN ATTARWALA Z1697740 KC03FB5                           *       00081099            
+                                      6 *  EMILY DUCATTE     Z1831554 KC03G0A                           *       00082099            
+                                      7 *                                                               *       00090099            
+                                      8 *  DUE DATE 5/02/2019                                           *       00100099            
+                                      9 *                                                               *       00110099            
+                                     10 *****************************************************************       00120099            
+000000                               11 PAYROLL  CSECT                                                          00130099            
+000000 90EC D00C            0000C    12          STM   14,12,12(13)   SAVE REGS IN CALLER'S SAVE AREA           00131199            
+000004 18CF                          13          LR    12,15          COPY CSECT ADDR INTO R12ASE REG           00131299            
+000000                               14          USING PAYROLL,12     ESTABLISH R12 AS THE BASE REGSAVE AREA    00131399            
+000006 41E0 C1F0            001F0    15          LA    14,SAVEAREA    R14 POINTS TO THIS CSECT'S SAVE AREAEA    00131499            
+00000A 50E0 D008            00008    16          ST    14,8(,13)      STORE ADDR OF THIS CSECT'S SAVE AREA      00131599            
+00000E 50D0 E004            00004    17          ST    13,4(,14)      STORE ADDR OF CALLER'S SAVE AREA AREA     00131699            
+000012 18DE                          18          LR    13,14          POINT R13 AT THIS CSECT'S SAVE AREA       00131799            
+                                     19 *********CALC AND PRINT PAGE NUMBER**********************               00131999            
+000014 FA20 C6EF C1E8 006EF 001E8    20          AP    PCOUNTER(3),=P'1'                                        00132099            
+00001A D205 C2B7 C1D8 002B7 001D8    21          MVC   OCOUNTER(6),=X'402020202120'                             00132199            
+000020 DE05 C2B7 C6EF 002B7 006EF    22          ED    OCOUNTER(6),PCOUNTER                                     00132299            
+                                     23 *********PRINT COLUMN HEADERS****************************               00132399            
+000026 E020 C238 0085 00238          24          XPRNT HEAD1,133                                                00132499            
+00002C E020 C2BD 0085 002BD          25          XPRNT COLHEAD1,133                                             00132599            
+000032 E020 C342 0085 00342          26          XPRNT COLHEAD2,133                                             00132699            
+000038 E020 C3C7 0085 003C7          27          XPRNT COLHEAD3,133                                             00132799            
+                                     28 **********************************************************              00132899            
+00003E 4190 0063            00063    29          LA    9,99                                                     00132999            
+000042 E000 C44C 0050 0044C          30          XREAD RECORD,80             PRIME READ                         00133099            
+000048 4740 C152            00152    31 LOOP1    BC    B'0100',ENDLOOP1      IF WE REACHED EOF                  00133199            
+                                     32 *********PRINT EMP ID************************************               00134899            
+00004C F247 C6B0 C44C 006B0 0044C    33          PACK  PEMPID(5),IEMPID(8)                                      00134999            
+000052 D209 C49B C1DE 0049B 001DE    34          MVC   OEMPID-1(10),=X'40212020202020202020'                    00135099            
+000058 DE09 C49B C6B0 0049B 006B0    35          ED    OEMPID-1(10),PEMPID                                      00135199            
+00005E 92F0 C49C      0049C          36          MVI   OLINE,C'0'                                               00135299            
+                                     37 *********************************************************               00135399            
+                                     38 *********PRINT PAY RATE**********************************               00135499            
+000062 F224 C6B5 C454 006B5 00454    39          PACK  PHRPAY(3),IHRPAY(5)                                      00135599            
+000068 4110 C4D4            004D4    40          LA    1,OHRPAY+3              IF $99. THATS 3 START CNT 0      00135699            
+00006C D206 C4D1 C1E9 004D1 001E9    41          MVC   OHRPAY(7),=X'402021204B2020'    40 ADD XTRA SP, 20$      00135799            
+                                     42 * 40 EXTRA SP, 20$, 21DIG, 20DIG, 4B. 2DIGITS                           00135899            
+000072 DF06 C4D1 C6B5 004D1 006B5    43          EDMK  OHRPAY(7),PHRPAY                                         00135999            
+000078 0610                          44          BCTR  1,0                                                      00136099            
+00007A 925B 1000      00000          45          MVI   0(1),C'$'                                                00136199            
+                                     46 *********************************************************               00136299            
+                                     47 *********PRINT EMP NAME**********************************               00136399            
+00007E D218 C4AF C468 004AF 00468    48          MVC   OEMPNME(25),IEMPNME                                      00136499            
+                                     49 *********************************************************               00136599            
+                                     50 *********PRINT HOURS WORKED******************************               00136699            
+000084 F224 C6B8 C459 006B8 00459    51          PACK  PHOURS(3),IHOURS(5)                                      00136799            
+00008A D206 C4E1 C1E9 004E1 001E9    52          MVC   OHOURS(7),=X'402021204B2020'                             00136899            
+000090 DE06 C4E1 C6B8 004E1 006B8    53          ED    OHOURS(7),PHOURS                                         00136999            
+
+                                                                                                               PAGE    2            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+                                     54 *********************************************************               00137099            
+                                     55 *********PRINT DEDUCTION*********************************               00137199            
+000096 F224 C6BB C45E 006BB 0045E    56          PACK  PDEDUCT(3),IDEDUCT(5)                                    00137299            
+00009C 4110 C4F4            004F4    57          LA    1,ODEDUCT+3                                              00137399            
+0000A0 D206 C4F1 C1E9 004F1 001E9    58          MVC   ODEDUCT(7),=X'402021204B2020'                            00137499            
+0000A6 DF06 C4F1 C6BB 004F1 006BB    59          EDMK  ODEDUCT(7),PDEDUCT                                       00137599            
+0000AC 0610                          60          BCTR  1,0                                                      00137699            
+0000AE 925B 1000      00000          61          MVI   0(1),C'$'                                                00137799            
+                                     62 *********************************************************               00137899            
+                                     63 *********PRINT BONUS*************************************               00137999            
+0000B2 F224 C6BE C463 006BE 00463    64          PACK  PBONUS(3),IBONUS(5)                                      00138099            
+0000B8 4110 C504            00504    65          LA    1,OBONUS+3                                               00138199            
+0000BC D206 C501 C1E9 00501 001E9    66          MVC   OBONUS(7),=X'402021204B2020'                             00138299            
+0000C2 DF06 C501 C6BE 00501 006BE    67          EDMK  OBONUS(7),PBONUS                                         00138399            
+0000C8 0610                          68          BCTR  1,0                                                      00138499            
+0000CA 925B 1000      00000          69          MVI   0(1),C'$'                                                00138599            
+                                     70 *********************************************************               00138699            
+                                     71 ***********CALL CALCPAY**********************************               00138799            
+0000CE 4110 C6F4            006F4    72          LA    1,PARMS1       R1 PARMS                                  00138899            
+0000D2 58F0 C1C0            001C0    73          L     15,=V(CALCPAY)  R15 CALCPAY                              00138999            
+0000D6 05EF                          74          BALR  14,15          BRANCH AND LINE CALCPAY                   00139099            
+                                     75 *********PRINT CHECK AMT*********************************               00140099            
+0000D8 4110 C51B            0051B    76          LA    1,OCHECK+6                                               00140199            
+0000DC D20B C515 C1C4 00515 001C4    77          MVC   OCHECK(12),=X'40202020206B2021204B2020'                  00140299            
+0000E2 DF0B C515 C6C1 00515 006C1    78          EDMK  OCHECK(12),PCHECK                                        00140399            
+0000E8 0610                          79          BCTR  1,0                                                      00140499            
+0000EA 925B 1000      00000          80          MVI   0(1),C'$'                                                00140599            
+                                     81 *********************************************************               00140699            
+                                     82 *********PRINT TOTAL DEDUCTION***************************               00140799            
+0000EE 4110 C4F4            004F4    83          LA    1,ODEDUCT+3                                              00140999            
+0000F2 D20B C5F6 C1C4 005F6 001C4    84          MVC   OTDEDUCT(12),=X'40202020206B2021204B2020'                00141099            
+0000F8 DF0B C5F6 C6C9 005F6 006C9    85          EDMK  OTDEDUCT(12),PTDEDUCT                                    00141199            
+0000FE 0610                          86          BCTR  1,0                                                      00141299            
+000100 925B 1000      00000          87          MVI   0(1),C'$'                                                00141399            
+                                     88 *********************************************************               00141499            
+                                     89 *********PRINT TOTAL BONUSES*****************************               00141599            
+000104 4110 C609            00609    90          LA    1,OTBONUS+3                                              00141799            
+000108 D20B C606 C1C4 00606 001C4    91          MVC   OTBONUS(12),=X'40202020206B2021204B2020'                 00141899            
+00010E DF0B C606 C6CE 00606 006CE    92          EDMK  OTBONUS(12),PTBONUS                                      00141999            
+000114 0610                          93          BCTR  1,0                                                      00142099            
+000116 925B 1000      00000          94          MVI   0(1),C'$'                                                00142199            
+                                     95 *********PRINT TOTAL CHECKS ALLTOGETHER******************               00142699            
+00011A 4110 C60D            0060D    96          LA    1,OTBONUS+7                                              00142799            
+00011E D20B C61F C1C4 0061F 001C4    97          MVC   OTCHECK(12),=X'40202020206B2021204B2020'                 00142899            
+000124 DF0B C61F C6D3 0061F 006D3    98          EDMK  OTCHECK(12),PTCHECK                                      00142999            
+00012A 0610                          99          BCTR  1,0                                                      00143099            
+00012C 925B 1000      00000         100          MVI   0(1),C'$'                                                00143199            
+                                    101 *********************************************************               00143299            
+                                    102 *********CALC AND PRINT NUMEMPLOYEES*********************               00143399            
+000130 FA10 C6C7 C1E8 006C7 001E8   103          AP    PNUMEMP(2),=P'1'                                         00143499            
+000136 D203 C5B8 C1D0 005B8 001D0   104          MVC   ONUMEMP(4),=X'40202120'                                  00143599            
+00013C DE03 C5B8 C6C7 005B8 006C7   105          ED    ONUMEMP(4),PNUMEMP                                       00143699            
+                                    106 *********************************************************               00143799            
+000142 E020 C49C 0085 0049C         107          XPRNT OLINE,133        PRINT OUT STUFF                         00143899            
+000148 E000 C44C 0050 0044C         108          XREAD RECORD,80        IF BAD CC 1 GOOD CC 0. READ NEXT        00143999            
+00014E 47F0 C048            00048   109          B     LOOP1            BRANCH BACK TO TOP TO CHECK CC          00144099            
+000152 E020 C521 0085 00521         110 ENDLOOP1 XPRNT COLTAIL1,133                                             00144999            
+
+                                                                                                               PAGE    3            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+000158 E020 C5A6 0085 005A6         111          XPRNT COLTAIL2,133                                             00145099            
+                                    112 ***********CALL CALAVG***********************************               00145199            
+00015E 4110 C718            00718   113          LA    1,PARMS2       R1 PARMS                                  00145299            
+000162 58F0 C1D4            001D4   114          L     15,=V(CALCAVG) R15 CALCPAY                               00145399            
+000166 05EF                         115          BALR  14,15          BRANCH AND LINE CALCPAY                   00145499            
+                                    116 *******CALC AVG DEDUCTION**********                                     00145599            
+                                    117 *        ZAP   PAVGDEDU(7),PTDEDUCT(5)                                  00145699            
+                                    118 *        SRP   PAVGDEDU(7),4,0                                          00145799            
+                                    119 *        DP    PAVGDEDU(7),PNUMEMP(2)                                   00145899            
+                                    120 *        SRP   PAVGDEDU(5),(64-4),5                                     00145999            
+                                    121 *******PRINT AVG DEDUCTION****************************                  00146099            
+000168 4110 C681            00681   122          LA    1,OAVGDEDU+6                                             00146199            
+00016C D20B C67B C1C4 0067B 001C4   123          MVC   OAVGDEDU(12),=X'40202020206B2021204B2020'                00146299            
+000172 DF0B C67B C6D9 0067B 006D9   124          EDMK  OAVGDEDU(12),PAVGDEDU                                    00146399            
+000178 0610                         125          BCTR  1,0                                                      00146499            
+00017A 925B 1000      00000         126          MVI   0(1),C'$'                                                00146599            
+                                    127 *******CALC AVG BONUS**************                                     00146699            
+                                    128 *        ZAP   PAVGBONU(7),PTBONUS(5)                                   00146799            
+                                    129 *        SRP   PAVGBONU(7),4,0                                          00146899            
+                                    130 *        DP    PAVGBONU(7),PNUMEMP(2)                                   00146999            
+                                    131 *        SRP   PAVGBONU(5),(64-4),5                                     00147099            
+                                    132 *******PRINT AVG BONUS********************************                  00147199            
+00017E 4110 C691            00691   133          LA    1,OAVGBONU+6                                             00147299            
+000182 D20B C68B C1C4 0068B 001C4   134          MVC   OAVGBONU(12),=X'40202020206B2021204B2020'                00147399            
+000188 DF0B C68B C6E0 0068B 006E0   135          EDMK  OAVGBONU(12),PAVGBONU                                    00147499            
+00018E 0610                         136          BCTR  1,0                                                      00147599            
+000190 925B 1000      00000         137          MVI   0(1),C'$'                                                00147699            
+                                    138 *******CALC AVG PAY AMT************                                     00147799            
+                                    139 *        ZAP   PAVGCHEC(8),PTCHECK(6)                                   00147899            
+                                    140 *        SRP   PAVGCHEC(8),3,0                                          00147999            
+                                    141 *        DP    PAVGCHEC(8),PNUMEMP(2)                                   00148099            
+                                    142 *        SRP   PAVGCHEC(6),(64-3),5                                     00148199            
+                                    143 *******PRINT AVG PAY AMT******************************                  00148299            
+000194 4110 C691            00691   144          LA    1,OAVGBONU+6                                             00148399            
+000198 D20B C6A4 C1C4 006A4 001C4   145          MVC   OAVGCHEC(12),=X'40202020206B2021204B2020'                00148499            
+00019E DF0B C6A4 C6E7 006A4 006E7   146          EDMK  OAVGCHEC(12),PAVGCHEC                                    00148599            
+0001A4 0610                         147          BCTR  1,0                                                      00148699            
+0001A6 925B 1000      00000         148          MVI   0(1),C'$'                                                00148799            
+                                    149 ***********************************                                     00148899            
+0001AA E020 C62B 0085 0062B         150          XPRNT COLTAIL3,133                                             00148999            
+                                    151 ********************************************************                00149099            
+0001B0 1BFF                         152          SR    15,15          R15 = RETURN CODE OF 0 0                  00149199            
+0001B2 58D0 D004            00004   153          L     13,4(,13)      POINT R13 TO CALLER'S SAVE AREA           00149299            
+0001B6 58E0 D00C            0000C   154          L     14,12(,13)     RESTORE REGISTER 14                       00149399            
+0001BA 980C D014            00014   155          LM    0,12,20(13)    RESTORE R0 THRU R12                       00149499            
+0001BE 07FE                         156          BR    14             RETURN TO CALLER                          00149599            
+                                    157 *                                                                       00149699            
+                                    158          LTORG                                                          00149799            
+0001C0 00000738                     159                =V(CALCPAY)                                                                  
+0001C4 40202020206B2021             160                =X'40202020206B2021204B2020'                                                 
+0001D0 40202120                     161                =X'40202120'                                                                 
+0001D4 000007E0                     162                =V(CALCAVG)                                                                  
+0001D8 402020202120                 163                =X'402020202120'                                                             
+0001DE 4021202020202020             164                =X'40212020202020202020'                                                     
+0001E8 1C                           165                =P'1'                                                                        
+0001E9 402021204B2020               166                =X'402021204B2020'                                                           
+0001F0 FFFFFFFFFFFFFFFF             167 SAVEAREA DC    18F'-1'        REGISTER SAVE AREAREA                     00149899            
+
+                                                                                                               PAGE    4            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+                                    168 *                                                                       00149999            
+000238 F1                           169 HEAD1    DC    C'1'             CARRIAGE CONTROL TO TOP OF PG1          00150099            
+000239 4040404040404040             170 INDENT   DC    54C' '           55 BYTEST SO FAR                        00150199            
+00026F C5D4D7D3D6E8C5C5             171          DC    CL23'EMPLOYEE PAYROLL REPORT'                            00150299            
+000286 4040404040404040             172          DC    43C' '           123 SO FAR                              00150399            
+0002B1 D7C1C7C54040                 173          DC    CL6'PAGE  '                                              00150499            
+0002B7                              174 OCOUNTER DS    CL6                                                      00150599            
+                                    175 *                                                                       00150699            
+0002BD F0                           176 COLHEAD1 DC    C'0'             DBL    SPACING                          00150799            
+0002BE C5D4D7D3D6E8C5C5             177          DC    CL18'EMPLOYEE          '                                 00150999            
+0002D0 C5D4D7D3D6E8C5C5             178          DC    CL35'EMPLOYEE                           '                00151099            
+0002F3 C8D6E4D9D3E84040             179          DC    CL17'HOURLY           '                                  00151199            
+000304 C8D6E4D9E2404040             180          DC    CL12'HOURS       '                                       00151299            
+000310 C4C5C4E4C3E3C9D6             181          DC    CL20'DEDUCTION           '                               00151399            
+000324 C2D6D5E4E2404040             182          DC    CL14'BONUS         '                                     00151499            
+000332 40404040C5D4D7D3             183          DC    CL16'    EMPLOYEE PAY'                                   00151599            
+000342 40                           184 COLHEAD2 DC    C' '             SINGLE SPACING                          00151699            
+000343 C9C4404040404040             185          DC    CL18'ID                '                                 00151899            
+000355 D5C1D4C540404040             186          DC    CL33'NAME                             '                  00151999            
+000376 40404040D9C1E3C5             187          DC    CL18'    RATE          '                                 00152099            
+000388 E6D6D9D2C5C44040             188          DC    CL16'WORKED          '                                   00152199            
+000398 C1D4D6E4D5E34040             189          DC    CL16'AMOUNT          '                                   00152299            
+0003A8 C1D4D6E4D5E34040             190          DC    CL25'AMOUNT                   '                          00152399            
+0003C1 C1D4D6E4D5E3                 191          DC    CL6'AMOUNT'                                              00152499            
+                                    192 *                                                                       00152599            
+0003C7 40                           193 COLHEAD3 DC    C' '             SINGLE SPACING                          00152699            
+0003C8 6060606060606060             194          DC    CL18'--------          '                                 00152899            
+0003DA 6060606060606060             195          DC    CL33'-------------------------        '                  00152999            
+0003FB 6060606060606060             196          DC    CL17'--------         '                                  00153099            
+00040C 6060606060606040             197          DC    CL13'-------      '                                      00153199            
+000419 6060606060606060             198          DC    CL16'----------      '                                   00153299            
+000429 6060606060606060             199          DC    CL17'----------       '                                  00153399            
+00043A 6060606060606060             200          DC    CL18'------------------'                                 00153499            
+                                    201 *                                                                       00153599            
+00044C                              202 RECORD   DS    0H                                                       00153699            
+00044C                              203 IEMPID   DS    ZL8                                                      00153799            
+000454                              204 IHRPAY   DS    ZL5                                                      00153899            
+000459                              205 IHOURS   DS    ZL5                                                      00153999            
+00045E                              206 IDEDUCT  DS    ZL5                                                      00154099            
+000463                              207 IBONUS   DS    ZL5                                                      00154199            
+000468                              208 IEMPNME  DS    CL25                                                     00154299            
+000481                              209          DS    CL27                                                     00154399            
+                                    210 *                                                                       00154499            
+                                    211 *        DS    CL1                                                      00154599            
+00049C                              212 OLINE    DS    0H               DONT COUNT FOR 133                      00154699            
+00049C                              213 OEMPID   DS    CL9                                                      00154799            
+0004A5 4040404040404040             214          DC    10C' '           10CHAR SPACES                           00154899            
+0004AF                              215 OEMPNME  DS    CL25             DEFINE STORAGE 25 FOR NAME              00154999            
+0004C8 4040404040404040             216          DC    9C' '            53 UPTIL NOW                            00155099            
+0004D1                              217 OHRPAY   DS    CL7                                                      00155199            
+0004D8 4040404040404040             218          DC    9C' '                                                    00155299            
+0004E1                              219 OHOURS   DS    CL7                                                      00155399            
+0004E8 4040404040404040             220          DC    9C' '                                                    00155499            
+0004F1                              221 ODEDUCT  DS    CL7                                                      00155599            
+0004F8 4040404040404040             222          DC    9C' '                                                    00155699            
+000501                              223 OBONUS   DS    CL7              108 OF 133                              00155799            
+000508 4040404040404040             224          DC    13C' '                                                   00155899            
+
+                                                                                                               PAGE    5            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+000515                              225 OCHECK   DS    CL12                                                     00155999            
+                                    226 *                                                                       00156099            
+000521 40                           227 COLTAIL1 DC    C' '             SINGLE SPACING                          00156199            
+000522 6060606060606060             228          DC    CL18'--------          '                                 00156299            
+000534 6060606060606060             229          DC    CL25'-------------------------'                          00156399            
+00054D 4040404040404040             230          DC    CL38' '                                                  00156499            
+000573 6060606060606060             231          DC    CL16'----------      '                                   00156599            
+000583 6060606060606060             232          DC    CL17'----------       '                                  00156699            
+000594 6060606060606060             233          DC    CL18'------------------'                                 00156799            
+                                    234 *                                                                       00156899            
+0005A6 F0                           235 COLTAIL2 DC    C'0'             SINGLE SPACING                          00156999            
+0005A7 40E3D6E3C1D3E27A             236          DC    CL15' TOTALS:       '                                    00157099            
+0005B6 4040                         237          DC    2C' '                                                    00157199            
+0005B8                              238 ONUMEMP  DS    CL4                                                      00157299            
+0005BC 40                           239          DC    1C' '                                                    00157399            
+0005BD C5D4D7D3D6E8C5C5             240          DC    CL11'EMPLOYEE(S)'                                        00157499            
+0005C8 4040404040404040             241          DC    46C' '                                                   00157599            
+0005F6                              242 OTDEDUCT DS    CL12                                                     00157699            
+000602 40404040                     243          DC    4C' '                                                    00157799            
+000606                              244 OTBONUS  DS    CL12                                                     00157899            
+000612 4040404040404040             245          DC    13C' '                                                   00157999            
+00061F                              246 OTCHECK  DS    CL12                                                     00158099            
+                                    247 *                                                                       00158199            
+                                    248 *****                                                                   00158299            
+00062B F0                           249 COLTAIL3 DC    C'0'             SINGLE SPACING                          00158399            
+00062C C1E5C5D9C1C7C5E2             250          DC    CL9'AVERAGES:'                                           00158499            
+000635 4040404040404040             251          DC    70C' '                                                   00158599            
+00067B                              252 OAVGDEDU DS    CL12                                                     00158699            
+000687 40404040                     253          DC    4C' '                                                    00158799            
+00068B                              254 OAVGBONU DS    CL12                                                     00158899            
+000697 4040404040404040             255          DC    13C' '                                                   00158999            
+0006A4                              256 OAVGCHEC DS    CL12                                                     00159099            
+                                    257 **************************                                              00159199            
+0006B0 000000000C                   258 PEMPID   DC    PL5'0'                                                   00159299            
+0006B5 00000C                       259 PHRPAY   DC    PL3'0'                                                   00159399            
+0006B8 00000C                       260 PHOURS   DC    PL3'0'                                                   00159499            
+0006BB 00000C                       261 PDEDUCT  DC    PL3'0'                                                   00159599            
+0006BE 00000C                       262 PBONUS   DC    PL3'0'                                                   00159699            
+0006C1 00000000000C                 263 PCHECK   DC    PL6'0'     HRPAY+PHOUR                                   00159799            
+0006C7 000C                         264 PNUMEMP  DC    PL2'0'                                                   00159899            
+0006C9 000000000C                   265 PTDEDUCT DC    PL5'0'                                                   00159999            
+0006CE 000000000C                   266 PTBONUS  DC    PL5'0'                                                   00160099            
+0006D3 00000000000C                 267 PTCHECK  DC    PL6'0'     1127401                                       00160199            
+0006D9 0000000000000C               268 PAVGDEDU DC    PL7'0'                                                   00160299            
+0006E0 0000000000000C               269 PAVGBONU DC    PL7'0'                                                   00160399            
+0006E7 000000000000000C             270 PAVGCHEC DC    PL8'0'                                                   00160499            
+0006EF 00000C                       271 PCOUNTER DC    PL3'0'                                                   00160599            
+                                    272 *********PARAMETER LIST1****************                                00161099            
+0006F4 000006B5                     273 PARMS1   DC    A(PHRPAY)                                                00161199            
+0006F8 000006B8                     274          DC    A(PHOURS)                                                00161299            
+0006FC 000006BB                     275          DC    A(PDEDUCT)                                               00161399            
+000700 000006BE                     276          DC    A(PBONUS)                                                00161499            
+000704 000006C1                     277          DC    A(PCHECK)                                                00161599            
+000708 000006C7                     278          DC    A(PNUMEMP)                                               00161699            
+00070C 000006C9                     279          DC    A(PTDEDUCT)                                              00161799            
+000710 000006CE                     280          DC    A(PTBONUS)                                               00161899            
+000714 000006D3                     281          DC    A(PTCHECK)                                               00161999            
+
+                                                                                                               PAGE    6            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+                                    282 *********PARAMETER LIST2****************                                00162099            
+000718 000006C7                     283 PARMS2   DC    A(PNUMEMP)                                               00162199            
+00071C 000006C9                     284          DC    A(PTDEDUCT)                                              00162299            
+000720 000006CE                     285          DC    A(PTBONUS)                                               00162399            
+000724 000006D3                     286          DC    A(PTCHECK)                                               00162499            
+000728 000006D9                     287          DC    A(PAVGDEDU)                                              00162599            
+00072C 000006E0                     288          DC    A(PAVGBONU)                                              00162699            
+000730 000006E7                     289          DC    A(PAVGCHEC)                                              00162799            
+                                    290 *****************SUB PROGR CALCPAY*******                               00163199            
+000738                              291 CALCPAY  CSECT                                                          00163299            
+                                    292 *****************ENTRY LINKAGE**********                                00163399            
+000738 90EC D00C            0000C   293          STM   14,12,12(13)   SAVE REGS IN CALLER'S SAVE AREA           00163499            
+00073C 18CF                         294          LR    12,15          COPY CSECT ADDR INTO R12ASE REG           00163599            
+000738                              295          USING CALCPAY,12     ESTABLISH R12 AS THE BASE REGSAVE AREA    00163699            
+00073E 41E0 C060            00798   296          LA    14,SAVEARE2    R14 POINTS TO THIS CSECT'S SAVE AREAEA    00163799            
+000742 50E0 D008            00008   297          ST    14,8(,13)      STORE ADDR OF THIS CSECT'S SAVE AREA      00163899            
+000746 50D0 E004            00004   298          ST    13,4(,14)      STORE ADDR OF CALLER'S SAVE AREA AREA     00164099            
+00074A 18DE                         299          LR    13,14          POINT R13 AT THIS CSECT'S SAVE AREA       00165099            
+                                    300 *                                                                       00165199            
+00074C 982A 1000            00000   301          LM    2,10,0(1)                                                00165299            
+                                    302 *******************CALCPAY LOGIC******************                      00166099            
+                                    303 *PHRPAY  3  R2  0(3,2)                                                  00166299            
+                                    304 *PHOURS  3  R3  0(3,3)                                                  00166399            
+                                    305 *PDEDUCT 3  R4  0(3,4)                                                  00166499            
+                                    306 *PBONUS  3  R5  0(3,5)                                                  00166599            
+                                    307 *PCHECK  6  R6  0(6,6)                                                  00166699            
+                                    308 *PNUMEMP 2  R7  0(2,7)                                                  00166799            
+                                    309 *PTDEDUC 5  R8  0(5,8)                                                  00166899            
+                                    310 *PTBONUS 5  R9  0(5,9)                                                  00166999            
+                                    311 *PTCHECK 6  R10 0(6,10)                                                 00167099            
+                                    312 *********CALC CHECK AMTS*********************************               00168299            
+000750 F852 6000 2000 00000 00000   313          ZAP   0(6,6),0(3,2)         PCHECK(6),PHRPAY(3)                00168399            
+000756 FC52 6000 3000 00000 00000   314          MP    0(6,6),0(3,3)         PCHECK(6),PHOURS(3)                00168499            
+00075C F055 6000 003E 00000 0003E   315          SRP   0(6,6),(64-2),5       PCHECK(6),(64-2),5                 00168599            
+000762 FA52 6000 5000 00000 00000   316          AP    0(6,6),0(3,5)         PCHECK(6),PBONUS(3)                00168699            
+000768 FB52 6000 4000 00000 00000   317          SP    0(6,6),0(3,4)         PCHECK(6),PDEDUCT(3)               00168799            
+00076E F055 6000 0002 00000 00002   318          SRP   0(6,6),2,5            PCHECK(6),2,5                      00168899            
+                                    319 *********CALC TOTAL DEDUCTION****************************               00168999            
+000774 FA42 8000 4000 00000 00000   320          AP    0(5,8),0(3,4)         PTDEDUCT(5),PDEDUCT(3)             00169099            
+                                    321 *********CALC TOTAL BONUSES******************************               00169199            
+00077A FA42 9000 5000 00000 00000   322          AP    0(5,9),0(3,5)         PTBONUS(5),PBONUS(3)               00169299            
+                                    323 *********CALC TOTAL CHECK AMTS***************************               00169399            
+000780 FA55 A000 6000 00000 00000   324          AP    0(6,10),0(6,6)        PTCHECK(6),PCHECK(6)               00169499            
+                                    325 **************EXIT LINKAGE********************                          00169599            
+000786 1BFF                         326          SR    15,15          R15 = RETURN CODE OF 0 0                  00169699            
+000788 58D0 D004            00004   327          L     13,4(,13)      POINT R13 TO CALLER'S SAVE AREA           00169799            
+00078C 58E0 D00C            0000C   328          L     14,12(,13)     RESTORE REGISTER 14                       00169899            
+000790 980C D014            00014   329          LM    0,12,20(13)    RESTORE R0 THRU R12                       00169999            
+000794 07FE                         330          BR    14             RETURN TO CALLER                          00170099            
+                                    331 *                                                                       00170199            
+                                    332          LTORG                                                          00170299            
+000798 FFFFFFFFFFFFFFFF             333 SAVEARE2 DC    18F'-1'        REGISTER SAVE AREAREA                     00170399            
+                                    334 *****************SUB PROGR CALCAVG*******                               00170499            
+0007E0                              335 CALCAVG  CSECT                                                          00170599            
+                                    336 *****************ENTRY LINKAGE**********                                00170699            
+0007E0 90EC D00C            0000C   337          STM   14,12,12(13)   SAVE REGS IN CALLER'S SAVE AREA           00170799            
+0007E4 18CF                         338          LR    12,15          COPY CSECT ADDR INTO R12ASE REG           00170899            
+
+                                                                                                               PAGE    7            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+0007E0                              339          USING CALCAVG,12     ESTABLISH R12 AS THE BASE REGSAVE AREA    00170999            
+0007E6 41E0 C070            00850   340          LA    14,SAVEARE3    R14 POINTS TO THIS CSECT'S SAVE AREAEA    00171099            
+0007EA 50E0 D008            00008   341          ST    14,8(,13)      STORE ADDR OF THIS CSECT'S SAVE AREA      00171199            
+0007EE 50D0 E004            00004   342          ST    13,4(,14)      STORE ADDR OF CALLER'S SAVE AREA AREA     00171299            
+0007F2 18DE                         343          LR    13,14          POINT R13 AT THIS CSECT'S SAVE AREA       00171399            
+                                    344 *                                                                       00171499            
+0007F4 9828 1000            00000   345          LM    2,8,0(1)       R2                                        00171599            
+                                    346 *******************CALCAVG LOGIC******************                      00171699            
+                                    347 *PNUMEMP  2 R2 0(2,2)                                                   00172299            
+                                    348 *PTDEDUCT 5 R3 0(5,3)                                                   00172399            
+                                    349 *PTBONUS  5 R4 0(5,4)                                                   00172499            
+                                    350 *PTCHECK  6 R5 0(6,5)                                                   00172599            
+                                    351 *PAVGDEDU 7 R6 0(7,6)                                                   00172699            
+                                    352 *PAVGBONU 7 R7 0(7,7)                                                   00172799            
+                                    353 *PAVGCHEC 8 R8 0(8,8)                                                   00172899            
+                                    354 *******CALC AVG DEDUCTION**********                                     00173099            
+0007F8 F864 6000 3000 00000 00000   355          ZAP   0(7,6),0(5,3)         PAVGDEDU(7),PTDEDUCT(5)            00173199            
+0007FE F060 6000 0004 00000 00004   356          SRP   0(7,6),4,0            PAVGDEDU(7),4,0                    00173299            
+000804 FD61 6000 2000 00000 00000   357          DP    0(7,6),0(2,2)         PAVGDEDU(7),PNUMEMP(2)             00173399            
+00080A F045 6000 003C 00000 0003C   358          SRP   0(5,6),(64-4),5       PAVGDEDU(5),(64-4),5               00173499            
+                                    359 *******CALC AVG BONUS**************                                     00173599            
+000810 F864 7000 4000 00000 00000   360          ZAP   0(7,7),0(5,4)         PAVGBONU(7),PTBONUS(5)             00173699            
+000816 F060 7000 0004 00000 00004   361          SRP   0(7,7),4,0            PAVGBONU(7),4,0                    00173799            
+00081C FD61 7000 2000 00000 00000   362          DP    0(7,7),0(2,2)         PAVGBONU(7),PNUMEMP(2)             00173899            
+000822 F045 7000 003C 00000 0003C   363          SRP   0(5,7),(64-4),5       PAVGBONU(5),(64-4),5               00173999            
+                                    364 *******CALC AVG PAY AMT************                                     00174099            
+000828 F875 8000 5000 00000 00000   365          ZAP   0(8,8),0(6,5)         PAVGCHEC(8),PTCHECK(6)             00174199            
+00082E F070 8000 0003 00000 00003   366          SRP   0(8,8),3,0            PAVGCHEC(8),3,0                    00174299            
+000834 FD71 8000 2000 00000 00000   367          DP    0(8,8),0(2,2)         PAVGCHEC(8),PNUMEMP(2)             00174399            
+00083A F055 8000 003D 00000 0003D   368          SRP   0(6,8),(64-3),5       PAVGCHEC(6),(64-3),5               00174499            
+                                    369 **************EXIT LINKAGE********************                          00174599            
+000840 1BFF                         370          SR    15,15          R15 = RETURN CODE OF 0 0                  00174699            
+000842 58D0 D004            00004   371          L     13,4(,13)      POINT R13 TO CALLER'S SAVE AREA           00174799            
+000846 58E0 D00C            0000C   372          L     14,12(,13)     RESTORE REGISTER 14                       00174899            
+00084A 980C D014            00014   373          LM    0,12,20(13)    RESTORE R0 THRU R12                       00174999            
+00084E 07FE                         374          BR    14             RETURN TO CALLER                          00175099            
+                                    375 *                                                                       00175199            
+                                    376          LTORG                                                          00175299            
+000850 FFFFFFFFFFFFFFFF             377 SAVEARE3 DC    18F'-1'        REGISTER SAVE AREAREA                     00175399            
+                                    378 ******************************************                              00176099            
+                                    379          END   PAYROLL                                                  00180099            
+
+***  NO   STATEMENTS FLAGGED -  NO   WARNINGS,  NO   ERRORS                                                                         
+
+*** DYNAMIC CORE AREA USED:  LOW:   23348 HIGH:    1728 LEAVING:  468492 FREE BYTES. AVERAGE:       65 BYTES/STMT ***               
+
+*** ASSEMBLY TIME =    0.000 SECS,   380000 STATEMENTS/SEC ***                                                                      
+
+*** PROGRAM EXECUTION BEGINNING - ANY OUTPUT BEFORE EXECUTION TIME MESSAGE IS PRODUCED BY USER PROGRAM ***                          
+
+                                                      EMPLOYEE PAYROLL REPORT                                           PAGE       1
+
+EMPLOYEE          EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS             EMPLOYEE PAY
+ID                NAME                                 RATE          WORKED          AMOUNT          AMOUNT                   AMOUNT
+--------          -------------------------        --------         -------      ----------      ----------       ------------------
+
+02345242          JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03456322          WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04032233          RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06465120          AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06560023          DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+13870322          PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14966277          ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+33345245          OLIVIER MESSIAEN                   $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03456422          SERGEI RACHMANINOV                 $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04232233          SAMUEL BARBER                      $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06466120          JOHN TAVENER                       $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06550023          HERBERT VON KARAJAN                $23.75           28.25          $34.15          $70.85                  $707.64
+
+13899322          MSTISLAV ROSTROPOVICH              $22.95           80.50          $21.25           $0.00                $1,826.23
+
+94966277          HENRYK SZERYNG                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02348245          TON KOOPMAN                        $15.25           80.50          $25.10         $500.22                $1,702.75
+
+13456322          NIKOLAUS HARNONCOURT               $19.00           80.75           $0.00          $13.44                $1,547.69
+
+34032233          JOSEPH HAYDN                       $10.29           80.00          $31.23         $254.00                $1,045.97
+
+46465120          MICHAEL HAYDN                      $22.00           80.00          $15.09         $900.25                $2,645.16
+
+36560023          MICHEL SCHWALBE                    $23.75           28.25          $34.15          $70.85                  $707.64
+
+13870432          FERENC FRICSAY                     $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14963277          BERNARD HAITINK                    $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02344245          GEORG SOLTI                        $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03446327          FRITZ REINER                       $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04033233          JASCHA HEIFETZ                     $10.29           80.00          $31.23         $254.00                $1,045.97
+
+01465120          DAVID OISTRAKH                     $22.00           80.00          $15.09         $900.25                $2,645.16
+
+01560023          ANNE SOPHIE MUTTER                 $23.75           28.25          $34.15          $70.85                  $707.64
+
+13370322          LEONARD BERNSTEIN                  $22.95           80.50          $21.25           $0.00                $1,826.23
+
+24966277          GEORGE FREDRIC HANDEL              $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02233245          FRANZ SCHUBERT                     $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03452322          FREDERICK FENNELL                  $19.00           80.75           $0.00          $13.44                $1,547.69
+
+02235533          MARTHA ARGERICH                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06455660          CLAUDIO ABBADO                     $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06564453          BELA BARTOK                        $23.75           28.25          $34.15          $70.85                  $707.64
+
+13873322          EUGEN JOCHUM                       $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14964377          HECTOR BERLIOZ                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02222245          WILLIAM SCHUMAN                    $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03454367          ROBERT SCHUMANN                    $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04882233          TILL EULENSPIEGEL                  $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06865120          DON JUAN                           $22.00           80.00          $15.09         $900.25                $2,645.16
+
+08560023          HANS BRINKER                       $23.75           28.25          $34.15          $70.85                  $707.64
+
+83870322          VICTOR HUGO                        $22.95           80.50          $21.25           $0.00                $1,826.23
+
+17966277          LORIN MAAZEL                       $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02345242          RICCARDO MUTI                      $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03456322          CARL MARIA VON WEBER               $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04032233          GUSTAV MAHLER                      $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06465120          KARL BOHM                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06560023          PIERRE BOULEZ                      $23.75           28.25          $34.15          $70.85                  $707.64
+
+13870322          WILLI BOSKOVSKY                    $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14966277          LUDWIG VAN BEETHOVEN               $20.20           78.67           $0.79         $210.23                $1,798.57
+
+33345245          GAETANO DONIZETTI                  $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03456422          GIACOMO PUCCINI                    $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04232233          GIUSEPPE VERDI                     $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06466120          JON VICKERS                        $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06550023          JOAN SUTHERLAND                    $23.75           28.25          $34.15          $70.85                  $707.64
+
+13899322          LUCIANO PAVAROTTI                  $22.95           80.50          $21.25           $0.00                $1,826.23
+
+94966277          ARTURO TOSCANINI                   $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02348245          KLAUS TENNSTEDT                    $15.25           80.50          $25.10         $500.22                $1,702.75
+
+13456322          DON GIOVANNI                       $19.00           80.75           $0.00          $13.44                $1,547.69
+
+34032233          JOHN PHILIP SOUSA                  $10.29           80.00          $31.23         $254.00                $1,045.97
+
+46465120          DMITRI SHOSTAKOVICH                $22.00           80.00          $15.09         $900.25                $2,645.16
+
+36560023          GIULIO CESARE                      $23.75           28.25          $34.15          $70.85                  $707.64
+
+13870432          PIERRE FOURNIER                    $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14963277          MARIA CALLAS                       $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02344245          ARAM KHATCHATURIAN                 $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03446327          LEOS JANACEK                       $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04033233          ANTONIN DVORAK                     $10.29           80.00          $31.23         $254.00                $1,045.97
+
+01465120          JOHN ADAMS                         $22.00           80.00          $15.09         $900.25                $2,645.16
+
+01560023          JOHN CAGE                          $23.75           28.25          $34.15          $70.85                  $707.64
+
+13370322          JOSEPH JONGEN                      $22.95           80.50          $21.25           $0.00                $1,826.23
+
+24966277          BOHUSLAV MARTINU                   $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02233245          IGOR STRAVINSKY                    $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03452322          PIERRE MONTEAU                     $19.00           80.75           $0.00          $13.44                $1,547.69
+
+02235533          DIMITRI MITROPOULOS                $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06455660          SERGE KOUSSEVITZKY                 $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06564453          KAROL SZYMANOWSKI                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+13873322          CARL NIELSEN                       $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14964377          JEAN SIBELIUS                      $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02222245          GEORGE ENESCU                      $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03454367          FRANK MARTIN                       $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04882233          MARCEL DUPRE                       $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06865120          MAURICE RAVEL                      $22.00           80.00          $15.09         $900.25                $2,645.16
+
+08560023          CLAUDE DEBUSSY                     $23.75           28.25          $34.15          $70.85                  $707.64
+
+83870322          MODEST MUSSORGSKY                  $22.95           80.50          $21.25           $0.00                $1,826.23
+
+17966277          ALEXANDER ZEMLINSKY                $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02345242          GEORGE GERSHWIN                    $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03456322          FERRUCCIO BUSONI                   $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04032233          EUGENE YSAYE                       $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06465120          FRANZ LISZT                        $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06560023          FREDRIC CHOPIN                     $23.75           28.25          $34.15          $70.85                  $707.64
+
+13870322          DANIEL BARENBOIM                   $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14966277          RICHARD WAGNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+33345245          FRANCIS POULENC                    $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03456422          JOHANN WOLFGANG GOETHE             $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04232233          ARNOLD SCHOENBERG                  $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06466120          ALBAN BERG                         $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06550023          ANTON WEBERN                       $23.75           28.25          $34.15          $70.85                  $707.64
+
+13899322          GUSTAV KLIMT                       $22.95           80.50          $21.25           $0.00                $1,826.23
+
+94966277          DARIUS MILHAUD                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02348245          ARTHUR HONEGGER                    $15.25           80.50          $25.10         $500.22                $1,702.75
+
+13456322          JOSEPH CANTELOUBE                  $19.00           80.75           $0.00          $13.44                $1,547.69
+
+34032233          AARON COPLAND                      $10.29           80.00          $31.23         $254.00                $1,045.97
+
+46465120          JOSEPH SZIGETI                     $22.00           80.00          $15.09         $900.25                $2,645.16
+
+36560023          ELLA FITZGERALD                    $23.75           28.25          $34.15          $70.85                  $707.64
+
+13870432          JOSEPHINE BAKER                    $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14963277          JACQUES IBERT                      $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02344245          EDWARD ELGAR                       $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03446327          BENJAMIN BRITTEN                   $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04033233          WILLIAM WALTON                     $10.29           80.00          $31.23         $254.00                $1,045.97
+
+01465120          RALPH VAUGHAN WILLIAMS             $22.00           80.00          $15.09         $900.25                $2,645.16
+
+01560023          PETER WARLOCK                      $23.75           28.25          $34.15          $70.85                  $707.64
+
+13370322          EDGAR VARESE                       $22.95           80.50          $21.25           $0.00                $1,826.23
+
+24966277          SERGEI PROKOFIEV                   $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02233245          CHARLES IVES                       $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03452322          ERICH WOLFGANG KORNGOLD            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+02235533          MANUEL DE FALLA                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06455660          HANS RICHTER                       $22.00           80.00          $15.09         $900.25                $2,645.16
+
+06564453          JOSEF STRAUSS                      $23.75           28.25          $34.15          $70.85                  $707.64
+
+13873322          JOHANN STRAUSS I                   $22.95           80.50          $21.25           $0.00                $1,826.23
+
+14964377          ZUBIN MEHTA                        $20.20           78.67           $0.79         $210.23                $1,798.57
+
+02222245          EDITH PIAF                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+03454367          LILI BOULANGER                     $19.00           80.75           $0.00          $13.44                $1,547.69
+
+04882233          GUSTAV HOLST                       $10.29           80.00          $31.23         $254.00                $1,045.97
+
+06865120          JOHANN STRAUSS II                  $22.00           80.00          $15.09         $900.25                $2,645.16
+
+08560023          PERCY GRAINGER                     $23.75           28.25          $34.15          $70.85                  $707.64
+
+83870322          EDUARD STRAUSS                     $22.95           80.50          $21.25           $0.00                $1,826.23
+
+17966277          ERNEST CHAUSSON                    $20.20           78.67           $0.79         $210.23                $1,798.57
+--------          -------------------------                                      ----------      ----------       ------------------
+
+ TOTALS:          126 EMPLOYEE(S)                                                 $2,296.98      $35,081.82              $202,932.18
+
+AVERAGES:                                                                            $18.23         $278.43                $1,610.57
+
+*** EXECUTION TIME =    0.003 SECS.      9768 INSTRUCTIONS EXECUTED -  3256000 INSTRUCTIONS/SEC ***                                 
+
+*** AM004 - NORMAL USER TERMINATION BY RETURN ***                                                                                   
+!! END OF JES SPOOL FILE !!

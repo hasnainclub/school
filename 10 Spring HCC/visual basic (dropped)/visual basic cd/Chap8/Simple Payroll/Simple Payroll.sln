@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Simple Payroll", "Simple Payroll.vbproj", "{6C9C48D3-4436-48F2-8E75-5F4CFF8337EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C9C48D3-4436-48F2-8E75-5F4CFF8337EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9C48D3-4436-48F2-8E75-5F4CFF8337EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9C48D3-4436-48F2-8E75-5F4CFF8337EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9C48D3-4436-48F2-8E75-5F4CFF8337EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

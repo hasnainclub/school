@@ -1,0 +1,23 @@
+D:\sovb4\examples\Chap5\Do While Demo\obj\Debug\Do While Demo.exe
+D:\sovb4\examples\Chap5\Do While Demo\obj\Debug\Do While Demo.pdb
+D:\sovb4\examples\Chap5\Do While Demo\bin\Do While Demo.exe
+D:\sovb4\examples\Chap5\Do While Demo\bin\Do While Demo.pdb
+D:\sovb4\examples\Chap5\Do While Demo\bin\Do While Demo.xml
+D:\sovb4\examples\Chap5\Do While Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap5\Do While Demo\obj\Debug\Do_While_Demo.Form1.resources
+D:\sovb4\examples\Chap5\Do While Demo\obj\Debug\Do_While_Demo.Resources.resources
+D:\sovb4\examples\Chap5\Do While Demo\obj\Debug\Do While Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap5\Do While Demo\obj\Debug\Do While Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\obj\Debug\Do While Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\obj\Debug\Do While Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\obj\Debug\Do While Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\bin\Do While Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\bin\Do While Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\bin\Do While Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\obj\Debug\Do_While_Demo.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\obj\Debug\Do_While_Demo.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap5\Do While Demo\obj\Debug\Do While Demo.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Do While Demo\obj\Debug\Do While Demo.exe
+C:\Users\hasnainpc\Desktop\vb projects\Do While Demo\obj\Debug\Do While Demo.xml
+C:\Users\hasnainpc\Desktop\vb projects\Do While Demo\obj\Debug\Do While Demo.pdb

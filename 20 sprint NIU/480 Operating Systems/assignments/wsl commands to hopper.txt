@@ -1,0 +1,3 @@
+ssh -o IPQoS=throughput z1697740@hopper.cs.niu.edu
+
+scp * hopper:~/csci480/assign3/

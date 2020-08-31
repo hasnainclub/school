@@ -1,0 +1,24 @@
+D:\sovb4\examples\Chap7\Ticket Sales\bin\Ticket Sales.exe
+D:\sovb4\examples\Chap7\Ticket Sales\bin\Ticket Sales.pdb
+D:\sovb4\examples\Chap7\Ticket Sales\bin\Ticket Sales.xml
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.frmGeneral.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.frmMain.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.frmStudent.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.Resources.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket Sales.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket Sales.exe
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket Sales.xml
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Debug\Ticket Sales.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket Sales.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket Sales.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket Sales.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\bin\Ticket Sales.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\bin\Ticket Sales.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\bin\Ticket Sales.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.frmGeneral.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.frmMain.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.frmStudent.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket_Sales.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap7\Ticket Sales\obj\Debug\Ticket Sales.vbproj.GenerateResource.Cache

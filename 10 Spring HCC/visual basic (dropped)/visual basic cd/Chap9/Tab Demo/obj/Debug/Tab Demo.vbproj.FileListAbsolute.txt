@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap9\Tab Demo\bin\Debug\Tab Demo.exe
+D:\sovb4\examples\Chap9\Tab Demo\bin\Debug\Tab Demo.pdb
+D:\sovb4\examples\Chap9\Tab Demo\bin\Debug\Tab Demo.xml
+D:\sovb4\examples\Chap9\Tab Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap9\Tab Demo\obj\Debug\Tab_Demo.Form1.resources
+D:\sovb4\examples\Chap9\Tab Demo\obj\Debug\Tab_Demo.Resources.resources
+D:\sovb4\examples\Chap9\Tab Demo\obj\Debug\Tab Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap9\Tab Demo\obj\Debug\Tab Demo.exe
+D:\sovb4\examples\Chap9\Tab Demo\obj\Debug\Tab Demo.xml
+D:\sovb4\examples\Chap9\Tab Demo\obj\Debug\Tab Demo.pdb

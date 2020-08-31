@@ -1,0 +1,16 @@
+bin\Test Score Average 3.exe
+bin\Test Score Average 3.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Test_Score_Average_3.Form1.resources
+obj\Release\Test_Score_Average_3.Resources.resources
+obj\Release\Test Score Average 3.vbproj.GenerateResource.Cache
+obj\Release\Test Score Average 3.exe
+obj\Release\Test Score Average 3.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Test_Score_Average_3.Form1.resources
+obj\Debug\Test_Score_Average_3.Resources.resources
+obj\Debug\Test Score Average 3.vbproj.GenerateResource.Cache
+obj\Debug\Test Score Average 3.exe
+obj\Debug\Test Score Average 3.xml
+obj\Debug\Test Score Average 3.pdb
+bin\Test Score Average 3.pdb

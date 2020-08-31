@@ -1,0 +1,11 @@
+	for (unsigned i = 0; i < strlen(str2); i++)
+		{ 
+			char tempstr1, tempstr2;
+			
+			tempstr1 = tolower(str1[i]);
+			tempstr2 = tolower(str2[i]);
+			
+		  if (tempstr1 != tempstr2)
+	      	return false;
+       }
+	}

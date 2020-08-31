@@ -1,0 +1,229 @@
+WEBVTT
+
+1
+00:00:03.600 --> 00:00:08.635
+Once you've got your JCL written chances
+are you actually want to submit it and
+
+2
+00:00:08.635 --> 00:00:09.482
+make it run.
+
+3
+00:00:09.482 --> 00:00:13.595
+As you've probably picked up on by now
+when there's something you want to do
+
+4
+00:00:13.595 --> 00:00:15.800
+there is usually eight ways to do it.
+
+5
+00:00:15.800 --> 00:00:20.941
+So I'm going to show you two ways
+of submitting your JCL to Jazz.
+
+6
+00:00:20.941 --> 00:00:26.073
+To begin we're going to open up
+option to of ispf, for edit.
+
+7
+00:00:26.073 --> 00:00:27.661
+That will bring us to this screen.
+
+8
+00:00:27.661 --> 00:00:33.499
+And you just specify the data set either
+using the ispf library fields up there or
+
+9
+00:00:33.499 --> 00:00:36.723
+the one below it labeled other partitions,
+
+10
+00:00:36.723 --> 00:00:40.225
+sequential or VSAM Data Set or
+z/OS UNIX file.
+
+11
+00:00:40.225 --> 00:00:43.541
+That will bring up this
+listing of data set members.
+
+12
+00:00:43.541 --> 00:00:48.409
+Place an s next to the one you
+want to select and hit enter.
+
+13
+00:00:48.409 --> 00:00:51.921
+TSO will come back and
+pop up a little message saying, got it.
+
+14
+00:00:51.921 --> 00:00:53.300
+I have submitted your job.
+
+15
+00:00:53.300 --> 00:00:55.600
+Here's the job number I gave it.
+
+16
+00:00:55.600 --> 00:00:58.600
+Now I said,
+there's more than one way to do things.
+
+17
+00:00:58.600 --> 00:01:02.700
+So I'm going to show you another
+way of submitting JCL to Jazz.
+
+18
+00:01:02.700 --> 00:01:06.669
+If you're at TSO prompt you can
+submit a job from here too.
+
+19
+00:01:06.669 --> 00:01:11.604
+Just type TSO submit followed by
+the data set member spelled out as
+
+20
+00:01:11.604 --> 00:01:16.461
+the data set name and
+then the specified member in parentheses.
+
+21
+00:01:16.461 --> 00:01:21.606
+The data set and data set member
+should be within single quotes.
+
+22
+00:01:21.606 --> 00:01:23.674
+It sounds a lot more
+complicated when I say it.
+
+23
+00:01:23.674 --> 00:01:25.946
+Just look at how it's spelled out here.
+
+24
+00:01:25.946 --> 00:01:29.599
+But when you put the TSO at
+the beginning of a statement,
+
+25
+00:01:29.599 --> 00:01:31.717
+you're issuing a TSO command.
+
+26
+00:01:31.717 --> 00:01:34.990
+So if you have some JCL and
+you don't even have to look at it,
+
+27
+00:01:34.990 --> 00:01:38.145
+you just know you want to run it,
+that's how you do that.
+
+28
+00:01:38.145 --> 00:01:44.297
+To look at the output of that job head
+into SDSF from the primary ispf menu.
+
+29
+00:01:44.297 --> 00:01:48.938
+Then go into option H because
+we want to look at held jobs.
+
+30
+00:01:48.938 --> 00:01:51.200
+As you can see there's
+a lot you can do in here.
+
+31
+00:01:53.100 --> 00:01:55.899
+All in due time all in due
+time when we hit enter for
+
+32
+00:01:55.899 --> 00:01:58.233
+the held jobs we get a listing of output.
+
+33
+00:01:58.233 --> 00:02:00.300
+And we can do a number of things with it.
+
+34
+00:02:00.300 --> 00:02:02.400
+Right now we want to display that output.
+
+35
+00:02:02.400 --> 00:02:06.533
+So we'll place an s next to it and
+hit enter.
+
+36
+00:02:06.533 --> 00:02:09.688
+That will bring up all of
+the output from that job.
+
+37
+00:02:09.688 --> 00:02:12.989
+As I said, there's a lot you can
+do in here with other commands.
+
+38
+00:02:12.989 --> 00:02:17.789
+But the most common commands
+are probably S for display,
+
+39
+00:02:17.789 --> 00:02:21.293
+C for cancel, P for purge and X for print.
+
+40
+00:02:21.293 --> 00:02:25.056
+When you do view the output first thing
+you'll notice is that it is tremendously
+
+41
+00:02:25.056 --> 00:02:25.569
+verbose.
+
+42
+00:02:25.569 --> 00:02:27.758
+And we're not going to get into that here.
+
+43
+00:02:27.758 --> 00:02:32.421
+Pretty much every piece of information
+regarding the execution of that job is
+
+44
+00:02:32.421 --> 00:02:33.001
+in here.
+
+45
+00:02:33.001 --> 00:02:36.597
+And it would take a whole lot of
+time to fully explore that output.
+
+46
+00:02:36.597 --> 00:02:38.710
+So we'll just stop right here and
+
+47
+00:02:38.710 --> 00:02:43.090
+be happy that we know how to build
+JCL submit it and manage the output.
+
+48
+00:02:43.090 --> 00:02:44.059
+Stay tuned though,
+
+49
+00:02:44.059 --> 00:02:47.200
+later on I'm going to show you
+another way to look at system output.

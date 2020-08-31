@@ -1,0 +1,71 @@
+Z/OS isn't the only operating system
+you'll find in an enterprise environment. Over the years, Unix has also become
+widely used in a variety of industries. It was so popular that a bunch of people
+who wanted their own version of Unix went out and made Linux. Now, the evolution of Unix and the history
+of Linux is pretty interesting, and it's a fun research
+rabbit hole to go down. But the guys behind the camera
+are giving me a look right now, so I better get back on topic. Today, Linux is everywhere, but
+before Linux really took off, people in mainframe shops really
+wanted a way to use Unix. So the operating system was enhanced
+with Unix Systems Services, or USS. Now, point of clarification, USS is not
+a virtual or an emulated operating system. It's an implementation
+of a Unix environment. So you can use commands like LS,
+GREP, CAT, and MKDIR, and you can even write and
+run shell scripts without leaving z/OS. Pretty neat trick. And again, because it's an implementation, it's using the same APIs behind
+the scenes as z/OS does. So it's not like going into USS gobbles
+up another operating system's worth of resources, and it's not just there in
+case you feel like typing Unix commands. For some z/OS middleware, you'll find
+installation, configuration, and automation utilities
+implemented using USS. And for someone with a Unix,
+Linux background, like myself, I like being able to script and
+hack away at shell scripts. Before we move on, here's an easy one, just to make sure we're
+all good on the basics. Fill in the blank. Unix Systems Services on z/OS is a what? Implementation, virtual operating system,
+hypervisor, or a Linux kernel module? I hope you picked implementation, and
+I'm going to keep driving that point home because it's important to remember that
+USS is just that, an implementation. It's not a separate operating system,
+or a virtualized operating system, or a remote system, or anything like that. Okay, now,
+there's two main ways of driving USS. The first is the interactive mode, which
+you can get to with the TSO command OMVS. That gives you a shell, which is how
+you can enter commands and see output. You can also use the I shell, which gives
+you a panel driven interface into USS. Behind the scenes,
+it's all the same API, so it really comes down to a matter of taste. Even between z/OS and USS, it's not
+an all one or the other type thing. You can have one
+interacting with the other. For example, you can move files
+from one environment to the other. You can issue TSO commands
+from the shell command line. You can interact with Unix
+files through the TSO commands. You can even write JCL scripts
+that include shell commands. It's all intertwined. Here's what the OMVS shell looks like. There's a command line, there's the
+function keys, and over here on the right, the status indicator. The status indicator will go back and
+forth between input and running, depending on if it's waiting for
+you or you're waiting for it. Working with directories and files is one
+of the first things you'll need to do in Unix, and there's a whole lot of commands
+that you use to make that happen. When you want to make a directory,
+which is just another word for folder, use MKDIR, M-K-D-I-R,
+short for make directory. Then CD is used to change the directory. So after you've made a directory,
+you can use CD to go into it. And then you can use LS, the list command,
+to look around that directory. And if you want to move files back and
+forth between a Unix file system and z/OS, then check out the OPUT and
+OGET commands. That's basically the file system
+structure of a Unix system. You've got the file system, and you can
+fill it with files and directories. And within those directories,
+you can put even more files and directories, and so on. And a file can be something
+that you can read. It can also be an executable program. And there's other types of things that
+you can put in a directory as well, but files and
+folders is the main name of the game. Now, I could stand here and
+list Unix commands for hours, but I don't think that would be a good
+use of either of our times. Suffice to say, lots of commands. And you won't find every command that you
+would expect to find on a Linux system, but it's still a good amount. And if you really want to run Linux, there
+are plenty of ways of running Linux on. Unix Systems Services can use a type
+of file system called the ZFS. And one interesting thing about ZFS
+is that it's sysplex-aware, and you'll learn a little bit more about that
+from my friend Louisa in a few minutes. You can also mount a file
+system over a network. This is called NFS, or
+network file system. These network file systems can
+be mainframe to mainframe, or even mainframe to desktop,
+or desktop to mainframe. NFS is the commonality that
+makes all of that possible. And lastly, there's the TFS. This is the temporary file system. It's an in-memory physical file system. And as the name suggests,
+it's a good place for writing up files that you only need for
+a short amount of time. If you need those files to be
+there tomorrow or next week, it's probably a good idea to make sure
+those get copied somewhere more permanent when you're done for the day. And since we're done for
+the day, let's close this up and get on to the next topic.

@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.exe
+D:\sovb4\examples\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.xml
+D:\sovb4\examples\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.pdb
+D:\sovb4\examples\Chap4\Test Score Average 1\bin\Test Score Average 1.exe
+D:\sovb4\examples\Chap4\Test Score Average 1\bin\Test Score Average 1.pdb
+D:\sovb4\examples\Chap4\Test Score Average 1\bin\Test Score Average 1.xml
+D:\sovb4\examples\Chap4\Test Score Average 1\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap4\Test Score Average 1\obj\Debug\Test_Score_Average_1.Form1.resources
+D:\sovb4\examples\Chap4\Test Score Average 1\obj\Debug\Test_Score_Average_1.Resources.resources
+D:\sovb4\examples\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\bin\Test Score Average 1.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\bin\Test Score Average 1.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\bin\Test Score Average 1.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\obj\Debug\Test_Score_Average_1.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\obj\Debug\Test_Score_Average_1.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap4\Test Score Average 1\obj\Debug\Test Score Average 1.vbproj.GenerateResource.Cache

@@ -1,0 +1,10 @@
+bin\Debug\ReadAllText.exe
+bin\Debug\ReadAllText.pdb
+bin\Debug\ReadAllText.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ReadAllText.Form1.resources
+obj\Debug\ReadAllText.Resources.resources
+obj\Debug\ReadAllText.vbproj.GenerateResource.Cache
+obj\Debug\ReadAllText.exe
+obj\Debug\ReadAllText.xml
+obj\Debug\ReadAllText.pdb

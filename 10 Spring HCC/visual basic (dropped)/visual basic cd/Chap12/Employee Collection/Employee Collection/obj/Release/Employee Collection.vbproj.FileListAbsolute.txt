@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\bin\Release\Employee Collection.exe
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\bin\Release\Employee Collection.pdb
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\bin\Release\Employee Collection.xml
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\obj\Release\Employee_Collection.Form1.resources
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\obj\Release\Employee_Collection.Resources.resources
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\obj\Release\Employee Collection.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\obj\Release\Employee Collection.exe
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\obj\Release\Employee Collection.xml
+D:\sovb4\examples\Chap12\Employee Collection\Employee Collection\obj\Release\Employee Collection.pdb

@@ -1,0 +1,143 @@
+When we talked about JCL, we mentioned that it can
+be used to call a program. That's something
+you're probably pretty familiar with, running a program. JCL can also call a procedure. Now, a procedure is a set of frequently used
+JCL statements that have been grouped
+together and named so they can be invoked
+using a single name. Most JCL procedures perform
+a general function, which allows them to be called
+from a variety of jobs. That just makes
+a whole lot of sense from an efficiency standpoint. It's easier and
+cleaner to reference a procedure than
+a series of statements, especially if they're going to be used the same way each time. Procedures are usually stored
+in the system datasets. That makes them the procedure, libraries, or PROCLIB, for short. You can think of a procedure like a play that a football
+team might have. All of the movements
+and the details are all set and rehearsed
+ahead of time, and you just have
+to call it by name. That makes the
+PROCLIB the playbook, a collection of
+commonly used steps, each with its own name. When a procedure is
+placed into PROCLIB, it can be made available
+to a wider audience. It can also be referenced
+simply by name instead of specifying
+the full path each time. However, procedures
+can also be stored in private PROCLIBs or
+even within a job. This tree tricks
+who can call them, and sometimes that's by design. There are two types
+of procedures, catalog procedures and
+in-stream procedures. Both types are
+invoked by using one of the following JCL statements. You can say stepname
+EXEC PROC equals procedure_name or
+stepname EXEC procedure_name. You can see how this works here, and it spells out some of the benefits of
+using a procedure. All of these steps and everything that
+connects it altogether, it's now all within
+this single procedure, and a programmer can very easily reference
+that one procedure. Here's an example of
+an in-stream procedure. So we've got this line up here saying here's our procedure, and below it, here's step one, which is going to execute
+a program called APGM. The whole thing goes between the PROC and PEND
+procedure end statement. This is our in-stream procedure. If you're using
+a catalog procedure, you don't have to code
+the PROC and PEND statements. However, if an in-stream
+PROC statement is coded into
+a catalog procedure, then it has to be
+the procedure's first statement. You can see here,
+once we've defined that in-stream procedure by name, we can reference
+it in later steps. As you can also see, like we've mentioned before, there are two ways of calling it. You can also see that when
+you reference a procedure, you could be referencing
+an in-stream procedure, one in a system PROCLIB or
+one in a private PROCLIB. Now, if the procedure is in
+a private procedure library, that library needs
+to be specified on the job's JCLLIB statement, which needs to appear
+before the EXEC statement. If the called procedure is
+cataloged in a system library, it will be retrieved from the SIS1.PROCLIB or another
+defined procedure library. If it's not in any of those, then it won't be able to run your specified procedure,
+it can't find it. About that JCLLIB statement. We've mentioned
+that it can be used to define private PROCLIBs. It can also be used to
+determine the order in which the PROCLIB
+should be searched. So if you specify PROCLIBs
+in your JCLLIB statement, it will look for those before it looks in the default
+system procedure library. You may only need to
+specify one PROCLIB here, or if you need to
+specify two or more, just separate them by commas and put them inside parenthesis. You only get one JCLLIB
+statement per job, and it must appear after the job statement and before
+the first EXEC statement. We have another useful
+statement called INCLUDE. If you have a series
+of JCL statements coded within a member of a PDS, you can insert them into JCL
+using an INCLUDE statement. So here's the INCLUDE statement. It's got the name of the include, the statement INCLUDE, and
+then the dataset name. When the JCL is being read, it gets there and
+it just replaces it with all the contents
+of that dataset. Where this comes in handy
+is when you need to define a whole bunch of DD statements
+for a series of JCLs. Now, you could just
+copy and paste them. But then you would
+also have to go around fixing all of them every single time
+you want to make a change to those DD statements. It's a whole lot easier
+to write them once so you can reference them
+with an INCLUDE statement. If there's updates to be made, you only have to make
+those updates in one place. A couple of limitations on
+procedures and includes. Procedures can be nested up
+to a maximum of 15 levels. So that's a procedure,
+calling a procedure, calling a procedure,
+calling a procedure, and you get the idea. So you get some flexibility, but you can't just go nuts with procedures referencing
+other procedures. Same thing with includes, you got it to a maximum of
+15 levels there as well. A procedure can reference
+an include group. Then an include group
+can access a procedure. So what you're seeing here is an example of
+a procedure called EVAL, which has a procedure named
+EPRT nested within it. In addition,
+the procedure EPRT has an include group called
+GENRDD nested within it. In JCL, we can set what's
+called the symbolic parameters. Symbolic parameters, usually
+just called the symbolics, can be assigned through
+three statements; PROC statements, EXEC
+statements, and SET statements. This means you can define
+a symbolic parameter, assign it a value, and then you can just reference
+that symbolic later on. So the next time you run the JCL, if you want to run it with
+a different value in there, just change the
+symbolic definition. You get to define
+the symbolic names and values. In addition to the symbolic
+parameters that you define, there are a number
+of system symbols, and these come in two flavors. There's dynamic system symbols
+whose values can change at any point after an IPL like
+current date and time. The full set of
+dynamic system symbols is fixed and you cannot
+define additional ones. What you have is what you get. There's also
+static system symbols. These are set at IPL time and won't change until
+the next time the system IPLs. So for example, the system
+name and SYSPLEX name. Static system symbols
+have two types. There is system-defined
+static symbols, and these include ampersend
+SYSCLONE, SYSNAME,SYSPLEX, SYSR1, and SYSALVL, that's used for
+the system architecture level. Then, there's installation-defined
+static symbols, which a system programmer, maybe that's you, gets to set. These are defined in the SYS1.PROCLIB IEASYM
+member. In the example here, you'll see a mix
+of JCL symbols in red and system symbols in blue. Note that you can use
+static system symbols such as SYSNAME in started
+task JCL procedures, but not in regular batch JCL. Overriding a parameter modifies
+only the one parameter. All the other parameters stay unaffected unless you
+modify them as well. So if you override the dataset
+name on a DD statement, which includes the unit and
+VOL = SR parameters, it'll change the dataset name, but the unit and VOL
+= SR parameters will remain unchanged. But you can't correct
+invalid parameters in a procedure through overrides because before doing
+any substitutions, the system scans the original
+procedure statements and issues error messages
+based on those. So it's got to be valid
+before you issue overrides. If you made a mistake
+while you were creating a procedure and you
+typed al instead of all, we've all been there, you can't substitute your way
+out of that situation. Lastly, you can
+override the output JCL and DD statements by specifying the step
+for which they apply. If no step has been
+named previously, the changes apply to
+the very first step. If you have specified a step
+and you want to change a couple of more output
+JCL and DD statements, you only have to specify
+it the first time. The ones that follow it, it just assumes it's in
+the same one is above. There's your introduction
+to JCL procedures. We got into some fairly
+tricky concepts there. So don't worry if you feel a little lost, overwhelmed,
+or intimidated. I'm looking at
+my camera operator right now and it looks like
+he's about to pass out. So I'm going to go check on him, and I'll see you in
+the next lesson. Hey man, you all right?
+Doing all right?

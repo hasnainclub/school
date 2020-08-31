@@ -1,0 +1,9 @@
+D:\sovb4\examples\Chap12\Student Collection\bin\Student Collection.exe
+D:\sovb4\examples\Chap12\Student Collection\bin\Student Collection.xml
+D:\sovb4\examples\Chap12\Student Collection\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap12\Student Collection\obj\Release\Student_Collection.frmAdd.resources
+D:\sovb4\examples\Chap12\Student Collection\obj\Release\Student_Collection.frmMain.resources
+D:\sovb4\examples\Chap12\Student Collection\obj\Release\Student_Collection.Resources.resources
+D:\sovb4\examples\Chap12\Student Collection\obj\Release\Student Collection.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap12\Student Collection\obj\Release\Student Collection.exe
+D:\sovb4\examples\Chap12\Student Collection\obj\Release\Student Collection.xml

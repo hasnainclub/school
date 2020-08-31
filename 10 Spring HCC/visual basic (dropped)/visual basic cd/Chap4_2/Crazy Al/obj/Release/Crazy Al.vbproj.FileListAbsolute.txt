@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap4\Crazy Al\bin\Crazy Al.exe
+D:\sovb4\examples\Chap4\Crazy Al\bin\Crazy Al.xml
+D:\sovb4\examples\Chap4\Crazy Al\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap4\Crazy Al\obj\Release\Crazy_Al.Form1.resources
+D:\sovb4\examples\Chap4\Crazy Al\obj\Release\Crazy_Al.Resources.resources
+D:\sovb4\examples\Chap4\Crazy Al\obj\Release\Crazy Al.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap4\Crazy Al\obj\Release\Crazy Al.exe
+D:\sovb4\examples\Chap4\Crazy Al\obj\Release\Crazy Al.xml

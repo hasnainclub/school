@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Exception Handling", "Exception Handling\Exception Handling.vbproj", "{3BB223F0-7930-4284-A667-C936C525FC39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BB223F0-7930-4284-A667-C936C525FC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB223F0-7930-4284-A667-C936C525FC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB223F0-7930-4284-A667-C936C525FC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB223F0-7930-4284-A667-C936C525FC39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+obj\Debug\File WriteLine Demo.exe
+obj\Debug\File WriteLine Demo.pdb

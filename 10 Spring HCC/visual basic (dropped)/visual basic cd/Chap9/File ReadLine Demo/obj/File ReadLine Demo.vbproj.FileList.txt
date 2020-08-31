@@ -1,0 +1,16 @@
+obj\Debug\File ReadLine Demo.exe
+obj\Debug\File ReadLine Demo.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\File_ReadLine_Demo.Form1.resources
+obj\Debug\File_ReadLine_Demo.Resources.resources
+obj\Debug\File ReadLine Demo.vbproj.GenerateResource.Cache
+obj\Debug\File ReadLine Demo.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\File_ReadLine_Demo.Form1.resources
+obj\Release\File_ReadLine_Demo.Resources.resources
+obj\Release\File ReadLine Demo.vbproj.GenerateResource.Cache
+bin\File ReadLine Demo.exe
+bin\File ReadLine Demo.xml
+obj\Release\File ReadLine Demo.exe
+obj\Release\File ReadLine Demo.xml
+bin\File ReadLine Demo.pdb

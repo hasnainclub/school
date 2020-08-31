@@ -1,0 +1,15 @@
+obj\Debug\Simple Calculator.exe
+obj\Debug\Simple Calculator.pdb
+bin\Simple Calculator.exe
+bin\Simple Calculator.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Simple_Calculator.Form1.resources
+obj\Debug\Simple_Calculator.Resources.resources
+obj\Debug\Simple Calculator.vbproj.GenerateResource.Cache
+obj\Debug\Simple Calculator.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Simple_Calculator.Form1.resources
+obj\Release\Simple_Calculator.Resources.resources
+obj\Release\Simple Calculator.vbproj.GenerateResource.Cache
+obj\Release\Simple Calculator.exe
+obj\Release\Simple Calculator.xml

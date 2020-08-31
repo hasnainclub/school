@@ -1,0 +1,48 @@
+So why use mainframes? Because no two businesses are alike,
+even competitors in the same field. Mainframes need to be open,
+adaptable and ever-evolving. And that's before we even talk about the
+processing power, or the system capacity. Because mainframes the built for business,
+they need to support anything a business could possibly want as part
+of their business model. When the first companies
+started using Linux, Linux became a supported operating system. When open source software and hybrid cloud models started becoming
+part of the way work gets done. You started seeing APIs and cloud-ready
+solutions appear on the Mainframe. What I'm getting at here is,
+is that if it's important, you'll find it here on the mainframe. So for example,
+let's talk about Linux for a minute. Because this is a great example of
+something that runs really well on Z. Linux runs great on my
+rented Cloud instance, it runs great on the server under my desk,
+it even runs on my Raspberry Pi. So why do I want to run Linux on the
+mainframe, is it going to run any better? Well, what if I could make a Linux
+instance with 15 processors and a couple gigs of memory? And I also wanted to access 32
+different storage area networks and a couple of different network VLANs. Well, I can get that big
+powerful Linux system. But I can also run that Linux with all of
+its data being encrypted, at all times, through pervasive encryption. So that's possible and that's pretty cool. I could build five more of
+those same exact servers, without needing five times the physical
+resources because of virtualization. That's a huge bonus. I can even bring up Linux Docker instances
+within the z/OS operating system, where they can run right
+next to z/OS applications. So I don't need a full system image, if there's just one specific
+application in need. Part of the big reason for running things
+on the mainframe is consolidation. Now companies are always looking for
+ways to save money on operations. So in addition to being able to bring
+all of those compute resources, like the CPU and memory into one big box. Companies are also able to consolidate
+things like power supplies, networking adaptors and cooling. Having one larger efficient
+cooling unit in a mainframe, is much better than having 300
+individual CPU fans out there. In business, you'll often find two
+major types of transactions happening. There's real time transactions,
+that's like stuff that is reactionary, event-based, needs-to-happen right now. That's stuff like swiping a credit card,
+making a purchase, changing your insurance policy. That stuff needs to happen instantly. And then there's batch processes, which
+we've talked about a little bit before. But that kind of summarizes changes
+in actions that have happened during a period of time. Like figuring out paychecks, or figuring
+out your phone bill for the month, those are batch processes. The mainframe excels in doing both,
+from a performance security and a data integrity point of view. Just to give an idea about how
+prevalent the mainframe is and what a powerhouse it is in business. They power 68% of the world's
+production workloads, 68%. That's that's more than half,
+its quite a bit more than half, yeah, it's two-thirds,
+that's more than two-thirds. So despite running two-thirds of
+the world's production workloads, they take up only 6% of the total IT cost. Think about that, 6%, to run 68%,
+okay, I'm a little bit biased. But I happen to think that even if I
+wasn't sitting in an IBM studio right now, that would still impress me. And that's why I'm so excited you're
+here to learn all about the IBM Z. You'll walk into a job interview and
+tell them, you know Parallel Sysplex, IODF configs. You put down on a résumé that you
+know about z/OS components and how to manage mainframe security. You're putting yourself in a great place. I hope you're having fun, I know I am, because these
+skills are great ones to have.

@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap3\TryParse Example\bin\Debug\TryParse Example.exe
+D:\sovb4\examples\Chap3\TryParse Example\bin\Debug\TryParse Example.pdb
+D:\sovb4\examples\Chap3\TryParse Example\bin\Debug\TryParse Example.xml
+D:\sovb4\examples\Chap3\TryParse Example\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\TryParse Example\obj\Debug\TryParse_Example.Form1.resources
+D:\sovb4\examples\Chap3\TryParse Example\obj\Debug\TryParse_Example.Resources.resources
+D:\sovb4\examples\Chap3\TryParse Example\obj\Debug\TryParse Example.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\TryParse Example\obj\Debug\TryParse Example.exe
+D:\sovb4\examples\Chap3\TryParse Example\obj\Debug\TryParse Example.xml
+D:\sovb4\examples\Chap3\TryParse Example\obj\Debug\TryParse Example.pdb

@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap10\DataGridView_Simple\bin\Debug\Company.MDF
+D:\sovb4\examples\Chap10\DataGridView_Simple\bin\Debug\Company_log.ldf
+D:\sovb4\examples\Chap10\DataGridView_Simple\bin\Debug\DataGridView_Simple.exe.config
+D:\sovb4\examples\Chap10\DataGridView_Simple\bin\Debug\DataGridView_Simple.exe
+D:\sovb4\examples\Chap10\DataGridView_Simple\bin\Debug\DataGridView_Simple.pdb
+D:\sovb4\examples\Chap10\DataGridView_Simple\bin\Debug\DataGridView_Simple.xml
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Debug\DataGridView_Simple.Form1.resources
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Debug\DataGridView_Simple.Resources.resources
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Debug\DataGridView_Simple.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Debug\DataGridView_Simple.exe
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Debug\DataGridView_Simple.xml
+D:\sovb4\examples\Chap10\DataGridView_Simple\obj\Debug\DataGridView_Simple.pdb

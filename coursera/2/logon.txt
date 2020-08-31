@@ -1,0 +1,59 @@
+Remote Access Information
+Skytap on Softlayer Information
+Remote access to the lab environment is provided through virtual machine based desktops hosted in the Skytap on Softlayer cloud environment.
+
+The following document is available which provides useful information about interacting with the desktops provided for the class:
+skytap_on_softlayer_usage_tips.pdf
+
+
+Please use the credentials below for logging into the desktops. Note if only a student account is provided the same account credentials are usually used by the Instructor when logging into their desktop as well.
+
+List of credentials:
+Login	Password
+IBM	Passw0rd$$
+Lab Information
+MVS1 overall information
+This class is hosted by our z/OS named ESSMVS1 (essmvs1.ilsvpn.ibm.com).
+MVS1 is a guest of our z/VM named POKEDVM2. It is a Shared environment.
+
+TSO Access via DIAL:
+
+    From the POKEDVM2 Logon screen enter DIAL MVS1 on the COMMAND line.
+    Enter TSO userid
+
+TSO Access via Telnet:
+
+    Set PCOM Link Parameters to Host Name essmvs1.ilsvpn.ibm.com, and port 23
+    Enter TSO userid
+
+Credential information
+The student TSO user IDs and passwords assigned to this class are:
+
+    TSOCA57 / DC8NX1RW
+
+ID Resume/Reset Self-Service
+
+    If an ID (guest ID, surrogate ID, TSO ID) for your class is revoked accidentally, you can reset/resume the revoked ID via this url http://idss.ilsvpn.ibm.com/cgi/idss using this passcode Y1VERADEABTU4Z. Use of this tool is an alternative to contact the Help Desk for ID resumption and password resets. Please note: you must access the link with the browser from your landing virtual machine, It is unreachable from your local browser. If you experience problems using the tool, please contact the Help Desk. 
+
+MVS1 overall information
+This class is hosted by our z/OS named ESSMVS1 (essmvs1.ilsvpn.ibm.com).
+MVS1 is a guest of our z/VM named POKEDVM2. It is a Shared environment.
+
+TSO Access via DIAL:
+
+    From the POKEDVM2 Logon screen enter DIAL MVS1 on the COMMAND line.
+    Enter TSO userid
+
+TSO Access via Telnet:
+
+    Set PCOM Link Parameters to Host Name essmvs1.ilsvpn.ibm.com, and port 23
+    Enter TSO userid
+
+Credential information
+The student TSO user IDs and passwords assigned to this class are:
+
+    TSOCA57 / DC8NX1RW
+
+ID Resume/Reset Self-Service
+
+    If an ID (guest ID, surrogate ID, TSO ID) for your class is revoked accidentally, you can reset/resume the revoked ID via this url http://idss.ilsvpn.ibm.com/cgi/idss using this passcode Y1VERADEABTU4Z. Use of this tool is an alternative to contact the Help Desk for ID resumption and password resets. Please note: you must access the link with the browser from your landing virtual machine, It is unreachable from your local browser. If you experience problems using the tool, please contact the Help Desk. 

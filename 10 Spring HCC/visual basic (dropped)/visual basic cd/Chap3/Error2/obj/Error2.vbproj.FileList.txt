@@ -1,0 +1,4 @@
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Error2.Form1.resources
+obj\Release\Error2.Resources.resources
+obj\Release\Error2.vbproj.GenerateResource.Cache

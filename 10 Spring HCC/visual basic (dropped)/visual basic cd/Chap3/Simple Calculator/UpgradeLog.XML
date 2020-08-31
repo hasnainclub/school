@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Simple Calculator">
+</Property><Property Name="Solution File" Value="D:\sovb4\examples\Chap3\Simple Calculator\Simple Calculator.sln">
+</Property><Property Name="Date" Value="Monday, June 04, 2007">
+</Property><Property Name="Time" Value="16:00 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Simple Calculator" Source="Simple Calculator.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Simple Calculator" Source="Simple Calculator.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Simple Calculator.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Simple Calculator.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Simple Calculator" Source="Simple Calculator.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

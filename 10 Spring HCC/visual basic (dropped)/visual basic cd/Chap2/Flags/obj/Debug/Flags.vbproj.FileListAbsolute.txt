@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap2\Flags\obj\Debug\Flags.exe
+D:\sovb4\examples\Chap2\Flags\obj\Debug\Flags.xml
+D:\sovb4\examples\Chap2\Flags\obj\Debug\Flags.pdb
+D:\sovb4\examples\Chap2\Flags\bin\Flags.exe
+D:\sovb4\examples\Chap2\Flags\bin\Flags.pdb
+D:\sovb4\examples\Chap2\Flags\bin\Flags.xml
+D:\sovb4\examples\Chap2\Flags\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap2\Flags\obj\Debug\Flags.Form1.resources
+D:\sovb4\examples\Chap2\Flags\obj\Debug\Flags.Resources.resources
+D:\sovb4\examples\Chap2\Flags\obj\Debug\Flags.vbproj.GenerateResource.Cache

@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\bin\Release\Vehicle Inheritance.exe
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\bin\Release\Vehicle Inheritance.pdb
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\bin\Release\Vehicle Inheritance.xml
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Release\Vehicle_Inheritance.Form1.resources
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Release\Vehicle_Inheritance.Resources.resources
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Release\Vehicle Inheritance.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Release\Vehicle Inheritance.exe
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Release\Vehicle Inheritance.xml
+D:\sovb4\examples\Chap12\Vehicle Inheritance\Vehicle Inheritance\obj\Release\Vehicle Inheritance.pdb
+D:\sovb4\examples\Chap12\Vehicle Inheritance\bin\Release\Vehicle Inheritance.exe
+D:\sovb4\examples\Chap12\Vehicle Inheritance\bin\Release\Vehicle Inheritance.pdb
+D:\sovb4\examples\Chap12\Vehicle Inheritance\bin\Release\Vehicle Inheritance.xml
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Release\Vehicle_Inheritance.Form1.resources
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Release\Vehicle_Inheritance.Resources.resources
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Release\Vehicle Inheritance.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Release\Vehicle Inheritance.exe
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Release\Vehicle Inheritance.xml
+D:\sovb4\examples\Chap12\Vehicle Inheritance\obj\Release\Vehicle Inheritance.pdb

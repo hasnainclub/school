@@ -1,0 +1,15 @@
+obj\Debug\Error1.exe
+obj\Debug\Error1.pdb
+bin\Error1.exe
+bin\Error1.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Error1.Form1.resources
+obj\Release\Error1.Resources.resources
+obj\Release\Error1.vbproj.GenerateResource.Cache
+obj\Release\Error1.exe
+obj\Release\Error1.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Error1.Form1.resources
+obj\Debug\Error1.Resources.resources
+obj\Debug\Error1.vbproj.GenerateResource.Cache
+obj\Debug\Error1.xml

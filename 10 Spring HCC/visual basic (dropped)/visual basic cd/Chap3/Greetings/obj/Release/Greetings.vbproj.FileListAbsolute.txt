@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap3\Greetings\bin\Greetings.exe
+D:\sovb4\examples\Chap3\Greetings\bin\Greetings.xml
+D:\sovb4\examples\Chap3\Greetings\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Greetings\obj\Release\Greetings.Form1.resources
+D:\sovb4\examples\Chap3\Greetings\obj\Release\Greetings.Resources.resources
+D:\sovb4\examples\Chap3\Greetings\obj\Release\Greetings.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\Greetings\obj\Release\Greetings.exe
+D:\sovb4\examples\Chap3\Greetings\obj\Release\Greetings.xml

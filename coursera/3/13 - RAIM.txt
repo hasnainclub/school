@@ -1,0 +1,38 @@
+Hi everyone, my name
+is Tina Tarquinio , and I am a director
+on the IBM Z Team. Today, I want to talk
+to you about one of my favorite parts of
+the IBM Z system, and that's it's redundancy and availability characteristics. In today's world, workloads are getting stronger
+and stronger, and we require more
+and more of them, and we're seeing bigger and
+more dense memory available. So we introduced over 10 years ago something
+called RAIM memory, Redundant Array of
+Independent Memory. This is one of the key
+characteristics of what makes a system so available
+and so reliable. So as you know, I
+talked about workloads, things like in transaction analytics are becoming
+more and more prevalent, and we're increasing
+the size of memory. So when IBM z14, you can have up to 32
+terabytes of memory. So what is RAIM memory? As I said, we introduced
+it with IBM z196, and it is the key characteristics
+of our availability. So if you can imagine
+a processor unit, every processor unit
+has one memory unit, and within the memory
+unit is five DIMMs, and up to one DIMM is set
+aside for redundant memory. That means you can
+lose a channel, and you can lose an entire DIMM, and still have
+complete availability of your memory subsystem. Like I said, this was introduced
+with IBM z196 in 2010, and every server that's come out after will include
+this RAIM memory. Now what happens if
+you don't have this? That means in the middle of a transaction if you
+have a memory error, data is lost, that's not good. Especially when we have qualities of service and service
+agreements with our clients, that they expect
+100 percent availability. In fact, that is what the Z
+and IBM Z stands for, zero downtime, that
+includes the server, and all of the
+subsystems within it. This is just one aspect of how we've built availability and reliability into every subsystem
+of the IBM mainframe, that includes the memory
+like I talked about, but also the I/O and
+the processing units. So when I brag about the mainframe and
+what a great server it is, this is the main reason I like
+to start with our clients.

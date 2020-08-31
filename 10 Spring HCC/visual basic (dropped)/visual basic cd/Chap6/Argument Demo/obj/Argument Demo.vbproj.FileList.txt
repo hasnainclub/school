@@ -1,0 +1,10 @@
+obj\Debug\Argument Demo.exe
+obj\Debug\Argument Demo.pdb
+bin\Argument Demo.exe
+bin\Argument Demo.pdb
+bin\Argument Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Argument_Demo.Form1.resources
+obj\Debug\Argument_Demo.Resources.resources
+obj\Debug\Argument Demo.vbproj.GenerateResource.Cache
+obj\Debug\Argument Demo.xml

@@ -1,0 +1,420 @@
+WEBVTT
+
+1
+00:00:03.519 --> 00:00:06.200
+What is an operating system?
+
+2
+00:00:06.200 --> 00:00:09.241
+It's good question, we've been
+talking a lot about operating systems,
+
+3
+00:00:09.241 --> 00:00:11.280
+and we never really actually
+defined what one is.
+
+4
+00:00:11.280 --> 00:00:15.215
+And you might not have actually given much
+thought to what an operating system is,
+
+5
+00:00:15.215 --> 00:00:17.165
+even though you kind of know what one is.
+
+6
+00:00:17.165 --> 00:00:20.146
+You have one on your phone,
+your computer, your game console.
+
+7
+00:00:20.146 --> 00:00:22.292
+An operating system, or an OS,
+
+8
+00:00:22.292 --> 00:00:28.100
+is a collection of programs that manages
+the internal workings of the computer.
+
+9
+00:00:28.100 --> 00:00:32.723
+So when a program wants to write data then
+retrieve it later, the OS ensures that
+
+10
+00:00:32.723 --> 00:00:37.290
+the application is able to do so as
+quickly, easily, and safely as possible.
+
+11
+00:00:37.290 --> 00:00:41.300
+An operating system has a number
+of management functions.
+
+12
+00:00:41.300 --> 00:00:44.669
+Process management,
+security management, file management,
+
+13
+00:00:44.669 --> 00:00:48.783
+communications management, resource
+management, and memory management.
+
+14
+00:00:48.783 --> 00:00:53.900
+The way all these work together is really
+what makes up the heart of the OS.
+
+15
+00:00:53.900 --> 00:00:57.790
+Typically applications running on
+an operating system interface with
+
+16
+00:00:57.790 --> 00:01:02.197
+the operating system through a simplified
+series of interfaces called APIs, or
+
+17
+00:01:02.197 --> 00:01:04.415
+application programming interfaces.
+
+18
+00:01:04.415 --> 00:01:08.400
+Let's get into one of those functions,
+process management.
+
+19
+00:01:08.400 --> 00:01:12.772
+Typically a process can be in
+one of five states, new, ready,
+
+20
+00:01:12.772 --> 00:01:15.506
+running, waiting, and terminated.
+
+21
+00:01:15.506 --> 00:01:21.400
+In the new state, a process is in the
+stage of being created, it's being built.
+
+22
+00:01:21.400 --> 00:01:24.200
+In the ready state,
+the process is ready, it's waiting for
+
+23
+00:01:24.200 --> 00:01:27.600
+pickup, but
+the CPU is busy doing something else.
+
+24
+00:01:27.600 --> 00:01:31.444
+In the running state, the CPU has grabbed
+that process, it's picked it up and
+
+25
+00:01:31.444 --> 00:01:33.088
+it's actively working with it.
+
+26
+00:01:33.088 --> 00:01:36.586
+Okay, now the waiting state, this is
+where it gets a little bit interesting.
+
+27
+00:01:36.586 --> 00:01:40.800
+A process typically doesn't just start and
+end all by itself.
+
+28
+00:01:40.800 --> 00:01:44.130
+It might need to read some,
+data prompt the user for some input, or
+
+29
+00:01:44.130 --> 00:01:46.692
+it might have to kick off
+a couple sub-processes.
+
+30
+00:01:46.692 --> 00:01:49.356
+And while it's doing that,
+while it's waiting for
+
+31
+00:01:49.356 --> 00:01:52.271
+them to finish,
+the process can be put into a wait state.
+
+32
+00:01:52.271 --> 00:01:55.083
+And when it's in a wait state,
+it's waiting.
+
+33
+00:01:55.083 --> 00:01:58.147
+And finally, when the process
+has accomplished its task and
+
+34
+00:01:58.147 --> 00:02:01.763
+there's nothing else for it to do,
+it goes into the terminated state.
+
+35
+00:02:01.763 --> 00:02:04.798
+So you can see the general
+flow of things here.
+
+36
+00:02:04.798 --> 00:02:09.834
+It starts out new, and then it goes into
+ready, and then it goes into running.
+
+37
+00:02:09.834 --> 00:02:14.662
+From there, it either goes into the
+terminated state, which says it's done for
+
+38
+00:02:14.662 --> 00:02:16.083
+one reason or another.
+
+39
+00:02:16.083 --> 00:02:19.962
+It either did everything it needed
+to do or something else happened, or
+
+40
+00:02:19.962 --> 00:02:21.600
+it goes back to ready.
+
+41
+00:02:21.600 --> 00:02:23.321
+There are two ways it
+can go back to ready.
+
+42
+00:02:23.321 --> 00:02:26.475
+The first is in the case of a wait,
+where it's waiting for
+
+43
+00:02:26.475 --> 00:02:29.776
+more data, user input, or for
+another process to finish.
+
+44
+00:02:29.776 --> 00:02:32.520
+Or if the CPU is like hey,
+I know you're really busy and
+
+45
+00:02:32.520 --> 00:02:34.199
+you're trying to do your stuff.
+
+46
+00:02:34.199 --> 00:02:37.428
+I've got a bunch of other programs
+trying to do something too, so
+
+47
+00:02:37.428 --> 00:02:40.600
+I'll be right back, and
+that's called an interrupt.
+
+48
+00:02:40.600 --> 00:02:44.685
+An interrupt is just that, it kind of
+interrupts the process and says,
+
+49
+00:02:44.685 --> 00:02:47.746
+sit right here, be patient,
+go into a ready state.
+
+50
+00:02:47.746 --> 00:02:51.088
+And I'll come back and get you and
+finish you when I have time to do that.
+
+51
+00:02:51.088 --> 00:02:54.942
+That's the only way that a computer
+can work on multiple programs
+
+52
+00:02:54.942 --> 00:02:56.300
+at the same time.
+
+53
+00:02:56.300 --> 00:02:59.167
+Now, a process can go back and
+forth between running and
+
+54
+00:02:59.167 --> 00:03:01.732
+ready a whole bunch of
+times before it completes.
+
+55
+00:03:01.732 --> 00:03:03.056
+And that's a good thing,
+
+56
+00:03:03.056 --> 00:03:06.969
+because if programs could only run in
+a straight line from ready to finished,
+
+57
+00:03:06.969 --> 00:03:11.400
+we wouldn't be able to run more than
+one program at a time on a computer.
+
+58
+00:03:11.400 --> 00:03:12.941
+Then there's security management.
+
+59
+00:03:12.941 --> 00:03:17.462
+Obviously, security very, very important
+on a mainframe, because we're dealing with
+
+60
+00:03:17.462 --> 00:03:21.948
+the world's most important financial data,
+health records, personal records.
+
+61
+00:03:21.948 --> 00:03:25.415
+So security, very important,
+we're going to talk more about that later.
+
+62
+00:03:25.415 --> 00:03:28.000
+Up next, file management.
+
+63
+00:03:28.000 --> 00:03:32.555
+On the Z, we try to offload as much of the
+work away from the application to the OS
+
+64
+00:03:32.555 --> 00:03:33.393
+as possible.
+
+65
+00:03:33.393 --> 00:03:37.789
+So rather than making the application keep
+track of where everything was stored and
+
+66
+00:03:37.789 --> 00:03:41.138
+where to get it later,
+we let the file management handle that.
+
+67
+00:03:41.138 --> 00:03:45.400
+Communications management takes care of
+all the network communications, very,
+
+68
+00:03:45.400 --> 00:03:46.600
+very important.
+
+69
+00:03:46.600 --> 00:03:48.227
+And then there's the resource management.
+
+70
+00:03:48.227 --> 00:03:50.905
+This makes sure that all of
+the programs running on the system
+
+71
+00:03:50.905 --> 00:03:52.386
+played nicely with one another.
+
+72
+00:03:52.386 --> 00:03:57.084
+It looks at everything competing for
+the same resources, like CPU and memory,
+
+73
+00:03:57.084 --> 00:03:58.146
+network, disk.
+
+74
+00:03:58.146 --> 00:04:02.600
+And it makes sure everyone kind of
+gets a fair swat at those resources.
+
+75
+00:04:02.600 --> 00:04:06.800
+Resource management is
+the cornerstone of modern computing.
+
+76
+00:04:06.800 --> 00:04:09.100
+And lastly, there's memory management.
+
+77
+00:04:09.100 --> 00:04:12.100
+We're going to get into this in
+much greater detail later on.
+
+78
+00:04:12.100 --> 00:04:14.231
+But suffice to say on the mainframe,
+
+79
+00:04:14.231 --> 00:04:18.445
+we want our applications to run as
+quickly and efficiently as possible.
+
+80
+00:04:18.445 --> 00:04:22.028
+And one way of doing that is by
+abstracting all the complexities of
+
+81
+00:04:22.028 --> 00:04:24.571
+memory management away
+from the developer and
+
+82
+00:04:24.571 --> 00:04:29.300
+their applications and handling them
+in the memory management function.
+
+83
+00:04:29.300 --> 00:04:30.250
+And there you have it,
+
+84
+00:04:30.250 --> 00:04:32.953
+that's your six management
+functions of an operating system.
+
+85
+00:04:32.953 --> 00:04:35.272
+Now, some of them might
+have seemed obvious,
+
+86
+00:04:35.272 --> 00:04:37.478
+while others might not
+seem all that vital.
+
+87
+00:04:37.478 --> 00:04:41.626
+But I tell you what, you take away any one
+of them, and you'd have a really hard time
+
+88
+00:04:41.626 --> 00:04:44.312
+getting anything done on
+a modern operating system.

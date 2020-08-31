@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap8\CatchMe\obj\Debug\CatchMe.exe
+D:\sovb4\examples\Chap8\CatchMe\obj\Debug\CatchMe.xml
+D:\sovb4\examples\Chap8\CatchMe\obj\Debug\CatchMe.pdb
+D:\sovb4\examples\Chap8\CatchMe\bin\Debug\CatchMe.exe
+D:\sovb4\examples\Chap8\CatchMe\bin\Debug\CatchMe.pdb
+D:\sovb4\examples\Chap8\CatchMe\bin\Debug\CatchMe.xml
+D:\sovb4\examples\Chap8\CatchMe\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\CatchMe\obj\Debug\CatchMe.Form1.resources
+D:\sovb4\examples\Chap8\CatchMe\obj\Debug\CatchMe.Resources.resources
+D:\sovb4\examples\Chap8\CatchMe\obj\Debug\CatchMe.vbproj.GenerateResource.Cache

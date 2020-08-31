@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap3\Format Demo\bin\Release\Format Demo.exe
+D:\sovb4\examples\Chap3\Format Demo\bin\Release\Format Demo.pdb
+D:\sovb4\examples\Chap3\Format Demo\bin\Release\Format Demo.xml
+D:\sovb4\examples\Chap3\Format Demo\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Format Demo\obj\Release\Format_Demo.Form1.resources
+D:\sovb4\examples\Chap3\Format Demo\obj\Release\Format_Demo.Resources.resources
+D:\sovb4\examples\Chap3\Format Demo\obj\Release\Format Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\Format Demo\obj\Release\Format Demo.exe
+D:\sovb4\examples\Chap3\Format Demo\obj\Release\Format Demo.xml
+D:\sovb4\examples\Chap3\Format Demo\obj\Release\Format Demo.pdb

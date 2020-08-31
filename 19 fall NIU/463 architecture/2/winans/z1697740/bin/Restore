@@ -1,0 +1,78 @@
+#!/bin/bash
+#hasnain attarwala
+#z1697740
+fname=""
+	
+setFiles()
+{
+	if [ -z  $fname  ]; then
+		afiles=( $(ls $HOME/Backup) ) # all the files
+	else
+		# | xargs -n 1 basename => display only the filename without the path
+		afiles=( $(ls $HOME/Backup/$fname* | xargs -n 1 basename) ) # only the files starting with $fname
+	fi
+}
+
+# Restore
+# Allow user to restore files stored in the Backup directory
+
+	purge=0				# purge switch off
+	clearAllFiles=0		# clear All Files switch off
+	script=`echo $0 | sed -e 's/\.\///g'` # remove prefix "./" if any
+	if [ "$1" == "-p" -o "$script" == "Purge" ]; then
+		purge=1		# called as purge
+		if [ "$1" == "-a" -a "$script" == "Purge" ]; then
+			clearAllFiles=1
+			echo "clearAllFiles"
+		fi
+		shift
+		if [ "$#" -eq 1 ]; then
+			fname=$1
+		fi
+	elif [ "$#" -eq 1 ]; then
+		fname=$1
+	fi
+
+	# at this point we can check Purge and Purge -a
+	if [ "$script" == "Purge" -a $clearAllFiles -eq 1 ]; then
+		if [ -z  $fname  ]; then
+			rm -f "$HOME"/Backup/*
+		else
+			rm $HOME/Backup/$fname*
+		fi
+		exit 0
+	fi
+	setFiles
+	
+	option="." # anything different to "q" will do the trick
+	# carefully: -ne -lt -eq require integer expression
+	while [ "$option" != "q" -a "$option" != "Q" ] 
+	do
+ 
+		idx=1
+		for each in "${afiles[@]}"
+		do
+			echo "$idx) $each"
+			let "idx = idx + 1"
+		done
+		echo "q) Quit"
+		echo -n "Your choice: "
+		read option
+		if [ "$option" != "q" -a "$option" != "Q" ]; then
+
+			let "option = option - 1" # put "option" 0..n-1 based
+			srcfile="${afiles[option]}"
+			dstfile=`echo $srcfile | sed -e 's/\.[0-9]\{13\}//g'`
+			if [ $purge -eq 1  ]; then
+				rm $HOME/Backup/$srcfile	# delete it from the Backup directory
+				setFiles					# reload the files as we delete one
+			else
+				cp -P $HOME/Backup/$srcfile $dstfile
+			fi
+			if [ ! -z  $fname  ]; then
+				option="q"		# quit Because this is file specific the program should terminate.
+			fi
+		fi
+	done
+	
+

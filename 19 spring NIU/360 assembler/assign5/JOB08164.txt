@@ -1,0 +1,184 @@
+                    J E S 2  J O B  L O G  --  S Y S T E M  S 0 W 1  --  N O D E  Z O S K C T R         
+
+ 
+23.42.10 JOB08164 ---- THURSDAY,  21 MAR 2019 ----
+23.42.10 JOB08164  IRR010I  USERID KC03FB5  IS ASSIGNED TO THIS JOB.
+23.42.10 JOB08164  ICH70001I KC03FB5  LAST ACCESS AT 23:41:34 ON THURSDAY, MARCH 21, 2019
+23.42.10 JOB08164  $HASP373 KC03FB5A STARTED - INIT 2    - CLASS A        - SYS S0W1
+23.42.10 JOB08164  -                                         --TIMINGS (MINS.)--            ----PAGING COUNTS---
+23.42.10 JOB08164  -JOBNAME  STEPNAME PROCSTEP    RC   EXCP    TCB    SRB  CLOCK   SERV  PG   PAGE   SWAP    VIO SWAPS
+23.42.10 JOB08164  -KC03FB5A                      00     45 ******    .00     .0    124   0      0      0      0     0
+23.42.10 JOB08164  -KC03FB5A ENDED.  NAME-H ATTARWALA          TOTAL TCB CPU TIME=   .00  TOTAL ELAPSED TIME=    .0
+23.42.10 JOB08164  $HASP395 KC03FB5A ENDED
+
+------ JES2 JOB STATISTICS ------
+
+
+  21 MAR 2019 JOB EXECUTION DATE
+
+
+           83 CARDS READ
+
+
+          138 SYSOUT PRINT RECORDS
+
+
+            0 SYSOUT PUNCH RECORDS
+
+
+           13 SYSOUT SPOOL KBYTES
+
+
+         0.00 MINUTES EXECUTION TIME
+!! END OF JES SPOOL FILE !!
+       1 //KC03FB5A JOB ,'H ATTARWALA',MSGCLASS=H                                JOB08164
+       2 //JSTEP01 EXEC PGM=ASSIST                                               00020000
+       3 //STEPLIB DD DSN=KC00NIU.ASSIST.LOADLIB,DISP=SHR                        00030000
+       4 //SYSPRINT DD SYSOUT=*                                                  00040000
+       5 //SYSIN DD *                                                            00050000
+         //*                                                                     00241023
+       6 //FT05F001   DD  *                                                      00242023
+       7 //FT06F001 DD SYSOUT=*                                                  00270023
+!! END OF JES SPOOL FILE !!
+ICH70001I KC03FB5  LAST ACCESS AT 23:41:34 ON THURSDAY, MARCH 21, 2019
+IEF236I ALLOC. FOR KC03FB5A JSTEP01
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSIN
+IEF237I JES2 ALLOCATED TO FT05F001
+IEF237I JES2 ALLOCATED TO FT06F001
+IEF142I KC03FB5A JSTEP01 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC00NIU.ASSIST.LOADLIB                       RETAINED,  DDNAME=STEPLIB 
+IEF285I   KC03FB5.KC03FB5A.JOB08164.D0000103.?         SYSOUT        
+IEF285I   KC03FB5.KC03FB5A.JOB08164.D0000101.?         SYSIN         
+IEF285I   KC03FB5.KC03FB5A.JOB08164.D0000102.?         SYSIN         
+IEF285I   KC03FB5.KC03FB5A.JOB08164.D0000104.?         SYSOUT        
+IEF373I STEP/JSTEP01 /START 2019080.2342
+IEF032I STEP/JSTEP01 /STOP  2019080.2342 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:   584K  SYS:   264K  EXT:        0K  SYS:    11636K
+        ATB- REAL:                    12K  SLOTS:                     0K
+             VIRT- ALLOC:       2M SHRD:       0M
+IEF375I  JOB/KC03FB5A/START 2019080.2342
+IEF033I  JOB/KC03FB5A/STOP  2019080.2342 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+!! END OF JES SPOOL FILE !!
+
+*** ASSIST 4.0/A2-05/15/82  470/V7A/0:OS/VS2  INS=SDFP7/X=BGHO, CHECK/TRC/=1180, OPTS=CDKMPR FROM PENN ST*NIU COMPSCI*LT            
+
+                                                                                                                                    
+
+                                                                                                               PAGE    1            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+                                      1 **********************************************************************  00060042            
+                                      2 *                                                                    *  00070042            
+                                      3 *  ASSIGNMENT 3A- YOUR FIFTH MAINFRAME PROGRAM                       *  00080042            
+                                      4 *  HASNAIN ATTARWALA Z1697740 KC03FB5                                *  00081042            
+                                      5 *  EMILY DUCATTE     Z1831554 KC03G0A                                *  00082042            
+                                      6 *                                                                    *  00090042            
+                                      7 *  DUE DATE 3/22/2019                                                *  00100042            
+                                      8 *                                                                    *  00110042            
+                                      9 **********************************************************************  00120042            
+000000                               10 MAIN     CSECT                                                          00130001            
+000000                               11          USING MAIN,15          ESTABLISH ADDRESSABILITY                00131099            
+                                     12 *                                                                       00131124            
+000000 E000 F068 0050 00068          13          XREAD BUFFER,80        PRIME READ                              00132023            
+000006 4740 F052            00052    14 LOOP1    BC    B'0100',ENDLOOP1 IF WE REACHED EOF                       00133023            
+                                     15 *                                                                       00133125            
+00000A 1B66                          16          SR    6,6              CLEAR THIS GUY OUT PICKY                00133479            
+00000C 5320 F068            00068    17          XDECI 2,BUFFER         PUTS 1ST NUM COL1 ROW1 REG2             00133531            
+000010 5330 1000            00000    18          XDECI 3,0(,1)          PUTS 2ND NUM COL2 ROW1 REG3             00133684            
+000014 5340 1000            00000    19          XDECI 4,0(,1)          PUTS 3RD NUM COL3 ROW1 REG4             00133784            
+                                     20 *                                                                       00133831            
+000018 1A62                          21          AR    6,2              ADDS REG 2 INTO 6                       00133980            
+00001A 1A63                          22          AR    6,3              ADDS REG 3 INTO 6                       00134079            
+00001C 1A64                          23          AR    6,4              ADDS REG 4 INTO 6                       00134179            
+                                     24 *                                                                       00134245            
+00001E 5220 F0B9            000B9    25          XDECO 2,ONUM1          PUT CONTENTS OF 2 ON ONUM1              00134384            
+000022 5230 F0C5            000C5    26          XDECO 3,ONUM2          PUT CONTENTS OF 3 ON ONUM2              00134493            
+000026 5240 F0D1            000D1    27          XDECO 4,ONUM3          PUT CONTENTS OF 4 ON ONUM3              00134593            
+00002A 5260 F0DD            000DD    28          XDECO 6,OSUM1          PUT CONTENTS OF 6 ON OSUM1              00134699            
+                                     29 *                                                                       00134793            
+00002E 1B99                          30          SR    9,9              BEING PICKY                             00134999            
+000030 1B88                          31          SR    8,8              BEING PICKY AGAIN                       00135099            
+000032 1896                          32          LR    9,6              PUT THE OSUM1 FROM 6 IN REG9            00135399            
+000034 41A0 0003            00003    33          LA    10,3             PUT THE THREE IN10                      00135499            
+000038 5C80 F060            00060    34          M     8,=F'1'          MAKE SURE THE EVEN REG SIGN BIT         00135599            
+                                     35 *                                                                       00135699            
+00003C 1D8A                          36          DR    8,10             DIVIDE THE SUM BY THREE                 00135799            
+00003E 5290 F0E9            000E9    37          XDECO 9,OQUOT          PUT CONTENTS OF 9 ON OQUOT              00135899            
+                                     38 *                                                                       00135999            
+000042 E020 F0B8 0041 000B8          39          XPRNT OUTLINE,65       PRINT OUT STUFF                         00136099            
+                                     40 *                                                                       00136179            
+                                     41 *                                                                       00136274            
+                                     42 *                                                                       00136345            
+000048 E000 F068 0050 00068          43          XREAD BUFFER,80        IF BAD CC 1 GOOD CC 0. READ NEXT        00136499            
+00004E 47F0 F006            00006    44          BC    B'1111',LOOP1    BRANCH BACK TO TOP TO CHECK CC          00136530            
+                                     45 *                                                                       00136630            
+000052 E160 0000 0000 00000          46 ENDLOOP1 XDUMP ,                                                        00136739            
+000058 07FE                          47          BR    14               RETURN TO CALLER                        00137035            
+                                     48 *                                                                       00200017            
+                                     49          LTORG                  LITERAL ORGANIZATION                    00210057            
+000060 00000001                      50                =F'1'                                                                        
+000064 00000003                      51 THREE    DC    F'3'             DECLARE FULLWRD OF STORAGE WITH VAL     00210194            
+000068                               52 BUFFER   DS    CL80             80 BYTES OF STORAGE IN LABEL BUFFER     00211057            
+
+                                                                                                               PAGE    2            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+0000B8 F0                            53 OUTLINE  DC    C'0'             DBL SPACING                             00212057            
+0000B9                               54 ONUM1    DS    12C              DEFINE CONSTANT                         00213199            
+0000C5                               55 ONUM2    DS    12C              DEFINE CONSTANT                         00213299            
+0000D1                               56 ONUM3    DS    12C              DEFINE CONSTANT                         00213399            
+0000DD                               57 OSUM1    DS    12C              DEFINE STORAGE                          00213499            
+0000E9                               58 OQUOT    DS    12C              DEFINE STORAGE                          00213599            
+0000F5 4040404040404040              59          DC    8C' '            PUT 8 SPACES IN BETWEEN                 00214199            
+                                     60 *                                                                       00220001            
+                                     61          END   MAIN                                                     00230001            
+
+***  NO   STATEMENTS FLAGGED -  NO   WARNINGS,  NO   ERRORS                                                                         
+
+*** DYNAMIC CORE AREA USED:  LOW:    3420 HIGH:     564 LEAVING:  489584 FREE BYTES. AVERAGE:       64 BYTES/STMT ***               
+
+*** ASSEMBLY TIME =    0.000 SECS,    62000 STATEMENTS/SEC ***                                                                      
+
+*** PROGRAM EXECUTION BEGINNING - ANY OUTPUT BEFORE EXECUTION TIME MESSAGE IS PRODUCED BY USER PROGRAM ***                          
+
+        4500        -230           9        4279        1426                                                                        
+
+           0           7           2           9           3                                                                        
+
+        8516        2853           0       11369        3789                                                                        
+
+          20           0        3245        3265        1088                                                                        
+
+        5529        6977        1681       14187        4729                                                                        
+
+        1013         250          85        1348         449                                                                        
+
+           0        3364        5275        8639        2879                                                                        
+
+        -887        1100        2293        2506         835                                                                        
+
+        1234        8447        4591       14272        4757                                                                        
+
+         -89          -7          23         -73         -24                                                                        
+
+        8513        5409        2538       16460        5486                                                                        
+
+           1           2           3           6           2                                                                        
+
+        9999        9998        9997       29994        9998                                                                        
+
+BEGIN XSNAP - CALL     1 AT D0000058 USER REGISTERS                                                                                 
+
+ REGS 0-7      F4F4F4F4    0000007E    0000270F    0000270E    0000270D    F4F4F4F4    0000752A    F4F4F4F4                         
+ REGS 8-15     00000000    0000270E    00000003    F4F4F4F4    F4F4F4F4    00000100    FFFE7960    00000000                         
+
+                                                                                                                                    
+
+*** EXECUTION TIME =    0.000 SECS.       290 INSTRUCTIONS EXECUTED -   290000 INSTRUCTIONS/SEC ***                                 
+
+*** AM004 - NORMAL USER TERMINATION BY RETURN ***                                                                                   
+!! END OF JES SPOOL FILE !!

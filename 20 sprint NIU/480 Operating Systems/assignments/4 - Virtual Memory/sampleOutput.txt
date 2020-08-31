@@ -1,0 +1,798 @@
+
+---------------Starting program with FIFO and Pre Paging----------------
+
+Read page 16 from the disk into frame 101
+Read page 0 from the disk into frame 102
+Read page 17 from the disk into frame 103
+Page Number  Frame Number  Modified?
+   0           102             Yes
+   1            -1             No
+   2            -1             No
+   3           104             No
+   4           105             No
+   5           201             No
+   6           202             No
+   7           203             No
+   8           204             No
+   9           205             No
+  10           301             No
+  11           302             No
+  12           303             No
+  13           304             No
+  14           305             No
+  15            -1             No
+  16           101             No
+  17           103             No
+  18            -1             No
+  19            -1             No
+  20            -1             No
+  21            -1             No
+  22            -1             No
+  23            -1             No
+  24            -1             No
+Read page 22 from the disk into frame 104
+Read page 19 from the disk into frame 105
+Read page 3 from the disk into frame 201
+Page Number  Frame Number  Modified?
+   0           102             Yes
+   1            -1             No
+   2            -1             No
+   3           201             No
+   4            -1             No
+   5            -1             No
+   6           202             No
+   7           203             No
+   8           204             No
+   9           205             No
+  10           301             No
+  11           302             No
+  12           303             No
+  13           304             Yes
+  14           305             No
+  15            -1             No
+  16           101             No
+  17           103             No
+  18            -1             No
+  19           105             No
+  20            -1             No
+  21            -1             No
+  22           104             No
+  23            -1             No
+  24            -1             No
+Read page 15 from the disk into frame 202
+Read page 23 from the disk into frame 203
+Read page 18 from the disk into frame 204
+Read page 6 from the disk into frame 205
+Read page 1 from the disk into frame 301
+Page Number  Frame Number  Modified?
+   0           102             Yes
+   1           301             Yes
+   2            -1             No
+   3           201             No
+   4            -1             No
+   5            -1             No
+   6           205             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11           302             No
+  12           303             No
+  13           304             Yes
+  14           305             No
+  15           202             No
+  16           101             No
+  17           103             No
+  18           204             No
+  19           105             No
+  20            -1             No
+  21            -1             No
+  22           104             No
+  23           203             No
+  24            -1             No
+Read page 5 from the disk into frame 302
+Read page 20 from the disk into frame 303
+Page Number  Frame Number  Modified?
+   0           102             Yes
+   1           301             Yes
+   2            -1             No
+   3           201             No
+   4            -1             No
+   5           302             No
+   6           205             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12            -1             No
+  13           304             Yes
+  14           305             Yes
+  15           202             No
+  16           101             No
+  17           103             No
+  18           204             No
+  19           105             No
+  20           303             No
+  21            -1             No
+  22           104             No
+  23           203             Yes
+  24            -1             No
+Write page 13 from frame 304 to the disk
+Read page 11 from the disk into frame 304
+Write page 14 from frame 305 to the disk
+Read page 2 from the disk into frame 305
+Read page 7 from the disk into frame 101
+Write page 0 from frame 102 to the disk
+Read page 12 from the disk into frame 102
+Read page 8 from the disk into frame 103
+Page Number  Frame Number  Modified?
+   0            -1             No
+   1           301             Yes
+   2           305             No
+   3           201             No
+   4            -1             No
+   5           302             No
+   6           205             No
+   7           101             No
+   8           103             Yes
+   9            -1             No
+  10            -1             No
+  11           304             No
+  12           102             No
+  13            -1             No
+  14            -1             No
+  15           202             No
+  16            -1             No
+  17            -1             No
+  18           204             No
+  19           105             No
+  20           303             No
+  21            -1             No
+  22           104             No
+  23           203             Yes
+  24            -1             No
+Read page 0 from the disk into frame 104
+Read page 24 from the disk into frame 105
+Read page 21 from the disk into frame 201
+Page Number  Frame Number  Modified?
+   0           104             No
+   1           301             Yes
+   2           305             No
+   3            -1             No
+   4            -1             No
+   5           302             No
+   6           205             No
+   7           101             No
+   8           103             No
+   9            -1             No
+  10            -1             No
+  11           304             Yes
+  12           102             No
+  13            -1             No
+  14            -1             No
+  15           202             No
+  16            -1             No
+  17            -1             No
+  18           204             No
+  19            -1             No
+  20           303             No
+  21           201             Yes
+  22            -1             No
+  23           203             Yes
+  24           105             Yes
+Read page 17 from the disk into frame 202
+Read page 13 from the disk into frame 203
+Read page 16 from the disk into frame 204
+Page Number  Frame Number  Modified?
+   0           104             No
+   1           301             Yes
+   2           305             No
+   3            -1             No
+   4            -1             No
+   5           302             No
+   6           205             No
+   7           101             No
+   8           103             No
+   9            -1             No
+  10            -1             No
+  11           304             Yes
+  12           102             No
+  13           203             No
+  14            -1             No
+  15            -1             No
+  16           204             No
+  17           202             No
+  18            -1             No
+  19            -1             No
+  20           303             No
+  21           201             No
+  22            -1             No
+  23            -1             No
+  24           105             No
+Read page 9 from the disk into frame 205
+Write page 1 from frame 301 to the disk
+Read page 18 from the disk into frame 301
+Read page 14 from the disk into frame 302
+Read page 5 from the disk into frame 303
+Write page 11 from frame 304 to the disk
+Read page 6 from the disk into frame 304
+Read page 22 from the disk into frame 305
+Page Number  Frame Number  Modified?
+   0           104             No
+   1            -1             No
+   2            -1             No
+   3            -1             No
+   4            -1             No
+   5           303             No
+   6           304             No
+   7           101             No
+   8           103             No
+   9           205             Yes
+  10            -1             No
+  11            -1             No
+  12           102             No
+  13           203             No
+  14           302             Yes
+  15            -1             No
+  16           204             No
+  17           202             No
+  18           301             No
+  19            -1             No
+  20            -1             No
+  21           201             No
+  22           305             Yes
+  23            -1             No
+  24           105             Yes
+Page Number  Frame Number  Modified?
+   0           104             No
+   1            -1             No
+   2            -1             No
+   3            -1             No
+   4            -1             No
+   5           303             No
+   6           304             No
+   7           101             No
+   8           103             No
+   9           205             Yes
+  10            -1             No
+  11            -1             No
+  12           102             No
+  13           203             No
+  14           302             Yes
+  15            -1             No
+  16           204             No
+  17           202             No
+  18           301             No
+  19            -1             No
+  20            -1             No
+  21           201             No
+  22           305             Yes
+  23            -1             No
+  24           105             Yes
+
+---------------Starting program with FIFO and Demand Paging----------------
+
+Page Number  Frame Number  Modified?
+   0           101             Yes
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12            -1             No
+  13            -1             No
+  14           104             No
+  15            -1             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19            -1             No
+  20            -1             No
+  21            -1             No
+  22            -1             No
+  23            -1             No
+  24            -1             No
+Page Number  Frame Number  Modified?
+   0           101             Yes
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             No
+  15            -1             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             No
+  23            -1             No
+  24            -1             No
+Write page 0 from frame 101 to the disk
+Read page 1 from the disk into frame 101
+Page Number  Frame Number  Modified?
+   0            -1             No
+   1           101             Yes
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             No
+  15           303             No
+  16           102             No
+  17           203             No
+  18           305             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             No
+  23           304             No
+  24            -1             No
+Read page 5 from the disk into frame 102
+Read page 20 from the disk into frame 103
+Page Number  Frame Number  Modified?
+   0            -1             No
+   1           101             Yes
+   2           201             No
+   3            -1             No
+   4           202             No
+   5           102             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             Yes
+  15           303             No
+  16            -1             No
+  17           203             No
+  18           305             No
+  19           301             No
+  20           103             No
+  21            -1             No
+  22           204             No
+  23           304             Yes
+  24            -1             No
+Write page 14 from frame 104 to the disk
+Read page 11 from the disk into frame 104
+Read page 16 from the disk into frame 105
+Read page 7 from the disk into frame 201
+Read page 8 from the disk into frame 202
+Page Number  Frame Number  Modified?
+   0            -1             No
+   1           101             Yes
+   2            -1             No
+   3            -1             No
+   4            -1             No
+   5           102             No
+   6            -1             No
+   7           201             No
+   8           202             Yes
+   9            -1             No
+  10            -1             No
+  11           104             No
+  12           302             No
+  13           205             Yes
+  14            -1             No
+  15           303             No
+  16           105             No
+  17           203             No
+  18           305             No
+  19           301             No
+  20           103             No
+  21            -1             No
+  22           204             No
+  23           304             Yes
+  24            -1             No
+Read page 0 from the disk into frame 203
+Read page 24 from the disk into frame 204
+Write page 13 from frame 205 to the disk
+Read page 2 from the disk into frame 205
+Read page 21 from the disk into frame 301
+Page Number  Frame Number  Modified?
+   0           203             No
+   1           101             Yes
+   2           205             No
+   3            -1             No
+   4            -1             No
+   5           102             No
+   6            -1             No
+   7           201             No
+   8           202             No
+   9            -1             No
+  10            -1             No
+  11           104             Yes
+  12           302             No
+  13            -1             No
+  14            -1             No
+  15           303             No
+  16           105             No
+  17            -1             No
+  18           305             No
+  19            -1             No
+  20           103             No
+  21           301             Yes
+  22            -1             No
+  23           304             Yes
+  24           204             Yes
+Read page 6 from the disk into frame 302
+Read page 17 from the disk into frame 303
+Read page 13 from the disk into frame 304
+Page Number  Frame Number  Modified?
+   0           203             No
+   1           101             Yes
+   2           205             No
+   3            -1             No
+   4            -1             No
+   5           102             No
+   6           302             No
+   7           201             No
+   8           202             No
+   9            -1             No
+  10            -1             No
+  11           104             Yes
+  12            -1             No
+  13           304             No
+  14            -1             No
+  15            -1             No
+  16           105             No
+  17           303             No
+  18           305             No
+  19            -1             No
+  20           103             No
+  21           301             No
+  22            -1             No
+  23            -1             No
+  24           204             No
+Read page 9 from the disk into frame 305
+Write page 1 from frame 101 to the disk
+Read page 18 from the disk into frame 101
+Read page 14 from the disk into frame 102
+Read page 5 from the disk into frame 103
+Write page 11 from frame 104 to the disk
+Read page 22 from the disk into frame 104
+Page Number  Frame Number  Modified?
+   0           203             No
+   1            -1             No
+   2           205             No
+   3            -1             No
+   4            -1             No
+   5           103             No
+   6           302             No
+   7           201             No
+   8           202             No
+   9           305             Yes
+  10            -1             No
+  11            -1             No
+  12            -1             No
+  13           304             No
+  14           102             Yes
+  15            -1             No
+  16           105             No
+  17           303             No
+  18           101             No
+  19            -1             No
+  20            -1             No
+  21           301             No
+  22           104             Yes
+  23            -1             No
+  24           204             Yes
+Page Number  Frame Number  Modified?
+   0           203             No
+   1            -1             No
+   2           205             No
+   3            -1             No
+   4            -1             No
+   5           103             No
+   6           302             No
+   7           201             No
+   8           202             No
+   9           305             Yes
+  10            -1             No
+  11            -1             No
+  12            -1             No
+  13           304             No
+  14           102             Yes
+  15            -1             No
+  16           105             No
+  17           303             No
+  18           101             No
+  19            -1             No
+  20            -1             No
+  21           301             No
+  22           104             Yes
+  23            -1             No
+  24           204             Yes
+
+---------------Starting program with LIFO and Demand Paging----------------
+
+Page Number  Frame Number  Modified?
+   0           101             Yes
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12            -1             No
+  13            -1             No
+  14           104             No
+  15            -1             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19            -1             No
+  20            -1             No
+  21            -1             No
+  22            -1             No
+  23            -1             No
+  24            -1             No
+Page Number  Frame Number  Modified?
+   0           101             Yes
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             No
+  15            -1             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             No
+  23            -1             No
+  24            -1             No
+Read page 1 from the disk into frame 305
+Page Number  Frame Number  Modified?
+   0           101             Yes
+   1           305             Yes
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             No
+  15           303             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             No
+  23           304             No
+  24            -1             No
+Write page 1 from frame 305 to the disk
+Read page 18 from the disk into frame 305
+Read page 5 from the disk into frame 305
+Read page 20 from the disk into frame 305
+Page Number  Frame Number  Modified?
+   0           101             Yes
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             Yes
+  15           303             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20           305             No
+  21            -1             No
+  22           204             No
+  23           304             Yes
+  24            -1             No
+Read page 11 from the disk into frame 305
+Read page 5 from the disk into frame 305
+Read page 7 from the disk into frame 305
+Read page 20 from the disk into frame 305
+Read page 8 from the disk into frame 305
+Page Number  Frame Number  Modified?
+   0           101             Yes
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8           305             Yes
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             Yes
+  15           303             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             No
+  23           304             Yes
+  24            -1             No
+Write page 8 from frame 305 to the disk
+Read page 5 from the disk into frame 305
+Read page 24 from the disk into frame 305
+Write page 24 from frame 305 to the disk
+Read page 8 from the disk into frame 305
+Read page 11 from the disk into frame 305
+Write page 11 from frame 305 to the disk
+Read page 21 from the disk into frame 305
+Write page 21 from frame 305 to the disk
+Read page 24 from the disk into frame 305
+Page Number  Frame Number  Modified?
+   0           101             No
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             Yes
+  14           104             Yes
+  15           303             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             No
+  23           304             Yes
+  24           305             Yes
+Read page 21 from the disk into frame 305
+Page Number  Frame Number  Modified?
+   0           101             No
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9            -1             No
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             No
+  14           104             Yes
+  15           303             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21           305             No
+  22           204             No
+  23           304             No
+  24            -1             No
+Read page 24 from the disk into frame 305
+Write page 24 from frame 305 to the disk
+Read page 9 from the disk into frame 305
+Read page 20 from the disk into frame 305
+Read page 18 from the disk into frame 305
+Read page 5 from the disk into frame 305
+Read page 9 from the disk into frame 305
+Page Number  Frame Number  Modified?
+   0           101             No
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9           305             Yes
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             No
+  14           104             Yes
+  15           303             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             Yes
+  23           304             No
+  24            -1             No
+Page Number  Frame Number  Modified?
+   0           101             No
+   1            -1             No
+   2           201             No
+   3           103             No
+   4           202             No
+   5            -1             No
+   6           105             No
+   7            -1             No
+   8            -1             No
+   9           305             Yes
+  10            -1             No
+  11            -1             No
+  12           302             No
+  13           205             No
+  14           104             Yes
+  15           303             No
+  16           102             No
+  17           203             No
+  18            -1             No
+  19           301             No
+  20            -1             No
+  21            -1             No
+  22           204             Yes
+  23           304             No
+  24            -1             No

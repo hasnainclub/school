@@ -1,0 +1,4 @@
+# Procmail recipe for hw folder
+:0:
+* ^Subject:.*HW: CSCI .*
+$HOME/463.hw

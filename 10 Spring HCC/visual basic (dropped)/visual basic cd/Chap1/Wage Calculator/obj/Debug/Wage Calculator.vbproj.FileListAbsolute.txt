@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap1\Wage Calculator\obj\Debug\Wage Calculator.exe
+D:\sovb4\examples\Chap1\Wage Calculator\obj\Debug\Wage Calculator.xml
+D:\sovb4\examples\Chap1\Wage Calculator\obj\Debug\Wage Calculator.pdb
+D:\sovb4\examples\Chap1\Wage Calculator\bin\Wage Calculator.exe
+D:\sovb4\examples\Chap1\Wage Calculator\bin\Wage Calculator.pdb
+D:\sovb4\examples\Chap1\Wage Calculator\bin\Wage Calculator.xml
+D:\sovb4\examples\Chap1\Wage Calculator\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap1\Wage Calculator\obj\Debug\WageCalculator.CalculateForm.resources
+D:\sovb4\examples\Chap1\Wage Calculator\obj\Debug\WageCalculator.Resources.resources
+D:\sovb4\examples\Chap1\Wage Calculator\obj\Debug\Wage Calculator.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\obj\Debug\Wage Calculator.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\obj\Debug\Wage Calculator.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\obj\Debug\Wage Calculator.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\bin\Wage Calculator.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\bin\Wage Calculator.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\bin\Wage Calculator.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\obj\Debug\WageCalculator.CalculateForm.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\obj\Debug\WageCalculator.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap1\Wage Calculator\obj\Debug\Wage Calculator.vbproj.GenerateResource.Cache

@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\bin\Release\Exception Handling.exe
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\bin\Release\Exception Handling.pdb
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\bin\Release\Exception Handling.xml
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Release\Exception_Handling.Form1.resources
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Release\Exception_Handling.Resources.resources
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Release\Exception Handling.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Release\Exception Handling.exe
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Release\Exception Handling.xml
+D:\sovb4\examples\Chap3\Exception Handling\Exception Handling\obj\Release\Exception Handling.pdb

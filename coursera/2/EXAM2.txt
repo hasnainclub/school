@@ -1,0 +1,59 @@
+
+1.Question 1
+
+When searching for a word in a data set, which function key can be used to locate the word again?
+
+F5
+
+
+2.Question 2
+
+What is the correct syntax to replace all instances of the word mainframes to servers in a data set?
+
+CH,MAINFRAMES,SERVERS,ALL
+
+
+3.Question 3
+
+Which command(s) locates and displays a character string within the data set name?
+F dataset
+
+
+4.Question 4
+
+To repeat a search after locating a specific word or phrase, what is used to repeat the search without reentering the character string?
+
+rfind
+
+
+5.Question 5
+
+What is unique concerning REXX execs?
+First line starts with /* and ends with */
+
+
+6.Question 6
+
+Which command in the prefix area will add six additional lines?
+I6
+
+
+7.Question 7
+
+Which prefix line command copies data from specified columns of one or more source records to the corresponding columns of one or more existing records?
+
+O
+
+WRONG C
+
+WRONG M
+
+WRONG R
+
+
+8.Question 8
+
+What TSO command recovers waste space that was formerly occupied by deleted or updated members and is now available for use again?
+
+Compress
+

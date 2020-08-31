@@ -1,0 +1,98 @@
+
+1.Question 1
+
+What is the benefit of mounting a zFS file system and an owning LPAR is assigned?
+
+All the LPARs and users have access to this zFS file
+
+
+2.Question 2
+
+Logging on to z/OSMF requires
+
+a valid z/OS RACF user ID defined and enabled for z/OSMF
+
+
+
+3.Question 3
+
+The connection interface to z/OSMF can be
+
+HTTPS only
+
+
+4.Question 4
+
+What is the goal of z/OSMF ?
+
+All of these options
+
+
+
+
+5.Question 5
+
+What is the z/OSMF fuction which provides an access to traditional ISPF applications
+
+z/OS classic interfaces
+
+
+
+6.Question 6
+
+Which JCL parameter is used to allocate a data set using the same attributes as another allocated data set?
+
+LIKE
+
+
+7.Question 7
+
+Which data set utility performs a compress when both the input and output are the same data set on the same volume? 
+
+IEBCOPY
+
+
+8.Question 8
+
+When running a job which includes a data set with insufficient directory space, which data set type will dynamically create more directory space as needed? 
+
+PDSE
+
+
+
+9.Question 9
+
+What is another term for when a job completes unsuccessfully with a failure?
+
+ABEND
+
+
+
+10.Question 10
+
+Which function is used to condense members and consolidate or spaces in a single area within the PDS ?
+
+COMPRESS
+
+
+
+11.Question 11
+
+  What value in the JCL job card provides the user ID under which the current TSO session is logged onto ?
+
+&SYSUID
+
+
+12.Question 12
+
+Which system utility is used to install, manage, and initialize DASD? 
+
+ICKDSF
+
+
+13.Question 13
+
+Which data set utility actually performs no other action other than invoking allocation and return a completion code of 0?
+
+IEFBR14
+

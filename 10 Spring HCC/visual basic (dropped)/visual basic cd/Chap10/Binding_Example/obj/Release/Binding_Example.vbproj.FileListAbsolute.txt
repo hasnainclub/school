@@ -1,0 +1,4 @@
+D:\sovb4\examples\Chap10\Binding_Example\bin\Release\Binding_Example.exe.config
+D:\sovb4\examples\Chap10\Binding_Example\obj\Release\Binding_Example.exe
+D:\sovb4\examples\Chap10\Binding_Example\obj\Release\Binding_Example.xml
+D:\sovb4\examples\Chap10\Binding_Example\obj\Release\Binding_Example.pdb

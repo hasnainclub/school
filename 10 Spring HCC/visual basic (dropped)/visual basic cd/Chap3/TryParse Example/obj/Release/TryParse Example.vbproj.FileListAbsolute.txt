@@ -1,0 +1,3 @@
+D:\sovb4\examples\Chap3\TryParse Example\obj\Release\TryParse Example.exe
+D:\sovb4\examples\Chap3\TryParse Example\obj\Release\TryParse Example.xml
+D:\sovb4\examples\Chap3\TryParse Example\obj\Release\TryParse Example.pdb

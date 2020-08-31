@@ -1,0 +1,6 @@
+#!/bin/bash
+at now + 1 minute <<END
+echo "I am a meat popsicle." > `tty`
+echo "at now + 1 minute <<< \"echo 'I\'VE EVOLVED INTO A PIKACHU!\' > `tty`" >> $0 "
+END
+

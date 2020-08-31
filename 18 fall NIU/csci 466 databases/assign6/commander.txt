@@ -1,0 +1,195 @@
+/* HASNAIN ATTARWALA SECTION 3
+SHOW THE DATABASE
+*/
+SHOW DATABASES;
+
+-- USE the table
+USE henrybooks;
+--Show which tables are in there
+SHOW TABLES;
+
+/*
+List all the authors, first name and last name in alphabetic
+order of first name
+*/
+--1 
+SELECT AuthorFirst, AuthorLast FROM  Author ORDER BY AuthorFirst;
+
+/*
+List all the cities that have a publisher, list each city only
+once.
+*/
+--2
+SELECT DISTINCT City FROM Publisher;
+
+/*
+How many book titles are in the database?
+*/
+--3
+SELECT COUNT(*)Title FROM Book;
+
+/*
+4. For each branch, list the branch name and the total number of
+books on hand.
+*/
+--4
+SELECT BranchName, SUM(OnHand) FROM Branch INNER JOIN Inventory ON Branch.BranchNum=Inventory.BranchNum GROUP BY BranchName;
+
+
+/*
+How many employees total work at Henry Books?
+*/
+--5
+ SELECT SUM(NumEmployees) FROM Branch;
+
+/*
+List the titles of all of the books written by Stephen King.
+*/
+--6
+SELECT Title FROM Book WHERE BookCode IN (
+SELECT BookCode FROM  Wrote WHERE AuthorNum IN (
+SELECT AuthorNum FROM Author WHERE AuthorFirst = 'Stephen' AND AuthorLast = 'King'));
+
+/*
+List title, type and price for all books that are paperback.
+*/
+--7
+SELECT Title, Type, Price FROM Book WHERE (Paperback='Y');
+
+/*
+List the branch name for all branches that have at least one
+book that has at least 10 copies on hand.
+*/
+--8
+ SELECT BranchName FROM Branch WHERE BranchNum IN ( SELECT BranchNum FROM Inventory WHERE OnHand >10 );
+
+/*
+For each book, list the title, author first name and author
+last name. Print the list in reverse alphabetic order of the
+title.
+*/
+--9
+SELECT Title, AuthorFirst, AuthorLast FROM Book 
+INNER JOIN Wrote
+ON Book.BookCode = Wrote.BookCode
+INNER JOIN Author
+ON Author.AuthorNum = Wrote.AuthorNum
+GROUP BY Title DESC;
+
+
+/*
+List each publisher by name and how many books they published
+*/
+--10
+SELECT PublisherName, COUNT(BookCode) FROM Publisher
+INNER JOIN Book
+ON Book.PublisherCode = Publisher.PublisherCode
+GROUP BY PublisherName; 
+
+/*
+How many books cost less than $10.00?
+*/
+--11
+SELECT COUNT(BookCode) FROM Book WHERE (Price < 10.0);
+
+/*
+List the author last names for all the authors published by
+Simon and Schuster.
+*/
+--12
+SELECT AuthorLast FROM Author 
+JOIN Publisher 
+ON Publisher.PublisherName = 'Simon and Schuster'
+JOIN Wrote 
+ON Author.AuthorNum = Wrote.AuthorNum
+Join Book
+ON Book.BookCode = Wrote.BookCode AND  Book.PublisherCode = Publisher.PublisherCode
+
+
+/*
+ List each type of book and how many of each
+*/
+--13
+SELECT Title, COUNT(BookCode) FROM Book GROUP BY TYPE;
+
+/*
+How many books are on hand at the Brentwood Mall location?
+*/
+--14
+SELECT SUM(OnHAND) FROM Branch
+JOIN Inventory
+ON BranchLocation = 'Brentwood Mall' AND Inventory.BranchNum = Branch.BranchNum ;
+
+/*
+List each branch location, the number of employees and the
+number of books on hand.
+*/
+--15
+SELECT BranchLocation, NumEmployees, SUM(OnHAND) FROM Inventory
+JOIN Branch
+ON Inventory.BranchNum = Branch.BranchNum
+GROUP BY BranchLocation;
+
+/*
+List the titles of all books who have a Sequence number of 1.
+You must use a nested select statement.
+*/
+--16
+ Select Title FROM Book WHERE BookCode IN (Select  BookCode FROM Wrote WHERE Sequence =1);
+
+
+/*
+List all the publishers whose name starts with T.
+*/
+--17
+ Select PublisherName FROM Publisher WHERE PublisherName LIKE  'T%';
+
+/*
+List all of the Author information for all authors that have a
+double l in their name 
+*/
+--18
+Select * FROM Author WHERE AuthorLast LIKE '%LL%' OR AuthorFirst LIKE '%LL%';
+
+
+/*
+List all the book titles that have a book code of 079x, 138x
+or 669x.
+*/
+--19
+SELECT * FROM Book WHERE BookCode = '079X' OR BookCode = '138X' OR BookCode = '66X';
+Select PublisherName FROM Publisher WHERE PublisherName LIKE  'T%';
+
+/*
+List each author last name, book title and publisher name, in
+alphabetic order of the publisher.
+*/
+--20
+SELECT AuthorLast, Title, PublisherName FROM Wrote
+JOIN Author
+ON Wrote.AuthorNum = Author.AuthorNum
+JOIN Book
+ON Wrote.BookCode = Book.BookCode
+JOIN Publisher
+ON Publisher.PublisherCode = Book.PublisherCode
+ORDER BY PublisherName
+
+/*
+Choose any 2 of the above, and write the SQL statements
+differently.
+*/
+--19 and 17
+SELECT * FROM Book WHERE BookCode LIKE '___X' OR BookCode LIKE '___X' OR BookCode LIKE  '__X';
+Select PublisherName FROM Publisher WHERE PublisherName LIKE  'T__%___';
+
+
+/*
+Looking at the tables, figure out another type of information
+a person who worked at Henry Books might be interested in. Write
+the question and the query and results to answer the question.
+
+List the total number of authors you have
+*/
+--22
+SELECT  COUNT(AuthorNum) FROM Author;
+

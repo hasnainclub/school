@@ -1,0 +1,10 @@
+bin\Debug\ReadNumbers.exe
+bin\Debug\ReadNumbers.pdb
+bin\Debug\ReadNumbers.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ReadNumbers.Form1.resources
+obj\Debug\ReadNumbers.Resources.resources
+obj\Debug\ReadNumbers.vbproj.GenerateResource.Cache
+obj\Debug\ReadNumbers.exe
+obj\Debug\ReadNumbers.xml
+obj\Debug\ReadNumbers.pdb

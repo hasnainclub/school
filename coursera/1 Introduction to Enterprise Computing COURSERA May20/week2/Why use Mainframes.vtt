@@ -1,0 +1,336 @@
+WEBVTT
+
+1
+00:00:03.500 --> 00:00:05.300
+So why use mainframes?
+
+2
+00:00:05.300 --> 00:00:08.690
+Because no two businesses are alike,
+even competitors in the same field.
+
+3
+00:00:08.690 --> 00:00:13.277
+Mainframes need to be open,
+adaptable and ever-evolving.
+
+4
+00:00:13.277 --> 00:00:17.283
+And that's before we even talk about the
+processing power, or the system capacity.
+
+5
+00:00:17.283 --> 00:00:21.628
+Because mainframes the built for business,
+they need to support anything a business
+
+6
+00:00:21.628 --> 00:00:24.354
+could possibly want as part
+of their business model.
+
+7
+00:00:24.354 --> 00:00:26.840
+When the first companies
+started using Linux,
+
+8
+00:00:26.840 --> 00:00:29.209
+Linux became a supported operating system.
+
+9
+00:00:29.209 --> 00:00:30.622
+When open source software and
+
+10
+00:00:30.622 --> 00:00:33.909
+hybrid cloud models started becoming
+part of the way work gets done.
+
+11
+00:00:33.909 --> 00:00:38.092
+You started seeing APIs and cloud-ready
+solutions appear on the Mainframe.
+
+12
+00:00:38.092 --> 00:00:41.042
+What I'm getting at here is,
+is that if it's important,
+
+13
+00:00:41.042 --> 00:00:43.042
+you'll find it here on the mainframe.
+
+14
+00:00:43.042 --> 00:00:46.042
+So for example,
+let's talk about Linux for a minute.
+
+15
+00:00:46.042 --> 00:00:51.000
+Because this is a great example of
+something that runs really well on Z.
+
+16
+00:00:51.000 --> 00:00:53.760
+Linux runs great on my
+rented Cloud instance,
+
+17
+00:00:53.760 --> 00:00:58.165
+it runs great on the server under my desk,
+it even runs on my Raspberry Pi.
+
+18
+00:00:58.165 --> 00:01:01.944
+So why do I want to run Linux on the
+mainframe, is it going to run any better?
+
+19
+00:01:01.944 --> 00:01:06.704
+Well, what if I could make a Linux
+instance with 15 processors and
+
+20
+00:01:06.704 --> 00:01:08.466
+a couple gigs of memory?
+
+21
+00:01:08.466 --> 00:01:13.029
+And I also wanted to access 32
+different storage area networks and
+
+22
+00:01:13.029 --> 00:01:16.300
+a couple of different network VLANs.
+
+23
+00:01:16.300 --> 00:01:19.200
+Well, I can get that big
+powerful Linux system.
+
+24
+00:01:19.200 --> 00:01:23.535
+But I can also run that Linux with all of
+its data being encrypted, at all times,
+
+25
+00:01:23.535 --> 00:01:25.364
+through pervasive encryption.
+
+26
+00:01:25.364 --> 00:01:27.683
+So that's possible and that's pretty cool.
+
+27
+00:01:27.683 --> 00:01:30.444
+I could build five more of
+those same exact servers,
+
+28
+00:01:30.444 --> 00:01:34.732
+without needing five times the physical
+resources because of virtualization.
+
+29
+00:01:34.732 --> 00:01:36.147
+That's a huge bonus.
+
+30
+00:01:36.147 --> 00:01:40.965
+I can even bring up Linux Docker instances
+within the z/OS operating system,
+
+31
+00:01:40.965 --> 00:01:44.256
+where they can run right
+next to z/OS applications.
+
+32
+00:01:44.256 --> 00:01:46.012
+So I don't need a full system image,
+
+33
+00:01:46.012 --> 00:01:48.517
+if there's just one specific
+application in need.
+
+34
+00:01:48.517 --> 00:01:52.158
+Part of the big reason for running things
+on the mainframe is consolidation.
+
+35
+00:01:52.158 --> 00:01:56.100
+Now companies are always looking for
+ways to save money on operations.
+
+36
+00:01:56.100 --> 00:01:59.900
+So in addition to being able to bring
+all of those compute resources,
+
+37
+00:01:59.900 --> 00:02:03.100
+like the CPU and memory into one big box.
+
+38
+00:02:03.100 --> 00:02:06.799
+Companies are also able to consolidate
+things like power supplies,
+
+39
+00:02:06.799 --> 00:02:08.722
+networking adaptors and cooling.
+
+40
+00:02:08.722 --> 00:02:12.630
+Having one larger efficient
+cooling unit in a mainframe,
+
+41
+00:02:12.630 --> 00:02:17.028
+is much better than having 300
+individual CPU fans out there.
+
+42
+00:02:17.028 --> 00:02:21.553
+In business, you'll often find two
+major types of transactions happening.
+
+43
+00:02:21.553 --> 00:02:25.085
+There's real time transactions,
+that's like stuff that is reactionary,
+
+44
+00:02:25.085 --> 00:02:27.327
+event-based, needs-to-happen right now.
+
+45
+00:02:27.327 --> 00:02:30.537
+That's stuff like swiping a credit card,
+making a purchase,
+
+46
+00:02:30.537 --> 00:02:32.303
+changing your insurance policy.
+
+47
+00:02:32.303 --> 00:02:34.416
+That stuff needs to happen instantly.
+
+48
+00:02:34.416 --> 00:02:38.048
+And then there's batch processes, which
+we've talked about a little bit before.
+
+49
+00:02:38.048 --> 00:02:41.236
+But that kind of summarizes changes
+in actions that have happened during
+
+50
+00:02:41.236 --> 00:02:42.026
+a period of time.
+
+51
+00:02:42.026 --> 00:02:46.170
+Like figuring out paychecks, or figuring
+out your phone bill for the month,
+
+52
+00:02:46.170 --> 00:02:47.711
+those are batch processes.
+
+53
+00:02:47.711 --> 00:02:52.192
+The mainframe excels in doing both,
+from a performance security and
+
+54
+00:02:52.192 --> 00:02:54.286
+a data integrity point of view.
+
+55
+00:02:54.286 --> 00:02:58.088
+Just to give an idea about how
+prevalent the mainframe is and
+
+56
+00:02:58.088 --> 00:03:00.458
+what a powerhouse it is in business.
+
+57
+00:03:00.458 --> 00:03:06.030
+They power 68% of the world's
+production workloads, 68%.
+
+58
+00:03:06.030 --> 00:03:10.800
+That's that's more than half,
+its quite a bit more than half, yeah,
+
+59
+00:03:10.800 --> 00:03:14.474
+it's two-thirds,
+that's more than two-thirds.
+
+60
+00:03:14.474 --> 00:03:19.328
+So despite running two-thirds of
+the world's production workloads,
+
+61
+00:03:19.328 --> 00:03:22.800
+they take up only 6% of the total IT cost.
+
+62
+00:03:22.800 --> 00:03:29.656
+Think about that, 6%, to run 68%,
+okay, I'm a little bit biased.
+
+63
+00:03:29.656 --> 00:03:33.822
+But I happen to think that even if I
+wasn't sitting in an IBM studio right now,
+
+64
+00:03:33.822 --> 00:03:35.437
+that would still impress me.
+
+65
+00:03:35.437 --> 00:03:38.900
+And that's why I'm so excited you're
+here to learn all about the IBM Z.
+
+66
+00:03:38.900 --> 00:03:43.482
+You'll walk into a job interview and
+tell them, you know Parallel Sysplex,
+
+67
+00:03:43.482 --> 00:03:44.408
+IODF configs.
+
+68
+00:03:44.408 --> 00:03:47.520
+You put down on a résumé that you
+know about z/OS components and
+
+69
+00:03:47.520 --> 00:03:49.291
+how to manage mainframe security.
+
+70
+00:03:49.291 --> 00:03:51.789
+You're putting yourself in a great place.
+
+71
+00:03:51.789 --> 00:03:53.183
+I hope you're having fun,
+
+72
+00:03:53.183 --> 00:03:56.100
+I know I am, because these
+skills are great ones to have.

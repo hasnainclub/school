@@ -1,0 +1,64 @@
+The mainframe is an ever
+evolving platform. New features are constantly
+being developed, existing components are getting upgrades,
+and its capabilities are always being extended
+to meet the world's business demands. As it evolved the Mainframe
+gained some unique capabilities that you won't find anywhere else, and
+I'd like to cover a few of those here. We'll start off with the intelligent
+resource director or IRD. The IRD function optimizes processor and channel resource utilization across
+LPARs within a single z system. It groups LPARs into an LPAR
+cluster allowing WLM to manage resources across the entire cluster
+not just in one single image. IRD has the following characteristics. First, it allows for
+more flexible LPAR CPU management. Next, thanks to dynamic channel path
+management, DCM, FICON channel bandwidth, which is primarily used for
+connections to storage devices, can be moved between disk control
+units to meet demands as they change. Lastly, channel subsystem priority
+queuing allows I/O request in the channel subsystem to have
+priorities assigned to them. This allows for even greater control and flexibility when we have important
+business objectives to meet. On the network side of things,
+HiperSockets provide high-speed connectivity between servers
+in the same physical system. These connections are entirely virtual,
+so there's no need to run cables or hook connected servers into
+a networking infrastructure. You define a HiperSocket and
+then virtually connect it to z/OS Linux or ZVM systems. You can even mix and match, to the OS it
+looks like a regular networking device. They can now communicate as if they were
+plugged into a super high speed network switch, except it's all virtual. Up next, HiperDispatch. So when we virtualize the LPARs, when
+there's work to be done the system looks at the pool of available processors and lines up that specific unit of work with
+an available processor that can handle it. This is all fine and good, but in some
+workloads we gain performance by ensuring that the work is dispatched to the same
+processor as frequently as possible. So there's no wait while we figure out
+which processor, the work should go on, and we also benefit from
+reusing relevant data left in the cache from
+previous operations. It's like landing in the airport and
+renting a car. If you have to go find the right car each
+time and adjust the seat and the mirrors and figure out how to pair the Bluetooth
+to your phone in it, that takes time. HiperDispatch is like having your favorite
+car parked right outside waiting for you all the time. HiperDispatch really helps WLM in
+keeping consistent response times, and definitely helps once you
+start scaling up systems with lots of processors
+with lots of cores. Now setting up Mainframe hardware
+can be a fairly complex task. There are just so many definitions
+and bits of information you've got to manage correctly in order
+to add storage for example. Fortunately zDAC, the z discovery and autoconfiguration aims to help
+make that a little bit easier. It can detect certain devices on FICON and
+storage area networks, and streamline the process of configuring the HCD or
+hardware configuration definition. This helps to simplify I/O configuration
+and reduce complexity and set up time. Virtual flash memory, now earlier we
+talked about storage and how virtual memory means that the memory for a program
+might go from on-chip memory out to DASD. Well, there's actually
+an in-between step and that's where virtual
+flash memory comes in. This is storage class memory that lives in
+the same physical box as the memory and processors. But can be configured to
+provide additional support for programs that take a noticeable
+performance hit when they page data like DB2, Java, and the coupling facility. And then there's zAware. As you know, the Mainframe is constantly
+gathering data, not just data for business transactions, but information
+about what's going on behind the scenes. Network configuration changes,
+LPARs coming up, and going down, software levels changing,
+new user IDs getting created. And nobody has time to go through all
+those log files line by line by line and inspect every single thing
+that happens during the day. Fortunately, zAware which stands for z
+advanced work load analysis reporter does. It watches everything going on, and
+compares what it sees with prior system data, highlighting anomalies,
+and suggesting courses of action. It does all of this in near real time. So you can even use zAware's interface
+to diagnose the cause of past or current anomalies. As you can see, there's a lot of unique
+liese features that you can explore and there's always more in the works.

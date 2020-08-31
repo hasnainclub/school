@@ -1,0 +1,123 @@
+                    J E S 2  J O B  L O G  --  S Y S T E M  S 0 W 1  --  N O D E  Z O S K C T R         
+
+ 
+13.47.45 JOB05658 ---- FRIDAY,    22 FEB 2019 ----
+13.47.45 JOB05658  IRR010I  USERID KC03FB5  IS ASSIGNED TO THIS JOB.
+13.47.45 JOB05658  ICH70001I KC03FB5  LAST ACCESS AT 13:46:45 ON FRIDAY, FEBRUARY 22, 2019
+13.47.45 JOB05658  $HASP373 KC03FB5A STARTED - INIT 2    - CLASS A        - SYS S0W1
+13.47.45 JOB05658  -                                         --TIMINGS (MINS.)--            ----PAGING COUNTS---
+13.47.45 JOB05658  -JOBNAME  STEPNAME PROCSTEP    RC   EXCP    TCB    SRB  CLOCK   SERV  PG   PAGE   SWAP    VIO SWAPS
+13.47.45 JOB05658  -KC03FB5A                      00     37 ******    .00     .0     76   0      0      0      0     0
+13.47.45 JOB05658  -KC03FB5A ENDED.  NAME-H ATTARWALA          TOTAL TCB CPU TIME=   .00  TOTAL ELAPSED TIME=    .0
+13.47.45 JOB05658  $HASP395 KC03FB5A ENDED
+
+------ JES2 JOB STATISTICS ------
+
+
+  22 FEB 2019 JOB EXECUTION DATE
+
+
+           41 CARDS READ
+
+
+           91 SYSOUT PRINT RECORDS
+
+
+            0 SYSOUT PUNCH RECORDS
+
+
+            8 SYSOUT SPOOL KBYTES
+
+
+         0.00 MINUTES EXECUTION TIME
+!! END OF JES SPOOL FILE !!
+       1 //KC03FB5A JOB ,'H ATTARWALA',MSGCLASS=H                                JOB05658
+       2 //JSTEP01 EXEC PGM=ASSIST                                               00020000
+       3 //STEPLIB DD DSN=KC00NIU.ASSIST.LOADLIB,DISP=SHR                        00030000
+       4 //SYSPRINT DD SYSOUT=*                                                  00040000
+       5 //SYSIN DD *                                                            00050000
+!! END OF JES SPOOL FILE !!
+ICH70001I KC03FB5  LAST ACCESS AT 13:46:45 ON FRIDAY, FEBRUARY 22, 2019
+IEF236I ALLOC. FOR KC03FB5A JSTEP01
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSIN
+IEF142I KC03FB5A JSTEP01 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC00NIU.ASSIST.LOADLIB                       RETAINED,  DDNAME=STEPLIB 
+IEF285I   KC03FB5.KC03FB5A.JOB05658.D0000102.?         SYSOUT        
+IEF285I   KC03FB5.KC03FB5A.JOB05658.D0000101.?         SYSIN         
+IEF373I STEP/JSTEP01 /START 2019053.1347
+IEF032I STEP/JSTEP01 /STOP  2019053.1347 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:   584K  SYS:   264K  EXT:        0K  SYS:    11392K
+        ATB- REAL:                    12K  SLOTS:                     0K
+             VIRT- ALLOC:       2M SHRD:       0M
+IEF375I  JOB/KC03FB5A/START 2019053.1347
+IEF033I  JOB/KC03FB5A/STOP  2019053.1347 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+!! END OF JES SPOOL FILE !!
+
+*** ASSIST 4.0/A2-05/15/82  470/V7A/0:OS/VS2  INS=SDFP7/X=BGHO, CHECK/TRC/=1180, OPTS=CDKMPR FROM PENN ST*NIU COMPSCI*LT            
+
+                                                                                                                                    
+
+                                                                                                               PAGE    1            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+                                      1 *****************************************************************       00060024            
+                                      2 *                                                               *       00070024            
+                                      3 *  ASSIGNMENT 3B- YOUR SECOND MAINFRAME PROGRAM                 *       00080024            
+                                      4 *  HASNAIN ATTARWALA Z1697740 KC03FB5                           *       00081026            
+                                      5 *  EMILY DUCATTE     Z1831554 KC03GOA                           *       00090028            
+                                      6 *                                                               *       00091027            
+                                      7 *  DUE DATE 2/22/2019                                           *       00100024            
+                                      8 *                                                               *       00110024            
+                                      9 *****************************************************************       00120024            
+000000                               10 MAIN     CSECT                                                          00130001            
+000000                               11          USING MAIN,15   ESTABLISH ADDRESSABILITY ON REGISTER 15        00140001            
+                                     12 *                                                                       00141025            
+000000 5820 F028            00028    13          L     2,FIRST   LOAD VAL142 IN R2                              00150012            
+000004 5830 F02C            0002C    14          L     3,SECOND  LOAD VAL37 IN R3                               00160012            
+000008 1B32                          15          SR    3,2       SUBTRACT R3 FROM R2                            00170016            
+00000A 5020 F030            00030    16          ST    2,ANSWER1 STORE REMAINDER ST WORKS OPP                   00170121            
+                                     17 *                                                                       00170224            
+00000E 5840 F028            00028    18          L     4,FIRST   LOAD VAL142 IN R4                              00171016            
+000012 5850 F02C            0002C    19          L     5,SECOND  LOAD VAL37 IN R5                               00172016            
+000016 1A54                          20          AR    5,4       ADD REG TARGET SOURCE                          00173016            
+                                     21 *                                                                       00174022            
+000018 5050 F034            00034    22          ST    5,ANSWER2 STORE SUM ON ANS2 SOURCE TARGET                00175021            
+                                     23 *                                                                       00176022            
+00001C E060 F030 0008 00030          24          XDUMP ANSWER1,8 DUMP 8 BYTEST BEGINNING AT LABEL ANSWER1       00180021            
+                                     25 *                                                                       00181025            
+000022 07FE                          26          BR    14        RETURN TO CALLER                               00190001            
+                                     27 *                                                                       00200017            
+                                     28          LTORG           LITERAL ORGANIZATION                           00210001            
+                                     29 *                                                                       00210125            
+000028 0000008E                      30 FIRST    DC    F'142'    DECLARE FULLWORD OF STORAGE WITH VALUE         00211007            
+00002C 00000025                      31 SECOND   DC    F'37'     DECLARE FULLWORD OF STORAGE WITH VALUE         00212007            
+000030                               32 ANSWER1  DS    F         FULLWORD IN STORAGE                            00213021            
+000034                               33 ANSWER2  DS    F         FULLWORD IN STORAGE                            00214021            
+                                     34 *                                                                       00220001            
+                                     35          END   MAIN                                                     00230001            
+
+***  NO   STATEMENTS FLAGGED -  NO   WARNINGS,  NO   ERRORS                                                                         
+
+*** DYNAMIC CORE AREA USED:  LOW:    1592 HIGH:     424 LEAVING:  491552 FREE BYTES. AVERAGE:       56 BYTES/STMT ***               
+
+*** ASSEMBLY TIME =    0.000 SECS,    36000 STATEMENTS/SEC ***                                                                      
+
+*** PROGRAM EXECUTION BEGINNING - ANY OUTPUT BEFORE EXECUTION TIME MESSAGE IS PRODUCED BY USER PROGRAM ***                          
+
+BEGIN XSNAP - CALL     1 AT E0000022 USER STORAGE                                                                                   
+
+                             CORE ADDRESSES SPECIFIED-     000030 TO 000038                                                         
+000020   000807FE F5F5F5F5 0000008E 00000025    0000008E 000000B3 F5F5F5F5 00000000   *....5555................5555....*            
+
+                                                                                                                                    
+
+*** EXECUTION TIME =    0.000 SECS.        10 INSTRUCTIONS EXECUTED -    10000 INSTRUCTIONS/SEC ***                                 
+
+*** FIRST CARD NOT READ: NO CARDS READ:FILE UNOPENED                                                                                
+
+*** AM004 - NORMAL USER TERMINATION BY RETURN ***                                                                                   
+!! END OF JES SPOOL FILE !!

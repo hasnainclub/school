@@ -1,0 +1,10 @@
+obj\Debug\Loan Qualifier.exe
+obj\Debug\Loan Qualifier.pdb
+bin\Loan Qualifier.exe
+bin\Loan Qualifier.pdb
+bin\Loan Qualifier.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Loan_Qualifier.Form1.resources
+obj\Debug\Loan_Qualifier.Resources.resources
+obj\Debug\Loan Qualifier.vbproj.GenerateResource.Cache
+obj\Debug\Loan Qualifier.xml

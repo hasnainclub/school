@@ -1,0 +1,105 @@
+CSCI 360-1 Assignment 9 - Sample Output with Fewer Employees:
+
+                                                      EMPLOYEE PAYROLL REPORT                                             PAGE:    1                                                      
+
+ EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS             EMPLOYEE PAY
+ ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                   AMOUNT
+ --------         -------------------------         -------         -------      ----------      ----------       ------------------
+
+ 02345245         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+ 03456322         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+ 04032233         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+ 06465120         AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+ 06560023         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+ 13870322         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+ 14966277         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+ 33345245         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+ 03456422         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+ 04232233         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+ 06466120         AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+ 06550023         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+ 13899322         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+ 94966277         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+ 02348245         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+                                                      EMPLOYEE PAYROLL REPORT                                             PAGE:    2                                                      
+
+ EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS             EMPLOYEE PAY
+ ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                   AMOUNT
+ --------         -------------------------         -------         -------      ----------      ----------       ------------------
+ 13456322         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+ 34032233         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+ 46465120         AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+ 36560023         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+ 13870432         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+ 14963277         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+ 02344245         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+ 03446327         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+ 04033233         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+ 01465120         AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+ 01560023         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+ 13370322         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+ 24966277         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+ 02233245         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+ 03452322         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+                                                      EMPLOYEE PAYROLL REPORT                                             PAGE:    3                                                      
+
+ EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS             EMPLOYEE PAY
+ ID               NAME                                 RATE          WORKED          AMOUNT          AMOUNT                   AMOUNT
+ --------         -------------------------         -------         -------      ----------      ----------       ------------------
+ 02235533         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+ 06455660         AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+ 06564453         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+ 13873322         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+ 14964377         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+
+ 02222245         JOAN TOWER                         $15.25           80.50          $25.10         $500.22                $1,702.75
+
+ 03454367         WOLFGANG AMADEUS MOZART            $19.00           80.75           $0.00          $13.44                $1,547.69
+
+ 04882233         RICHARD STRAUSS                    $10.29           80.00          $31.23         $254.00                $1,045.97
+
+ 06865120         AMY BEACH                          $22.00           80.00          $15.09         $900.25                $2,645.16
+
+ 08560023         DAME ETHEL SMYTHE                  $23.75           28.25          $34.15          $70.85                  $707.64
+
+ 83870322         PETER ILYICH TCHAIKOVSKY           $22.95           80.50          $21.25           $0.00                $1,826.23
+
+ 17966277         ANTON BRUCKNER                     $20.20           78.67           $0.79         $210.23                $1,798.57
+ --------         -------------------------                                      ----------      ----------       ------------------
+  TOTALS:           42 EMPLOYEE(S)                                                  $765.66      $11,693.94               $67,644.06
+
+AVERAGES:                                                                            $18.23         $278.43                $1,610.57

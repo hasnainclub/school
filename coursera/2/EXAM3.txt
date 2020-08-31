@@ -1,0 +1,80 @@
+
+1.Question 1
+
+What are the three methods of entering TSO commands?
+
+ISPF Primary Option Menu-Option 6, on the command option line of the ISPF panel, and from the command prompt
+
+2.Question 2
+
+Select the correct statement(s) regarding TSO commands
+
+TSO commands are not case sensitive
+
+TSO command HELP LISTDS ALL provides all information regarding the LISTDS command
+
+
+
+3.Question 3
+
+Which TSO command will deallocate data sets no longer needed?
+
+FREE
+
+
+
+4.Question 4
+
+Which TSO command is used to inform the system how you want to use your terminal?
+
+PROFILE
+
+
+
+5.Question 5
+
+What is the correct syntax of the TSO command to list the basic attributes of data set IBM.INVENTORY.RESULTS?
+
+LISTDS IBM.INVENTORY.RESULTS
+
+
+6.Question 6
+
+Using the following information, what is the correct syntax of the TSO command to allocate a new PDS?
+
+User ID: IBM
+
+Data set name: BUILDS.SERVERS
+
+Block length: 100 bytes
+
+Logical record length: 80
+
+Data control block size: 300
+
+2 directory block
+
+Fixed block records
+
+Wrong  ALLOC DA(BUILDS.SERVERS) DSORG(PDSE) BLOCK(100) LRECL(80) BLKSIZE(300) DIR(2) RECFM(F,B)
+
+Wrong ALLOC DA(BUILDS.SERVERS) DSORG(PDS) BLOCK(100) LRECL(80) BLKSIZE(300) DIR(2) RECFM(F,B) NEW
+
+Wrong ALLOC DA(IBM.BUILDS.SERVERS) DSORG(PO) BLOCK(100) LRECL(80) BLKSIZE(300) DIR(2) RECFM(F,B) NEW
+
+ALLOC DA(BUILDS.SERVERS) DSORG(PO) BLOCK(100) LRECL(80) BLKSIZE(300) DIR(2) RECFM(F,B) NEW
+
+
+7.Question 7
+
+What is the correct syntax of the command to display the alias enter associated with HLQ of STUDENT?
+
+LISTCAT ENT(‘STUDENT’) ALIAS ALL
+
+
+
+8.Question 8
+
+What is the correct method for adding lines in the ISR@PRM member to the )menu and )PROC sections?
+
+Copy existing lines

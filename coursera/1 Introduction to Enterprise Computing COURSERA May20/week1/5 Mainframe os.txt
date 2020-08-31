@@ -1,0 +1,170 @@
+Operating Systems. Once you've made
+an LPAR on a mainframe, you probably want to run
+an operating system on it. Now, the mainframe runs several different
+operating systems, and I'm going to take
+you through them. First up, there's z/OS. Now, one thing you'll notice
+about all the IBM built operating systems is they
+all start with a z slash. When the mainframe moved
+to the z architecture, basically when it
+started running 64-bit, the operating system is got
+renamed with that z as well. So that's why you see that. So the z/OS operating system is the flagship IBM mainframe
+operating system. And if you trace the lineage of that operating system way back, it's a direct descendant
+of the original OS 360 that ran back on that
+first mainframe back in 1964. It's focuses on running a wide
+variety of mixed workloads simultaneously all
+while delivering extremely high level
+of quality of service. If someone today has a mainframe, chances are they're running z/OS, and we're actually going
+to come back to this and talk more about z/OS later, but I want to talk about the other operating
+systems first. First, there z/TPF, which stands for z Transaction
+Processing Facility, commonly used by companies
+dealing with high volumes of transactions that need to
+get handled in real time. That means credit
+card processors, airline reservation systems, hotel and auto rental chains. Z/TPF is extremely tied to the world of
+travel and logistics. Z/VM is all about virtualization. Now, we mentioned
+z/VM briefly before, the idea behind it is to provide guest operating systems running
+essentially within z/VM, and then they get access to all the resources that
+the host z/VM is running with. Interesting thing about z/VM is that it is a Type 1 Hypervisor. So instead of
+running it on top of another operating system and then using that to host
+the virtual machines, z/VM doesn't need another operating system
+to do its thing, it does its own thing. That makes z/VM extremely efficient and valuable for
+testing and development. Any operating system that runs on the mainframe will
+run within z/VM. So if you eat a whole bunch of systems but don't want
+to use up your LPARs, z/VM can do some pretty
+interesting things. The other operating system
+IBM makes is called z/VSE. This is a lesser used
+operating system, but it's still very important for smaller companies who
+needs something like z/OS which can do transaction
+and batch processing, but don't need something
+that big or that complex. You also don't need as many people to run
+a z/VSE instance, and that's appealing to smaller companies with fewer people. Then there's Linux,
+the same Linux that runs on phones, watches, game consoles,
+toasters, guess what, it runs on the mainframe too, and it runs extremely well. If you know Linux, then you know Linux
+on the mainframe, everything looks
+pretty much the same. If you're not
+familiar with Linux, it's an open source
+operating system that's used pretty much
+all over the place. I remember when Linux first started showing up
+on the mainframe, people thought it was
+crazy, as a crazy idea. The idea that operating system running on our beloved mainframe, that was coded by a bunch of
+strangers on the internet. I mean, you want to
+take this seriously, well, that was like back in 2000, another leap of faith and Linux is still running
+on the mainframe, and it's hugely popular. Lastly, KVM or Kernel-based Virtual Machine is
+an open source hypervisor. Similar to z/VM, it's
+another Type 1 Hypervisor, meaning it doesn't require another operating system because it is an operating system. People like it because
+it integrates with KVM running on other platforms. It's used a lot for
+distributed workloads, where you need
+a lot of something, because you can scale it out horizontally by adding
+more instances, or up vertically by adding
+additional capacity on demand. Back to the z operating system, often just shortened to z/OS. We're going to spend a lot of
+time talking about z/OS in this course because it is the premiere mainframe
+operating system. It's built specifically
+for the z hardware. It offers continuous
+high volume operations with high security and stability. Z/OS excels at supporting a huge ecosystem of
+different workloads, supporting large numbers of different users at the same time. It does all this
+while maintaining the highest quality of service
+for any operating system,. By better knowing
+the management functions of an operating system, we can better evaluate
+exactly what components is z/OS are responsible for
+what we're interested in. The z/OS operating system
+is made up of components. Some of these components
+are base elements which the operating system
+comes with and is configured with by default. Other components are add
+ons called features. The OS doesn't necessarily
+need these to run, but you may run into them
+depending on your job role. Now, I'll just tell
+you right up front, there's a lot of components, and some of them will just
+breeze right through, no need to define what's essentially spelled
+out in the name, others we're going
+to dive deeper into. We're going to cover
+a lot of these in much greater detail later. So here we go. So to start off we've got the Transaction Manager which does basically what it's called, it manages transactions
+across one or more resources. Then there's databases. A database's job is to keep
+data at not only stored, but organized so it can be easily found and updated later on. Let's talk about batch jobs. Some work doesn't need
+to happen in real-time. This could be because
+the systems are less busy later on in the day, or it could just be because
+of the nature of the data. For example, a delivery
+logistics company loads its trucks at night so they can hit the roads bright early in the morning
+when the drivers come in. They might take all the data
+about what deliveries need to be made that day
+and process it all at once, so it's ready when
+the drivers come in. That's where you might
+see a batch job. Then there's
+the security manager. Make sure you can only get to resources if you're supposed to. Crypto services. That allows for the data to be protected by being encrypted, and then used by decrypting it. There's end user interfaces. Obviously, you need
+something to bridge that gap between the system and the people who are
+trying to use it, and we use TSO which stands
+for Time Sharing Option. That makes it possible
+for one system to have thousands of
+connected users. So there's this concept
+on z/OS of a job, and you're going to
+hear that word a lot. A job is like a program, but it's a program with a specific set of
+input and output. So imagine you've got
+a payroll program. It does the same thing. It takes the number of hours, somebody work their wages, and creates a sheet
+basically saying, pay this person this much or maybe even cuts
+the cheques for them. So the program itself doesn't
+change from run to run, but it's got a different set of input and output each time. You write how you want
+your job to run in something called the Job Control
+Language or JCL, and that gets submitted to
+the Job Entry Subsystem, JES. So you with me so far? Good. When the system gets
+around to running it, it processes the data and it
+puts every piece of output, good, bad, and different
+into the job output. So you know exactly
+how your job run, and you use another component, the System Display
+and Search Facility, thankfully shortened to SDSF to look at all of that output. Now, as you can imagine
+when it comes time to upgrade and manage
+software on a mainframe, it's important that everything
+gets managed and tracked. Some software depends on
+other software to run, so to install it you have to also install what's called
+a prerequisite. Sometimes you can't
+upgrade one piece of software without also
+upgrading another one. So how do you keep all of
+these dependencies straight? Fortunately, you don't have to, you have SMP/E, the System
+Modification Program Extended. Performance is extremely
+important on the mainframe, and it's not enough
+just to say, ''Yeah, everything's running
+really fast, is good.'' You need to be able
+to say exactly how long the average transaction
+is running for, how long users are waiting for the response, all that stuff. On the mainframe,
+you'll use RMF or the Resource Measurement Facility to keep tabs on how
+everything is being used. This is like the gauges
+in your car, but it also includes
+data gathered over time, so you can see
+trends and patterns. Managing storage is important, and the mainframe uses DFSMS, the Data Facility Storage
+Management Service to manage what data goes where. It also handles
+backups, migrations, copies and all input
+output management. Something else that's
+fairly unique to the mainframe platform
+is Workload Manager. Just like with other managers, it makes sure that
+when you're running multiple things at the same time
+on the same platform, they all get a fair slice
+of the system resources. But the Workload Manager
+takes it a step further. It's actually backwards from
+what you might be used to. You start by defining goals, you say whenever this type
+of transaction happens, it needs to finish in
+this amount of time. Or maybe it's just this LPAR over here is extremely important, it gets priority over
+all the other LPAR. So don't let anything
+they're doing slow down anything on this LPAR, it's the most important one. So when you set it up correctly, it's not a free for all, it's a carefully controlled
+and managed environment. TCP/IP or to be complete, SNA TCP/IP which stands for Systems Network
+Architecture Transmission Control Protocol
+Internet Protocol. You can see why we
+just say SNA TCP/IP. This is a component of z/OS, and it's where all of a
+network communication lives. That's all computer to
+computer, computer to Internet. Basically, anything
+where a network gets used uses SNA TCP/IP. Now, whenever anything
+happens on the mainframe, it's extremely important that there be a record
+of it happening. The idea of a program writing out a diagnostic log isn't
+unique to the mainframe, but because there's so
+much happening here, it's important that there
+be a standard format and a facility to
+keep it all straight. Almost like a database
+for tracking events, that's SMF, the Systems
+Management Facility. SMF comes in handy for
+diagnosing problems, auditing transactions, and
+for tracing process flows. Last but certainly not least is USS or Unix System Services. You may not know this,
+but you can actually run Unix programs within
+the z/OS environment. Z/OS has USS which is
+a POSIX compliant environment, so you can run scripts,
+utilities, and tools. It's not an operating
+system within z/OS like a VM, it's
+an environment. So that means a lot of the utilities are
+shared between them, and you can even fire off z/OS jobs from
+within a Unix shell. Those are the z/OS components. Took a little while, but I
+think it was time well spent.

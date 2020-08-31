@@ -1,0 +1,32 @@
+step 1 - strong entities, not subtypes
+principlePerson (id, fname, lname, dob, address, phone)
+
+movie (title, genre, year)
+location (name, continent)
+company (name, address, phone)
+/*ENTITES*/
+
+step 2 - strong entities - subtypes
+director (id, pastMovies)
+actor (id, ethnicity)
+author (id, scripts  )
+producer (id, movieProduced)
+
+step 3 - weak entities
+
+/*RELATIONSHIPS*/
+step 4 - Binary (1-1 or 1-m) 
+writes (id, salary )
+produces (id, salary)
+ifFilmedIn (id, name, year)
+owns(id, name, purchaseDate)
+
+step 5 - Binary (m-m)
+directs (id, title, salary)
+actsIn (id, title, salary)
+
+step 6 - > binary no date
+
+step 7 - > Binary date
+
+step 8 - recuressive relationships

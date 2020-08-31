@@ -1,0 +1,64 @@
+--1)
+SELECT AuthorFirst, AuthorLast FROM Author GROUP BY AuthorFirst;
+
+--2)
+SELECT City FROM Publisher GROUP BY City;
+
+--3)
+SELECT COUNT(Title) FROM Book;
+
+--4)
+SELECT BranchName, SUM(OnHand) FROM Inventory, Branch WHERE Branch.BranchNum=Inventory.BranchNum GROUP BY BranchName;
+
+--5)
+SELECT SUM(NumEmployees) FROM Branch;
+
+--6)
+SELECT AuthorFirst, AuthorLast,Title FROM Wrote, Book, Author WHERE AuthorFirst="Stephen" AND AuthorLast="King" AND Wrote.AuthorNum=Author.AuthorNum AND Book.BookCode=Wrote.BookCode;
+
+--7)
+SELECT Title, Price, Paperback FROM Book WHERE Paperback="Y";
+
+--8)
+SELECT BranchName, OnHand FROM Inventory, Branch WHERE Inventory.BranchNum=Branch.BranchNum AND OnHand >=10;
+
+--9)
+SELECT Title, AuthorFirst, AuthorLast FROM Author, Book, Wrote WHERE Author.AuthorNum=Wrote.AuthorNum AND Book.BookCode=Wrote.BookCode ORDER BY Title DESC;
+
+--10)
+SELECT PublisherName, COUNT(BookCode) FROM Publisher, Book WHERE Publisher.PublisherCode=Book.PublisherCode GROUP BY PublisherName;
+
+--11)
+SELECT COUNT(Title) FROM Book WHERE Price <10.00;
+
+--12)
+SELECT AuthorLast, PublisherName FROM Wrote, Book, Publisher, Author WHERE Author.AuthorNum=Wrote.AuthorNum AND Wrote.BookCode=Book.BookCode AND Publisher.PublisherCode=Book.PublisherCode AND PublisherName="Simon and Schuster";
+
+--13)
+SELECT Type, COUNT(Type) FROM Book GROUP BY Type;
+
+--14)
+SELECT BranchName, SUM(OnHand) FROM Inventory, Branch WHERE Inventory.BranchNum=Branch.BranchNum AND BranchName="Henry Brentwood";
+
+--15)
+SELECT BranchName, NumEmployees, SUM(OnHand) FROM Inventory, Branch WHERE Inventory.BranchNum=Branch.BranchNum GROUP BY BranchName;
+
+--16)
+SELECT Title FROM Book WHERE EXISTS (SELECT Sequence FROM Wrote WHERE Sequence=1);
+
+--17)
+SELECT PublisherName FROM Publisher WHERE PublisherName LIKE 'T%';
+
+--18)
+SELECT AuthorLast, AuthorLast FROM Author WHERE (AuthorFirst LIKE'%11%') OR (AuthorLast LIKE'%11%');
+
+--19)
+SELECT Title, BookCode FROM Book WHERE (BookCode='079x') OR (BookCode='138x') OR (BookCode='669x');
+--20)
+SELECT AuthorLast, Title, PublisherName FROM Wrote, Publisher, Author, Book WHERE Wrote.BookCode=Book.BookCode AND Publisher.PublisherCode=Book.PublisherCode AND Author.AuthorNum=Wrote.AuthorNum GROUP BY PublisherName;
+--21)
+SELECT BranchName, OnHand FROM Inventory, Branch WHERE Inventory.BranchNum=Branch.BranchNum AND OnHand >9;
+SELECT Title, Sequence FROM Wrote, Book WHERE Wrote.BookCode=Book.BookCode AND Sequence=1;
+--22)
+--List The Price and The AuthorLast Of Every Book. Sort each by lowest price.
+SELECT Price, AuthorLast FROM Author, Book, Wrote WHERE Wrote.BookCode=Book.BookCode AND Author.AuthorNum=Wrote.AuthorNum ORDER BY Price;

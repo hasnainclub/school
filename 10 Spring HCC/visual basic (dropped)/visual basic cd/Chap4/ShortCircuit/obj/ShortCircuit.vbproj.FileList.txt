@@ -1,0 +1,10 @@
+obj\Debug\ShortCircuit.exe
+obj\Debug\ShortCircuit.xml
+obj\Debug\ShortCircuit.pdb
+bin\Debug\ShortCircuit.exe
+bin\Debug\ShortCircuit.pdb
+bin\Debug\ShortCircuit.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ShortCircuit.Form1.resources
+obj\Debug\ShortCircuit.Resources.resources
+obj\Debug\ShortCircuit.vbproj.GenerateResource.Cache

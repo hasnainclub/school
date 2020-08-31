@@ -1,0 +1,495 @@
+      ****************************************************************
+      *                                                              *
+      * PROGRAM NAME:  SALESRPT                                      *
+      *                                                              *
+      * FUNCTION:  THIS PROJECT WILL INVOLVE ONE MAIN COBOL PROGRAM  *
+      *            THAT CALLS TWO EXTERNAL SUBPROGRAMS, ONE OF THE   *
+      *            TWO SUBPROGRAMS WILL BE WRITTEN IN COBOL AND THE  *
+      *            OTHER WRITTEN IN ASSEMBLER. THE MAIN COBOL DRIVER *
+      *            PROGRAM SALESRPT, WILL PROCESS THE MAIN SALES     *
+      *            MEMBER NAMED KC03.CSCI.DATA(SALES) THE COBOL      *
+      *            SUBPROGRAM WILL READ THE FILE NAMED DATA7 IN THIS *
+      *          SEMESTER'S DATA PDSE TO BUILD THE MUTUAL FUND TABLE.*
+      *            THE ASSEMBLER SUBPROGRAM WILL CALCULATE BOTH      *
+      *            COMMISSION AND SHARE AMOUNT FOR EACH OF A BROKERS *
+      *            S UP TO THREE SALES IN A SINGLE DAY               *
+      ****************************************************************
+
+       IDENTIFICATION DIVISION.
+
+       PROGRAM-ID.    SALESRPT.
+       AUTHOR.        HASNAIN ATTARWALA.
+       DATE-WRITTEN.  11/27/2019.
+       DATE-COMPILED.
+
+       ENVIRONMENT DIVISION.
+
+       INPUT-OUTPUT SECTION.
+
+       FILE-CONTROL.
+           SELECT SALES-FILE  ASSIGN TO SALESFLE.
+           SELECT REPORT-FILE ASSIGN TO RPTFLE.
+
+       DATA DIVISION.
+
+       FILE SECTION.
+
+       FD SALES-FILE
+           RECORDING MODE IS F.
+       COPY SALESREC.
+
+       FD  REPORT-FILE
+           RECORDING MODE IS F.
+
+       01  REPORT-RECORD                       PIC X(132).
+
+       WORKING-STORAGE SECTION.
+
+       EXEC SQL
+         INCLUDE FUND
+       END-EXEC.
+
+       EXEC SQL
+         INCLUDE FUNDPRC
+       END-EXEC.
+
+       EXEC SQL
+         INCLUDE SQLCA
+       END-EXEC.
+
+       01  COBOL-SUB1               PIC X(8)  VALUE 'CALCVALS'.
+
+       01  EOF-FLAG                 PIC X VALUE 'N'.
+
+       01  SENDING-FIELDS.
+           05  RETURN-SHR-AMT           PIC S9(10)V9(4)
+               PACKED-DECIMAL VALUE 0.
+           05  RETURN-COMM-AMT          PIC S9(8)V99  PACKED-DECIMAL
+               VALUE 0.
+           05  P-DEP-AMT                PIC S9(8)V99  PACKED-DECIMAL
+               VALUE 0.
+           05  P-SHR-PRC                PIC S9(3)V99  PACKED-DECIMAL
+               VALUE 0.
+           05  P-COMM-PCT               PIC S9(1)V9(5)
+               PACKED-DECIMAL VALUE 0.
+
+       01  ACCUMULATORS.
+           05  LINE-CTR             PIC S9(2) BINARY SYNC VALUE 99.
+           05  PAGE-CTR             PIC S9(3) PACKED-DECIMAL VALUE 0.
+           05  BROKER-CTR           PIC S9(3) PACKED-DECIMAL VALUE 0.
+           05  SALE-CTR             PIC S9(3) PACKED-DECIMAL VALUE 0.
+           05  TOT-DEPOSIT          PIC S9(11)V99 PACKED-DECIMAL
+               VALUE 0.
+           05  TOT-COMM             PIC S9(11)V99 PACKED-DECIMAL
+               VALUE 0.
+
+       01  DETAIL-1.
+           05  OUT-SALES-BRANCH-NME     PIC X(25).
+           05  FILLER                   PIC X(1)  VALUE SPACES.
+           05  OUT-SALES-BROKER-NME     PIC X(25).
+           05  FILLER                   PIC X(3)  VALUE SPACES.
+           05  OUT-FUND-NBR             PIC X(3).
+           05  FILLER                   PIC X(1)  VALUE SPACES.
+           05  OUT-FUND-NME             PIC X(25) VALUE SPACES.
+           05  FILLER                   PIC X(2)  VALUE SPACES.
+           05  OUT-DEPOSIT-AMT          PIC $$,$$$,$$9.99.
+           05  FILLER                   PIC X(5)  VALUE SPACES.
+           05  OUT-SHR-AMT              PIC ZZZ,ZZ9.9999.
+      *           PIC ZZ9.                  985,833.1390
+           05  FILLER                   PIC X(4) VALUE SPACE.
+           05  OUT-COMM-AMT             PIC $$,$$$,$$9.99.
+
+
+       01  CURRENT-DATE-FIELDS.
+           05  CURRENT-DATE.
+               10  CURRENT-YEAR         PIC  9(4).
+               10  CURRENT-MONTH        PIC  9(2).
+               10  CURRENT-DAY          PIC  9(2).
+           05  CURRENT-TIME.
+               10  CURRENT-HOUR         PIC  9(2).
+               10  CURRENT-MINUTE       PIC  9(2).
+               10  CURRENT-SECOND       PIC  9(2).
+               10  CURRENT-MS           PIC  9(2).
+           05  DIFF-FROM-GMT            PIC S9(4).
+
+       01  HEADER-1.
+           05  OUT-CURRENT-DATE.
+               10  CURRENT-MONTH        PIC 9(2).
+               10  FILLER               PIC X(1)  VALUE '/'.
+               10  CURRENT-DAY          PIC 9(2).
+               10  FILLER               PIC X(1)  VALUE '/'.
+               10  CURRENT-YEAR         PIC 9(4).
+           05  FILLER                   PIC X(45) VALUE SPACES.
+           05  OUT-INST-NME             PIC X(22)
+               VALUE 'PERCOLATOR INVESTMENTS'.
+           05  FILLER                   PIC X(46) VALUE SPACES.
+           05  VAR-1                    PIC X(6)  VALUE 'PAGE: '.
+           05  OUT-PAGE-CTR             PIC ZZ9.
+
+       01  HEADER-2.
+           05  OUT-CURRENT-TIME.
+               10  CURRENT-HOUR         PIC 9(2).
+               10  FILLER               PIC X(1)  VALUE ':'.
+               10  CURRENT-MINUTE       PIC 9(2).
+           05  FILLER                   PIC X(46) VALUE SPACES.
+           05  FILLER                   PIC X(30)
+               VALUE 'DAILY ENDOWMENT FUND CHANGES'.
+           05  FILLER                   PIC X(51) VALUE SPACES.
+
+       01  HEADER-3.
+           05  FILLER                   PIC X(52) VALUE SPACES.
+           05  VAR-1                    PIC X(4)  VALUE 'FUND'.
+           05  FILLER                   PIC X(35) VALUE SPACES.
+           05  VAR-2                    PIC X(7)  VALUE 'DEPOSIT'.
+           05  FILLER                   PIC X(24) VALUE SPACES.
+           05  VAR-3                    PIC X(10) VALUE 'COMMISSION'.
+
+       01  HEADER-4.
+           05  VAR-1                    PIC X(11) VALUE 'BRANCH NAME'.
+           05  FILLER                   PIC X(15) VALUE SPACES.
+           05  VAR-2                    PIC X(11) VALUE 'BROKER NAME'.
+           05  FILLER                   PIC X(16) VALUE SPACES.
+           05  VAR-3                    PIC X(3)  VALUE 'NBR'.
+           05  FILLER                   PIC X(2)  VALUE SPACES.
+           05  VAR-4                    PIC X(9)  VALUE 'FUND NAME'.
+           05  FILLER                   PIC X(25) VALUE SPACES.
+           05  VAR-5                    PIC X(6)  VALUE 'AMOUNT'.
+           05  FILLER                   PIC X(8)  VALUE SPACES.
+           05  VAR-6                    PIC X(11) VALUE 'SHARES SOLD'.
+           05  FILLER                   PIC X(9)  VALUE SPACES.
+           05  VAR-7                    PIC X(6)  VALUE 'AMOUNT'.
+
+       01  HEADER-5.
+           05  HYPHENS                  PIC X(25) VALUE ALL '-'.
+           05  FILLER                   PIC X(1)  VALUE SPACES.
+           05  HYPHENS                  PIC X(25) VALUE ALL '-'.
+           05  FILLER                   PIC X(1)  VALUE SPACES.
+           05  HYPHENS                  PIC X(4)  VALUE ALL '-'.
+           05  FILLER                   PIC X(2)  VALUE SPACES.
+           05  HYPHENS                  PIC X(25) VALUE ALL '-'.
+           05  FILLER                   PIC X(1)  VALUE SPACES.
+           05  HYPHENS                  PIC X(14) VALUE ALL '-'.
+           05  FILLER                   PIC X(1)  VALUE SPACES.
+           05  HYPHENS                  PIC X(18) VALUE ALL '-'.
+           05  FILLER                   PIC X(1)  VALUE SPACES.
+           05  HYPHENS                  PIC X(14) VALUE ALL '-'.
+
+       01  TAIL-1.
+           05  FILLER                   PIC X(53) VALUE SPACES.
+           05  VAR-1                    PIC X(25) VALUE
+              '***** REPORT TOTALS *****'.
+           05  FILLER                   PIC X(54) VALUE SPACES.
+
+       01  TAIL-2.
+           05  FILLER                   PIC X(26) VALUE SPACES.
+           05  VAR-1                    PIC X(7)  VALUE
+               'BROKERS'.
+           05  FILLER                   PIC X(11) VALUE SPACES.
+           05  VAR-2                    PIC X(15) VALUE
+               'NUMBER OF SALES'.
+           05  FILLER                   PIC X(25) VALUE SPACES.
+           05  VAR-3                    PIC X(14) VALUE
+               'TOTAL DEPOSITS'.
+           05  FILLER                   PIC X(17) VALUE SPACES.
+           05  VAR-4                    PIC X(17) VALUE
+               'TOTAL COMMISSIONS'.
+
+       01  TAIL-3.
+           05  FILLER                   PIC X(26) VALUE SPACES.
+           05  HYPHENS                  PIC X(7)  VALUE ALL '-'.
+           05  FILLER                   PIC X(11) VALUE SPACES.
+           05  HYPHENS                  PIC X(15) VALUE ALL '-'.
+           05  FILLER                   PIC X(21) VALUE SPACES.
+           05  HYPHENS                  PIC X(18) VALUE ALL '-'.
+           05  FILLER                   PIC X(16) VALUE SPACES.
+           05  HYPHENS                  PIC X(18) VALUE ALL '-'.
+
+       01  TOT-DETAIL.
+           05  FILLER                   PIC X(30) VALUE SPACES.
+           05  OUT-TOT-BROKERS          PIC 9(3).
+           05  FILLER                   PIC X(23) VALUE SPACES.
+           05  OUT-TOT-SALE             PIC 9(3).
+           05  FILLER                   PIC X(21) VALUE SPACES.
+           05  OUT-TOT-DEPOSIT          PIC $$$,$$$,$$$,$$9.99.
+           05  FILLER                   PIC X(16) VALUE SPACES.
+           05  OUT-TOT-COMM             PIC $$$,$$$,$$$,$$9.99.
+
+       01  AVG-LINE.
+           05  FILLER                   PIC X(52) VALUE SPACES.
+           05  VAR-1                    PIC X(26)
+               VALUE 'AVERAGE DEPOSIT BY BROKER:'.
+           05  FILLER                   PIC X(7)  VALUE SPACES.
+           05  OUT-AVG-AMT              PIC $$,$$$,$$9.99.
+           05  FILLER                   PIC X(34) VALUE SPACES.
+
+       PROCEDURE DIVISION.
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  MAIN  SALES RPT                               *
+      *                                                              *
+      * FUNCTION:  THIS IS THE DRIVER PROGRAM, IT WILL CALL 2 PROGS  *
+      *            COBOL SUB PROG, WHICH WILL BUILD THE TABLES, AND  *
+      *            THE ASSEMBLER SUB PROG WHICH WILL CALCULATE THE   *
+      *            COMMISSION AMT AS WELL AS NUM OF SHARES SOLD.     *
+      *            IT WILL THEN CALL THE REST OF THE PARAGPHS TO     *
+      *            PROCESS THE FILES AND PRINT THE REPORT.           *
+      ****************************************************************
+
+       0000-MAIN.
+
+           PERFORM 0100-PROCESS-INTRINSIC-DATE.
+
+           OPEN INPUT  SALES-FILE
+                OUTPUT REPORT-FILE.
+
+           READ SALES-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+           PERFORM 0200-PROCESS-BROKER
+             UNTIL EOF-FLAG = 'Y'.
+
+           PERFORM 0400-PROCESS-TOTALS.
+
+           CLOSE SALES-FILE
+                 REPORT-FILE.
+
+           GOBACK.
+
+       0000-EXIT. EXIT.
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  INTRINSIC DATE FUNCTION                       *
+      *                                                              *
+      * FUNCTION:  WILL DO A SIMPLE 3 MOVE STATMENTS TO MOVE THE     *
+      *            FUNCTION CURRENT-DATE INTO THE FIELDS I CREATED IN*
+      *            WORKING STORAGE.  THEN MOVES IT TO THE DATE AND   *
+      *            TIME FIELD FOR THE REQUIRED HEADERS.              *
+      ****************************************************************
+       0100-PROCESS-INTRINSIC-DATE.
+           MOVE FUNCTION CURRENT-DATE TO CURRENT-DATE-FIELDS.
+           MOVE CORR CURRENT-DATE TO OUT-CURRENT-DATE.
+           MOVE CORR CURRENT-TIME TO OUT-CURRENT-TIME.
+       0100-EXIT. EXIT.
+
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  PROCESS-BROKER                                *
+      *                                                              *
+      * FUNCTION:  PROCESS THE BROKER, DO THE MOVES, AND A FOR LOOP  *
+      *            PROCESS - VARYING IN COBOL.  INCREMENT BY 1 AND   *
+      *            UNTIL SALES NDX 0 OR FUND-NBR = 0 AS WE DON'T WANT*
+      *            TO PRINT THOSE                                    *
+      ****************************************************************
+       0200-PROCESS-BROKER.
+
+           ADD 1 TO BROKER-CTR.
+
+           MOVE SALES-BRANCH-NME TO OUT-SALES-BRANCH-NME.
+           MOVE SALES-BROKER-NME TO OUT-SALES-BROKER-NME.
+
+           PERFORM 0210-PROCESS-SALE VARYING SALE-NDX FROM 1 BY 1
+             UNTIL SALE-NDX > 3 OR SALE-FUND-NBR(SALE-NDX) = 0.
+
+           READ SALES-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+       0200-EXIT. EXIT.
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  PROCESS-SALE..                                *
+      *                                                              *
+      * FUNCTION:  SEARCH TBL ENTRY TO DO A MATCH FROM 2 TABLES, IF  *
+      *            FOUND THEN CALL NBR FOUND ELSE NBR NOT FOUND      *
+      *            UNTIL SALES NDX 0 OR FUND-NBR = 0. DO COMPUTE,    *
+      *            HEADERS AND PRINT DETAIL LINE AT END.             *
+      ****************************************************************
+       0210-PROCESS-SALE.
+
+           ADD 1 TO SALE-CTR.
+
+      *    SEARCH ALL FUND-TBL-ENTRY
+      *      AT END PERFORM 0211-PROCESS-NBR-NOT-FOUND
+      *      WHEN TBL-FUND-NBR(FUND-NDX)= SALE-FUND-NBR(SALE-NDX)
+      *        PERFORM 0212-PROCESS-NBR-FOUND
+      *    END-SEARCH.
+
+           MOVE SALE-DEP-AMT(SALE-NDX) TO OUT-DEPOSIT-AMT.
+
+           COMPUTE TOT-DEPOSIT ROUNDED =
+             TOT-DEPOSIT + SALE-DEP-AMT(SALE-NDX).
+
+           MOVE SALE-FUND-NBR (SALE-NDX) TO OUT-FUND-NBR.
+           MOVE SALE-FUND-NBR (SALE-NDX) TO FUND-FUND-NBR.
+
+           MOVE SALE-DEP-AMT (SALE-NDX) TO OUT-DEPOSIT-AMT.
+
+           EXEC SQL
+               SELECT FUND_NME
+               INTO :FUND-FUND-NME
+               FROM KC02322.FUND
+               WHERE FUND_NBR = :FUND-FUND-NBR
+           END-EXEC.
+
+           IF SQLCODE = 100
+               PERFORM 0211-PROCESS-NBR-NOT-FOUND
+           ELSE
+               PERFORM 0212-PROCESS-NBR-FOUND
+           END-IF.
+
+           IF LINE-CTR >= 15 OR LINE-CTR = 0
+             PERFORM 0300-PROCESS-HEADERS
+           END-IF.
+
+           WRITE REPORT-RECORD FROM DETAIL-1 AFTER 2.
+           ADD 1 TO LINE-CTR.
+
+           MOVE '                         ' TO OUT-SALES-BROKER-NME.
+           MOVE '                         ' TO OUT-SALES-BRANCH-NME.
+
+       0210-EXIT. EXIT.
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  NBR NOT FOUND.                                *
+      *                                                              *
+      * FUNCTION:  MOVE APPROPRITATE FIELDS LIKE SALES NBR, **MSG**  *
+      *            AND RESET THE SHT AND COMM AMT OR IT'LL PRINT SAME*
+      ****************************************************************
+
+       0211-PROCESS-NBR-NOT-FOUND.
+           MOVE SALE-FUND-NBR(SALE-NDX) TO OUT-FUND-NBR.
+           MOVE "*** FUND NBR NOT FOUND **" TO OUT-FUND-NME.
+           MOVE 0 TO OUT-SHR-AMT.
+           MOVE 0 TO OUT-COMM-AMT.
+       0211-EXIT. EXIT.
+
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  NBR FOUND.                                    *
+      *                                                              *
+      * FUNCTION:  MOVE THE 2 APPROPRIATE FIELDS LIKE BEFORE, THEN   *
+      *            CALL CALC VALVS, COPY THE ORDER PASSED INTO AS    *
+      *            WILL USE EXPLICIT ADRESSING LATER ON. THEN COMPUTE*
+      *            AND CALL THE TOTAL PGRPHS                         *
+      ****************************************************************
+       0212-PROCESS-NBR-FOUND.
+
+           MOVE FUND-FUND-NME TO OUT-FUND-NME.
+           MOVE SALE-FUND-NBR (SALE-NDX) TO PRC-FUND-NBR.
+
+           EXEC SQL
+             SELECT FUND_PRC,FUND_COMM_PCT
+             INTO :PRC-FUND-PRC,:PRC-FUND-COMM-PCT
+             FROM KC02322.FUND_PRC
+             WHERE FUND_NBR = :PRC-FUND-NBR
+           END-EXEC.
+
+           IF SQLCODE = 100
+             DISPLAY 'SQL ERROR'
+           ELSE
+             MOVE SALE-DEP-AMT(SALE-NDX) TO P-DEP-AMT
+           END-IF.
+
+           MOVE PRC-FUND-PRC TO P-SHR-PRC.
+           MOVE PRC-FUND-COMM-PCT TO P-COMM-PCT.
+
+           CALL COBOL-SUB1 USING P-DEP-AMT
+                                 P-SHR-PRC
+                                 P-COMM-PCT
+                                 RETURN-SHR-AMT
+                                 RETURN-COMM-AMT.
+
+           MOVE RETURN-SHR-AMT TO OUT-SHR-AMT.
+           MOVE RETURN-COMM-AMT TO OUT-COMM-AMT.
+
+           COMPUTE TOT-COMM ROUNDED =
+             TOT-COMM + RETURN-COMM-AMT.
+
+       0212-EXIT. EXIT.
+
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  HEADER.                                       *
+      *                                                              *
+      * FUNCTION:  RESET LINE CTR, ADD PG COUNTER, MOVE COUNTER TO   *
+      *            OUTPUT LINE, PRINT THE VARIOUS LINES REQUIRED FOR *
+      *            THE HEADER                                        *
+      ****************************************************************
+       0300-PROCESS-HEADERS.
+
+           COMPUTE LINE-CTR = LINE-CTR - LINE-CTR.
+           ADD 1 TO PAGE-CTR.
+           MOVE PAGE-CTR TO OUT-PAGE-CTR.
+           WRITE REPORT-RECORD FROM HEADER-1 AFTER PAGE.
+
+           WRITE REPORT-RECORD FROM HEADER-2 AFTER 1.
+           WRITE REPORT-RECORD FROM HEADER-3 AFTER 2.
+           WRITE REPORT-RECORD FROM HEADER-4 AFTER 1.
+           WRITE REPORT-RECORD FROM HEADER-5 AFTER 1.
+
+       0300-EXIT. EXIT.
+
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  TOTALS.                                       *
+      *                                                              *
+      * FUNCTION:  JUST MOVE STUFF TO OUTFIELD, AND PRINT DETAILS LNE*
+      *            BEFORE THAT CALL TOTAL HEADERS.                   *
+      ****************************************************************
+       0400-PROCESS-TOTALS.
+
+           PERFORM 0410-PROCESS-TOT-HEADERS.
+
+           MOVE BROKER-CTR TO OUT-TOT-BROKERS.
+           MOVE SALE-CTR TO OUT-TOT-SALE.
+           MOVE TOT-DEPOSIT TO OUT-TOT-DEPOSIT.
+           MOVE TOT-COMM TO OUT-TOT-COMM.
+
+           WRITE REPORT-RECORD FROM TOT-DETAIL AFTER 1.
+           ADD 1 TO LINE-CTR.
+
+           PERFORM 0420-PROCESS-AVG.
+
+       0400-EXIT. EXIT.
+
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  PROCESS-TOTAL HEADERS.                        *
+      *                                                              *
+      * FUNCTION:  SAME AS ABOVE HEADER FUNCTION  EXCEPT FOR LAST 3  *
+      *            LINES AS THEY ARE DIFFERENT.                      *
+      *            GENERIC TOTAL HEADERS FUNCTION.                   *
+      ****************************************************************
+       0410-PROCESS-TOT-HEADERS.
+
+           COMPUTE LINE-CTR = LINE-CTR - LINE-CTR.
+           ADD 1 TO PAGE-CTR.
+           MOVE PAGE-CTR TO OUT-PAGE-CTR.
+           WRITE REPORT-RECORD FROM HEADER-1 AFTER PAGE.
+
+           WRITE REPORT-RECORD FROM HEADER-2 AFTER 1.
+           WRITE REPORT-RECORD FROM TAIL-1 AFTER 2.
+           WRITE REPORT-RECORD FROM TAIL-2 AFTER 2.
+           WRITE REPORT-RECORD FROM TAIL-3 AFTER 1.
+
+       0410-EXIT. EXIT.
+
+      ****************************************************************
+      *                                                              *
+      * PARAGPH NAME:  PROCESS-AVERAG.                               *
+      *                                                              *
+      * FUNCTION:  CALC TOTAL DEP, MOVE TOT DEP, PRINT TO AVG LINE   *
+      *            ADD COUNTER FOR FUTURE MODIFICATIONS IN NECEASSARY*
+      ****************************************************************
+       0420-PROCESS-AVG.
+
+           COMPUTE TOT-DEPOSIT ROUNDED =
+           TOT-DEPOSIT / BROKER-CTR.
+
+           MOVE TOT-DEPOSIT TO OUT-AVG-AMT.
+
+           WRITE REPORT-RECORD FROM AVG-LINE AFTER 2.
+           ADD 1 TO LINE-CTR.
+
+       0420-EXIT. EXIT.

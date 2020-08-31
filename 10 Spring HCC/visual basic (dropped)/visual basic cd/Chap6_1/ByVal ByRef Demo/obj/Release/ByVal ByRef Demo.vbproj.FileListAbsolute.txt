@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\bin\ByVal ByRef Demo.exe
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\bin\ByVal ByRef Demo.xml
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\obj\Release\ByVal_ByRef_Demo.Form1.resources
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\obj\Release\ByVal_ByRef_Demo.Resources.resources
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\obj\Release\ByVal ByRef Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\obj\Release\ByVal ByRef Demo.exe
+D:\sovb4\examples\Chap6\ByVal ByRef Demo\obj\Release\ByVal ByRef Demo.xml

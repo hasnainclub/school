@@ -1,0 +1,19 @@
+obj\Debug\Ticket Sales.exe
+obj\Debug\Ticket Sales.pdb
+bin\Ticket Sales.exe
+bin\Ticket Sales.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Ticket_Sales.frmGeneral.resources
+obj\Debug\Ticket_Sales.frmMain.resources
+obj\Debug\Ticket_Sales.frmStudent.resources
+obj\Debug\Ticket_Sales.Resources.resources
+obj\Debug\Ticket Sales.vbproj.GenerateResource.Cache
+obj\Debug\Ticket Sales.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Ticket_Sales.frmGeneral.resources
+obj\Release\Ticket_Sales.frmMain.resources
+obj\Release\Ticket_Sales.frmStudent.resources
+obj\Release\Ticket_Sales.Resources.resources
+obj\Release\Ticket Sales.vbproj.GenerateResource.Cache
+obj\Release\Ticket Sales.exe
+obj\Release\Ticket Sales.xml

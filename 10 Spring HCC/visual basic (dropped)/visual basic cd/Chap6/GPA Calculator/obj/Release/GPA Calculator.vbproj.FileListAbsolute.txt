@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap6\GPA Calculator\obj\Release\GPA Calculator.exe
+D:\sovb4\examples\Chap6\GPA Calculator\obj\Release\GPA Calculator.xml
+D:\sovb4\examples\Chap6\GPA Calculator\bin\GPA Calculator.exe
+D:\sovb4\examples\Chap6\GPA Calculator\bin\GPA Calculator.xml
+D:\sovb4\examples\Chap6\GPA Calculator\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap6\GPA Calculator\obj\Release\GPA_Calculator.Form1.resources
+D:\sovb4\examples\Chap6\GPA Calculator\obj\Release\GPA_Calculator.Resources.resources
+D:\sovb4\examples\Chap6\GPA Calculator\obj\Release\GPA Calculator.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\GPA Calculator\obj\Release\GPA Calculator.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\GPA Calculator\obj\Release\GPA Calculator.xml

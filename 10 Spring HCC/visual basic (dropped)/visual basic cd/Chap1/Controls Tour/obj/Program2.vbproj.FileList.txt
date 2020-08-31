@@ -1,0 +1,17 @@
+obj\Debug\Program2.exe
+obj\Debug\Program2.pdb
+bin\Program2.exe
+bin\Program2.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Program2.Form1.resources
+obj\Release\Program2.Form2.resources
+obj\Release\Program2.Resources.resources
+obj\Release\Program2.vbproj.GenerateResource.Cache
+obj\Release\Program2.exe
+obj\Release\Program2.xml
+bin\Program2.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Program2.Form1.resources
+obj\Debug\Program2.Resources.resources
+obj\Debug\Program2.vbproj.GenerateResource.Cache
+obj\Debug\Program2.xml

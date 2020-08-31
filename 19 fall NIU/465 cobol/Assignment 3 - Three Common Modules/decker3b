@@ -1,0 +1,83 @@
+      ****************************************************************
+      *                                                              *
+      * PROGRAM NAME:  COBPGM3                                       *
+      *                                                              *
+      * FUNCTION:  THIS PROGRAM READS INPUT DATA RECORDS AND THEN    *
+      *            WRITES THEM TO STANDARD OUTPUT.                   *
+      *                                                              *
+      * INPUT:     INFILE - THE INPUT DATA RECORDS READ IN.          *
+      *                                                              *
+      * OUTPUT:    OUTFILE - THE INPUT DATA RECORDS WRITTEN OUT.     *
+      *                                                              *
+      ****************************************************************
+
+       IDENTIFICATION DIVISION.
+
+       PROGRAM-ID.    COBPGM3.
+       AUTHOR.        GEOFFREY D DECKER.
+       DATE-WRITTEN.  02/06/2019.
+       DATE-COMPILED.
+
+       ENVIRONMENT DIVISION.
+
+       INPUT-OUTPUT SECTION.
+
+       FILE-CONTROL.
+
+           SELECT INPUT-FILE ASSIGN TO COBIN.
+           SELECT PRINT-FILE ASSIGN TO COBOUT.
+
+       DATA DIVISION.
+
+       FILE SECTION.
+
+       FD  INPUT-FILE
+           RECORDING MODE IS F.
+
+       01  INPUT-RECORD                        PIC X(80).
+
+       FD  PRINT-FILE
+           RECORDING MODE IS F.
+
+       01  PRINT-RECORD                        PIC X(132).
+
+       WORKING-STORAGE SECTION.
+
+       01  EOF-FLAG                            PIC X VALUE 'N'.
+
+       01  PRINT-LINE.
+           05  OUTPUT-RECORD                   PIC X(80).
+           05  FILLER                          PIC X(52)  VALUE SPACES.
+
+       PROCEDURE DIVISION.
+
+       0000-MAIN.
+
+           OPEN INPUT  INPUT-FILE
+                OUTPUT PRINT-FILE.
+
+           READ INPUT-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+           PERFORM 0100-WRITE-RECS
+             UNTIL EOF-FLAG = 'Y'.
+
+           CLOSE INPUT-FILE
+                 PRINT-FILE.
+
+           GOBACK.
+
+       0000-EXIT. EXIT.
+          
+       0100-WRITE-RECS.
+
+           MOVE INPUT-RECORD TO OUTPUT-RECORD.
+
+           WRITE PRINT-RECORD FROM PRINT-LINE AFTER 1.
+
+           READ INPUT-FILE
+             AT END MOVE 'Y' TO EOF-FLAG
+           END-READ.
+
+       0100-EXIT. EXIT.

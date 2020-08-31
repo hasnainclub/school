@@ -1,0 +1,3 @@
+D:\sovb4\examples\Chap8\String Split\obj\Debug\ReadNumbers.exe
+D:\sovb4\examples\Chap8\String Split\obj\Debug\ReadNumbers.xml
+D:\sovb4\examples\Chap8\String Split\obj\Debug\ReadNumbers.pdb

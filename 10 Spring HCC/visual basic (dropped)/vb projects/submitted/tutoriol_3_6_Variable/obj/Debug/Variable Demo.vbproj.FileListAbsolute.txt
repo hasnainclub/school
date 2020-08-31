@@ -1,0 +1,26 @@
+D:\sovb4\examples\Chap3\Variable Demo\bin\Variable Demo.exe
+D:\sovb4\examples\Chap3\Variable Demo\bin\Variable Demo.pdb
+D:\sovb4\examples\Chap3\Variable Demo\bin\Variable Demo.xml
+D:\sovb4\examples\Chap3\Variable Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Variable Demo\obj\Debug\Variable_Demo.Form1.resources
+D:\sovb4\examples\Chap3\Variable Demo\obj\Debug\Variable_Demo.Resources.resources
+D:\sovb4\examples\Chap3\Variable Demo\obj\Debug\Variable Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\Variable Demo\obj\Debug\Variable Demo.exe
+D:\sovb4\examples\Chap3\Variable Demo\obj\Debug\Variable Demo.xml
+D:\sovb4\examples\Chap3\Variable Demo\obj\Debug\Variable Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\obj\Debug\Variable Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\obj\Debug\Variable Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\obj\Debug\Variable Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\bin\Variable Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\bin\Variable Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\bin\Variable Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\obj\Debug\Variable_Demo.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\obj\Debug\Variable_Demo.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Variable Demo\obj\Debug\Variable Demo.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\Variable Demo\obj\Debug\Variable Demo.exe
+C:\Users\hasnainpc\Desktop\vb projects\Variable Demo\obj\Debug\Variable Demo.xml
+C:\Users\hasnainpc\Desktop\vb projects\Variable Demo\obj\Debug\Variable Demo.pdb
+C:\Users\hasnainpc\Desktop\vb projects\Variable_tutoriol_3_6\obj\Debug\Variable Demo.exe
+C:\Users\hasnainpc\Desktop\vb projects\Variable_tutoriol_3_6\obj\Debug\Variable Demo.xml
+C:\Users\hasnainpc\Desktop\vb projects\Variable_tutoriol_3_6\obj\Debug\Variable Demo.pdb

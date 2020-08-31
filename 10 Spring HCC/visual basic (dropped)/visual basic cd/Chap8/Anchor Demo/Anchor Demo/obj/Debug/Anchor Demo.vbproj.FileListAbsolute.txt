@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\bin\Debug\Anchor Demo.exe
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\bin\Debug\Anchor Demo.pdb
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\bin\Debug\Anchor Demo.xml
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\obj\Debug\Anchor_Demo.Form1.resources
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\obj\Debug\Anchor_Demo.Resources.resources
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\obj\Debug\Anchor Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\obj\Debug\Anchor Demo.exe
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\obj\Debug\Anchor Demo.xml
+D:\sovb4\examples\Chap8\Anchor Demo\Anchor Demo\obj\Debug\Anchor Demo.pdb

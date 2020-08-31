@@ -1,0 +1,11 @@
+D:\sovb4\examples\Chap8\ForEach Example\bin\Debug\ForEach Example.exe
+D:\sovb4\examples\Chap8\ForEach Example\bin\Debug\ForEach Example.pdb
+D:\sovb4\examples\Chap8\ForEach Example\bin\Debug\ForEach Example.xml
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ForEach_Example.Form1.resources
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ForEach_Example.Resources.resources
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ForEach Example.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ForEach Example.exe
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ForEach Example.xml
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ForEach Example.pdb
+D:\sovb4\examples\Chap8\ForEach Example\obj\Debug\ForEach_Example.SearchForCity.resources

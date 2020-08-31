@@ -1,0 +1,53 @@
+JCL statements consist of
+one or more 80 byte records. However, be careful
+when you get close to the end of that line
+there because columns 73 through 80 are ignored by z/OS and are usually used
+for sequence numbers. If you've got a command
+with a whole lot of parameters that you need to continue on to the second line, here's what you do. Note, this is only how you
+continue for a parameter. If you've got a comment or a parameter field
+enclosed in parentheses, those require something
+slightly different. But if you've got
+a list of parameters, interrupt the field after
+a complete parameter entry, making sure to end
+it with a comma. That comma needs to come
+at or before columns 71. In the next line which you are going to be continuing into, start with two forward slashes
+and then a blank space. If column three starts
+with anything other than a blank space
+or an asterisk, splat, it will assume it's a new line and
+probably won't run right. You can then pick up
+your continued commands starting anywhere from
+columns 4 through 16. You should also know that
+there's different types of statements: JOB, EXEC, and DD. You can see all
+three types here and they all have parameters that are expected to follow them. I also want to talk to you
+about those dispositions you see here because you'll
+definitely be running into those. But before we can get into that, we have to cover cataloging. Now, cataloging a dataset just means that we add
+the exact location of that dataset so we can find it later referencing it
+only by its name. Datasets can exist without
+being in a catalog, you just have to know exactly
+where they are to use them. Having a dataset in your catalog is like having a phone number
+in your address book. So if you want to reference a dataset by its name later on, make sure it's in
+the catalog. That's it. When you specify the disposition
+in a DD statement, you're specifying what to do
+with the datasets in JCL. You do this across three fields
+separated by a comma. Don't worry, there's
+an example after this. You start with DISP equals, that sets it all up. In the first field, we're specifying whether
+it should be NEW, either it doesn't exist
+yet so we should make it. OLD, meaning it
+should already exist. SHR, the data can be
+used by other jobs. MOD, if the dataset doesn't already exist,
+then create it. If it already does
+exist, then use that. In the next statement, we specify what action
+the system needs to perform on the dataset when the JOB step
+terminates normally. We can either DELETE it, get rid of it. KEEP it. If you're referencing a dataset, you expect it to be
+there when it started, you probably want
+to keep it around. PASS, meaning that if
+there's a step after this step that needs
+the dataset, let them use it. CATLG, add it to the catalog, make it permanent or UNCATLG, remove it from the catalog. Then lastly in the third column. What to do if a JOB step terminates abnormally if
+something bad happens. Same as the previous column, but there's no option
+for PASS because, if the job is stopping, there are no future steps
+to pass it onto. So here's an example
+of a DD statement with a disposition of
+NEW, CATLOG, DELETE. We're going to
+create a new dataset and if the JOB runs successfully, add it to the catalog. Otherwise, delete it. I know this was a lot of
+information and believe me, I wish that were everything. For the full details
+on JES and JCL, refer to the user guide and reference linked in this lesson.

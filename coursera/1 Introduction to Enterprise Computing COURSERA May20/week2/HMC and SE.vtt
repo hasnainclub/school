@@ -1,0 +1,632 @@
+WEBVTT
+
+1
+00:00:02.630 --> 00:00:05.160
+So I said we'd come back to
+
+2
+00:00:05.160 --> 00:00:07.140
+that SE thing with the keyboard,
+
+3
+00:00:07.140 --> 00:00:08.505
+screen, and the servers,
+
+4
+00:00:08.505 --> 00:00:10.320
+the computer within a computer.
+
+5
+00:00:10.320 --> 00:00:11.790
+What's that there fore=?
+
+6
+00:00:11.790 --> 00:00:14.385
+That's the support
+element or the SE.
+
+7
+00:00:14.385 --> 00:00:15.930
+In order to get the mainframe
+
+8
+00:00:15.930 --> 00:00:17.610
+all configured and
+ready to boot up
+
+9
+00:00:17.610 --> 00:00:18.750
+the way we want it to and
+
+10
+00:00:18.750 --> 00:00:20.895
+connected everything
+we needed to talk to,
+
+11
+00:00:20.895 --> 00:00:22.605
+that takes a little
+bit of a setup,
+
+12
+00:00:22.605 --> 00:00:25.740
+and you do that setup
+through the support element.
+
+13
+00:00:25.740 --> 00:00:27.650
+There's two SE's in there,
+
+14
+00:00:27.650 --> 00:00:29.535
+and that's just in case
+one of them fails.
+
+15
+00:00:29.535 --> 00:00:31.710
+No one wants to be locked
+out of their system.
+
+16
+00:00:31.710 --> 00:00:33.110
+Now that's all cool,
+
+17
+00:00:33.110 --> 00:00:35.750
+but imagine if every time
+we needed to do something,
+
+18
+00:00:35.750 --> 00:00:38.710
+you had to walk over to
+the data center, badge in,
+
+19
+00:00:38.710 --> 00:00:41.030
+hang out on the raised floor
+where it's all loud,
+
+20
+00:00:41.030 --> 00:00:42.740
+and cold, and dark, and stuff,
+
+21
+00:00:42.740 --> 00:00:45.470
+open the door, slide out the SE,
+
+22
+00:00:45.470 --> 00:00:48.500
+and all that, just to type
+out a single command.
+
+23
+00:00:48.500 --> 00:00:51.020
+Luckily, in addition to the SE's,
+
+24
+00:00:51.020 --> 00:00:52.700
+mainframes have this concept of
+
+25
+00:00:52.700 --> 00:00:55.939
+the HMC or the hardware
+management console,
+
+26
+00:00:55.939 --> 00:00:57.680
+and these do four things.
+
+27
+00:00:57.680 --> 00:01:01.160
+One, they let you access
+the SE's Functions remotely,
+
+28
+00:01:01.160 --> 00:01:03.340
+so you don't have to
+walk out there anymore.
+
+29
+00:01:03.340 --> 00:01:07.175
+Two, you can add multiple
+mainframes to a single HMC,
+
+30
+00:01:07.175 --> 00:01:08.645
+a 100 of them in fact.
+
+31
+00:01:08.645 --> 00:01:11.150
+So you can manage a whole bunch
+of mainframes from
+
+32
+00:01:11.150 --> 00:01:14.030
+one HMC and that is pretty handy.
+
+33
+00:01:14.030 --> 00:01:18.025
+You can also add a single
+mainframe to multiple HMC's,
+
+34
+00:01:18.025 --> 00:01:19.490
+32 of them in fact.
+
+35
+00:01:19.490 --> 00:01:21.335
+So if you have one system
+
+36
+00:01:21.335 --> 00:01:23.195
+that's shared by
+multiple departments,
+
+37
+00:01:23.195 --> 00:01:25.670
+they can all get HMC access.
+
+38
+00:01:25.670 --> 00:01:28.655
+Four, you can connect
+to the HMC remotely.
+
+39
+00:01:28.655 --> 00:01:30.650
+So while the SE is attached to
+
+40
+00:01:30.650 --> 00:01:33.430
+the system and the HMC is
+running somewhere else,
+
+41
+00:01:33.430 --> 00:01:35.405
+you can also connect remotely
+
+42
+00:01:35.405 --> 00:01:37.775
+as long as you have
+the correct network access.
+
+43
+00:01:37.775 --> 00:01:39.620
+Now for the remainder
+of this session,
+
+44
+00:01:39.620 --> 00:01:42.020
+I'm just going to be
+saying HMC because
+
+45
+00:01:42.020 --> 00:01:44.975
+that's typically how someone
+accesses those functions.
+
+46
+00:01:44.975 --> 00:01:47.990
+But know that pretty much
+anything I can do from the HMC,
+
+47
+00:01:47.990 --> 00:01:49.400
+I can do from the SE as well.
+
+48
+00:01:49.400 --> 00:01:52.120
+It's just a whole lot
+easier just to say HMC.
+
+49
+00:01:52.120 --> 00:01:54.945
+So why would we need
+that kind of access?
+
+50
+00:01:54.945 --> 00:01:56.780
+Well, the most common
+thing people
+
+51
+00:01:56.780 --> 00:01:58.730
+use an HMC for is to stop,
+
+52
+00:01:58.730 --> 00:02:01.205
+start, create, and
+modify our pars.
+
+53
+00:02:01.205 --> 00:02:03.880
+Need to add another couple
+processors to an L part,
+
+54
+00:02:03.880 --> 00:02:05.845
+you do that from the HMC.
+
+55
+00:02:05.845 --> 00:02:08.180
+When it changed the way
+a network card is configured,
+
+56
+00:02:08.180 --> 00:02:10.355
+you do that for the HMC.
+
+57
+00:02:10.355 --> 00:02:11.780
+Let's say I'm having problems
+
+58
+00:02:11.780 --> 00:02:12.920
+with the system and I want to get
+
+59
+00:02:12.920 --> 00:02:14.090
+some data that might help me
+
+60
+00:02:14.090 --> 00:02:16.445
+with troubleshooting, guess what?
+
+61
+00:02:16.445 --> 00:02:20.525
+HMC. What do I see when
+I login to an HMC?
+
+62
+00:02:20.525 --> 00:02:21.950
+Well, I can take a look at
+
+63
+00:02:21.950 --> 00:02:23.580
+a particular physical machine
+
+64
+00:02:23.580 --> 00:02:25.190
+that's this view right here.
+
+65
+00:02:25.190 --> 00:02:27.740
+See you got the status
+is operating,
+
+66
+00:02:27.740 --> 00:02:29.945
+It's going to machine
+type, model number,
+
+67
+00:02:29.945 --> 00:02:31.435
+It's also got a serial number,
+
+68
+00:02:31.435 --> 00:02:33.050
+It's also got
+this name over here,
+
+69
+00:02:33.050 --> 00:02:34.160
+so I can make sure it's
+
+70
+00:02:34.160 --> 00:02:36.095
+the system that I want
+to be talking to.
+
+71
+00:02:36.095 --> 00:02:38.920
+If I go deeper, I can
+see all the L parts,
+
+72
+00:02:38.920 --> 00:02:41.600
+those are the partitions
+right there for that system.
+
+73
+00:02:41.600 --> 00:02:42.980
+Looks like some of them are up,
+
+74
+00:02:42.980 --> 00:02:44.945
+some of them are down.
+That's all right.
+
+75
+00:02:44.945 --> 00:02:47.750
+In this last tab over
+here that's the topology,
+
+76
+00:02:47.750 --> 00:02:49.685
+that shows me how
+everything is connected.
+
+77
+00:02:49.685 --> 00:02:52.115
+You can see there's lots of
+stuff going on over here.
+
+78
+00:02:52.115 --> 00:02:54.320
+Another good use
+of the HMC is just
+
+79
+00:02:54.320 --> 00:02:56.780
+telling at a glance how
+my systems are doing.
+
+80
+00:02:56.780 --> 00:02:59.450
+So I can see right here there's
+a couple of exceptions.
+
+81
+00:02:59.450 --> 00:03:03.290
+An exception is an unacceptable
+status and it could be
+
+82
+00:03:03.290 --> 00:03:04.640
+a problem with lpar or
+
+83
+00:03:04.640 --> 00:03:07.640
+any other objects like
+a network or a crypto card.
+
+84
+00:03:07.640 --> 00:03:09.830
+These need to be
+checked out right away.
+
+85
+00:03:09.830 --> 00:03:11.990
+There's also a number
+of hardware messages.
+
+86
+00:03:11.990 --> 00:03:14.150
+Now, a hardware message
+is just when
+
+87
+00:03:14.150 --> 00:03:15.650
+some components saw something
+
+88
+00:03:15.650 --> 00:03:17.330
+and at once you
+don't know about it,
+
+89
+00:03:17.330 --> 00:03:19.540
+but it's not currently stopping
+anything from working,
+
+90
+00:03:19.540 --> 00:03:20.795
+it's just letting you now.
+
+91
+00:03:20.795 --> 00:03:22.580
+For example, if a fiber cable
+
+92
+00:03:22.580 --> 00:03:24.635
+got disconnected and
+then reconnected,
+
+93
+00:03:24.635 --> 00:03:26.330
+that would result in
+a hardware message.
+
+94
+00:03:26.330 --> 00:03:28.280
+Same thing if an lpar
+didn't shut down
+
+95
+00:03:28.280 --> 00:03:31.384
+correctly or HMC somewhere
+lost connectivity,
+
+96
+00:03:31.384 --> 00:03:33.740
+that would result in
+a hardware message.
+
+97
+00:03:33.740 --> 00:03:35.795
+So what gets stored on the SC?
+
+98
+00:03:35.795 --> 00:03:37.470
+Well, it's got code that's going
+
+99
+00:03:37.470 --> 00:03:39.180
+to get loaded onto the mainframe,
+
+100
+00:03:39.180 --> 00:03:42.695
+that's called Licensed
+Internal Code or LIC.
+
+101
+00:03:42.695 --> 00:03:45.140
+Yeah. Really. We've got
+
+102
+00:03:45.140 --> 00:03:47.465
+logging and problem
+determination Functions
+
+103
+00:03:47.465 --> 00:03:49.295
+which help in debugging issues,
+
+104
+00:03:49.295 --> 00:03:52.130
+hardware systems definitions
+which basically tell
+
+105
+00:03:52.130 --> 00:03:53.150
+the mainframe how to get
+
+106
+00:03:53.150 --> 00:03:54.965
+started up when it
+first fluids up.
+
+107
+00:03:54.965 --> 00:03:57.020
+Then there's the IOCDS which will
+
+108
+00:03:57.020 --> 00:03:59.180
+definitely be talking
+about later on.
+
+109
+00:03:59.180 --> 00:04:01.070
+That tells the mainframe
+how to configure
+
+110
+00:04:01.070 --> 00:04:03.215
+all of its IO and it's L pars.
+
+111
+00:04:03.215 --> 00:04:05.630
+There's also a battery
+operated clock that
+
+112
+00:04:05.630 --> 00:04:07.850
+it uses a synchronized
+time across all of
+
+113
+00:04:07.850 --> 00:04:10.265
+the components and
+Ethernet adapters
+
+114
+00:04:10.265 --> 00:04:11.720
+because of course everything in
+
+115
+00:04:11.720 --> 00:04:13.610
+the mainframe
+environment generally is
+
+116
+00:04:13.610 --> 00:04:16.450
+connected to other components,
+so we need that.
+
+117
+00:04:16.450 --> 00:04:18.340
+Lastly, you might be thinking,
+
+118
+00:04:18.340 --> 00:04:20.630
+so if anyone could
+log into the HMC,
+
+119
+00:04:20.630 --> 00:04:21.860
+they could probably mess up
+
+120
+00:04:21.860 --> 00:04:23.765
+a whole bunch of
+stuff accidentally.
+
+121
+00:04:23.765 --> 00:04:25.820
+Well, which is why there are
+
+122
+00:04:25.820 --> 00:04:28.040
+several accounts set
+up by default on
+
+123
+00:04:28.040 --> 00:04:30.830
+the typical HMC and
+most people set up even
+
+124
+00:04:30.830 --> 00:04:34.100
+more to partition access off
+to those who really need it.
+
+125
+00:04:34.100 --> 00:04:36.995
+Just because you have
+access to some features,
+
+126
+00:04:36.995 --> 00:04:39.155
+doesn't mean you have
+access to everything.
+
+127
+00:04:39.155 --> 00:04:42.919
+There's specific roles on
+the HMC, roles like operator,
+
+128
+00:04:42.919 --> 00:04:45.980
+and Advanced operator,
+Systems programmer,
+
+129
+00:04:45.980 --> 00:04:48.740
+access Administrator, and
+service representative.
+
+130
+00:04:48.740 --> 00:04:51.410
+Each one of these roles
+has a specific reason
+
+131
+00:04:51.410 --> 00:04:53.980
+for needing specific access
+to the system,
+
+132
+00:04:53.980 --> 00:04:56.540
+so it's not an all or
+nothing kind of thing.
+
+133
+00:04:56.540 --> 00:04:58.940
+That's the SE and the HMC,
+
+134
+00:04:58.940 --> 00:05:01.340
+the computers within
+your computer,
+
+135
+00:05:01.340 --> 00:05:03.410
+and within those computers,
+
+136
+00:05:03.410 --> 00:05:05.345
+there's actually no there's not.
+
+137
+00:05:05.345 --> 00:05:08.790
+That's it. It's
+just the SE and the HMC.

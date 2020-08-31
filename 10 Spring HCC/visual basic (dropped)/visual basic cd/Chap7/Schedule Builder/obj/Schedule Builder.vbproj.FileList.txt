@@ -1,0 +1,11 @@
+obj\Debug\Schedule Builder.exe
+obj\Debug\Schedule Builder.pdb
+bin\Schedule Builder.exe
+bin\Schedule Builder.pdb
+bin\Schedule Builder.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Schedule_Builder.frmMain.resources
+obj\Debug\Schedule_Builder.frmSchedule.resources
+obj\Debug\Schedule_Builder.Resources.resources
+obj\Debug\Schedule Builder.vbproj.GenerateResource.Cache
+obj\Debug\Schedule Builder.xml

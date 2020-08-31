@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Error3", "Error3.vbproj", "{07DD5C2C-9427-4563-B846-C0C1C59837B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07DD5C2C-9427-4563-B846-C0C1C59837B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DD5C2C-9427-4563-B846-C0C1C59837B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DD5C2C-9427-4563-B846-C0C1C59837B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DD5C2C-9427-4563-B846-C0C1C59837B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

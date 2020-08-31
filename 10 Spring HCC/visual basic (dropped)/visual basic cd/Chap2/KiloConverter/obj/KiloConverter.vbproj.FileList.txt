@@ -1,0 +1,15 @@
+obj\Debug\KiloConverter.exe
+obj\Debug\KiloConverter.pdb
+bin\KiloConverter.exe
+bin\KiloConverter.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\KiloConverter.Form1.resources
+obj\Debug\KiloConverter.Resources.resources
+obj\Debug\KiloConverter.vbproj.GenerateResource.Cache
+obj\Debug\KiloConverter.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\KiloConverter.Form1.resources
+obj\Release\KiloConverter.Resources.resources
+obj\Release\KiloConverter.vbproj.GenerateResource.Cache
+obj\Release\KiloConverter.exe
+obj\Release\KiloConverter.xml

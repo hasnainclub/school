@@ -1,0 +1,1333 @@
+From z1697740@hopper.cs.niu.edu Wed Aug 30 15:41:43 2017
+Date: Wed, 30 Aug 2017 15:41:43 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: Britany Cordell <z1773287@hopper.cs.niu.edu>
+Message-ID: <20170830204143.GA24669@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 1216
+Lines: 52
+
+Script started on Wed Aug 30 15:40:32 2017
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ whoami=0D
+z1697740=0D
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ cat assn1.cpp=0D
+#include <stdlib.h>=0D
+#include <stdio.h>=0D
+#include <iostream>=0D
+using namespace std;=0D
+=0D
+int main( int argc, char * argv[] )=0D
+{=0D
+  int count =3D 1;=0D
+  cout << "Welcome " << getenv("USER") << "\n\n";=0D
+  =0D
+  cout << "Sample C++ program\n";=0D
+  =0D
+=0D
+  // show all command line arguments=0D
+  for( int i=3D0; i < argc; i++ )=0D
+  {=0D
+    cout << "argv[" << i << "] =3D " << argv[i] << endl;=0D
+  }=0D
+=0D
+  // if no argument was given, prompt the user=0D
+  if( argc =3D=3D 1)=0D
+  {=0D
+    cout << "Enter number to repeat: ";=0D
+    cin >> count;=0D
+  }=0D
+  else=0D
+  {=0D
+    count =3D atoi( argv[1]);=0D
+  }=0D
+=0D
+  // show line a few times=0D
+  for( int i=3D0; i < count; i++ )=0D
+  {=0D
+    cout << "C++ is fun !\n";=0D
+  }=0D
+=0D
+  return 0;=0D
+}=0D
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ ./assn1 up down=0D
+Welcome z1697740=0D
+=0D
+Sample C++ program=0D
+argv[0] =3D ./assn1=0D
+argv[1] =3D up=0D
+argv[2] =3D down=0D
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ exit=0D
+
+Script done on Wed Aug 30 15:41:26 2017
+
+From z1697740@hopper.cs.niu.edu Wed Aug 30 15:44:09 2017
+Date: Wed, 30 Aug 2017 15:44:09 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Message-ID: <20170830204409.GA25408@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 1216
+Lines: 52
+
+Script started on Wed Aug 30 15:40:32 2017
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ whoami=0D
+z1697740=0D
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ cat assn1.cpp=0D
+#include <stdlib.h>=0D
+#include <stdio.h>=0D
+#include <iostream>=0D
+using namespace std;=0D
+=0D
+int main( int argc, char * argv[] )=0D
+{=0D
+  int count =3D 1;=0D
+  cout << "Welcome " << getenv("USER") << "\n\n";=0D
+  =0D
+  cout << "Sample C++ program\n";=0D
+  =0D
+=0D
+  // show all command line arguments=0D
+  for( int i=3D0; i < argc; i++ )=0D
+  {=0D
+    cout << "argv[" << i << "] =3D " << argv[i] << endl;=0D
+  }=0D
+=0D
+  // if no argument was given, prompt the user=0D
+  if( argc =3D=3D 1)=0D
+  {=0D
+    cout << "Enter number to repeat: ";=0D
+    cin >> count;=0D
+  }=0D
+  else=0D
+  {=0D
+    count =3D atoi( argv[1]);=0D
+  }=0D
+=0D
+  // show line a few times=0D
+  for( int i=3D0; i < count; i++ )=0D
+  {=0D
+    cout << "C++ is fun !\n";=0D
+  }=0D
+=0D
+  return 0;=0D
+}=0D
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ ./assn1 up down=0D
+Welcome z1697740=0D
+=0D
+Sample C++ program=0D
+argv[0] =3D ./assn1=0D
+argv[1] =3D up=0D
+argv[2] =3D down=0D
+=1B]0;z1697740@hopper: ~=07z1697740@hopper:~$ exit=0D
+
+Script done on Wed Aug 30 15:41:26 2017
+
+From z1697740@hopper.cs.niu.edu Tue Sep 26 16:09:10 2017
+Date: Tue, 26 Sep 2017 16:09:10 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: assn02.sh
+Message-ID: <20170926210910.GA28114@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 8094
+Lines: 205
+
+#!/bin/bash
+
+#set a local path variable for convience.
+data="/home/hopper/berezin/Data"
+#check="/home/hopper/berezin/Data/assn02_d"
+
+#1a numbers all of the lines printed out
+cat -n ~berezin/Data/data02.txt > 1a.out
+#diff $check/1a.out 1a.out
+
+#1b numbers the lines printed out BUT skips numbering blank lines
+cat -b ~berezin/Data/data02.txt > 1b.out
+#diff $check/1b.out 1b.out
+
+#1c  indicate where tabs are with ^I and where form-feeds are with ^L.
+cat -T ~berezin/Data/data02.txt > 1c.out
+#diff $check/1c.out 1c.out
+
+#1d  prints a $ at the end of the text line. This is good for spotting trailing blanks.
+cat -E ~berezin/Data/data02.txt > 1d.out
+#diff $check/1d.out 1d.out
+
+#2a ignores the case of the characters.
+diff -i $data/data02.dif1 $data/data02.dif2 > diff.txt > 2a.out
+#diff $check/2a.out 2a.out
+
+#2b ignore all blanks
+diff -B $data/data02.dif1 $data/data02.dif2 > diff.txt > 2b.out
+#diff $check/2b.out 2b.out
+
+#2c ignores trailing blanks and treats other blanks as being equal.
+diff -T $data/data02.dif1 $data/data02.dif2 > diff.txt > 2c.out
+#diff $check/2c.out 2c.out
+
+#2d Produces a script that can be used by the ed editor to recreate the second file from the first file
+diff -e $data/data02.dif1 $data/data02.dif2 > diff.txt > 2d.out
+#diff $check/2d.out 2d.out
+
+#3a Find the option that suppresses the printing of a user's .plan file
+finger -p berezin 3a.out
+#diff $check/3a.out 3a.out
+
+#3b Find the option that will make it show the more detailed display including the .plans if a logged in user who has created one.
+finger -l berezin 3b.out
+#diff $check/3b.out 3b.out
+
+#4a suppress error messages about non-existent or unreadable files.
+grep -s assign ~berezin/Data/data02ps.txt 4a.out
+#diff $check/4a.out 4a.out
+
+#4b does not print any standard output (matches).
+grep -f assign ~berezin/Data/data02ps.txt 4b.out
+#diff $check/4b.out 4b.out
+
+#4c count the number of lines that contain the string assign
+#Search ~berezin/Data/data02ps.txt
+grep -c assign ~berezin/Data/data02ps.txt 4c.out
+#diff $check/4c.out 4c.out
+
+#4d  ignore the case of the string being searched for.
+#Search ~berezin/Data/data02ps.txt
+grep -i assign ~berezin/Data/data02ps.txt 4d.out
+#diff $check/4d.out 4d.out
+
+#4e print all lines that do NOT contain the regular expression.
+#Search ~berezin/Data/data02ps.txt
+grep -v assign ~berezin/Data/data02ps.txt 4e.out
+#diff $check/4e.out 4e.out
+
+#4f print just the filename of the file containing the string matching the regular expression.
+grep -H assign ~berezin/Data/data02*.txt 4f.out
+#diff $check/4f.out 4f.out
+
+#5a lets you specify by line count where to start printing from. Display lines starting from the 3rd line from the beginning.
+tail +7 ~berezin/Data/data02ps.txt 5a.out
+#diff $check/5a.out 5a.out
+
+#5b lets you specify by character count where to start printing from. Print from the 13th character from the end. Count the number of characters in the output. You will find that line feeds are counted.
+tail -c -13 ~berezin/Data/data02ps.txt 5b.out
+#diff $check/5b.out 5b.out
+
+#5c lets you specify by character count where to start printing from. Print from the 13th character from the beginning. You will find that line feeds are counted.
+tail -c +13 ~berezin/Data/data02ps.txt 5a.out
+#diff $check/5c.out 5c.out
+
+#6a forces the printing of non-printable characters in a filename as c-style \char or 3 digit octal value preceded by a backslash.
+ls -b ~berezin/Data/data02ps.txt 6a.out
+#diff $check/6a.out 6a.out
+
+#6b allows you to specify a directory name and displays the permissions of the directory rather than the permissions of contents of that directory.
+ls -d ~berezin/Data/data02ps.txt 6b.out
+#diff $check/6b.out 6b.out
+
+#6c puts special symbols after directories, executables and linked filenames when listing them.
+ls -F ~berezin/Data/data02ps.txt 6c.out
+#diff $check/6c.out 6c.out
+
+#6d displays the inode number next to the filename.
+ls -i ~berezin/Data/data02ps.txt 6d.out
+#diff $check/6d.out 6d.out
+
+#7a checks to see if the file is already sorted
+sort -c ~berezin/Data/data02ss.txt 7a.out
+#diff $check/7a.out 7a.out
+
+#7b  specifies the name to send the output to instead of to standard out.
+sort -o ~berezin/Data/data02s.txt 7b.out
+#diff $check/7b.out 7b.out
+
+#7c causes lower case letters to be listed together with the upper case letters
+sort -f ~berezin/Data/data02s.txt 7c.out
+#diff $check/7c.out 7c.out
+
+#7d sort on the second word on the line. Use the data02ps.txt file.
+sort -k 2 ~berezin/Data/data02s.txt 7d.out
+#diff $check/7d.out 7d.out
+
+#7e sort on the second word on the line but also sort so is numerically correct, 1-10 followed by 11-99, followed by 100-999, etc.
+sort -nk2 ~berezin/Data/data02ps.txt 7e.out
+#diff $check/7e.out 7e.out
+
+#8a displays the bytes of a file in character format.
+od -N ~berezin/Data/data02h.txt 8a.out
+#diff $check/8a.out 8a.out
+
+#8b displays the bytes of a file as hexadecimal numbers.
+od -x ~berezin/Data/data02h.txt 8b.out
+#diff $check/8b.out 8b.out
+
+#8c displays the bytes of a file as decimal (base ten) numbers.
+od -i ~berezin/Data/data02h.txt 8c.out
+#diff $check/8c.out 8c.out
+
+#9a  lists text in three columns with NO header info. This will require 2 options.
+ls /bin | pr-3-1 9a.out
+#diff $check/9a.out 9a.out
+
+#9b  lists line with a three digit wide line count in front and separate line count from line contents with aons.
+ls /bin | pr-3n 9b.out
+#diff $check/9a.out 9a.out
+
+#10a  delete the # (octothorpe). You will have to escape quote (backslash) the # because it is also a comment marker
+tr -d /octothorpe /etc/profile 10a.out
+#diff $check/10a.out 10a.out
+
+#10b translate lower case a through f to upper case B through G.
+tr 'a-f' 'A-F'; tr 'B-G' 'b-g' /etc/profile 10b.out
+#diff $check/10b.out 10b.out
+
+#11a get the 3rd through the 7th character columns from data02ps.txt.
+cut 3-7 ~berezin/Data/data02ps.txt  11a.out
+#diff $check/11a.out 11a.out
+
+#11b get the sixth-field (word) from the file /etc/passwd. Use colon : as a delimiter. You may have to quote the colon.
+cut -d ':' -f 6 /etc/passwd 11b.out
+#diff $check/11b.out 11b.out
+
+#12a prints the current year (4 digit version), day of the year, hour, and minute. Choose the options that produce zero padded numbers. If it is the 23rd day of the year, it should display 023.
+date %0d 12a.out
+#diff $check/12a.out 12a.out
+
+#12b prints only the hour data02.txt was last modified.
+date -r%H ~berezin/Data/data02ps.txt 12b.out
+#diff $check/12b.out 12b.out
+
+#13a lists all processes that you are running. Use the variable $USER to get your id.
+ps -u $USER 13a.out
+#diff $check/13a.out 13a.out
+
+#13b  lists every single process running on the system with a full listing.
+ps -e 13b.out
+#diff $check/13b.out 13b.out
+
+#13c  lists only processes not related to a terminal.
+ps -a 13c.out
+#diff $check/13c.out 13c.out
+
+#14a lists all of the current terminal settings.
+stty -a 14a.out
+#diff $check/14a.out 14a.out
+
+#14b resets the terminal to a reasonable set of values. This may be useful if your terminal becomes garbled because of a bad connection or cat-ing an executable file.
+stty -echo 14b.out
+#diff $check/14b.out 14b.out
+
+#14c  reset the terminal to lower case. This is useful if you login with your cap locks on. Some systems will display the characters in caps but still treat them as lower case, even if you take your cap lock off. Old teletype terminals did not have upper and lower case and Unix was designed to handle this.
+stty -iuclc 14c.out
+#diff $check/14c.out 14c.out
+
+#15a splits file into files of 7 seven lines.
+split -l7 ~berezin/Data/data02s.txt 15a.out
+#diff $check/15a.out 15a.out
+
+#15b  splits file into files where the lines are at most 10 characters long. If end of line encountered before 10th character. Start next line in new file.
+split -b10 ~berezin/Data/data02s.txt 15b.out
+#diff $check/15b.out 15b.out
+
+#15c splits file into 3 files.
+split -d ~berezin/Data/data02s.txt 15c.out
+#diff $check/15c.out 15c.out
+
+#15d splits file into files of 12000 bytes. Use the data02ps.txt file, use the size modifier to specify thousands.
+split --bytes=12000 ~berezin/Data/data02s.txt 15d.out
+#diff $check/15d.out 15d.out
+
+
+From z1697740@hopper.cs.niu.edu Tue Sep 26 16:10:11 2017
+Date: Tue, 26 Sep 2017 16:10:11 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: assn02
+Message-ID: <20170926211011.GA28171@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 1
+Lines: 1
+
+
+
+From z1697740@hopper.cs.niu.edu Tue Sep 26 16:10:16 2017
+Date: Tue, 26 Sep 2017 16:10:16 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: assn02.sh
+Message-ID: <20170926211016.GA28186@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 8094
+Lines: 205
+
+#!/bin/bash
+
+#set a local path variable for convience.
+data="/home/hopper/berezin/Data"
+#check="/home/hopper/berezin/Data/assn02_d"
+
+#1a numbers all of the lines printed out
+cat -n ~berezin/Data/data02.txt > 1a.out
+#diff $check/1a.out 1a.out
+
+#1b numbers the lines printed out BUT skips numbering blank lines
+cat -b ~berezin/Data/data02.txt > 1b.out
+#diff $check/1b.out 1b.out
+
+#1c  indicate where tabs are with ^I and where form-feeds are with ^L.
+cat -T ~berezin/Data/data02.txt > 1c.out
+#diff $check/1c.out 1c.out
+
+#1d  prints a $ at the end of the text line. This is good for spotting trailing blanks.
+cat -E ~berezin/Data/data02.txt > 1d.out
+#diff $check/1d.out 1d.out
+
+#2a ignores the case of the characters.
+diff -i $data/data02.dif1 $data/data02.dif2 > diff.txt > 2a.out
+#diff $check/2a.out 2a.out
+
+#2b ignore all blanks
+diff -B $data/data02.dif1 $data/data02.dif2 > diff.txt > 2b.out
+#diff $check/2b.out 2b.out
+
+#2c ignores trailing blanks and treats other blanks as being equal.
+diff -T $data/data02.dif1 $data/data02.dif2 > diff.txt > 2c.out
+#diff $check/2c.out 2c.out
+
+#2d Produces a script that can be used by the ed editor to recreate the second file from the first file
+diff -e $data/data02.dif1 $data/data02.dif2 > diff.txt > 2d.out
+#diff $check/2d.out 2d.out
+
+#3a Find the option that suppresses the printing of a user's .plan file
+finger -p berezin 3a.out
+#diff $check/3a.out 3a.out
+
+#3b Find the option that will make it show the more detailed display including the .plans if a logged in user who has created one.
+finger -l berezin 3b.out
+#diff $check/3b.out 3b.out
+
+#4a suppress error messages about non-existent or unreadable files.
+grep -s assign ~berezin/Data/data02ps.txt 4a.out
+#diff $check/4a.out 4a.out
+
+#4b does not print any standard output (matches).
+grep -f assign ~berezin/Data/data02ps.txt 4b.out
+#diff $check/4b.out 4b.out
+
+#4c count the number of lines that contain the string assign
+#Search ~berezin/Data/data02ps.txt
+grep -c assign ~berezin/Data/data02ps.txt 4c.out
+#diff $check/4c.out 4c.out
+
+#4d  ignore the case of the string being searched for.
+#Search ~berezin/Data/data02ps.txt
+grep -i assign ~berezin/Data/data02ps.txt 4d.out
+#diff $check/4d.out 4d.out
+
+#4e print all lines that do NOT contain the regular expression.
+#Search ~berezin/Data/data02ps.txt
+grep -v assign ~berezin/Data/data02ps.txt 4e.out
+#diff $check/4e.out 4e.out
+
+#4f print just the filename of the file containing the string matching the regular expression.
+grep -H assign ~berezin/Data/data02*.txt 4f.out
+#diff $check/4f.out 4f.out
+
+#5a lets you specify by line count where to start printing from. Display lines starting from the 3rd line from the beginning.
+tail +7 ~berezin/Data/data02ps.txt 5a.out
+#diff $check/5a.out 5a.out
+
+#5b lets you specify by character count where to start printing from. Print from the 13th character from the end. Count the number of characters in the output. You will find that line feeds are counted.
+tail -c -13 ~berezin/Data/data02ps.txt 5b.out
+#diff $check/5b.out 5b.out
+
+#5c lets you specify by character count where to start printing from. Print from the 13th character from the beginning. You will find that line feeds are counted.
+tail -c +13 ~berezin/Data/data02ps.txt 5a.out
+#diff $check/5c.out 5c.out
+
+#6a forces the printing of non-printable characters in a filename as c-style \char or 3 digit octal value preceded by a backslash.
+ls -b ~berezin/Data/data02ps.txt 6a.out
+#diff $check/6a.out 6a.out
+
+#6b allows you to specify a directory name and displays the permissions of the directory rather than the permissions of contents of that directory.
+ls -d ~berezin/Data/data02ps.txt 6b.out
+#diff $check/6b.out 6b.out
+
+#6c puts special symbols after directories, executables and linked filenames when listing them.
+ls -F ~berezin/Data/data02ps.txt 6c.out
+#diff $check/6c.out 6c.out
+
+#6d displays the inode number next to the filename.
+ls -i ~berezin/Data/data02ps.txt 6d.out
+#diff $check/6d.out 6d.out
+
+#7a checks to see if the file is already sorted
+sort -c ~berezin/Data/data02ss.txt 7a.out
+#diff $check/7a.out 7a.out
+
+#7b  specifies the name to send the output to instead of to standard out.
+sort -o ~berezin/Data/data02s.txt 7b.out
+#diff $check/7b.out 7b.out
+
+#7c causes lower case letters to be listed together with the upper case letters
+sort -f ~berezin/Data/data02s.txt 7c.out
+#diff $check/7c.out 7c.out
+
+#7d sort on the second word on the line. Use the data02ps.txt file.
+sort -k 2 ~berezin/Data/data02s.txt 7d.out
+#diff $check/7d.out 7d.out
+
+#7e sort on the second word on the line but also sort so is numerically correct, 1-10 followed by 11-99, followed by 100-999, etc.
+sort -nk2 ~berezin/Data/data02ps.txt 7e.out
+#diff $check/7e.out 7e.out
+
+#8a displays the bytes of a file in character format.
+od -N ~berezin/Data/data02h.txt 8a.out
+#diff $check/8a.out 8a.out
+
+#8b displays the bytes of a file as hexadecimal numbers.
+od -x ~berezin/Data/data02h.txt 8b.out
+#diff $check/8b.out 8b.out
+
+#8c displays the bytes of a file as decimal (base ten) numbers.
+od -i ~berezin/Data/data02h.txt 8c.out
+#diff $check/8c.out 8c.out
+
+#9a  lists text in three columns with NO header info. This will require 2 options.
+ls /bin | pr-3-1 9a.out
+#diff $check/9a.out 9a.out
+
+#9b  lists line with a three digit wide line count in front and separate line count from line contents with aons.
+ls /bin | pr-3n 9b.out
+#diff $check/9a.out 9a.out
+
+#10a  delete the # (octothorpe). You will have to escape quote (backslash) the # because it is also a comment marker
+tr -d /octothorpe /etc/profile 10a.out
+#diff $check/10a.out 10a.out
+
+#10b translate lower case a through f to upper case B through G.
+tr 'a-f' 'A-F'; tr 'B-G' 'b-g' /etc/profile 10b.out
+#diff $check/10b.out 10b.out
+
+#11a get the 3rd through the 7th character columns from data02ps.txt.
+cut 3-7 ~berezin/Data/data02ps.txt  11a.out
+#diff $check/11a.out 11a.out
+
+#11b get the sixth-field (word) from the file /etc/passwd. Use colon : as a delimiter. You may have to quote the colon.
+cut -d ':' -f 6 /etc/passwd 11b.out
+#diff $check/11b.out 11b.out
+
+#12a prints the current year (4 digit version), day of the year, hour, and minute. Choose the options that produce zero padded numbers. If it is the 23rd day of the year, it should display 023.
+date %0d 12a.out
+#diff $check/12a.out 12a.out
+
+#12b prints only the hour data02.txt was last modified.
+date -r%H ~berezin/Data/data02ps.txt 12b.out
+#diff $check/12b.out 12b.out
+
+#13a lists all processes that you are running. Use the variable $USER to get your id.
+ps -u $USER 13a.out
+#diff $check/13a.out 13a.out
+
+#13b  lists every single process running on the system with a full listing.
+ps -e 13b.out
+#diff $check/13b.out 13b.out
+
+#13c  lists only processes not related to a terminal.
+ps -a 13c.out
+#diff $check/13c.out 13c.out
+
+#14a lists all of the current terminal settings.
+stty -a 14a.out
+#diff $check/14a.out 14a.out
+
+#14b resets the terminal to a reasonable set of values. This may be useful if your terminal becomes garbled because of a bad connection or cat-ing an executable file.
+stty -echo 14b.out
+#diff $check/14b.out 14b.out
+
+#14c  reset the terminal to lower case. This is useful if you login with your cap locks on. Some systems will display the characters in caps but still treat them as lower case, even if you take your cap lock off. Old teletype terminals did not have upper and lower case and Unix was designed to handle this.
+stty -iuclc 14c.out
+#diff $check/14c.out 14c.out
+
+#15a splits file into files of 7 seven lines.
+split -l7 ~berezin/Data/data02s.txt 15a.out
+#diff $check/15a.out 15a.out
+
+#15b  splits file into files where the lines are at most 10 characters long. If end of line encountered before 10th character. Start next line in new file.
+split -b10 ~berezin/Data/data02s.txt 15b.out
+#diff $check/15b.out 15b.out
+
+#15c splits file into 3 files.
+split -d ~berezin/Data/data02s.txt 15c.out
+#diff $check/15c.out 15c.out
+
+#15d splits file into files of 12000 bytes. Use the data02ps.txt file, use the size modifier to specify thousands.
+split --bytes=12000 ~berezin/Data/data02s.txt 15d.out
+#diff $check/15d.out 15d.out
+
+
+From z1697740@hopper.cs.niu.edu Wed Oct  4 16:58:35 2017
+Date: Wed, 4 Oct 2017 16:58:35 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: Re: we're all going to die.
+Message-ID: <20171004215835.GA12413@hopper.cs.niu.edu>
+References: <20171004215704.GA12372@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20171004215704.GA12372@hopper.cs.niu.edu>
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 94
+Lines: 6
+
+
+too late
+
+
+OOn Wed, Oct 04, 2017 at 04:57:04PM -0500, berezin@hopper.cs.niu.edu wrote:
+> Run
+
+From z1697740@hopper.cs.niu.edu Mon Oct 16 16:55:21 2017
+Date: Mon, 16 Oct 2017 16:55:21 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: alias
+Message-ID: <20171016215521.GA1628@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 1100
+Lines: 39
+
+#prof berezin gave permission for late assignment
+#hasnain attarwala z1697740
+
+#1 tstamp that returns the current time as a string of digits representing the $
+
+alias timestamp='date "+%Y%d%H%M%S"'
+
+#2getName uses read to assign the user's input into a variable that uses myzid
+
+alias getname='read z1697740'
+
+
+#3 write alias called vfile
+#calls getName (remember it stores a variable named my zid)
+alias vfile='if [ -f "$z1697740" ]
+else (echo "not a regular file"; echo $?)
+fi
+
+if [[ -f "$z1697740" ]
+if [[ -f "$z1697740" ]
+then (echo "cant read")
+fi
+fi'
+
+#5alias called backup that backs up a named file to the Backup directory.
+alias backup='cp -i vfile $HOME/Backup'
+
+#6Write an alias called Backup that backs up a named file to the Backup directory, appending a timestamp generated by the tstamp alias
+
+alias Backup='cp -i tstamp $HOME/Backup'
+
+
+#7 Write an alias called finder that searches for a file.
+alias askDir='echo "directory to start search in" read searchDir'
+alias askFileName='echo "filename to search for." read fileName'
+
+alias fingder='find -path "searchDir" -name "fileName"'
+
+
+
+From z1697740@hopper.cs.niu.edu Mon Oct 16 17:07:44 2017
+Date: Mon, 16 Oct 2017 17:07:44 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: alias
+Message-ID: <20171016220744.GA2648@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="T4sUOijqQbZv57TR"
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 413
+Lines: 18
+
+
+--T4sUOijqQbZv57TR
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+assignment
+
+--T4sUOijqQbZv57TR
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: attachment; filename=aliasAssn
+
+#prof berezin gave permission for late assignment
+#hasnain attarwala z1697740
+
+#1 tstamp that returns the current time as a string of digits representing the current time
+
+
+--T4sUOijqQbZv57TR--
+
+From z1697740@hopper.cs.niu.edu Thu Nov  2 19:15:09 2017
+Date: Thu, 2 Nov 2017 19:15:09 -0500
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: grepassn
+Message-ID: <20171103001509.GA29688@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 3665
+Lines: 87
+
+#!/bin/bash
+#Hasnain ATtarwala
+#z1697740
+
+#Insert the following at the top of the solutioni script.
+
+lines1=/home/hopper/berezin/Data/greplines1
+lines2=/home/hopper/berezin/Data/greplines2
+
+export LC_ALL=en_US.UTF-8
+
+#06. Find any line with a pair of letters repeated anywhere else in the same word.
+
+grep '\([[:alpha:]][[:alpha:]]\)[^[:space:]]*\1' $lines1 | tee gout.06a | wc
+grep '\([[:alpha:]][[:alpha:]]\)[^[:space:]]*\1' $lines2 | tee gout.06b | wc
+
+#07. Find any line with a pair of letters repeated immediately after the 1st pair.
+
+grep '\([[:alpha:]][[:alpha:]]\)\1' $lines1 | tee gout.07a | wc
+grep '\([[:alpha:]][[:alpha:]]\)\1' $lines2 | tee gout.07b | wc
+
+#11. Find any line with a set of 3 letters repeated next to the 1st three.
+
+grep '\([[:alpha:]][[:alpha:]][[:alpha:]]\)\1' $lines1 | tee gout.11a | wc
+grep '\([[:alpha:]][[:alpha:]][[:alpha:]]\)\1' $lines2 | tee gout.11b | wc
+
+
+#12. Find any line with three consecutive letters repeated next to the 1st three in reverse.
+
+grep '\([[:alpha:]]\)\([[:alpha:]]\)\([[:alpha:]]\)\3\2\1' $lines1 | tee gout.12a | wc
+grep '\([[:alpha:]]\)\([[:alpha:]]\)\([[:alpha:]]\)\3\2\1' $lines2 | tee gout.12b | wc
+
+#18. Find any line with two words next to each other starting with a capital letter.
+
+grep '\<[A-Z][a-zA-Z0-9]*[^a-zA-Z0-9]*\<[A-Z]' $lines1 | tee gout.18a | wc
+grep '\<[A-Z][a-zA-Z0-9]*[^a-zA-Z0-9]*\<[A-Z]' $lines2 | tee gout.18b | wc
+
+
+#30. Find line that has exactly 3 words.
+
+grep '\<.\>\<.\>\<.\>' $lines1 | tee gout.30a | wc
+grep '\<.\>\<.\>\<.\>' $lines2 | tee gout.30b | wc
+
+#32. Find any line with a word longer than 10 characters.
+
+grep '\<.\{10,\}\>' $lines1 | tee gout.32a | wc
+grep '\<.\{10,\}\>' $lines2 | tee gout.32b | wc
+
+#34. Find any line with a word exactly 10 characters
+grep '\<.\{10\}$\>' $lines1 | tee gout.34a | wc
+grep '\<.\{10\}$\>' $lines2 | tee gout.34b | wc
+
+#38. Find any line with at least 3 punctuations in it.
+
+grep '\([[:punct:]].[[:graph:]][[:punct:]].[[:graph:]][[:punct:]]\)' $lines1 | tee gout.38a | wc
+grep '\([[:punct:]].[[:graph:]][[:punct:]].[[:graph:]][[:punct:]]\)' $lines2 | tee gout.38b | wc
+
+#41. Find any line that has at least 3 words.
+
+grep '\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]][[:graph:]] ' $lines1 | tee gout.41a | wc
+grep '\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]][[:graph:]] ' $lines2 | tee gout.41b | wc
+
+#42. Find any line with two words 6-characters long next to each other. There may be punctuation between the words.
+grep '\<.\{6\}[[:punct:]]\{6\}\> $lines1 | tee gout.42a | wc
+grep '\<.\{6\}[[:punct:]]\{6\}\> $lines2 | tee gout.42b | wc
+
+#48. Find any line with a 5-character sequence repeated anywhere else on the line.
+
+grep '\([[:graph:]][[:graph:]][[:graph:]][[:graph:]][[:graph:]]\)[^[:space:]]*\1' $lines1 | tee gout.48a | wc
+grep '\([[:graph:]][[:graph:]][[:graph:]][[:graph:]][[:graph:]]\)[^[:space:]]*\1' $lines2 | tee gout.48b | wc
+
+#52. Find any line with a word less than 6 characters.
+
+grep '\<.\{0,5\}\>' $lines1 | tee gout.52a | wc
+grep '\<.\{0,5\}\>' $lines2 | tee gout.52b | wc
+
+#53. Find any line with a word less than 10 characters.
+
+grep '\<.\{0,9\}\>' $lines1 | tee gout.53a | wc
+grep '\<.\{0,9\}\>' $lines2 | tee gout.53b | wc
+
+#56. Find any line with only words greater than 6 characters. 
+#Consider options for finding non-matches.
+
+grep -v '\<.\{6,\}\>' $lines1 | tee gout.56a | wc
+grep -v '\<.\{6,\}\>' $lines2 | tee gout.56b | wc
+
+
+From z1697740@hopper.cs.niu.edu Wed Nov 15 15:16:15 2017
+Date: Wed, 15 Nov 2017 15:16:15 -0600
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: grepassn
+Message-ID: <20171115211615.GA8139@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 1657
+Lines: 86
+
+#!/bin/bash
+#z1697740 
+#Hasnain Attarwala
+
+
+control_c() 
+{
+	echo "** Trapped CTRL-C"
+	exit 1	# return code to 1
+}
+
+getname()
+{
+	# trap to trap [ctrl]c. This call the function control_c
+	trap 'control_c' SIGINT
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		read -p "Insert a file name> " fname
+	else
+		fname=$1
+	fi
+	quit=0	# this allow to exit the loop below
+	while [ $quit -ne 1 ] 
+	do
+		echo "$fname" | grep '^[a-zA-Z_][a-zA-Z_0-9]*' > /dev/null
+		if [ "$?" -eq 1 ]; then
+			echo "$fname" | grep '/' > /dev/null
+			if [ "$?" -eq 0 ]; then
+				echo "Paths are not accepted" 1>&2		# path found
+			else 
+				echo "Invalid file name" 1>&2			# some invalid char
+			fi
+			read -p "Insert a file name> " fname
+		else
+			quit=1	# success leave the loop
+		fi
+    done
+	# a legal name provided, return success and echo out the string
+	echo "$fname" 
+}
+
+vfile()
+{
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		fname=$(getname)
+	else
+		fname=$(getname $1)
+	fi
+	if [ "$?" -eq 1 ]; then
+		return
+	fi
+	if [ -f "$fname" -a -r "$fname" ]; then
+		if [ ! -L "$fname" ]; then
+       		echo "$fname"
+       		return 0
+     	else
+			echo "$fname"
+			return 1
+		fi     
+	else 
+		return 2
+	fi
+}
+
+Backup()
+{
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		fname=$(vfile)
+	else
+		fname=$(vfile $1)
+	fi
+	if [ "$?" -eq 0 ]; then
+		# copy the file to $HOME/Backup appending the time-stamp generated by 
+      	# tstamp.
+		timestamp=$(date +"%s")
+		cp $fname $HOME/Backup/$fname$timestamp
+	elif [ "$?" -eq 1 ]; then
+		# it should be a symbolic link, use cp -P
+		cp -P $fname $HOME/Backup/$fname$timestamp
+	else
+		echo "Invalid file"
+	fi
+}
+Backup		# call function 
+
+From z1697740@hopper.cs.niu.edu Wed Nov 15 15:17:47 2017
+Date: Wed, 15 Nov 2017 15:17:47 -0600
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: bashFunction
+Message-ID: <20171115211747.GA28610@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 1657
+Lines: 86
+
+#!/bin/bash
+#z1697740 
+#Hasnain Attarwala
+
+
+control_c() 
+{
+	echo "** Trapped CTRL-C"
+	exit 1	# return code to 1
+}
+
+getname()
+{
+	# trap to trap [ctrl]c. This call the function control_c
+	trap 'control_c' SIGINT
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		read -p "Insert a file name> " fname
+	else
+		fname=$1
+	fi
+	quit=0	# this allow to exit the loop below
+	while [ $quit -ne 1 ] 
+	do
+		echo "$fname" | grep '^[a-zA-Z_][a-zA-Z_0-9]*' > /dev/null
+		if [ "$?" -eq 1 ]; then
+			echo "$fname" | grep '/' > /dev/null
+			if [ "$?" -eq 0 ]; then
+				echo "Paths are not accepted" 1>&2		# path found
+			else 
+				echo "Invalid file name" 1>&2			# some invalid char
+			fi
+			read -p "Insert a file name> " fname
+		else
+			quit=1	# success leave the loop
+		fi
+    done
+	# a legal name provided, return success and echo out the string
+	echo "$fname" 
+}
+
+vfile()
+{
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		fname=$(getname)
+	else
+		fname=$(getname $1)
+	fi
+	if [ "$?" -eq 1 ]; then
+		return
+	fi
+	if [ -f "$fname" -a -r "$fname" ]; then
+		if [ ! -L "$fname" ]; then
+       		echo "$fname"
+       		return 0
+     	else
+			echo "$fname"
+			return 1
+		fi     
+	else 
+		return 2
+	fi
+}
+
+Backup()
+{
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		fname=$(vfile)
+	else
+		fname=$(vfile $1)
+	fi
+	if [ "$?" -eq 0 ]; then
+		# copy the file to $HOME/Backup appending the time-stamp generated by 
+      	# tstamp.
+		timestamp=$(date +"%s")
+		cp $fname $HOME/Backup/$fname$timestamp
+	elif [ "$?" -eq 1 ]; then
+		# it should be a symbolic link, use cp -P
+		cp -P $fname $HOME/Backup/$fname$timestamp
+	else
+		echo "Invalid file"
+	fi
+}
+Backup		# call function 
+
+From z1697740@hopper.cs.niu.edu Wed Nov 15 20:28:11 2017
+Date: Wed, 15 Nov 2017 20:28:11 -0600
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: bashFunction
+Message-ID: <20171116022811.GA7186@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 2470
+Lines: 102
+
+#!/bin/bash
+#Hasnain Attarwala
+#z1697740
+control_c() 
+{
+	echo "** Trapped CTRL-C"
+	exit 1	# return code to 1
+}
+
+getname()
+{
+	# trap to trap [ctrl]c. This call the function control_c
+	trap 'control_c' SIGINT
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		read -p "Insert a file name> " fname
+	else
+		fname=$1
+	fi
+	quit=0	# this allow to exit the loop below
+	while [ $quit -ne 1 ] 
+	do
+		# apply the pattern matching to the filename
+		# ^ means begin of line, so this ^[a-zA-Z_] 
+		# force that first char is alpha or underscore 
+		# then this [a-zA-Z_0-9]* allow any alphanumeric
+		# and underscope chars. If it doesn't match return 1
+		echo "$fname" | grep '^[a-zA-Z_][a-zA-Z_0-9]*' > /dev/null
+		# the return from grep is stored in var $?
+		if [ "$?" -eq 1 ]; then
+			# now check '/' to detect paths
+			echo "$fname" | grep '/' > /dev/null
+			# if $? is equal to zero then there are a '/' in fname
+			if [ "$?" -eq 0 ]; then
+				echo "Paths are not accepted" 1>&2		# path found
+			else 
+				echo "Invalid file name" 1>&2			# some invalid char
+			fi
+			read -p "Insert a file name> " fname
+		else
+			quit=1	# success leave the loop
+		fi
+    done
+	# a legal name provided, return success and echo out the string
+	echo "$fname" 
+}
+
+vfile()
+{
+	fname=""	# local variable
+	# if the number of parameters ($#) is not equal to 1
+	# execute getname and store the result in fname
+	# otherwise pass the parameter to getname
+	if [ "$#" -ne 1 ]; then
+		fname=$(getname)
+	else
+		fname=$(getname $1)
+	fi
+	# if getname return 1 return
+	if [ "$?" -eq 1 ]; then
+		return
+	fi
+	# if fname is not a link display the filename and
+	# return 0
+	# otherwise display the filename and return 1
+	if [ -f "$fname" -a -r "$fname" ]; then
+		if [ ! -L "$fname" ]; then
+       		echo "$fname"
+       		return 0
+     	else
+			echo "$fname"
+			return 1
+		fi     
+	else 
+		return 2
+	fi
+}
+
+Backup()
+{
+	fname=""	# local variable
+	# if the number of parameters ($#) is not equal to 1
+	# execute vfile and store the result in fname
+	# otherwise pass the parameter to vfile
+	if [ "$#" -ne 1 ]; then
+		fname=$(vfile)
+	else
+		fname=$(vfile $1)
+	fi
+	if [ "$?" -eq 0 ]; then
+		# copy the file to $HOME/Backup appending the time-stamp generated by 
+      	# tstamp.
+		timestamp=$(date +"%s")
+		cp $fname $HOME/Backup/$fname$timestamp
+	elif [ "$?" -eq 1 ]; then
+		# it should be a symbolic link, use cp -P
+		cp -P $fname $HOME/Backup/$fname$timestamp
+	else
+		echo "Invalid file"
+	fi
+}
+Backup		# call function 
+
+From z1697740@hopper.cs.niu.edu Mon Nov 20 18:27:50 2017
+Date: Mon, 20 Nov 2017 18:27:50 -0600
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: bashFunction
+Message-ID: <20171121002750.GA627@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 2484
+Lines: 103
+
+#!/bin/bash
+#hasnain attarwala
+#z1697740
+
+control_c() 
+{
+	echo "** Trapped CTRL-C"
+	exit 1	# return code to 1
+}
+
+getname()
+{
+	# trap to trap [ctrl]c. This call the function control_c
+	trap 'control_c' SIGINT
+	fname=""	# local variable
+	if [ "$#" -ne 1 ]; then
+		read -p "Insert a file name> " fname
+	else
+		fname=$1
+	fi
+	quit=0	# this allow to exit the loop below
+	while [ $quit -ne 1 ] 
+	do
+		# apply the pattern matching to the filename
+		# ^ means begin of line, so this ^[a-zA-Z_] 
+		# force that first char is alpha or underscore 
+		# then this [a-zA-Z_0-9]* allow any alphanumeric
+		# and underscope chars. If it doesn't match return 1
+		echo "$fname" | grep '^[a-zA-Z_][a-zA-Z_0-9]*' > /dev/null
+		# the return from grep is stored in var $?
+		if [ "$?" -eq 1 ]; then
+			# now check '/' to detect paths
+			echo "$fname" | grep '/' > /dev/null
+			# if $? is equal to zero then there are a '/' in fname
+			if [ "$?" -eq 0 ]; then
+				echo "Paths are not accepted" 1>&2		# path found
+			else 
+				echo "Invalid file name" 1>&2			# some invalid char
+			fi
+			read -p "Insert a file name> " fname
+		else
+			quit=1	# success leave the loop
+		fi
+    done
+	# a legal name provided, return success and echo out the string
+	echo "$fname" 
+}
+
+vfile()
+{
+	fname=""	# local variable
+	# if the number of parameters ($#) is not equal to 1
+	# execute getname and store the result in fname
+	# otherwise pass the parameter to getname
+	if [ "$#" -ne 1 ]; then
+		fname=$(getname)
+	else
+		fname=$(getname $1)
+	fi
+	# if getname return 1 return
+	if [ "$?" -eq 1 ]; then
+		return
+	fi
+	# if fname is not a link display the filename and
+	# return 0
+	# otherwise display the filename and return 1
+	if [ -f "$fname" -a -r "$fname" ]; then
+		if [ ! -L "$fname" ]; then
+       		echo "$fname"
+       		return 0
+     	else
+			echo "$fname"
+			return 1
+		fi     
+	else 
+		return 2
+	fi
+}
+
+Backup()
+{
+	fname=""	# local variable
+	# if the number of parameters ($#) is not equal to 1
+	# execute vfile and store the result in fname
+	# otherwise pass the parameter to vfile
+	if [ "$#" -ne 1 ]; then
+		fname=$(vfile)
+	else
+		fname=$(vfile $1)
+	fi
+	timestamp=$(date +"%Y%j%H%M%S")
+	if [ "$?" -eq 0 ]; then
+		# copy the file to $HOME/Backup appending the time-stamp generated by 
+      	# tstamp.
+		cp $fname $HOME/Backup/$fname"."$timestamp
+	elif [ "$?" -eq 1 ]; then
+		# it should be a symbolic link, use cp -P
+		cp -P $fname $HOME/Backup/$fname"."$timestamp
+	else
+		echo "Invalid file"
+	fi
+}
+Backup		# call function 
+
+From z1697740@hopper.cs.niu.edu Wed Dec  6 15:58:01 2017
+Date: Wed, 6 Dec 2017 15:58:01 -0600
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+To: berezin@hopper.cs.niu.edu
+Subject: Restore
+Message-ID: <20171206215801.GA21810@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 1973
+Lines: 79
+
+#!/bin/bash
+#hasnain Attarwala
+#z1697740
+
+fname=""
+	
+setFiles()
+{
+	if [ -z  $fname  ]; then
+		afiles=( $(ls $HOME/Backup) ) # all the files
+	else
+		# | xargs -n 1 basename => display only the filename without the path
+		afiles=( $(ls $HOME/Backup/$fname* | xargs -n 1 basename) ) # only the files starting with $fname
+	fi
+}
+
+# Restore
+# Allow user to restore files stored in the Backup directory
+
+	purge=0				# purge switch off
+	clearAllFiles=0		# clear All Files switch off
+	script=`echo $0 | sed -e 's/\.\///g'` # remove prefix "./" if any
+	if [ "$1" == "-p" -o "$script" == "Purge" ]; then
+		purge=1		# called as purge
+		if [ "$1" == "-a" -a "$script" == "Purge" ]; then
+			clearAllFiles=1
+			echo "clearAllFiles"
+		fi
+		shift
+		if [ "$#" -eq 1 ]; then
+			fname=$1
+		fi
+	elif [ "$#" -eq 1 ]; then
+		fname=$1
+	fi
+
+	# at this point we can check Purge and Purge -a
+	if [ "$script" == "Purge" -a $clearAllFiles -eq 1 ]; then
+		if [ -z  $fname  ]; then
+			rm -f "$HOME"/Backup/*
+		else
+			rm $HOME/Backup/$fname*
+		fi
+		exit 0
+	fi
+	setFiles
+	
+	option="." # anything different to "q" will do the trick
+	# carefully: -ne -lt -eq require integer expression
+	while [ "$option" != "q" -a "$option" != "Q" ] 
+	do
+ 
+		idx=1
+		for each in "${afiles[@]}"
+		do
+			echo "$idx) $each"
+			let "idx = idx + 1"
+		done
+		echo "q) Quit"
+		echo -n "Your choice: "
+		read option
+		if [ "$option" != "q" -a "$option" != "Q" ]; then
+
+			let "option = option - 1" # put "option" 0..n-1 based
+			srcfile="${afiles[option]}"
+			dstfile=`echo $srcfile | sed -e 's/\.[0-9]\{13\}//g'`
+			if [ $purge -eq 1  ]; then
+				rm $HOME/Backup/$srcfile	# delete it from the Backup directory
+				setFiles					# reload the files as we delete one
+			else
+				cp -P $HOME/Backup/$srcfile $dstfile
+			fi
+			if [ ! -z  $fname  ]; then
+				option="q"		# quit Because this is file specific the program should terminate.
+			fi
+		fi
+	done
+	
+
+

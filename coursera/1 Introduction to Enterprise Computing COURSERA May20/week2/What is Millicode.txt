@@ -1,0 +1,29 @@
+Hi, I'm Bronchi Ebelma. I'm a lead design engineer
+working on millicode. So what is millicode? It basically is a form of micro-architecture
+that runs on IBMC. By micro architecture,
+I mean there's a layer, invisible layer between what we publish in the principles
+of operations, and another layer which
+is a micro-architecture. The reason why we
+have that is because, every generation of z,
+the micro-architecture changes. However, what we published
+in the principles of operation, that does not change. We add stuff, we
+don't remove stuff. We add new instructors, we don't remove instructions. So an instruction that we
+introduce 10 years ago, functionally it does
+the same thing, but micro-architecturely
+how it gets to the answer, is very different. In millicode, we make those changes so that
+the operating system, or the user, or the program, doesn't have to
+make those changes. In addition to
+the implemented instruction set under the
+principle operations, millicode is also involved in a few other key aspects of IBM Z. We do system initialization, which basically means
+you power on under system, go into IMLS steps,
+initial machine load, that's IMO, millicode is
+involved with virtualization. So you have a single
+resource system, and you're going to divide it
+up into logical partitions and run different operating
+systems in each partition. For that to be possible, you need an instruction that's called psi or stat
+interpretive execution, and that instruction is
+implemented in millicode. So that's millicode
+in a nutshell. As you can see, the things that we do on the system is important, especially for recovery,
+for availability, and for self feasibility. I've been enjoying
+my work in millicode, and it's been fun journey
+so far. Thank you

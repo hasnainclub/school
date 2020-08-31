@@ -1,0 +1,224 @@
+                    J E S 2  J O B  L O G  --  S Y S T E M  S 0 W 1  --  N O D E  Z O S K C T R         
+
+ 
+18.19.06 JOB02932 ---- FRIDAY,    12 APR 2019 ----
+18.19.06 JOB02932  IRR010I  USERID KC03FB5  IS ASSIGNED TO THIS JOB.
+18.19.06 JOB02932  ICH70001I KC03FB5  LAST ACCESS AT 18:18:30 ON FRIDAY, APRIL 12, 2019
+18.19.06 JOB02932  $HASP373 KC03FB5A STARTED - INIT 2    - CLASS A        - SYS S0W1
+18.19.06 JOB02932  -                                         --TIMINGS (MINS.)--            ----PAGING COUNTS---
+18.19.06 JOB02932  -JOBNAME  STEPNAME PROCSTEP    RC   EXCP    TCB    SRB  CLOCK   SERV  PG   PAGE   SWAP    VIO SWAPS
+18.19.06 JOB02932  -KC03FB5A                      00     51 ******    .00     .0    145   0      0      0      0     0
+18.19.06 JOB02932  -KC03FB5A ENDED.  NAME-H ATTARWALA          TOTAL TCB CPU TIME=   .00  TOTAL ELAPSED TIME=    .0
+18.19.06 JOB02932  $HASP395 KC03FB5A ENDED
+
+------ JES2 JOB STATISTICS ------
+
+
+  12 APR 2019 JOB EXECUTION DATE
+
+
+          121 CARDS READ
+
+
+          185 SYSOUT PRINT RECORDS
+
+
+            0 SYSOUT PUNCH RECORDS
+
+
+           19 SYSOUT SPOOL KBYTES
+
+
+         0.00 MINUTES EXECUTION TIME
+!! END OF JES SPOOL FILE !!
+       1 //KC03FB5A JOB ,'H ATTARWALA',MSGCLASS=H                                JOB02932
+       2 //JSTEP01 EXEC PGM=ASSIST                                               00020000
+       3 //STEPLIB DD DSN=KC00NIU.ASSIST.LOADLIB,DISP=SHR                        00030000
+       4 //SYSPRINT DD SYSOUT=*                                                  00040000
+       5 //SYSIN DD *                                                            00050000
+         //*                                                                     00232099
+       6 //FT05F001 DD DSN=KC02322.CSCI360.DATASP19(DATA8),DISP=SHR              00233099
+         //*                                                                     00234099
+       7 //FT06F001 DD SYSOUT=*                                                  00235099
+         //*                                                                     00236099
+       8 //SYSPRINT DD SYSOUT=*                                                  00237099
+!! END OF JES SPOOL FILE !!
+ICH70001I KC03FB5  LAST ACCESS AT 18:18:30 ON FRIDAY, APRIL 12, 2019
+IEF236I ALLOC. FOR KC03FB5A JSTEP01
+IGD103I SMS ALLOCATED TO DDNAME STEPLIB
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSIN
+IGD103I SMS ALLOCATED TO DDNAME FT05F001
+IEF237I JES2 ALLOCATED TO FT06F001
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF142I KC03FB5A JSTEP01 - STEP WAS EXECUTED - COND CODE 0000
+IGD104I KC00NIU.ASSIST.LOADLIB                       RETAINED,  DDNAME=STEPLIB 
+IEF285I   KC03FB5.KC03FB5A.JOB02932.D0000102.?         SYSOUT        
+IEF285I   KC03FB5.KC03FB5A.JOB02932.D0000101.?         SYSIN         
+IGD104I KC02322.CSCI360.DATASP19                     RETAINED,  DDNAME=FT05F001
+IEF285I   KC03FB5.KC03FB5A.JOB02932.D0000103.?         SYSOUT        
+IEF285I   KC03FB5.KC03FB5A.JOB02932.D0000104.?         SYSOUT        
+IEF373I STEP/JSTEP01 /START 2019102.1819
+IEF032I STEP/JSTEP01 /STOP  2019102.1819 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+        VIRT:   584K  SYS:   264K  EXT:        0K  SYS:    11396K
+        ATB- REAL:                    12K  SLOTS:                     0K
+             VIRT- ALLOC:       2M SHRD:       0M
+IEF375I  JOB/KC03FB5A/START 2019102.1819
+IEF033I  JOB/KC03FB5A/STOP  2019102.1819 
+        CPU:     0 HR  00 MIN  00.00 SEC    SRB:     0 HR  00 MIN  00.00 SEC    
+!! END OF JES SPOOL FILE !!
+
+*** ASSIST 4.0/A2-05/15/82  470/V7A/0:OS/VS2  INS=SDFP7/X=BGHO, CHECK/TRC/=1180, OPTS=CDKMPR FROM PENN ST*NIU COMPSCI*LT            
+
+                                                                                                                                    
+
+                                                                                                               PAGE    1            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+                                      1 *****************************************************************       00060099            
+                                      2 *                                                               *       00070099            
+                                      3 *  ASSIGNMENT 8- YOUR EIGHTH  MAINFRAME PROGRAM                 *       00080099            
+                                      4 *  HASNAIN ATTARWALA Z1697740 KC03FB5                           *       00081099            
+                                      5 *  EMILY DUCATTE     Z1831554 KC03G0A                           *       00082099            
+                                      6 *                                                               *       00090099            
+                                      7 *  DUE DATE 4/19/2019                                           *       00100099            
+                                      8 *                                                               *       00110099            
+                                      9 *****************************************************************       00120099            
+000000                               10 ASSIGN8  CSECT                                                          00130099            
+000000 90EC D00C            0000C    11          STM   14,12,12(13)     SAVE REGS IN CALLER'S SAVE AREA         00131099            
+000004 18CF                          12          LR    12,15            COPY CSECT ADDR INTO R12                00131199            
+000000                               13          USING ASSIGN8,12       ESTABLISH R12 AS THE BASE REG           00131299            
+000006 41E0 C068            00068    14          LA    14,SAVEAREA      R14 POINTS TO THIS CSECT'S SAVE AREA    00131399            
+00000A 50E0 D008            00008    15          ST    14,8(,13)        STORE ADDR OF THIS CSECT'S SAVE AREA    00131499            
+00000E 50D0 E004            00004    16          ST    13,4(,14)        STORE ADDR OF CALLER'S SAVE AREA        00131599            
+000012 18DE                          17          LR    13,14            POINT R13 AT THIS CSECT'S SAVE AREA     00131699            
+                                     18 *                                                                       00131799            
+                                     19 *                                                                       00131899            
+000014 E020 C0B0 0085 000B0          20          XPRNT HEAD1,133                                                00131999            
+00001A E020 C135 0085 00135          21          XPRNT COLHEAD1,133                                             00132099            
+000020 E020 C1BA 0085 001BA          22          XPRNT COLHEAD2,133                                             00132199            
+000026 E020 C23F 0085 0023F          23          XPRNT COLHEAD3,133                                             00132299            
+                                     24 *                                                                       00132399            
+00002C E000 C2C4 0050 002C4          25          XREAD BUFFER,80            PRIME READ                          00132499            
+000032 4740 C058            00058    26 LOOP1    BC    B'0100',ENDLOOP1     IF WE REACHED EOF                   00132599            
+                                     27 *                                                                       00132699            
+000036 D207 C316 C2C4 00316 002C4    28          MVC   OID(8),BUFFER        PUT FIRST 8 IN BUFFER               00132799            
+00003C D218 C327 C2E0 00327 002E0    29          MVC   ONAME(25),BUFFER+28  PUT 25 FROM BUFFER++ TO ONAME       00132999            
+000042 D204 C34B C2CC 0034B 002CC    30          MVC   IHOURLY,BUFFER+8                                         00133099            
+                                     31 *ACK     PHOURLY(3),IHOURLY(5)                                          00133199            
+                                     32 *                                                                       00133299            
+                                     33 *                                                                       00133399            
+                                     34 *                                                                       00133499            
+                                     35 *                                                                       00133599            
+                                     36 *                                                                       00133699            
+000048 E020 C314 0085 00314          37          XPRNT OLINE,133        PRINT OUT STUFF                         00133799            
+00004E E000 C2C4 0050 002C4          38          XREAD BUFFER,80        IF BAD CC 1 GOOD CC 0. READ NEXT        00133899            
+000054 47F0 C032            00032    39          B     LOOP1            BRANCH BACK TO TOP TO CHECK CC          00133999            
+                                     40 *                                                                       00134099            
+                                     41 *                                                                       00134199            
+                                     42 **********TO SEE THE INPUT*******                                       00134299            
+                                     43 *OP      XREAD BUFFER,80                                                00134399            
+                                     44 *        BC    B'0100',END                                              00134499            
+                                     45 *        XPRNT BUFFER,80                                                00134599            
+                                     46 *        BC    B'1111',TOP                                              00134699            
+                                     47 **********TO SEE THE INPUT*************                                 00134799            
+                                     48 *                                                                       00134899            
+000058 1BFF                          49 ENDLOOP1 SR    15,15            R15 = RETURN CODE OF 0                  00134999            
+00005A 58D0 D004            00004    50          L     13,4(,13)        POINT R13 TO CALLER'S SAVE AREA         00135099            
+00005E 58E0 D00C            0000C    51          L     14,12(,13)       RESTORE REGISTER 14                     00135199            
+000062 980C D014            00014    52          LM    0,12,20(13)      RESTORE R0 THRU R12                     00135299            
+
+                                                                                                               PAGE    2            
+
+  LOC  OBJECT CODE    ADDR1 ADDR2  STMT   SOURCE STATEMENT                                                                          
+000066 07FE                          53          BR    14               RETURN TO CALLER                        00135399            
+                                     54 *                                                                       00135499            
+                                     55          LTORG                                                          00135599            
+                                     56 *                                                                       00135699            
+000068                               57 SAVEAREA DS    18F              PROGRAM'S SAVE AREA                     00135799            
+                                     58 *                                                                       00135899            
+0000B0 F1                            59 HEAD1    DC    C'1'             CARRIAGE CONTROL TO TOP OF PG1          00135999            
+0000B1 4040404040404040              60 INDENT   DC    54C' '           55 BYTEST SO FAR                        00136099            
+0000E7 C5D4D7D3D6E8C5C5              61          DC    CL23'EMPLOYEE PAYROLL REPORT'                            00136199            
+0000FE 4040404040404040              62          DC    55C' '           TO MAKE 133'                            00136299            
+                                     63 *                                                                       00136399            
+000135 F0                            64 COLHEAD1 DC    C'0'             DBL    SPACING                          00136499            
+000136 40                            65          DC    1C' '            1 EXTRA SPACE                           00136599            
+000137 C5D4D7D3D6E8C5C5              66          DC    CL17'EMPLOYEE         '                                  00136699            
+000148 C5D4D7D3D6E8C5C5              67          DC    CL35'EMPLOYEE                           '                00136799            
+00016B C8D6E4D9D3E84040              68          DC    CL17'HOURLY           '                                  00136899            
+00017C C8D6E4D9E2404040              69          DC    CL12'HOURS       '                                       00136999            
+000188 C4C5C4E4C3E3C9D6              70          DC    CL20'DEDUCTION           '                               00137099            
+00019C C2D6D5E4E2404040              71          DC    CL13'BONUS        '                                      00137199            
+0001A9 C5D4D7D3D6E8C5C5              72          DC    CL17'EMPLOYEE PAYCHECK'                                  00137299            
+0001BA 40                            73 COLHEAD2 DC    C' '             SINGLE SPACING                          00137399            
+0001BB 40                            74          DC    1C' '            1 EXTRA SPACE                           00137499            
+0001BC C9C4404040404040              75          DC    CL17'ID               '                                  00137599            
+0001CD D5C1D4C540404040              76          DC    CL33'NAME                             '                  00137699            
+0001EE D7C1E840D9C1E3C5              77          DC    CL18'PAY RATE          '                                 00137799            
+000200 E6D6D9D2C5C44040              78          DC    CL16'WORKED          '                                   00137899            
+000210 C1D4D6E4D5E34040              79          DC    CL16'AMOUNT          '                                   00137999            
+000220 C1D4D6E4D5E34040              80          DC    CL25'AMOUNT                   '                          00138099            
+000239 C1D4D6E4D5E3                  81          DC    CL6'AMOUNT'                                              00138199            
+                                     82 *                                                                       00138299            
+00023F 40                            83 COLHEAD3 DC    C' '             SINGLE SPACING                          00138399            
+000240 40                            84          DC    1C' '            1 EXTRA SPACE                           00138499            
+000241 6060606060606060              85          DC    CL17'--------         '                                  00138599            
+000252 6060606060606060              86          DC    CL33'-------------------------        '                  00138699            
+000273 6060606060606060              87          DC    CL17'--------         '                                  00138799            
+000284 6060606060606040              88          DC    CL13'-------      '                                      00138899            
+000291 6060606060606060              89          DC    CL16'----------      '                                   00138999            
+0002A1 6060606060606060              90          DC    CL17'----------       '                                  00139099            
+0002B2 6060606060606060              91          DC    CL18'------------------'                                 00139199            
+                                     92 *                                                                       00139299            
+0002C4                               93 BUFFER   DS    CL80                                                     00139399            
+                                     94 *                                                                       00139699            
+000314 F0                            95 OLINE    DC    C'0'             DBL SPACING                             00139799            
+000315 40                            96          DC    1C' '                                                    00139899            
+000316                               97 OID      DS    CL8                                                      00139999            
+00031E 4040404040404040              98          DC    9C' '            9 CHAR SPACES                           00140099            
+000327                               99 ONAME    DS    CL25             DEFINE STORAGE 25 FOR NAME              00140199            
+000340 4040404040404040             100          DC    11C' '                                                   00140299            
+00034B F0F0F0F0C0                   101 IHOURLY  DC    ZL5'0'                                                   00140399            
+000350 4040404040404040             102          DC    73C' '                                                   00140499            
+                                    103 *                                                                       00140599            
+                                    104 *                                                                       00140699            
+                                    105 *                                                                       00140799            
+                                    106 *                                                                       00140899            
+                                    107 *                                                                       00140999            
+                                    108 *                                                                       00141099            
+                                    109          END   ASSIGN8                                                  00150099            
+
+***  NO   STATEMENTS FLAGGED -  NO   WARNINGS,  NO   ERRORS                                                                         
+
+*** DYNAMIC CORE AREA USED:  LOW:    6200 HIGH:     604 LEAVING:  486764 FREE BYTES. AVERAGE:       61 BYTES/STMT ***               
+
+*** ASSEMBLY TIME =    0.000 SECS,   110000 STATEMENTS/SEC ***                                                                      
+
+*** PROGRAM EXECUTION BEGINNING - ANY OUTPUT BEFORE EXECUTION TIME MESSAGE IS PRODUCED BY USER PROGRAM ***                          
+
+                                                      EMPLOYEE PAYROLL REPORT                                                       
+
+ EMPLOYEE         EMPLOYEE                           HOURLY           HOURS       DEDUCTION           BONUS        EMPLOYEE PAYCHECK
+ ID               NAME                             PAY RATE          WORKED          AMOUNT          AMOUNT                   AMOUNT
+ --------         -------------------------        --------         -------      ----------      ----------       ------------------
+
+ 02345245         JOAN TOWER                          01525                                                                         
+
+ 03456322         WOLFGANG AMADEUS MOZART             01900                                                                         
+
+ 04032233         RICHARD STRAUSS                     01029                                                                         
+
+ 06465120         AMY BEACH                           02200                                                                         
+
+ 06560023         DAME ETHEL SMYTHE                   02375                                                                         
+
+ 13870322         PETER ILYICH TCHAIKOVSKY            02295                                                                         
+
+ 14966277         ANTON BRUCKNER                      02020                                                                         
+
+*** EXECUTION TIME =    0.000 SECS.        66 INSTRUCTIONS EXECUTED -    66000 INSTRUCTIONS/SEC ***                                 
+
+*** AM004 - NORMAL USER TERMINATION BY RETURN ***                                                                                   
+!! END OF JES SPOOL FILE !!

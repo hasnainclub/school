@@ -1,0 +1,8 @@
+D:\sovb4\examples\Chap8\Pizza Payroll\bin\Pizza Payroll.exe
+D:\sovb4\examples\Chap8\Pizza Payroll\bin\Pizza Payroll.xml
+D:\sovb4\examples\Chap8\Pizza Payroll\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap8\Pizza Payroll\obj\Release\Pizza_Payroll.Form1.resources
+D:\sovb4\examples\Chap8\Pizza Payroll\obj\Release\Pizza_Payroll.Resources.resources
+D:\sovb4\examples\Chap8\Pizza Payroll\obj\Release\Pizza Payroll.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap8\Pizza Payroll\obj\Release\Pizza Payroll.exe
+D:\sovb4\examples\Chap8\Pizza Payroll\obj\Release\Pizza Payroll.xml

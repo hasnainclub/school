@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\Ticket Sales.exe
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\Ticket Sales.xml
+D:\sovb4\examples\Chap7\Ticket Sales\bin\Ticket Sales.exe
+D:\sovb4\examples\Chap7\Ticket Sales\bin\Ticket Sales.xml
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\Ticket_Sales.frmGeneral.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\Ticket_Sales.frmMain.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\Ticket_Sales.frmStudent.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\Ticket_Sales.Resources.resources
+D:\sovb4\examples\Chap7\Ticket Sales\obj\Release\Ticket Sales.vbproj.GenerateResource.Cache

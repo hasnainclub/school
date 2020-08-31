@@ -1,0 +1,165 @@
+MariaDB [(none)]> USE z1697740;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [z1697740]> CREATE TABLE fall (pk int primary key, data char (15));
+Query OK, 0 rows affected (0.30 sec)
+
+MariaDB [z1697740]> start transaction;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [z1697740]> insert into fall
+    -> values(1, 'dataA');
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [z1697740]> insert into fall
+    -> values(2, 'dataB');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [z1697740]> insert into fall
+    -> values(3, 'dataC');
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]> use z1697740;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [z1697740]> select * from fall;
+Empty set (0.00 sec)
+
+MariaDB [z1697740]> insert into fall
+    -> values(4, 'dataD');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [z1697740]> insert into fall
+    -> values(5, 'dataE');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [z1697740]> commit;
+Query OK, 0 rows affected (0.04 sec)
+
+MariaDB [z1697740]> select * from fall;
++----+-------+
+| pk | data  |
++----+-------+
+|  1 | dataA |
+|  2 | dataB |
+|  3 | dataC |
+|  4 | dataD |
+|  5 | dataE |
++----+-------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1697740]> select * from fall;
++----+-------+
+| pk | data  |
++----+-------+
+|  1 | dataA |
+|  2 | dataB |
+|  3 | dataC |
+|  4 | dataD |
+|  5 | dataE |
++----+-------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1697740]> \t
+MariaDB [(none)]> use z1697740;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [z1697740]> start transaction;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [z1697740]> delete from fall where pk = 3;
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [z1697740]> select * from fall;
++----+-------+
+| pk | data  |
++----+-------+
+|  1 | dataA |
+|  2 | dataB |
+|  4 | dataD |
+|  5 | dataE |
++----+-------+
+4 rows in set (0.00 sec)
+
+MariaDB [z1697740]> Update fall set data = 'changed' where pk = 2;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [z1697740]> Update fall set data = 'changed 2' where pk = 4;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [z1697740]> insert into fall values(6, 'dataF');
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [z1697740]> select * from fall;
++----+-----------+
+| pk | data      |
++----+-----------+
+|  1 | dataA     |
+|  2 | changed   |
+|  4 | changed 2 |
+|  5 | dataE     |
+|  6 | dataF     |
++----+-----------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1697740]> rollback;
+Query OK, 0 rows affected (0.02 sec)
+
+MariaDB [z1697740]> select * from fall;
++----+-------+
+| pk | data  |
++----+-------+
+|  1 | dataA |
+|  2 | dataB |
+|  3 | dataC |
+|  4 | dataD |
+|  5 | dataE |
++----+-------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1697740]> \t
+MariaDB [(none)]> USE z1697740;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [z1697740]> start transaction;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [z1697740]> \T Assgn9out.txt
+MariaDB [z1697740]> USE z1697740;
+Database changed
+MariaDB [z1697740]> start transaction;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [z1697740]> update fall
+    -> set data = 'data1A'
+    -> where pk=1;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [z1697740]> update fall
+    -> set data= 'data2B'
+    -> where pk = 2;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [z1697740]> update fall
+    -> set data = 'data5E'
+    -> where pk = 5;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [z1697740]> update fall
+    -> set data = 'data12B'
+    -> where pk = 1;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0

@@ -1,0 +1,36 @@
+Hello, my name's Ed Pryor and
+I am a z/OS function tester, and I've come here to
+talk a little bit more in depth about a few things
+that Jeff mentioned. Specifically, we support
+conditional logic inside JCL, you can use if, then, and else to control
+the flow of your job. So if you have a program that has a
+return code associated with it, you can actually code into
+your JCL, slash, slash, if, return code less than four
+or if return code greater than eight or if return code is greater than four
+but less than eight, then do this step, else do this other step. It gives you a great deal
+of control over what your program
+is actually doing. We also mentioned
+nested procedures. So if you follow
+the general rule, don't put the sequence PROC PROC PEND PEND in your code, you won't bump into this issue. The idea being that
+you're not allowed to code a procedure inside
+of another procedure, they have to be separate. So PROC PEND then PROC PEND not PROC
+PROC PEND PEND. Pretty cool. While you're working
+with procedures, you can nest them
+as we mentioned, but you also are allowed to scope symbols as you
+drop down that chain. So as you dive deeper
+into your nested procs, you end up allowing
+yourself to overwrite different symbols at
+different levels. Pretty cool. One thing I learned recently was the actual connecting fiber between those DD
+statements in your JCL, and the actual programs
+you're running. So the names on those DD, so your SYSIN or your SORTIN or your out whatever, that's actually controlled by the programmer who
+wrote the program. So you give it the DD name that's controlled by whatever they opened as a DCB inside
+their program. Talking more about
+dispositions in JCL. If you want to have
+a temporary data set that you can stuff output into and
+then forget about later, you can use the disposition
+combination new delete on your dd statement
+to specify a data set that the system will clean up at job termination time allowing
+you to fill the needs that your program has
+without having to worry about allocating space
+on a disk beforehand. I'm Ed Pryor and this has been just a deeper dive into a few topics. I hope
+you've enjoyed.

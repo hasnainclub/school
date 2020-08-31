@@ -1,0 +1,4 @@
+D:\sovb4\examples\Chap2\Error2\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap2\Error2\obj\Debug\Error2.Form1.resources
+D:\sovb4\examples\Chap2\Error2\obj\Debug\Error2.Resources.resources
+D:\sovb4\examples\Chap2\Error2\obj\Debug\Error2.vbproj.GenerateResource.Cache

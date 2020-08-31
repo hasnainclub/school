@@ -1,0 +1,16 @@
+obj\Debug\Program1.exe
+obj\Debug\Program1.pdb
+bin\Program1.exe
+bin\Program1.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Program1.Form1.resources
+obj\Release\Program1.Resources.resources
+obj\Release\Program1.vbproj.GenerateResource.Cache
+obj\Release\Program1.exe
+obj\Release\Program1.xml
+bin\Program1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Program1.Resources.resources
+obj\Debug\Program1.vbproj.GenerateResource.Cache
+obj\Debug\Program1.xml
+obj\Debug\Program1.CalculateForm.resources

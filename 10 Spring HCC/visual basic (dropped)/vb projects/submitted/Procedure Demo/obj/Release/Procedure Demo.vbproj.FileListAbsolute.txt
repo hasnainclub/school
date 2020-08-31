@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap6\Procedure Demo\bin\Procedure Demo.exe
+D:\sovb4\examples\Chap6\Procedure Demo\bin\Procedure Demo.xml
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Release\Procedure_Demo.Form1.resources
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Release\Procedure_Demo.Resources.resources
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Release\Procedure Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Release\Procedure Demo.exe
+D:\sovb4\examples\Chap6\Procedure Demo\obj\Release\Procedure Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Release\Procedure Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap6\Procedure Demo\obj\Release\Procedure Demo.xml

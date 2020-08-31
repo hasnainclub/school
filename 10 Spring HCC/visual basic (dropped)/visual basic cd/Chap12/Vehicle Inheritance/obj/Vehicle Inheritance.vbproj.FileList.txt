@@ -1,0 +1,10 @@
+bin\Debug\Vehicle Inheritance.exe
+bin\Debug\Vehicle Inheritance.pdb
+bin\Debug\Vehicle Inheritance.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Vehicle_Inheritance.Form1.resources
+obj\Debug\Vehicle_Inheritance.Resources.resources
+obj\Debug\Vehicle Inheritance.vbproj.GenerateResource.Cache
+obj\Debug\Vehicle Inheritance.exe
+obj\Debug\Vehicle Inheritance.xml
+obj\Debug\Vehicle Inheritance.pdb

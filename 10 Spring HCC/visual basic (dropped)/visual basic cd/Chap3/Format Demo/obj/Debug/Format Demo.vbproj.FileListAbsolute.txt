@@ -1,0 +1,20 @@
+D:\sovb4\examples\Chap3\Format Demo\obj\Debug\Format Demo.exe
+D:\sovb4\examples\Chap3\Format Demo\obj\Debug\Format Demo.xml
+D:\sovb4\examples\Chap3\Format Demo\obj\Debug\Format Demo.pdb
+D:\sovb4\examples\Chap3\Format Demo\bin\Debug\Format Demo.exe
+D:\sovb4\examples\Chap3\Format Demo\bin\Debug\Format Demo.pdb
+D:\sovb4\examples\Chap3\Format Demo\bin\Debug\Format Demo.xml
+D:\sovb4\examples\Chap3\Format Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Format Demo\obj\Debug\Format_Demo.Form1.resources
+D:\sovb4\examples\Chap3\Format Demo\obj\Debug\Format_Demo.Resources.resources
+D:\sovb4\examples\Chap3\Format Demo\obj\Debug\Format Demo.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\obj\Debug\Format Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\obj\Debug\Format Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\obj\Debug\Format Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\bin\Debug\Format Demo.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\bin\Debug\Format Demo.pdb
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\bin\Debug\Format Demo.xml
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\obj\Debug\Format_Demo.Form1.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\obj\Debug\Format_Demo.Resources.resources
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap3\Format Demo\obj\Debug\Format Demo.vbproj.GenerateResource.Cache

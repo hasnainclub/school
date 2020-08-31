@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap10\Binding_Example\bin\Debug\Company.MDF
+D:\sovb4\examples\Chap10\Binding_Example\bin\Debug\Company_log.ldf
+D:\sovb4\examples\Chap10\Binding_Example\bin\Debug\Binding_Example.exe.config
+D:\sovb4\examples\Chap10\Binding_Example\bin\Debug\Binding_Example.exe
+D:\sovb4\examples\Chap10\Binding_Example\bin\Debug\Binding_Example.pdb
+D:\sovb4\examples\Chap10\Binding_Example\bin\Debug\Binding_Example.xml
+D:\sovb4\examples\Chap10\Binding_Example\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap10\Binding_Example\obj\Debug\Binding_Example.frmMain.resources
+D:\sovb4\examples\Chap10\Binding_Example\obj\Debug\Binding_Example.Resources.resources
+D:\sovb4\examples\Chap10\Binding_Example\obj\Debug\Binding_Example.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap10\Binding_Example\obj\Debug\Binding_Example.exe
+D:\sovb4\examples\Chap10\Binding_Example\obj\Debug\Binding_Example.xml
+D:\sovb4\examples\Chap10\Binding_Example\obj\Debug\Binding_Example.pdb

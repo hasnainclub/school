@@ -1,0 +1,10 @@
+obj\Debug\Format Demo.exe
+obj\Debug\Format Demo.xml
+obj\Debug\Format Demo.pdb
+bin\Debug\Format Demo.exe
+bin\Debug\Format Demo.pdb
+bin\Debug\Format Demo.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Format_Demo.Form1.resources
+obj\Debug\Format_Demo.Resources.resources
+obj\Debug\Format Demo.vbproj.GenerateResource.Cache

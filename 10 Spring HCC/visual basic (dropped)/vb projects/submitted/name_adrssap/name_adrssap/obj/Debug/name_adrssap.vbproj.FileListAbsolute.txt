@@ -1,0 +1,10 @@
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\bin\Debug\name_adrssap.exe
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\bin\Debug\name_adrssap.pdb
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\bin\Debug\name_adrssap.xml
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\obj\Debug\name_adrssap.Form1.resources
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\obj\Debug\name_adrssap.Resources.resources
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\obj\Debug\name_adrssap.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\obj\Debug\name_adrssap.exe
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\obj\Debug\name_adrssap.xml
+C:\Users\hasnainpc\Desktop\vb projects\name_adrssap\name_adrssap\obj\Debug\name_adrssap.pdb

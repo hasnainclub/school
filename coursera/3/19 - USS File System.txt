@@ -1,0 +1,19 @@
+Hi, my name is Louisa Martinez, I work for USS. So last time, Jeff
+talked a little bit about z/OS Unix and Sysplex. So now I'm going to
+be talking about how they both work together. So in z/OS Unix, you have access to the entire
+file system hierarchy. The way this is done is that once your file system is mounted, an owning only LPAR is assigned. So once this is mounted, now all the LPARs and users
+have access to this file. This is kind of done in two ways, one way is that through COS Unix, we forward all the
+transactions and requests associated with
+one file to the owning LPAR. Another way is called
+Six Flex aware. This is also called
+as read write share. In this case,
+the files are mounted locally to your LPAR and
+instead of forwarding, they're handled within that. The reasons why someone might
+choose one over the other, could be for performance, or convenience, or it
+could be just by choice. Overall, just the share
+file system environment has a lot of advantages, such as your z/OS Unix data it's always available,
+regardless. So even if you're owning LPAR, were to come down for
+one or the other reason, your z/OS Unix data is still available for you to
+use from other systems. This is just a brief
+explanation how this works, but if you're curious
+and want to find out more about all the details, there's tons of documentations online you can go and read, and that's all I had to share, hopefully this was useful, again my name is Teresa Martinez.

@@ -1,0 +1,4 @@
+D:\sovb4\examples\Chap9\File WriteLine Demo\obj\Release\File WriteLine Demo.exe
+D:\sovb4\examples\Chap9\File WriteLine Demo\obj\Release\File WriteLine Demo.xml
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File WriteLine Demo\obj\Release\File WriteLine Demo.exe
+C:\Documents and Settings\Tony\My Documents\Books\SowVB 4th Edition\Source Code (Revised)\examples\Chap9\File WriteLine Demo\obj\Release\File WriteLine Demo.xml

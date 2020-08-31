@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap3\Error1\bin\Error1.exe
+D:\sovb4\examples\Chap3\Error1\bin\Error1.pdb
+D:\sovb4\examples\Chap3\Error1\bin\Error1.xml
+D:\sovb4\examples\Chap3\Error1\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap3\Error1\obj\Debug\Error1.Form1.resources
+D:\sovb4\examples\Chap3\Error1\obj\Debug\Error1.Resources.resources
+D:\sovb4\examples\Chap3\Error1\obj\Debug\Error1.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap3\Error1\obj\Debug\Error1.exe
+D:\sovb4\examples\Chap3\Error1\obj\Debug\Error1.xml
+D:\sovb4\examples\Chap3\Error1\obj\Debug\Error1.pdb

@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\bin\Release\MessageBox Demo.exe
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\bin\Release\MessageBox Demo.pdb
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\bin\Release\MessageBox Demo.xml
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\obj\Release\MessageBox_Demo.Form1.resources
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\obj\Release\MessageBox_Demo.Resources.resources
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\obj\Release\MessageBox Demo.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\obj\Release\MessageBox Demo.exe
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\obj\Release\MessageBox Demo.xml
+D:\sovb4\examples\Chap4\MessageBox Demo\MessageBox Demo\obj\Release\MessageBox Demo.pdb

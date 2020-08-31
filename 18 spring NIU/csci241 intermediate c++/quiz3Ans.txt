@@ -1,0 +1,33 @@
+Quiz 3 Answers
+1. What is a method?
+A method is a function associated with a class.
+
+2. What effect does the keyword public have on a data member of a class in C++?
+A public data member may be directly accessed by any code that can access an object of the class.
+
+3. What effect does the keyword public have on a method of a class in C++?
+A public method may be called by any code that can access an object of the class.
+
+4. What effect does the keyword private have on a data member of a class in C++?
+A private data member may only be accessed by code in a method of the class.
+
+5. What effect does the keyword private have on a method of a class in C++?
+A private method may only be called from another method of the class.
+
+6. By default, all members of a C++ class allow what level of access?
+All members of a C++ class are private by default.
+
+7. By default, all members of a C++ struct allow what level of access?
+All members of a C++ struct are public by default.
+
+8. What is a constructor?
+A method called when a new object is created. It initializes the data members of the object.
+
+9. When is a constructor called?
+A constructor is called whenever a new object is created.
+
+10. How many different types of constructors may a class have?
+A class may have as many constructors as you want.
+
+11. What is the return type of a constructor?
+Constructors do not have a return type.

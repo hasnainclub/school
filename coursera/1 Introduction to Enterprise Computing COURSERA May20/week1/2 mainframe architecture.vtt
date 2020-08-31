@@ -1,0 +1,454 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.490
+It's important to
+realize that there is
+
+2
+00:00:05.490 --> 00:00:08.220
+no one version of the mainframe,
+
+3
+00:00:08.220 --> 00:00:10.215
+but rather a series
+of computers that
+
+4
+00:00:10.215 --> 00:00:12.840
+all adhere to the
+mainframe architecture.
+
+5
+00:00:12.840 --> 00:00:14.490
+By taking this course,
+
+6
+00:00:14.490 --> 00:00:15.600
+you're learning all about
+
+7
+00:00:15.600 --> 00:00:18.720
+the core fundamentals of
+the mainframe architecture.
+
+8
+00:00:18.720 --> 00:00:20.460
+Like all other computers,
+
+9
+00:00:20.460 --> 00:00:22.230
+the mainframe has memory,
+
+10
+00:00:22.230 --> 00:00:24.360
+and you've probably seen
+memory models before.
+
+11
+00:00:24.360 --> 00:00:25.560
+There are in laptops,
+
+12
+00:00:25.560 --> 00:00:27.720
+phones, and the mainframe.
+
+13
+00:00:27.720 --> 00:00:30.675
+Applications and operating
+systems need memory.
+
+14
+00:00:30.675 --> 00:00:32.310
+But there's only so much real
+
+15
+00:00:32.310 --> 00:00:34.260
+physical memory to go around.
+
+16
+00:00:34.260 --> 00:00:36.405
+Even on a fully loaded system,
+
+17
+00:00:36.405 --> 00:00:38.970
+applications are always
+hungry for more.
+
+18
+00:00:38.970 --> 00:00:41.630
+Sometimes it makes sense
+to move some of that data
+
+19
+00:00:41.630 --> 00:00:44.840
+from real memory out
+to auxiliary storage.
+
+20
+00:00:44.840 --> 00:00:46.760
+Sometimes called virtual memory.
+
+21
+00:00:46.760 --> 00:00:48.740
+Of course, if that data is
+
+22
+00:00:48.740 --> 00:00:50.870
+needed for faster
+access later on,
+
+23
+00:00:50.870 --> 00:00:53.605
+it can be moved back
+into real memory.
+
+24
+00:00:53.605 --> 00:00:55.770
+On the mainframe, auxiliary or
+
+25
+00:00:55.770 --> 00:00:57.510
+just OWC storage is kept
+
+26
+00:00:57.510 --> 00:00:59.910
+on direct-access storage devices,
+
+27
+00:00:59.910 --> 00:01:01.660
+also known as DASD.
+
+28
+00:01:01.660 --> 00:01:03.800
+These are full of hard
+drives which can be
+
+29
+00:01:03.800 --> 00:01:05.870
+either a disk or a solid state.
+
+30
+00:01:05.870 --> 00:01:08.240
+No matter how fast
+the drives are,
+
+31
+00:01:08.240 --> 00:01:11.045
+they're still nowhere near
+as fast as real memory.
+
+32
+00:01:11.045 --> 00:01:12.395
+So the mainframe has to make
+
+33
+00:01:12.395 --> 00:01:15.380
+a decision about where
+that data should be kept.
+
+34
+00:01:15.380 --> 00:01:18.950
+However, part of the mainframe
+architectures is based on
+
+35
+00:01:18.950 --> 00:01:20.630
+this tight relationship between
+
+36
+00:01:20.630 --> 00:01:23.225
+real memory and OWC storage.
+
+37
+00:01:23.225 --> 00:01:26.135
+It's for that reason that
+memory on the mainframe
+
+38
+00:01:26.135 --> 00:01:29.030
+is usually just
+referred to as storage.
+
+39
+00:01:29.030 --> 00:01:30.980
+So when you hear storage,
+
+40
+00:01:30.980 --> 00:01:32.150
+just know that
+we're talking about
+
+41
+00:01:32.150 --> 00:01:33.440
+something that includes both
+
+42
+00:01:33.440 --> 00:01:36.125
+on chip memory and OWC storage.
+
+43
+00:01:36.125 --> 00:01:37.610
+Because the way the architecture
+
+44
+00:01:37.610 --> 00:01:39.725
+works to the application running,
+
+45
+00:01:39.725 --> 00:01:42.050
+it's all just storage.
+
+46
+00:01:42.050 --> 00:01:44.510
+So when an application
+comes along and
+
+47
+00:01:44.510 --> 00:01:46.820
+says it needs a whole
+bunch of memory,
+
+48
+00:01:46.820 --> 00:01:48.590
+all these components
+work together
+
+49
+00:01:48.590 --> 00:01:50.660
+so the application can carry on.
+
+50
+00:01:50.660 --> 00:01:52.940
+It has this nearly
+unlimited amount
+
+51
+00:01:52.940 --> 00:01:54.710
+of memory when in fact,
+
+52
+00:01:54.710 --> 00:01:58.055
+all the complexities are being
+handled behind the scenes.
+
+53
+00:01:58.055 --> 00:02:00.950
+In z/OS, the mainframe
+operating system
+
+54
+00:02:00.950 --> 00:02:02.030
+we're going to be
+spending most of
+
+55
+00:02:02.030 --> 00:02:03.500
+our time talking about here,
+
+56
+00:02:03.500 --> 00:02:05.660
+users and applications
+have access to
+
+57
+00:02:05.660 --> 00:02:08.165
+their own individual
+address space.
+
+58
+00:02:08.165 --> 00:02:11.090
+An address space is simply
+a map of storage that is
+
+59
+00:02:11.090 --> 00:02:14.015
+made available to users
+and applications.
+
+60
+00:02:14.015 --> 00:02:16.070
+The range of the
+address space goes all
+
+61
+00:02:16.070 --> 00:02:18.170
+the way up to 16 exabytes.
+
+62
+00:02:18.170 --> 00:02:22.100
+An exabyte is the unit that
+comes after petabytes.
+
+63
+00:02:22.100 --> 00:02:24.380
+So that's a lot of space.
+
+64
+00:02:24.380 --> 00:02:27.155
+By giving an application
+and address space,
+
+65
+00:02:27.155 --> 00:02:28.940
+it's basically saying, yes store
+
+66
+00:02:28.940 --> 00:02:30.725
+your data anywhere
+you'd like in here,
+
+67
+00:02:30.725 --> 00:02:32.660
+I'll manage it all for you.
+
+68
+00:02:32.660 --> 00:02:34.220
+Once it's up and running,
+
+69
+00:02:34.220 --> 00:02:36.110
+z/OS will periodically check on
+
+70
+00:02:36.110 --> 00:02:37.610
+that memory to see if some
+
+71
+00:02:37.610 --> 00:02:39.605
+of it can actually be migrated.
+
+72
+00:02:39.605 --> 00:02:42.230
+In z/OS, memory is placed into
+
+73
+00:02:42.230 --> 00:02:45.140
+four kilobyte chunks
+called pages.
+
+74
+00:02:45.140 --> 00:02:48.560
+When that memory is in central
+storage on real memory,
+
+75
+00:02:48.560 --> 00:02:50.980
+it occupies what's
+called a frame.
+
+76
+00:02:50.980 --> 00:02:53.160
+When it's moved out
+to OWC storage,
+
+77
+00:02:53.160 --> 00:02:54.905
+it takes up a slot.
+
+78
+00:02:54.905 --> 00:02:57.830
+When the OS decides to
+move a slot to a frame
+
+79
+00:02:57.830 --> 00:03:00.815
+or a frame to a slot,
+that's called paging.
+
+80
+00:03:00.815 --> 00:03:02.570
+We like for paging to happen
+
+81
+00:03:02.570 --> 00:03:04.555
+as little as possible
+on the mainframe.
+
+82
+00:03:04.555 --> 00:03:06.200
+Hopefully, the OS identifies with
+
+83
+00:03:06.200 --> 00:03:08.824
+the right frames to
+page out the slots,
+
+84
+00:03:08.824 --> 00:03:11.255
+and they don't have to
+be paged back in because
+
+85
+00:03:11.255 --> 00:03:15.190
+that paging back and forth is
+a fairly complex procedure.
+
+86
+00:03:15.190 --> 00:03:18.080
+All of these changes are
+kept track of in a series
+
+87
+00:03:18.080 --> 00:03:20.990
+of tables maintained by
+the operating system.
+
+88
+00:03:20.990 --> 00:03:24.380
+In a well-tuned system with
+adequate real storage,
+
+89
+00:03:24.380 --> 00:03:27.905
+memory gets paged out once
+and most of it stays there.
+
+90
+00:03:27.905 --> 00:03:29.900
+The concept of virtual memory is
+
+91
+00:03:29.900 --> 00:03:32.150
+certainly not unique
+to the mainframe,
+
+92
+00:03:32.150 --> 00:03:33.680
+but the way in which it handles
+
+93
+00:03:33.680 --> 00:03:35.030
+its virtual memory you can
+
+94
+00:03:35.030 --> 00:03:36.920
+see is something pretty special.
+
+95
+00:03:36.920 --> 00:03:38.540
+The most current generation of
+
+96
+00:03:38.540 --> 00:03:40.430
+the mainframe
+architecture is known as
+
+97
+00:03:40.430 --> 00:03:42.500
+the z/Architecture and it
+
+98
+00:03:42.500 --> 00:03:45.290
+includes not only the hardware
+found in the mainframe,
+
+99
+00:03:45.290 --> 00:03:47.540
+but the mainframe operating
+systems which are
+
+100
+00:03:47.540 --> 00:03:50.790
+built to take advantage of
+the hardware as features.

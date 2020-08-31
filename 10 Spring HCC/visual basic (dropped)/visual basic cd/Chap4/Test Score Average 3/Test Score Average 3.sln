@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Test Score Average 3", "Test Score Average 3.vbproj", "{83DB3C8C-D799-4A02-8DF5-E186CC7169B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83DB3C8C-D799-4A02-8DF5-E186CC7169B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DB3C8C-D799-4A02-8DF5-E186CC7169B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DB3C8C-D799-4A02-8DF5-E186CC7169B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DB3C8C-D799-4A02-8DF5-E186CC7169B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

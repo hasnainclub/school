@@ -1,0 +1,1415 @@
+From z1697740@hopper.cs.niu.edu Tue Oct 10 22:15:40 2017
+Return-path: <z1697740@hopper.cs.niu.edu>
+Envelope-to: z1697740@hopper.cs.niu.edu
+Delivery-date: Tue, 10 Oct 2017 22:15:40 -0500
+Received: from z1697740 by hopper.cs.niu.edu with local (Exim 4.84_2)
+	(envelope-from <z1697740@hopper.cs.niu.edu>)
+	id 1e27Ui-0004R0-M5; Tue, 10 Oct 2017 22:15:40 -0500
+To: t90kjm1@hopper.cs.niu.edu, z1697740@hopper.cs.niu.edu, 
+	z1807516@hopper.cs.niu.edu
+Subject: HW: CSCI 241 : Program 3 Section 1
+Message-Id: <E1e27Ui-0004R0-M5@hopper.cs.niu.edu>
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+Date: Tue, 10 Oct 2017 22:15:40 -0500
+Status: RO
+
+Course: 241
+Program: 3
+Section: 1
+User: z1697740
+Name: Hasnain Attarwala
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.14).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh17044
+# Made on 2017-10-10 22:15 CDT by <z1697740@hopper>.
+# Source directory was '/home/hopper/z1697740/csci241/Assign3'.
+#
+# Existing files will *not* be overwritten, unless '-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#   3493 -rw-r--r-- mailprog.17014
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= mailprog.17014 ==============
+if test -n "${keep_file}" && test -f 'mailprog.17014'
+then
+${echo} "x - SKIPPING mailprog.17014 (file already exists)"
+
+else
+${echo} "x - extracting mailprog.17014 (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 mailprog.17014
+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
+<JJFFFFJJJ::::JJIIIIJ^N?1_P#IQXP6`'@``)IJ
+`
+end
+SHAR_EOF
+  chmod 0644 'mailprog.17014'
+if test $? -ne 0
+then ${echo} "restore of mailprog.17014 failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'mailprog.17014': 'MD5 check failed'
+       ) << \SHAR_EOF
+513a281fa46a2cfe1466fdc9424e21a1  mailprog.17014
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'mailprog.17014'` -ne 3493 && \
+  ${echo} "restoration warning:  size of 'mailprog.17014' is not 3493"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0
+
+From berezin@hopper.cs.niu.edu Wed Oct 04 17:03:34 2017
+Return-path: <berezin@hopper.cs.niu.edu>
+Envelope-to: z1697740@hopper.cs.niu.edu
+Delivery-date: Wed, 04 Oct 2017 17:03:34 -0500
+Received: from berezin by hopper.cs.niu.edu with local (Exim 4.84_2)
+	(envelope-from <berezin@hopper.cs.niu.edu>)
+	id 1dzrlO-0003K7-H9
+	for z1697740@hopper.cs.niu.edu; Wed, 04 Oct 2017 17:03:34 -0500
+Date: Wed, 4 Oct 2017 17:03:34 -0500
+From: berezin@hopper.cs.niu.edu
+To: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+Subject: [z1789895@turing.cs.niu.edu: Assn02Grades_z1697740]
+Message-ID: <20171004220334.GA12732@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 2401
+Lines: 95
+
+----- Forwarded message from Audi Bayron <z1789895@turing.cs.niu.edu> -----
+
+Date: Tue, 3 Oct 2017 10:24:32 -0500
+From: Audi Bayron <z1789895@turing.cs.niu.edu>
+To: John Berezinski <berezin@turing.cs.niu.edu>
+Subject: Assn02Grades_z1697740
+User-Agent: Mutt/1.5.23 (2014-03-12)
+
+z1697740
+
+Grade: 33/50
+
+Notes:
+
+#.out files are used for output.  You need ">" before .out to actually output
+#for example: date "+%Y%j%H%M" > 12a.out
+#this creates a file called 12a.out that contains the output of "date "+%Y%j%H%M""
+
+-0.5 point
+1c: cat -vt  shows tabs and form feeds
+	-T only shows tabs
+	
+-0.5 point
+2b: diff -b  ignores white space change
+	-B ignores whole lines that are blanks
+	
+-1 point
+2c: diff -Z  ignores trailing blanks
+
+-0.5 point
+3b: finger -l  runs finger on all logged in
+	adding berezin generates a completely different output
+
+-1 point
+4b: grep -q  suppresses output
+
+-1 point
+4f: grep -l  prints the filename of the files containing the string
+	-H prints the filename, but also prints the output
+	
+-1 point
+5a: tail -n +3  specifies line to print from -- start from 3rd line
+
+-0.5 point
+6b: ls -dl  lists info of a directory but not its contents
+
+-0.5 point
+7b: sort -o mysort  specifies output (mysort) using an option
+
+-1 point
+8a: od -c  displays characters
+
+-1 point
+9a: pr -3 -t  prints three columns with no header info
+
+-1 point
+9b: pr -n">"3  "-n3"  displays the wide line count, ">" separates the line counts
+
+-0.5 point
+10a: cat /etc/profile | tr -d "#"  deletes all occurances of "#"
+
+-1 point
+10b: tr "a-f" "B-G"  translates lower case a-f to upper case B-G
+
+-0.5 point
+11a: cut -c 3-7  cuts 3rd to 7th column of a filename
+
+-0.5 point
+11b: cut -d':' -f7  cuts the 6th field with ":" as a separator
+
+-1 point
+12a: date "+%Y%j%H%M"  prints current year(Y), day of year(j), hour(H), minute(M)
+
+-0.5 point
+12b: date "+%H" -r  prints only the hour the file was last modified
+
+-0.5 point
+13b: ps -ef  lists every process (-e) with full listing (-f)
+	 -f lists with full listing
+	 
+-0.5 point
+13c: ps -t -  lists only processes not related to a terminal
+	 -a lists all processes and processes not related to a terminal
+	 
+-1 point
+14b: stty sane  resets terminal to minimal reasonable settings
+
+-1 point
+15c: split -n3  splits a file into 3 files
+
+-0.5 point
+15d: split -b 12K  
+	 12K is not 12000 bytes, 1K=1024B, that's why size modifier was used
+
+----- End forwarded message -----
+
+From z1789895@turing.cs.niu.edu Wed Oct 04 19:59:29 2017
+Return-path: <z1789895@turing.cs.niu.edu>
+Envelope-to: z1697740@turing.cs.niu.edu
+Delivery-date: Wed, 04 Oct 2017 19:59:29 -0500
+Received: from z1789895 by turing.cs.niu.edu with local (Exim 4.84_2)
+	(envelope-from <z1789895@turing.cs.niu.edu>)
+	id 1dzuVd-0003Hf-KQ
+	for z1697740@turing.cs.niu.edu; Wed, 04 Oct 2017 19:59:29 -0500
+Date: Wed, 4 Oct 2017 19:59:29 -0500
+From: Audi Bayron <z1789895@turing.cs.niu.edu>
+To: Hasnain Attarwala <z1697740@turing.cs.niu.edu>
+Subject: Assn02Grades
+Message-ID: <20171005005929.GA12617@turing.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 2088
+Lines: 85
+
+z1697740
+
+Grade: 33/50
+
+Notes:
+
+#.out files are used for output.  You need ">" before .out to actually output
+#for example: date "+%Y%j%H%M" > 12a.out
+#this creates a file called 12a.out that contains the output of "date "+%Y%j%H%M""
+
+-0.5 point
+1c: cat -vt  shows tabs and form feeds
+	-T only shows tabs
+	
+-0.5 point
+2b: diff -b  ignores white space change
+	-B ignores whole lines that are blanks
+	
+-1 point
+2c: diff -Z  ignores trailing blanks
+
+-0.5 point
+3b: finger -l  runs finger on all logged in
+	adding berezin generates a completely different output
+
+-1 point
+4b: grep -q  suppresses output
+
+-1 point
+4f: grep -l  prints the filename of the files containing the string
+	-H prints the filename, but also prints the output
+	
+-1 point
+5a: tail -n +3  specifies line to print from -- start from 3rd line
+
+-0.5 point
+6b: ls -dl  lists info of a directory but not its contents
+
+-0.5 point
+7b: sort -o mysort  specifies output (mysort) using an option
+
+-1 point
+8a: od -c  displays characters
+
+-1 point
+9a: pr -3 -t  prints three columns with no header info
+
+-1 point
+9b: pr -n">"3  "-n3"  displays the wide line count, ">" separates the line counts
+
+-0.5 point
+10a: cat /etc/profile | tr -d "#"  deletes all occurances of "#"
+
+-1 point
+10b: tr "a-f" "B-G"  translates lower case a-f to upper case B-G
+
+-0.5 point
+11a: cut -c 3-7  cuts 3rd to 7th column of a filename
+
+-0.5 point
+11b: cut -d':' -f7  cuts the 6th field with ":" as a separator
+
+-1 point
+12a: date "+%Y%j%H%M"  prints current year(Y), day of year(j), hour(H), minute(M)
+
+-0.5 point
+12b: date "+%H" -r  prints only the hour the file was last modified
+
+-0.5 point
+13b: ps -ef  lists every process (-e) with full listing (-f)
+	 -f lists with full listing
+	 
+-0.5 point
+13c: ps -t -  lists only processes not related to a terminal
+	 -a lists all processes and processes not related to a terminal
+	 
+-1 point
+14b: stty sane  resets terminal to minimal reasonable settings
+
+-1 point
+15c: split -n3  splits a file into 3 files
+
+-0.5 point
+15d: split -b 12K  
+	 12K is not 12000 bytes, 1K=1024B, that's why size modifier was used
+
+From z1697740@hopper.cs.niu.edu Tue Oct 10 20:30:57 2017
+Return-path: <z1697740@hopper.cs.niu.edu>
+Envelope-to: z1697740@hopper.cs.niu.edu
+Delivery-date: Tue, 10 Oct 2017 20:30:57 -0500
+Received: from z1697740 by hopper.cs.niu.edu with local (Exim 4.84_2)
+	(envelope-from <z1697740@hopper.cs.niu.edu>)
+	id 1e25rN-0005zn-K2; Tue, 10 Oct 2017 20:30:57 -0500
+To: t90kjm1@hopper.cs.niu.edu, z1697740@hopper.cs.niu.edu, 
+	z1807516@hopper.cs.niu.edu
+Subject: HW: CSCI 241 : Program 3 Section 1
+Message-Id: <E1e25rN-0005zn-K2@hopper.cs.niu.edu>
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+Date: Tue, 10 Oct 2017 20:30:57 -0500
+Status: RO
+
+Course: 241
+Program: 3
+Section: 1
+User: z1697740
+Name: Hasnain Attarwala
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.14).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh23045
+# Made on 2017-10-10 20:30 CDT by <z1697740@hopper>.
+# Source directory was '/home/hopper/z1697740/csci241/Assign3'.
+#
+# Existing files will *not* be overwritten, unless '-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#   3385 -rw-r--r-- mailprog.23034
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= mailprog.23034 ==============
+if test -n "${keep_file}" && test -f 'mailprog.23034'
+then
+${echo} "x - SKIPPING mailprog.23034 (file already exists)"
+
+else
+${echo} "x - extracting mailprog.23034 (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 mailprog.23034
+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
+*^1]7*FE1`%```+/,
+`
+end
+SHAR_EOF
+  chmod 0644 'mailprog.23034'
+if test $? -ne 0
+then ${echo} "restore of mailprog.23034 failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'mailprog.23034': 'MD5 check failed'
+       ) << \SHAR_EOF
+c09d97c28006c240986781f19bccfc9d  mailprog.23034
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'mailprog.23034'` -ne 3385 && \
+  ${echo} "restoration warning:  size of 'mailprog.23034' is not 3385"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0
+
+From berezin@hopper.cs.niu.edu Thu Nov 09 11:02:17 2017
+Return-path: <berezin@hopper.cs.niu.edu>
+Envelope-to: z1697740@hopper.cs.niu.edu
+Delivery-date: Thu, 09 Nov 2017 11:02:17 -0600
+Received: from berezin by hopper.cs.niu.edu with local (Exim 4.84_2)
+	(envelope-from <berezin@hopper.cs.niu.edu>)
+	id 1eCqDZ-0006vh-7I
+	for z1697740@hopper.cs.niu.edu; Thu, 09 Nov 2017 11:02:17 -0600
+Date: Thu, 9 Nov 2017 11:02:17 -0600
+From: berezin@hopper.cs.niu.edu
+To: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+Subject: grepassn grade review
+Message-ID: <20171109170217.GA26470@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 6058
+Lines: 138
+
+#!/bin/bash
+#Hasnain ATtarwala
+#z1697740
+
+#Insert the following at the top of the solutioni script.
+
+lines1=/home/hopper/berezin/Data/greplines1
+lines2=/home/hopper/berezin/Data/greplines2
+
+export LC_ALL=en_US.UTF-8
+
+#06. Find any line with a pair of letters repeated anywhere else in the same word.
+
+grep '\([[:alpha:]][[:alpha:]]\)[^[:space:]]*\1' $lines1 | tee gout.06a | wc
+grep '\([[:alpha:]][[:alpha:]]\)[^[:space:]]*\1' $lines2 | tee gout.06b | wc
+
+#                                   ^^^^
+#         should be             [[:alnum]]* 
+
+#07. Find any line with a pair of letters repeated immediately after the 1st pair.
+
+grep '\([[:alpha:]][[:alpha:]]\)\1' $lines1 | tee gout.07a | wc
+grep '\([[:alpha:]][[:alpha:]]\)\1' $lines2 | tee gout.07b | wc
+
+#11. Find any line with a set of 3 letters repeated next to the 1st three.
+
+grep '\([[:alpha:]][[:alpha:]][[:alpha:]]\)\1' $lines1 | tee gout.11a | wc
+grep '\([[:alpha:]][[:alpha:]][[:alpha:]]\)\1' $lines2 | tee gout.11b | wc
+
+
+#12. Find any line with three consecutive letters repeated next to the 1st three in reverse.
+
+grep '\([[:alpha:]]\)\([[:alpha:]]\)\([[:alpha:]]\)\3\2\1' $lines1 | tee gout.12a | wc
+grep '\([[:alpha:]]\)\([[:alpha:]]\)\([[:alpha:]]\)\3\2\1' $lines2 | tee gout.12b | wc
+
+#18. Find any line with two words next to each other starting with a capital letter.
+
+grep '\<[A-Z][a-zA-Z0-9]*[^a-zA-Z0-9]*\<[A-Z]' $lines1 | tee gout.18a | wc
+grep '\<[A-Z][a-zA-Z0-9]*[^a-zA-Z0-9]*\<[A-Z]' $lines2 | tee gout.18b | wc
+
+
+#30. Find line that has exactly 3 words.
+grep '\<.\>\<.\>\<.\>' $lines1 | tee gout.30a | wc
+grep '\<.\>\<.\>\<.\>' $lines2 | tee gout.30b | wc
+
+#  No, this won't work at all. It says find beginning of a word followed 
+#  by any character. The beginning of word anchor will make this a word
+#  character, but then you use immediately use the end of word anchor
+#  which makes it a one character word. And then you want it to be 
+#  immediately followed by the beginning of another word. Two words 
+#  with no separation between them are not two word they are one word.
+
+#32. Find any line with a word longer than 10 characters.
+
+grep '\<.\{10,\}\>' $lines1 | tee gout.32a | wc
+grep '\<.\{10,\}\>' $lines2 | tee gout.32b | wc
+
+# The word anchor is an anchor, for it to be a true condition, the character
+# immediately following would have to be a word character. 
+# But, this only applies to the character immediately following the anchor.
+
+#34. Find any line with a word exactly 10 characters
+grep '\<.\{10\}$\>' $lines1 | tee gout.34a | wc
+grep '\<.\{10\}$\>' $lines2 | tee gout.34b | wc
+
+# Same problem with the character description.  Additionally, the statement
+# doesn't actually make sense. What is says is find the beginning of a word,j
+# followed by 10 characters of any kind, followed by a $ as the end of the
+# word. But, since $ is not a word character, that makes no sense.
+
+#38. Find any line with at least 3 punctuations in it.
+
+grep '\([[:punct:]].[[:graph:]][[:punct:]].[[:graph:]][[:punct:]]\)' $lines1 | tee gout.38a | wc
+grep '\([[:punct:]].[[:graph:]][[:punct:]].[[:graph:]][[:punct:]]\)' $lines2 | tee gout.38b | wc
+
+#This says find a punctuation, followed by one character of any type followed
+# by one non-blank character, followed by a punctuation, followed by a 
+# non-blank character, followed by punctuation.
+#
+# [[:graph:]] matches all non-blank characters, it's essentially the same as
+#  [^[:blank:]]
+#
+# There is no need for \(, it's not doing anything.
+
+#41. Find any line that has at least 3 words.
+
+grep '\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]][[:graph:]] ' $lines1 | tee gout.41a | wc
+
+grep '\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]][[:graph:]] ' $lines2 | tee gout.41b | wc
+
+# You've attacked this completely wrong. Describe a word of 1 or more word
+# characters followed by one or more whitespace and/or punctuation, then
+# look for the next word the same way, followed by a third word. 
+
+#42. Find any line with two words 6-characters long next to each other. There may be punctuation between the words.
+grep '\<.\{6\}[[:punct:]]\{6\}\> $lines1 | tee gout.42a | wc
+grep '\<.\{6\}[[:punct:]]\{6\}\> $lines2 | tee gout.42b | wc
+
+# Similar to 41, except use the range specifier \{#\} to set the number of
+#  word characters in each word to be found. Here you used the any character
+#  wild card.
+
+#48. Find any line with a 5-character sequence repeated anywhere else on the line.
+
+grep '\([[:graph:]][[:graph:]][[:graph:]][[:graph:]][[:graph:]]\)[^[:space:]]*\1' $lines1 | tee gout.48a | wc
+grep '\([[:graph:]][[:graph:]][[:graph:]][[:graph:]][[:graph:]]\)[^[:space:]]*\1' $lines2 | tee gout.48b | wc
+
+# Overly complex and therefor misses the match. For this, remember 5 characters
+# of any value, separated by zero or more characers of any value, followed
+# by the 5 characters remembered  
+
+# \(.\{5\}\).*\1
+
+
+#52. Find any line with a word less than 6 characters.
+
+grep '\<.\{0,5\}\>' $lines1 | tee gout.52a | wc
+grep '\<.\{0,5\}\>' $lines2 | tee gout.52b | wc
+
+# It doesn't look like you got docked for tis one. But, you use the any
+#  character meta-character . and not the word meta-character [:alnum:]
+# This could also match something like "a lot", it has 5 characters and
+#  it starts and ends with a word character. 
+
+#53. Find any line with a word less than 10 characters.
+
+grep '\<.\{0,9\}\>' $lines1 | tee gout.53a | wc
+grep '\<.\{0,9\}\>' $lines2 | tee gout.53b | wc
+
+#56. Find any line with only words greater than 6 characters. 
+#Consider options for finding non-matches.
+
+grep -v '\<.\{6,\}\>' $lines1 | tee gout.56a | wc
+grep -v '\<.\{6,\}\>' $lines2 | tee gout.56b | wc
+
+# Same problem, you've described a sequence of 6 character where the 
+#   1st and last would be word characters but the 4 characters in between
+#   could be anything.
+
+From berezin@hopper.cs.niu.edu Thu Nov 09 12:27:49 2017
+Return-path: <berezin@hopper.cs.niu.edu>
+Envelope-to: z1697740@hopper.cs.niu.edu
+Delivery-date: Thu, 09 Nov 2017 12:27:49 -0600
+Received: from berezin by hopper.cs.niu.edu with local (Exim 4.84_2)
+	(envelope-from <berezin@hopper.cs.niu.edu>)
+	id 1eCrYL-0001PW-5U
+	for z1697740@hopper.cs.niu.edu; Thu, 09 Nov 2017 12:27:49 -0600
+Date: Thu, 9 Nov 2017 12:27:49 -0600
+From: berezin@hopper.cs.niu.edu
+To: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+Subject: regrade
+Message-ID: <20171109182748.GA11000@hopper.cs.niu.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+Status: RO
+Content-Length: 6509
+Lines: 177
+
+OK, I've walked through it and gave some partial back. But, I've also
+docked you on the 2 the TA missed.  So, you gained 2 points.
+
+
+
+#!/bin/bash
+#Hasnain ATtarwala
+#z1697740
+
+#Insert the following at the top of the solutioni script.
+
+lines1=/home/hopper/berezin/Data/greplines1
+lines2=/home/hopper/berezin/Data/greplines2
+
+export LC_ALL=en_US.UTF-8
+
+#06. Find any line with a pair of letters repeated anywhere else in the same word.
+
+grep '\([[:alpha:]][[:alpha:]]\)[^[:space:]]*\1' $lines1 | tee gout.06a | wc
+grep '\([[:alpha:]][[:alpha:]]\)[^[:space:]]*\1' $lines2 | tee gout.06b | wc
+
+#                                   ^^^^
+#         should be             [[:alnum]]* 
+# 3 points
+
+
+#07. Find any line with a pair of letters repeated immediately after the 1st pair.
+
+grep '\([[:alpha:]][[:alpha:]]\)\1' $lines1 | tee gout.07a | wc
+grep '\([[:alpha:]][[:alpha:]]\)\1' $lines2 | tee gout.07b | wc
+#
+# 4 points
+
+#11. Find any line with a set of 3 letters repeated next to the 1st three.
+
+grep '\([[:alpha:]][[:alpha:]][[:alpha:]]\)\1' $lines1 | tee gout.11a | wc
+grep '\([[:alpha:]][[:alpha:]][[:alpha:]]\)\1' $lines2 | tee gout.11b | wc
+#
+# 4 points
+
+
+#12. Find any line with three consecutive letters repeated next to the 1st three in reverse.
+
+grep '\([[:alpha:]]\)\([[:alpha:]]\)\([[:alpha:]]\)\3\2\1' $lines1 | tee gout.12a | wc
+grep '\([[:alpha:]]\)\([[:alpha:]]\)\([[:alpha:]]\)\3\2\1' $lines2 | tee gout.12b | wc
+#
+# 4 points
+
+#18. Find any line with two words next to each other starting with a capital letter.
+
+grep '\<[A-Z][a-zA-Z0-9]*[^a-zA-Z0-9]*\<[A-Z]' $lines1 | tee gout.18a | wc
+grep '\<[A-Z][a-zA-Z0-9]*[^a-zA-Z0-9]*\<[A-Z]' $lines2 | tee gout.18b | wc
+#
+# 4 points
+
+
+#30. Find line that has exactly 3 words.
+grep '\<.\>\<.\>\<.\>' $lines1 | tee gout.30a | wc
+grep '\<.\>\<.\>\<.\>' $lines2 | tee gout.30b | wc
+#
+# 0 points
+
+#  No, this won't work at all. It says find beginning of a word followed 
+#  by any character. The beginning of word anchor will make this a word
+#  character, but then you use immediately use the end of word anchor
+#  which makes it a one character word. And then you want it to be 
+#  immediately followed by the beginning of another word. Two words 
+#  with no separation between them are not two word they are one word.
+
+#32. Find any line with a word longer than 10 characters.
+
+grep '\<.\{10,\}\>' $lines1 | tee gout.32a | wc
+grep '\<.\{10,\}\>' $lines2 | tee gout.32b | wc
+#
+# 3 points
+
+# The word anchor is an anchor, for it to be a true condition, the character
+# immediately following would have to be a word character. 
+# But, this only applies to the character immediately following the anchor.
+
+#34. Find any line with a word exactly 10 characters
+grep '\<.\{10\}$\>' $lines1 | tee gout.34a | wc
+grep '\<.\{10\}$\>' $lines2 | tee gout.34b | wc
+#
+# 2 points
+
+# Same problem with the character description.  Additionally, the statement
+# doesn't actually make sense. What is says is find the beginning of a word,j
+# followed by 10 characters of any kind, followed by a $ as the end of the
+# word. But, since $ is not a word character, that makes no sense.
+
+#38. Find any line with at least 3 punctuations in it.
+
+grep '\([[:punct:]].[[:graph:]][[:punct:]].[[:graph:]][[:punct:]]\)' $lines1 | tee gout.38a | wc
+grep '\([[:punct:]].[[:graph:]][[:punct:]].[[:graph:]][[:punct:]]\)' $lines2 | tee gout.38b | wc
+#
+# 0 points
+
+#This says find a punctuation, followed by one character of any type followed
+# by one non-blank character, followed by a punctuation, followed by a 
+# non-blank character, followed by punctuation.
+#
+# [[:graph:]] matches all non-blank characters, it's essentially the same as
+#  [^[:blank:]]
+#
+# There is no need for \(, it's not doing anything.
+
+#41. Find any line that has at least 3 words.
+
+grep '\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]][[:graph:]] ' $lines1 | tee gout.41a | wc
+
+grep '\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]]\<[[:graph:]]/>[[:space:]][[:graph:]][[:graph:]] ' $lines2 | tee gout.41b | wc
+#
+# 0 points
+
+# You've attacked this completely wrong. Describe a word of 1 or more word
+# characters followed by one or more whitespace and/or punctuation, then
+# look for the next word the same way, followed by a third word. 
+
+
+#42. Find any line with two words 6-characters long next to each other. There may be punctuation between the words.
+grep '\<.\{6\}[[:punct:]]\{6\}\> $lines1 | tee gout.42a | wc
+grep '\<.\{6\}[[:punct:]]\{6\}\> $lines2 | tee gout.42b | wc
+#
+# 0 points
+
+# Similar to 41, except use the range specifier \{#\} to set the number of
+#  word characters in each word to be found. Here you used the any character
+#  wild card.
+
+#48. Find any line with a 5-character sequence repeated anywhere else on the line.
+
+grep '\([[:graph:]][[:graph:]][[:graph:]][[:graph:]][[:graph:]]\)[^[:space:]]*\1' $lines1 | tee gout.48a | wc
+grep '\([[:graph:]][[:graph:]][[:graph:]][[:graph:]][[:graph:]]\)[^[:space:]]*\1' $lines2 | tee gout.48b | wc
+#
+# 2 points
+
+# Overly complex and therefore misses the match. For this, remember 5 characters
+# of any value, separated by zero or more characers of any value, followed
+# by the 5 characters remembered  
+# if you change [[:graph:]] to .
+# and [^:space:] to . 
+
+# \(.\{5\}\).*\1 or ......*\1
+
+
+#52. Find any line with a word less than 6 characters.
+
+grep '\<.\{0,5\}\>' $lines1 | tee gout.52a | wc
+grep '\<.\{0,5\}\>' $lines2 | tee gout.52b | wc
+#
+# 3 points. 
+
+# It doesn't look like you got docked for tis one. But, you use the any
+#  character meta-character . and not the word meta-character [:alnum:]
+# This could also match something like "a lot", it has 5 characters and
+#  it starts and ends with a word character. 
+
+#53. Find any line with a word less than 10 characters.
+
+grep '\<.\{0,9\}\>' $lines1 | tee gout.53a | wc
+grep '\<.\{0,9\}\>' $lines2 | tee gout.53b | wc
+#
+# 3 points
+
+# Same here, you need to use word characters not 
+#56. Find any line with only words greater than 6 characters. 
+#Consider options for finding non-matches.
+
+grep -v '\<.\{6,\}\>' $lines1 | tee gout.56a | wc
+grep -v '\<.\{6,\}\>' $lines2 | tee gout.56b | wc
+#
+# 0 points
+
+# Same problem, you've described a sequence of 6 character where the 
+#   1st and last would be word characters but the 4 characters in between
+#   could be anything.
+
+From z1697740@hopper.cs.niu.edu Thu Jan 25 16:11:22 2018
+Return-path: <z1697740@hopper.cs.niu.edu>
+Envelope-to: z1697740@hopper.cs.niu.edu
+Delivery-date: Thu, 25 Jan 2018 16:11:22 -0600
+Received: from z1697740 by hopper.cs.niu.edu with local (Exim 4.89)
+	(envelope-from <z1697740@hopper.cs.niu.edu>)
+	id 1eepju-0002kv-BS; Thu, 25 Jan 2018 16:11:22 -0600
+To: a1560953@hopper.cs.niu.edu, z1697740@hopper.cs.niu.edu, 
+	z1804899@hopper.cs.niu.edu
+Subject: HW: CSCI 241 : Program 1 Section 3
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+Message-Id: <E1eepju-0002kv-BS@hopper.cs.niu.edu>
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+Date: Thu, 25 Jan 2018 16:11:22 -0600
+Status: RO
+
+Course: 241
+Program: 1
+Section: 3
+User: z1697740
+Name: Hasnain Attarwala
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.15.2).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh10591
+# Made on 2018-01-25 16:11 CST by <z1697740@hopper>.
+# Source directory was '/home/hopper/z1697740/csci241/Assign1'.
+#
+# Existing files will *not* be overwritten, unless '-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#   2318 -rw-r--r-- mailprog.10553
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= mailprog.10553 ==============
+if test -n "${keep_file}" && test -f 'mailprog.10553'
+then
+${echo} "x - SKIPPING mailprog.10553 (file already exists)"
+
+else
+${echo} "x - extracting mailprog.10553 (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 mailprog.10553
+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
+722655%)))9544LG?4_X+[-GD>P!0``!4
+`
+end
+SHAR_EOF
+  chmod 0644 'mailprog.10553'
+if test $? -ne 0
+then ${echo} "restore of mailprog.10553 failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'mailprog.10553': 'MD5 check failed'
+       ) << \SHAR_EOF
+8e7536f69ad0885b3b4d4eb8f64fd0d8  mailprog.10553
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'mailprog.10553'` -ne 2318 && \
+  ${echo} "restoration warning:  size of 'mailprog.10553' is not 2318"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0
+
+From z1697740@hopper.cs.niu.edu Sun Feb 25 16:28:18 2018
+Return-path: <z1697740@hopper.cs.niu.edu>
+Envelope-to: z1697740@hopper.cs.niu.edu
+Delivery-date: Sun, 25 Feb 2018 16:28:18 -0600
+Received: from z1697740 by hopper.cs.niu.edu with local (Exim 4.89)
+	(envelope-from <z1697740@hopper.cs.niu.edu>)
+	id 1eq4mI-0008DN-3M; Sun, 25 Feb 2018 16:28:18 -0600
+To: a1560953@hopper.cs.niu.edu, z1697740@hopper.cs.niu.edu, 
+	z1804899@hopper.cs.niu.edu
+Subject: HW: CSCI 241 : Program 3 Section 3
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+Message-Id: <E1eq4mI-0008DN-3M@hopper.cs.niu.edu>
+From: Hasnain Attarwala <z1697740@hopper.cs.niu.edu>
+Date: Sun, 25 Feb 2018 16:28:18 -0600
+Status: RO
+
+Course: 241
+Program: 3
+Section: 3
+User: z1697740
+Name: Hasnain Attarwala
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.15.2).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh31575
+# Made on 2018-02-25 16:28 CST by <z1697740@hopper>.
+# Source directory was '/home/hopper/z1697740/csci241/Assign3'.
+#
+# Existing files will *not* be overwritten, unless '-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#   2877 -rw-r--r-- mailprog.31565
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= mailprog.31565 ==============
+if test -n "${keep_file}" && test -f 'mailprog.31565'
+then
+${echo} "x - SKIPPING mailprog.31565 (file already exists)"
+
+else
+${echo} "x - extracting mailprog.31565 (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 mailprog.31565
+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
+J;UC>^92M;&4K6]G*5K:RE:UL92M;V<I6MK*5K6QE^X'V'UMO4X``4```
+`
+end
+SHAR_EOF
+  chmod 0644 'mailprog.31565'
+if test $? -ne 0
+then ${echo} "restore of mailprog.31565 failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'mailprog.31565': 'MD5 check failed'
+       ) << \SHAR_EOF
+db8d18b659e942cae4790be19678b569  mailprog.31565
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'mailprog.31565'` -ne 2877 && \
+  ${echo} "restoration warning:  size of 'mailprog.31565' is not 2877"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0
+

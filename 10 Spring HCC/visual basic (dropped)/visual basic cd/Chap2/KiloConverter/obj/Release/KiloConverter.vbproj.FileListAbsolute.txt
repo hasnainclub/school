@@ -1,0 +1,10 @@
+D:\sovb4\examples\Chap2\KiloConverter\obj\Release\KiloConverter.exe
+D:\sovb4\examples\Chap2\KiloConverter\obj\Release\KiloConverter.xml
+D:\sovb4\examples\Chap2\KiloConverter\bin\KiloConverter.exe
+D:\sovb4\examples\Chap2\KiloConverter\bin\KiloConverter.xml
+D:\sovb4\examples\Chap2\KiloConverter\obj\Release\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap2\KiloConverter\obj\Release\KiloConverter.Form1.resources
+D:\sovb4\examples\Chap2\KiloConverter\obj\Release\KiloConverter.Resources.resources
+D:\sovb4\examples\Chap2\KiloConverter\obj\Release\KiloConverter.vbproj.GenerateResource.Cache
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Release\KiloConverter.exe
+C:\Users\hasnainpc\Desktop\visual basic cd\Chap2\KiloConverter\obj\Release\KiloConverter.xml

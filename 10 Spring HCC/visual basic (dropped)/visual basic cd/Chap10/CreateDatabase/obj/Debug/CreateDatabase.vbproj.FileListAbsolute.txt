@@ -1,0 +1,13 @@
+D:\sovb4\examples\Chap10\CreateDatabase\bin\Debug\CreateDatabase.exe.config
+D:\sovb4\examples\Chap10\CreateDatabase\bin\Debug\Members.mdf
+D:\sovb4\examples\Chap10\CreateDatabase\bin\Debug\Members_log.ldf
+D:\sovb4\examples\Chap10\CreateDatabase\bin\Debug\CreateDatabase.exe
+D:\sovb4\examples\Chap10\CreateDatabase\bin\Debug\CreateDatabase.pdb
+D:\sovb4\examples\Chap10\CreateDatabase\bin\Debug\CreateDatabase.xml
+D:\sovb4\examples\Chap10\CreateDatabase\obj\Debug\ResolveAssemblyReference.cache
+D:\sovb4\examples\Chap10\CreateDatabase\obj\Debug\CreateDatabase.Form1.resources
+D:\sovb4\examples\Chap10\CreateDatabase\obj\Debug\CreateDatabase.Resources.resources
+D:\sovb4\examples\Chap10\CreateDatabase\obj\Debug\CreateDatabase.vbproj.GenerateResource.Cache
+D:\sovb4\examples\Chap10\CreateDatabase\obj\Debug\CreateDatabase.exe
+D:\sovb4\examples\Chap10\CreateDatabase\obj\Debug\CreateDatabase.xml
+D:\sovb4\examples\Chap10\CreateDatabase\obj\Debug\CreateDatabase.pdb

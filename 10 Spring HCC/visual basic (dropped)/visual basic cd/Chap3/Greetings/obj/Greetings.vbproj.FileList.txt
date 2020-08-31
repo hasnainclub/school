@@ -1,0 +1,16 @@
+obj\Debug\Greetings.exe
+obj\Debug\Greetings.pdb
+bin\Greetings.exe
+bin\Greetings.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Greetings.Form1.resources
+obj\Debug\Greetings.Resources.resources
+obj\Debug\Greetings.vbproj.GenerateResource.Cache
+obj\Debug\Greetings.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Greetings.Form1.resources
+obj\Release\Greetings.Resources.resources
+obj\Release\Greetings.vbproj.GenerateResource.Cache
+obj\Release\Greetings.exe
+obj\Release\Greetings.xml
+bin\Greetings.pdb

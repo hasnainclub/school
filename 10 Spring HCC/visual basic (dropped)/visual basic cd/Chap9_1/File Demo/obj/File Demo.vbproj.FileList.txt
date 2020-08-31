@@ -1,0 +1,16 @@
+obj\Debug\File Demo.exe
+obj\Debug\File Demo.pdb
+bin\File Demo.exe
+bin\File Demo.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\File_Demo.Form1.resources
+obj\Release\File_Demo.Resources.resources
+obj\Release\File Demo.vbproj.GenerateResource.Cache
+obj\Release\File Demo.exe
+obj\Release\File Demo.xml
+bin\File Demo.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\File_Demo.Form1.resources
+obj\Debug\File_Demo.Resources.resources
+obj\Debug\File Demo.vbproj.GenerateResource.Cache
+obj\Debug\File Demo.xml
