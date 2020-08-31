@@ -1,2 +1,0 @@
-$username = "z1813439";
-$password = "1998Oct19";
